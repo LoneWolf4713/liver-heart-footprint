@@ -1,0 +1,51 @@
+ingredient_term,frequency_in_d1,matched_food_code,matched_food_name,match_method,confidence
+water,28,K505,"Water, distilled",alias_direct,1.0
+ginger,21,G014,"Ginger, fresh (Zingiber officinale)",alias_direct,1.0
+salt,19,G528,Salt,alias_direct,1.0
+coriander,16,G009,Coriander leaves (Coriandrum sativum),indb_recipes_exact,0.95
+cumin,14,G025,Cumin seeds (Cuminum cyminum),alias_direct,1.0
+oil,13,T508,"Oil, sunflower",alias_direct,1.0
+garam masala,12,G523,Curry powder,alias_direct,1.0
+cinnamon,11,G518,"Cinnamon, ground",alias_direct,1.0
+sugar,11,I502,"Sugar, white",alias_direct,1.0
+ghee,11,T506,"Ghee, butter",alias_direct,1.0
+onion,10,G017,"Onion, big (Allium cepa)",alias_direct,1.0
+salt to,10,G528,Salt,alias_direct,1.0
+cloves,9,G023,Cloves (Syzygium aromaticum),alias_direct,1.0
+bay leaf,9,G018,Bay leaf (Laurus nobilis),alias_direct,1.0
+cream,9,L519,"Cream, fresh, single",alias_direct,1.0
+kasuri methi,9,D044,Fenugreek leaves (Trigonella foenum-graecum),alias_direct,1.0
+tablespoons ghee,9,T506,"Ghee, butter",alias_direct,1.0
+teaspoon cumin,9,G025,Cumin seeds (Cuminum cyminum),alias_direct,1.0
+turmeric,8,G033,Turmeric powder (Curcuma domestica),alias_direct,1.0
+teaspoon salt,8,G528,Salt,alias_direct,1.0
+tomato,7,D075,"Tomato, ripe, hybrid (Solanum lycopersicum)",alias_direct,1.0
+milk,7,L002,"Milk, whole, Cow",alias_direct,1.0
+cardamom,7,G020,"Cardamom, green (Elettaria cardamomum)",alias_direct,1.0
+tomatoes,6,D075,"Tomato, ripe, hybrid (Solanum lycopersicum)",alias_direct,1.0
+teaspoon red chili,6,G516,Chilli powder,indb_recipes_exact,0.95
+butter,5,T501,"Butter, unsalted",alias_direct,1.0
+lemon juice,5,E033,"Lemon, juice (Citrus limon)",alias_direct,1.0
+to garam masala,5,G523,Curry powder,alias_direct,1.0
+teaspoon garam masala,5,G523,Curry powder,alias_direct,1.0
+teaspoon turmeric,5,G033,Turmeric powder (Curcuma domestica),alias_direct,1.0
+all purpose flour,5,A018,"Wheat flour, refined (Triticum aestivum)",alias_direct,1.0
+cilantro,5,G009,Coriander leaves (Coriandrum sativum),alias_direct,1.0
+kashmiri red chili,5,G516,Chilli powder,indb_recipes_exact,0.95
+cloves garlic,4,G023,Cloves (Syzygium aromaticum),alias_direct,1.0
+ghee clarified butter,4,T506,"Ghee, butter",alias_direct,1.0
+tomato puree,4,X505,"Tomato sauce, homemade",alias_direct,1.0
+rose water,4,K505,"Water, distilled",alias_direct,1.0
+green cardamoms,4,G020,"Cardamom, green (Elettaria cardamomum)",indb_recipes_exact,0.95
+cup onions,4,G017,"Onion, big (Allium cepa)",alias_direct,1.0
+black cardamom,4,G021,"Cardamom, black (Elettaria cardamomum)",alias_direct,1.0
+to green chilies,4,G008,"Chillies, green - all varieties (Capsicum annum)",indb_recipes_exact,0.95
+tablespoons butter,4,T501,"Butter, unsalted",alias_direct,1.0
+green chillies,4,G008,"Chillies, green - all varieties (Capsicum annum)",alias_direct,1.0
+ground turmeric,4,G033,Turmeric powder (Curcuma domestica),alias_direct,1.0
+green cardamom,4,G020,"Cardamom, green (Elettaria cardamomum)",alias_direct,1.0
+black peppercorns,4,G031,"Pepper, black (Piper nigrum)",indb_recipes_exact,0.95
+tsp turmeric,3,G033,Turmeric powder (Curcuma domestica),alias_direct,1.0
+chilli,3,G516,Chilli powder,rapidfuzz_term,0.75
+tsp cumin,3,G025,Cumin seeds (Cuminum cyminum),alias_direct,1.0
+ginger garlic,3,G014,"Ginger, fresh (Zingiber officinale)",alias_direct,1.0

@@ -1,0 +1,8 @@
+dish,indb_code,textbook_source,textbook_kcal_serv,textbook_fat_g_serv,textbook_sfa_g_serv,web_median_kcal_serv,web_median_fat_g_serv,web_median_sfa_g_serv,fat_diff_g,sfa_diff_g,fat_ratio_web_to_textbook,sfa_ratio_web_to_textbook
+Dal Makhani,OSR139,INDB (Open Source Recipes),261.6,10.82,6.26,453.2,23.1,14.2,12.3,7.9,2.13,2.27
+Paneer Butter Masala,ASC222,"Art & Science of Cooking (5th ed, 2007)",228.3,13.81,8.24,344.0,28.2,15.8,14.4,7.6,2.04,1.92
+Matar Paneer,ASC191,"Art & Science of Cooking (5th ed, 2007)",373.9,21.49,6.16,410.0,26.5,12.0,5.0,5.8,1.23,1.95
+Gajar Ka Halwa,ASC295,"Art & Science of Cooking (5th ed, 2007)",289.7,16.33,9.08,285.0,11.4,7.2,-4.9,-1.9,0.7,0.79
+Poha,BFP044,"Basic Food Preparation (4th ed, 2011)",160.8,7.72,1.11,470.0,23.0,3.7,15.3,2.6,2.98,3.33
+Chole / Chana Masala,ASC153,"Art & Science of Cooking (5th ed, 2007)",204.3,10.05,1.19,319.4,13.2,3.5,3.1,2.3,1.31,2.94
+Chicken Biryani,ASC122,"Art & Science of Cooking (5th ed, 2007)",396.4,16.05,1.49,595.4,15.0,7.2,-1.1,5.7,0.93,4.83

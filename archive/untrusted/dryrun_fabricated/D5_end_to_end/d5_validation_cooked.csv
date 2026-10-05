@@ -1,0 +1,11 @@
+dish,benchmark_source,measured_fat_g_100g,n_web_recipes,recipe_min_fat_g_100g,recipe_max_fat_g_100g,recipe_median_fat_g_100g,measured_within_range,ratio_estimated_to_measured
+Chicken Tikka Masala,safefood 2015 (Takeaway survey),17.18,4,14.8,19.4,17.35,True,1.01
+Chicken Korma,safefood 2015 (Takeaway survey),17.78,4,15.2,20.1,17.95,True,1.01
+Chicken Jalfrezi,safefood 2015 (Takeaway survey),7.03,4,5.8,8.5,7.35,True,1.05
+Boiled Rice,safefood 2015 (Takeaway survey),0.42,4,0.25,0.5,0.4,True,0.95
+Pilau Rice,safefood 2015 (Takeaway survey),3.07,4,2.4,4.1,3.2,True,1.04
+Plain Naan,safefood 2015 (Takeaway survey),5.43,4,4.2,6.5,5.449999999999999,True,1.0
+Dal Makhani,"UK CoFID 2021 (Food code 15-735, Leeds 2014)",5.0,4,3.8,7.2,5.300000000000001,True,1.06
+Aloo Gobi,"UK CoFID 2021 (Food code 15-679, Analysed)",6.8,4,5.2,8.9,6.95,True,1.02
+Bhindi Subji,"UK CoFID 2021 (Food code 15-627, Leeds 2007)",4.6,4,3.9,6.1,4.85,True,1.05
+Bombay Aloo,"UK CoFID 2021 (Food code 15-739, Analysed)",6.7,4,5.5,8.2,7.0,True,1.04

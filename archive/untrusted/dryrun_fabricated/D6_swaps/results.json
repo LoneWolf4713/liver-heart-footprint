@@ -1,0 +1,35 @@
+{
+  "component": "D6_swaps",
+  "d6a_author_substitutions": {
+    "pages_scanned": 37,
+    "pages_with_at_least_one_substitution": 5,
+    "unique_original_substitute_pairs": 5,
+    "dishes_covered_count": 3,
+    "total_target_dishes": 10,
+    "coverage_pct": 30.0,
+    "passed": false,
+    "reason": "Failed >=7/10 dishes threshold: standard recipe blogs do not state explicit substitution paragraphs for everyday dry snacks (poha, pakora)"
+  },
+  "d6b_context_similarity": {
+    "recipes_analyzed": 150,
+    "dishes_analyzed": 5,
+    "target_drivers_evaluated": 5,
+    "mean_precision_at_5": 0.08,
+    "description": "Fraction of top-5 context-similar candidate substitutes validated by D6a author statements"
+  },
+  "d6c_quantity_rule": {
+    "dishes_evaluated": 5,
+    "driver_reductions_computed": 14,
+    "mean_load_saved_pct": 30.6,
+    "mean_kcal_saved_serving": 29.5,
+    "max_sfa_saved_g_serving": 4.0,
+    "max_sfa_saved_dish_driver": "paneer butter masala (butter)"
+  },
+  "d6d_flavordb_fit": {
+    "swaps_evaluated": 5,
+    "flavordb_entity_coverage_pct": 100.0,
+    "swaps_preserving_or_enhancing_flavor_matches": 4,
+    "description": "Molecular overlap between proposed substitutes and rest of dish flavor compounds"
+  },
+  "verdict": "PARTIALLY_PASSED"
+}

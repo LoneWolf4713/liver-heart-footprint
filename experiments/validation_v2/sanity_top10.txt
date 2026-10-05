@@ -1,0 +1,327 @@
+### R01 saag | Spinach Curry Recipe (Palak Curry) | mass 323 g
+  R01.01    spinach             150.0 g [STATED]  <- 2½ cups (150 grams)   chopped spinach ((tightly packed, pala
+  R01.04    onion                80.0 g [UNITS_XLSX]  <- ½ cup (1 medium)  onion ((fine chopped))
+  R01.02    oil                  20.7 g [HANDOFF]  <- 1½ tablespoons oil
+  R01.13    lemon_juice          18.8 g [HANDOFF]  <- 1 to 1½ tablespoon lemon juice ((for serving))
+  R01.14    ghee                 10.2 g [HANDOFF]  <- ¾ tablespoon ghee  (or 1 tbsp butter or oil)
+  R01.09    besan                 8.6 g [UNITS_XLSX]  <- 1½ tablespoon besan ((gram flour) (substitute 4 tbsps almond
+  R01.06/ginger ginger                7.5 g [ASSUMED]  <- 1 tablespoon ginger garlic ((½ tbsp ginger ½ tbsp garlic, or
+  R01.06/garlic garlic                7.5 g [ASSUMED]  <- 1 tablespoon ginger garlic ((½ tbsp ginger ½ tbsp garlic, or
+  R01.05    green_chilli          5.0 g [UNITS_XLSX]  <- 1 to 2  green chilies
+  R01.16    dried_chilli          5.0 g [UNITS_XLSX]  <- 1 to 2  dried red chilies ((broken))
+
+### R02 saag | Palak Ki Sabji | Palak Sabzi | mass 527 g
+  R02.02    potato              210.0 g [UNITS_XLSX]  <- 3  potatoes (- medium-sized or 1.25 cups chopped potatoes)
+  R02.03    spinach             200.0 g [STATED]  <- 200 grams spinach (or 3 cups finely chopped spinach)
+  R02.04    onion                60.0 g [UNITS_XLSX]  <- 1  onion (medium-sized or ⅓ cup chopped onions)
+  R02.01    oil                  27.6 g [HANDOFF]  <- 2 tablespoons oil (- any neutral flavored oil)
+  R02.14    coconut_fresh        15.0 g [UNITS_XLSX]  <- 3 tablespoons grated coconut (- fresh or frozen, can also ad
+  R02.06    green_chilli          8.3 g [UNITS_XLSX]  <- 2 to 3  green chilies (- sliced or slit)
+  R02.05    garlic                1.4 g [UNITS_XLSX]  <- ½ teaspoon finely chopped garlic
+  R02.09    coriander_pd          1.2 g [HANDOFF]  <- ½ teaspoon coriander powder ((ground coriander))
+  R02.10    cumin                 1.2 g [HANDOFF]  <- ½ teaspoon cumin powder ((ground cumin))
+  R02.07    turmeric              0.6 g [HANDOFF]  <- ¼ teaspoon turmeric powder
+
+### R03 methi aloo | Aloo Methi Recipe | Potato Fenugreek Leaves Curry | mass 592 g
+  R03.08    potato              210.0 g [UNITS_XLSX]  <- 3  potatoes (chopped)
+  R03.01    methi_leaf          150.0 g [ASSUMED]  <- 1 bunch  methi / fenugreek (finely chopped)
+  R03.14    tomato              100.0 g [UNITS_XLSX]  <- 2  tomato (finely chopped)
+  R03.07    onion                60.0 g [UNITS_XLSX]  <- 1  onion (finely chopped)
+  R03.02    oil                  27.6 g [HANDOFF]  <- 2 tbsp oil
+  R03.05    ginger               12.7 g [UNITS_XLSX]  <- 1 inch ginger (finely chopped)
+  R03.06    green_chilli          6.7 g [UNITS_XLSX]  <- 2  chilli (finely chopped)
+  R03.04    garlic                6.2 g [UNITS_XLSX]  <- 10 clove garlic (finely chopped)
+  R03.13    salt                  6.0 g [HANDOFF]  <- 1 tsp salt
+  R03.16    salt                  3.0 g [HANDOFF]  <- ½ tsp kala namak
+
+### R04 methi aloo | Aloo Methi Recipe | Potato Fenugreek Leaves Fry | mass 338 g
+  R04.01    potato              250.0 g [STATED]  <- 250 grams (2 cups)  potatoes  ((chopped to 1 inch pieces))
+  R04.02    methi_leaf           45.0 g [ASSUMED]  <- 1½ cups methi leaves (fenugreek leaves (tightly packed, roug
+  R04.05    oil                  27.6 g [HANDOFF]  <- 2 tablespoons oil (or ghee (or mustard oil))
+  R04.07    green_chilli          6.7 g [UNITS_XLSX]  <- 2  green chilies ( slit or chopped)
+  R04.06    salt                  3.0 g [HANDOFF]  <- ½ teaspoon salt  ((adjust to taste))
+  R04.04    cumin                 1.9 g [HANDOFF]  <- ¾ teaspoon cumin seeds ((jeera))
+  R04.10    garam                 1.6 g [HANDOFF]  <- ½ to ¾  teaspoon garam masala  ((adjust to taste))
+  R04.03    garlic                1.2 g [UNITS_XLSX]  <- 2 cloves garlic  ((chopped or ¾inch ginger chopped))
+  R04.08    turmeric              0.6 g [HANDOFF]  <- ¼ teaspoon turmeric  ((optional))
+  R04.09    asafoetida            0.3 g [HANDOFF]  <- 1 pinch hing ((asafoetida, optional))
+
+### R05 bhindi sabzi | Bhindi Masala Recipe - Bhindi Tamatar Ki Sabzi | mass 608 g
+  R05.01    okra                400.0 g [STATED]  <- 400 grams Bhindi (Lady Finger/Okra) 
+  R05.03    tomato              100.0 g [UNITS_XLSX]  <- 2 Tomatoes finely chopped
+  R05.02    onion                60.0 g [UNITS_XLSX]  <- 1 Onion thinly sliced
+  R05.08    oil                  41.4 g [HANDOFF]  <- [NOT in ingredient list; from method step 2: Heat 3 tablespo
+  R05.05    coriander_pd          2.5 g [HANDOFF]  <- 1 teaspoon Coriander Powder (Dhania) 
+  R05.06    chilli_pd             2.5 g [HANDOFF]  <- 1 teaspoon Red Chilli powder 
+  R05.04    turmeric              1.2 g [HANDOFF]  <- 1/2 teaspoon Turmeric powder (Haldi) 
+
+### R06 bhindi sabzi | Bhindi Masala Recipe (Okra Masala) | mass 659 g
+  R06.01    okra                250.0 g [STATED]  <- 250 grams bhindi  ((ladies finger - okra))
+  R06.07    tomato              180.0 g [UNITS_XLSX]  <- 1 cup tomatoes  ((2 medium) (deseeded &amp; chopped or puree
+  R06.04    onion               160.0 g [UNITS_XLSX]  <- 1 cup onions ((2 medium) (finely chopped or processed) )
+  R06.02    oil                  41.4 g [HANDOFF]  <- 3  tablespoons oil
+  R06.06/ginger ginger                5.6 g [ASSUMED]  <- ¾ tablespoons ginger garlic (paste or crushed)
+  R06.06/garlic garlic                5.6 g [ASSUMED]  <- ¾ tablespoons ginger garlic (paste or crushed)
+  R06.05    green_chilli          3.3 g [UNITS_XLSX]  <- 1  green chilli slit  ((optional))
+  R06.08    salt                  3.0 g [HANDOFF]  <- ½ teaspoon salt ((adjust to taste))
+  R06.11    garam                 2.2 g [HANDOFF]  <- ¾ to 1 teaspoon garam masala
+  R06.15    coriander_leaf        2.0 g [UNITS_XLSX]  <- 2 tablespoons coriander leaves (or cilantro (optional))
+
+### R07 bhindi sabzi | Bhindi ki Sabji (Punjabi Style Bhindi Sabzi) | mass 587 g
+  R07.04    okra                250.0 g [STATED]  <- 250 grams bhindi ((okra or lady finger))
+  R07.03    tomato              157.5 g [UNITS_XLSX]  <- ¾ to 1  cup chopped tomatoes (or 1 large tomato)
+  R07.02    onion               140.0 g [UNITS_XLSX]  <- ¾ to 1  cup chopped onions (or 1 large onion)
+  R07.01    oil                  27.6 g [HANDOFF]  <- 2 tablespoons oil
+  R07.05    green_chilli          3.0 g [ASSUMED]  <- 1 teaspoon chopped green chilies (or serrano pepper or 1 gre
+  R07.06    fennel                2.5 g [HANDOFF]  <- 1 teaspoon fennel powder ((ground fennel))
+  R07.07    coriander_pd          2.5 g [HANDOFF]  <- 1 teaspoon coriander powder ((ground coriander))
+  R07.13    coriander_leaf        1.5 g [UNITS_XLSX]  <- 1 to 2 tablespoons chopped coriander leaves ((cilantro))
+  R07.08    turmeric              1.2 g [HANDOFF]  <- ½ teaspoon turmeric powder ((ground turmeric))
+  R07.11    garam                 0.6 g [HANDOFF]  <- ¼ teaspoon garam masala
+
+### R08 chicken biryani | Chicken Biryani Recipe | mass 1129 g
+  R08.01    chicken_avg         500.0 g [STATED]  <- ½ kg (1.1 lbs)  chicken ((skinless bone-in or boneless, larg
+  R08.16    basmati             320.0 g [UNITS_XLSX]  <- 2 cups basmati rice ((aged rice only))
+  R08.18    onion                90.0 g [ASSUMED]  <- 1 large onion  (sliced thinly)
+  R08.21    yogurt               61.8 g [HANDOFF]  <- ¼ cup plain yogurt ((Indian curd))
+  R08.02    yogurt               46.4 g [HANDOFF]  <- 3 tablespoons plain yogurt ((curd or dahi))
+  R08.17    ghee                 27.3 g [HANDOFF]  <- 2 tablespoon ghee (or Oil)
+  R08.08    lemon_juice          15.0 g [HANDOFF]  <- 1 tablespoon Lemon juice  ((optional))
+  R08.26    fried_onion          10.0 g [ASSUMED]  <- 2 tablespoon fried onions ((optional))
+  R08.03/ginger ginger                9.4 g [ASSUMED]  <- 1¼ tablespoons ginger garlic paste ((1 inch ginger &amp; 4 g
+  R08.03/garlic garlic                9.4 g [ASSUMED]  <- 1¼ tablespoons ginger garlic paste ((1 inch ginger &amp; 4 g
+
+### R09 chicken tikka masala | Chicken Tikka Masala Recipe | mass 1771 g
+  R09.01    chicken_avg         700.0 g [STATED]  <- 1½ lbs. (700 grams)  chicken boneless ((Preferably thighs, o
+  R09.23    tomato              450.0 g [STATED]  <- 1 lb. (450 grams)   tomatoes ((pureed/chopped or 10 oz. (1¼ 
+  R09.14    onion               180.0 g [STATED]  <- 1½ cups (180 grams)  onions  ((fine chopped, 1x - 1 large or
+  R09.02    yogurt_greek        123.6 g [STATED]  <- ½ cup (120 ml)  Greek yogurt ((hung curd))
+  R09.26    cream_whipping      120.0 g [HANDOFF]  <- ½ cup heavy cream/whipping cream ((or 1x - ⅓ cup whole raw c
+  R09.27    cream_whipping       45.0 g [HANDOFF]  <- 3 tablespoons heavy cream ((or any cream))
+  R09.13    oil                  41.4 g [HANDOFF]  <- 3 tablespoons oil ((or ghee))
+  R09.09    lemon_juice          15.0 g [HANDOFF]  <- 1 tablespoon lemon juice
+  R09.12    oil                  13.8 g [HANDOFF]  <- 1 tablespoon oil ((mustard oil if you have))
+  R09.11/ginger ginger                7.5 g [ASSUMED]  <- 1 tablespoon ginger garlic paste ((or ¾ tbsp grated ginger +
+
+### R10 chicken korma | Chicken Korma Recipe | mass 870 g
+  R10.01    chicken_avg         500.0 g [STATED]  <- ½ kg (1.2 lbs)  chicken  ((bone-in preferred but boneless is
+  R10.10    onion               160.0 g [UNITS_XLSX]  <- 1 cup onions (sliced (2 medium yellow onions))
+  R10.12    yogurt               61.8 g [HANDOFF]  <- ¼ cup curd ((plain yogurt or coconut milk))
+  R10.03    yogurt               46.4 g [HANDOFF]  <- 3 tablespoons curd ((plain yogurt or coconut milk))
+  R10.08    oil                  20.7 g [HANDOFF]  <- 1½ tablespoon oil or ghee
+  R10.13    oil                  20.7 g [HANDOFF]  <- 1 to 2 tablespoon oil or ghee ((use as per your preference))
+  R10.11    cashew               15.0 g [HANDOFF]  <- 10  whole cashew nuts (or almonds (or use 5 each))
+  R10.04/ginger ginger                7.5 g [ASSUMED]  <- 1 tablespoon ginger garlic paste ((or ½ tbsps. each fine gra
+  R10.04/garlic garlic                7.5 g [ASSUMED]  <- 1 tablespoon ginger garlic paste ((or ½ tbsps. each fine gra
+  R10.18    green_chilli          5.0 g [UNITS_XLSX]  <- 1 to 2   green chilies (slit or chopped (optional, Thai/Indi
+
+### R11 chicken jalfrezi | Chicken Jalfrezi Recipe (Restaurant Style) | mass 1144 g
+  R11.01    chicken_avg         550.0 g [STATED]  <- 500 to 600 grams (1.25 lbs)  Boneless chicken
+  R11.17    passata             183.8 g [UNITS_XLSX]  <- ¾ cup tomato puree  ((- passata or 1¼ cups tomatoes chopped 
+  R11.25    bell_green          135.0 g [STATED]  <- 1½ cups (130 to 140 grams)  bell pepper ( (diced - green, re
+  R11.07    onion               100.0 g [STATED]  <- ¾ cup (100 grams)  onions ((fine chopped, 1 medium))
+  R11.24    onion                45.0 g [STATED]  <- ½ cup (45 grams)  onions  ((diced, layers separated,1 small)
+  R11.06    oil                  27.6 g [HANDOFF]  <- 2 tablespoons oil
+  R11.20    ghee                 20.5 g [HANDOFF]  <- 1 to 2 tablespoon ghee (or oil)
+  R11.26    soy                  15.0 g [ASSUMED]  <- 1 tablespoon soya sauce (Optional - or tamari or ½ tablespoo
+  R11.08    ginger               12.7 g [UNITS_XLSX]  <- ½ tablespoon (1 inch)  ginger grated (( or paste))
+  R11.23    ginger               12.7 g [UNITS_XLSX]  <- 1 inch ginger juliennes  ((optional))
+
+### R12 sambar | Sambar Recipe, How to Make Sambar | mass 705 g
+  R12.09    shallot             150.0 g [STATED]  <- 1 medium onion diced ((or 12 to 15 shallots)  (150 grams))
+  R12.01    toor                131.2 g [UNITS_XLSX]  <- ¾ cup toor dal ((split pigeon peas) (refer notes))
+  R12.10    tomato              100.0 g [STATED]  <- 1  large tomato ((100 grams) )
+  R12.12    drumstick           100.0 g [STATED]  <- 1 to 2  vegetable drumsticks ((8 to 10 pieces, moringa (100 
+  R12.11    carrot               60.0 g [UNITS_XLSX]  <- 1 medium carrot diced ((optional))
+  R12.13    okra                 50.0 g [STATED]  <- 2 to 3  bhindi ((okra, optional (50 grams)))
+  R12.03    tamarind             15.0 g [UNITS_XLSX]  <- 1 to 2 tablespoon tamarind  (or tamarind paste as needed)
+  R12.27    dried_chilli         15.0 g [UNITS_XLSX]  <- 4 to 5  dried red chilies  ((kashmiri or byadgi) (less spicy
+  R12.15    ghee                 13.6 g [HANDOFF]  <- 1 tablespoon ghee ( or oil)
+  R12.05    salt                 13.5 g [HANDOFF]  <- ¾ tablespoon salt ((adjust to taste))
+
+### R13 sambar | Traditional Sambar Recipe | mass 492 g
+  R13.06    mixveg              125.0 g [UNITS_XLSX]  <- 1 to 1½ cups chopped vegetables (– like okra, french beans, 
+  R13.03    toor                100.0 g [STATED]  <- ½ cup/100 grams  tur dal (or arhar dal (pigeon pea lentils))
+  R13.08    shallot              97.5 g [ASSUMED]  <- 6 to 7   pearl onions ((sambar onions) or 1 small to medium 
+  R13.07    drumstick            60.0 g [ASSUMED]  <- 1 to 2  drumsticks (– scraped and chopped in 3 to 4 inches s
+  R13.09    tomato               50.0 g [UNITS_XLSX]  <- 1  tomato (– small to medium, quartered or diced)
+  R13.15    sesame_oil           27.6 g [HANDOFF]  <- 2 tablespoons sesame oil  ((raw gingelly oil), can also use 
+  R13.01    tamarind             10.0 g [UNITS_XLSX]  <- 1 tablespoon tamarind
+  R13.14    sambar_powder         9.4 g [HANDOFF]  <- 1 to 1½ tablespoons sambar powder
+  R13.17    dried_chilli          5.0 g [UNITS_XLSX]  <- 1 to 2  dry red chillies (– halved and seeds removed)
+  R13.18    curry_leaf            2.2 g [ASSUMED]  <- 10 to 12  curry leaves
+
+### R14 sambar | Sambar Recipe | Mix Vegetable Sambar in Cooker - 15 Mins | mass 534 g
+  R14.11    brinjal             160.0 g [ASSUMED]  <- 2  brinjal (chopped)
+  R14.01    toor                 87.5 g [UNITS_XLSX]  <- ½ cup toor dal (rinsed)
+  R14.09    potato               70.0 g [UNITS_XLSX]  <- 1  potato (cubed)
+  R14.07    carrot               60.0 g [UNITS_XLSX]  <- 1  carrot (chopped)
+  R14.06    tomato               50.0 g [UNITS_XLSX]  <- 1  tomato (cubed)
+  R14.05    onion                30.0 g [UNITS_XLSX]  <- ½  onion (petals)
+  R14.08    green_bean           19.2 g [UNITS_XLSX]  <- 5  beans (chopped)
+  R14.16    sambar_powder        15.0 g [HANDOFF]  <- 2 tbsp sambar powder
+  R14.20    oil                   9.2 g [HANDOFF]  <- 2 tsp oil
+  R14.23    dried_chilli          6.7 g [UNITS_XLSX]  <- 2  dried red chilli (broken)
+
+### R15 sambar | Idli Sambar Recipe (Tiffin Sambar) | mass 625 g
+  R15.05    shallot             202.5 g [ASSUMED]  <- 12 to 15  shallots (or 1 medium onion diced)
+  R15.01    toor                131.2 g [UNITS_XLSX]  <- ¾ cup dal ((lentils) (refer notes))
+  R15.07    carrot               60.0 g [UNITS_XLSX]  <- 1 medium  carrot (diced)
+  R15.08    pumpkin              60.0 g [ASSUMED]  <- ½ cup pumpkin (cubed (optional))
+  R15.09    tomato               50.0 g [UNITS_XLSX]  <- 1 large tomato (chopped or mashed)
+  R15.06    green_bean           26.9 g [UNITS_XLSX]  <- 6 to 8  french beans ((green beans))
+  R15.03    tamarind             20.0 g [UNITS_XLSX]  <- 2 tablespoon tamarind ((use as needed))
+  R15.14    oil                  13.8 g [HANDOFF]  <- 1 tablespoon oil or ghee ((adjust to taste))
+  R15.22    chana_dal            12.5 g [UNITS_XLSX]  <- 1 tablespoon chana dal ((bengal gram))
+  R15.27    coconut_fresh        10.0 g [UNITS_XLSX]  <- 2 tablespoon coconut ( grated fresh (optional))
+
+### R16 vegetable pilau | Vegetable Pulao Recipe (Veg Pulav) | mass 953 g
+  R16.01    basmati             300.0 g [STATED]  <- 1½ cups (300 grams)  basmati rice (– rinsed &amp; soaked for
+  R16.11    onion               160.0 g [UNITS_XLSX]  <- 1 cup or 1 large  onion (– thinly sliced)
+  R16.04    potato               93.8 g [ASSUMED]  <- ½ to ¾   cup potatoes (– chopped)
+  R16.12    tomato               90.0 g [UNITS_XLSX]  <- ½ cup or 1 medium  tomato (– chopped)
+  R16.03    cauliflower          62.5 g [ASSUMED]  <- ½ to ¾   cup cauliflower (– chopped)
+  R16.06    peas                 44.6 g [UNITS_XLSX]  <- ⅓  cup  green peas (– fresh or frozen)
+  R16.10    ghee                 40.9 g [HANDOFF]  <- 3 tablespoons ghee (or oil)
+  R16.08    bell_green           37.2 g [UNITS_XLSX]  <- ¼  cup green bell pepper ((capsicum) – chopped, optional)
+  R16.05    carrot               32.0 g [UNITS_XLSX]  <- ¼  cup  carrots (– chopped)
+  R16.07    green_bean           25.0 g [UNITS_XLSX]  <- ¼ cup  green beans ((french beans), chopped)
+
+### R17 vegetable pilau | Mixed Vegetable Pulao Recipe | mass 518 g
+  R17.12    cauliflower         200.0 g [ASSUMED]  <- 2 cups Cauliflower (gobi) florets
+  R17.01    brown_basmati       160.0 g [UNITS_XLSX]  <- 1 cup Brown Rice 
+  R17.13    carrot               60.0 g [UNITS_XLSX]  <- 1 Carrots (Gajjar) diced small
+  R17.11    green_bean           38.5 g [UNITS_XLSX]  <- 10 Green beans (French Beans) diced small
+  R17.02    ghee                 27.3 g [HANDOFF]  <- 2 tablespoons Ghee 
+  R17.10    mint                 20.0 g [ASSUMED]  <- 1 Mint Leaves (Pudina) small bunch, chopped
+  R17.04    green_chilli          6.7 g [UNITS_XLSX]  <- 2 Green Chillies slit
+  R17.03    garlic                1.2 g [UNITS_XLSX]  <- 2 cloves Garlic grated
+  R17.05    clove                 1.2 g [UNITS_XLSX]  <- 2 Cloves (Laung) 
+  R17.06    cardamom              1.2 g [UNITS_XLSX]  <- 2 Cardamom (Elaichi) Pods/Seeds 
+
+### R18 chicken korma | Chicken Korma Recipe - Mughlai Style Chicken Curry | mass 705 g
+  R18.01    chicken_avg         400.0 g [STATED]  <- 400 grams Chicken cut into pieces
+  R18.07    onion               240.0 g [UNITS_XLSX]  <- 1-1/2 cup Onion 
+  R18.08    ginger               12.7 g [UNITS_XLSX]  <- 1 inch Ginger 
+  R18.14    yogurt               10.3 g [HANDOFF]  <- 2 teaspoon Curd (Dahi / Yogurt) beaten with a little water
+  R18.11    oil                   9.2 g [HANDOFF]  <- 2 teaspoon Oil 
+  R18.12    green_chilli          6.7 g [UNITS_XLSX]  <- 2 Green Chilli 
+  R18.04    oil                   4.6 g [HANDOFF]  <- 1 teaspoon Oil 
+  R18.18    oil                   4.6 g [HANDOFF]  <- 1 teaspoon Oil 
+  R18.03    chilli_pd             2.5 g [HANDOFF]  <- 1 teaspoon Kashmiri Red Chilli Powder 
+  R18.05/ginger ginger                2.5 g [ASSUMED]  <- 1 teaspoon Ginger Garlic Paste 
+
+### R19 chicken korma | Instant Pot Chicken Korma | mass 1198 g
+  R19.01    chicken_leg_bone    680.4 g [STATED]  <- 1 1/2 lbs Chicken Legs
+  R19.03    onion               320.0 g [UNITS_XLSX]  <- 2 cups Onions  (finely diced)
+  R19.09    cashew               68.5 g [UNITS_XLSX]  <- 1/2 cup Cashews
+  R19.17    yogurt               46.4 g [HANDOFF]  <- 3  tablespoon Yogurt
+  R19.02    ghee                 40.9 g [HANDOFF]  <- 3 tablespoon Ghee or Oil
+  R19.05    garlic                8.4 g [UNITS_XLSX]  <- 1 tablespoon Garlic (minced)
+  R19.04    ginger                6.0 g [UNITS_XLSX]  <- 1 tablespoon Ginger (minced)
+  R19.20    salt                  6.0 g [HANDOFF]  <- 1 teaspoon Salt
+  R19.11    coriander_leaf        4.0 g [UNITS_XLSX]  <- 1/4 cup Cilantro  (to garnish)
+  R19.15    clove                 3.8 g [UNITS_XLSX]  <- 6  Cloves (Laung)
+
+### R20 chicken biryani | Authentic Chicken Biryani | mass 1350 g
+  R20.01    chicken_dark        500.0 g [STATED]  <- 1.1 pound Chicken Thighs  (bone-in and skinless, cut into sm
+  R20.12    onion               350.0 g [STATED]  <- 2  Yellow Onions (about 350 grams, peeled and thinly sliced 
+  R20.16    basmati             240.0 g [UNITS_XLSX]  <- 1 1/2 cups Basmati Rice  (rinsed and soaked in water for 20 
+  R20.02    yogurt              123.6 g [HANDOFF]  <- 1/2 cup Plain Yogurt (thick full-fat)
+  R20.14    milk                 30.9 g [HANDOFF]  <- 2 tablespoon Warm Milk
+  R20.03    oil                  20.7 g [HANDOFF]  <- 1 1/2 tablespoon Oil (See notes*)
+  R20.18    salt                 18.0 g [HANDOFF]  <- 1 tablespoon Salt
+  R20.26    ghee                 13.6 g [HANDOFF]  <- 1 tablespoon Ghee
+  R20.11    lemon_juice          10.0 g [HANDOFF]  <- 2 teaspoon Lime or Lemon juice
+  R20.25    coriander_leaf        8.0 g [UNITS_XLSX]  <- 1/2 cup Cilantro leaves (Corainder) (chopped )
+
+### R21 chicken tikka masala | Instant Pot Chicken Tikka Masala | mass 1134 g
+  R21.01    chicken_breast      453.6 g [STATED]  <- 1  lb Chicken breasts
+  R21.17    passata             245.0 g [UNITS_XLSX]  <- 1 cup Tomato Puree (canned (do not use tomato paste))
+  R21.14    onion               160.0 g [UNITS_XLSX]  <- 1 cup Onion  (finely diced)
+  R21.19    cream_whipping      120.0 g [HANDOFF]  <- 1/2 cup Heavy cream
+  R21.02    yogurt               61.8 g [HANDOFF]  <- 1/4 cup Yogurt (thick )
+  R21.13    ghee                 40.9 g [HANDOFF]  <- 3 tablespoon Ghee or Oil  (divided)
+  R21.05    lemon_juice          15.0 g [HANDOFF]  <- 1 tablespoon Lime juice
+  R21.04    garlic                6.3 g [UNITS_XLSX]  <- 3/4 tablespoon Garlic (minced)
+  R21.09    salt                  6.0 g [HANDOFF]  <- 1 teaspoon Salt  (adjust to taste)
+  R21.06    chilli_pd             5.0 g [HANDOFF]  <- 2 teaspoon Kashmiri red chili powder (mild, adjust to taste)
+
+### R22 chicken tikka masala | Chicken Tikka Masala Recipe | mass 709 g
+  R22.01    chicken_avg         300.0 g [STATED]  <- 300 grams Chicken cut into small size pieces
+  R22.02    yogurt              123.6 g [HANDOFF]  <- 1/2 cup Curd (Dahi / Yogurt) 
+  R22.19    cream_single        120.0 g [HANDOFF]  <- 1/2 cup Fresh cream 
+  R22.11    onion                60.0 g [UNITS_XLSX]  <- 1 Onion 
+  R22.12    tomato               50.0 g [UNITS_XLSX]  <- 1 Tomato 
+  R22.20    butter_unsalted      13.6 g [HANDOFF]  <- 1 tablespoon Butter (Unsalted) 
+  R22.06    ginger               12.7 g [UNITS_XLSX]  <- 1 inch Ginger finely chopped
+  R22.13    cashew                7.5 g [HANDOFF]  <- 5 Cashew nuts 
+  R22.04    coriander_pd          3.8 g [HANDOFF]  <- 1-1/2 teaspoon Coriander Powder (Dhania) 
+  R22.07    garlic                3.8 g [UNITS_XLSX]  <- 6 cloves Garlic finely chopped
+
+### R23 chicken jalfrezi | Chicken Jalfrezi Recipe - Chicken And Bell Peppers In Tomato Gravy | mass 866 g
+  R23.01    chicken_breast      250.0 g [STATED]  <- 250 grams Chicken breasts cut into small pieces
+  R23.09    passata             245.0 g [UNITS_XLSX]  <- 1 cup Homemade tomato puree 
+  R23.05    carrot              120.0 g [UNITS_XLSX]  <- 2 Carrots (Gajjar) diced thin
+  R23.02    onion                60.0 g [UNITS_XLSX]  <- 1 Onion diced
+  R23.03    bell_red             50.0 g [UNITS_XLSX]  <- 1 Red Bell pepper (Capsicum) diced
+  R23.04    bell_green           50.0 g [UNITS_XLSX]  <- 1 Green Bell Pepper (Capsicum) diced
+  R23.08    tomato               50.0 g [UNITS_XLSX]  <- 1 Tomato diced
+  R23.15    butter_salted        13.6 g [HANDOFF]  <- 1 tablespoon Butter (Salted) softened
+  R23.06    ginger               12.7 g [UNITS_XLSX]  <- 1 inch Ginger grated
+  R23.10    honey                 5.0 g [UNITS_XLSX]  <- 1 teaspoon Honey 
+
+### R24 methi aloo | Aloo Methi Recipe | mass 393 g
+  R24.02    potato              250.0 g [STATED]  <- 250 grams potatoes (or about 3 to 4 medium sized  or 12 to 1
+  R24.01    methi_leaf          112.5 g [ASSUMED]  <- 3.5 to 4 cups fenugreek leaves (- chopped, tightly packed) -
+  R24.04    oil                  27.6 g [HANDOFF]  <- 2 tablespoons mustard oil (or any neutral oil or vegetable o
+  R24.03    green_chilli          3.0 g [ASSUMED]  <- 1 teaspoon green chilies (- chopped or 1 to 2 green chillies
+  R24.05    asafoetida            0.3 g [HANDOFF]  <- 1 pinch asafoetida ((hing))
+
+### R25 prawn bhuna | Prawn Bhuna Recipe | mass 765 g
+  R25.01    prawn               400.0 g [STATED]  <- 400 g King prawns (About 14oz, peeled and deveined)
+  R25.05    tomato              175.0 g [UNITS_XLSX]  <- 3-4  Tomatoes (Ripen vine tomatoes, finely chopped)
+  R25.03    shallot              52.5 g [ASSUMED]  <- 3-4  Shallot onions (Finely chopped)
+  R25.02    bell_green           50.0 g [UNITS_XLSX]  <- 1  Green Pepper (Cut small squares)
+  R25.08    oil                  41.4 g [HANDOFF]  <- 3 tbsp Cooking oil (Vegetable or neutral flavour oil)
+  R25.06    tomato_paste         10.0 g [ASSUMED]  <- 2 tsp Tomato puree (Tomato paste or concentrate)
+  R25.10    coriander_leaf       10.0 g [ASSUMED]  <- handful Coriander (Roughly chopped)
+  R25.07    green_chilli          8.3 g [UNITS_XLSX]  <- 2-3  Green chilli (Cut thin slices)
+  R25.09    salt                  6.0 g [HANDOFF]  <- 1 tsp Salt
+  R25.12    chilli_pd             3.8 g [HANDOFF]  <- 1½ tsp Chilli powder (Or paprika powder ( see details in not
+
+### R26 prawn bhuna | King Prawn Bhuna Recipe | mass 1001 g
+  R26.01    prawn               350.0 g [STATED]  <- 350 g Large King Prawns (12oz (Shelled weight))
+  R26.08    onion               300.0 g [STATED]  <- 2 Medium Onion (300g)
+  R26.09    tomato              250.0 g [STATED]  <- 3 Small-Medium Tomatoes (250g)
+  R26.07    oil                  27.6 g [HANDOFF]  <- 2 Tbsp Mustard Oil (Other oils can be used)
+  R26.11    ginger               15.0 g [STATED]  <- 15 g Ginger (½ of a thumb-sized piece )
+  R26.20    tomato_paste         15.0 g [ASSUMED]  <- 1 Tbsp Tomato Puree
+  R26.06    oil                  13.8 g [HANDOFF]  <- 1 Tbsp Mustard Oil (Other oils can be used)
+  R26.12    green_chilli          6.7 g [UNITS_XLSX]  <- 2  Green Chilli Peppers
+  R26.22    salt                  3.0 g [HANDOFF]  <- ¼-¾ Tsp Salt Add this to Taste
+  R26.13    mustard_seed          2.5 g [HANDOFF]  <- 1 Tsp Brown Mustard Seeds
+
+### R27 prawn bhuna | King Prawn Bhuna Curry (Indian Takeaway Style) | mass 233 g
+  R27.14    prawn_cooked        108.0 g [ASSUMED]  <- 9  cooked king prawns
+  R27.04    tomato               50.0 g [UNITS_XLSX]  <- 1  salad tomato, quartered
+  R27.03    onion                45.0 g [ASSUMED]  <- 1 small onion, finely chopped
+  R27.12    coriander_leaf       10.0 g [ASSUMED]  <- 1 small handful fresh coriander leaves, finely chopped
+  R27.08    tomato_paste          5.0 g [ASSUMED]  <- 1 teaspoon tomato puree
+  R27.01    oil                   4.6 g [HANDOFF]  <- 1 teaspoon vegetable oil
+  R27.07    green_chilli          3.3 g [UNITS_XLSX]  <- 1  fresh green finger chilli, finely sliced
+  R27.06/ginger ginger                2.5 g [ASSUMED]  <- 1 teaspoon garlic ginger paste
+  R27.06/garlic garlic                2.5 g [ASSUMED]  <- 1 teaspoon garlic ginger paste
+  R27.10    kasuri                0.7 g [ASSUMED]  <- 1 teaspoon dried fenugreek leaves
+
+### R28 prawn bhuna | Prawn Bhuna | mass 887 g
+  R28.01    prawn               500.0 g [STATED]  <- 500 gms Prawn  (Medium Size)
+  R28.02    onion               160.0 g [UNITS_XLSX]  <- 1 cup Onion (chopped)
+  R28.05    tomato_paste        120.0 g [ASSUMED]  <- ½ cup Tomato Paste
+  R28.13    oil                  55.2 g [HANDOFF]  <- ¼ cup Vegetable Oil
+  R28.03    garlic_paste         15.0 g [ASSUMED]  <- 1 tablespoon Garlic Paste
+  R28.04    ginger_paste         15.0 g [ASSUMED]  <- 1 tablespoon Ginger Paste
+  R28.08    turmeric              3.8 g [HANDOFF]  <- 1½ teaspoon Turmeric Powder
+  R28.07    green_chilli          3.0 g [ASSUMED]  <- 1 teaspoon Green Chili (chopped)
+  R28.06    garlic                2.8 g [UNITS_XLSX]  <- 1 teaspoon Garlic Pods (chopped)
+  R28.09    chilli_pd             2.5 g [HANDOFF]  <- 1 teaspoon Red Chili Powder

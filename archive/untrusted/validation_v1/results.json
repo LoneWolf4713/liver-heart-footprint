@@ -1,0 +1,134 @@
+[
+  {
+    "dish": "Chicken Tikka Masala",
+    "measured_fat": 17.18,
+    "status": "SUCCESS",
+    "coverage": false,
+    "min_fat": 4.730379789255981,
+    "max_fat": 12.027207684351856,
+    "median_est_fat": 6.249632396188685,
+    "ratio": 0.3637737133986429,
+    "recipe_fats": [
+      {
+        "url": "https://www.indianhealthyrecipes.com/chicken-tikka-masala/",
+        "fat_0": 5.555228796612164,
+        "fat_10": 6.172476440680183,
+        "fat_20": 6.944035995765205
+      },
+      {
+        "url": "https://www.archanaskitchen.com/recipe/chicken-tikka-masala-recipe",
+        "fat_0": 9.621766147481486,
+        "fat_10": 10.690851274979428,
+        "fat_20": 12.027207684351856
+      },
+      {
+        "url": "https://pipingpotcurry.com/instant-pot-chicken-tikka-masala/",
+        "fat_0": 4.730379789255981,
+        "fat_10": 5.255977543617756,
+        "fat_20": 5.912974736569975
+      }
+    ]
+  },
+  {
+    "dish": "Chicken Korma",
+    "measured_fat": 17.78,
+    "status": "SUCCESS",
+    "coverage": false,
+    "min_fat": 1.8155456092794553,
+    "max_fat": 7.293500880422603,
+    "median_est_fat": 2.661658315709783,
+    "ratio": 0.1496995678126987,
+    "recipe_fats": [
+      {
+        "url": "https://www.indianhealthyrecipes.com/chicken-korma-recipe/",
+        "fat_0": 5.834800704338082,
+        "fat_10": 6.48311189370898,
+        "fat_20": 7.293500880422603
+      },
+      {
+        "url": "https://www.archanaskitchen.com/recipe/chicken-korma-recipe-mughlai-style-chicken-curry",
+        "fat_0": 2.3659185028531406,
+        "fat_10": 2.6287983365034897,
+        "fat_20": 2.9573981285664255
+      },
+      {
+        "url": "https://www.archanaskitchen.com/recipe/bengali-style-chicken-rezala-recipe-chicken-korma-recipe",
+        "fat_0": 1.8155456092794553,
+        "fat_10": 2.0172728991993947,
+        "fat_20": 2.269432011599319
+      }
+    ]
+  },
+  {
+    "dish": "Chicken Jalfrezi",
+    "measured_fat": 7.03,
+    "status": "NOT AVAILABLE",
+    "reason": "No recipes found"
+  },
+  {
+    "dish": "Bhindi Subji",
+    "measured_fat": 4.6,
+    "status": "NOT AVAILABLE",
+    "reason": "No recipes found"
+  },
+  {
+    "dish": "Methi Aloo",
+    "measured_fat": 10.4,
+    "status": "SUCCESS",
+    "coverage": false,
+    "min_fat": 2.7494147532001794,
+    "max_fat": 3.436768441500224,
+    "median_est_fat": 3.0930915973502016,
+    "ratio": 0.29741265359136554,
+    "recipe_fats": [
+      {
+        "url": "https://www.cookwithmanali.com/aloo-methi/",
+        "fat_0": 2.7494147532001794,
+        "fat_10": 3.0549052813335327,
+        "fat_20": 3.436768441500224
+      }
+    ]
+  },
+  {
+    "dish": "Saag",
+    "measured_fat": 8.8,
+    "status": "SUCCESS",
+    "coverage": false,
+    "min_fat": 2.8477567959280212,
+    "max_fat": 4.88943488943489,
+    "median_est_fat": 4.400491400491401,
+    "ratio": 0.5000558409649318,
+    "recipe_fats": [
+      {
+        "url": "https://www.cookwithmanali.com/sarson-ka-saag/",
+        "fat_0": 3.9115479115479115,
+        "fat_10": 4.346164346164346,
+        "fat_20": 4.88943488943489
+      },
+      {
+        "url": "https://hebbarskitchen.com/sarson-ka-saag-recipe/",
+        "fat_0": 2.8477567959280212,
+        "fat_10": 3.1641742176978016,
+        "fat_20": 3.559695994910027
+      }
+    ]
+  },
+  {
+    "dish": "Chicken Balti",
+    "measured_fat": 5.0,
+    "status": "NOT AVAILABLE",
+    "reason": "No recipes found"
+  },
+  {
+    "dish": "Prawn Bhuna",
+    "measured_fat": 8.7,
+    "status": "NOT AVAILABLE",
+    "reason": "No recipes found"
+  },
+  {
+    "dish": "Prawn Madras",
+    "measured_fat": 8.3,
+    "status": "NOT AVAILABLE",
+    "reason": "No recipes found"
+  }
+]

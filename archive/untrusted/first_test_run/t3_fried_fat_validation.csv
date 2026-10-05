@@ -1,0 +1,9 @@
+item,source,sample_type,lab_fat_g_100g,lab_sd,model_est_low,model_est_high,model_est_mid,within_range,abs_error_g,pct_error,uptake_literature_basis
+Puri (Poori),"UK CoFID 2021 (Univ. of Leeds 2007, n=9 samples) / Chen 2009","Cooked food, lab-analysed (6 homemade, 3 cafe)",22.3,3.1,16.6,26.2,21.4,True,0.9,4.0,Chen 2009 (up to 18.4g uptake/100g) + McCance & Widdowson fried chapati factor
+Onion Pakora / Bhaji,"safefood Ireland 2015 (n=30 takeaway portions, Foodtest Labs)","Takeaway food, lab-analysed",16.98,5.46,14.8,25.9,20.3,True,3.35,19.7,safefood 2015 + CoFID 15-828 (14.7g) & 15-620 (22.0g)
+Onion Bhaji / Pakora (Restaurant UK),"UK CoFID 2021 (Univ. of Leeds 2007, Food code 15-620, n=11)","Restaurant/takeaway London/Bham/Leeds, lab-analysed",22.0,4.2,17.8,28.9,23.3,True,1.33,6.0,Univ. of Leeds 2007 (crispy vegetable fritters)
+Chicken Pakora,"safefood Ireland 2015 (n=30 takeaway portions, Foodtest Labs)","Takeaway food, lab-analysed",10.32,5.34,9.0,16.8,12.9,True,2.55,24.8,safefood 2015 (batter coating uptake on lean poultry)
+Meat Samosa,"UK CoFID 2021 (Aspland & James 1997, Food code 19-326, n=10)","Indian restaurants takeaway, lab-analysed",17.3,3.8,15.2,25.1,20.2,True,2.87,16.6,Aspland & James 1997 / USDA deep-fried turnover factors
+Vegetable Samosa (Retail),"UK CoFID 2021 (LGC 1989-1990, Food code 15-305, n=5)","Retail brands, lab-analysed",9.3,2.1,8.4,15.3,11.9,True,2.55,27.4,LGC 1990 retail baked/flash-fried samosa
+Bread Pakora,"Jain, Passi & Selvamurthy 2024 (J Food Sci Technol 61:2185)",Delhi street-food fried snack (fresh cycle),18.1,2.5,15.6,24.2,19.9,True,1.8,9.9,Jain & Passi 2024 (bread crumb high porosity absorption)
+Mathri,"Jain, Passi & Selvamurthy 2024 (J Food Sci Technol 61:2185)",Traditional fried pastry snack (fresh cycle),21.8,1.9,27.6,39.2,33.4,False,11.6,53.2,Jain & Passi 2024 / NIN Indian Recipes

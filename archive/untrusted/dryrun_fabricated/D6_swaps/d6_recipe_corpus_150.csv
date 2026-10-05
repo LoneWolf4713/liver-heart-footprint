@@ -1,0 +1,151 @@
+recipe_id,dish,recipe_variant,ingredients,butter_g_serv,cream_g_serv,ghee_g_serv,oil_g_serv,sugar_g_serv,maida_g_serv
+pan_1,paneer butter masala,Paneer Butter Masala Recipe #1,butter|cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,34.0,22.0,0.0,13.7,0.0,0.0
+pan_2,paneer butter masala,Paneer Butter Masala Recipe #2,butter|chilli|coriander|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tofu|tomato|turmeric,15.4,0.0,0.0,6.8,0.0,0.0
+pan_3,paneer butter masala,Paneer Butter Masala Recipe #3,butter|cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|onion|paneer|salt|tomato|turmeric,15.1,20.5,0.0,0.0,0.0,0.0
+pan_4,paneer butter masala,Paneer Butter Masala Recipe #4,butter|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,25.3,10.9,0.0,5.7,0.0,0.0
+pan_5,paneer butter masala,Paneer Butter Masala Recipe #5,cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,0.0,16.1,0.0,6.2,0.0,0.0
+pan_6,paneer butter masala,Paneer Butter Masala Recipe #6,butter|cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,33.2,23.3,0.0,6.8,0.0,0.0
+pan_7,paneer butter masala,Paneer Butter Masala Recipe #7,butter|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tofu|tomato|turmeric,33.8,22.0,0.0,7.0,0.0,0.0
+pan_8,paneer butter masala,Paneer Butter Masala Recipe #8,butter|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,29.9,21.7,0.0,7.8,0.0,0.0
+pan_9,paneer butter masala,Paneer Butter Masala Recipe #9,butter|cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,15.3,17.9,0.0,12.1,0.0,0.0
+pan_10,paneer butter masala,Paneer Butter Masala Recipe #10,butter|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,33.5,28.3,0.0,6.0,0.0,0.0
+pan_11,paneer butter masala,Paneer Butter Masala Recipe #11,butter|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,28.3,15.5,0.0,14.7,0.0,0.0
+pan_12,paneer butter masala,Paneer Butter Masala Recipe #12,butter|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tofu|tomato|turmeric,19.7,10.8,0.0,9.4,0.0,0.0
+pan_13,paneer butter masala,Paneer Butter Masala Recipe #13,butter|cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|milk|oil|onion|paneer|salt|tomato|turmeric,21.3,28.2,0.0,7.3,0.0,0.0
+pan_14,paneer butter masala,Paneer Butter Masala Recipe #14,butter|cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,32.6,15.9,0.0,9.2,0.0,0.0
+pan_15,paneer butter masala,Paneer Butter Masala Recipe #15,butter|cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,17.4,28.1,0.0,8.5,0.0,0.0
+pan_16,paneer butter masala,Paneer Butter Masala Recipe #16,butter|cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,25.7,23.8,0.0,7.2,0.0,0.0
+pan_17,paneer butter masala,Paneer Butter Masala Recipe #17,butter|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,16.3,14.9,0.0,6.5,0.0,0.0
+pan_18,paneer butter masala,Paneer Butter Masala Recipe #18,butter|cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,34.5,10.7,0.0,10.3,0.0,0.0
+pan_19,paneer butter masala,Paneer Butter Masala Recipe #19,butter|cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,26.9,17.4,0.0,14.8,0.0,0.0
+pan_20,paneer butter masala,Paneer Butter Masala Recipe #20,butter|cashew|chilli|coriander|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,31.0,0.0,0.0,8.3,0.0,0.0
+pan_21,paneer butter masala,Paneer Butter Masala Recipe #21,butter|cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|milk|oil|onion|paneer|salt|tomato|turmeric,27.9,23.8,0.0,8.4,0.0,0.0
+pan_22,paneer butter masala,Paneer Butter Masala Recipe #22,butter|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,28.9,13.5,0.0,7.6,0.0,0.0
+pan_23,paneer butter masala,Paneer Butter Masala Recipe #23,cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,0.0,27.7,0.0,13.5,0.0,0.0
+pan_24,paneer butter masala,Paneer Butter Masala Recipe #24,butter|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,32.8,28.7,0.0,10.8,0.0,0.0
+pan_25,paneer butter masala,Paneer Butter Masala Recipe #25,cashew|chilli|coriander|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,0.0,0.0,0.0,9.5,0.0,0.0
+pan_26,paneer butter masala,Paneer Butter Masala Recipe #26,butter|cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,15.4,13.6,0.0,8.1,0.0,0.0
+pan_27,paneer butter masala,Paneer Butter Masala Recipe #27,butter|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,27.7,21.8,0.0,14.1,0.0,0.0
+pan_28,paneer butter masala,Paneer Butter Masala Recipe #28,butter|cashew|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tofu|tomato|turmeric,27.9,27.3,0.0,12.7,0.0,0.0
+pan_29,paneer butter masala,Paneer Butter Masala Recipe #29,chilli|coriander|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,0.0,0.0,0.0,5.2,0.0,0.0
+pan_30,paneer butter masala,Paneer Butter Masala Recipe #30,butter|chilli|coriander|cumin|garam masala|garlic|ginger|oil|onion|paneer|salt|tomato|turmeric,34.3,0.0,0.0,8.9,0.0,0.0
+dal_1,dal makhani,Dal Makhani Recipe #1,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,13.4,24.0,10.7,6.2,0.0,0.0
+dal_2,dal makhani,Dal Makhani Recipe #2,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,20.4,21.1,12.0,2.9,0.0,0.0
+dal_3,dal makhani,Dal Makhani Recipe #3,butter|chilli|coriander|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,27.3,0.0,10.0,6.5,0.0,0.0
+dal_4,dal makhani,Dal Makhani Recipe #4,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,27.8,15.6,10.8,4.7,0.0,0.0
+dal_5,dal makhani,Dal Makhani Recipe #5,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,21.8,10.6,8.6,5.2,0.0,0.0
+dal_6,dal makhani,Dal Makhani Recipe #6,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,22.5,10.8,10.4,7.3,0.0,0.0
+dal_7,dal makhani,Dal Makhani Recipe #7,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,16.5,14.1,5.8,9.6,0.0,0.0
+dal_8,dal makhani,Dal Makhani Recipe #8,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,18.2,12.3,10.5,6.6,0.0,0.0
+dal_9,dal makhani,Dal Makhani Recipe #9,chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,0.0,18.3,9.2,3.6,0.0,0.0
+dal_10,dal makhani,Dal Makhani Recipe #10,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,12.3,10.6,12.0,1.0,0.0,0.0
+dal_11,dal makhani,Dal Makhani Recipe #11,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,13.5,16.0,11.4,3.7,0.0,0.0
+dal_12,dal makhani,Dal Makhani Recipe #12,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,27.1,12.4,11.4,5.9,0.0,0.0
+dal_13,dal makhani,Dal Makhani Recipe #13,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,17.8,16.9,14.4,9.6,0.0,0.0
+dal_14,dal makhani,Dal Makhani Recipe #14,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,11.4,10.3,11.8,3.2,0.0,0.0
+dal_15,dal makhani,Dal Makhani Recipe #15,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,26.3,11.8,11.3,7.4,0.0,0.0
+dal_16,dal makhani,Dal Makhani Recipe #16,butter|chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|rajma|salt|tomato|urad dal,13.5,22.1,0.0,3.7,0.0,0.0
+dal_17,dal makhani,Dal Makhani Recipe #17,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,28.6,16.4,12.5,9.0,0.0,0.0
+dal_18,dal makhani,Dal Makhani Recipe #18,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,16.4,15.8,14.1,3.2,0.0,0.0
+dal_19,dal makhani,Dal Makhani Recipe #19,chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,0.0,19.5,7.9,6.7,0.0,0.0
+dal_20,dal makhani,Dal Makhani Recipe #20,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,25.8,17.4,10.5,8.9,0.0,0.0
+dal_21,dal makhani,Dal Makhani Recipe #21,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,12.9,19.3,5.8,0.7,0.0,0.0
+dal_22,dal makhani,Dal Makhani Recipe #22,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,11.6,24.8,8.7,9.5,0.0,0.0
+dal_23,dal makhani,Dal Makhani Recipe #23,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|milk|onion|rajma|salt|tomato|urad dal,17.5,21.7,9.2,0.0,0.0,0.0
+dal_24,dal makhani,Dal Makhani Recipe #24,butter|chilli|coriander|cumin|curd|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,18.1,0.0,13.2,6.8,0.0,0.0
+dal_25,dal makhani,Dal Makhani Recipe #25,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,27.4,24.4,14.7,8.9,0.0,0.0
+dal_26,dal makhani,Dal Makhani Recipe #26,chilli|coriander|cream|cumin|garam masala|garlic|ginger|oil|onion|rajma|salt|tomato|urad dal,0.0,18.3,0.0,6.3,0.0,0.0
+dal_27,dal makhani,Dal Makhani Recipe #27,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|onion|rajma|salt|tomato|urad dal,22.6,23.5,7.8,0.0,0.0,0.0
+dal_28,dal makhani,Dal Makhani Recipe #28,butter|chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,22.4,12.8,8.5,0.8,0.0,0.0
+dal_29,dal makhani,Dal Makhani Recipe #29,chilli|coriander|cream|cumin|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,0.0,18.0,13.1,1.6,0.0,0.0
+dal_30,dal makhani,Dal Makhani Recipe #30,butter|chilli|coriander|cream|cumin|curd|garam masala|garlic|ghee|ginger|oil|onion|rajma|salt|tomato|urad dal,29.0,19.2,14.3,0.5,0.0,0.0
+cho_1,chole,Chole Recipe #1,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,8.3,0.0,9.0,24.7,0.0,0.0
+cho_2,chole,Chole Recipe #2,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,6.9,0.0,0.2,8.6,0.0,0.0
+cho_3,chole,Chole Recipe #3,amchur|butter|chana|chilli|chole masala|coriander|cumin|curd|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,3.8,0.0,8.7,23.5,0.0,0.0
+cho_4,chole,Chole Recipe #4,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,6.2,0.0,2.7,24.2,0.0,0.0
+cho_5,chole,Chole Recipe #5,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,8.5,0.0,9.3,19.4,0.0,0.0
+cho_6,chole,Chole Recipe #6,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,7.6,0.0,1.6,22.9,0.0,0.0
+cho_7,chole,Chole Recipe #7,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,5.9,0.0,0.2,11.6,0.0,0.0
+cho_8,chole,Chole Recipe #8,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,4.0,0.0,6.2,23.4,0.0,0.0
+cho_9,chole,Chole Recipe #9,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,2.6,0.0,11.1,24.1,0.0,0.0
+cho_10,chole,Chole Recipe #10,amchur|butter|chana|chilli|chole masala|coriander|cumin|curd|garlic|ghee|ginger|onion|salt|tea leaves|tomato,2.4,0.0,3.9,0.0,0.0,0.0
+cho_11,chole,Chole Recipe #11,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,7.0,0.0,8.4,17.9,0.0,0.0
+cho_12,chole,Chole Recipe #12,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ginger|oil|onion|salt|tea leaves|tomato,2.2,0.0,0.0,16.8,0.0,0.0
+cho_13,chole,Chole Recipe #13,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,3.6,0.0,6.6,13.9,0.0,0.0
+cho_14,chole,Chole Recipe #14,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,6.9,0.0,1.1,13.6,0.0,0.0
+cho_15,chole,Chole Recipe #15,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,6.0,0.0,10.4,14.4,0.0,0.0
+cho_16,chole,Chole Recipe #16,amchur|butter|chana|chilli|chole masala|coriander|cumin|curd|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,7.2,0.0,9.1,23.7,0.0,0.0
+cho_17,chole,Chole Recipe #17,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,1.1,0.0,6.1,20.1,0.0,0.0
+cho_18,chole,Chole Recipe #18,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|mustard oil|oil|onion|salt|tea leaves|tomato,3.2,0.0,4.5,12.1,0.0,0.0
+cho_19,chole,Chole Recipe #19,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,6.5,0.0,5.7,12.0,0.0,0.0
+cho_20,chole,Chole Recipe #20,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,3.8,0.0,7.0,20.5,0.0,0.0
+cho_21,chole,Chole Recipe #21,amchur|butter|chana|chilli|chole masala|coriander|cumin|curd|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,9.3,0.0,6.0,18.3,0.0,0.0
+cho_22,chole,Chole Recipe #22,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,1.7,0.0,2.2,12.2,0.0,0.0
+cho_23,chole,Chole Recipe #23,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,4.0,0.0,11.8,16.9,0.0,0.0
+cho_24,chole,Chole Recipe #24,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,9.3,0.0,2.1,21.9,0.0,0.0
+cho_25,chole,Chole Recipe #25,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,4.3,0.0,2.2,12.8,0.0,0.0
+cho_26,chole,Chole Recipe #26,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,1.5,0.0,3.5,10.0,0.0,0.0
+cho_27,chole,Chole Recipe #27,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,9.9,0.0,1.6,8.9,0.0,0.0
+cho_28,chole,Chole Recipe #28,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,4.7,0.0,9.1,12.3,0.0,0.0
+cho_29,chole,Chole Recipe #29,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,7.3,0.0,11.6,23.8,0.0,0.0
+cho_30,chole,Chole Recipe #30,amchur|butter|chana|chilli|chole masala|coriander|cumin|garlic|ghee|ginger|oil|onion|salt|tea leaves|tomato,1.4,0.0,6.9,9.1,0.0,0.0
+gaj_1,gajar ka halwa,Gajar Ka Halwa Recipe #1,almond|cardamom|carrot|ghee|milk|salt|sugar,0.0,0.0,12.9,0.0,40.4,0.0
+gaj_2,gajar ka halwa,Gajar Ka Halwa Recipe #2,almond|cardamom|carrot|ghee|khoya|milk|salt|sugar,0.0,0.0,17.9,0.0,31.6,0.0
+gaj_3,gajar ka halwa,Gajar Ka Halwa Recipe #3,almond|cardamom|carrot|ghee|milk|salt|sugar,0.0,0.0,26.3,0.0,22.9,0.0
+gaj_4,gajar ka halwa,Gajar Ka Halwa Recipe #4,almond|cardamom|carrot|cashew|ghee|khoya|milk|salt|sugar,0.0,0.0,19.6,0.0,39.7,0.0
+gaj_5,gajar ka halwa,Gajar Ka Halwa Recipe #5,cardamom|carrot|cashew|ghee|jaggery|milk|salt,0.0,0.0,16.2,0.0,0.0,0.0
+gaj_6,gajar ka halwa,Gajar Ka Halwa Recipe #6,cardamom|carrot|ghee|milk|salt|sugar,0.0,0.0,10.2,0.0,34.1,0.0
+gaj_7,gajar ka halwa,Gajar Ka Halwa Recipe #7,almond|cardamom|carrot|ghee|milk|salt|sugar,0.0,0.0,14.1,0.0,27.2,0.0
+gaj_8,gajar ka halwa,Gajar Ka Halwa Recipe #8,cardamom|carrot|cashew|ghee|milk|salt|sugar,0.0,0.0,20.7,0.0,43.0,0.0
+gaj_9,gajar ka halwa,Gajar Ka Halwa Recipe #9,almond|cardamom|carrot|cashew|ghee|milk|salt|sugar,0.0,0.0,11.4,0.0,41.0,0.0
+gaj_10,gajar ka halwa,Gajar Ka Halwa Recipe #10,cardamom|carrot|cashew|condensed milk|ghee|khoya|milk|salt|sugar,0.0,0.0,15.6,0.0,35.2,0.0
+gaj_11,gajar ka halwa,Gajar Ka Halwa Recipe #11,almond|cardamom|carrot|condensed milk|ghee|milk|salt|sugar,0.0,0.0,26.6,0.0,28.7,0.0
+gaj_12,gajar ka halwa,Gajar Ka Halwa Recipe #12,almond|cardamom|carrot|cashew|ghee|milk|salt|sugar,0.0,0.0,13.0,0.0,27.8,0.0
+gaj_13,gajar ka halwa,Gajar Ka Halwa Recipe #13,cardamom|carrot|cashew|ghee|khoya|milk|salt|sugar,0.0,0.0,20.0,0.0,33.4,0.0
+gaj_14,gajar ka halwa,Gajar Ka Halwa Recipe #14,almond|cardamom|carrot|ghee|milk|salt|sugar,0.0,0.0,18.4,0.0,29.4,0.0
+gaj_15,gajar ka halwa,Gajar Ka Halwa Recipe #15,almond|cardamom|carrot|cashew|ghee|khoya|milk|salt|sugar,0.0,0.0,18.7,0.0,39.1,0.0
+gaj_16,gajar ka halwa,Gajar Ka Halwa Recipe #16,almond|cardamom|carrot|ghee|milk|salt|sugar,0.0,0.0,27.6,0.0,41.7,0.0
+gaj_17,gajar ka halwa,Gajar Ka Halwa Recipe #17,cardamom|carrot|ghee|milk|salt|sugar,0.0,0.0,16.1,0.0,42.2,0.0
+gaj_18,gajar ka halwa,Gajar Ka Halwa Recipe #18,cardamom|carrot|cashew|ghee|khoya|milk|salt|sugar,0.0,0.0,24.5,0.0,43.6,0.0
+gaj_19,gajar ka halwa,Gajar Ka Halwa Recipe #19,cardamom|carrot|ghee|milk|salt|sugar,0.0,0.0,12.2,0.0,36.1,0.0
+gaj_20,gajar ka halwa,Gajar Ka Halwa Recipe #20,almond|cardamom|carrot|cashew|ghee|khoya|milk|salt|sugar,0.0,0.0,16.5,0.0,40.8,0.0
+gaj_21,gajar ka halwa,Gajar Ka Halwa Recipe #21,cardamom|carrot|ghee|khoya|milk|salt|sugar,0.0,0.0,20.2,0.0,31.8,0.0
+gaj_22,gajar ka halwa,Gajar Ka Halwa Recipe #22,cardamom|carrot|ghee|khoya|milk|salt|sugar,0.0,0.0,13.9,0.0,30.5,0.0
+gaj_23,gajar ka halwa,Gajar Ka Halwa Recipe #23,cardamom|carrot|condensed milk|ghee|milk|salt|sugar,0.0,0.0,24.7,0.0,21.7,0.0
+gaj_24,gajar ka halwa,Gajar Ka Halwa Recipe #24,almond|cardamom|carrot|ghee|milk|salt|sugar,0.0,0.0,26.2,0.0,34.9,0.0
+gaj_25,gajar ka halwa,Gajar Ka Halwa Recipe #25,almond|cardamom|carrot|cashew|ghee|milk|salt|sugar,0.0,0.0,19.3,0.0,24.2,0.0
+gaj_26,gajar ka halwa,Gajar Ka Halwa Recipe #26,cardamom|carrot|ghee|milk|salt|sugar,0.0,0.0,22.9,0.0,34.2,0.0
+gaj_27,gajar ka halwa,Gajar Ka Halwa Recipe #27,almond|cardamom|carrot|ghee|jaggery|khoya|milk|salt,0.0,0.0,10.6,0.0,0.0,0.0
+gaj_28,gajar ka halwa,Gajar Ka Halwa Recipe #28,almond|cardamom|carrot|cashew|ghee|khoya|milk|salt|sugar,0.0,0.0,22.7,0.0,31.5,0.0
+gaj_29,gajar ka halwa,Gajar Ka Halwa Recipe #29,cardamom|carrot|cashew|ghee|milk|salt|sugar,0.0,0.0,27.3,0.0,37.3,0.0
+gaj_30,gajar ka halwa,Gajar Ka Halwa Recipe #30,cardamom|carrot|condensed milk|ghee|milk|salt|sugar,0.0,0.0,23.0,0.0,44.5,0.0
+sam_1,samosa,Samosa Recipe #1,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|peas|potato|salt,0.0,0.0,8.5,0.0,0.0,39.1
+sam_2,samosa,Samosa Recipe #2,amchur|chilli|coriander|cumin|garam masala|ginger|maida|oil|peas|potato|salt,0.0,0.0,0.0,23.9,0.0,38.9
+sam_3,samosa,Samosa Recipe #3,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,0.6,14.8,0.0,42.2
+sam_4,samosa,Samosa Recipe #4,amchur|atta|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,10.9,20.4,0.0,27.4
+sam_5,samosa,Samosa Recipe #5,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,13.1,17.8,0.0,38.2
+sam_6,samosa,Samosa Recipe #6,amchur|besan|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,14.0,12.8,0.0,44.8
+sam_7,samosa,Samosa Recipe #7,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,13.1,17.2,0.0,40.3
+sam_8,samosa,Samosa Recipe #8,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,1.7,21.1,0.0,33.4
+sam_9,samosa,Samosa Recipe #9,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,14.8,10.6,0.0,30.9
+sam_10,samosa,Samosa Recipe #10,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,1.3,24.2,0.0,38.6
+sam_11,samosa,Samosa Recipe #11,amchur|besan|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,14.9,19.2,0.0,43.9
+sam_12,samosa,Samosa Recipe #12,amchur|besan|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,5.8,11.8,0.0,29.6
+sam_13,samosa,Samosa Recipe #13,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,13.9,24.5,0.0,32.0
+sam_14,samosa,Samosa Recipe #14,amchur|besan|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,12.2,20.4,0.0,32.9
+sam_15,samosa,Samosa Recipe #15,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,5.9,22.9,0.0,25.7
+sam_16,samosa,Samosa Recipe #16,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,14.0,10.5,0.0,25.9
+sam_17,samosa,Samosa Recipe #17,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,8.0,20.4,0.0,30.1
+sam_18,samosa,Samosa Recipe #18,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|peas|potato|salt,0.0,0.0,13.2,0.0,0.0,42.9
+sam_19,samosa,Samosa Recipe #19,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,11.0,18.2,0.0,36.4
+sam_20,samosa,Samosa Recipe #20,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,3.6,12.4,0.0,29.9
+sam_21,samosa,Samosa Recipe #21,amchur|chilli|coriander|cumin|garam masala|ginger|maida|oil|peas|potato|salt,0.0,0.0,0.0,23.2,0.0,39.0
+sam_22,samosa,Samosa Recipe #22,amchur|besan|chilli|coriander|cumin|garam masala|ginger|maida|oil|peas|potato|salt,0.0,0.0,0.0,13.4,0.0,25.1
+sam_23,samosa,Samosa Recipe #23,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,14.7,14.3,0.0,35.1
+sam_24,samosa,Samosa Recipe #24,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,11.4,21.7,0.0,37.7
+sam_25,samosa,Samosa Recipe #25,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,14.1,24.0,0.0,31.8
+sam_26,samosa,Samosa Recipe #26,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,5.2,11.0,0.0,31.0
+sam_27,samosa,Samosa Recipe #27,amchur|chilli|coriander|cumin|garam masala|ginger|maida|peas|potato|salt,0.0,0.0,0.0,0.0,0.0,42.4
+sam_28,samosa,Samosa Recipe #28,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,7.3,10.3,0.0,40.2
+sam_29,samosa,Samosa Recipe #29,amchur|atta|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,6.8,25.0,0.0,33.9
+sam_30,samosa,Samosa Recipe #30,amchur|chilli|coriander|cumin|garam masala|ghee|ginger|maida|oil|peas|potato|salt,0.0,0.0,13.0,13.5,0.0,41.8

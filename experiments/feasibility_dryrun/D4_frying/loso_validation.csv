@@ -1,0 +1,55 @@
+held_out_source,item,category,actual_fat_g_100g,pred_p10,pred_p90,pred_median,in_range,abs_error_from_median,range_width
+Chen 2009,Puri (White flour),flat dough,22.1,13.44,21.85,18.36,False,3.74,8.41
+Chen 2009,Puri (Wholemeal flour),flat dough,15.6,13.44,21.85,18.36,True,2.76,8.41
+Gaikwad 2022,Fried Papad (Control sun-dried),crisp namkeen,11.4,22.13,39.53,33.95,False,22.55,17.4
+Gaikwad 2022,Fried Papad (MAHD dried),crisp namkeen,7.9,22.13,39.53,33.95,False,26.05,17.4
+Gupta 2016,Samosa,stuffed pastry,29.62,9.1,25.82,12.4,False,17.22,16.72
+Gupta 2016,Samosa,stuffed pastry,29.19,9.1,25.82,12.4,False,16.79,16.72
+Gupta 2016,Kachori,stuffed pastry,31.99,9.1,25.82,12.4,False,19.59,16.72
+Gupta 2016,Kachori,stuffed pastry,46.61,9.1,25.82,12.4,False,34.21,16.72
+Gupta 2016,Bread Pakora,battered fritter,47.6,11.2,22.66,19.6,False,28.0,11.46
+Gupta 2016,Bread Pakora,battered fritter,26.4,11.2,22.66,19.6,False,6.8,11.46
+Gupta 2016,Pakoras,battered fritter,30.59,11.2,22.66,19.6,False,10.99,11.46
+Gupta 2016,Aloo Tikki,other,27.41,9.5,30.22,19.6,True,7.81,20.72
+Gupta 2016,Bhatura,flat dough,10.0,16.24,22.2,19.26,False,9.26,5.96
+Gupta 2016,Bhatura,flat dough,19.6,16.24,22.2,19.26,True,0.34,5.96
+Gupta 2016,Mathri,crisp namkeen,57.18,10.0,35.26,25.1,False,32.08,25.26
+Gupta 2016,Mathri,crisp namkeen,38.5,10.0,35.26,25.1,False,13.4,25.26
+Gupta 2016,Namakpara,crisp namkeen,35.0,10.0,35.26,25.1,True,9.9,25.26
+Gupta 2016,Chakri,crisp namkeen,36.79,10.0,35.26,25.1,False,11.69,25.26
+Gupta 2016,Bhujia,crisp namkeen,39.61,10.0,35.26,25.1,False,14.51,25.26
+Gupta 2016,Moong Dal Fried,crisp namkeen,17.81,10.0,35.26,25.1,True,7.29,25.26
+Gupta 2016,Moong Dal Fried,crisp namkeen,27.39,10.0,35.26,25.1,True,2.29,25.26
+Gupta 2016,Boondi Ladoo,syrup-soaked sweet,14.59,15.68,22.72,19.2,False,4.61,7.04
+Gupta 2016,Besan Ladoo,syrup-soaked sweet,23.79,15.68,22.72,19.2,False,4.59,7.04
+Gupta 2016,Soan Papdi,syrup-soaked sweet,39.0,15.68,22.72,19.2,False,19.8,7.04
+Gupta 2016,Soan Papdi,syrup-soaked sweet,20.2,15.68,22.72,19.2,True,1.0,7.04
+Jain 2024,Bread Pakora,battered fritter,18.1,12.07,28.91,22.2,True,4.1,16.84
+Jain 2024,Mathri,crisp namkeen,21.8,12.68,39.45,32.9,True,11.1,26.77
+Jain 2024,Poori,flat dough,16.88,13.36,22.18,19.6,True,2.72,8.82
+Neethu 2025,Pantoa / Gulab Jamun (Ghee),syrup-soaked sweet,14.8,16.27,34.44,21.99,False,7.19,18.16
+Neethu 2025,Pantoa / Gulab Jamun (Sunflower oil),syrup-soaked sweet,23.6,16.27,34.44,21.99,True,1.61,18.16
+Sakhale 2011,Samosa (Control),stuffed pastry,12.4,14.1,37.84,29.62,False,17.22,23.74
+Sakhale 2011,Samosa (Modified casing),stuffed pastry,8.97,14.1,37.84,29.62,False,20.65,23.74
+UK CoFID 2021,Onion Pakora / Bhaji,battered fritter,14.7,13.65,39.09,22.25,True,7.55,25.45
+UK CoFID 2021,Aubergine Pakora,battered fritter,22.5,13.65,39.09,22.25,True,0.25,25.45
+UK CoFID 2021,Cauliflower Pakora,battered fritter,23.9,13.65,39.09,22.25,True,1.65,25.45
+UK CoFID 2021,Potato Cauliflower Pakora,battered fritter,22.3,13.65,39.09,22.25,True,0.05,25.45
+UK CoFID 2021,Potato Carrot Pea Pakora,battered fritter,22.7,13.65,39.09,22.25,True,0.45,25.45
+UK CoFID 2021,Potato Pakora,battered fritter,19.6,13.65,39.09,22.25,True,2.65,25.45
+UK CoFID 2021,Spinach Pakora,battered fritter,22.2,13.65,39.09,22.25,True,0.05,25.45
+UK CoFID 2021,Vegetable Pakora Takeaway,battered fritter,22.0,13.65,39.09,22.25,True,0.25,25.45
+UK CoFID 2021,Vegetable Pakora Retail,battered fritter,14.7,13.65,39.09,22.25,True,7.55,25.45
+UK CoFID 2021,Pakoras Homemade,battered fritter,8.1,13.65,39.09,22.25,False,14.15,25.45
+UK CoFID 2021,Samosa Meat Takeaway,stuffed pastry,17.3,10.69,39.3,29.41,True,12.11,28.61
+UK CoFID 2021,Samosa Lamb Deep Fried,stuffed pastry,31.5,10.69,39.3,29.41,True,2.09,28.61
+UK CoFID 2021,Samosa Vegetable Retail,stuffed pastry,9.3,10.69,39.3,29.41,False,20.11,28.61
+UK CoFID 2021,Puri,flat dough,22.3,13.36,21.68,17.12,False,5.18,8.32
+UK CoFID 2021,Papadums Takeaway,crisp namkeen,38.8,11.05,41.37,31.2,True,7.6,30.32
+UK CoFID 2021,Sev / Ganthia,crisp namkeen,25.1,11.05,41.37,31.2,True,6.09,30.32
+UK CoFID 2021,Chevda,crisp namkeen,31.8,11.05,41.37,31.2,True,0.61,30.32
+UK CoFID 2021,Bombay Mix,crisp namkeen,32.9,11.05,41.37,31.2,True,1.7,30.32
+Yadav 2012,Poori (Control),flat dough,21.4,12.8,22.2,18.24,True,3.16,9.4
+Yadav 2012,Poori (Fibre added),flat dough,17.12,12.8,22.2,18.24,True,1.12,9.4
+safefood 2015,Onion Pakora / Bhaji,battered fritter,16.98,14.7,29.33,22.25,True,5.27,14.63
+safefood 2015,Chicken Pakora,battered fritter,10.32,14.7,29.33,22.25,False,11.93,14.63

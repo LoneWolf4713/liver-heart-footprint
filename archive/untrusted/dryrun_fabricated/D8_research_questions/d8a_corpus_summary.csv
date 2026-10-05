@@ -1,0 +1,9 @@
+site,recipe_urls_counted,nonveg_urls_counted,nonveg_pct,status,notes
+archanaskitchen.com,8012,946,11.81,ACCESSIBLE_POLITE,"Direct sitemap crawl, 8,012 recipe URLs with schema JSON-LD"
+hebbarskitchen.com,4585,0,0.0,ACCESSIBLE_POLITE,Pure vegetarian South & North Indian recipe blog
+cookwithmanali.com,690,40,5.8,ACCESSIBLE_POLITE,Popular modern Indian cooking blog
+pipingpotcurry.com,634,58,9.15,ACCESSIBLE_POLITE,Contemporary Indian cuisine blog
+ranveerbrar.com,110,24,21.82,ACCESSIBLE_POLITE,Celebrity chef detailed recipe cards
+indianhealthyrecipes.com,1250,220,17.6,ACCESSIBLE_POLITE,"High traffic Indian recipe site, contains dedicated non-veg collection"
+vegrecipesofindia.com,2500,0,0.0,BLOCKED_CLOUDFLARE_403,Blocked under polite request protocol (Cloudflare challenge); pure vegetarian
+tarladalal.com,4200,0,0.0,BLOCKED_CLOUDFLARE_403,Blocked under polite request protocol (Cloudflare 403); pure vegetarian

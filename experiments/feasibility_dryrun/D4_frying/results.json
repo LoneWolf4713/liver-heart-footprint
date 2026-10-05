@@ -1,0 +1,250 @@
+{
+  "test": "D4_frying_model",
+  "dataset": {
+    "total_lab_samples_compiled": 69,
+    "soxhlet_proximate_samples": 54,
+    "fame_sum_samples": 15,
+    "num_sources": 10,
+    "sources": [
+      "Chen 2009",
+      "Gaikwad 2022",
+      "Gupta 2016",
+      "Jain 2024",
+      "Joshee 2019",
+      "Neethu 2025",
+      "Sakhale 2011",
+      "UK CoFID 2021",
+      "Yadav 2012",
+      "safefood 2015"
+    ],
+    "categories": [
+      "battered fritter",
+      "crisp namkeen",
+      "flat dough",
+      "other",
+      "stuffed pastry",
+      "syrup-soaked sweet"
+    ]
+  },
+  "within_dish_variation": {
+    "Samosa": {
+      "n": 7,
+      "min": 8.97,
+      "max": 31.5,
+      "median": 17.3,
+      "ratio_max_min": 3.51,
+      "details": [
+        {
+          "source": "Gupta 2016",
+          "setting": "street",
+          "fat": 29.62
+        },
+        {
+          "source": "Gupta 2016",
+          "setting": "street",
+          "fat": 29.19
+        },
+        {
+          "source": "UK CoFID 2021",
+          "setting": "restaurant-takeaway",
+          "fat": 17.3
+        },
+        {
+          "source": "UK CoFID 2021",
+          "setting": "home",
+          "fat": 31.5
+        },
+        {
+          "source": "UK CoFID 2021",
+          "setting": "retail-packaged",
+          "fat": 9.3
+        },
+        {
+          "source": "Sakhale 2011",
+          "setting": "lab-controlled",
+          "fat": 12.4
+        },
+        {
+          "source": "Sakhale 2011",
+          "setting": "lab-controlled",
+          "fat": 8.97
+        }
+      ]
+    },
+    "Pakora / Bhaji": {
+      "n": 16,
+      "min": 8.1,
+      "max": 47.6,
+      "median": 22.1,
+      "ratio_max_min": 5.88,
+      "details": [
+        {
+          "source": "Gupta 2016",
+          "setting": "street",
+          "fat": 47.6
+        },
+        {
+          "source": "Gupta 2016",
+          "setting": "street",
+          "fat": 26.4
+        },
+        {
+          "source": "Gupta 2016",
+          "setting": "street",
+          "fat": 30.59
+        },
+        {
+          "source": "UK CoFID 2021",
+          "setting": "home",
+          "fat": 14.7
+        },
+        {
+          "source": "UK CoFID 2021",
+          "setting": "home",
+          "fat": 22.5
+        },
+        {
+          "source": "UK CoFID 2021",
+          "setting": "home",
+          "fat": 23.9
+        },
+        {
+          "source": "UK CoFID 2021",
+          "setting": "home",
+          "fat": 22.3
+        },
+        {
+          "source": "UK CoFID 2021",
+          "setting": "home",
+          "fat": 22.7
+        },
+        {
+          "source": "UK CoFID 2021",
+          "setting": "home",
+          "fat": 19.6
+        },
+        {
+          "source": "UK CoFID 2021",
+          "setting": "home",
+          "fat": 22.2
+        },
+        {
+          "source": "UK CoFID 2021",
+          "setting": "restaurant-takeaway",
+          "fat": 22.0
+        },
+        {
+          "source": "UK CoFID 2021",
+          "setting": "retail-packaged",
+          "fat": 14.7
+        },
+        {
+          "source": "UK CoFID 2021",
+          "setting": "home",
+          "fat": 8.1
+        },
+        {
+          "source": "safefood 2015",
+          "setting": "restaurant-takeaway",
+          "fat": 16.98
+        },
+        {
+          "source": "safefood 2015",
+          "setting": "restaurant-takeaway",
+          "fat": 10.32
+        },
+        {
+          "source": "Jain 2024",
+          "setting": "street",
+          "fat": 18.1
+        }
+      ]
+    },
+    "Mathri": {
+      "n": 3,
+      "min": 21.8,
+      "max": 57.18,
+      "median": 38.5,
+      "ratio_max_min": 2.62,
+      "details": [
+        {
+          "source": "Gupta 2016",
+          "setting": "street",
+          "fat": 57.18
+        },
+        {
+          "source": "Gupta 2016",
+          "setting": "street",
+          "fat": 38.5
+        },
+        {
+          "source": "Jain 2024",
+          "setting": "street",
+          "fat": 21.8
+        }
+      ]
+    },
+    "Puri / Poori": {
+      "n": 6,
+      "min": 15.6,
+      "max": 22.3,
+      "median": 19.26,
+      "ratio_max_min": 1.43,
+      "details": [
+        {
+          "source": "UK CoFID 2021",
+          "setting": "home",
+          "fat": 22.3
+        },
+        {
+          "source": "Chen 2009",
+          "setting": "lab-controlled",
+          "fat": 22.1
+        },
+        {
+          "source": "Chen 2009",
+          "setting": "lab-controlled",
+          "fat": 15.6
+        },
+        {
+          "source": "Jain 2024",
+          "setting": "lab-controlled",
+          "fat": 16.88
+        },
+        {
+          "source": "Yadav 2012",
+          "setting": "lab-controlled",
+          "fat": 21.4
+        },
+        {
+          "source": "Yadav 2012",
+          "setting": "lab-controlled",
+          "fat": 17.12
+        }
+      ]
+    }
+  },
+  "leave_one_source_out_evaluation": {
+    "methodology": "Trained empirical 10th-90th percentile model on N-1 sources, tested on held-out source (Soxhlet/proximate data)",
+    "total_heldout_evaluated": 54,
+    "covered_within_predicted_range": 29,
+    "coverage_pct": 53.7,
+    "coverage_numerator": 29,
+    "coverage_denominator": 54,
+    "median_absolute_error_g_100g": 7.24,
+    "mean_range_width_g_100g": 19.35,
+    "pass_criterion": "coverage >= 70% under leave-one-source-out with informative range width",
+    "passed": false
+  },
+  "fame_sum_caution": {
+    "n_fame_samples": 15,
+    "median_fame_fat": 8.08,
+    "median_sox_fat": 22.25,
+    "note": "FAME-sum GC values (Joshee 2019) are systematically ~50-60% lower than Soxhlet/proximate total fat due to extraction/quantification methodology. They are strictly segregated to avoid bias."
+  },
+  "recipe_link_gap": {
+    "dishes_evaluated": 5,
+    "mean_unmodelled_gap_pct": 78.9,
+    "conclusion": "Without the frying uptake model, recipes under-report total fat by an average of 76.5% because cooking oil in the kadhai is never quantified in ingredient lists."
+  }
+}

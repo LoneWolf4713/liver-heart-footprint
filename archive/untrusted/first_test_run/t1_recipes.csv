@@ -1,0 +1,101 @@
+site,dish_id,dish_name,url,has_jsonld,recipe_title,servings,ingredient_count,nutrition_present,is_deep_fried,frying_oil_quantified,fetch_status
+indianhealthyrecipes,paneer_butter_masala,paneer butter masala,https://www.indianhealthyrecipes.com/paneer-butter-masala-restaurant-style/,True,Paneer Butter Masala Recipe,4,21,True,False,False,OK
+indianhealthyrecipes,dal_makhani,dal makhani,https://www.indianhealthyrecipes.com/dal-makhani-recipe/,True,Dal Makhani Recipe (Restaurant Style),4,15,True,False,False,OK
+indianhealthyrecipes,chole,chole chana masala,https://www.indianhealthyrecipes.com/chole/,True,Chole Recipe (Punjabi Chole Masala),4,30,True,False,False,OK
+indianhealthyrecipes,rajma,rajma,https://www.indianhealthyrecipes.com/rajma-recipe-rajma-masala-recipe/,True,Rajma Recipe (Rajma Masala),4,18,True,False,False,OK
+indianhealthyrecipes,aloo_paratha,aloo paratha,https://www.indianhealthyrecipes.com/aloo-paratha/,True,Aloo Paratha Recipe | Potato Stuffed Paratha,8,17,True,False,False,OK
+indianhealthyrecipes,samosa,samosa,https://www.indianhealthyrecipes.com/samosa-recipe-make-samosa/,True,Samosa Recipe (Punjabi Potato Samosa),10,21,True,False,False,OK
+indianhealthyrecipes,onion_pakora,onion pakora onion bhajji,https://www.indianhealthyrecipes.com/crispy-onion-pakoda-pakora-recipe/,True,Onion Pakoda | Onion Pakora,4,11,True,False,False,OK
+indianhealthyrecipes,puri_bhature,puri bhature,https://www.indianhealthyrecipes.com/bhatura/,True,Bhatura Recipe (Instant without Yeast),8,8,True,False,False,OK
+indianhealthyrecipes,pav_bhaji,pav bhaji,https://www.indianhealthyrecipes.com/pav-bhaji-recipe-how-to-make-pav-bhaji-step-by-step-pictures/,True,Pav Bhaji Recipe (Mumbai Street Style),4,24,True,False,False,OK
+indianhealthyrecipes,butter_chicken,butter chicken,https://www.indianhealthyrecipes.com/butter-chicken/,True,Butter Chicken Recipe (Indian Chicken Makhani),4,32,True,False,False,OK
+indianhealthyrecipes,chicken_biryani,chicken biryani,https://www.indianhealthyrecipes.com/chicken-biryani-recipe/,True,Chicken Biryani Recipe,4,27,True,False,False,OK
+indianhealthyrecipes,egg_curry,egg curry,https://www.indianhealthyrecipes.com/punjabi-egg-curry-anda-curry-dhaba-style/,True,Egg Curry Recipe,5,20,True,False,False,OK
+indianhealthyrecipes,gulab_jamun,gulab jamun,https://www.indianhealthyrecipes.com/gulab-jamun-recipe-using-milk-powder/,True,Gulab Jamun Recipe,14,13,True,False,False,OK
+indianhealthyrecipes,gajar_halwa,gajar ka halwa,https://www.indianhealthyrecipes.com/carrot-halwa-recipe-gajar-ka-halwa-recipe/,True,Carrot Halwa Recipe | Gajar ka Halwa,4,7,True,False,False,OK
+indianhealthyrecipes,jalebi,jalebi,https://www.indianhealthyrecipes.com/jalebi-recipe/,True,Jalebi Recipe (Crispy & Juicy),8,14,True,False,False,OK
+indianhealthyrecipes,poha,poha,https://www.indianhealthyrecipes.com/poha-recipe-kanda-batata-poha/,True,Poha Recipe (Indian Breakfast),2,15,True,False,False,OK
+indianhealthyrecipes,masala_dosa,masala dosa,https://www.indianhealthyrecipes.com/masala-dosa-recipe/,True,Masala Dosa Recipe (Restaurant Style),20,24,True,False,False,OK
+indianhealthyrecipes,sambar,sambar,https://www.indianhealthyrecipes.com/sambar-recipe-ubd/,False,,,0,False,False,False,HTTP 404
+indianhealthyrecipes,kheer,rice kheer,https://www.indianhealthyrecipes.com/rice-kheer-recipe-chawal-ki-kheer/,True,Kheer Recipe (Rice Kheer),4,9,True,False,False,OK
+indianhealthyrecipes,aloo_tikki,aloo tikki,https://www.indianhealthyrecipes.com/aloo-tikki-recipe/,True,Aloo Tikki Recipe,6,24,True,False,False,OK
+archanaskitchen,paneer_butter_masala,paneer butter masala,https://www.archanaskitchen.com/recipe/restaurant-style-paneer-butter-masala-recipe-paneer-makhani-recipe,True,Restaurant Style Paneer Butter Masala Recipe | Paneer Makhani Recipe,4,23,False,False,False,OK
+archanaskitchen,dal_makhani,dal makhani,https://www.archanaskitchen.com/recipe/dal-makhani-a-staple-food-of-punjab-region,True,Smoked Dal Makhani Recipe - Dhaba Style ,4,19,False,False,False,OK
+archanaskitchen,chole,chole chana masala,https://www.archanaskitchen.com/recipe/chola-chana-masala-north-indian-spiced-chickpea-curry,True,Punjabi Chana Masala Recipe-North Indian Chole Masala,4,17,False,False,False,OK
+archanaskitchen,rajma,rajma,https://www.archanaskitchen.com/recipe/rajma-masala-rajma-chawal-spiced-red-kidney-beans-curry,True,Punjabi Rajma Masala Recipe - Rajma Chawal/Spiced Red Kidney Beans Curry,4,12,False,False,False,OK
+archanaskitchen,aloo_paratha,aloo paratha,https://www.archanaskitchen.com/recipe/aloo-parathas-spiced-indian-potato-flat-bread,True,Aloo Paratha Recipe - Healthy North Indian Breakfast,4,15,False,False,False,OK
+archanaskitchen,samosa,samosa,https://www.archanaskitchen.com/recipe/samosas-a-spiced-potato-tea-time-snack,True,Punjabi Samosa Recipe - A Spiced Potato Tea Time Snack ,12,19,False,True,False,OK
+archanaskitchen,onion_pakora,onion pakora onion bhajji,https://www.archanaskitchen.com/crispy-onion-pakoda-recipe,False,,,0,False,False,False,HTTP 404
+archanaskitchen,puri_bhature,puri bhature,https://www.archanaskitchen.com/bhatura-recipe,False,,,0,False,False,False,HTTP 404
+archanaskitchen,pav_bhaji,pav bhaji,https://www.archanaskitchen.com/recipe/pav-bhaji-a-delicious-street-food-from-india,True,One Pot Pressure Cooker Pav Bhaji Recipe - Delicious Mumbai Style Street Food ,4,20,False,False,False,OK
+archanaskitchen,butter_chicken,butter chicken,https://www.archanaskitchen.com/recipe/butter-chicken-recipe-classic-indian-chicken-gravy,True,Butter Chicken Recipe - The Classic Indian Chicken Gravy,4,19,False,False,False,OK
+archanaskitchen,chicken_biryani,chicken biryani,https://www.archanaskitchen.com/recipe/calcutta-style-chicken-biryani-recipe,True,Calcutta Style Chicken Biryani Recipe,3-4,18,False,False,False,OK
+archanaskitchen,egg_curry,egg curry,https://www.archanaskitchen.com/recipe/egg-curry-recipe,True,Quick And Simple Egg Curry Recipe,4,14,False,False,False,OK
+archanaskitchen,gulab_jamun,gulab jamun,https://www.archanaskitchen.com/recipe/gulab-jamun-recipe-with-khoya,True,Gulab Jamun Recipe With Khoya,6,9,False,True,False,OK
+archanaskitchen,gajar_halwa,gajar ka halwa,https://www.archanaskitchen.com/recipe/gajjar-halwa-carrot-pudding,True,Gajjar Halwa Recipe | Carrot Halwa | Indian Carrot Pudding ,10,7,False,False,False,OK
+archanaskitchen,jalebi,jalebi,https://www.archanaskitchen.com/recipe/homemade-jalebi,True,How to Make Homemade Jalebi Recipe,4,10,False,True,True,OK
+archanaskitchen,poha,poha,https://www.archanaskitchen.com/collection/15-poha-recipes-from-different-regions-of-india,False,,,0,False,False,False,No Recipe JSON-LD found
+archanaskitchen,masala_dosa,masala dosa,https://www.archanaskitchen.com/recipe/kanchipuram-masala-dosa-recipe,True,Kanchipuram Masala Dosa Recipe With Soya Dosa Batter,12,25,False,False,False,OK
+archanaskitchen,sambar,sambar,https://www.archanaskitchen.com/collection/27-best-sambar-recipes-that-you-can-try-for-your-south-indian-meals,False,,,0,False,False,False,No Recipe JSON-LD found
+archanaskitchen,kheer,rice kheer,https://www.archanaskitchen.com/recipe/thandai-flavored-rice-kheer-recipe,True,Thandai Flavoured Rice Kheer Recipe,4,20,False,False,False,OK
+archanaskitchen,aloo_tikki,aloo tikki,https://www.archanaskitchen.com/recipe/baked-aloo-tikki-spicy-potato-patties-cutlets,True,Aloo Tikki Recipe - Spicy Potato Patties or Cutlets,4,11,False,False,False,OK
+vegrecipesofindia,paneer_butter_masala,paneer butter masala,https://www.vegrecipesofindia.com/paneer-butter-masala/,True,Paneer Butter Masala Recipe,4,21,True,False,False,OK
+vegrecipesofindia,dal_makhani,dal makhani,https://www.vegrecipesofindia.com/dal-makhani-restaurant-style-recipe/,True,Dal Makhani Recipe (Authentic Punjabi Style),4,25,True,False,False,OK
+vegrecipesofindia,chole,chole chana masala,https://www.vegrecipesofindia.com/punjabi-chole-chickpeas-in-a-spicy-gravy/,True,Chole Recipe (Punjabi Chole Masala),5,32,True,False,False,OK
+vegrecipesofindia,rajma,rajma,https://www.vegrecipesofindia.com/rajma-masala-recipe-restaurant-style/,False,,,0,False,False,False,HTTP 403
+vegrecipesofindia,aloo_paratha,aloo paratha,https://www.vegrecipesofindia.com/aloo-paratha-indian-bread-stuffed-with-potato-filling/,True,Aloo Paratha Recipe (Stuffed Potato Paratha),10,14,True,False,False,OK
+vegrecipesofindia,samosa,samosa,https://www.vegrecipesofindia.com/samosa-recipe-punjabi-samosa/,True,Samosa Recipe (Punjabi Aloo Samosa),12,25,True,False,False,OK
+vegrecipesofindia,onion_pakora,onion pakora onion bhajji,https://www.vegrecipesofindia.com/kanda-bhaji-recipe/,True,Kanda Bhaji | Onion Bhaji,2,5,False,False,False,OK
+vegrecipesofindia,puri_bhature,puri bhature,https://www.vegrecipesofindia.com/chole-bhature/,False,,,0,False,False,False,HTTP 403
+vegrecipesofindia,pav_bhaji,pav bhaji,https://www.vegrecipesofindia.com/pav-bhaji-recipe-mumbai-pav-bhaji-a-fastfood-recipe-from-mumbai/,True,Pav Bhaji Recipe,5,24,True,False,False,OK
+vegrecipesofindia,butter_chicken,butter chicken,https://www.vegrecipesofindia.com/paneer-makhani-recipe-paneer-recipes/,True,Paneer Makhani Recipe (Easy &amp; Tasty),3,14,True,False,False,OK
+vegrecipesofindia,chicken_biryani,chicken biryani,https://www.vegrecipesofindia.com/vegetable-biryani/,True,Vegetable Biryani Recipe (Restaurant Style),4,30,True,False,False,OK
+vegrecipesofindia,egg_curry,egg curry,https://www.vegrecipesofindia.com/tofu-bhurji-recipe/,False,,,0,False,False,False,HTTP 404
+vegrecipesofindia,gulab_jamun,gulab jamun,https://www.vegrecipesofindia.com/gulab-jamun-recipe-with-khoya/,True,Gulab Jamun Recipe,20,12,True,False,False,OK
+vegrecipesofindia,gajar_halwa,gajar ka halwa,https://www.vegrecipesofindia.com/gajar-halwa-recipe-gajar-ka-halwa/,True,Gajar Ka Halwa (Traditional Carrot Halwa Recipe),6,9,True,False,False,OK
+vegrecipesofindia,jalebi,jalebi,https://www.vegrecipesofindia.com/jalebi-recipe-how-to-make-jalebi/,True,Jalebi Recipe (Crispy &amp; Fermented),20,10,True,False,False,OK
+vegrecipesofindia,poha,poha,https://www.vegrecipesofindia.com/kanda-poha-or-onion-poha/,True,Poha Recipe (Kanda Poha),3,14,True,False,False,OK
+vegrecipesofindia,masala_dosa,masala dosa,https://www.vegrecipesofindia.com/masala-dosa-recipe-how-to-make-masala-dosa-recipe/,True,Masala Dosa Recipe,20,25,True,False,False,OK
+vegrecipesofindia,sambar,sambar,https://www.vegrecipesofindia.com/sambhar-recipe-a-method-made-easy/,True,Traditional Sambar Recipe,4,21,True,False,False,OK
+vegrecipesofindia,kheer,rice kheer,https://www.vegrecipesofindia.com/rice-kheer-recipe-chawal-ki-kheer/,True,Kheer Recipe (Rice Kheer),5,9,True,False,False,OK
+vegrecipesofindia,aloo_tikki,aloo tikki,https://www.vegrecipesofindia.com/aloo-tikki-recipe-aloo-patties/,False,,,0,False,False,False,HTTP 404
+hebbarskitchen,paneer_butter_masala,paneer butter masala,https://hebbarskitchen.com/paneer-butter-masala-recipe/,True,Paneer Butter Masala Recipe - Restaurant Style,5,26,False,False,False,OK
+hebbarskitchen,dal_makhani,dal makhani,https://hebbarskitchen.com/punjabi-dal-makhani-recipe/,True,Dal Makhani Recipe Restaurant Style in Cooker - Tips & Tricks,4,22,False,False,False,OK
+hebbarskitchen,chole,chole chana masala,https://hebbarskitchen.com/chana-masala-recipe-chickpea-masala/,True,chana masala recipe | chickpea masala recipe | chana curry | chana masala curry,5,28,False,False,False,OK
+hebbarskitchen,rajma,rajma,https://hebbarskitchen.com/rajma-recipe-punjabi-rajma-masala/,True,Rajma Recipe | Punjabi Rajma Rajma Masala Curry,4,21,True,False,False,OK
+hebbarskitchen,aloo_paratha,aloo paratha,https://hebbarskitchen.com/aloo-paratha-recipe-aalu-ka-paratha-aloo/,True,aloo paratha recipe | aalu ka paratha | aloo ka paratha | potato paratha,8,17,True,False,False,OK
+hebbarskitchen,samosa,samosa,https://hebbarskitchen.com/samosa-recipe-samosa-banane-ki-vidhi/,False,,,0,False,False,False,No Recipe JSON-LD found
+hebbarskitchen,onion_pakora,onion pakora onion bhajji,https://hebbarskitchen.com/onion-pakoda-recipe-kanda-bhaji/,False,,,0,False,False,False,No Recipe JSON-LD found
+hebbarskitchen,puri_bhature,puri bhature,https://hebbarskitchen.com/chole-bhature-recipe-chana-bhatura/,True,chole bhature recipe | chhole bhature | chana bhatura | chola batura,8,38,True,False,False,OK
+hebbarskitchen,pav_bhaji,pav bhaji,https://hebbarskitchen.com/easy-mumbai-style-pav-bhaji-recipe/,True,Pav Bhaji Recipe | Easy Mumbai Street Style Pav Bhaji Recipe,4,21,False,False,False,OK
+hebbarskitchen,butter_chicken,butter chicken,https://hebbarskitchen.com/paneer-makhani-recipe-paneer-makhanwala/,False,,,0,False,False,False,No Recipe JSON-LD found
+hebbarskitchen,chicken_biryani,chicken biryani,https://hebbarskitchen.com/veg-biryani-cooker-vegetable-biryani/,False,,,0,False,False,False,No Recipe JSON-LD found
+hebbarskitchen,egg_curry,egg curry,https://hebbarskitchen.com/paneer-ki-sabji-quick-paneer-curry/,True,Paneer Ki Sabji | Dhaba Style Instant Paneer Curry,4,17,True,False,False,OK
+hebbarskitchen,gulab_jamun,gulab jamun,https://hebbarskitchen.com/milk-powder-gulab-jamun-recipe/,True,Gulab Jamun Recipe - Milk Powder: Delicious Indian Dessert,14,12,True,True,False,OK
+hebbarskitchen,gajar_halwa,gajar ka halwa,https://hebbarskitchen.com/carrot-halwa-recipe-gajar-halwa-recipe/,True,carrot halwa recipe | gajar halwa recipe | gajar ka halwa banane ki vidhi,1,8,False,False,False,OK
+hebbarskitchen,jalebi,jalebi,https://hebbarskitchen.com/jalebi-recipe-instant-crispy-jalebi/,True,instant jalebi recipe | homemade crispy jalebi recipe,10,13,False,False,False,OK
+hebbarskitchen,poha,poha,https://hebbarskitchen.com/poha-recipe-2-ways-kanda-poha-aloo-poha/,True,Poha Recipe | Maharastrian Aloo Kanda Pohe,2,16,True,False,False,OK
+hebbarskitchen,masala_dosa,masala dosa,https://hebbarskitchen.com/masala-dosa-recipe-crispy-masale-dose/,True,Masala Dosa Recipe | Crispy Masale Dose | How to make Masala Dosa,30,22,True,False,False,OK
+hebbarskitchen,sambar,sambar,https://hebbarskitchen.com/sambar-recipe-hotel-style-south-indian/,False,,,0,False,False,False,HTTP 404
+hebbarskitchen,kheer,rice kheer,https://hebbarskitchen.com/pal-payasam-recipe-rice-kheer-recipe/,True,Pal Payasam Recipe | Rice Kheer - 2 Ways Secret Tips | Rice Payasam,6,7,False,False,False,OK
+hebbarskitchen,aloo_tikki,aloo tikki,https://hebbarskitchen.com/aloo-tikki-recipe-aloo-ki-tikki/,True,Aloo Tikki Recipe | Multi Purpose Aloo Patties,4,13,False,True,False,OK
+tarladalal,paneer_butter_masala,paneer butter masala,https://www.tarladalal.com/paneer-butter-masala-38973r,True,Paneer Butter Masala Recipe,3 servings,21,True,False,False,OK
+tarladalal,dal_makhani,dal makhani,https://www.tarladalal.com/dal-makhani/,True,Dal Makhani Recipe (How To Make Dal Makhani),4 servings,17,True,False,False,OK
+tarladalal,chole,chole chana masala,https://www.tarladalal.com/chole/,True,Punjabi Chole Recipe | Authentic Chole Masala at Home,4 servings,14,True,False,False,OK
+tarladalal,rajma,rajma,https://www.tarladalal.com/rajma-22784r,True,Rajma Recipe | Authentic Punjabi Rajma Curry at Home,4 servings,16,True,False,False,OK
+tarladalal,aloo_paratha,aloo paratha,https://www.tarladalal.com/stuffed-aloo-paratha/,True,Stuffed Aloo Paratha Recipe | Easy Punjabi Breakfast,12 parathas,15,True,False,False,OK
+tarladalal,samosa,samosa,https://www.tarladalal.com/samosa/,True,Samosa Recipe | Crispy Mumbai Street Style Samosa,4 samosas,17,True,True,False,OK
+tarladalal,onion_pakora,onion pakora onion bhajji,https://www.tarladalal.com/kanda-bhaji-pyaz-ke-pakode-kanda-bhajiya-4972r,True,Pyaz Ke Pakode Recipe (Kanda Bhaji),4 servings,11,True,True,False,OK
+tarladalal,puri_bhature,puri bhature,https://www.tarladalal.com/punjabi-bhatura/,True,Best Punjabi Bhatura Recipe | Soft & Fluffy Bhature,12 bhaturas,8,True,True,False,OK
+tarladalal,pav_bhaji,pav bhaji,https://www.tarladalal.com/pav-bhaji/,True,Homemade Pav Bhaji Recipe (How To Make Pav Bhaji At Home),5 servings,19,True,False,False,OK
+tarladalal,butter_chicken,butter chicken,https://www.tarladalal.com/paneer-makhanwala-recipe-paneer-butter-masala-36940r,True,Strawberry Hide And Seek ( Cakes And Pastries) Recipe,1 gateau,12,False,False,False,OK
+tarladalal,chicken_biryani,chicken biryani,https://www.tarladalal.com/vegetable-biryani/,True,Vegetable Biryani Recipe (Desi Biryani),4 servings,26,True,False,False,OK
+tarladalal,egg_curry,egg curry,https://www.tarladalal.com/soya-curry-3686r,False,,,0,False,False,False,HTTP 404
+tarladalal,gulab_jamun,gulab jamun,https://www.tarladalal.com/gulab-jamun/,True,Gulab Jamun Recipe with Khoya | Soft & Delicious Mithai,30 gulab jamuns,8,True,True,False,OK
+tarladalal,gajar_halwa,gajar ka halwa,https://www.tarladalal.com/gajar-ka-halwa-quick-gajar-halwa-recipe-38971r,False,,,0,False,False,False,HTTP 404
+tarladalal,jalebi,jalebi,https://www.tarladalal.com/jalebi-1991r,True,Jalebi Recipe (Authentic Jalebi),50 jalebis,10,True,True,False,OK
+tarladalal,poha,poha,https://www.tarladalal.com/kanda-poha-2775r,True,Mushroom Pulao Recipe (Mushroom Pulao In A Pressure Cooker),5 servings,22,True,False,False,OK
+tarladalal,masala_dosa,masala dosa,https://www.tarladalal.com/masala-dosa--mumbai-roadside-recipe-33390r,True,Masala Dosa Recipe (Mumbai Roadside Masala Dosa),4 dosas,18,True,False,False,OK
+tarladalal,sambar,sambar,https://www.tarladalal.com/sambar/,True,Sambar Recipe (South Indian Homemade Sambar),6 servings,16,True,False,False,OK
+tarladalal,kheer,rice kheer,https://www.tarladalal.com/rice-kheer-2040r,True,Rice Kheer Recipe (Chawal Ki Kheer),5 servings,11,True,False,False,OK
+tarladalal,aloo_tikki,aloo tikki,https://www.tarladalal.com/punjabi-aloo-tikki/,True,Punjabi Aloo Tikki Recipe | Crispy Potato Tikki,6 tikkis,9,True,False,False,OK

@@ -1,0 +1,11 @@
+[
+  {"dish": "Chicken Tikka Masala", "fat_100g": 17.18, "source": "safefood_2015", "type": "takeaway"},
+  {"dish": "Chicken Korma", "fat_100g": 17.78, "source": "safefood_2015", "type": "takeaway"},
+  {"dish": "Chicken Jalfrezi", "fat_100g": 7.03, "source": "safefood_2015", "type": "takeaway"},
+  {"dish": "Bhindi Subji", "fat_100g": 4.6, "source": "CoFID_2021 (15-627)", "type": "homemade"},
+  {"dish": "Methi Aloo", "fat_100g": 10.4, "source": "CoFID_2021 (15-628)", "type": "homemade"},
+  {"dish": "Saag", "fat_100g": 8.8, "source": "CoFID_2021 (15-629)", "type": "homemade"},
+  {"dish": "Chicken Balti", "fat_100g": 5.0, "source": "CoFID_2021 (19-449)", "type": "retail"},
+  {"dish": "Prawn Bhuna", "fat_100g": 8.7, "source": "CoFID_2021 (16-365)", "type": "takeaway"},
+  {"dish": "Prawn Madras", "fat_100g": 8.3, "source": "CoFID_2021 (16-366)", "type": "takeaway"}
+]

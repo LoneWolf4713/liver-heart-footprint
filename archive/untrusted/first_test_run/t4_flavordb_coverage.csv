@@ -1,0 +1,27 @@
+ingredient,culinary_role,in_flavordb,entity_id,matched_alias,category,num_flavor_molecules
+ghee,fat/cooking medium,True,87.0,ghee,dairy,1
+butter,fat/cooking medium,True,60.0,butter,dairy,131
+cream,rich dairy,True,780.0,cream,dairy,5
+milk,dairy,True,88.0,milk,dairy,111
+khoya,rich dairy,False,,,,0
+mawa,rich dairy,False,,,,0
+paneer,dairy,True,402.0,paneer,dairy,29
+curd,dairy,True,94.0,yogurt,dairy,31
+yogurt,dairy,True,94.0,yogurt,dairy,31
+hung curd,dairy,False,,,,0
+cashew,nut/thickener,True,170.0,cashew apple,fruit,7
+coconut milk,plant dairy/fat,False,,,,0
+coconut oil,fat/cooking medium,False,,,,0
+mustard oil,fat/cooking medium,True,317.0,mustard oil,plant derivative,2
+peanut oil,fat/cooking medium,True,319.0,peanut oil,plant derivative,20
+sesame oil,fat/cooking medium,False,,,,0
+rice bran oil,fat/cooking medium,False,,,,0
+sunflower oil,fat/cooking medium,False,,,,0
+olive oil,fat/cooking medium,False,,,,0
+vanaspati,fat/cooking medium,False,,,,0
+palm oil,fat/cooking medium,False,,,,0
+sugar,sweetener,True,781.0,sugar,additive,5
+jaggery,sweetener,False,,,,0
+honey,sweetener,True,315.0,honey,plant derivative,60
+maida,refined grain,False,,,,0
+whole wheat flour,whole grain,False,,,,0

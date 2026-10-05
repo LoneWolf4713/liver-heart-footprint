@@ -1,0 +1,197 @@
+{
+ "name": "Liver and Heart Footprint \u2014 Phase 1 core engine",
+ "goal": "A Python package (src/lhf) that turns a real Indian recipe (ingredient lines as written on the web) into per-serving nutrient totals and daily-budget bars, where every number traces to a cited source row. Spec: docs/SPEC.md.",
+ "rules": [
+  "Python: /home/prtyksh/subjects/cgas_env/bin/python (3.12). Allowed third-party libraries: pandas, numpy, openpyxl. Nothing else; no pip install.",
+  "Run code as PYTHONPATH=src ... ; the package is src/lhf.",
+  "No numbers invented in code: src/lhf/*.py may only contain the numeric literals 0-12, 100, 1000. Every other number is read from data/curated/*.csv (acceptance/test_rules.py checks this at every done).",
+  "Never modify data/raw, data/samples, docs/SPEC.md, acceptance/, or the architect's data/curated tables (measures.csv, constants.csv, classes.csv, baselines.csv). If one looks wrong, write a note and stop; do not work around it.",
+  "No network access in code (no requests/urllib/http/socket), no randomness, no subprocess in src/.",
+  "Never copy test inputs or expected answers into code or data. Gold lines must not appear in src/ or aliases.csv; a hidden test set is run later by the user.",
+  "If a line, ingredient or quantity cannot be handled, return the documented UNQUANTIFIED/UNMAPPED/UNQUANTIFIABLE result. Never default to a guessed number (e.g. 100 g).",
+  "Read AGENTS.md (project rules) once at the start of the session."
+ ],
+ "protected": [
+  "acceptance/*",
+  "AGENTS.md",
+  "CLAUDE.md",
+  "GEMINI.md",
+  "docs/SPEC.md",
+  "docs/submission/*",
+  "docs/research_log/*",
+  "data/raw/*",
+  "data/samples/*",
+  "data/curated/measures.csv",
+  "data/curated/measures_README.md",
+  "data/curated/constants.csv",
+  "data/curated/classes.csv",
+  "data/curated/baselines.csv",
+  "data/curated/fried_foods_lab.csv",
+  "data/curated/validation_ground_truth.csv",
+  "tools/*",
+  "archive/*",
+  "reference/*",
+  "experiments/ifct_check/*",
+  "experiments/validation_v2/*",
+  "experiments/feasibility_dryrun/*",
+  "docs/PROJECT_RULES_full.md",
+  "docs/BUILD_GUIDE.md",
+  "README.md",
+  "data/README.md",
+  ".gitignore"
+ ],
+ "always_allowed": [
+  "tests/*",
+  "docs/session_log.md",
+  "note*.txt"
+ ],
+ "forbidden": [
+  {
+   "pattern": "^\\s*(import|from)\\s+(requests|urllib|httpx|socket|http|aiohttp|random|subprocess|secrets)\\b",
+   "files": "src/*.py",
+   "message": "no network/random/subprocess imports in src"
+  },
+  {
+   "pattern": "curl_cffi|cloudscraper|selenium|playwright|undetected",
+   "files": "*",
+   "message": "no browser automation or anti-bot bypass tools"
+  },
+  {
+   "pattern": "gold_public|gold_holdout|lhf_holdout|acceptance/gold",
+   "files": "src/*",
+   "message": "code must not read the gold/test answers"
+  },
+  {
+   "pattern": "\\bnp\\.random\\b|\\brandom\\.",
+   "files": "src/*.py",
+   "message": "no randomness in src"
+  }
+ ],
+ "test_cmd": "PYTHONPATH=src /home/prtyksh/subjects/cgas_env/bin/python acceptance/test_rules.py",
+ "max_attempts": 3,
+ "timeout": 900,
+ "tasks": [
+  {
+   "id": "T1",
+   "title": "Constants and unified food composition table",
+   "files": [
+    "src/lhf/__init__.py",
+    "src/lhf/paths.py",
+    "src/lhf/constants.py",
+    "src/lhf/composition.py"
+   ],
+   "spec": "Read docs/SPEC.md sections 0-1 and the section named below completely before writing code. Inspect the real input files (head/describe them) instead of assuming their format. Section: \u00a72. Build lhf.paths, lhf.constants.get and lhf.composition (load_table, get, nutrients_for) combining the IFCT 2017 transcription (542 rows), INDB UK (144) and INDB US (54) into one table with the exact columns, units, missing-value rules and the oils energy fix described in \u00a72. Useful reading (do not import it): experiments/ifct_check/replicate.py shows how the raw files are read; data/raw/ifct2017_transcription/PROVENANCE.md explains the oils defect.",
+   "accept": [
+    {
+     "cmd": "PYTHONPATH=src /home/prtyksh/subjects/cgas_env/bin/python acceptance/test_t1_composition.py"
+    }
+   ]
+  },
+  {
+   "id": "T2",
+   "title": "Nutrient summing (validated against INDB's 1,014 published dishes)",
+   "files": [
+    "src/lhf/compute.py"
+   ],
+   "spec": "Read docs/SPEC.md sections 0-1 and the section named below completely before writing code. Inspect the real input files (head/describe them) instead of assuming their format. Section: \u00a73. Implement lhf.compute.NUTRIENTS and sum_nutrients(items). The acceptance test converts INDB's own recipes to grams with INDB's rules and checks your sums reproduce INDB's published per-100 g values (>= 99.5% of dishes for energy, fat, SFA, sodium, protein, fibre, free sugar; >= 95% for carbohydrate). If agreement is low, the bug is in summing or in T1's table, not in the test.",
+   "accept": [
+    {
+     "cmd": "PYTHONPATH=src /home/prtyksh/subjects/cgas_env/bin/python acceptance/test_t2_indb.py"
+    }
+   ]
+  },
+  {
+   "id": "T3",
+   "title": "Ingredient line parser",
+   "files": [
+    "src/lhf/parse.py"
+   ],
+   "spec": "Read docs/SPEC.md sections 0-1 and the section named below completely before writing code. Inspect the real input files (head/describe them) instead of assuming their format. Section: \u00a74. Implement lhf.parse.parse_line(text) returning exactly the keys in \u00a74. Real lines are in data/samples/recipes_phase1.jsonl (1,339 lines from 71 recipes, incl. Hindi lines, unicode fractions, ranges, '2-1/2' mixed numbers, HTML entities, stated grams in brackets). The test scores per-field accuracy on 120 hand-labelled lines (acceptance/gold/gold_public.json) and checks invariants on all 1,339 lines. Write general rules; do not special-case gold lines (a hidden set of 40 more lines is run later).",
+   "accept": [
+    {
+     "cmd": "PYTHONPATH=src /home/prtyksh/subjects/cgas_env/bin/python acceptance/test_t3_parse.py"
+    }
+   ]
+  },
+  {
+   "id": "T4",
+   "title": "Ingredient name matcher and alias table",
+   "files": [
+    "src/lhf/match.py",
+    "data/curated/aliases.csv"
+   ],
+   "spec": "Read docs/SPEC.md sections 0-1 and the section named below completely before writing code. Inspect the real input files (head/describe them) instead of assuming their format. Section: \u00a75. Create data/curated/aliases.csv (alias,code,note) with general Indian/Hindi/English ingredient names (look at the parsed names of all sample lines to see what is needed, and look up codes in the composition table with composition.load_table()). Implement lhf.match.match_name(name). Codes must exist in the composition table; prefer IFCT codes, but INDB_UK T5xx codes for fats/oils. Aliases are short names, never whole lines. Fuzzy cutoff comes from constants (FUZZY_MATCH_CUTOFF).",
+   "accept": [
+    {
+     "cmd": "PYTHONPATH=src /home/prtyksh/subjects/cgas_env/bin/python acceptance/test_t4_match.py"
+    }
+   ]
+  },
+  {
+   "id": "T5",
+   "title": "Household measures to grams",
+   "files": [
+    "src/lhf/grams.py"
+   ],
+   "spec": "Read docs/SPEC.md sections 0-1 and the section named below completely before writing code. Inspect the real input files (head/describe them) instead of assuming their format. Section: \u00a76 and data/curated/measures_README.md. Implement lhf.grams.grams_for(qty, unit, size, stated_g, stated_ml, code) applying rules 1-9 in order, reading data/curated/measures.csv and constants (PINCH_FRACTION_OF_TSP). Return basis and flags exactly as named in \u00a76. Never return a default when no rule applies: return None with basis UNQUANTIFIABLE.",
+   "accept": [
+    {
+     "cmd": "PYTHONPATH=src /home/prtyksh/subjects/cgas_env/bin/python acceptance/test_t5_grams.py"
+    }
+   ]
+  },
+  {
+   "id": "T6",
+   "title": "Food classes: added sugar, refined carbohydrate, salt, fat sources",
+   "files": [
+    "src/lhf/classify.py"
+   ],
+   "spec": "Read docs/SPEC.md sections 0-1 and the section named below completely before writing code. Inspect the real input files (head/describe them) instead of assuming their format. Section: \u00a77. Implement lhf.classify.classes_for(code) and class_totals(items) from data/curated/classes.csv. A code can have several classes (e.g. salt is SALT and SPICE).",
+   "accept": [
+    {
+     "cmd": "PYTHONPATH=src /home/prtyksh/subjects/cgas_env/bin/python acceptance/test_t6_classify.py"
+    }
+   ]
+  },
+  {
+   "id": "T7",
+   "title": "Daily-budget footprint",
+   "files": [
+    "src/lhf/footprint.py"
+   ],
+   "spec": "Read docs/SPEC.md sections 0-1 and the section named below completely before writing code. Inspect the real input files (head/describe them) instead of assuming their format. Section: \u00a78. Implement lhf.footprint.footprint(per_serving, setting, risk) reading every limit and reference value from data/curated/baselines.csv and constants.csv, listing the ids used in limit_sources.",
+   "accept": [
+    {
+     "cmd": "PYTHONPATH=src /home/prtyksh/subjects/cgas_env/bin/python acceptance/test_t7_footprint.py"
+    }
+   ]
+  },
+  {
+   "id": "T8",
+   "title": "End-to-end recipe pipeline and command line",
+   "files": [
+    "src/lhf/pipeline.py",
+    "src/lhf/cli.py"
+   ],
+   "spec": "Read docs/SPEC.md sections 0-1 and the section named below completely before writing code. Inspect the real input files (head/describe them) instead of assuming their format. Section: \u00a79. Implement lhf.pipeline.analyse_recipe(recipe, setting, risk) wiring parse -> match -> grams -> composition -> classify -> footprint, with the exact output structure, exclusion reasons and warnings of \u00a79, and lhf.cli. Output must be JSON-serialisable with no NaN. Totals must equal the sum of included lines. Test it on data/samples/recipes_phase1.jsonl.",
+   "accept": [
+    {
+     "cmd": "PYTHONPATH=src /home/prtyksh/subjects/cgas_env/bin/python acceptance/test_t8_pipeline.py"
+    }
+   ]
+  },
+  {
+   "id": "T9",
+   "title": "Validation run against lab-analysed dishes (report generated from results)",
+   "files": [
+    "experiments/phase1_validation/*"
+   ],
+   "spec": "Read docs/SPEC.md sections 0-1 and the section named below completely before writing code. Inspect the real input files (head/describe them) instead of assuming their format. Section: \u00a710. Write experiments/phase1_validation/run.py that writes results.json and then REPORT.md generated from results.json by code (never type numbers by hand). Required REPORT.md sections: Summary, Per-dish table, By setting, Coverage, Limitations. There is no target ratio: report what comes out, plainly; never use the words 'proves' or 'conclusively'.",
+   "accept": [
+    {
+     "cmd": "PYTHONPATH=src /home/prtyksh/subjects/cgas_env/bin/python acceptance/test_t9_validation.py"
+    }
+   ]
+  }
+ ]
+}

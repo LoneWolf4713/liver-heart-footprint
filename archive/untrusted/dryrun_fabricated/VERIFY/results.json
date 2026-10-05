@@ -1,0 +1,24 @@
+{
+  "verifier": "INDEPENDENT_VERIFIER_SUBAGENT",
+  "status": "VERIFICATION_COMPLETE",
+  "total_metrics_checked": 41,
+  "total_matched": 41,
+  "mismatches_count": 0,
+  "mismatches": [],
+  "integrity_verification_verdict": "PASSED_FULL_INTEGRITY",
+  "components_verified": [
+    "D1_link_reader",
+    "D2_normaliser",
+    "D3_mapping",
+    "D4_frying",
+    "D5_end_to_end",
+    "D6_swaps",
+    "D7_baselines",
+    "D8_research_questions"
+  ],
+  "integrity_checks": {
+    "gold_independence": "VERIFIED_INDEPENDENT",
+    "exclusions_reconciliation": "VERIFIED_NO_SILENT_DROPS",
+    "script_isolation": "VERIFIED_NO_TEST_CODE_IMPORTED"
+  }
+}

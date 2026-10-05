@@ -1,0 +1,3596 @@
+{
+ "dishes": [
+  {
+   "dish": "saag",
+   "gt_source": "CoFID 2021 (sheet 1.3 Proximates)",
+   "gt_code": "15-629",
+   "gt_name": "Saag, homemade",
+   "setting": "home",
+   "lab": {
+    "fat100": 8.8,
+    "water100": 78.1,
+    "kcal100": 111.0,
+    "M2": 71.35135135135135,
+    "M1": 40.18264840182648,
+    "M3": 8.8
+   },
+   "recipes": [
+    "R01",
+    "R02"
+   ],
+   "n_recipes": 2,
+   "recipe_urls": [
+    "https://www.indianhealthyrecipes.com/spinach-curry/",
+    "https://www.vegrecipesofindia.com/aloo-palak-sabzi-recipe/"
+   ],
+   "sanity_all_pass": true,
+   "mass_unmapped_share_max": 0.004064379775646236,
+   "M1": {
+    "lab": 40.18264840182648,
+    "base_by_recipe": {
+     "R01": 41.86,
+     "R02": 31.08
+    },
+    "median_base": 36.46999954735492,
+    "ratio_median_over_lab": 0.9076056705534918,
+    "range_primary": [
+     31.07939160125005,
+     41.860607493459774
+    ],
+    "inside_primary": true,
+    "range_wide": [
+     25.381945423973672,
+     42.690101149037744
+    ],
+    "inside_wide": true,
+    "inside_base_only": true
+   },
+   "M2": {
+    "lab": 71.35135135135135,
+    "base_by_recipe": {
+     "R01": 72.29,
+     "R02": 56.73
+    },
+    "median_base": 64.51039632196174,
+    "ratio_median_over_lab": 0.9041229787547667,
+    "range_primary": [
+     56.72642938628429,
+     72.29436325763919
+    ],
+    "inside_primary": true,
+    "range_wide": [
+     48.630944275933516,
+     73.08407789134014
+    ],
+    "inside_wide": true,
+    "inside_base_only": true
+   },
+   "M3": {
+    "lab_fat_per_100g": 8.8,
+    "recipe_band": [
+     6.2158783202500105,
+     16.74424299738391
+    ],
+    "inside": true,
+    "note": "fat per 100 g of dish at assumed final moisture 60-80%; reference only"
+   }
+  },
+  {
+   "dish": "methi aloo",
+   "gt_source": "CoFID 2021 (sheet 1.3 Proximates)",
+   "gt_code": "15-628",
+   "gt_name": "Methi aloo, homemade",
+   "setting": "home",
+   "lab": {
+    "fat100": 10.4,
+    "water100": 71.0,
+    "kcal100": 142.0,
+    "M2": 65.91549295774648,
+    "M1": 35.86206896551724,
+    "M3": 10.4
+   },
+   "recipes": [
+    "R03",
+    "R04",
+    "R24"
+   ],
+   "n_recipes": 3,
+   "recipe_urls": [
+    "https://hebbarskitchen.com/aloo-methi-recipe-alu-methi-recipe/",
+    "https://www.indianhealthyrecipes.com/aloo-methi-recipe/",
+    "https://www.vegrecipesofindia.com/aloo-methi-recipe-dry-aloo-methi-recipe/"
+   ],
+   "sanity_all_pass": true,
+   "mass_unmapped_share_max": 0.0,
+   "M1": {
+    "lab": 35.86206896551724,
+    "base_by_recipe": {
+     "R03": 23.52,
+     "R04": 29.77,
+     "R24": 28.94
+    },
+    "median_base": 28.94247326795971,
+    "ratio_median_over_lab": 0.8070497353565689,
+    "range_primary": [
+     23.51711508693995,
+     29.7709627507623
+    ],
+    "inside_primary": false,
+    "range_wide": [
+     19.296666704667306,
+     30.04562778978852
+    ],
+    "inside_wide": false,
+    "inside_base_only": false
+   },
+   "M2": {
+    "lab": 65.91549295774648,
+    "base_by_recipe": {
+     "R03": 48.16,
+     "R04": 52.73,
+     "R24": 51.13
+    },
+    "median_base": 51.131977131938676,
+    "ratio_median_over_lab": 0.7757201658905226,
+    "range_primary": [
+     48.15848104914126,
+     52.73302893379924
+    ],
+    "inside_primary": false,
+    "range_wide": [
+     40.92121127720354,
+     52.98979209604247
+    ],
+    "inside_wide": false,
+    "inside_base_only": false
+   },
+   "M3": {
+    "lab_fat_per_100g": 10.4,
+    "recipe_band": [
+     4.70342301738799,
+     11.90838510030492
+    ],
+    "inside": true,
+    "note": "fat per 100 g of dish at assumed final moisture 60-80%; reference only"
+   }
+  },
+  {
+   "dish": "bhindi sabzi",
+   "gt_source": "CoFID 2021 (sheet 1.3 Proximates)",
+   "gt_code": "15-627",
+   "gt_name": "Curry, bhindi subji, homemade",
+   "setting": "home",
+   "lab": {
+    "fat100": 4.6,
+    "water100": 74.3,
+    "kcal100": 71.0,
+    "M2": 58.309859154929576,
+    "M1": 17.8988326848249,
+    "M3": 4.6
+   },
+   "recipes": [
+    "R05",
+    "R06",
+    "R07"
+   ],
+   "n_recipes": 3,
+   "recipe_urls": [
+    "https://www.archanaskitchen.com/recipe/bhindi-tamatar-ki-sabzi-spiced-okra-with-tomatoes",
+    "https://www.indianhealthyrecipes.com/bhindi-masala-recipe/",
+    "https://www.vegrecipesofindia.com/bhindi-bhaji-recipe/"
+   ],
+   "sanity_all_pass": true,
+   "mass_unmapped_share_max": 0.0007663161479841626,
+   "M1": {
+    "lab": 17.8988326848249,
+    "base_by_recipe": {
+     "R05": 41.23,
+     "R06": 39.3,
+     "R07": 34.16
+    },
+    "median_base": 39.29580863340106,
+    "ratio_median_over_lab": 2.195439743213929,
+    "range_primary": [
+     34.162272583231456,
+     41.22506356943778
+    ],
+    "inside_primary": false,
+    "range_wide": [
+     32.97903220096997,
+     41.22506356943778
+    ],
+    "inside_wide": false,
+    "inside_base_only": false
+   },
+   "M2": {
+    "lab": 58.309859154929576,
+    "base_by_recipe": {
+     "R05": 75.03,
+     "R06": 71.71,
+     "R07": 66.24
+    },
+    "median_base": 71.70955061976241,
+    "ratio_median_over_lab": 1.2298014719814327,
+    "range_primary": [
+     66.2367440745713,
+     75.03128418760811
+    ],
+    "inside_primary": false,
+    "range_wide": [
+     64.77687914065035,
+     75.03128418760811
+    ],
+    "inside_wide": false,
+    "inside_base_only": false
+   },
+   "M3": {
+    "lab_fat_per_100g": 4.6,
+    "recipe_band": [
+     6.832454516646291,
+     16.490025427775112
+    ],
+    "inside": false,
+    "note": "fat per 100 g of dish at assumed final moisture 60-80%; reference only"
+   }
+  },
+  {
+   "dish": "sambar",
+   "gt_source": "CoFID 2021 (sheet 1.3 Proximates)",
+   "gt_code": "12-467",
+   "gt_name": "Sambar, homemade",
+   "setting": "home",
+   "lab": {
+    "fat100": 0.9,
+    "water100": 81.8,
+    "kcal100": 49.0,
+    "M2": 16.53061224489796,
+    "M1": 4.945054945054944,
+    "M3": 0.9
+   },
+   "recipes": [
+    "R12",
+    "R13",
+    "R14",
+    "R15"
+   ],
+   "n_recipes": 4,
+   "recipe_urls": [
+    "https://www.indianhealthyrecipes.com/andhra-sambar-recipe-how-to-make-south-indian-sambar/",
+    "https://www.vegrecipesofindia.com/sambhar-recipe-a-method-made-easy/",
+    "https://hebbarskitchen.com/south-indian-vegetable-sambar-recipe/",
+    "https://www.indianhealthyrecipes.com/idli-sambar-recipe-tiffin-sambar/"
+   ],
+   "sanity_all_pass": true,
+   "mass_unmapped_share_max": 0.0,
+   "M1": {
+    "lab": 4.945054945054944,
+    "base_by_recipe": {
+     "R12": 9.13,
+     "R13": 19.19,
+     "R14": 11.71,
+     "R15": 11.79
+    },
+    "median_base": 11.745435571093807,
+    "ratio_median_over_lab": 2.375188082154526,
+    "range_primary": [
+     9.125270159437655,
+     19.192815610704542
+    ],
+    "inside_primary": false,
+    "range_wide": [
+     9.055683626677595,
+     19.811510327883852
+    ],
+    "inside_wide": false,
+    "inside_base_only": false
+   },
+   "M2": {
+    "lab": 16.53061224489796,
+    "base_by_recipe": {
+     "R12": 22.23,
+     "R13": 39.77,
+     "R14": 28.15,
+     "R15": 26.38
+    },
+    "median_base": 27.265122514568112,
+    "ratio_median_over_lab": 1.6493716089059722,
+    "range_primary": [
+     22.23123654114029,
+     39.774498254701896
+    ],
+    "inside_primary": false,
+    "range_wide": [
+     22.07442888398618,
+     40.480322910056486
+    ],
+    "inside_wide": false,
+    "inside_base_only": false
+   },
+   "M3": {
+    "lab_fat_per_100g": 0.9,
+    "recipe_band": [
+     1.825054031887531,
+     7.677126244281817
+    ],
+    "inside": false,
+    "note": "fat per 100 g of dish at assumed final moisture 60-80%; reference only"
+   }
+  },
+  {
+   "dish": "vegetable pilau",
+   "gt_source": "CoFID 2021 (sheet 1.3 Proximates)",
+   "gt_code": "12-472",
+   "gt_name": "Pilau, vegetable, homemade",
+   "setting": "home",
+   "lab": {
+    "fat100": 1.5,
+    "water100": 69.2,
+    "kcal100": 112.0,
+    "M2": 12.053571428571429,
+    "M1": 4.870129870129871,
+    "M3": 1.5
+   },
+   "recipes": [
+    "R16",
+    "R17"
+   ],
+   "n_recipes": 2,
+   "recipe_urls": [
+    "https://www.vegrecipesofindia.com/vegetable-pulao-recipe-veg-pulao/",
+    "https://www.archanaskitchen.com/recipe/mixed-vegetable-pulao-pilaf-recipe"
+   ],
+   "sanity_all_pass": true,
+   "mass_unmapped_share_max": 0.0010488865020893817,
+   "M1": {
+    "lab": 4.870129870129871,
+    "base_by_recipe": {
+     "R16": 11.39,
+     "R17": 16.31
+    },
+    "median_base": 13.847498828536496,
+    "ratio_median_over_lab": 2.8433530927928268,
+    "range_primary": [
+     11.387172257780058,
+     16.307825399292934
+    ],
+    "inside_primary": false,
+    "range_wide": [
+     11.231081617587863,
+     18.204565263348805
+    ],
+    "inside_wide": false,
+    "inside_base_only": false
+   },
+   "M2": {
+    "lab": 12.053571428571429,
+    "base_by_recipe": {
+     "R16": 23.66,
+     "R17": 32.49
+    },
+    "median_base": 28.07736056735866,
+    "ratio_median_over_lab": 2.329381024847533,
+    "range_primary": [
+     23.662265738597224,
+     32.4924553961201
+    ],
+    "inside_primary": false,
+    "range_wide": [
+     23.419746164574665,
+     35.58758050826606
+    ],
+    "inside_wide": false,
+    "inside_base_only": false
+   },
+   "M3": {
+    "lab_fat_per_100g": 1.5,
+    "recipe_band": [
+     2.2774344515560117,
+     6.523130159717174
+    ],
+    "inside": false,
+    "note": "fat per 100 g of dish at assumed final moisture 60-80%; reference only"
+   }
+  },
+  {
+   "dish": "chicken biryani",
+   "gt_source": "CoFID 2021 (sheet 1.3 Proximates)",
+   "gt_code": "19-454",
+   "gt_name": "Biryani, chicken, takeaway",
+   "setting": "takeaway",
+   "lab": {
+    "fat100": 7.4,
+    "water100": 66.9,
+    "kcal100": 163.0,
+    "M2": 40.85889570552147,
+    "M1": 22.35649546827795,
+    "M3": 7.4
+   },
+   "recipes": [
+    "R08",
+    "R20"
+   ],
+   "n_recipes": 2,
+   "recipe_urls": [
+    "https://www.indianhealthyrecipes.com/chicken-biryani-recipe/",
+    "https://pipingpotcurry.com/chicken-biryani/"
+   ],
+   "sanity_all_pass": true,
+   "mass_unmapped_share_max": 0.0004428158660924822,
+   "M1": {
+    "lab": 22.35649546827795,
+    "base_by_recipe": {
+     "R08": 9.11,
+     "R20": 11.96
+    },
+    "median_base": 10.533505363633239,
+    "ratio_median_over_lab": 0.47116084802197317,
+    "range_primary": [
+     9.10803213253507,
+     14.433045133353824
+    ],
+    "inside_primary": false,
+    "range_wide": [
+     9.028914255666718,
+     14.433045133353824
+    ],
+    "inside_wide": false,
+    "inside_base_only": false
+   },
+   "M2": {
+    "lab": 40.85889570552147,
+    "base_by_recipe": {
+     "R08": 19.33,
+     "R20": 25.48
+    },
+    "median_base": 22.40367951013491,
+    "ratio_median_over_lab": 0.5483182823051037,
+    "range_primary": [
+     19.327755093306973,
+     29.804793828514114
+    ],
+    "inside_primary": false,
+    "range_wide": [
+     19.204922466722874,
+     29.804793828514114
+    ],
+    "inside_wide": false,
+    "inside_base_only": false
+   },
+   "M3": {
+    "lab_fat_per_100g": 7.4,
+    "recipe_band": [
+     1.8216064265070142,
+     4.7835914378925635
+    ],
+    "inside": false,
+    "note": "fat per 100 g of dish at assumed final moisture 60-80%; reference only"
+   }
+  },
+  {
+   "dish": "prawn bhuna",
+   "gt_source": "CoFID 2021 (sheet 1.3 Proximates)",
+   "gt_code": "16-365",
+   "gt_name": "Curry, Prawn bhuna, takeaway",
+   "setting": "takeaway",
+   "lab": {
+    "fat100": 8.7,
+    "water100": 75.6,
+    "kcal100": 120.0,
+    "M2": 65.24999999999999,
+    "M1": 35.65573770491802,
+    "M3": 8.7
+   },
+   "recipes": [
+    "R25",
+    "R26",
+    "R28"
+   ],
+   "n_recipes": 3,
+   "recipe_urls": [
+    "https://khinskitchen.com/prawn-bhuna/",
+    "https://www.krumpli.co.uk/king-prawn-bhuna/",
+    "https://motionsandemotions.com/prawn-bhuna-spicy-indian-prawn-curry/"
+   ],
+   "sanity_all_pass": true,
+   "mass_unmapped_share_max": 0.0012486140384173566,
+   "M1": {
+    "lab": 35.65573770491802,
+    "base_by_recipe": {
+     "R25": 30.56,
+     "R26": 26.26,
+     "R28": 28.07
+    },
+    "median_base": 28.070238702810567,
+    "ratio_median_over_lab": 0.7872572693661818,
+    "range_primary": [
+     26.25711939360929,
+     30.558083831539406
+    ],
+    "inside_primary": false,
+    "range_wide": [
+     25.913510981223908,
+     30.962781274270153
+    ],
+    "inside_wide": false,
+    "inside_base_only": false
+   },
+   "M2": {
+    "lab": 65.24999999999999,
+    "base_by_recipe": {
+     "R25": 53.8,
+     "R26": 48.75,
+     "R28": 50.29
+    },
+    "median_base": 50.291408939107406,
+    "ratio_median_over_lab": 0.7707495622851711,
+    "range_primary": [
+     48.74890858269592,
+     53.80186971417651
+    ],
+    "inside_primary": false,
+    "range_wide": [
+     47.22597487679945,
+     54.11861708160209
+    ],
+    "inside_wide": false,
+    "inside_base_only": false
+   },
+   "M3": {
+    "lab_fat_per_100g": 8.7,
+    "recipe_band": [
+     5.251423878721859,
+     12.223233532615764
+    ],
+    "inside": true,
+    "note": "fat per 100 g of dish at assumed final moisture 60-80%; reference only"
+   }
+  },
+  {
+   "dish": "chicken tikka masala",
+   "gt_source": "CoFID 2021 (sheet 1.3 Proximates)",
+   "gt_code": "19-296",
+   "gt_name": "Curry, chicken tikka masala, retail, reheated",
+   "setting": "retail",
+   "lab": {
+    "fat100": 9.8,
+    "water100": 69.2,
+    "kcal100": 156.0,
+    "M2": 56.53846153846154,
+    "M1": 31.818181818181824,
+    "M3": 9.8
+   },
+   "recipes": [
+    "R09",
+    "R21",
+    "R22"
+   ],
+   "n_recipes": 3,
+   "recipe_urls": [
+    "https://www.indianhealthyrecipes.com/chicken-tikka-masala/",
+    "https://pipingpotcurry.com/instant-pot-chicken-tikka-masala/",
+    "https://www.archanaskitchen.com/recipe/chicken-tikka-masala-recipe"
+   ],
+   "sanity_all_pass": true,
+   "mass_unmapped_share_max": 0.002962398696544573,
+   "M1": {
+    "lab": 31.818181818181824,
+    "base_by_recipe": {
+     "R09": 36.3,
+     "R21": 34.49,
+     "R22": 29.64
+    },
+    "median_base": 34.49240650640921,
+    "ratio_median_over_lab": 1.0840470616300035,
+    "range_primary": [
+     29.637544587936077,
+     36.300031733391364
+    ],
+    "inside_primary": true,
+    "range_wide": [
+     28.42639453444779,
+     36.55105004698319
+    ],
+    "inside_wide": true,
+    "inside_base_only": true
+   },
+   "M2": {
+    "lab": 56.53846153846154,
+    "base_by_recipe": {
+     "R09": 59.64,
+     "R21": 57.9,
+     "R22": 50.58
+    },
+    "median_base": 57.896454617614275,
+    "ratio_median_over_lab": 1.0240189252095042,
+    "range_primary": [
+     50.576525904288005,
+     59.63742270315354
+    ],
+    "inside_primary": true,
+    "range_wide": [
+     49.1370055206878,
+     59.93070904962699
+    ],
+    "inside_wide": true,
+    "inside_base_only": true
+   },
+   "M3": {
+    "lab_fat_per_100g": 9.8,
+    "recipe_band": [
+     5.9275089175872155,
+     14.520012693356547
+    ],
+    "inside": true,
+    "note": "fat per 100 g of dish at assumed final moisture 60-80%; reference only"
+   }
+  },
+  {
+   "dish": "chicken tikka masala",
+   "gt_source": "safefood 2015 What's in your Indian takeaway?",
+   "gt_code": "p.14 Table 5",
+   "gt_name": "chicken tikka masala",
+   "setting": "takeaway",
+   "lab": {
+    "fat100": 17.36,
+    "water100": null,
+    "kcal100": 238.8,
+    "M2": 65.42713567839196,
+    "M1": null,
+    "M3": 17.36
+   },
+   "recipes": [
+    "R09",
+    "R21",
+    "R22"
+   ],
+   "n_recipes": 3,
+   "recipe_urls": [
+    "https://www.indianhealthyrecipes.com/chicken-tikka-masala/",
+    "https://pipingpotcurry.com/instant-pot-chicken-tikka-masala/",
+    "https://www.archanaskitchen.com/recipe/chicken-tikka-masala-recipe"
+   ],
+   "sanity_all_pass": true,
+   "mass_unmapped_share_max": 0.002962398696544573,
+   "M1": null,
+   "M2": {
+    "lab": 65.42713567839196,
+    "base_by_recipe": {
+     "R09": 59.64,
+     "R21": 57.9,
+     "R22": 50.58
+    },
+    "median_base": 57.896454617614275,
+    "ratio_median_over_lab": 0.8848997287945652,
+    "range_primary": [
+     50.576525904288005,
+     59.63742270315354
+    ],
+    "inside_primary": false,
+    "range_wide": [
+     49.1370055206878,
+     59.93070904962699
+    ],
+    "inside_wide": false,
+    "inside_base_only": false
+   },
+   "M3": {
+    "lab_fat_per_100g": 17.36,
+    "recipe_band": [
+     5.9275089175872155,
+     14.520012693356547
+    ],
+    "inside": false,
+    "note": "fat per 100 g of dish at assumed final moisture 60-80%; reference only"
+   }
+  },
+  {
+   "dish": "chicken korma",
+   "gt_source": "safefood 2015 What's in your Indian takeaway?",
+   "gt_code": "p.14 Table 5",
+   "gt_name": "chicken korma",
+   "setting": "takeaway",
+   "lab": {
+    "fat100": 17.64,
+    "water100": null,
+    "kcal100": 240.9,
+    "M2": 65.90286425902865,
+    "M1": null,
+    "M3": 17.64
+   },
+   "recipes": [
+    "R10",
+    "R18",
+    "R19"
+   ],
+   "n_recipes": 3,
+   "recipe_urls": [
+    "https://www.indianhealthyrecipes.com/chicken-korma-recipe/",
+    "https://www.archanaskitchen.com/recipe/chicken-korma-recipe-mughlai-style-chicken-curry",
+    "https://pipingpotcurry.com/instant-pot-chicken-korma/"
+   ],
+   "sanity_all_pass": true,
+   "mass_unmapped_share_max": 0.003547885814842935,
+   "M1": null,
+   "M2": {
+    "lab": 65.90286425902865,
+    "base_by_recipe": {
+     "R10": 47.78,
+     "R18": 34.93,
+     "R19": 66.66
+    },
+    "median_base": 47.78335446931609,
+    "ratio_median_over_lab": 0.72505732499737,
+    "range_primary": [
+     34.93089423904945,
+     66.65773504610293
+    ],
+    "inside_primary": true,
+    "range_wide": [
+     34.93089423904945,
+     66.99532655813275
+    ],
+    "inside_wide": true,
+    "inside_base_only": true
+   },
+   "M3": {
+    "lab_fat_per_100g": 17.64,
+    "recipe_band": [
+     3.5784883986512654,
+     10.673580541048949
+    ],
+    "inside": false,
+    "note": "fat per 100 g of dish at assumed final moisture 60-80%; reference only"
+   }
+  },
+  {
+   "dish": "chicken jalfrezi",
+   "gt_source": "safefood 2015 What's in your Indian takeaway?",
+   "gt_code": "p.14 Table 5",
+   "gt_name": "chicken jalfrezi",
+   "setting": "takeaway",
+   "lab": {
+    "fat100": 6.94,
+    "water100": null,
+    "kcal100": 133.8,
+    "M2": 46.68161434977578,
+    "M1": null,
+    "M3": 6.94
+   },
+   "recipes": [
+    "R11",
+    "R23"
+   ],
+   "n_recipes": 2,
+   "recipe_urls": [
+    "https://www.indianhealthyrecipes.com/chicken-jalfrezi/",
+    "https://www.archanaskitchen.com/recipe/chicken-jalfrezi-recipe"
+   ],
+   "sanity_all_pass": true,
+   "mass_unmapped_share_max": 0.0018352953514590594,
+   "M1": null,
+   "M2": {
+    "lab": 46.68161434977578,
+    "base_by_recipe": {
+     "R11": 45.47,
+     "R23": 26.5
+    },
+    "median_base": 35.98207633198227,
+    "ratio_median_over_lab": 0.7707976005794474,
+    "range_primary": [
+     26.496986439481034,
+     45.46716622448351
+    ],
+    "inside_primary": false,
+    "range_wide": [
+     25.18792926536071,
+     46.71624142239846
+    ],
+    "inside_wide": true,
+    "inside_base_only": false
+   },
+   "M3": {
+    "lab_fat_per_100g": 6.94,
+    "recipe_band": [
+     2.367030507742738,
+     9.764716834142492
+    ],
+    "inside": true,
+    "note": "fat per 100 g of dish at assumed final moisture 60-80%; reference only"
+   }
+  }
+ ],
+ "overall": {
+  "all": {
+   "M1": {
+    "n_dishes": 8,
+    "inside_primary": 2,
+    "inside_wide": 2,
+    "inside_base_only": 2,
+    "median_ratio": 0.9958263660917477,
+    "ratios": {
+     "saag": 0.91,
+     "methi aloo": 0.81,
+     "bhindi sabzi": 2.2,
+     "sambar": 2.38,
+     "vegetable pilau": 2.84,
+     "chicken biryani": 0.47,
+     "prawn bhuna": 0.79,
+     "chicken tikka masala": 1.08
+    }
+   },
+   "M2": {
+    "n_dishes": 11,
+    "inside_primary": 3,
+    "inside_wide": 4,
+    "inside_base_only": 3,
+    "median_ratio": 0.8848997287945652,
+    "ratios": {
+     "saag": 0.9,
+     "methi aloo": 0.78,
+     "bhindi sabzi": 1.23,
+     "sambar": 1.65,
+     "vegetable pilau": 2.33,
+     "chicken biryani": 0.55,
+     "prawn bhuna": 0.77,
+     "chicken tikka masala": 1.02,
+     "chicken tikka masala*": 0.88,
+     "chicken korma*": 0.73,
+     "chicken jalfrezi*": 0.77
+    }
+   }
+  },
+  "home": {
+   "M1": {
+    "n_dishes": 5,
+    "inside_primary": 1,
+    "inside_wide": 1,
+    "inside_base_only": 1,
+    "median_ratio": 2.195439743213929,
+    "ratios": {
+     "saag": 0.91,
+     "methi aloo": 0.81,
+     "bhindi sabzi": 2.2,
+     "sambar": 2.38,
+     "vegetable pilau": 2.84
+    }
+   },
+   "M2": {
+    "n_dishes": 5,
+    "inside_primary": 1,
+    "inside_wide": 1,
+    "inside_base_only": 1,
+    "median_ratio": 1.2298014719814327,
+    "ratios": {
+     "saag": 0.9,
+     "methi aloo": 0.78,
+     "bhindi sabzi": 1.23,
+     "sambar": 1.65,
+     "vegetable pilau": 2.33
+    }
+   }
+  },
+  "takeaway": {
+   "M1": {
+    "n_dishes": 2,
+    "inside_primary": 0,
+    "inside_wide": 0,
+    "inside_base_only": 0,
+    "median_ratio": 0.6292090586940775,
+    "ratios": {
+     "chicken biryani": 0.47,
+     "prawn bhuna": 0.79
+    }
+   },
+   "M2": {
+    "n_dishes": 5,
+    "inside_primary": 1,
+    "inside_wide": 2,
+    "inside_base_only": 1,
+    "median_ratio": 0.7707495622851711,
+    "ratios": {
+     "chicken biryani": 0.55,
+     "prawn bhuna": 0.77,
+     "chicken tikka masala*": 0.88,
+     "chicken korma*": 0.73,
+     "chicken jalfrezi*": 0.77
+    }
+   }
+  },
+  "retail": {
+   "M1": {
+    "n_dishes": 1,
+    "inside_primary": 1,
+    "inside_wide": 1,
+    "inside_base_only": 1,
+    "median_ratio": 1.0840470616300035,
+    "ratios": {
+     "chicken tikka masala": 1.08
+    }
+   },
+   "M2": {
+    "n_dishes": 1,
+    "inside_primary": 1,
+    "inside_wide": 1,
+    "inside_base_only": 1,
+    "median_ratio": 1.0240189252095042,
+    "ratios": {
+     "chicken tikka masala": 1.02
+    }
+   }
+  }
+ },
+ "qa": {
+  "recipes_used": [
+   "R01",
+   "R02",
+   "R03",
+   "R04",
+   "R05",
+   "R06",
+   "R07",
+   "R08",
+   "R09",
+   "R10",
+   "R11",
+   "R12",
+   "R13",
+   "R14",
+   "R15",
+   "R16",
+   "R17",
+   "R18",
+   "R19",
+   "R20",
+   "R21",
+   "R22",
+   "R23",
+   "R24",
+   "R25",
+   "R26",
+   "R28"
+  ],
+  "recipes_excluded": {
+   "R27": "depends on 3x70 ml of an unspecified \"curry broth\" base sauce with no composition; excluded (only 232 g of quantified ingredients)"
+  },
+  "sanity": {
+   "R01": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R02": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R03": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R04": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R05": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R06": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R07": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R08": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R09": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R10": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R11": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R12": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R13": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R14": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R15": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R16": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R17": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R18": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R19": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R20": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R21": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R22": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R23": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R24": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R25": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R26": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R27": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   },
+   "R28": {
+    "no_spice_condiment_gt_30g": true,
+    "mass_200_5000": true,
+    "no_silent_100g_default": true,
+    "main_ingredient_grams_match_line": true
+   }
+  },
+  "unmapped_share": {
+   "R01": 0.0041,
+   "R02": 0.0,
+   "R03": 0.0,
+   "R04": 0.0,
+   "R05": 0.0,
+   "R06": 0.0005,
+   "R07": 0.0008,
+   "R08": 0.0004,
+   "R09": 0.0024,
+   "R10": 0.0,
+   "R11": 0.0018,
+   "R12": 0.0,
+   "R13": 0.0,
+   "R14": 0.0,
+   "R15": 0.0,
+   "R16": 0.001,
+   "R17": 0.0,
+   "R18": 0.0035,
+   "R19": 0.0,
+   "R20": 0.0004,
+   "R21": 0.0019,
+   "R22": 0.003,
+   "R23": 0.0,
+   "R24": 0.0,
+   "R25": 0.0,
+   "R26": 0.0012,
+   "R27": 0.003,
+   "R28": 0.0
+  },
+  "kcal_atwater_estimate_share": {
+   "R01": 0.067,
+   "R02": 0.028,
+   "R03": 0.066,
+   "R04": 0.024,
+   "R05": 0.046,
+   "R06": 0.041,
+   "R07": 0.063,
+   "R08": 0.025,
+   "R09": 0.035,
+   "R10": 0.048,
+   "R11": 0.046,
+   "R12": 0.153,
+   "R13": 0.052,
+   "R14": 0.074,
+   "R15": 0.132,
+   "R16": 0.023,
+   "R17": 0.016,
+   "R18": 0.026,
+   "R19": 0.034,
+   "R20": 0.03,
+   "R21": 0.026,
+   "R22": 0.074,
+   "R23": 0.028,
+   "R24": 0.002,
+   "R25": 0.036,
+   "R26": 0.058,
+   "R27": 0.035,
+   "R28": 0.042
+  }
+ },
+ "recipe_results": {
+  "R01": {
+   "base": {
+    "fat": 33.862667499999986,
+    "water": 240.721125,
+    "mass": 321.615,
+    "kcal": 421.55984750000005,
+    "dm": 80.89387500000001,
+    "M1": 41.860607493459774,
+    "M2": 72.29436325763919,
+    "unmapped_g": 1.3125,
+    "unmapped_share": 0.004064379775646236,
+    "kcal_est_share": 0.0665062094178692,
+    "M3_60": 16.74424299738391,
+    "M3_80": 8.372121498691955
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 33.862667499999986,
+    "water": 240.721125,
+    "mass": 321.615,
+    "kcal": 421.55984750000005,
+    "dm": 80.89387500000001,
+    "M1": 41.860607493459774,
+    "M2": 72.29436325763919,
+    "unmapped_g": 1.3125,
+    "unmapped_share": 0.004064379775646236,
+    "kcal_est_share": 0.0665062094178692,
+    "M3_60": 16.74424299738391,
+    "M3_80": 8.372121498691955
+   },
+   "cup200": {
+    "fat": 33.84933416666666,
+    "water": 228.841125,
+    "mass": 308.2816666666667,
+    "kcal": 416.89318083333336,
+    "dm": 79.44054166666669,
+    "M1": 42.60964673264541,
+    "M2": 73.07483583469582,
+    "unmapped_g": 1.3125,
+    "unmapped_share": 0.004239420962388933,
+    "kcal_est_share": 0.06725067424695644,
+    "M3_60": 17.043858693058166,
+    "M3_80": 8.521929346529083
+   },
+   "min_qty": {
+    "fat": 33.6127075,
+    "water": 235.48596250000006,
+    "mass": 314.22249999999997,
+    "kcal": 413.9265025,
+    "dm": 78.73653749999991,
+    "M1": 42.690101149037744,
+    "M2": 73.08407789134014,
+    "unmapped_g": 1.0499999999999998,
+    "unmapped_share": 0.0033304522278346507,
+    "kcal_est_share": 0.05146989229084215,
+    "M3_60": 17.076040459615097,
+    "M3_80": 8.538020229807548
+   },
+   "max_qty": {
+    "fat": 34.11262749999999,
+    "water": 245.9562875,
+    "mass": 329.00750000000005,
+    "kcal": 429.19319249999995,
+    "dm": 83.05121250000005,
+    "M1": 41.07420767637796,
+    "M2": 71.5327393036412,
+    "unmapped_g": 1.575,
+    "unmapped_share": 0.0047643175304197885,
+    "kcal_est_share": 0.0810076746499189,
+    "M3_60": 16.429683070551185,
+    "M3_80": 8.214841535275593
+   },
+   "veg_pieces_x1.5": {
+    "fat": 33.862667499999986,
+    "water": 240.721125,
+    "mass": 321.615,
+    "kcal": 421.55984750000005,
+    "dm": 80.89387500000001,
+    "M1": 41.860607493459774,
+    "M2": 72.29436325763919,
+    "unmapped_g": 1.3125,
+    "unmapped_share": 0.004064379775646236,
+    "kcal_est_share": 0.0665062094178692,
+    "M3_60": 16.74424299738391,
+    "M3_80": 8.372121498691955
+   }
+  },
+  "R02": {
+   "base": {
+    "fat": 35.62950000000001,
+    "water": 412.0597249999999,
+    "mass": 526.7,
+    "kcal": 565.2841250000001,
+    "dm": 114.64027500000014,
+    "M1": 31.07939160125005,
+    "M2": 56.72642938628429,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.028135187769513247,
+    "M3_60": 12.431756640500021,
+    "M3_80": 6.2158783202500105
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 35.62950000000001,
+    "water": 412.0597249999999,
+    "mass": 526.7,
+    "kcal": 565.2841250000001,
+    "dm": 114.64027500000014,
+    "M1": 31.07939160125005,
+    "M2": 56.72642938628429,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.028135187769513247,
+    "M3_60": 12.431756640500021,
+    "M3_80": 6.2158783202500105
+   },
+   "cup200": {
+    "fat": 35.62950000000001,
+    "water": 412.0597249999999,
+    "mass": 526.7,
+    "kcal": 565.2841250000001,
+    "dm": 114.64027500000014,
+    "M1": 31.07939160125005,
+    "M2": 56.72642938628429,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.028135187769513247,
+    "M3_60": 12.431756640500021,
+    "M3_80": 6.2158783202500105
+   },
+   "min_qty": {
+    "fat": 35.619510000000005,
+    "water": 410.6328199999999,
+    "mass": 525.0350000000001,
+    "kcal": 564.9511250000002,
+    "dm": 114.40218000000016,
+    "M1": 31.135342001349937,
+    "M2": 56.74395108072401,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.02815177153598906,
+    "M3_60": 12.454136800539976,
+    "M3_80": 6.227068400269988
+   },
+   "max_qty": {
+    "fat": 35.63949000000001,
+    "water": 413.4866299999999,
+    "mass": 528.365,
+    "kcal": 565.6171250000001,
+    "dm": 114.87837000000013,
+    "M1": 31.023673124888496,
+    "M2": 56.70892832320097,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.028118623530007155,
+    "M3_60": 12.4094692499554,
+    "M3_80": 6.2047346249777
+   },
+   "veg_pieces_x1.5": {
+    "fat": 35.764500000000005,
+    "water": 520.7947250000001,
+    "mass": 661.7,
+    "kcal": 661.8841249999998,
+    "dm": 140.90527499999996,
+    "M1": 25.381945423973672,
+    "M2": 48.630944275933516,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.02402894162176802,
+    "M3_60": 10.15277816958947,
+    "M3_80": 5.076389084794735
+   }
+  },
+  "R03": {
+   "base": {
+    "fat": 30.113640000000007,
+    "water": 464.12010999999995,
+    "mass": 592.17,
+    "kcal": 562.77265,
+    "dm": 128.04989,
+    "M1": 23.51711508693995,
+    "M2": 48.15848104914126,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.06607241840910358,
+    "M3_60": 9.40684603477598,
+    "M3_80": 4.70342301738799
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 30.113640000000007,
+    "water": 464.12010999999995,
+    "mass": 592.17,
+    "kcal": 562.77265,
+    "dm": 128.04989,
+    "M1": 23.51711508693995,
+    "M2": 48.15848104914126,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.06607241840910358,
+    "M3_60": 9.40684603477598,
+    "M3_80": 4.70342301738799
+   },
+   "cup200": {
+    "fat": 30.113640000000007,
+    "water": 464.12010999999995,
+    "mass": 592.17,
+    "kcal": 562.77265,
+    "dm": 128.04989,
+    "M1": 23.51711508693995,
+    "M2": 48.15848104914126,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.06607241840910358,
+    "M3_60": 9.40684603477598,
+    "M3_80": 4.70342301738799
+   },
+   "min_qty": {
+    "fat": 30.113640000000007,
+    "water": 464.12010999999995,
+    "mass": 592.17,
+    "kcal": 562.77265,
+    "dm": 128.04989,
+    "M1": 23.51711508693995,
+    "M2": 48.15848104914126,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.06607241840910358,
+    "M3_60": 9.40684603477598,
+    "M3_80": 4.70342301738799
+   },
+   "max_qty": {
+    "fat": 30.113640000000007,
+    "water": 464.12010999999995,
+    "mass": 592.17,
+    "kcal": 562.77265,
+    "dm": 128.04989,
+    "M1": 23.51711508693995,
+    "M2": 48.15848104914126,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.06607241840910358,
+    "M3_60": 9.40684603477598,
+    "M3_80": 4.70342301738799
+   },
+   "veg_pieces_x1.5": {
+    "fat": 30.298640000000006,
+    "water": 620.1551099999999,
+    "mass": 777.17,
+    "kcal": 666.3726499999999,
+    "dm": 157.01489000000004,
+    "M1": 19.296666704667306,
+    "M2": 40.92121127720354,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.05580023429833143,
+    "M3_60": 7.718666681866923,
+    "M3_80": 3.8593333409334614
+   }
+  },
+  "R04": {
+   "base": {
+    "fat": 28.660972500000003,
+    "water": 241.6009325,
+    "mass": 337.87250000000006,
+    "kcal": 489.15975000000003,
+    "dm": 96.27156750000006,
+    "M1": 29.7709627507623,
+    "M2": 52.73302893379924,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.02413705338593374,
+    "M3_60": 11.90838510030492,
+    "M3_80": 5.95419255015246
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 28.660972500000003,
+    "water": 241.6009325,
+    "mass": 337.87250000000006,
+    "kcal": 489.15975000000003,
+    "dm": 96.27156750000006,
+    "M1": 29.7709627507623,
+    "M2": 52.73302893379924,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.02413705338593374,
+    "M3_60": 11.90838510030492,
+    "M3_80": 5.95419255015246
+   },
+   "cup200": {
+    "fat": 28.645972500000003,
+    "water": 235.03093249999998,
+    "mass": 330.37250000000006,
+    "kcal": 486.53475000000003,
+    "dm": 95.34156750000008,
+    "M1": 30.04562778978852,
+    "M2": 52.98979209604247,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.024267279983598296,
+    "M3_60": 12.018251115915408,
+    "M3_80": 6.009125557957704
+   },
+   "min_qty": {
+    "fat": 28.613785000000004,
+    "water": 241.56937,
+    "mass": 337.56000000000006,
+    "kcal": 487.97537500000004,
+    "dm": 95.99063000000007,
+    "M1": 29.8089355179771,
+    "M2": 52.773987826742285,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.02419563692122784,
+    "M3_60": 11.92357420719084,
+    "M3_80": 5.96178710359542
+   },
+   "max_qty": {
+    "fat": 28.708160000000003,
+    "water": 241.632495,
+    "mass": 338.18500000000006,
+    "kcal": 490.344125,
+    "dm": 96.55250500000005,
+    "M1": 29.733210961227766,
+    "M2": 52.69226790470876,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.02407875285545636,
+    "M3_60": 11.893284384491107,
+    "M3_80": 5.9466421922455535
+   },
+   "veg_pieces_x1.5": {
+    "fat": 28.660972500000003,
+    "water": 241.6009325,
+    "mass": 337.87250000000006,
+    "kcal": 489.15975000000003,
+    "dm": 96.27156750000006,
+    "M1": 29.7709627507623,
+    "M2": 52.73302893379924,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.02413705338593374,
+    "M3_60": 11.90838510030492,
+    "M3_80": 5.95419255015246
+   }
+  },
+  "R05": {
+   "base": {
+    "fat": 46.4086,
+    "water": 495.0762499999999,
+    "mass": 607.65,
+    "kcal": 556.671,
+    "dm": 112.57375000000008,
+    "M1": 41.22506356943778,
+    "M2": 75.03128418760811,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.04578108074607802,
+    "M3_60": 16.490025427775112,
+    "M3_80": 8.245012713887556
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 46.4086,
+    "water": 495.0762499999999,
+    "mass": 607.65,
+    "kcal": 556.671,
+    "dm": 112.57375000000008,
+    "M1": 41.22506356943778,
+    "M2": 75.03128418760811,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.04578108074607802,
+    "M3_60": 16.490025427775112,
+    "M3_80": 8.245012713887556
+   },
+   "cup200": {
+    "fat": 46.4086,
+    "water": 495.0762499999999,
+    "mass": 607.65,
+    "kcal": 556.671,
+    "dm": 112.57375000000008,
+    "M1": 41.22506356943778,
+    "M2": 75.03128418760811,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.04578108074607802,
+    "M3_60": 16.490025427775112,
+    "M3_80": 8.245012713887556
+   },
+   "min_qty": {
+    "fat": 46.4086,
+    "water": 495.0762499999999,
+    "mass": 607.65,
+    "kcal": 556.671,
+    "dm": 112.57375000000008,
+    "M1": 41.22506356943778,
+    "M2": 75.03128418760811,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.04578108074607802,
+    "M3_60": 16.490025427775112,
+    "M3_80": 8.245012713887556
+   },
+   "max_qty": {
+    "fat": 46.4086,
+    "water": 495.0762499999999,
+    "mass": 607.65,
+    "kcal": 556.671,
+    "dm": 112.57375000000008,
+    "M1": 41.22506356943778,
+    "M2": 75.03128418760811,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.04578108074607802,
+    "M3_60": 16.490025427775112,
+    "M3_80": 8.245012713887556
+   },
+   "veg_pieces_x1.5": {
+    "fat": 46.488600000000005,
+    "water": 569.1062499999999,
+    "mass": 687.65,
+    "kcal": 574.171,
+    "dm": 118.54375000000005,
+    "M1": 39.216407444508874,
+    "M2": 72.86982449479336,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.04438573177677033,
+    "M3_60": 15.68656297780355,
+    "M3_80": 7.843281488901775
+   }
+  },
+  "R06": {
+   "base": {
+    "fat": 45.562017499999996,
+    "water": 542.8462475,
+    "mass": 658.7925,
+    "kcal": 571.8320000000002,
+    "dm": 115.94625250000001,
+    "M1": 39.29580863340106,
+    "M2": 71.70955061976241,
+    "unmapped_g": 0.35,
+    "unmapped_share": 0.0005309929188301467,
+    "kcal_est_share": 0.041344092320821486,
+    "M3_60": 15.718323453360425,
+    "M3_80": 7.859161726680212
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 45.562017499999996,
+    "water": 542.8462475,
+    "mass": 658.7925,
+    "kcal": 571.8320000000002,
+    "dm": 115.94625250000001,
+    "M1": 39.29580863340106,
+    "M2": 71.70955061976241,
+    "unmapped_g": 0.35,
+    "unmapped_share": 0.0005309929188301467,
+    "kcal_est_share": 0.041344092320821486,
+    "M3_60": 15.718323453360425,
+    "M3_80": 7.859161726680212
+   },
+   "cup200": {
+    "fat": 45.50535083333333,
+    "water": 490.70624749999996,
+    "mass": 602.1258333333333,
+    "kcal": 558.2986666666668,
+    "dm": 111.41958583333331,
+    "M1": 40.84142881432209,
+    "M2": 73.35646347594118,
+    "unmapped_g": 0.35,
+    "unmapped_share": 0.0005809361647977581,
+    "kcal_est_share": 0.04234628597835328,
+    "M3_60": 16.33657152572884,
+    "M3_80": 8.16828576286442
+   },
+   "min_qty": {
+    "fat": 45.425455,
+    "water": 542.7471850000001,
+    "mass": 657.855,
+    "kcal": 568.1207500000003,
+    "dm": 115.10781499999996,
+    "M1": 39.46339785878137,
+    "M2": 71.96165515869643,
+    "unmapped_g": 0.35,
+    "unmapped_share": 0.0005317492270645163,
+    "kcal_est_share": 0.03716639464409633,
+    "M3_60": 15.785359143512549,
+    "M3_80": 7.8926795717562745
+   },
+   "max_qty": {
+    "fat": 45.69858,
+    "water": 542.9453100000001,
+    "mass": 659.73,
+    "kcal": 575.5432500000002,
+    "dm": 116.78468999999996,
+    "M1": 39.13062576952512,
+    "M2": 71.46069734985163,
+    "unmapped_g": 0.35,
+    "unmapped_share": 0.0005302387589383105,
+    "kcal_est_share": 0.045467912272448674,
+    "M3_60": 15.652250307810048,
+    "M3_80": 7.826125153905024
+   },
+   "veg_pieces_x1.5": {
+    "fat": 45.562017499999996,
+    "water": 542.8462475,
+    "mass": 658.7925,
+    "kcal": 571.8320000000002,
+    "dm": 115.94625250000001,
+    "M1": 39.29580863340106,
+    "M2": 71.70955061976241,
+    "unmapped_g": 0.35,
+    "unmapped_share": 0.0005309929188301467,
+    "kcal_est_share": 0.041344092320821486,
+    "M3_60": 15.718323453360425,
+    "M3_80": 7.859161726680212
+   }
+  },
+  "R07": {
+   "base": {
+    "fat": 31.398075000000002,
+    "water": 494.866375,
+    "mass": 586.775,
+    "kcal": 426.62525,
+    "dm": 91.90862499999997,
+    "M1": 34.162272583231456,
+    "M2": 66.2367440745713,
+    "unmapped_g": 0.44999999999999996,
+    "unmapped_share": 0.0007663161479841626,
+    "kcal_est_share": 0.06261349978699104,
+    "M3_60": 13.664909033292583,
+    "M3_80": 6.832454516646291
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 31.398075000000002,
+    "water": 494.866375,
+    "mass": 586.775,
+    "kcal": 426.62525,
+    "dm": 91.90862499999997,
+    "M1": 34.162272583231456,
+    "M2": 66.2367440745713,
+    "unmapped_g": 0.44999999999999996,
+    "unmapped_share": 0.0007663161479841626,
+    "kcal_est_share": 0.06261349978699104,
+    "M3_60": 13.664909033292583,
+    "M3_80": 6.832454516646291
+   },
+   "cup200": {
+    "fat": 31.34849166666667,
+    "water": 449.24387500000006,
+    "mass": 537.1916666666666,
+    "kcal": 414.7835833333333,
+    "dm": 87.94779166666655,
+    "M1": 35.644432989837306,
+    "M2": 68.02015227619707,
+    "unmapped_g": 0.44999999999999996,
+    "unmapped_share": 0.0008369887006525412,
+    "kcal_est_share": 0.06440105412400804,
+    "M3_60": 14.257773195934924,
+    "M3_80": 7.128886597967462
+   },
+   "min_qty": {
+    "fat": 31.353075000000004,
+    "water": 455.3003750000001,
+    "mass": 543.775,
+    "kcal": 416.38525,
+    "dm": 88.47462499999989,
+    "M1": 35.437364102984375,
+    "M2": 67.76841278599568,
+    "unmapped_g": 0.3,
+    "unmapped_share": 0.0005513945687634978,
+    "kcal_est_share": 0.06415332915851366,
+    "M3_60": 14.174945641193752,
+    "M3_80": 7.087472820596876
+   },
+   "max_qty": {
+    "fat": 31.443075000000004,
+    "water": 534.4323750000001,
+    "mass": 629.775,
+    "kcal": 436.86525,
+    "dm": 95.34262499999988,
+    "M1": 32.97903220096997,
+    "M2": 64.77687914065035,
+    "unmapped_g": 0.6,
+    "unmapped_share": 0.0009518143961927424,
+    "kcal_est_share": 0.06114585676017948,
+    "M3_60": 13.191612880387988,
+    "M3_80": 6.595806440193994
+   },
+   "veg_pieces_x1.5": {
+    "fat": 31.398075000000002,
+    "water": 494.866375,
+    "mass": 586.775,
+    "kcal": 426.62525,
+    "dm": 91.90862499999997,
+    "M1": 34.162272583231456,
+    "M2": 66.2367440745713,
+    "unmapped_g": 0.44999999999999996,
+    "unmapped_share": 0.0007663161479841626,
+    "kcal_est_share": 0.06261349978699104,
+    "M3_60": 13.664909033292583,
+    "M3_80": 6.832454516646291
+   }
+  },
+  "R08": {
+   "base": {
+    "fat": 45.80250249999999,
+    "water": 625.757165,
+    "mass": 1128.6374999999998,
+    "kcal": 2132.8008374999995,
+    "dm": 502.88033499999983,
+    "M1": 9.10803213253507,
+    "M2": 19.327755093306973,
+    "unmapped_g": 0.5,
+    "unmapped_share": 0.0004428158660924822,
+    "kcal_est_share": 0.024786696709087355,
+    "M3_60": 3.6432128530140284,
+    "M3_80": 1.8216064265070142
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 45.80250249999999,
+    "water": 625.757165,
+    "mass": 1128.6374999999998,
+    "kcal": 2132.8008374999995,
+    "dm": 502.88033499999983,
+    "M1": 9.10803213253507,
+    "M2": 19.327755093306973,
+    "unmapped_g": 0.5,
+    "unmapped_share": 0.0004428158660924822,
+    "kcal_est_share": 0.024786696709087355,
+    "M3_60": 3.6432128530140284,
+    "M3_80": 1.8216064265070142
+   },
+   "cup200": {
+    "fat": 45.21983583333332,
+    "water": 610.4307983333334,
+    "mass": 1064.0041666666668,
+    "kcal": 1937.0338375000001,
+    "dm": 453.5733683333334,
+    "M1": 9.969684948544208,
+    "M2": 21.010398198580766,
+    "unmapped_g": 0.5,
+    "unmapped_share": 0.0004697022479166747,
+    "kcal_est_share": 0.02729177285216113,
+    "M3_60": 3.9878739794176834,
+    "M3_80": 1.9939369897088417
+   },
+   "min_qty": {
+    "fat": 45.37131499999998,
+    "water": 623.73854,
+    "mass": 1123.0749999999998,
+    "kcal": 2121.0442749999997,
+    "dm": 499.3364599999999,
+    "M1": 9.08632127523794,
+    "M2": 19.251924149485276,
+    "unmapped_g": 0.5,
+    "unmapped_share": 0.0004450081213982156,
+    "kcal_est_share": 0.023137081850872723,
+    "M3_60": 3.6345285100951763,
+    "M3_80": 1.8172642550475882
+   },
+   "max_qty": {
+    "fat": 46.23368999999999,
+    "water": 627.77579,
+    "mass": 1134.1999999999998,
+    "kcal": 2144.5573999999997,
+    "dm": 506.4242099999998,
+    "M1": 9.129439131671846,
+    "M2": 19.40275461967117,
+    "unmapped_g": 0.5,
+    "unmapped_share": 0.00044064510443288983,
+    "kcal_est_share": 0.02641822503794956,
+    "M3_60": 3.651775652668739,
+    "M3_80": 1.8258878263343694
+   },
+   "veg_pieces_x1.5": {
+    "fat": 45.84750249999998,
+    "water": 665.852165,
+    "mass": 1173.6374999999998,
+    "kcal": 2148.5508374999995,
+    "dm": 507.7853349999998,
+    "M1": 9.028914255666718,
+    "M2": 19.204922466722874,
+    "unmapped_g": 0.5,
+    "unmapped_share": 0.0004258445028797735,
+    "kcal_est_share": 0.024604997274121986,
+    "M3_60": 3.6115657022666876,
+    "M3_80": 1.8057828511333438
+   }
+  },
+  "R09": {
+   "base": {
+    "fat": 154.29010499999998,
+    "water": 1341.6387600000003,
+    "mass": 1766.6799999999998,
+    "kcal": 2328.4221249999996,
+    "dm": 425.04123999999956,
+    "M1": 36.300031733391364,
+    "M2": 59.63742270315354,
+    "unmapped_g": 4.199999999999999,
+    "unmapped_share": 0.002371702204553668,
+    "kcal_est_share": 0.03450110018173788,
+    "M3_60": 14.520012693356547,
+    "M3_80": 7.260006346678273
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 154.29010499999998,
+    "water": 1341.6387600000003,
+    "mass": 1766.6799999999998,
+    "kcal": 2328.4221249999996,
+    "dm": 425.04123999999956,
+    "M1": 36.300031733391364,
+    "M2": 59.63742270315354,
+    "unmapped_g": 4.199999999999999,
+    "unmapped_share": 0.002371702204553668,
+    "kcal_est_share": 0.03450110018173788,
+    "M3_60": 14.520012693356547,
+    "M3_80": 7.260006346678273
+   },
+   "cup200": {
+    "fat": 146.23010499999998,
+    "water": 1330.7387600000002,
+    "mass": 1746.6799999999998,
+    "kcal": 2252.2221249999993,
+    "dm": 415.94123999999965,
+    "M1": 35.15643339429389,
+    "M2": 58.43433160483672,
+    "unmapped_g": 4.199999999999999,
+    "unmapped_share": 0.0023987937494288586,
+    "kcal_est_share": 0.03566838461814685,
+    "M3_60": 14.062573357717557,
+    "M3_80": 7.031286678858779
+   },
+   "min_qty": {
+    "fat": 153.97197999999997,
+    "water": 1341.4531350000002,
+    "mass": 1762.705,
+    "kcal": 2312.2499999999995,
+    "dm": 421.2518649999997,
+    "M1": 36.55105004698319,
+    "M2": 59.93070904962699,
+    "unmapped_g": 4.199999999999999,
+    "unmapped_share": 0.002377037814709902,
+    "kcal_est_share": 0.031326629905935786,
+    "M3_60": 14.620420018793277,
+    "M3_80": 7.310210009396639
+   },
+   "max_qty": {
+    "fat": 154.60823,
+    "water": 1341.8243850000003,
+    "mass": 1770.655,
+    "kcal": 2344.5942499999996,
+    "dm": 428.8306149999996,
+    "M1": 36.0534496819916,
+    "M2": 59.34818231342162,
+    "unmapped_g": 4.199999999999999,
+    "unmapped_share": 0.00236639049387133,
+    "kcal_est_share": 0.037631777865189266,
+    "M3_60": 14.421379872796642,
+    "M3_80": 7.210689936398321
+   },
+   "veg_pieces_x1.5": {
+    "fat": 154.29010499999998,
+    "water": 1341.6387600000003,
+    "mass": 1766.6799999999998,
+    "kcal": 2328.4221249999996,
+    "dm": 425.04123999999956,
+    "M1": 36.300031733391364,
+    "M2": 59.63742270315354,
+    "unmapped_g": 4.199999999999999,
+    "unmapped_share": 0.002371702204553668,
+    "kcal_est_share": 0.03450110018173788,
+    "M3_60": 14.520012693356547,
+    "M3_80": 7.260006346678273
+   }
+  },
+  "R10": {
+   "base": {
+    "fat": 65.09885750000002,
+    "water": 625.919915,
+    "mass": 869.8825,
+    "kcal": 1226.1376875,
+    "dm": 243.9625850000001,
+    "M1": 26.68395135262237,
+    "M2": 47.78335446931609,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.048191722758705265,
+    "M3_60": 10.673580541048949,
+    "M3_80": 5.3367902705244745
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 65.09885750000002,
+    "water": 625.919915,
+    "mass": 869.8825,
+    "kcal": 1226.1376875,
+    "dm": 243.9625850000001,
+    "M1": 26.68395135262237,
+    "M2": 47.78335446931609,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.048191722758705265,
+    "M3_60": 10.673580541048949,
+    "M3_80": 5.3367902705244745
+   },
+   "cup200": {
+    "fat": 64.76319083333334,
+    "water": 593.724215,
+    "mass": 832.9158333333335,
+    "kcal": 1208.6673541666667,
+    "dm": 239.1916183333335,
+    "M1": 27.075861305089887,
+    "M2": 48.224080470996704,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.04888829610256185,
+    "M3_60": 10.830344522035956,
+    "M3_80": 5.415172261017978
+   },
+   "min_qty": {
+    "fat": 58.05670499999999,
+    "water": 624.396135,
+    "mass": 860.38,
+    "kcal": 1160.1414999999997,
+    "dm": 235.98386500000004,
+    "M1": 24.60198073287764,
+    "M2": 45.03850133798334,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.0498441353921052,
+    "M3_60": 9.840792293151056,
+    "M3_80": 4.920396146575528
+   },
+   "max_qty": {
+    "fat": 72.14101000000001,
+    "water": 627.443695,
+    "mass": 879.385,
+    "kcal": 1292.1338750000002,
+    "dm": 251.94130499999994,
+    "M1": 28.634054269108443,
+    "M2": 50.24781894213554,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.046708105226325715,
+    "M3_60": 11.453621707643379,
+    "M3_80": 5.726810853821689
+   },
+   "veg_pieces_x1.5": {
+    "fat": 65.09885750000002,
+    "water": 625.919915,
+    "mass": 869.8825,
+    "kcal": 1226.1376875,
+    "dm": 243.9625850000001,
+    "M1": 26.68395135262237,
+    "M2": 47.78335446931609,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.048191722758705265,
+    "M3_60": 10.673580541048949,
+    "M3_80": 5.3367902705244745
+   }
+  },
+  "R11": {
+   "base": {
+    "fat": 62.51754250000002,
+    "water": 886.0343300000001,
+    "mass": 1142.13,
+    "kcal": 1237.5037399999999,
+    "dm": 256.09567000000004,
+    "M1": 24.41179208535623,
+    "M2": 45.46716622448351,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.0018352953514590594,
+    "kcal_est_share": 0.0463716295516004,
+    "M3_60": 9.764716834142492,
+    "M3_80": 4.882358417071246
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 62.51754250000002,
+    "water": 886.0343300000001,
+    "mass": 1142.13,
+    "kcal": 1237.5037399999999,
+    "dm": 256.09567000000004,
+    "M1": 24.41179208535623,
+    "M2": 45.46716622448351,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.0018352953514590594,
+    "kcal_est_share": 0.0463716295516004,
+    "M3_60": 9.764716834142492,
+    "M3_80": 4.882358417071246
+   },
+   "cup200": {
+    "fat": 62.48691750000002,
+    "water": 857.583705,
+    "mass": 1111.505,
+    "kcal": 1231.6849899999997,
+    "dm": 253.9212950000001,
+    "M1": 24.60877395099926,
+    "M2": 45.65958520774052,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.0018857673950817386,
+    "kcal_est_share": 0.0465906992988524,
+    "M3_60": 9.843509580399704,
+    "M3_80": 4.921754790199852
+   },
+   "min_qty": {
+    "fat": 54.631030000000024,
+    "water": 843.503905,
+    "mass": 1079.055,
+    "kcal": 1118.6558649999997,
+    "dm": 235.55109500000003,
+    "M1": 23.192857583616846,
+    "M2": 43.95268333930385,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.0019423671906433394,
+    "kcal_est_share": 0.0488991446891489,
+    "M3_60": 9.27714303344674,
+    "M3_80": 4.63857151672337
+   },
+   "max_qty": {
+    "fat": 70.40405500000003,
+    "water": 928.564755,
+    "mass": 1205.205,
+    "kcal": 1356.3516149999996,
+    "dm": 276.64024499999994,
+    "M1": 25.449679239548114,
+    "M2": 46.71624142239846,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.0017394113335072745,
+    "kcal_est_share": 0.04428705236584249,
+    "M3_60": 10.179871695819246,
+    "M3_80": 5.089935847909623
+   },
+   "veg_pieces_x1.5": {
+    "fat": 62.51754250000002,
+    "water": 886.0343300000001,
+    "mass": 1142.13,
+    "kcal": 1237.5037399999999,
+    "dm": 256.09567000000004,
+    "M1": 24.41179208535623,
+    "M2": 45.46716622448351,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.0018352953514590594,
+    "kcal_est_share": 0.0463716295516004,
+    "M3_60": 9.764716834142492,
+    "M3_80": 4.882358417071246
+   }
+  },
+  "R12": {
+   "base": {
+    "fat": 23.451966666666667,
+    "water": 448.42808833333333,
+    "mass": 705.4283333333334,
+    "kcal": 949.4195233333335,
+    "dm": 257.00024500000006,
+    "M1": 9.125270159437655,
+    "M2": 22.23123654114029,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.1525014879530407,
+    "M3_60": 3.650108063775062,
+    "M3_80": 1.825054031887531
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 23.451966666666667,
+    "water": 448.42808833333333,
+    "mass": 705.4283333333334,
+    "kcal": 949.4195233333335,
+    "dm": 257.00024500000006,
+    "M1": 9.125270159437655,
+    "M2": 22.23123654114029,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.1525014879530407,
+    "M3_60": 3.650108063775062,
+    "M3_80": 1.825054031887531
+   },
+   "cup200": {
+    "fat": 23.033008333333335,
+    "water": 445.62592166666667,
+    "mass": 682.8866666666667,
+    "kcal": 878.4245233333335,
+    "dm": 237.260745,
+    "M1": 9.707888396512175,
+    "M2": 23.598734950314853,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.16482678494741626,
+    "M3_60": 3.88315535860487,
+    "M3_80": 1.941577679302435
+   },
+   "min_qty": {
+    "fat": 22.892979166666667,
+    "water": 446.7163008333333,
+    "mass": 696.4783333333335,
+    "kcal": 919.8846708333335,
+    "dm": 249.76203250000015,
+    "M1": 9.16591642753654,
+    "M2": 22.39811348452508,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.14011472479831383,
+    "M3_60": 3.6663665710146165,
+    "M3_80": 1.8331832855073082
+   },
+   "max_qty": {
+    "fat": 24.010954166666668,
+    "water": 450.1398758333333,
+    "mass": 714.3783333333332,
+    "kcal": 978.9543758333335,
+    "dm": 264.2384574999999,
+    "M1": 9.08685071576558,
+    "M2": 22.07442888398618,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.1641408389060174,
+    "M3_60": 3.6347402863062324,
+    "M3_80": 1.8173701431531162
+   },
+   "veg_pieces_x1.5": {
+    "fat": 23.57196666666667,
+    "water": 475.1280883333334,
+    "mass": 735.4283333333334,
+    "kcal": 959.6195233333335,
+    "dm": 260.300245,
+    "M1": 9.055683626677595,
+    "M2": 22.10748060471758,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.15088051720442797,
+    "M3_60": 3.622273450671038,
+    "M3_80": 1.811136725335519
+   }
+  },
+  "R13": {
+   "base": {
+    "fat": 32.709475,
+    "water": 321.6393800000001,
+    "mass": 492.06500000000005,
+    "kcal": 740.1357349999998,
+    "dm": 170.42561999999998,
+    "M1": 19.192815610704542,
+    "M2": 39.774498254701896,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.05155444224024666,
+    "M3_60": 7.677126244281817,
+    "M3_80": 3.8385631221409087
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 32.709475,
+    "water": 321.6393800000001,
+    "mass": 492.06500000000005,
+    "kcal": 740.1357349999998,
+    "dm": 170.42561999999998,
+    "M1": 19.192815610704542,
+    "M2": 39.774498254701896,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.05155444224024666,
+    "M3_60": 7.677126244281817,
+    "M3_80": 3.8385631221409087
+   },
+   "cup200": {
+    "fat": 32.62614166666666,
+    "water": 302.6185466666667,
+    "mass": 471.2316666666667,
+    "kcal": 735.1357349999998,
+    "dm": 168.61311999999998,
+    "M1": 19.34970521076098,
+    "M2": 39.94300113842242,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.051905087976712234,
+    "M3_60": 7.7398820843043925,
+    "M3_80": 3.8699410421521963
+   },
+   "min_qty": {
+    "fat": 32.11091000000001,
+    "water": 273.73791,
+    "mass": 435.82000000000005,
+    "kcal": 713.92264,
+    "dm": 162.08209000000005,
+    "M1": 19.811510327883852,
+    "M2": 40.480322910056486,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.04399207734888476,
+    "M3_60": 7.924604131153541,
+    "M3_80": 3.9623020655767704
+   },
+   "max_qty": {
+    "fat": 33.308040000000005,
+    "water": 369.54085000000003,
+    "mass": 548.31,
+    "kcal": 766.3488299999999,
+    "dm": 178.7691499999999,
+    "M1": 18.631872445553398,
+    "M2": 39.116959309509234,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.058599463119164696,
+    "M3_60": 7.45274897822136,
+    "M3_80": 3.72637448911068
+   },
+   "veg_pieces_x1.5": {
+    "fat": 32.734474999999996,
+    "water": 345.28938000000005,
+    "mass": 517.065,
+    "kcal": 743.6357349999998,
+    "dm": 171.77562,
+    "M1": 19.056531421630147,
+    "M2": 39.61755213390868,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.05131179582164648,
+    "M3_60": 7.622612568652059,
+    "M3_80": 3.8113062843260295
+   }
+  },
+  "R14": {
+   "base": {
+    "fat": 20.05365166666667,
+    "water": 362.7387358333333,
+    "mass": 534.0608333333333,
+    "kcal": 641.0752133333332,
+    "dm": 171.32209750000004,
+    "M1": 11.705233568405657,
+    "M2": 28.15314977809885,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.07355241478581788,
+    "M3_60": 4.682093427362263,
+    "M3_80": 2.3410467136811315
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 20.05365166666667,
+    "water": 362.7387358333333,
+    "mass": 534.0608333333333,
+    "kcal": 641.0752133333332,
+    "dm": 171.32209750000004,
+    "M1": 11.705233568405657,
+    "M2": 28.15314977809885,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.07355241478581788,
+    "M3_60": 4.682093427362263,
+    "M3_80": 2.3410467136811315
+   },
+   "cup200": {
+    "fat": 19.776568333333337,
+    "water": 361.2804025,
+    "mass": 519.4774999999998,
+    "kcal": 593.8252133333332,
+    "dm": 158.19709749999987,
+    "M1": 12.501220721406316,
+    "M2": 29.97331723267348,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.07940489716715973,
+    "M3_60": 5.000488288562527,
+    "M3_80": 2.5002441442812633
+   },
+   "min_qty": {
+    "fat": 20.05365166666667,
+    "water": 362.7387358333333,
+    "mass": 534.0608333333333,
+    "kcal": 641.0752133333332,
+    "dm": 171.32209750000004,
+    "M1": 11.705233568405657,
+    "M2": 28.15314977809885,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.07355241478581788,
+    "M3_60": 4.682093427362263,
+    "M3_80": 2.3410467136811315
+   },
+   "max_qty": {
+    "fat": 20.05365166666667,
+    "water": 362.7387358333333,
+    "mass": 534.0608333333333,
+    "kcal": 641.0752133333332,
+    "dm": 171.32209750000004,
+    "M1": 11.705233568405657,
+    "M2": 28.15314977809885,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.07355241478581788,
+    "M3_60": 4.682093427362263,
+    "M3_80": 2.3410467136811315
+   },
+   "veg_pieces_x1.5": {
+    "fat": 20.56865166666667,
+    "water": 528.1087358333333,
+    "mass": 719.0608333333334,
+    "kcal": 700.7252133333334,
+    "dm": 190.95209750000015,
+    "M1": 10.771629081825955,
+    "M2": 26.418039693391183,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.06729118505055078,
+    "M3_60": 4.308651632730382,
+    "M3_80": 2.154325816365191
+   }
+  },
+  "R15": {
+   "base": {
+    "fat": 26.354575000000008,
+    "water": 401.12771874999993,
+    "mass": 624.74375,
+    "kcal": 899.2315975000001,
+    "dm": 223.61603125000005,
+    "M1": 11.785637573781957,
+    "M2": 26.377095251037378,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.13220656706294176,
+    "M3_60": 4.714255029512783,
+    "M3_80": 2.3571275147563915
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 26.354575000000008,
+    "water": 401.12771874999993,
+    "mass": 624.74375,
+    "kcal": 899.2315975000001,
+    "dm": 223.61603125000005,
+    "M1": 11.785637573781957,
+    "M2": 26.377095251037378,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.13220656706294176,
+    "M3_60": 4.714255029512783,
+    "M3_80": 2.3571275147563915
+   },
+   "cup200": {
+    "fat": 25.918950000000006,
+    "water": 389.44021874999993,
+    "mass": 592.86875,
+    "kcal": 827.0565975000002,
+    "dm": 203.42853125000005,
+    "M1": 12.741059398471176,
+    "M2": 28.204907705847784,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.14374387781847056,
+    "M3_60": 5.096423759388471,
+    "M3_80": 2.5482118796942355
+   },
+   "min_qty": {
+    "fat": 26.249487500000004,
+    "water": 376.69891874999996,
+    "mass": 598.08125,
+    "kcal": 892.5441600000001,
+    "dm": 221.38233125,
+    "M1": 11.85708333261578,
+    "M2": 26.468761780929697,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.1317815860225896,
+    "M3_60": 4.742833333046312,
+    "M3_80": 2.371416666523156
+   },
+   "max_qty": {
+    "fat": 26.459662500000007,
+    "water": 425.55651874999995,
+    "mass": 651.4062499999999,
+    "kcal": 905.9190350000002,
+    "dm": 225.84973124999993,
+    "M1": 11.715605041261265,
+    "M2": 26.28678207429431,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.13262527373652103,
+    "M3_60": 4.686242016504506,
+    "M3_80": 2.343121008252253
+   },
+   "veg_pieces_x1.5": {
+    "fat": 26.499575000000007,
+    "water": 451.47771874999995,
+    "mass": 679.74375,
+    "kcal": 912.9315975000002,
+    "dm": 228.26603125000003,
+    "M1": 11.609075101926715,
+    "M2": 26.124210801017874,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.1302225958938835,
+    "M3_60": 4.643630040770686,
+    "M3_80": 2.321815020385343
+   }
+  },
+  "R16": {
+   "base": {
+    "fat": 44.4439115,
+    "water": 562.093948,
+    "mass": 952.392,
+    "kcal": 1690.4349224999999,
+    "dm": 390.2980520000001,
+    "M1": 11.387172257780058,
+    "M2": 23.662265738597224,
+    "unmapped_g": 1.0,
+    "unmapped_share": 0.0010488865020893817,
+    "kcal_est_share": 0.023296201454333126,
+    "M3_60": 4.554868903112023,
+    "M3_80": 2.2774344515560117
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 44.4439115,
+    "water": 562.093948,
+    "mass": 952.392,
+    "kcal": 1690.4349224999999,
+    "dm": 390.2980520000001,
+    "M1": 11.387172257780058,
+    "M2": 23.662265738597224,
+    "unmapped_g": 1.0,
+    "unmapped_share": 0.0010488865020893817,
+    "kcal_est_share": 0.023296201454333126,
+    "M3_60": 4.554868903112023,
+    "M3_80": 2.2774344515560117
+   },
+   "cup200": {
+    "fat": 44.21126916666667,
+    "water": 478.49023833333325,
+    "mass": 857.3716666666668,
+    "kcal": 1652.9706791666665,
+    "dm": 378.88142833333353,
+    "M1": 11.6688931841152,
+    "M2": 24.07189840176713,
+    "unmapped_g": 1.0,
+    "unmapped_share": 0.00116499651471876,
+    "kcal_est_share": 0.023824205109224023,
+    "M3_60": 4.66755727364608,
+    "M3_80": 2.33377863682304
+   },
+   "min_qty": {
+    "fat": 44.31371399999999,
+    "water": 531.4476079999998,
+    "mass": 915.1620000000001,
+    "kcal": 1667.92651,
+    "dm": 383.7143920000003,
+    "M1": 11.548619213636364,
+    "M2": 23.91133084154888,
+    "unmapped_g": 1.0,
+    "unmapped_share": 0.0010915100167874238,
+    "kcal_est_share": 0.022854214362238296,
+    "M3_60": 4.619447685454546,
+    "M3_80": 2.309723842727273
+   },
+   "max_qty": {
+    "fat": 44.574108999999986,
+    "water": 592.7402880000001,
+    "mass": 989.622,
+    "kcal": 1712.943335,
+    "dm": 396.8817119999999,
+    "M1": 11.231081617587863,
+    "M2": 23.419746164574665,
+    "unmapped_g": 1.0,
+    "unmapped_share": 0.001009466779457755,
+    "kcal_est_share": 0.02372657295169662,
+    "M3_60": 4.492432647035145,
+    "M3_80": 2.2462163235175727
+   },
+   "veg_pieces_x1.5": {
+    "fat": 44.4439115,
+    "water": 562.093948,
+    "mass": 952.392,
+    "kcal": 1690.4349224999999,
+    "dm": 390.2980520000001,
+    "M1": 11.387172257780058,
+    "M2": 23.662265738597224,
+    "unmapped_g": 1.0,
+    "unmapped_share": 0.0010488865020893817,
+    "kcal_est_share": 0.023296201454333126,
+    "M3_60": 4.554868903112023,
+    "M3_80": 2.2774344515560117
+   }
+  },
+  "R17": {
+   "base": {
+    "fat": 33.369859999999996,
+    "water": 313.23517,
+    "mass": 517.86,
+    "kcal": 924.303,
+    "dm": 204.62483000000003,
+    "M1": 16.307825399292934,
+    "M2": 32.4924553961201,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.0157524101944925,
+    "M3_60": 6.523130159717174,
+    "M3_80": 3.261565079858587
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 33.369859999999996,
+    "water": 313.23517,
+    "mass": 517.86,
+    "kcal": 924.303,
+    "dm": 204.62483000000003,
+    "M1": 16.307825399292934,
+    "M2": 32.4924553961201,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.0157524101944925,
+    "M3_60": 6.523130159717174,
+    "M3_80": 3.261565079858587
+   },
+   "cup200": {
+    "fat": 32.409859999999995,
+    "water": 279.8285033333333,
+    "mass": 457.86,
+    "kcal": 819.6363333333334,
+    "dm": 178.03149666666673,
+    "M1": 18.204565263348805,
+    "M2": 35.58758050826606,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.017763975812036967,
+    "M3_60": 7.281826105339523,
+    "M3_80": 3.6409130526697613
+   },
+   "min_qty": {
+    "fat": 33.369859999999996,
+    "water": 313.23517,
+    "mass": 517.86,
+    "kcal": 924.303,
+    "dm": 204.62483000000003,
+    "M1": 16.307825399292934,
+    "M2": 32.4924553961201,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.0157524101944925,
+    "M3_60": 6.523130159717174,
+    "M3_80": 3.261565079858587
+   },
+   "max_qty": {
+    "fat": 33.369859999999996,
+    "water": 313.23517,
+    "mass": 517.86,
+    "kcal": 924.303,
+    "dm": 204.62483000000003,
+    "M1": 16.307825399292934,
+    "M2": 32.4924553961201,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.0157524101944925,
+    "M3_60": 6.523130159717174,
+    "M3_80": 3.261565079858587
+   },
+   "veg_pieces_x1.5": {
+    "fat": 33.48985999999999,
+    "water": 339.93517,
+    "mass": 547.86,
+    "kcal": 934.503,
+    "dm": 207.92483,
+    "M1": 16.106715104684707,
+    "M2": 32.25337318339266,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.015580474326995207,
+    "M3_60": 6.442686041873883,
+    "M3_80": 3.2213430209369416
+   }
+  },
+  "R18": {
+   "base": {
+    "fat": 28.103715,
+    "water": 545.0746849999999,
+    "mass": 702.145,
+    "kcal": 724.09665,
+    "dm": 157.07031500000005,
+    "M1": 17.892441993256327,
+    "M2": 34.93089423904945,
+    "unmapped_g": 2.5,
+    "unmapped_share": 0.003547885814842935,
+    "kcal_est_share": 0.026367336459849667,
+    "M3_60": 7.156976797302531,
+    "M3_80": 3.5784883986512654
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 28.103715,
+    "water": 545.0746849999999,
+    "mass": 702.145,
+    "kcal": 724.09665,
+    "dm": 157.07031500000005,
+    "M1": 17.892441993256327,
+    "M2": 34.93089423904945,
+    "unmapped_g": 2.5,
+    "unmapped_share": 0.003547885814842935,
+    "kcal_est_share": 0.026367336459849667,
+    "M3_60": 7.156976797302531,
+    "M3_80": 3.5784883986512654
+   },
+   "cup200": {
+    "fat": 28.063715000000002,
+    "water": 509.43468500000006,
+    "mass": 662.145,
+    "kcal": 710.09665,
+    "dm": 152.71031499999992,
+    "M1": 18.377091946932346,
+    "M2": 35.56888136283984,
+    "unmapped_g": 2.5,
+    "unmapped_share": 0.003761406465105432,
+    "kcal_est_share": 0.026887185005027136,
+    "M3_60": 7.350836778772939,
+    "M3_80": 3.6754183893864694
+   },
+   "min_qty": {
+    "fat": 28.103715,
+    "water": 545.0746849999999,
+    "mass": 702.145,
+    "kcal": 724.09665,
+    "dm": 157.07031500000005,
+    "M1": 17.892441993256327,
+    "M2": 34.93089423904945,
+    "unmapped_g": 2.5,
+    "unmapped_share": 0.003547885814842935,
+    "kcal_est_share": 0.026367336459849667,
+    "M3_60": 7.156976797302531,
+    "M3_80": 3.5784883986512654
+   },
+   "max_qty": {
+    "fat": 28.103715,
+    "water": 545.0746849999999,
+    "mass": 702.145,
+    "kcal": 724.09665,
+    "dm": 157.07031500000005,
+    "M1": 17.892441993256327,
+    "M2": 34.93089423904945,
+    "unmapped_g": 2.5,
+    "unmapped_share": 0.003547885814842935,
+    "kcal_est_share": 0.026367336459849667,
+    "M3_60": 7.156976797302531,
+    "M3_80": 3.5784883986512654
+   },
+   "veg_pieces_x1.5": {
+    "fat": 28.103715,
+    "water": 545.0746849999999,
+    "mass": 702.145,
+    "kcal": 724.09665,
+    "dm": 157.07031500000005,
+    "M1": 17.892441993256327,
+    "M2": 34.93089423904945,
+    "unmapped_g": 2.5,
+    "unmapped_share": 0.003547885814842935,
+    "kcal_est_share": 0.026367336459849667,
+    "M3_60": 7.156976797302531,
+    "M3_80": 3.5784883986512654
+   }
+  },
+  "R19": {
+   "base": {
+    "fat": 139.91272500000002,
+    "water": 661.373475,
+    "mass": 1198.275,
+    "kcal": 1889.0748750000002,
+    "dm": 536.9015250000001,
+    "M1": 26.05928992285876,
+    "M2": 66.65773504610293,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.03422144662211972,
+    "M3_60": 10.423715969143505,
+    "M3_80": 5.211857984571752
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 139.91272500000002,
+    "water": 661.373475,
+    "mass": 1198.275,
+    "kcal": 1889.0748750000002,
+    "dm": 536.9015250000001,
+    "M1": 26.05928992285876,
+    "M2": 66.65773504610293,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.03422144662211972,
+    "M3_60": 10.423715969143505,
+    "M3_80": 5.211857984571752
+   },
+   "cup200": {
+    "fat": 134.353225,
+    "water": 612.736475,
+    "mass": 1132.8583333333333,
+    "kcal": 1804.8707083333331,
+    "dm": 520.1218583333333,
+    "M1": 25.831105316457652,
+    "M2": 66.99532655813275,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.035818008847679,
+    "M3_60": 10.33244212658306,
+    "M3_80": 5.16622106329153
+   },
+   "min_qty": {
+    "fat": 139.91272500000002,
+    "water": 661.373475,
+    "mass": 1198.275,
+    "kcal": 1889.0748750000002,
+    "dm": 536.9015250000001,
+    "M1": 26.05928992285876,
+    "M2": 66.65773504610293,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.03422144662211972,
+    "M3_60": 10.423715969143505,
+    "M3_80": 5.211857984571752
+   },
+   "max_qty": {
+    "fat": 139.91272500000002,
+    "water": 661.373475,
+    "mass": 1198.275,
+    "kcal": 1889.0748750000002,
+    "dm": 536.9015250000001,
+    "M1": 26.05928992285876,
+    "M2": 66.65773504610293,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.03422144662211972,
+    "M3_60": 10.423715969143505,
+    "M3_80": 5.211857984571752
+   },
+   "veg_pieces_x1.5": {
+    "fat": 139.91272500000002,
+    "water": 661.373475,
+    "mass": 1198.275,
+    "kcal": 1889.0748750000002,
+    "dm": 536.9015250000001,
+    "M1": 26.05928992285876,
+    "M2": 66.65773504610293,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.03422144662211972,
+    "M3_60": 10.423715969143505,
+    "M3_80": 5.211857984571752
+   }
+  },
+  "R20": {
+   "base": {
+    "fat": 57.01117999999998,
+    "water": 872.7471800000001,
+    "mass": 1349.4700000000005,
+    "kcal": 2013.7700000000004,
+    "dm": 476.7228200000004,
+    "M1": 11.958978594731407,
+    "M2": 25.47960392696285,
+    "unmapped_g": 0.5,
+    "unmapped_share": 0.00037037860100594817,
+    "kcal_est_share": 0.030460280965552165,
+    "M3_60": 4.7835914378925635,
+    "M3_80": 2.3917957189462817
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 70.79737999999999,
+    "water": 872.7471800000001,
+    "mass": 1363.2700000000004,
+    "kcal": 2137.8320000000003,
+    "dm": 490.52282000000037,
+    "M1": 14.433045133353824,
+    "M2": 29.804793828514114,
+    "unmapped_g": 0.5,
+    "unmapped_share": 0.0003666307368544548,
+    "kcal_est_share": 0.02869261943875851,
+    "M3_60": 5.77321805334153,
+    "M3_80": 2.886609026670765
+   },
+   "cup200": {
+    "fat": 56.18184666666666,
+    "water": 849.5504466666667,
+    "mass": 1286.8700000000003,
+    "kcal": 1856.5693333333336,
+    "dm": 437.3195533333336,
+    "M1": 12.846863635169715,
+    "M2": 27.234997956804907,
+    "unmapped_g": 0.5,
+    "unmapped_share": 0.00038838873051259533,
+    "kcal_est_share": 0.033039434024189414,
+    "M3_60": 5.1387454540678865,
+    "M3_80": 2.5693727270339433
+   },
+   "min_qty": {
+    "fat": 57.01117999999998,
+    "water": 872.7471800000001,
+    "mass": 1349.4700000000005,
+    "kcal": 2013.7700000000004,
+    "dm": 476.7228200000004,
+    "M1": 11.958978594731407,
+    "M2": 25.47960392696285,
+    "unmapped_g": 0.5,
+    "unmapped_share": 0.00037037860100594817,
+    "kcal_est_share": 0.030460280965552165,
+    "M3_60": 4.7835914378925635,
+    "M3_80": 2.3917957189462817
+   },
+   "max_qty": {
+    "fat": 57.01117999999998,
+    "water": 872.7471800000001,
+    "mass": 1349.4700000000005,
+    "kcal": 2013.7700000000004,
+    "dm": 476.7228200000004,
+    "M1": 11.958978594731407,
+    "M2": 25.47960392696285,
+    "unmapped_g": 0.5,
+    "unmapped_share": 0.00037037860100594817,
+    "kcal_est_share": 0.030460280965552165,
+    "M3_60": 4.7835914378925635,
+    "M3_80": 2.3917957189462817
+   },
+   "veg_pieces_x1.5": {
+    "fat": 57.01117999999998,
+    "water": 872.7471800000001,
+    "mass": 1349.4700000000005,
+    "kcal": 2013.7700000000004,
+    "dm": 476.7228200000004,
+    "M1": 11.958978594731407,
+    "M2": 25.47960392696285,
+    "unmapped_g": 0.5,
+    "unmapped_share": 0.00037037860100594817,
+    "kcal_est_share": 0.030460280965552165,
+    "M3_60": 4.7835914378925635,
+    "M3_80": 2.3917957189462817
+   }
+  },
+  "R21": {
+   "base": {
+    "fat": 97.49614999999999,
+    "water": 849.0402499999999,
+    "mass": 1131.6999999999998,
+    "kcal": 1515.577,
+    "dm": 282.6597499999999,
+    "M1": 34.49240650640921,
+    "M2": 57.896454617614275,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.0018521785147292292,
+    "kcal_est_share": 0.026133611159314243,
+    "M3_60": 13.796962602563685,
+    "M3_80": 6.8984813012818424
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 97.49614999999999,
+    "water": 849.0402499999999,
+    "mass": 1131.6999999999998,
+    "kcal": 1515.577,
+    "dm": 282.6597499999999,
+    "M1": 34.49240650640921,
+    "M2": 57.896454617614275,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.0018521785147292292,
+    "kcal_est_share": 0.026133611159314243,
+    "M3_60": 13.796962602563685,
+    "M3_80": 6.8984813012818424
+   },
+   "cup200": {
+    "fat": 89.05965,
+    "water": 768.0103833333333,
+    "mass": 1033.9,
+    "kcal": 1414.1483333333333,
+    "dm": 265.8896166666668,
+    "M1": 33.49497100206431,
+    "M2": 56.67982849512486,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.0020270270270270267,
+    "kcal_est_share": 0.02800802367502702,
+    "M3_60": 13.397988400825724,
+    "M3_80": 6.698994200412862
+   },
+   "min_qty": {
+    "fat": 97.49614999999999,
+    "water": 849.0402499999999,
+    "mass": 1131.6999999999998,
+    "kcal": 1515.577,
+    "dm": 282.6597499999999,
+    "M1": 34.49240650640921,
+    "M2": 57.896454617614275,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.0018521785147292292,
+    "kcal_est_share": 0.026133611159314243,
+    "M3_60": 13.796962602563685,
+    "M3_80": 6.8984813012818424
+   },
+   "max_qty": {
+    "fat": 97.49614999999999,
+    "water": 849.0402499999999,
+    "mass": 1131.6999999999998,
+    "kcal": 1515.577,
+    "dm": 282.6597499999999,
+    "M1": 34.49240650640921,
+    "M2": 57.896454617614275,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.0018521785147292292,
+    "kcal_est_share": 0.026133611159314243,
+    "M3_60": 13.796962602563685,
+    "M3_80": 6.8984813012818424
+   },
+   "veg_pieces_x1.5": {
+    "fat": 97.49614999999999,
+    "water": 849.0402499999999,
+    "mass": 1131.6999999999998,
+    "kcal": 1515.577,
+    "dm": 282.6597499999999,
+    "M1": 34.49240650640921,
+    "M2": 57.896454617614275,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.0018521785147292292,
+    "kcal_est_share": 0.026133611159314243,
+    "M3_60": 13.796962602563685,
+    "M3_80": 6.8984813012818424
+   }
+  },
+  "R22": {
+   "base": {
+    "fat": 50.66583,
+    "water": 535.83349,
+    "mass": 706.785,
+    "kcal": 901.58915,
+    "dm": 170.95150999999998,
+    "M1": 29.637544587936077,
+    "M2": 50.576525904288005,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.002962398696544573,
+    "kcal_est_share": 0.07383490584375378,
+    "M3_60": 11.855017835174431,
+    "M3_80": 5.9275089175872155
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 64.45203000000001,
+    "water": 535.83349,
+    "mass": 720.5849999999999,
+    "kcal": 1025.6511500000001,
+    "dm": 184.75150999999994,
+    "M1": 34.88579335562672,
+    "M2": 56.55609804561716,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.002905830341019946,
+    "kcal_est_share": 0.06490389056747023,
+    "M3_60": 13.954317342250688,
+    "M3_80": 6.977158671125344
+   },
+   "cup200": {
+    "fat": 46.22783,
+    "water": 503.5620899999999,
+    "mass": 666.1850000000001,
+    "kcal": 846.71515,
+    "dm": 162.62291000000016,
+    "M1": 28.42639453444779,
+    "M2": 49.1370055206878,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.003142371892231607,
+    "kcal_est_share": 0.07862000579533744,
+    "M3_60": 11.370557813779117,
+    "M3_80": 5.685278906889558
+   },
+   "min_qty": {
+    "fat": 50.66583,
+    "water": 535.83349,
+    "mass": 706.785,
+    "kcal": 901.58915,
+    "dm": 170.95150999999998,
+    "M1": 29.637544587936077,
+    "M2": 50.576525904288005,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.002962398696544573,
+    "kcal_est_share": 0.07383490584375378,
+    "M3_60": 11.855017835174431,
+    "M3_80": 5.9275089175872155
+   },
+   "max_qty": {
+    "fat": 50.66583,
+    "water": 535.83349,
+    "mass": 706.785,
+    "kcal": 901.58915,
+    "dm": 170.95150999999998,
+    "M1": 29.637544587936077,
+    "M2": 50.576525904288005,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.002962398696544573,
+    "kcal_est_share": 0.07383490584375378,
+    "M3_60": 11.855017835174431,
+    "M3_80": 5.9275089175872155
+   },
+   "veg_pieces_x1.5": {
+    "fat": 50.72082999999999,
+    "water": 586.21349,
+    "mass": 761.785,
+    "kcal": 915.58915,
+    "dm": 175.57151,
+    "M1": 28.888986601527776,
+    "M2": 49.85723891551139,
+    "unmapped_g": 2.0999999999999996,
+    "unmapped_share": 0.002749104904534059,
+    "kcal_est_share": 0.07270591836960935,
+    "M3_60": 11.555594640611112,
+    "M3_80": 5.777797320305556
+   }
+  },
+  "R23": {
+   "base": {
+    "fat": 16.08408,
+    "water": 729.90909,
+    "mass": 865.81,
+    "kcal": 546.3139000000001,
+    "dm": 135.90090999999995,
+    "M1": 11.835152538713688,
+    "M2": 26.496986439481034,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.028147737042751423,
+    "M3_60": 4.734061015485476,
+    "M3_80": 2.367030507742738
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 29.87028,
+    "water": 729.90909,
+    "mass": 879.6099999999999,
+    "kcal": 670.3759000000001,
+    "dm": 149.7009099999999,
+    "M1": 19.953305561068415,
+    "M2": 40.10175783467156,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.02293862294274003,
+    "M3_60": 7.981322224427366,
+    "M3_80": 3.990661112213683
+   },
+   "cup200": {
+    "fat": 16.043246666666665,
+    "water": 691.9749233333333,
+    "mass": 824.9766666666666,
+    "kcal": 538.5555666666667,
+    "dm": 133.00174333333325,
+    "M1": 12.062433367101484,
+    "M2": 26.810459112637524,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.028553228212229664,
+    "M3_60": 4.8249733468405935,
+    "M3_80": 2.4124866734202968
+   },
+   "min_qty": {
+    "fat": 16.08408,
+    "water": 729.90909,
+    "mass": 865.81,
+    "kcal": 546.3139000000001,
+    "dm": 135.90090999999995,
+    "M1": 11.835152538713688,
+    "M2": 26.496986439481034,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.028147737042751423,
+    "M3_60": 4.734061015485476,
+    "M3_80": 2.367030507742738
+   },
+   "max_qty": {
+    "fat": 16.08408,
+    "water": 729.90909,
+    "mass": 865.81,
+    "kcal": 546.3139000000001,
+    "dm": 135.90090999999995,
+    "M1": 11.835152538713688,
+    "M2": 26.496986439481034,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.028147737042751423,
+    "M3_60": 4.734061015485476,
+    "M3_80": 2.367030507742738
+   },
+   "veg_pieces_x1.5": {
+    "fat": 16.50408,
+    "water": 880.2390900000001,
+    "mass": 1030.81,
+    "kcal": 589.7139,
+    "dm": 150.5709099999998,
+    "M1": 10.961001696808514,
+    "M2": 25.18792926536071,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.02607620407116061,
+    "M3_60": 4.384400678723406,
+    "M3_80": 2.192200339361703
+   }
+  },
+  "R24": {
+   "base": {
+    "fat": 28.068700000000003,
+    "water": 296.41900000000004,
+    "mass": 393.40000000000003,
+    "kcal": 494.05150000000003,
+    "dm": 96.981,
+    "M1": 28.94247326795971,
+    "M2": 51.131977131938676,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.0019279366624734464,
+    "M3_60": 11.576989307183885,
+    "M3_80": 5.788494653591942
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 28.068700000000003,
+    "water": 296.41900000000004,
+    "mass": 393.40000000000003,
+    "kcal": 494.05150000000003,
+    "dm": 96.981,
+    "M1": 28.94247326795971,
+    "M2": 51.131977131938676,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.0019279366624734464,
+    "M3_60": 11.576989307183885,
+    "M3_80": 5.788494653591942
+   },
+   "cup200": {
+    "fat": 28.031200000000005,
+    "water": 279.994,
+    "mass": 374.65000000000003,
+    "kcal": 487.48900000000003,
+    "dm": 94.656,
+    "M1": 29.613759296822177,
+    "M2": 51.75107540888103,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.0019538902416259647,
+    "M3_60": 11.845503718728871,
+    "M3_80": 5.9227518593644355
+   },
+   "min_qty": {
+    "fat": 28.053700000000006,
+    "water": 289.84900000000005,
+    "mass": 385.90000000000003,
+    "kcal": 491.42650000000003,
+    "dm": 96.05099999999999,
+    "M1": 29.207087901219158,
+    "M2": 51.37763226036855,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.0019382349140715854,
+    "M3_60": 11.682835160487663,
+    "M3_80": 5.8414175802438315
+   },
+   "max_qty": {
+    "fat": 28.083700000000004,
+    "water": 302.98900000000003,
+    "mass": 400.90000000000003,
+    "kcal": 496.67650000000003,
+    "dm": 97.911,
+    "M1": 28.682885477627643,
+    "M2": 50.888918642214804,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.0019177472660776179,
+    "M3_60": 11.473154191051059,
+    "M3_80": 5.736577095525529
+   },
+   "veg_pieces_x1.5": {
+    "fat": 28.068700000000003,
+    "water": 296.41900000000004,
+    "mass": 393.40000000000003,
+    "kcal": 494.05150000000003,
+    "dm": 96.981,
+    "M1": 28.94247326795971,
+    "M2": 51.131977131938676,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.0019279366624734464,
+    "M3_60": 11.576989307183885,
+    "M3_80": 5.788494653591942
+   }
+  },
+  "R25": {
+   "base": {
+    "fat": 45.979175000000005,
+    "water": 614.6351500000001,
+    "mass": 765.1,
+    "kcal": 769.141625,
+    "dm": 150.46484999999996,
+    "M1": 30.558083831539406,
+    "M2": 53.80186971417651,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.03642453364814315,
+    "M3_60": 12.223233532615764,
+    "M3_80": 6.111616766307882
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 45.979175000000005,
+    "water": 614.6351500000001,
+    "mass": 765.1,
+    "kcal": 769.141625,
+    "dm": 150.46484999999996,
+    "M1": 30.558083831539406,
+    "M2": 53.80186971417651,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.03642453364814315,
+    "M3_60": 12.223233532615764,
+    "M3_80": 6.111616766307882
+   },
+   "cup200": {
+    "fat": 45.979175000000005,
+    "water": 614.6351500000001,
+    "mass": 765.1,
+    "kcal": 769.141625,
+    "dm": 150.46484999999996,
+    "M1": 30.558083831539406,
+    "M2": 53.80186971417651,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.03642453364814315,
+    "M3_60": 12.223233532615764,
+    "M3_80": 6.111616766307882
+   },
+   "min_qty": {
+    "fat": 45.929185000000004,
+    "water": 582.5982449999999,
+    "mass": 730.935,
+    "kcal": 763.808625,
+    "dm": 148.33675500000004,
+    "M1": 30.962781274270153,
+    "M2": 54.11861708160209,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.03667885394721747,
+    "M3_60": 12.385112509708062,
+    "M3_80": 6.192556254854031
+   },
+   "max_qty": {
+    "fat": 46.029165,
+    "water": 646.6720549999999,
+    "mass": 799.265,
+    "kcal": 774.4746250000001,
+    "dm": 152.5929450000001,
+    "M1": 30.164674389107553,
+    "M2": 53.489484565101144,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.03617371582703565,
+    "M3_60": 12.065869755643021,
+    "M3_80": 6.032934877821511
+   },
+   "veg_pieces_x1.5": {
+    "fat": 46.141675,
+    "water": 720.7351500000001,
+    "mass": 877.6,
+    "kcal": 785.141625,
+    "dm": 156.86484999999993,
+    "M1": 29.41492310100065,
+    "M2": 52.8917410282508,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.03568225668840319,
+    "M3_60": 11.76596924040026,
+    "M3_80": 5.88298462020013
+   }
+  },
+  "R26": {
+   "base": {
+    "fat": 46.87105999999999,
+    "water": 821.3519950000002,
+    "mass": 999.86,
+    "kcal": 865.3312500000001,
+    "dm": 178.5080049999998,
+    "M1": 26.25711939360929,
+    "M2": 48.74890858269592,
+    "unmapped_g": 1.25,
+    "unmapped_share": 0.0012486140384173566,
+    "kcal_est_share": 0.05802835619307635,
+    "M3_60": 10.502847757443718,
+    "M3_80": 5.251423878721859
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 46.87105999999999,
+    "water": 821.3519950000002,
+    "mass": 999.86,
+    "kcal": 865.3312500000001,
+    "dm": 178.5080049999998,
+    "M1": 26.25711939360929,
+    "M2": 48.74890858269592,
+    "unmapped_g": 1.25,
+    "unmapped_share": 0.0012486140384173566,
+    "kcal_est_share": 0.05802835619307635,
+    "M3_60": 10.502847757443718,
+    "M3_80": 5.251423878721859
+   },
+   "cup200": {
+    "fat": 46.87105999999999,
+    "water": 821.3519950000002,
+    "mass": 999.86,
+    "kcal": 865.3312500000001,
+    "dm": 178.5080049999998,
+    "M1": 26.25711939360929,
+    "M2": 48.74890858269592,
+    "unmapped_g": 1.25,
+    "unmapped_share": 0.0012486140384173566,
+    "kcal_est_share": 0.05802835619307635,
+    "M3_60": 10.502847757443718,
+    "M3_80": 5.251423878721859
+   },
+   "min_qty": {
+    "fat": 46.87105999999999,
+    "water": 821.3519950000002,
+    "mass": 999.86,
+    "kcal": 865.3312500000001,
+    "dm": 178.5080049999998,
+    "M1": 26.25711939360929,
+    "M2": 48.74890858269592,
+    "unmapped_g": 1.25,
+    "unmapped_share": 0.0012486140384173566,
+    "kcal_est_share": 0.05802835619307635,
+    "M3_60": 10.502847757443718,
+    "M3_80": 5.251423878721859
+   },
+   "max_qty": {
+    "fat": 46.87105999999999,
+    "water": 821.3519950000002,
+    "mass": 999.86,
+    "kcal": 865.3312500000001,
+    "dm": 178.5080049999998,
+    "M1": 26.25711939360929,
+    "M2": 48.74890858269592,
+    "unmapped_g": 1.25,
+    "unmapped_share": 0.0012486140384173566,
+    "kcal_est_share": 0.05802835619307635,
+    "M3_60": 10.502847757443718,
+    "M3_80": 5.251423878721859
+   },
+   "veg_pieces_x1.5": {
+    "fat": 46.87105999999999,
+    "water": 821.3519950000002,
+    "mass": 999.86,
+    "kcal": 865.3312500000001,
+    "dm": 178.5080049999998,
+    "M1": 26.25711939360929,
+    "M2": 48.74890858269592,
+    "unmapped_g": 1.25,
+    "unmapped_share": 0.0012486140384173566,
+    "kcal_est_share": 0.05802835619307635,
+    "M3_60": 10.502847757443718,
+    "M3_80": 5.251423878721859
+   }
+  },
+  "R27": {
+   "base": {
+    "fat": 5.466130000000001,
+    "water": 195.78393499999999,
+    "mass": 232.48,
+    "kcal": 152.28125,
+    "dm": 36.696065000000004,
+    "M1": 14.895684319286005,
+    "M2": 32.30546767904782,
+    "unmapped_g": 0.7,
+    "unmapped_share": 0.003001972724933528,
+    "kcal_est_share": 0.03527190642314797,
+    "M3_60": 5.958273727714403,
+    "M3_80": 2.9791368638572013
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 5.466130000000001,
+    "water": 195.78393499999999,
+    "mass": 232.48,
+    "kcal": 152.28125,
+    "dm": 36.696065000000004,
+    "M1": 14.895684319286005,
+    "M2": 32.30546767904782,
+    "unmapped_g": 0.7,
+    "unmapped_share": 0.003001972724933528,
+    "kcal_est_share": 0.03527190642314797,
+    "M3_60": 5.958273727714403,
+    "M3_80": 2.9791368638572013
+   },
+   "cup200": {
+    "fat": 5.466130000000001,
+    "water": 195.78393499999999,
+    "mass": 232.48,
+    "kcal": 152.28125,
+    "dm": 36.696065000000004,
+    "M1": 14.895684319286005,
+    "M2": 32.30546767904782,
+    "unmapped_g": 0.7,
+    "unmapped_share": 0.003001972724933528,
+    "kcal_est_share": 0.03527190642314797,
+    "M3_60": 5.958273727714403,
+    "M3_80": 2.9791368638572013
+   },
+   "min_qty": {
+    "fat": 5.466130000000001,
+    "water": 195.78393499999999,
+    "mass": 232.48,
+    "kcal": 152.28125,
+    "dm": 36.696065000000004,
+    "M1": 14.895684319286005,
+    "M2": 32.30546767904782,
+    "unmapped_g": 0.7,
+    "unmapped_share": 0.003001972724933528,
+    "kcal_est_share": 0.03527190642314797,
+    "M3_60": 5.958273727714403,
+    "M3_80": 2.9791368638572013
+   },
+   "max_qty": {
+    "fat": 5.466130000000001,
+    "water": 195.78393499999999,
+    "mass": 232.48,
+    "kcal": 152.28125,
+    "dm": 36.696065000000004,
+    "M1": 14.895684319286005,
+    "M2": 32.30546767904782,
+    "unmapped_g": 0.7,
+    "unmapped_share": 0.003001972724933528,
+    "kcal_est_share": 0.03527190642314797,
+    "M3_60": 5.958273727714403,
+    "M3_80": 2.9791368638572013
+   },
+   "veg_pieces_x1.5": {
+    "fat": 5.513630000000001,
+    "water": 239.481435,
+    "mass": 279.98,
+    "kcal": 163.65625,
+    "dm": 40.49856500000001,
+    "M1": 13.61438362075298,
+    "M2": 30.321280122207376,
+    "unmapped_g": 0.7,
+    "unmapped_share": 0.0024939432806042466,
+    "kcal_est_share": 0.03282031697536759,
+    "M3_60": 5.4457534483011925,
+    "M3_80": 2.7228767241505962
+   }
+  },
+  "R28": {
+   "base": {
+    "fat": 61.10585000000001,
+    "water": 669.3109,
+    "mass": 887.0,
+    "kcal": 1093.5320000000002,
+    "dm": 217.68910000000005,
+    "M1": 28.070238702810567,
+    "M2": 50.291408939107406,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.04220041114480417,
+    "M3_60": 11.228095481124228,
+    "M3_80": 5.614047740562114
+   },
+   "oil_asreq_1tbsp": {
+    "fat": 61.10585000000001,
+    "water": 669.3109,
+    "mass": 887.0,
+    "kcal": 1093.5320000000002,
+    "dm": 217.68910000000005,
+    "M1": 28.070238702810567,
+    "M2": 50.291408939107406,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.04220041114480417,
+    "M3_60": 11.228095481124228,
+    "M3_80": 5.614047740562114
+   },
+   "cup200": {
+    "fat": 51.848383333333345,
+    "water": 631.0509,
+    "mass": 831.1333333333333,
+    "kcal": 988.0906666666666,
+    "dm": 200.08243333333337,
+    "M1": 25.913510981223908,
+    "M2": 47.22597487679945,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.046703710050899516,
+    "M3_60": 10.365404392489564,
+    "M3_80": 5.182702196244782
+   },
+   "min_qty": {
+    "fat": 61.10585000000001,
+    "water": 669.3109,
+    "mass": 887.0,
+    "kcal": 1093.5320000000002,
+    "dm": 217.68910000000005,
+    "M1": 28.070238702810567,
+    "M2": 50.291408939107406,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.04220041114480417,
+    "M3_60": 11.228095481124228,
+    "M3_80": 5.614047740562114
+   },
+   "max_qty": {
+    "fat": 61.10585000000001,
+    "water": 669.3109,
+    "mass": 887.0,
+    "kcal": 1093.5320000000002,
+    "dm": 217.68910000000005,
+    "M1": 28.070238702810567,
+    "M2": 50.291408939107406,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.04220041114480417,
+    "M3_60": 11.228095481124228,
+    "M3_80": 5.614047740562114
+   },
+   "veg_pieces_x1.5": {
+    "fat": 61.10585000000001,
+    "water": 669.3109,
+    "mass": 887.0,
+    "kcal": 1093.5320000000002,
+    "dm": 217.68910000000005,
+    "M1": 28.070238702810567,
+    "M2": 50.291408939107406,
+    "unmapped_g": 0.0,
+    "unmapped_share": 0.0,
+    "kcal_est_share": 0.04220041114480417,
+    "M3_60": 11.228095481124228,
+    "M3_80": 5.614047740562114
+   }
+  }
+ }
+}

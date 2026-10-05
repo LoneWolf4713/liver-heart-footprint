@@ -1,0 +1,197 @@
+dish,ingredient_line,matched_code,matched_name,grams,kcal,fat_g,sfa_g,added_sugar_g
+paneer butter masala,1 tablespoon (15 ml)  oil,T508,"Oil, sunflower",13.8,122.0,13.8,1.9,0.0
+paneer butter masala,"2  green cardamoms ( (or ¼ to ⅓ tsp ground cardamom, elaichi))",G020,Unmatched,0.6,0.0,0.0,0.0,0.0
+paneer butter masala,1 cup (130 grams)  onions  ((sliced or diced from 1 medium yellow or 2 small red onions)),G017,Onion,130.0,52.0,0.1,0.0,0.0
+paneer butter masala,"1 inch (10 grams)   ginger  ((peeled &amp; sliced or use 1½ to 2 teaspoon ginger garlic paste, read notes))",G014,"Ginger, fresh",10.0,8.0,0.1,0.0,0.0
+paneer butter masala,"5 to 6 (12 grams)  large  garlic cloves  ((peeled, omit to use gg paste))",G023,Unmatched,12.0,0.0,0.0,0.0,0.0
+paneer butter masala,"2 cups (350 grams)  tomatoes  ((sliced, use up to 420 grams from 2 large or 4 medium))",D075,Tomato,350.0,63.0,0.7,0.0,0.0
+paneer butter masala,15 (30 grams)  whole cashew nuts  ((use up to 18 nuts/ 36 g if using more tomatoes or use almonds)),D075,Tomato,30.0,5.4,0.1,0.0,0.0
+paneer butter masala,1 teaspoon sea salt ( (adjust to taste)),G528,Salt,6.0,0.0,0.0,0.0,0.0
+paneer butter masala,1 teaspoon jaggery/ sugar ( (optional)),I505,"Jaggery, cane",4.2,16.3,0.0,0.0,4.0
+paneer butter masala,¾ to 1 teaspoon Kashmiri red chilli powder ((or paprika) (adjust to heat &amp; color preference)),G516,Chilli powder,4.4,12.3,0.6,0.1,0.0
+paneer butter masala,¾ to 1 teaspoon garam masala ( (adjust to taste)),G523,Unmatched,4.4,0.0,0.0,0.0,0.0
+paneer butter masala,1 teaspoon coriander powder  ((daniya powder) (optional)),G024,Unmatched,5.0,0.0,0.0,0.0,0.0
+paneer butter masala,1 cup (240 ml)  cold water  ((to blend)),K505,Water,240.0,0.0,0.0,0.0,0.0
+paneer butter masala,2 tablespoons (30 grams)  unsalted butter,T501,"Butter, unsalted",30.0,215.1,24.3,15.4,0.0
+paneer butter masala,"1 small  bay leaf ((tej patta, optional))",G018,Unmatched,0.5,0.0,0.0,0.0,0.0
+paneer butter masala,"2 inch Ceylon cinnamon piece ((or 1 inch dalchini, optional))",G518,Unmatched,30.0,0.0,0.0,0.0,0.0
+paneer butter masala,"3  cloves ((laung, optional))",G023,Unmatched,0.6,0.0,0.0,0.0,0.0
+paneer butter masala,250 to 300 grams (9 to 10 oz)  paneer  ((I cut mine to ¾ inch)),L003,Paneer,275.0,728.8,57.2,35.8,0.0
+paneer butter masala,"½ tablespoon kasuri methi ( (dried fenugreek leaves, crushed))",D044,Unmatched,7.5,0.0,0.0,0.0,0.0
+paneer butter masala,"3 to 4 tablespoons  (45 to 60 ml)   heavy cream ((sub with fresh cream, cooking cream or thickened cream))",L519,"Cream, fresh, single",52.5,153.3,15.8,10.0,0.0
+paneer butter masala,"1 to 2 tablespoon coriander leaves ( (cilantro finely chopped, to garnish))",G009,Unmatched,22.5,0.0,0.0,0.0,0.0
+dal makhani,1 cup (200 grams)  urad dal  ((Indian black lentils/ whole black gram)),B003,"Black gram, dal (urad)",200.0,682.0,2.8,0.6,0.0
+dal makhani,"¼ cup (55 grams)  rajma  ((red kidney beans, or sub with urad dal))",B018,Rajmah,55.0,183.2,0.4,0.1,0.0
+dal makhani,4 cups (960 ml)  water to pressure cook the dal ( (more to cook in pot)),K505,Water,960.0,0.0,0.0,0.0,0.0
+dal makhani,2 tablespoons (30 ml)  ghee ((or use oil)),T506,"Ghee, butter",27.6,244.0,27.5,17.9,0.0
+dal makhani,3 tablespoons (42 grams)  unsalted butter  ((cultured butter if you can)),T501,"Butter, unsalted",42.0,301.1,34.1,21.6,0.0
+dal makhani,½ cup (65 grams)  onions  ((fine chopped 1 small to medium)),G017,Onion,65.0,26.0,0.1,0.0,0.0
+dal makhani,1 tablespoon (18 grams)  ginger garlic paste  ((or ¾ tbsp. (9 grams) each grated)),G014,"Ginger, fresh",18.0,14.4,0.1,0.0,0.0
+dal makhani,1 cup (220 grams)  tomato puree  ((bottled or 2 to 3 medium tomatoes pureed in a blender)),X505,Tomato puree,220.0,83.6,0.4,0.0,0.0
+dal makhani,"¾ to 1½ teaspoon Kashmiri red chili powder ((adjust to preference, I use 1 tsp))",G516,Chilli powder,13.1,37.0,1.9,0.3,0.0
+dal makhani,1 teaspoon garam masala  ((+ ½ tsp more if you want at the finishing stage)),G523,Unmatched,5.0,0.0,0.0,0.0,0.0
+dal makhani,1 teaspoon sea salt ( (adjust as needed)),G528,Salt,6.0,0.0,0.0,0.0,0.0
+dal makhani,2 cups (480 ml)  hot water ( (to add later)),K505,Water,480.0,0.0,0.0,0.0,0.0
+dal makhani,"1 tablespoon kasuri methi ((dried fenugreek leaves, optional))",D044,Unmatched,15.0,0.0,0.0,0.0,0.0
+dal makhani,"¼ to ⅓ cup (60 to 80 ml)  heavy cream  ((cooking cream or whipping cream, more to garnish if you want))",L512,"Cream, fresh, whipping",70.0,241.5,25.2,16.1,0.0
+dal makhani,"1  bay leaf, 2 green cardamoms, 1 black cardamom",G021,Unmatched,0.3,0.0,0.0,0.0,0.0
+chole,1 cup chickpeas (/chole (uncooked raw/dried or 2 – 15 oz cans)),B001,Bengal gram / Chole,180.0,648.0,9.5,1.1,0.0
+chole,2 cups water,K505,Water,480.0,0.0,0.0,0.0,0.0
+chole,1  black tea bag ((optional) or 2 dried amla or 1 tbsp loose leaf tea or ½ tsp dust ),V510,Unmatched,15.0,0.0,0.0,0.0,0.0
+chole,1  black cardamom,G021,Unmatched,0.3,0.0,0.0,0.0,0.0
+chole,4  green cardamoms,G020,Unmatched,1.2,0.0,0.0,0.0,0.0
+chole,1 inch cinnamon,G518,Unmatched,15.0,0.0,0.0,0.0,0.0
+chole,2  cloves,G023,Unmatched,0.4,0.0,0.0,0.0,0.0
+chole,"½ small bay leaf (optional, use fresh to avoid bitterness)",G018,Unmatched,0.2,0.0,0.0,0.0,0.0
+chole,1 inch cinnamon,G518,Unmatched,15.0,0.0,0.0,0.0,0.0
+chole,2  cloves,G023,Unmatched,0.4,0.0,0.0,0.0,0.0
+chole,2  green cardamon,G020,Unmatched,30.0,0.0,0.0,0.0,0.0
+chole,½ small bay leaf,G018,Unmatched,0.2,0.0,0.0,0.0,0.0
+chole,2 tablespoons oil ( or as needed),T508,"Oil, sunflower",27.6,244.0,27.6,3.9,0.0
+chole,1½ cup onions (finely chopped or 1¼ cup processed or 1 cup pureed (2 no)),G017,Onion,360.0,144.0,0.4,0.0,0.0
+chole,1  green chili (slit (optional)),G008,Unmatched,15.0,0.0,0.0,0.0,0.0
+chole,¾ to 1 tablespoon ginger garlic  (fine chopped or paste),G014,"Ginger, fresh",13.1,10.5,0.1,0.0,0.0
+chole,1 cup tomatoes (fine chopped or pureed (3 no)),D075,Tomato,240.0,43.2,0.5,0.0,0.0
+chole,¾ to 1 teaspoon salt (as needed (I use ¾ tsp pink salt)),G528,Salt,5.2,0.0,0.0,0.0,0.0
+chole,½ to ¾ teaspoon kashmiri red chili powder ((adjust to taste)),G516,Chilli powder,3.1,8.8,0.4,0.1,0.0
+chole,1 tablespoon chole masala ((refer notes to make your own)),B001,Bengal gram / Chole,15.0,54.0,0.8,0.1,0.0
+chole,¾ teaspoon garam masala,G523,Unmatched,3.8,0.0,0.0,0.0,0.0
+chole,1 teaspoon coriander powder,G024,Unmatched,5.0,0.0,0.0,0.0,0.0
+chole,⅛ teaspoon turmeric ((optional)),G033,Turmeric powder,0.6,2.2,0.1,0.0,0.0
+chole,¼ to ½ teaspoon amchur ((only if required)),D057,Unmatched,1.9,0.0,0.0,0.0,0.0
+chole,1 teaspoon kasuri methi ((dried fenugreek leaves) (optional)),D044,Unmatched,5.0,0.0,0.0,0.0,0.0
+chole,1 tablespoon ghee,T506,"Ghee, butter",13.7,120.7,13.6,8.9,0.0
+chole,½ inch ginger (julienne (for garnishing)),G014,"Ginger, fresh",3.0,2.4,0.0,0.0,0.0
+chole,2 to 4  green chilli (slightly slit ),G008,Unmatched,12.0,0.0,0.0,0.0,0.0
+chole,¼ teaspoon hing,G019,Unmatched,1.2,0.0,0.0,0.0,0.0
+chole,2 tablespoon coriander leaves ((fine chopped for garnishing)),G009,Unmatched,30.0,0.0,0.0,0.0,0.0
+gajar ka halwa,½ kg carrot ((gajar)(500 grams) (prefer young carrots)),D034,Carrot,500.0,205.0,1.0,0.0,0.0
+gajar ka halwa,2 cups milk ((1 cup for Instant pot)),L002,"Milk, whole, Cow",494.4,306.5,17.3,10.9,0.0
+gajar ka halwa,½ cup sugar ((+ 2 tbsp optional) (prefer organic)),I502,"Sugar, white",100.0,387.0,0.0,0.0,100.0
+gajar ka halwa,½ teaspoon cardamom powder ((or 4 pods skinned &amp; powdered)),G020,Unmatched,2.5,0.0,0.0,0.0,0.0
+gajar ka halwa,2 tablespoons ghee ((clarified butter)),T506,"Ghee, butter",27.3,241.3,27.2,17.7,0.0
+gajar ka halwa,"20  mixed nuts (10 pista, 5 cashew &amp; 5 almonds)",H001,Unmatched,30.0,0.0,0.0,0.0,0.0
+gajar ka halwa,2 tablespoons raisins (optional),E054,Unmatched,30.0,0.0,0.0,0.0,0.0
+gulab jamun,1 cup milk powder,L002,"Milk, whole, Cow",247.2,153.3,8.7,5.4,0.0
+gulab jamun,5 tbsp  all-purpose flour  ((maida)),A018,"Wheat flour, refined (maida)",41.2,150.2,0.4,0.1,0.0
+gulab jamun,1 tsp ghee (or oil),T506,"Ghee, butter",4.6,40.7,4.6,3.0,0.0
+gulab jamun,1 tbsp ghee  (or oil for greasing),T506,"Ghee, butter",13.8,122.0,13.7,9.0,0.0
+gulab jamun,2 to 4 tbsp milk ((use more as needed)),L002,"Milk, whole, Cow",46.4,28.7,1.6,1.0,0.0
+gulab jamun,1 tbsp curd ((yogurt or ¾ tbsp lemon juice)),E033,Unmatched,15.0,0.0,0.0,0.0,0.0
+gulab jamun,1 large pinch Baking soda (or 1/8 th tsp),G502,Unmatched,15.0,0.0,0.0,0.0,0.0
+gulab jamun,Ghee (or oil for deep frying),T506,"Ghee, butter",5.0,44.2,5.0,3.2,0.0
+gulab jamun,1 tsp pistachios (chopped ),H018,Unmatched,5.0,0.0,0.0,0.0,0.0
+gulab jamun,1 ¼ to 1 ½ cups Sugar,I502,"Sugar, white",11.2,43.5,0.0,0.0,11.2
+gulab jamun,1 ½ cup water,K505,Water,360.0,0.0,0.0,0.0,0.0
+gulab jamun,4 pods green cardamom  (or ¼ tsp cardamom powder),G020,Unmatched,1.2,0.0,0.0,0.0,0.0
+gulab jamun,1 tsp rose water,K505,Water,5.0,0.0,0.0,0.0,0.0
+samosa,2 cups (250 grams)  all-purpose flour ((organic/ unbleached)),A018,"Wheat flour, refined (maida)",250.0,910.0,2.5,0.5,0.0
+samosa,¼ cup (60 ml)  oil (or melted ghee),T506,"Ghee, butter",55.2,488.0,54.9,35.9,0.0
+samosa,6 tablespoons (90 ml)  water,K505,Water,90.0,0.0,0.0,0.0,0.0
+samosa,¾ teaspoon carom seeds ((ajwain)),G536,Unmatched,3.8,0.0,0.0,0.0,0.0
+samosa,¾ teaspoon salt,G528,Salt,4.5,0.0,0.0,0.0,0.0
+samosa,4 medium (500 grams)  potatoes,D067,Potato,500.0,385.0,0.5,0.0,0.0
+samosa,½ cup green peas ((boiled or frozen)),D065,"Peas, green",110.4,89.4,0.4,0.1,0.0
+samosa,1 tablespoon oil (or ghee),T506,"Ghee, butter",13.8,122.0,13.7,9.0,0.0
+samosa,1 tablespoon ginger (minced or paste),G014,"Ginger, fresh",15.0,12.0,0.1,0.0,0.0
+samosa,1 to 2  green chilies (chopped (optional)),G008,Unmatched,22.5,0.0,0.0,0.0,0.0
+samosa,1 pinch hing ((asafoetida) (optional)),G019,Unmatched,0.5,0.0,0.0,0.0,0.0
+samosa,4 tablespoons coriander leaves (chopped finely),G009,Unmatched,60.0,0.0,0.0,0.0,0.0
+samosa,1 teaspoon lemon juice ((or ½ tsp amchur or chaat masala)),E033,Unmatched,5.0,0.0,0.0,0.0,0.0
+samosa,½ teaspoon salt ((adjust to taste)),G528,Salt,3.0,0.0,0.0,0.0,0.0
+samosa,¾ teaspoon cumin seeds,G025,Cumin seeds,3.8,14.1,0.8,0.1,0.0
+samosa,¾ to 1 teaspoon garam masala,G523,Unmatched,4.4,0.0,0.0,0.0,0.0
+samosa,¾ teaspoon red chilli powder ((adjust to taste)),G516,Chilli powder,3.8,10.6,0.5,0.1,0.0
+samosa,½ teaspoon cumin powder,G025,Cumin seeds,2.5,9.4,0.6,0.0,0.0
+samosa,½ teaspoon fennel powder ((optional)),G510,Unmatched,2.5,0.0,0.0,0.0,0.0
+samosa,Mint Chutney ((or make from separate recipe card below)),G016,Unmatched,15.0,0.0,0.0,0.0,0.0
+samosa,Tamarind Chutney ((or make from separate recipe card below)),E064,Unmatched,15.0,0.0,0.0,0.0,0.0
+onion pakora,1 ¼ cup onions (thinly sliced ),G017,Onion,300.0,120.0,0.3,0.0,0.0
+onion pakora,¾ tsp ginger garlic paste,G014,"Ginger, fresh",3.8,3.0,0.0,0.0,0.0
+onion pakora,2  green chilies ( chopped),G008,Unmatched,30.0,0.0,0.0,0.0,0.0
+onion pakora,"10  mint (/pudina leaves chopped finely,)",G016,Unmatched,150.0,0.0,0.0,0.0,0.0
+onion pakora,"1 sprig curry leaves ( chopped finely, )",G011,Unmatched,15.0,0.0,0.0,0.0,0.0
+onion pakora,"2 sprigs coriander leaves ( chopped finely, )",G009,Unmatched,30.0,0.0,0.0,0.0,0.0
+onion pakora,Salt ( as needed),G528,Salt,2.5,0.0,0.0,0.0,0.0
+onion pakora,¼ cup besan ( / gram flour),A504,"Flour, gram (besan)",31.2,120.9,2.1,0.2,0.0
+onion pakora,2 tbsps rice flour,A505,Unmatched,30.0,0.0,0.0,0.0,0.0
+onion pakora,2 tbsps corn flour,A503,Unmatched,30.0,0.0,0.0,0.0,0.0
+onion pakora,¼ to ½ tsp red chili powder,G516,Chilli powder,1.9,5.3,0.3,0.0,0.0
+onion pakora,1/8 tsp turmeric ( / haldi),G033,Turmeric powder,0.6,2.2,0.1,0.0,0.0
+onion pakora,"½ tsp ajwain ((carom seeds, crushed))",G536,Unmatched,2.5,0.0,0.0,0.0,0.0
+onion pakora,1 tbsp oil (very hot ),T508,"Oil, sunflower",13.8,122.0,13.8,1.9,0.0
+onion pakora,Oil ( for deep frying),T508,"Oil, sunflower",5.0,44.2,5.0,0.7,0.0
+poha,1 ½ cups poha ((beaten rice flakes )(thick to medium flakes)),A017,Rice flakes (poha),90.0,311.4,1.1,0.3,0.0
+poha,1 medium onion (finely chopped),G017,Onion,80.0,32.0,0.1,0.0,0.0
+poha,2 to 3  green chilies (slit or chopped),G008,Unmatched,37.5,0.0,0.0,0.0,0.0
+poha,1 sprig  curry leaves,G011,Unmatched,15.0,0.0,0.0,0.0,0.0
+poha,1 medium potato ((optional)  cubed to ½ inch (or ½ cup mix veggies)),D067,Potato,120.0,92.4,0.1,0.0,0.0
+poha,1½ tablespoons oil,T508,"Oil, sunflower",20.7,183.0,20.7,2.9,0.0
+poha,3 to 4 tablespoons peanuts (or cashews),H004,Cashewnut,52.5,290.3,23.0,4.1,0.0
+poha,¾ teaspoon mustard seeds,G027,Unmatched,3.8,0.0,0.0,0.0,0.0
+poha,¾ teaspoon cumin seeds ((jeera)),G025,Cumin seeds,3.8,14.1,0.8,0.1,0.0
+poha,1 pinch hing ((asafoetida)),G019,Unmatched,0.5,0.0,0.0,0.0,0.0
+poha,¼ teaspoon turmeric  ((add more if needed for color)),G033,Turmeric powder,1.2,4.4,0.1,0.0,0.0
+poha,⅓ teaspoon salt ((adjust to taste)),G528,Salt,2.0,0.0,0.0,0.0,0.0
+poha,½ to 1 teaspoon sugar ((optional)),I502,"Sugar, white",3.2,12.3,0.0,0.0,3.2
+poha,Lemon juice as needed,E033,Unmatched,5.0,0.0,0.0,0.0,0.0
+poha,2 tablespoons coriander leaves ( chopped),G009,Unmatched,30.0,0.0,0.0,0.0,0.0
+butter chicken,½ kg (1.1 lbs)   boneless chicken ( (cut to 1 inch pieces)),N003,"Chicken, raw",500.0,700.0,25.0,7.5,0.0
+butter chicken,"½ to ¾ teaspoon Kashmiri red chili powder ( (or paprika adjust to taste, reduce for kids))",G516,Chilli powder,3.1,8.8,0.4,0.1,0.0
+butter chicken,¼ to ⅓ teaspoon salt ( (adjust to taste)),G528,Salt,1.7,0.0,0.0,0.0,0.0
+butter chicken,¾ to 1 tablespoon lemon juice,E033,Unmatched,13.1,0.0,0.0,0.0,0.0
+butter chicken,"⅓ cup Greek yogurt  ((hung curd/thick curd, refer notes))",L520,"Yogurt, plain, whole milk",80.0,48.8,2.6,1.7,0.0
+butter chicken,¾ tablespoon ginger garlic paste ((or ½ tbsp fine grated ginger + ½ tbsp fine grated garlic)),G014,"Ginger, fresh",11.2,9.0,0.1,0.0,0.0
+butter chicken,"⅛ teaspoon turmeric  ((haldi, optional))",G033,Turmeric powder,0.6,2.2,0.1,0.0,0.0
+butter chicken,¾ to 1 teaspoon garam masala  ((adjust to taste)),G523,Unmatched,4.4,0.0,0.0,0.0,0.0
+butter chicken,½ teaspoon cumin powder  ((optional)),G025,Cumin seeds,2.5,9.4,0.6,0.0,0.0
+butter chicken,1 teaspoon coriander powder  ((optional)),G024,Unmatched,5.0,0.0,0.0,0.0,0.0
+butter chicken,"1 teaspoon kasuri methi  ((optional, dried fenugreek leaves))",D044,Unmatched,5.0,0.0,0.0,0.0,0.0
+butter chicken,¾ to 1 tablespoon oil,T508,"Oil, sunflower",12.1,106.7,12.1,1.7,0.0
+butter chicken,2 to 3 tablespoons butter  (or ghee (divided)),T501,"Butter, unsalted",34.1,244.7,27.7,17.5,0.0
+butter chicken,"2 inch cinnamon (piece (optional, for extra flavor))",G518,Unmatched,30.0,0.0,0.0,0.0,0.0
+butter chicken,"2 to 4  green cardamoms ((optional, for added flavor))",G020,Unmatched,0.9,0.0,0.0,0.0,0.0
+butter chicken,2 to 4  cloves ((optional)),G023,Unmatched,0.6,0.0,0.0,0.0,0.0
+butter chicken,"1½ cups (130 grams)  onions (sliced (optional, *updated, cuts down acidity from tomatoes))",D075,Tomato,130.0,23.4,0.3,0.0,0.0
+butter chicken,600 grams (1.3 lbs.)  fresh tomatoes ((or 1 cup passata/canned tomato puree or ⅓ cup double concentrate tomato paste - for 1x)),X505,Tomato puree,600.0,228.0,1.2,0.0,0.0
+butter chicken,¾ tablespoon ginger garlic paste ((or ½ tbsp each fine grated ginger and garlic)),G014,"Ginger, fresh",11.2,9.0,0.1,0.0,0.0
+butter chicken,"1 to 2  green chilies ( (optional, deseed, slit or chop))",G008,Unmatched,22.5,0.0,0.0,0.0,0.0
+butter chicken,"28 (42 grams,⅓ cup)  whole raw cashews ( (soaked in hot water, sub with ¼ to ⅓ cup heavy cream))",L519,"Cream, fresh, single",42.0,122.6,12.6,8.0,0.0
+butter chicken,½ cup water  (to blend (more if required)),K505,Water,120.0,0.0,0.0,0.0,0.0
+butter chicken,"1 to 2 teaspoons Kashmiri chili powder  ((reduce for kids, adjust to taste))",G516,Chilli powder,7.5,21.1,1.1,0.2,0.0
+butter chicken,"1 to 1½ teaspoons garam masala  ((divided, adjust to taste))",G523,Unmatched,15.0,0.0,0.0,0.0,0.0
+butter chicken,"1 to 1½ teaspoon coriander powder  ((optional, adjust to taste))",G024,Unmatched,15.0,0.0,0.0,0.0,0.0
+butter chicken,"½ teaspoon cumin powder ( (optional, adjust to taste))",G025,Cumin seeds,2.5,9.4,0.6,0.0,0.0
+butter chicken,½ to ¾ teaspoon salt ( (adjust to taste)),G528,Salt,3.8,0.0,0.0,0.0,0.0
+butter chicken,1 teaspoon sugar ( (to balance the flavors)),I502,"Sugar, white",4.2,16.4,0.0,0.0,4.2
+butter chicken,½ tablespoon Kasuri methi  ((dried fenugreek leaves)),D044,Unmatched,7.5,0.0,0.0,0.0,0.0
+butter chicken,1 cup hot water (to make gravy (cut down to ½ cup if omitting cashews)),H004,Cashewnut,240.0,1327.2,105.1,18.7,0.0
+butter chicken,⅓ cup (80 to 100 ml)  heavy cream ( or whipping cream (divided)),L512,"Cream, fresh, whipping",90.0,310.5,32.4,20.7,0.0
+butter chicken,2 tablespoons coriander leaves ((fine chopped to garnish)),G009,Unmatched,30.0,0.0,0.0,0.0,0.0
+chicken biryani,"½ kg (1.1 lbs)  chicken ((skinless bone-in or boneless, large pieces such as thighs, drumsticks, legs or mix of all))",N003,"Chicken, raw",500.0,700.0,25.0,7.5,0.0
+chicken biryani,3 tablespoons plain yogurt ((curd or dahi)),L520,"Yogurt, plain, whole milk",45.0,27.4,1.5,0.9,0.0
+chicken biryani,1¼ tablespoons ginger garlic paste ((1 inch ginger &amp; 4 garlic cloves crushed)),G023,Unmatched,18.8,0.0,0.0,0.0,0.0
+chicken biryani,½ to ¾ teaspoon salt ((adjust to tase)),G528,Salt,3.8,0.0,0.0,0.0,0.0
+chicken biryani,¼ teaspoon turmeric,G033,Turmeric powder,1.2,4.4,0.1,0.0,0.0
+chicken biryani,½ to 1 teaspoon red chilli powder  ((or paprika) (use less spicy variety)),G516,Chilli powder,3.8,10.6,0.5,0.1,0.0
+chicken biryani,½ to 1 tablespoon garam masala ((or biryani masala) (Refer notes)),G523,Unmatched,11.2,0.0,0.0,0.0,0.0
+chicken biryani,1 tablespoon Lemon juice  ((optional)),E033,Unmatched,15.0,0.0,0.0,0.0,0.0
+chicken biryani,1  bay leaf  ((tej patta)),G018,Unmatched,0.5,0.0,0.0,0.0,0.0
+chicken biryani,4  green cardamoms ((choti elaichi)),G020,Unmatched,1.2,0.0,0.0,0.0,0.0
+chicken biryani,6  cloves ((lavang)),G023,Unmatched,1.2,0.0,0.0,0.0,0.0
+chicken biryani,1 inch cinnamon ((dalchini)),G518,Unmatched,15.0,0.0,0.0,0.0,0.0
+chicken biryani,1  star anise ((chakri phool )),G537,Unmatched,15.0,0.0,0.0,0.0,0.0
+chicken biryani,¾ teaspoon shahi jeera ((caraway seeds) (substitute with cumin)),G025,Cumin seeds,3.8,14.1,0.8,0.1,0.0
+chicken biryani,"1 strand mace  ((javitri, omit if you don&#39;t like))",G027,Unmatched,15.0,0.0,0.0,0.0,0.0
+chicken biryani,2 cups basmati rice ((aged rice only)),A014,"Rice, milled",370.0,1295.0,2.2,0.7,0.0
+chicken biryani,2 tablespoon ghee (or Oil),T506,"Ghee, butter",27.6,244.0,27.5,17.9,0.0
+chicken biryani,1 large onion  (sliced thinly),G017,Onion,80.0,32.0,0.1,0.0,0.0
+chicken biryani,¼ to ½ cup mint leaves (chopped fine (about 15 leaves)),G016,Unmatched,90.0,0.0,0.0,0.0,0.0
+chicken biryani,1  green chili ((slit or chopped)),G008,Unmatched,15.0,0.0,0.0,0.0,0.0
+chicken biryani,¼ cup plain yogurt ((Indian curd)),L520,"Yogurt, plain, whole milk",60.0,36.6,2.0,1.3,0.0
+chicken biryani,"¼ to ½ teaspoon red chili powder  ((optional, for heat))",G516,Chilli powder,1.9,5.3,0.3,0.0,0.0
+chicken biryani,1 teaspoon garam masala ((or biryani masala)),G523,Unmatched,5.0,0.0,0.0,0.0,0.0
+chicken biryani,"3 cups water ((3½ cups for pot) (refer notes, more if needed ))",K505,Water,720.0,0.0,0.0,0.0,0.0
+chicken biryani,¾ teaspoon salt ((to stir in water)),K505,Water,4.5,0.0,0.0,0.0,0.0
+chicken biryani,2 tablespoon fried onions ((optional)),G017,Onion,30.0,12.0,0.0,0.0,0.0
+chicken biryani,1 pinch saffron ((optional)(soaked in 2 tbsps hot milk)),L002,"Milk, whole, Cow",0.5,0.3,0.0,0.0,0.0

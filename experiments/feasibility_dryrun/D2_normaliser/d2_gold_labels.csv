@@ -1,0 +1,201 @@
+sample_id,stratum,line,gold_name,gold_qty,gold_unit,gold_grams,is_quantified,reasoning
+1,liver_relevant,1/2 teaspoon sugar,sugar,0.5,teaspoon,2.1,True,0.5 tsp granulated sugar * 4.2g/tsp = 2.1 g
+2,liver_relevant,2 tbsp ghee / clarified butter,ghee / clarified butter,2.0,tbsp,28.4,True,2.0 tbsp butter * 14.2g/tbsp = 28.4 g
+3,liver_relevant,1 tbsp butter,butter,1.0,tbsp,14.2,True,1.0 tbsp butter * 14.2g/tbsp = 14.2 g
+4,liver_relevant,2 tablespoons oil (I used avocado oil),oil,2.0,tablespoons,27.6,True,2.0 tbsp oil * 13.8g/tbsp = 27.6 g
+5,liver_relevant,5 tbsp  all-purpose flour  ((maida)),all-purpose flour  ),5.0,tbsp,75.0,True,5.0 tbsp = 75.0 ml * density 1.0 = 75.0 g
+6,liver_relevant,2 tablespoons oil ( or as needed),oil,2.0,tablespoons,27.6,True,2.0 tbsp oil * 13.8g/tbsp = 27.6 g
+7,liver_relevant,2 tablespoons (30 ml)  ghee ((or use oil)),ghee ),2.0,tablespoons,27.3,True,2.0 tbsp ghee * 13.65g/tbsp = 27.3 g
+8,liver_relevant,"firstly, in a large mixing bowl take 2 cup maida. you can alternatively take wheat flour / atta.","firstly, in a large mixing bowl take 2 cup maida. you can alternatively take wheat flour / atta.",,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+9,liver_relevant,2 cups (250 grams)  all-purpose flour ((maida)),all-purpose flour ),2.0,cups,480.0,True,2.0 cup * default 240 g/cup = 480.0 g
+10,liver_relevant,½ cup (60 grams) maida / plain flour,½ cup (60 grams) maida / plain flour,,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+11,liver_relevant,"3 tablespoons ghee (45 ml, divided)",ghee,3.0,tablespoons,40.95,True,3.0 tbsp ghee * 13.65g/tbsp = 40.95 g
+12,liver_relevant,4 tablespoons ghee ((clarified butter)),ghee ),4.0,tablespoons,54.6,True,4.0 tbsp ghee * 13.65g/tbsp = 54.6 g
+13,liver_relevant,Oil for deep frying,oil,,,NOT_QUANTIFIED,False,Unquantified vague qualifier in 'Oil for deep frying'
+14,liver_relevant,¾ cup sugar,¾ cup sugar,,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+15,liver_relevant,"2 teaspoons oil ( 10 ml , divided, I used avocado oil, use any flavorless oil)",oil,2.0,teaspoons,9.2,True,2.0 tsp = 10.0 ml * density 0.92 = 9.2 g
+16,liver_relevant,2 tablespoons Butter (Salted),Butter,2.0,tablespoons,28.4,True,2.0 tbsp butter * 14.2g/tbsp = 28.4 g
+17,liver_relevant,1 tsp sugar,sugar,1.0,tsp,4.2,True,1.0 tsp granulated sugar * 4.2g/tsp = 4.2 g
+18,liver_relevant,6 tablespoons (50 grams)  ghee ((clarified butter)),ghee ),6.0,tablespoons,81.9,True,6.0 tbsp ghee * 13.65g/tbsp = 81.9 g
+19,liver_relevant,3 tablespoons butter (- salted or unsalted),butter,3.0,tablespoons,42.6,True,3.0 tbsp butter * 14.2g/tbsp = 42.6 g
+20,liver_relevant,"3 to 4 tablespoons  (45 to 60 ml)   heavy cream ((sub with fresh cream, cooking cream or thickened cream))",heavy cream ),3.5,tablespoons,52.5,True,3.5 tbsp = 52.5 ml * density 1.0 = 52.5 g
+21,liver_relevant,3 tablespoons (42 grams)  unsalted butter  ((cultured butter if you can)),unsalted butter  ),3.0,tablespoons,42.6,True,3.0 tbsp butter * 14.2g/tbsp = 42.6 g
+22,liver_relevant,3 tablespoons All Purpose Flour (Maida),All Purpose Flour,3.0,tablespoons,45.0,True,3.0 tbsp = 45.0 ml * density 1.0 = 45.0 g
+23,liver_relevant,1 teaspoon sugar,sugar,1.0,teaspoon,4.2,True,1.0 tsp granulated sugar * 4.2g/tsp = 4.2 g
+24,liver_relevant,"2 to 3 tablespoons light cream (or half &amp; half or 1 to 2 tablespoons heavy cream, optional)",light cream,2.5,tablespoons,37.5,True,2.5 tbsp = 37.5 ml * density 1.0 = 37.5 g
+25,liver_relevant,1 teaspoon Honey,Honey,1.0,teaspoon,5.0,True,1.0 tsp = 5.0 ml * density 1.0 = 5.0 g
+26,liver_relevant,1 teaspoon jaggery/ sugar ( (optional)),jaggery/ sugar ),1.0,teaspoon,4.2,True,1.0 tsp granulated sugar * 4.2g/tsp = 4.2 g
+27,liver_relevant,1.5 cups granulated white sugar (300 grams),granulated white sugar,1.5,cups,300.0,True,1.5 cup * 200.0 g/cup (granulated white sugar) = 300.0 g
+28,liver_relevant,more amul butter (salted) (for serving),more amul butter (salted) (for serving),,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+29,liver_relevant,1/4 cup all purpose flour [maida] (33 grams),all purpose flour [maida],0.25,cup,31.25,True,0.25 cup * 125.0 g/cup (all purpose flour [maida]) = 31.25 g
+30,liver_relevant,¼ to ⅓ cup light cream  ((25% to 30% fat) or half &amp; half or 2 tablespoons whipping or heavy cream),¼ to ⅓ cup light cream  ((25% to 30% fat) or half &amp; half or 2 tablespoons whipping or heavy cream),,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+31,liver_relevant,2 tablespoons Fresh cream,Fresh cream,2.0,tablespoons,30.0,True,2.0 tbsp = 30.0 ml * density 1.0 = 30.0 g
+32,liver_relevant,1 cup (200 grams) Khoya ((mawa)),Khoya ),1.0,cup,240.0,True,1.0 cup * default 240 g/cup = 240.0 g
+33,liver_relevant,3 tablespoons Fresh cream,Fresh cream,3.0,tablespoons,45.0,True,3.0 tbsp = 45.0 ml * density 1.0 = 45.0 g
+34,liver_relevant,1 to 2 teaspoons butter (– optional),butter,1.5,teaspoons,7.2,True,1.5 tsp = 7.5 ml * density 0.96 = 7.2 g
+35,liver_relevant,1.75 cups (250 grams) sugar,sugar,1.75,cups,350.0,True,1.75 cup * 200.0 g/cup (sugar) = 350.0 g
+36,liver_relevant,2 tbsp oil,oil,2.0,tbsp,27.6,True,2.0 tbsp oil * 13.8g/tbsp = 27.6 g
+37,liver_relevant,pinch a ball sized dough and grease with oil.,a ball sized dough and grease with oil.,1,pinch,0.5,True,Standard 1 pinch = 0.5g
+38,liver_relevant,"1 tablespoon light cream (or 1 tablespoon heavy cream, optional)",light cream,1.0,tablespoon,15.0,True,1.0 tbsp = 15.0 ml * density 1.0 = 15.0 g
+39,liver_relevant,Oil ( for deep frying),oil,,,NOT_QUANTIFIED,False,Unquantified vague qualifier in 'Oil ( for deep frying)'
+40,liver_relevant,3 tablespoon Cream  (optional),Cream,3.0,tablespoon,45.0,True,3.0 tbsp = 45.0 ml * density 1.0 = 45.0 g
+41,liver_relevant,"firstly, in a large kadai take 2 tsp oil and saute 1 tsp cumin, ½ tsp coriander seeds, ½ tsp fennel and pinch hing.","firstly, in a large kadai take 2 tsp oil and saute 1 tsp cumin, ½ tsp coriander seeds, ½ tsp fennel and  hing.",1,pinch,0.5,True,Standard 1 pinch = 0.5g
+42,liver_relevant,2 tablespoon Ghee,Ghee,2.0,tablespoon,27.3,True,2.0 tbsp ghee * 13.65g/tbsp = 27.3 g
+43,liver_relevant,"1-1.5  cups granulated white sugar (200-300 grams, adjust to taste)",granulated white sugar,1.25,cups,250.0,True,1.25 cup * 200.0 g/cup (granulated white sugar) = 250.0 g
+44,liver_relevant,1.5 to 2 tablespoons oil,oil,1.75,tablespoons,24.15,True,1.75 tbsp oil * 13.8g/tbsp = 24.15 g
+45,liver_relevant,2 tablespoons butter (or 1 tablespoon oil + 1 or 2 tablespoons butter),butter,2.0,tablespoons,28.4,True,2.0 tbsp butter * 14.2g/tbsp = 28.4 g
+46,liver_relevant,"28 (42 grams,⅓ cup)  whole raw cashews ( (soaked in hot water, sub with ¼ to ⅓ cup heavy cream))",whole raw cashews ),28.0,piece,560.0,True,28.0 default item * estimated 20g = 560.0 g
+47,liver_relevant,½ cup khoya / mawa,½ cup khoya / mawa,,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+48,liver_relevant,½ to 1 teaspoon sugar ((optional)),½ to 1 teaspoon sugar,,,NOT_QUANTIFIED,False,Unquantified vague qualifier in '½ to 1 teaspoon sugar ((optional))'
+49,liver_relevant,1½ tablespoons oil,½ tablespoons oil,1.0,piece,20.0,True,1.0 default item * estimated 20g = 20.0 g
+50,liver_relevant,½ cup sugar ((+ 2 tbsp optional) (prefer organic)),½ cup sugar + 2 tbsp  prefer organic,,,NOT_QUANTIFIED,False,Unquantified vague qualifier in '½ cup sugar ((+ 2 tbsp optional) (prefer organic))'
+51,liver_relevant,2 tbsp cream,cream,2.0,tbsp,30.0,True,2.0 tbsp = 30.0 ml * density 1.0 = 30.0 g
+52,liver_relevant,1 teaspoon Ghee,Ghee,1.0,teaspoon,4.55,True,1.0 tsp = 5.0 ml * density 0.91 = 4.55 g
+53,liver_relevant,3 tablespoons Ghee,Ghee,3.0,tablespoons,40.95,True,3.0 tbsp ghee * 13.65g/tbsp = 40.95 g
+54,liver_relevant,ghee or oil (for frying),ghee or oil,,,NOT_QUANTIFIED,False,Unquantified vague qualifier in 'ghee or oil (for frying)'
+55,liver_relevant,"3 tablespoons butter (divided, use amul butter (salted) if possible)",butter  if possible),3.0,tablespoons,42.6,True,3.0 tbsp butter * 14.2g/tbsp = 42.6 g
+56,liver_relevant,¼ cup ghee / clarified butter,¼ cup ghee / clarified butter,,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+57,liver_relevant,1 tbsp ghee  (or oil for greasing),ghee,1.0,tbsp,13.65,True,1.0 tbsp ghee * 13.65g/tbsp = 13.65 g
+58,liver_relevant,¾ to 1 tablespoon oil,¾ to 1 tablespoon oil,,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+59,liver_relevant,1 tablespoon (15 ml)  oil,oil,1.0,tablespoon,13.8,True,1.0 tbsp oil * 13.8g/tbsp = 13.8 g
+60,liver_relevant,1 tbsp ghee / clarified butter,ghee / clarified butter,1.0,tbsp,14.2,True,1.0 tbsp butter * 14.2g/tbsp = 14.2 g
+61,liver_relevant,2 cups all purpose flour (maida) ( 260 grams ),all purpose flour,2.0,cups,250.0,True,2.0 cup * 125.0 g/cup (all purpose flour) = 250.0 g
+62,liver_relevant,1/4 cup Cream (heavy whipping or coconut cream),Cream,0.25,cup,60.0,True,0.25 cup * default 240 g/cup = 60.0 g
+63,liver_relevant,1/4 cup Cream (heavy whipping cream (coconut milk for vegan)),Cream ),0.25,cup,60.0,True,0.25 cup * default 240 g/cup = 60.0 g
+64,liver_relevant,1 tablespoon Ghee,Ghee,1.0,tablespoon,13.65,True,1.0 tbsp ghee * 13.65g/tbsp = 13.65 g
+65,liver_relevant,1 cup finely grated khoya [dried milk] (135 grams),finely grated khoya [dried milk],1.0,cup,240.0,True,1.0 cup * default 240 g/cup = 240.0 g
+66,liver_relevant,"1 tablespoon oil  (- I used mustard oil. sunflower, canola, grapeseed oil can be used)",oil,1.0,tablespoon,13.8,True,1.0 tbsp oil * 13.8g/tbsp = 13.8 g
+67,liver_relevant,1 teaspoon Ghee,Ghee,1.0,teaspoon,4.55,True,1.0 tsp = 5.0 ml * density 0.91 = 4.55 g
+68,liver_relevant,1-2 tbsp ghee / clarified butter,ghee / clarified butter,1.5,tbsp,21.3,True,1.5 tbsp butter * 14.2g/tbsp = 21.3 g
+69,liver_relevant,2-1/2 cups All Purpose Flour (Maida),cups All Purpose Flour (Maida),2-1/2,,NOT_QUANTIFIED,False,Unparseable quantity '2-1/2'
+70,liver_relevant,10 to 12 tablespoons sugar  (or raw sugar - 180 to 190 grams - add as required),sugar,11.0,tablespoons,137.5,True,11.0 tbsp granulated sugar * 12.5g/tbsp = 137.5 g
+71,liver_relevant,1 teaspoon Honey (add more to taste),Honey,1.0,teaspoon,5.0,True,1.0 tsp = 5.0 ml * density 1.0 = 5.0 g
+72,liver_relevant,¼ cup (60 ml)  oil (or melted ghee),¼ cup (60 ml)  oil (or melted ghee),,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+73,liver_relevant,2 tablespoon Butter,Butter,2.0,tablespoon,28.4,True,2.0 tbsp butter * 14.2g/tbsp = 28.4 g
+74,liver_relevant,1 tsp sugar,sugar,1.0,tsp,4.2,True,1.0 tsp granulated sugar * 4.2g/tsp = 4.2 g
+75,liver_relevant,1 tablespoon Butter (Salted),Butter,1.0,tablespoon,14.2,True,1.0 tbsp butter * 14.2g/tbsp = 14.2 g
+76,liver_relevant,2 tablespoons Butter (Salted),Butter,2.0,tablespoons,28.4,True,2.0 tbsp butter * 14.2g/tbsp = 28.4 g
+77,liver_relevant,2 tbsp oil,oil,2.0,tbsp,27.6,True,2.0 tbsp oil * 13.8g/tbsp = 27.6 g
+78,liver_relevant,1/4 cup cream (60 ml),cream,0.25,cup,60.0,True,0.25 cup * default 240 g/cup = 60.0 g
+79,liver_relevant,1 tbsp oil (very hot ),oil,1.0,tbsp,13.8,True,1.0 tbsp oil * 13.8g/tbsp = 13.8 g
+80,liver_relevant,1 teaspoon Sugar,Sugar,1.0,teaspoon,4.2,True,1.0 tsp granulated sugar * 4.2g/tsp = 4.2 g
+81,liver_relevant,2 tablespoon Butter ((replace with oil for dairy-free)),Butter ),2.0,tablespoon,28.4,True,2.0 tbsp butter * 14.2g/tbsp = 28.4 g
+82,liver_relevant,2 tablespoon Butter or Oil,Butter or Oil,2.0,tablespoon,28.4,True,2.0 tbsp butter * 14.2g/tbsp = 28.4 g
+83,liver_relevant,1 tablespoon oil (or ghee),oil,1.0,tablespoon,13.8,True,1.0 tbsp oil * 13.8g/tbsp = 13.8 g
+84,liver_relevant,"¼ to 1 teaspoon sugar (– optional, add as required depending on the sourness of the tomatoes)",¼ to 1 teaspoon sugar –  add  depending on the sourness of the tomatoes,,,NOT_QUANTIFIED,False,"Unquantified vague qualifier in '¼ to 1 teaspoon sugar (– optional, add as required depending on the sourness of the tomatoes)'"
+85,liver_relevant,Ghee (or oil for deep frying),ghee or oil,,,NOT_QUANTIFIED,False,Unquantified vague qualifier in 'Ghee (or oil for deep frying)'
+86,liver_relevant,4 tablespoons Ghee,Ghee,4.0,tablespoons,54.6,True,4.0 tbsp ghee * 13.65g/tbsp = 54.6 g
+87,liver_relevant,2 tablespoon ghee (or Oil),ghee,2.0,tablespoon,27.3,True,2.0 tbsp ghee * 13.65g/tbsp = 27.3 g
+88,liver_relevant,2 tablespoons ghee ((clarified butter)),ghee ),2.0,tablespoons,27.3,True,2.0 tbsp ghee * 13.65g/tbsp = 27.3 g
+89,liver_relevant,1/4 cup Fresh cream,Fresh cream,0.25,cup,60.0,True,0.25 cup * default 240 g/cup = 60.0 g
+90,liver_relevant,1 ¼ to 1 ½ cups Sugar,¼ to 1 ½ cups Sugar,1.0,piece,20.0,True,1.0 default item * estimated 20g = 20.0 g
+91,liver_relevant,1/4 cup Fresh cream,Fresh cream,0.25,cup,60.0,True,0.25 cup * default 240 g/cup = 60.0 g
+92,liver_relevant,4 tablespoons + 1 teaspoon  oil ( 65 ml ),+ 1 teaspoon  oil,4.0,tablespoons,55.2,True,4.0 tbsp oil * 13.8g/tbsp = 55.2 g
+93,liver_relevant,1/4 cup Fresh cream,Fresh cream,0.25,cup,60.0,True,0.25 cup * default 240 g/cup = 60.0 g
+94,liver_relevant,1 tablespoon Oil,Oil,1.0,tablespoon,13.8,True,1.0 tbsp oil * 13.8g/tbsp = 13.8 g
+95,liver_relevant,1 tablespoon Honey,Honey,1.0,tablespoon,15.0,True,1.0 tbsp = 15.0 ml * density 1.0 = 15.0 g
+96,liver_relevant,2 tablespoons (30 grams)  unsalted butter,unsalted butter,2.0,tablespoons,28.4,True,2.0 tbsp butter * 14.2g/tbsp = 28.4 g
+97,liver_relevant,3-4 tablespoons cream ( 45-60 ml ),cream,3.5,tablespoons,52.5,True,3.5 tbsp = 52.5 ml * density 1.0 = 52.5 g
+98,liver_relevant,1 tablespoon light cream ((25% to 30% fat) or few teaspoons of whipping cream - optional),light cream  or few teaspoons of whipping cream - optional),1.0,tablespoon,15.0,True,1.0 tbsp = 15.0 ml * density 1.0 = 15.0 g
+99,liver_relevant,1 tsp butter,butter,1.0,tsp,4.8,True,1.0 tsp = 5.0 ml * density 0.96 = 4.8 g
+100,liver_relevant,2 tbsp fresh cream (or as required),fresh cream,2.0,tbsp,30.0,True,2.0 tbsp = 30.0 ml * density 1.0 = 30.0 g
+101,other,1 tsp kashmiri chilli powder (or as per your spice level),kashmiri chilli powder,1.0,tsp,3.0,True,1.0 tsp spice powder * 3.0g/tsp = 3.0 g
+102,other,1/2 teaspoon Black pepper powder,Black pepper powder,0.5,teaspoon,1.5,True,0.5 tsp spice powder * 3.0g/tsp = 1.5 g
+103,other,1/2 cup tomato puree (use store bought tomato puree),tomato puree,0.5,cup,90.0,True,0.5 cup * 180.0 g/cup (tomato puree) = 90.0 g
+104,other,"3 cups water ((3½ cups for pot) (refer notes, more if needed ))",water  ),3.0,cups,720.0,True,3.0 cup * default 240 g/cup = 720.0 g
+105,other,10  cashew / kaju (chopped),cashew / kaju,10.0,piece,200.0,True,10.0 default item * estimated 20g = 200.0 g
+106,other,1 medium potato ((optional)  cubed to ½ inch (or ½ cup mix veggies)),potato   cubed to ½ inch ),1.0,medium,120.0,True,1.0 count * INDB piece weight 120.0g = 120.0 g
+107,other,2 to 3  green cardamoms,green cardamoms,2.5,piece,0.75,True,2.5 count * INDB piece weight 0.3g = 0.75 g
+108,other,1/2 teaspoon Red Chilli powder,Red Chilli powder,0.5,teaspoon,1.5,True,0.5 tsp spice powder * 3.0g/tsp = 1.5 g
+109,other,3 to 4 tablespoons peanuts (or cashews),peanuts,3.5,tablespoons,52.5,True,3.5 tbsp = 52.5 ml * density 1.0 = 52.5 g
+110,other,1 tablespoon Lime juice,Lime juice,1.0,tablespoon,15.0,True,1.0 tbsp = 15.0 ml * density 1.0 = 15.0 g
+111,other,1/4 cup rajma (red kidney beans) (60 grams),rajma,0.25,cup,60.0,True,0.25 cup * default 240 g/cup = 60.0 g
+112,other,1 inch Ginger (grated or finely diced),Ginger,1.0,inch,6.0,True,1.0 count * INDB piece weight 6.0g = 6.0 g
+113,other,"½ small bay leaf (optional, use fresh to avoid bitterness)",½ small bay leaf  use fresh to avoid bitterness,,,NOT_QUANTIFIED,False,"Unquantified vague qualifier in '½ small bay leaf (optional, use fresh to avoid bitterness)'"
+114,other,¼ cup plain yogurt ((Indian curd)),¼ cup plain yogurt ((Indian curd)),,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+115,other,1  black cardamom,black cardamom,1.0,piece,0.3,True,1.0 count * INDB piece weight 0.3g = 0.3 g
+116,other,"½ kg (1.1 lbs)  chicken ((skinless bone-in or boneless, large pieces such as thighs, drumsticks, legs or mix of all))","½ kg (1.1 lbs)  chicken ((skinless bone-in or boneless, large pieces such as thighs, drumsticks, legs or mix of all))",,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+117,other,1 inch ginger (– peeled and julienned),ginger,1.0,inch,6.0,True,1.0 count * INDB piece weight 6.0g = 6.0 g
+118,other,2 tablespoon Mint leaves (chopped),Mint leaves,2.0,tablespoon,30.0,True,2.0 tbsp = 30.0 ml * density 1.0 = 30.0 g
+119,other,¼ to ½ cup mint leaves (chopped fine (about 15 leaves)),¼ to ½ cup mint leaves (chopped fine (about 15 leaves)),,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+120,other,2½ to 3 cups water (– for pressure cooking the chickpeas),½ to 3 cups water,2.0,piece,40.0,True,2.0 default item * estimated 20g = 40.0 g
+121,other,1.25 liters whole milk (around 5 cups),whole milk,1.25,liters,25.0,True,1.25 default item * estimated 20g = 25.0 g
+122,other,3 cups water (– for soaking chickpeas),water,3.0,cups,720.0,True,3.0 cup * default 240 g/cup = 720.0 g
+123,other,"1 medium white onion (115 grams, finely grated using a food processor)",white onion,1.0,medium,80.0,True,1.0 count * INDB piece weight 80.0g = 80.0 g
+124,other,3 cups Basmati rice,Basmati rice,3.0,cups,555.0,True,3.0 cup * 185.0 g/cup (Basmati rice) = 555.0 g
+125,other,2 tablespoons coriander leaves ( chopped),coriander leaves,2.0,tablespoons,30.0,True,2.0 tbsp = 30.0 ml * density 1.0 = 30.0 g
+126,other,1  black tea bag ((optional) or 2 dried amla or 1 tbsp loose leaf tea or ½ tsp dust ),black tea bag  or 2 dried amla or 1 tbsp loose leaf tea or ½ tsp dust ),1.0,piece,20.0,True,1.0 default item * estimated 20g = 20.0 g
+127,other,1/4 cup Water,Water,0.25,cup,60.0,True,0.25 cup * default 240 g/cup = 60.0 g
+128,other,10-12  Curry Leaves (Kadi Patta),Curry Leaves,11.0,piece,220.0,True,11.0 default item * estimated 20g = 220.0 g
+129,other,2 टेबल स्पून चावल का आटा,टेबल स्पून चावल का आटा,2.0,piece,40.0,True,2.0 default item * estimated 20g = 40.0 g
+130,other,2 pod black cardamom,pod black cardamom,2.0,piece,0.6,True,2.0 count * INDB piece weight 0.3g = 0.6 g
+131,other,"1 inch (10 grams)   ginger  ((peeled &amp; sliced or use 1½ to 2 teaspoon ginger garlic paste, read notes))",ginger  ),1.0,inch,6.0,True,1.0 count * INDB piece weight 6.0g = 6.0 g
+132,other,½ to ¾ teaspoon kashmiri red chili powder ((adjust to taste)),½ to ¾ teaspoon kashmiri red chili powder adjust,,,NOT_QUANTIFIED,False,Unquantified vague qualifier in '½ to ¾ teaspoon kashmiri red chili powder ((adjust to taste))'
+133,other,½ inch ginger (julienne (for garnishing)),½ inch ginger (julienne (for garnishing)),,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+134,other,½  salt (adjust to taste),½  salt adjust,,,NOT_QUANTIFIED,False,Unquantified vague qualifier in '½  salt (adjust to taste)'
+135,other,salt (– as required),salt –,,,NOT_QUANTIFIED,False,Unquantified vague qualifier in 'salt (– as required)'
+136,other,2 tbsp coriander (finely chopped),coriander,2.0,tbsp,30.0,True,2.0 tbsp = 30.0 ml * density 1.0 = 30.0 g
+137,other,1 cup water ( 8 oz ),water,1.0,cup,240.0,True,1.0 cup * default 240 g/cup = 240.0 g
+138,other,"1 &amp; ½ inch  ginger ( 15 grams , roughly chopped)",&amp; ½ inch  ginger,1.0,piece,6.0,True,1.0 count * INDB piece weight 6.0g = 6.0 g
+139,other,½ to 1  teaspoon cardamom powder (or 5 to 6 green cardamoms powdered finely in a mortar-pestle),½ to 1  teaspoon cardamom powder (or 5 to 6 green cardamoms powdered finely in a mortar-pestle),,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+140,other,1-2 teaspoon Kashmiri red chili powder (adjust to taste ),Kashmiri red chili powder,1.5,teaspoon,4.5,True,1.5 tsp spice powder * 3.0g/tsp = 4.5 g
+141,other,10 strands Saffron (Kesar),strands Saffron,10.0,piece,200.0,True,10.0 default item * estimated 20g = 200.0 g
+142,other,½ to 1 teaspoon red chilli powder  ((or paprika) (use less spicy variety)),½ to 1 teaspoon red chilli powder  ((or paprika) (use less spicy variety)),,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+143,other,1½ cups water (or add as required),½ cups water,1.0,piece,20.0,True,1.0 default item * estimated 20g = 20.0 g
+144,other,½ tsp turmeric,½ tsp turmeric,,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+145,other,¾ to 1 teaspoon Kashmiri red chilli powder ((or paprika) (adjust to heat &amp; color preference)),¾ to 1 teaspoon Kashmiri red chilli powder ((or paprika) (adjust to heat &amp; color preference)),,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+146,other,1/4 teaspoon Ground Turmeric (Haldi powder),Ground Turmeric,0.25,teaspoon,1.25,True,0.25 tsp = 1.25 ml * density 1.0 = 1.25 g
+147,other,1 teaspoon garam masala ((or biryani masala)),garam masala ),1.0,teaspoon,3.0,True,1.0 tsp spice powder * 3.0g/tsp = 3.0 g
+148,other,1 teaspoon Red Chilli powder or to taste,Red Chilli powder or to taste,1.0,teaspoon,3.0,True,1.0 tsp spice powder * 3.0g/tsp = 3.0 g
+149,other,"2 cups (350 grams)  tomatoes  ((sliced, use up to 420 grams from 2 large or 4 medium))",tomatoes  ),2.0,cups,360.0,True,2.0 cup * 180.0 g/cup (tomatoes  )) = 360.0 g
+150,other,2 cloves Garlic finely chopped,Garlic finely chopped,2.0,cloves,6.0,True,2.0 count * INDB piece weight 3.0g = 6.0 g
+151,other,1.5 teaspoon rose water,rose water,1.5,teaspoon,7.5,True,1.5 tsp = 7.5 ml * density 1.0 = 7.5 g
+152,other,¼ to ½ teaspoon amchur ((only if required)),¼ to ½ teaspoon amchur ((only if required)),,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+153,other,¾ teaspoon salt (or to taste),¾ teaspoon salt or,,,NOT_QUANTIFIED,False,Unquantified vague qualifier in '¾ teaspoon salt (or to taste)'
+154,other,1 pod  black cardamom,pod  black cardamom,1.0,piece,0.3,True,1.0 count * INDB piece weight 0.3g = 0.3 g
+155,other,7 to 8 tablespoons water (or add as required),water,7.5,tablespoons,112.5,True,7.5 tbsp = 112.5 ml * density 1.0 = 112.5 g
+156,other,1 tablespoon Cilantro leaves (Corainder) (chopped ),Cilantro leaves,1.0,tablespoon,15.0,True,1.0 tbsp = 15.0 ml * density 1.0 = 15.0 g
+157,other,¾ teaspoon carom seeds ((ajwain)),¾ teaspoon carom seeds ((ajwain)),,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+158,other,1 tablespoon Garlic (finely diced ),Garlic,1.0,tablespoon,15.0,True,1.0 tbsp = 15.0 ml * density 1.0 = 15.0 g
+159,other,½  lemon,½  lemon,,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+160,other,1/2 teaspoon Cumin powder (Jeera),Cumin powder,0.5,teaspoon,1.5,True,0.5 tsp spice powder * 3.0g/tsp = 1.5 g
+161,other,¼ teaspoon garam masala (– optional),¼ teaspoon garam masala –,,,NOT_QUANTIFIED,False,Unquantified vague qualifier in '¼ teaspoon garam masala (– optional)'
+162,other,"1 sprig curry leaves ( chopped finely, )",sprig curry leaves,1.0,piece,20.0,True,1.0 default item * estimated 20g = 20.0 g
+163,other,2 tablespoons golden raisins,golden raisins,2.0,tablespoons,30.0,True,2.0 tbsp = 30.0 ml * density 1.0 = 30.0 g
+164,other,5 Cloves (Laung),(Laung),5.0,cloves,0.5,True,5.0 cloves * 0.1g = 0.5 g
+165,other,¼ teaspoon hing,¼ teaspoon hing,,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+166,other,2 tablespoon Cilantro leaves (chopped ),Cilantro leaves,2.0,tablespoon,30.0,True,2.0 tbsp = 30.0 ml * density 1.0 = 30.0 g
+167,other,1/2 cup Plain Yogurt (I used full-fat),Plain Yogurt,0.5,cup,120.0,True,0.5 cup * default 240 g/cup = 120.0 g
+168,other,1 tsp cumin,cumin,1.0,tsp,5.0,True,1.0 tsp = 5.0 ml * density 1.0 = 5.0 g
+169,other,1/2 cup Whole Almonds (Badam) blanched and cut lengthwise,Whole Almonds  blanched and cut lengthwise,0.5,cup,120.0,True,0.5 cup * default 240 g/cup = 120.0 g
+170,other,1 teaspoon Salt (optional),Salt,1.0,teaspoon,6.0,True,1.0 tsp table salt * 6.0g/tsp = 6.0 g
+171,other,2 tbsp coriander (finely chopped),coriander,2.0,tbsp,30.0,True,2.0 tbsp = 30.0 ml * density 1.0 = 30.0 g
+172,other,"1  tej patta ((Indian bay leaf), medium sized)",tej patta,1.0,piece,20.0,True,1.0 default item * estimated 20g = 20.0 g
+173,other,4 Potatoes (Aloo),Potatoes,4.0,piece,480.0,True,4.0 count * INDB piece weight 120.0g = 480.0 g
+174,other,1 inch Ginger grated,Ginger grated,1.0,inch,6.0,True,1.0 count * INDB piece weight 6.0g = 6.0 g
+175,other,"1 to 1½ teaspoons garam masala  ((divided, adjust to taste))",½ teaspoons garam masala  ),1.0,piece,20.0,True,1.0 default item * estimated 20g = 20.0 g
+176,other,1 tsp cumin / jeera,cumin / jeera,1.0,tsp,5.0,True,1.0 tsp = 5.0 ml * density 1.0 = 5.0 g
+177,other,"1 to 1½ teaspoon coriander powder  ((optional, adjust to taste))",½ teaspoon coriander powder  ),1.0,piece,20.0,True,1.0 default item * estimated 20g = 20.0 g
+178,other,½  inch cinnamon,½  inch cinnamon,,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+179,other,"further, add 4 boiled and mashed potato. i have pressure cooked potato for 5 whistles.","further, add 4 boiled and mashed potato. i have pressure cooked potato for 5 whistles.",,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+180,other,2 टेबल स्पून धनिया पत्ती (बारीक कटी हुई),टेबल स्पून धनिया पत्ती,2.0,piece,40.0,True,2.0 default item * estimated 20g = 40.0 g
+181,other,1 teaspoon Salt (adjust to taste ),Salt,1.0,teaspoon,6.0,True,1.0 tsp table salt * 6.0g/tsp = 6.0 g
+182,other,¼  tsp cardamom powder,¼  tsp cardamom powder,,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+183,other,1 teaspoon Kashmiri red chili powder,Kashmiri red chili powder,1.0,teaspoon,3.0,True,1.0 tsp spice powder * 3.0g/tsp = 3.0 g
+184,other,"¼ cup (55 grams)  rajma  ((red kidney beans, or sub with urad dal))","¼ cup (55 grams)  rajma  ((red kidney beans, or sub with urad dal))",,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+185,other,1 tablespoon (18 grams)  ginger garlic paste  ((or ¾ tbsp. (9 grams) each grated)),ginger garlic paste   each grated)),1.0,tablespoon,15.0,True,1.0 tbsp = 15.0 ml * density 1.0 = 15.0 g
+186,other,1/4 cup Red Kidney Beans (Rajma),Red Kidney Beans,0.25,cup,60.0,True,0.25 cup * default 240 g/cup = 60.0 g
+187,other,1 inch ginger  (– peeled and roughly chopped),ginger,1.0,inch,6.0,True,1.0 count * INDB piece weight 6.0g = 6.0 g
+188,other,½ teaspoon cardamom powder ((or 4 pods skinned &amp; powdered)),½ teaspoon cardamom powder ((or 4 pods skinned &amp; powdered)),,,NOT_QUANTIFIED,False,No leading quantity or standard measure found
+189,other,"1 teaspoon ginger (- finely chopped, or 1 inch peeled ginger)",ginger,1.0,teaspoon,5.0,True,1.0 tsp = 5.0 ml * density 1.0 = 5.0 g
+190,other,2 tablespoon Milk (warm),Milk,2.0,tablespoon,30.9,True,2.0 tbsp = 30.0 ml * density 1.03 = 30.9 g
+191,other,1 inch ginger (cut into julienne),ginger,1.0,inch,6.0,True,1.0 count * INDB piece weight 6.0g = 6.0 g
+192,other,1  clove (- optional),(- optional),1.0,clove,0.1,True,1.0 cloves * 0.1g = 0.1 g
+193,other,1 teaspoon salt (or add as required),salt,1.0,teaspoon,6.0,True,1.0 tsp table salt * 6.0g/tsp = 6.0 g
+194,other,Salt ( as needed),salt,,,NOT_QUANTIFIED,False,Unquantified vague qualifier in 'Salt ( as needed)'
+195,other,1 tablespoon Garam masala powder,Garam masala powder,1.0,tablespoon,15.0,True,1.0 tbsp = 15.0 ml * density 1.0 = 15.0 g
+196,other,1 tablespoon rose water,rose water,1.0,tablespoon,15.0,True,1.0 tbsp = 15.0 ml * density 1.0 = 15.0 g
+197,other,½ teaspoon salt (or add as required),½ teaspoon salt or add,,,NOT_QUANTIFIED,False,Unquantified vague qualifier in '½ teaspoon salt (or add as required)'
+198,other,2 teaspoons lemon juice,lemon juice,2.0,teaspoons,10.0,True,2.0 tsp = 10.0 ml * density 1.0 = 10.0 g
+199,other,"2"" inch Cinnamon (Dalchini) (stick)",""" inch Cinnamon",2.0,piece,2.0,True,2.0 count * INDB piece weight 1.0g = 2.0 g
+200,other,½ teaspoon amchur (dried mango powder),½ teaspoon amchur (dried mango powder),,,NOT_QUANTIFIED,False,No leading quantity or standard measure found

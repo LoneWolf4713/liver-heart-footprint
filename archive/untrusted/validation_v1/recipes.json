@@ -1,0 +1,123 @@
+[
+  {
+    "dish": "Chicken Tikka Masala",
+    "fat_100g": 17.18,
+    "source": "safefood_2015",
+    "type": "takeaway",
+    "recipes": [
+      {
+        "dish": "Chicken Tikka Masala",
+        "url": "https://www.indianhealthyrecipes.com/chicken-tikka-masala/",
+        "title": "Chicken Tikka Masala Recipe",
+        "yields": "6 servings"
+      },
+      {
+        "dish": "Chicken Tikka Masala",
+        "url": "https://www.archanaskitchen.com/recipe/chicken-tikka-masala-recipe",
+        "title": "Chicken Tikka Masala Recipe",
+        "yields": "3 servings"
+      },
+      {
+        "dish": "Chicken Tikka Masala",
+        "url": "https://pipingpotcurry.com/instant-pot-chicken-tikka-masala/",
+        "title": "Instant Pot Chicken Tikka Masala",
+        "yields": "4 servings"
+      }
+    ]
+  },
+  {
+    "dish": "Chicken Korma",
+    "fat_100g": 17.78,
+    "source": "safefood_2015",
+    "type": "takeaway",
+    "recipes": [
+      {
+        "dish": "Chicken Korma",
+        "url": "https://www.indianhealthyrecipes.com/chicken-korma-recipe/",
+        "title": "Chicken Korma Recipe",
+        "yields": "4 servings"
+      },
+      {
+        "dish": "Chicken Korma",
+        "url": "https://www.archanaskitchen.com/recipe/chicken-korma-recipe-mughlai-style-chicken-curry",
+        "title": "Chicken Korma Recipe - Mughlai Style Chicken Curry",
+        "yields": "3 servings"
+      },
+      {
+        "dish": "Chicken Korma",
+        "url": "https://www.archanaskitchen.com/recipe/bengali-style-chicken-rezala-recipe-chicken-korma-recipe",
+        "title": "Bengali Style Chicken Rezala Recipe - Chicken Korma Recipe",
+        "yields": "4 servings"
+      }
+    ]
+  },
+  {
+    "dish": "Chicken Jalfrezi",
+    "fat_100g": 7.03,
+    "source": "safefood_2015",
+    "type": "takeaway",
+    "recipes": []
+  },
+  {
+    "dish": "Bhindi Subji",
+    "fat_100g": 4.6,
+    "source": "CoFID_2021 (15-627)",
+    "type": "homemade",
+    "recipes": []
+  },
+  {
+    "dish": "Methi Aloo",
+    "fat_100g": 10.4,
+    "source": "CoFID_2021 (15-628)",
+    "type": "homemade",
+    "recipes": [
+      {
+        "dish": "Methi Aloo",
+        "url": "https://www.cookwithmanali.com/aloo-methi/",
+        "title": "Aloo Methi",
+        "yields": "3 servings"
+      }
+    ]
+  },
+  {
+    "dish": "Saag",
+    "fat_100g": 8.8,
+    "source": "CoFID_2021 (15-629)",
+    "type": "homemade",
+    "recipes": [
+      {
+        "dish": "Saag",
+        "url": "https://www.cookwithmanali.com/sarson-ka-saag/",
+        "title": "Sarson ka Saag",
+        "yields": "4 servings"
+      },
+      {
+        "dish": "Saag",
+        "url": "https://hebbarskitchen.com/sarson-ka-saag-recipe/",
+        "title": "sarson ka saag recipe | saag recipe | how to make sarson da saag",
+        "yields": "3 servings"
+      }
+    ]
+  },
+  {
+    "dish": "Chicken Balti",
+    "fat_100g": 5.0,
+    "source": "CoFID_2021 (19-449)",
+    "type": "retail",
+    "recipes": []
+  },
+  {
+    "dish": "Prawn Bhuna",
+    "fat_100g": 8.7,
+    "source": "CoFID_2021 (16-365)",
+    "type": "takeaway",
+    "recipes": []
+  },
+  {
+    "dish": "Prawn Madras",
+    "fat_100g": 8.3,
+    "source": "CoFID_2021 (16-366)",
+    "type": "takeaway",
+    "recipes": []
+  }
+]

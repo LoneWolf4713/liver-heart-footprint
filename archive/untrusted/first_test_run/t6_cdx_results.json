@@ -1,0 +1,35 @@
+[
+  {
+    "url": "https://www.tarladalal.com/paneer-butter-masala-38973r",
+    "count": 5,
+    "earliest": "2019",
+    "latest": "2026",
+    "years": [
+      "2019",
+      "2021",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "earliest_ts": "20190717010418",
+    "latest_ts": "20260110111939"
+  },
+  {
+    "url": "https://www.tarladalal.com/samosa-2771r",
+    "count": 0,
+    "earliest": null,
+    "latest": null,
+    "years": [],
+    "earliest_ts": null,
+    "latest_ts": null
+  },
+  {
+    "url": "https://www.tarladalal.com/pav-bhaji-2794r",
+    "count": 0,
+    "earliest": null,
+    "latest": null,
+    "years": [],
+    "earliest_ts": null,
+    "latest_ts": null
+  }
+]

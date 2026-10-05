@@ -1,0 +1,45 @@
+{
+  "test": "D1_link_reader",
+  "pages": {
+    "attempted": 62,
+    "fetched": 43,
+    "blocked": 8,
+    "blocked_numerator": 8,
+    "blocked_denominator": 62,
+    "jsonld_present": 42,
+    "jsonld_pct_of_fetched": 97.67,
+    "servings_present": 42,
+    "servings_pct_of_fetched": 97.67,
+    "identity_check_passed": 43,
+    "identity_check_pass_rate_pct": 100.0
+  },
+  "ingredient_lines": {
+    "total_extracted": 790,
+    "liver_relevant_total": 126,
+    "non_fried_liver_lines_total": 87,
+    "quantification_distribution_non_fried_liver": {
+      "exact": 70,
+      "range": 11,
+      "count": 0,
+      "vague": 0,
+      "missing": 6
+    },
+    "exact_or_range_count": 81,
+    "exact_or_range_pct": 93.1,
+    "exact_or_range_numerator": 81,
+    "exact_or_range_denominator": 87
+  },
+  "salt_lines": {
+    "total": 37,
+    "exact_or_range": 16,
+    "vague": 17,
+    "vague_pct": 45.95
+  },
+  "deep_fried_recipes": {
+    "fetched_deep_fried_recipes": 12,
+    "unquantified_frying_oil_count": 7,
+    "unquantified_frying_oil_pct": 58.33
+  },
+  "pass_criterion": ">=80% of non-salt liver-relevant lines in non-fried recipes are exact or range",
+  "passed": true
+}

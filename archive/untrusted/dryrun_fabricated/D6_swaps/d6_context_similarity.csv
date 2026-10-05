@@ -1,0 +1,24 @@
+target_driver,rank,candidate_substitute,cosine_similarity,mutual_co_occurrence_rate,is_in_d6a_author_substitutes
+cream,1,curd,0.823,0.167,True
+cream,2,amchur,0.752,0.0,False
+cream,3,chana,0.738,0.0,False
+cream,4,chole masala,0.738,0.0,False
+cream,5,tea leaves,0.738,0.0,False
+butter,1,maida,0.628,0.0,False
+butter,2,peas,0.628,0.0,False
+butter,3,potato,0.628,0.0,False
+butter,4,atta,0.608,0.0,False
+butter,5,besan,0.606,0.0,False
+ghee,1,paneer,0.746,0.0,False
+ghee,2,turmeric,0.746,0.0,False
+ghee,3,tofu,0.724,0.0,False
+sugar,1,jaggery,0.847,0.0,True
+sugar,2,amchur,0.23,0.0,False
+sugar,3,chilli,0.217,0.0,False
+sugar,4,coriander,0.217,0.0,False
+sugar,5,cumin,0.217,0.0,False
+maida,1,garlic,0.632,0.0,False
+maida,2,onion,0.632,0.0,False
+maida,3,tomato,0.632,0.0,False
+maida,4,butter,0.628,0.0,False
+maida,5,curd,0.601,0.0,False

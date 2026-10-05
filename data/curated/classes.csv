@@ -1,0 +1,118 @@
+code,class,note
+I001,ADDED_SUGAR,jaggery
+I002,ADDED_SUGAR,sugarcane juice (free sugar by WHO definition)
+I502,ADDED_SUGAR,
+I503,ADDED_SUGAR,
+I504,ADDED_SUGAR,
+I505,ADDED_SUGAR,
+I507,ADDED_SUGAR,honey (free sugar by WHO definition)
+I509,ADDED_SUGAR,plain chocolate (its sugar counted as added)
+W501,ADDED_SUGAR,
+W502,ADDED_SUGAR,
+W504,ADDED_SUGAR,
+W505,ADDED_SUGAR,
+L508,ADDED_SUGAR,sweetened condensed milk: all its sugar counted as added (slight overestimate; lactose ~ 10-12 g/100 g) [U]
+V503,ADDED_SUGAR,
+V505,ADDED_SUGAR,
+V506,ADDED_SUGAR,
+V508,ADDED_SUGAR,
+X503,ADDED_SUGAR,tomato ketchup: all its sugar counted as added (overestimate; part is from tomato) [U]
+A018,REFINED_GRAIN,maida
+A022,REFINED_GRAIN,semolina (sooji/rava)
+A023,REFINED_GRAIN,vermicelli
+A024,REFINED_GRAIN,vermicelli roasted
+A503,REFINED_GRAIN,cornflour (cornstarch)
+A505,REFINED_GRAIN,rice flour
+A014,REFINED_GRAIN,parboiled milled rice [U: classification of polished rice as refined grain is a project decision]
+A015,REFINED_GRAIN,raw milled (polished) rice [U: as above]
+A011,REFINED_GRAIN,rice flakes (poha) [U: as above]
+A012,REFINED_GRAIN,puffed rice [U: as above]
+A507,REFINED_GRAIN,white pasta
+I508,REFINED_GRAIN,sago
+U511,REFINED_GRAIN,white bread
+U506,REFINED_GRAIN,hot dog buns
+U507,REFINED_GRAIN,white hamburger buns
+U509,REFINED_GRAIN,wafers
+T001,COOKING_OIL,
+T002,COOKING_OIL,
+T003,COOKING_OIL,
+T004,COOKING_OIL,
+T005,COOKING_OIL,
+T006,COOKING_OIL,
+T007,COOKING_OIL,
+T008,COOKING_OIL,
+T009,COOKING_OIL,
+T010,COOKING_OIL,
+T011,COOKING_OIL,
+T012,COOKING_OIL,
+T502,COOKING_OIL,
+T507,COOKING_OIL,
+T508,COOKING_OIL,
+T509,COOKING_OIL,
+T510,COOKING_OIL,
+T014,HYDROGENATED_FAT,vanaspati
+T504,HYDROGENATED_FAT,margarine
+T013,DAIRY_FAT,ghee
+T506,DAIRY_FAT,ghee
+T500,DAIRY_FAT,butter salted
+T501,DAIRY_FAT,butter unsalted
+L512,DAIRY_FAT,cream whipping
+L519,DAIRY_FAT,cream single
+L515,DAIRY_FAT,cream light
+L004,DAIRY_FAT,khoa
+L003,DAIRY_FAT,paneer
+L500,DAIRY_FAT,cheese
+L503,DAIRY_FAT,cheese
+L505,DAIRY_FAT,cheese
+L506,DAIRY_FAT,cheese
+L511,DAIRY_FAT,cheese
+L501,DAIRY_FAT,cream cheese
+L513,DAIRY_FAT,cheese
+L514,DAIRY_FAT,sour cream
+G528,SALT,
+G540,SALT,black salt
+K505,WATER,
+G019,SPICE,dried spice/condiment for the 30 g sanity check
+G020,SPICE,dried spice/condiment for the 30 g sanity check
+G021,SPICE,dried spice/condiment for the 30 g sanity check
+G022,SPICE,dried spice/condiment for the 30 g sanity check
+G023,SPICE,dried spice/condiment for the 30 g sanity check
+G024,SPICE,dried spice/condiment for the 30 g sanity check
+G025,SPICE,dried spice/condiment for the 30 g sanity check
+G026,SPICE,dried spice/condiment for the 30 g sanity check
+G027,SPICE,dried spice/condiment for the 30 g sanity check
+G028,SPICE,dried spice/condiment for the 30 g sanity check
+G029,SPICE,dried spice/condiment for the 30 g sanity check
+G030,SPICE,dried spice/condiment for the 30 g sanity check
+G031,SPICE,dried spice/condiment for the 30 g sanity check
+G032,SPICE,dried spice/condiment for the 30 g sanity check
+G033,SPICE,dried spice/condiment for the 30 g sanity check
+G510,SPICE,dried spice/condiment for the 30 g sanity check
+G511,SPICE,dried spice/condiment for the 30 g sanity check
+G512,SPICE,dried spice/condiment for the 30 g sanity check
+G513,SPICE,dried spice/condiment for the 30 g sanity check
+G515,SPICE,dried spice/condiment for the 30 g sanity check
+G516,SPICE,dried spice/condiment for the 30 g sanity check
+G517,SPICE,dried spice/condiment for the 30 g sanity check
+G518,SPICE,dried spice/condiment for the 30 g sanity check
+G520,SPICE,dried spice/condiment for the 30 g sanity check
+G521,SPICE,dried spice/condiment for the 30 g sanity check
+G523,SPICE,dried spice/condiment for the 30 g sanity check
+G524,SPICE,dried spice/condiment for the 30 g sanity check
+G525,SPICE,dried spice/condiment for the 30 g sanity check
+G526,SPICE,dried spice/condiment for the 30 g sanity check
+G527,SPICE,dried spice/condiment for the 30 g sanity check
+G528,SPICE,dried spice/condiment for the 30 g sanity check
+G529,SPICE,dried spice/condiment for the 30 g sanity check
+G531,SPICE,dried spice/condiment for the 30 g sanity check
+G533,SPICE,dried spice/condiment for the 30 g sanity check
+G535,SPICE,dried spice/condiment for the 30 g sanity check
+G536,SPICE,dried spice/condiment for the 30 g sanity check
+G537,SPICE,dried spice/condiment for the 30 g sanity check
+G539,SPICE,dried spice/condiment for the 30 g sanity check
+G540,SPICE,dried spice/condiment for the 30 g sanity check
+G541,SPICE,dried spice/condiment for the 30 g sanity check
+G543,SPICE,dried spice/condiment for the 30 g sanity check
+G545,SPICE,dried spice/condiment for the 30 g sanity check
+G554,SPICE,dried spice/condiment for the 30 g sanity check
+G555,SPICE,dried spice/condiment for the 30 g sanity check

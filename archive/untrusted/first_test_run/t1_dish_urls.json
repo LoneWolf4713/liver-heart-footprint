@@ -1,0 +1,712 @@
+{
+  "indianhealthyrecipes": {
+    "paneer_butter_masala": {
+      "dish_id": "paneer_butter_masala",
+      "dish_name": "paneer butter masala",
+      "search_query": "paneer butter masala",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/paneer-butter-masala-restaurant-style/"
+    },
+    "dal_makhani": {
+      "dish_id": "dal_makhani",
+      "dish_name": "dal makhani",
+      "search_query": "dal makhani",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/dal-makhani-recipe/"
+    },
+    "chole": {
+      "dish_id": "chole",
+      "dish_name": "chole chana masala",
+      "search_query": "chole chana masala",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/chole/"
+    },
+    "rajma": {
+      "dish_id": "rajma",
+      "dish_name": "rajma",
+      "search_query": "rajma",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/rajma-recipe-rajma-masala-recipe/"
+    },
+    "aloo_paratha": {
+      "dish_id": "aloo_paratha",
+      "dish_name": "aloo paratha",
+      "search_query": "aloo paratha",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/aloo-paratha/"
+    },
+    "samosa": {
+      "dish_id": "samosa",
+      "dish_name": "samosa",
+      "search_query": "samosa",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/samosa-recipe-make-samosa/"
+    },
+    "onion_pakora": {
+      "dish_id": "onion_pakora",
+      "dish_name": "onion pakora onion bhajji",
+      "search_query": "onion pakora onion bhajji",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/crispy-onion-pakoda-pakora-recipe/"
+    },
+    "puri_bhature": {
+      "dish_id": "puri_bhature",
+      "dish_name": "puri bhature",
+      "search_query": "puri bhature",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/bhatura/"
+    },
+    "pav_bhaji": {
+      "dish_id": "pav_bhaji",
+      "dish_name": "pav bhaji",
+      "search_query": "pav bhaji",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/pav-bhaji-recipe-how-to-make-pav-bhaji-step-by-step-pictures/"
+    },
+    "butter_chicken": {
+      "dish_id": "butter_chicken",
+      "dish_name": "butter chicken",
+      "search_query": "butter chicken",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/butter-chicken/"
+    },
+    "chicken_biryani": {
+      "dish_id": "chicken_biryani",
+      "dish_name": "chicken biryani",
+      "search_query": "chicken biryani",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/chicken-biryani-recipe/"
+    },
+    "egg_curry": {
+      "dish_id": "egg_curry",
+      "dish_name": "egg curry",
+      "search_query": "egg curry",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/punjabi-egg-curry-anda-curry-dhaba-style/"
+    },
+    "gulab_jamun": {
+      "dish_id": "gulab_jamun",
+      "dish_name": "gulab jamun",
+      "search_query": "gulab jamun",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/gulab-jamun-recipe-using-milk-powder/"
+    },
+    "gajar_halwa": {
+      "dish_id": "gajar_halwa",
+      "dish_name": "gajar ka halwa",
+      "search_query": "gajar ka halwa",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/carrot-halwa-recipe-gajar-ka-halwa-recipe/"
+    },
+    "jalebi": {
+      "dish_id": "jalebi",
+      "dish_name": "jalebi",
+      "search_query": "jalebi",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/jalebi-recipe/"
+    },
+    "poha": {
+      "dish_id": "poha",
+      "dish_name": "poha",
+      "search_query": "poha",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/poha-recipe-kanda-batata-poha/"
+    },
+    "masala_dosa": {
+      "dish_id": "masala_dosa",
+      "dish_name": "masala dosa",
+      "search_query": "masala dosa",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/masala-dosa-recipe/"
+    },
+    "sambar": {
+      "dish_id": "sambar",
+      "dish_name": "sambar",
+      "search_query": "sambar",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/sambar-recipe-ubd/"
+    },
+    "kheer": {
+      "dish_id": "kheer",
+      "dish_name": "rice kheer",
+      "search_query": "rice kheer",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/rice-kheer-recipe-chawal-ki-kheer/"
+    },
+    "aloo_tikki": {
+      "dish_id": "aloo_tikki",
+      "dish_name": "aloo tikki",
+      "search_query": "aloo tikki",
+      "substituted": false,
+      "url": "https://www.indianhealthyrecipes.com/aloo-tikki-recipe/"
+    }
+  },
+  "archanaskitchen": {
+    "paneer_butter_masala": {
+      "dish_id": "paneer_butter_masala",
+      "dish_name": "paneer butter masala",
+      "search_query": "paneer butter masala",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/restaurant-style-paneer-butter-masala-recipe-paneer-makhani-recipe"
+    },
+    "dal_makhani": {
+      "dish_id": "dal_makhani",
+      "dish_name": "dal makhani",
+      "search_query": "dal makhani",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/dal-makhani-a-staple-food-of-punjab-region"
+    },
+    "chole": {
+      "dish_id": "chole",
+      "dish_name": "chole chana masala",
+      "search_query": "chole chana masala",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/chola-chana-masala-north-indian-spiced-chickpea-curry"
+    },
+    "rajma": {
+      "dish_id": "rajma",
+      "dish_name": "rajma",
+      "search_query": "rajma",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/rajma-masala-rajma-chawal-spiced-red-kidney-beans-curry"
+    },
+    "aloo_paratha": {
+      "dish_id": "aloo_paratha",
+      "dish_name": "aloo paratha",
+      "search_query": "aloo paratha",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/aloo-parathas-spiced-indian-potato-flat-bread"
+    },
+    "samosa": {
+      "dish_id": "samosa",
+      "dish_name": "samosa",
+      "search_query": "samosa",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/samosas-a-spiced-potato-tea-time-snack"
+    },
+    "onion_pakora": {
+      "dish_id": "onion_pakora",
+      "dish_name": "onion pakora onion bhajji",
+      "search_query": "onion pakora onion bhajji",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/crispy-onion-pakoda-recipe"
+    },
+    "puri_bhature": {
+      "dish_id": "puri_bhature",
+      "dish_name": "puri bhature",
+      "search_query": "puri bhature",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/bhatura-recipe"
+    },
+    "pav_bhaji": {
+      "dish_id": "pav_bhaji",
+      "dish_name": "pav bhaji",
+      "search_query": "pav bhaji",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/pav-bhaji-a-delicious-street-food-from-india"
+    },
+    "butter_chicken": {
+      "dish_id": "butter_chicken",
+      "dish_name": "butter chicken",
+      "search_query": "butter chicken",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/butter-chicken-recipe-classic-indian-chicken-gravy"
+    },
+    "chicken_biryani": {
+      "dish_id": "chicken_biryani",
+      "dish_name": "chicken biryani",
+      "search_query": "chicken biryani",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/calcutta-style-chicken-biryani-recipe"
+    },
+    "egg_curry": {
+      "dish_id": "egg_curry",
+      "dish_name": "egg curry",
+      "search_query": "egg curry",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/egg-curry-recipe"
+    },
+    "gulab_jamun": {
+      "dish_id": "gulab_jamun",
+      "dish_name": "gulab jamun",
+      "search_query": "gulab jamun",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/gulab-jamun-recipe-with-khoya"
+    },
+    "gajar_halwa": {
+      "dish_id": "gajar_halwa",
+      "dish_name": "gajar ka halwa",
+      "search_query": "gajar ka halwa",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/gajjar-halwa-carrot-pudding"
+    },
+    "jalebi": {
+      "dish_id": "jalebi",
+      "dish_name": "jalebi",
+      "search_query": "jalebi",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/homemade-jalebi"
+    },
+    "poha": {
+      "dish_id": "poha",
+      "dish_name": "poha",
+      "search_query": "poha",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/collection/15-poha-recipes-from-different-regions-of-india"
+    },
+    "masala_dosa": {
+      "dish_id": "masala_dosa",
+      "dish_name": "masala dosa",
+      "search_query": "masala dosa",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/kanchipuram-masala-dosa-recipe"
+    },
+    "sambar": {
+      "dish_id": "sambar",
+      "dish_name": "sambar",
+      "search_query": "sambar",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/collection/27-best-sambar-recipes-that-you-can-try-for-your-south-indian-meals"
+    },
+    "kheer": {
+      "dish_id": "kheer",
+      "dish_name": "rice kheer",
+      "search_query": "rice kheer",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/thandai-flavored-rice-kheer-recipe"
+    },
+    "aloo_tikki": {
+      "dish_id": "aloo_tikki",
+      "dish_name": "aloo tikki",
+      "search_query": "aloo tikki",
+      "substituted": false,
+      "url": "https://www.archanaskitchen.com/recipe/baked-aloo-tikki-spicy-potato-patties-cutlets"
+    }
+  },
+  "vegrecipesofindia": {
+    "paneer_butter_masala": {
+      "dish_id": "paneer_butter_masala",
+      "dish_name": "paneer butter masala",
+      "search_query": "paneer butter masala",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/paneer-butter-masala/"
+    },
+    "dal_makhani": {
+      "dish_id": "dal_makhani",
+      "dish_name": "dal makhani",
+      "search_query": "dal makhani",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/dal-makhani-restaurant-style-recipe/"
+    },
+    "chole": {
+      "dish_id": "chole",
+      "dish_name": "chole chana masala",
+      "search_query": "chole chana masala",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/punjabi-chole-chickpeas-in-a-spicy-gravy/"
+    },
+    "rajma": {
+      "dish_id": "rajma",
+      "dish_name": "rajma",
+      "search_query": "rajma",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/rajma-masala-recipe-restaurant-style/"
+    },
+    "aloo_paratha": {
+      "dish_id": "aloo_paratha",
+      "dish_name": "aloo paratha",
+      "search_query": "aloo paratha",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/aloo-paratha-indian-bread-stuffed-with-potato-filling/"
+    },
+    "samosa": {
+      "dish_id": "samosa",
+      "dish_name": "samosa",
+      "search_query": "samosa",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/samosa-recipe-punjabi-samosa/"
+    },
+    "onion_pakora": {
+      "dish_id": "onion_pakora",
+      "dish_name": "onion pakora onion bhajji",
+      "search_query": "onion pakora onion bhajji",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/kanda-bhaji-recipe/"
+    },
+    "puri_bhature": {
+      "dish_id": "puri_bhature",
+      "dish_name": "puri bhature",
+      "search_query": "puri bhature",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/chole-bhature/"
+    },
+    "pav_bhaji": {
+      "dish_id": "pav_bhaji",
+      "dish_name": "pav bhaji",
+      "search_query": "pav bhaji",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/pav-bhaji-recipe-mumbai-pav-bhaji-a-fastfood-recipe-from-mumbai/"
+    },
+    "butter_chicken": {
+      "dish_id": "butter_chicken",
+      "dish_name": "butter chicken",
+      "search_query": "paneer makhani",
+      "substituted": true,
+      "url": "https://www.vegrecipesofindia.com/paneer-makhani-recipe-paneer-recipes/"
+    },
+    "chicken_biryani": {
+      "dish_id": "chicken_biryani",
+      "dish_name": "chicken biryani",
+      "search_query": "veg biryani",
+      "substituted": true,
+      "url": "https://www.vegrecipesofindia.com/vegetable-biryani/"
+    },
+    "egg_curry": {
+      "dish_id": "egg_curry",
+      "dish_name": "egg curry",
+      "search_query": "paneer curry",
+      "substituted": true,
+      "url": "https://www.vegrecipesofindia.com/tofu-bhurji-recipe/"
+    },
+    "gulab_jamun": {
+      "dish_id": "gulab_jamun",
+      "dish_name": "gulab jamun",
+      "search_query": "gulab jamun",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/gulab-jamun-recipe-with-khoya/"
+    },
+    "gajar_halwa": {
+      "dish_id": "gajar_halwa",
+      "dish_name": "gajar ka halwa",
+      "search_query": "gajar ka halwa",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/gajar-halwa-recipe-gajar-ka-halwa/"
+    },
+    "jalebi": {
+      "dish_id": "jalebi",
+      "dish_name": "jalebi",
+      "search_query": "jalebi",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/jalebi-recipe-how-to-make-jalebi/"
+    },
+    "poha": {
+      "dish_id": "poha",
+      "dish_name": "poha",
+      "search_query": "poha",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/kanda-poha-or-onion-poha/"
+    },
+    "masala_dosa": {
+      "dish_id": "masala_dosa",
+      "dish_name": "masala dosa",
+      "search_query": "masala dosa",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/masala-dosa-recipe-how-to-make-masala-dosa-recipe/"
+    },
+    "sambar": {
+      "dish_id": "sambar",
+      "dish_name": "sambar",
+      "search_query": "sambar",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/sambhar-recipe-a-method-made-easy/"
+    },
+    "kheer": {
+      "dish_id": "kheer",
+      "dish_name": "rice kheer",
+      "search_query": "rice kheer",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/rice-kheer-recipe-chawal-ki-kheer/"
+    },
+    "aloo_tikki": {
+      "dish_id": "aloo_tikki",
+      "dish_name": "aloo tikki",
+      "search_query": "aloo tikki",
+      "substituted": false,
+      "url": "https://www.vegrecipesofindia.com/aloo-tikki-recipe-aloo-patties/"
+    }
+  },
+  "hebbarskitchen": {
+    "paneer_butter_masala": {
+      "dish_id": "paneer_butter_masala",
+      "dish_name": "paneer butter masala",
+      "search_query": "paneer butter masala",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/paneer-butter-masala-recipe/"
+    },
+    "dal_makhani": {
+      "dish_id": "dal_makhani",
+      "dish_name": "dal makhani",
+      "search_query": "dal makhani",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/punjabi-dal-makhani-recipe/"
+    },
+    "chole": {
+      "dish_id": "chole",
+      "dish_name": "chole chana masala",
+      "search_query": "chole chana masala",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/chana-masala-recipe-chickpea-masala/"
+    },
+    "rajma": {
+      "dish_id": "rajma",
+      "dish_name": "rajma",
+      "search_query": "rajma",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/rajma-recipe-punjabi-rajma-masala/"
+    },
+    "aloo_paratha": {
+      "dish_id": "aloo_paratha",
+      "dish_name": "aloo paratha",
+      "search_query": "aloo paratha",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/aloo-paratha-recipe-aalu-ka-paratha-aloo/"
+    },
+    "samosa": {
+      "dish_id": "samosa",
+      "dish_name": "samosa",
+      "search_query": "samosa",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/samosa-recipe-samosa-banane-ki-vidhi/"
+    },
+    "onion_pakora": {
+      "dish_id": "onion_pakora",
+      "dish_name": "onion pakora onion bhajji",
+      "search_query": "onion pakora onion bhajji",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/onion-pakoda-recipe-kanda-bhaji/"
+    },
+    "puri_bhature": {
+      "dish_id": "puri_bhature",
+      "dish_name": "puri bhature",
+      "search_query": "puri bhature",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/chole-bhature-recipe-chana-bhatura/"
+    },
+    "pav_bhaji": {
+      "dish_id": "pav_bhaji",
+      "dish_name": "pav bhaji",
+      "search_query": "pav bhaji",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/easy-mumbai-style-pav-bhaji-recipe/"
+    },
+    "butter_chicken": {
+      "dish_id": "butter_chicken",
+      "dish_name": "butter chicken",
+      "search_query": "paneer makhani",
+      "substituted": true,
+      "url": "https://hebbarskitchen.com/paneer-makhani-recipe-paneer-makhanwala/"
+    },
+    "chicken_biryani": {
+      "dish_id": "chicken_biryani",
+      "dish_name": "chicken biryani",
+      "search_query": "veg biryani",
+      "substituted": true,
+      "url": "https://hebbarskitchen.com/veg-biryani-cooker-vegetable-biryani/"
+    },
+    "egg_curry": {
+      "dish_id": "egg_curry",
+      "dish_name": "egg curry",
+      "search_query": "paneer curry",
+      "substituted": true,
+      "url": "https://hebbarskitchen.com/paneer-ki-sabji-quick-paneer-curry/"
+    },
+    "gulab_jamun": {
+      "dish_id": "gulab_jamun",
+      "dish_name": "gulab jamun",
+      "search_query": "gulab jamun",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/milk-powder-gulab-jamun-recipe/"
+    },
+    "gajar_halwa": {
+      "dish_id": "gajar_halwa",
+      "dish_name": "gajar ka halwa",
+      "search_query": "gajar ka halwa",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/carrot-halwa-recipe-gajar-halwa-recipe/"
+    },
+    "jalebi": {
+      "dish_id": "jalebi",
+      "dish_name": "jalebi",
+      "search_query": "jalebi",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/jalebi-recipe-instant-crispy-jalebi/"
+    },
+    "poha": {
+      "dish_id": "poha",
+      "dish_name": "poha",
+      "search_query": "poha",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/poha-recipe-2-ways-kanda-poha-aloo-poha/"
+    },
+    "masala_dosa": {
+      "dish_id": "masala_dosa",
+      "dish_name": "masala dosa",
+      "search_query": "masala dosa",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/masala-dosa-recipe-crispy-masale-dose/"
+    },
+    "sambar": {
+      "dish_id": "sambar",
+      "dish_name": "sambar",
+      "search_query": "sambar",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/sambar-recipe-hotel-style-south-indian/"
+    },
+    "kheer": {
+      "dish_id": "kheer",
+      "dish_name": "rice kheer",
+      "search_query": "rice kheer",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/pal-payasam-recipe-rice-kheer-recipe/"
+    },
+    "aloo_tikki": {
+      "dish_id": "aloo_tikki",
+      "dish_name": "aloo tikki",
+      "search_query": "aloo tikki",
+      "substituted": false,
+      "url": "https://hebbarskitchen.com/aloo-tikki-recipe-aloo-ki-tikki/"
+    }
+  },
+  "tarladalal": {
+    "paneer_butter_masala": {
+      "dish_id": "paneer_butter_masala",
+      "dish_name": "paneer butter masala",
+      "search_query": "paneer butter masala",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/paneer-butter-masala-38973r"
+    },
+    "dal_makhani": {
+      "dish_id": "dal_makhani",
+      "dish_name": "dal makhani",
+      "search_query": "dal makhani",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/dal-makhani/"
+    },
+    "chole": {
+      "dish_id": "chole",
+      "dish_name": "chole chana masala",
+      "search_query": "chole chana masala",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/chole/"
+    },
+    "rajma": {
+      "dish_id": "rajma",
+      "dish_name": "rajma",
+      "search_query": "rajma",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/rajma-22784r"
+    },
+    "aloo_paratha": {
+      "dish_id": "aloo_paratha",
+      "dish_name": "aloo paratha",
+      "search_query": "aloo paratha",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/stuffed-aloo-paratha/"
+    },
+    "samosa": {
+      "dish_id": "samosa",
+      "dish_name": "samosa",
+      "search_query": "samosa",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/samosa/"
+    },
+    "onion_pakora": {
+      "dish_id": "onion_pakora",
+      "dish_name": "onion pakora onion bhajji",
+      "search_query": "onion pakora onion bhajji",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/kanda-bhaji-pyaz-ke-pakode-kanda-bhajiya-4972r"
+    },
+    "puri_bhature": {
+      "dish_id": "puri_bhature",
+      "dish_name": "puri bhature",
+      "search_query": "puri bhature",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/punjabi-bhatura/"
+    },
+    "pav_bhaji": {
+      "dish_id": "pav_bhaji",
+      "dish_name": "pav bhaji",
+      "search_query": "pav bhaji",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/pav-bhaji/"
+    },
+    "butter_chicken": {
+      "dish_id": "butter_chicken",
+      "dish_name": "butter chicken",
+      "search_query": "paneer makhani",
+      "substituted": true,
+      "url": "https://www.tarladalal.com/paneer-makhanwala-recipe-paneer-butter-masala-36940r"
+    },
+    "chicken_biryani": {
+      "dish_id": "chicken_biryani",
+      "dish_name": "chicken biryani",
+      "search_query": "veg biryani",
+      "substituted": true,
+      "url": "https://www.tarladalal.com/vegetable-biryani/"
+    },
+    "egg_curry": {
+      "dish_id": "egg_curry",
+      "dish_name": "egg curry",
+      "search_query": "paneer curry",
+      "substituted": true,
+      "url": "https://www.tarladalal.com/soya-curry-3686r"
+    },
+    "gulab_jamun": {
+      "dish_id": "gulab_jamun",
+      "dish_name": "gulab jamun",
+      "search_query": "gulab jamun",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/gulab-jamun/"
+    },
+    "gajar_halwa": {
+      "dish_id": "gajar_halwa",
+      "dish_name": "gajar ka halwa",
+      "search_query": "gajar ka halwa",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/gajar-ka-halwa-quick-gajar-halwa-recipe-38971r"
+    },
+    "jalebi": {
+      "dish_id": "jalebi",
+      "dish_name": "jalebi",
+      "search_query": "jalebi",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/jalebi-1991r"
+    },
+    "poha": {
+      "dish_id": "poha",
+      "dish_name": "poha",
+      "search_query": "poha",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/kanda-poha-2775r"
+    },
+    "masala_dosa": {
+      "dish_id": "masala_dosa",
+      "dish_name": "masala dosa",
+      "search_query": "masala dosa",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/masala-dosa--mumbai-roadside-recipe-33390r"
+    },
+    "sambar": {
+      "dish_id": "sambar",
+      "dish_name": "sambar",
+      "search_query": "sambar",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/sambar/"
+    },
+    "kheer": {
+      "dish_id": "kheer",
+      "dish_name": "rice kheer",
+      "search_query": "rice kheer",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/rice-kheer-2040r"
+    },
+    "aloo_tikki": {
+      "dish_id": "aloo_tikki",
+      "dish_name": "aloo tikki",
+      "search_query": "aloo tikki",
+      "substituted": false,
+      "url": "https://www.tarladalal.com/punjabi-aloo-tikki/"
+    }
+  }
+}

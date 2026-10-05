@@ -1,0 +1,49 @@
+{
+  "component": "D3_mapping",
+  "sample_size": 200,
+  "metrics": {
+    "liver_equivalent_pct": {
+      "value": 97.0,
+      "numerator": 97,
+      "denominator": 100,
+      "threshold": 80.0,
+      "passed": true
+    },
+    "liver_exact_pct": {
+      "value": 86.0,
+      "numerator": 86,
+      "denominator": 100
+    },
+    "other_equivalent_pct": {
+      "value": 77.0,
+      "numerator": 77,
+      "denominator": 100
+    },
+    "overall_equivalent_pct": {
+      "value": 87.0,
+      "numerator": 174,
+      "denominator": 200
+    },
+    "overall_exact_pct": {
+      "value": 81.5,
+      "numerator": 163,
+      "denominator": 200
+    },
+    "no_match_rate_sample": {
+      "value": 1.0,
+      "numerator": 2,
+      "denominator": 200
+    },
+    "gold_unmatchable_rate": {
+      "value": 5.0,
+      "numerator": 10,
+      "denominator": 200
+    },
+    "d1_corpus_coverage_pct": {
+      "value": 97.47,
+      "numerator": 770,
+      "denominator": 790
+    }
+  },
+  "verdict": "PASSED"
+}

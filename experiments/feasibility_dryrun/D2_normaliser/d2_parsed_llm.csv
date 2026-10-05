@@ -1,0 +1,201 @@
+sample_id,line,parsed_name,parsed_qty,parsed_unit,parsed_grams,is_quantified
+1,1/2 teaspoon sugar,sugar,0.5,teaspoon,2.5,True
+2,2 tbsp ghee / clarified butter,ghee / clarified butter,2.0,tbsp,28.4,True
+3,1 tbsp butter,butter,1.0,tbsp,14.2,True
+4,2 tablespoons oil (I used avocado oil),oil,2.0,tablespoons,30.0,True
+5,5 tbsp  all-purpose flour  ((maida)),all-purpose flour  ),5.0,tbsp,75.0,True
+6,2 tablespoons oil ( or as needed),oil,2.0,tablespoons,30.0,True
+7,2 tablespoons (30 ml)  ghee ((or use oil)),ghee ),2.0,tablespoons,30.0,True
+8,"firstly, in a large mixing bowl take 2 cup maida. you can alternatively take wheat flour / atta.","firstly, in a large mixing bowl take 2 cup maida. you can alternatively take wheat flour / atta.",,,NOT_QUANTIFIED,False
+9,2 cups (250 grams)  all-purpose flour ((maida)),all-purpose flour ),2.0,cups,480.0,True
+10,½ cup (60 grams) maida / plain flour,½ cup (60 grams) maida / plain flour,,,NOT_QUANTIFIED,False
+11,"3 tablespoons ghee (45 ml, divided)",ghee,3.0,tablespoons,45.0,True
+12,4 tablespoons ghee ((clarified butter)),ghee ),4.0,tablespoons,60.0,True
+13,Oil for deep frying,Oil for deep frying,,,NOT_QUANTIFIED,False
+14,¾ cup sugar,¾ cup sugar,,,NOT_QUANTIFIED,False
+15,"2 teaspoons oil ( 10 ml , divided, I used avocado oil, use any flavorless oil)",oil,2.0,teaspoons,10.0,True
+16,2 tablespoons Butter (Salted),Butter,2.0,tablespoons,30.0,True
+17,1 tsp sugar,sugar,1.0,tsp,4.2,True
+18,6 tablespoons (50 grams)  ghee ((clarified butter)),ghee ),6.0,tablespoons,90.0,True
+19,3 tablespoons butter (- salted or unsalted),butter,3.0,tablespoons,45.0,True
+20,"3 to 4 tablespoons  (45 to 60 ml)   heavy cream ((sub with fresh cream, cooking cream or thickened cream))",heavy cream ),3.5,tablespoons,52.5,True
+21,3 tablespoons (42 grams)  unsalted butter  ((cultured butter if you can)),unsalted butter  ),3.0,tablespoons,45.0,True
+22,3 tablespoons All Purpose Flour (Maida),All Purpose Flour,3.0,tablespoons,45.0,True
+23,1 teaspoon sugar,sugar,1.0,teaspoon,5.0,True
+24,"2 to 3 tablespoons light cream (or half &amp; half or 1 to 2 tablespoons heavy cream, optional)",light cream,2.5,tablespoons,37.5,True
+25,1 teaspoon Honey,Honey,1.0,teaspoon,5.0,True
+26,1 teaspoon jaggery/ sugar ( (optional)),jaggery/ sugar ),1.0,teaspoon,5.0,True
+27,1.5 cups granulated white sugar (300 grams),granulated white sugar,1.5,cups,360.0,True
+28,more amul butter (salted) (for serving),more amul butter (salted) (for serving),,,NOT_QUANTIFIED,False
+29,1/4 cup all purpose flour [maida] (33 grams),all purpose flour [maida],0.25,cup,31.25,True
+30,¼ to ⅓ cup light cream  ((25% to 30% fat) or half &amp; half or 2 tablespoons whipping or heavy cream),¼ to ⅓ cup light cream  ((25% to 30% fat) or half &amp; half or 2 tablespoons whipping or heavy cream),,,NOT_QUANTIFIED,False
+31,2 tablespoons Fresh cream,Fresh cream,2.0,tablespoons,30.0,True
+32,1 cup (200 grams) Khoya ((mawa)),Khoya ),1.0,cup,240.0,True
+33,3 tablespoons Fresh cream,Fresh cream,3.0,tablespoons,45.0,True
+34,1 to 2 teaspoons butter (– optional),butter,1.5,teaspoons,7.5,True
+35,1.75 cups (250 grams) sugar,sugar,1.75,cups,420.0,True
+36,2 tbsp oil,oil,2.0,tbsp,27.6,True
+37,pinch a ball sized dough and grease with oil.,a ball sized dough and grease with oil.,1,pinch,0.5,True
+38,"1 tablespoon light cream (or 1 tablespoon heavy cream, optional)",light cream,1.0,tablespoon,15.0,True
+39,Oil ( for deep frying),Oil ( for deep frying),,,NOT_QUANTIFIED,False
+40,3 tablespoon Cream  (optional),Cream,3.0,tablespoon,45.0,True
+41,"firstly, in a large kadai take 2 tsp oil and saute 1 tsp cumin, ½ tsp coriander seeds, ½ tsp fennel and pinch hing.","firstly, in a large kadai take 2 tsp oil and saute 1 tsp cumin, ½ tsp coriander seeds, ½ tsp fennel and  hing.",1,pinch,0.5,True
+42,2 tablespoon Ghee,Ghee,2.0,tablespoon,30.0,True
+43,"1-1.5  cups granulated white sugar (200-300 grams, adjust to taste)",granulated white sugar,1.25,cups,300.0,True
+44,1.5 to 2 tablespoons oil,oil,1.75,tablespoons,26.25,True
+45,2 tablespoons butter (or 1 tablespoon oil + 1 or 2 tablespoons butter),butter,2.0,tablespoons,30.0,True
+46,"28 (42 grams,⅓ cup)  whole raw cashews ( (soaked in hot water, sub with ¼ to ⅓ cup heavy cream))",whole raw cashews ),28.0,piece,1400.0,True
+47,½ cup khoya / mawa,½ cup khoya / mawa,,,NOT_QUANTIFIED,False
+48,½ to 1 teaspoon sugar ((optional)),½ to 1 teaspoon sugar,,,NOT_QUANTIFIED,False
+49,1½ tablespoons oil,½ tablespoons oil,1.0,piece,50.0,True
+50,½ cup sugar ((+ 2 tbsp optional) (prefer organic)),½ cup sugar + 2 tbsp  prefer organic,,,NOT_QUANTIFIED,False
+51,2 tbsp cream,cream,2.0,tbsp,30.0,True
+52,1 teaspoon Ghee,Ghee,1.0,teaspoon,5.0,True
+53,3 tablespoons Ghee,Ghee,3.0,tablespoons,45.0,True
+54,ghee or oil (for frying),ghee or oil,,,NOT_QUANTIFIED,False
+55,"3 tablespoons butter (divided, use amul butter (salted) if possible)",butter  if possible),3.0,tablespoons,45.0,True
+56,¼ cup ghee / clarified butter,¼ cup ghee / clarified butter,,,NOT_QUANTIFIED,False
+57,1 tbsp ghee  (or oil for greasing),ghee,1.0,tbsp,13.65,True
+58,¾ to 1 tablespoon oil,¾ to 1 tablespoon oil,,,NOT_QUANTIFIED,False
+59,1 tablespoon (15 ml)  oil,oil,1.0,tablespoon,15.0,True
+60,1 tbsp ghee / clarified butter,ghee / clarified butter,1.0,tbsp,14.2,True
+61,2 cups all purpose flour (maida) ( 260 grams ),all purpose flour,2.0,cups,480.0,True
+62,1/4 cup Cream (heavy whipping or coconut cream),Cream,0.25,cup,60.0,True
+63,1/4 cup Cream (heavy whipping cream (coconut milk for vegan)),Cream ),0.25,cup,60.0,True
+64,1 tablespoon Ghee,Ghee,1.0,tablespoon,15.0,True
+65,1 cup finely grated khoya [dried milk] (135 grams),finely grated khoya [dried milk],1.0,cup,240.0,True
+66,"1 tablespoon oil  (- I used mustard oil. sunflower, canola, grapeseed oil can be used)",oil,1.0,tablespoon,15.0,True
+67,1 teaspoon Ghee,Ghee,1.0,teaspoon,5.0,True
+68,1-2 tbsp ghee / clarified butter,ghee / clarified butter,1.5,tbsp,21.3,True
+69,2-1/2 cups All Purpose Flour (Maida),All Purpose Flour,1.25,cups,300.0,True
+70,10 to 12 tablespoons sugar  (or raw sugar - 180 to 190 grams - add as required),sugar,11.0,tablespoons,165.0,True
+71,1 teaspoon Honey (add more to taste),Honey,1.0,teaspoon,5.0,True
+72,¼ cup (60 ml)  oil (or melted ghee),¼ cup (60 ml)  oil (or melted ghee),,,NOT_QUANTIFIED,False
+73,2 tablespoon Butter,Butter,2.0,tablespoon,30.0,True
+74,1 tsp sugar,sugar,1.0,tsp,4.2,True
+75,1 tablespoon Butter (Salted),Butter,1.0,tablespoon,15.0,True
+76,2 tablespoons Butter (Salted),Butter,2.0,tablespoons,30.0,True
+77,2 tbsp oil,oil,2.0,tbsp,27.6,True
+78,1/4 cup cream (60 ml),cream,0.25,cup,60.0,True
+79,1 tbsp oil (very hot ),oil,1.0,tbsp,13.8,True
+80,1 teaspoon Sugar,Sugar,1.0,teaspoon,5.0,True
+81,2 tablespoon Butter ((replace with oil for dairy-free)),Butter ),2.0,tablespoon,30.0,True
+82,2 tablespoon Butter or Oil,Butter or Oil,2.0,tablespoon,30.0,True
+83,1 tablespoon oil (or ghee),oil,1.0,tablespoon,15.0,True
+84,"¼ to 1 teaspoon sugar (– optional, add as required depending on the sourness of the tomatoes)",¼ to 1 teaspoon sugar –  add  depending on the sourness of the tomatoes,,,NOT_QUANTIFIED,False
+85,Ghee (or oil for deep frying),Ghee (or oil for deep frying),,,NOT_QUANTIFIED,False
+86,4 tablespoons Ghee,Ghee,4.0,tablespoons,60.0,True
+87,2 tablespoon ghee (or Oil),ghee,2.0,tablespoon,30.0,True
+88,2 tablespoons ghee ((clarified butter)),ghee ),2.0,tablespoons,30.0,True
+89,1/4 cup Fresh cream,Fresh cream,0.25,cup,60.0,True
+90,1 ¼ to 1 ½ cups Sugar,¼ to 1 ½ cups Sugar,1.0,piece,50.0,True
+91,1/4 cup Fresh cream,Fresh cream,0.25,cup,60.0,True
+92,4 tablespoons + 1 teaspoon  oil ( 65 ml ),+ 1 teaspoon  oil,4.0,tablespoons,60.0,True
+93,1/4 cup Fresh cream,Fresh cream,0.25,cup,60.0,True
+94,1 tablespoon Oil,Oil,1.0,tablespoon,15.0,True
+95,1 tablespoon Honey,Honey,1.0,tablespoon,15.0,True
+96,2 tablespoons (30 grams)  unsalted butter,unsalted butter,2.0,tablespoons,30.0,True
+97,3-4 tablespoons cream ( 45-60 ml ),cream,3.5,tablespoons,52.5,True
+98,1 tablespoon light cream ((25% to 30% fat) or few teaspoons of whipping cream - optional),light cream  or few teaspoons of whipping cream - optional),1.0,tablespoon,15.0,True
+99,1 tsp butter,butter,1.0,tsp,4.7,True
+100,2 tbsp fresh cream (or as required),fresh cream,2.0,tbsp,30.0,True
+101,1 tsp kashmiri chilli powder (or as per your spice level),kashmiri chilli powder,1.0,tsp,5.0,True
+102,1/2 teaspoon Black pepper powder,Black pepper powder,0.5,teaspoon,2.5,True
+103,1/2 cup tomato puree (use store bought tomato puree),tomato puree,0.5,cup,120.0,True
+104,"3 cups water ((3½ cups for pot) (refer notes, more if needed ))",water  ),3.0,cups,720.0,True
+105,10  cashew / kaju (chopped),cashew / kaju,10.0,piece,500.0,True
+106,1 medium potato ((optional)  cubed to ½ inch (or ½ cup mix veggies)),potato   cubed to ½ inch ),1.0,medium,120.0,True
+107,2 to 3  green cardamoms,green cardamoms,2.5,piece,0.75,True
+108,1/2 teaspoon Red Chilli powder,Red Chilli powder,0.5,teaspoon,2.5,True
+109,3 to 4 tablespoons peanuts (or cashews),peanuts,3.5,tablespoons,52.5,True
+110,1 tablespoon Lime juice,Lime juice,1.0,tablespoon,15.0,True
+111,1/4 cup rajma (red kidney beans) (60 grams),rajma,0.25,cup,60.0,True
+112,1 inch Ginger (grated or finely diced),Ginger,1.0,inch,6.0,True
+113,"½ small bay leaf (optional, use fresh to avoid bitterness)",½ small bay leaf  use fresh to avoid bitterness,,,NOT_QUANTIFIED,False
+114,¼ cup plain yogurt ((Indian curd)),¼ cup plain yogurt ((Indian curd)),,,NOT_QUANTIFIED,False
+115,1  black cardamom,black cardamom,1.0,piece,0.3,True
+116,"½ kg (1.1 lbs)  chicken ((skinless bone-in or boneless, large pieces such as thighs, drumsticks, legs or mix of all))","½ kg (1.1 lbs)  chicken ((skinless bone-in or boneless, large pieces such as thighs, drumsticks, legs or mix of all))",,,NOT_QUANTIFIED,False
+117,1 inch ginger (– peeled and julienned),ginger,1.0,inch,6.0,True
+118,2 tablespoon Mint leaves (chopped),Mint leaves,2.0,tablespoon,30.0,True
+119,¼ to ½ cup mint leaves (chopped fine (about 15 leaves)),¼ to ½ cup mint leaves (chopped fine (about 15 leaves)),,,NOT_QUANTIFIED,False
+120,2½ to 3 cups water (– for pressure cooking the chickpeas),½ to 3 cups water,2.0,piece,100.0,True
+121,1.25 liters whole milk (around 5 cups),liters whole milk,1.25,piece,62.5,True
+122,3 cups water (– for soaking chickpeas),water,3.0,cups,720.0,True
+123,"1 medium white onion (115 grams, finely grated using a food processor)",white onion,1.0,medium,80.0,True
+124,3 cups Basmati rice,Basmati rice,3.0,cups,720.0,True
+125,2 tablespoons coriander leaves ( chopped),coriander leaves,2.0,tablespoons,30.0,True
+126,1  black tea bag ((optional) or 2 dried amla or 1 tbsp loose leaf tea or ½ tsp dust ),black tea bag  or 2 dried amla or 1 tbsp loose leaf tea or ½ tsp dust ),1.0,piece,50.0,True
+127,1/4 cup Water,Water,0.25,cup,60.0,True
+128,10-12  Curry Leaves (Kadi Patta),Curry Leaves,11.0,piece,550.0,True
+129,2 टेबल स्पून चावल का आटा,टेबल स्पून चावल का आटा,2.0,piece,100.0,True
+130,2 pod black cardamom,pod black cardamom,2.0,piece,0.6,True
+131,"1 inch (10 grams)   ginger  ((peeled &amp; sliced or use 1½ to 2 teaspoon ginger garlic paste, read notes))",ginger  ),1.0,inch,6.0,True
+132,½ to ¾ teaspoon kashmiri red chili powder ((adjust to taste)),½ to ¾ teaspoon kashmiri red chili powder adjust,,,NOT_QUANTIFIED,False
+133,½ inch ginger (julienne (for garnishing)),½ inch ginger (julienne (for garnishing)),,,NOT_QUANTIFIED,False
+134,½  salt (adjust to taste),½  salt adjust,,,NOT_QUANTIFIED,False
+135,salt (– as required),salt –,,,NOT_QUANTIFIED,False
+136,2 tbsp coriander (finely chopped),coriander,2.0,tbsp,30.0,True
+137,1 cup water ( 8 oz ),water,1.0,cup,240.0,True
+138,"1 &amp; ½ inch  ginger ( 15 grams , roughly chopped)",&amp; ½ inch  ginger,1.0,piece,50.0,True
+139,½ to 1  teaspoon cardamom powder (or 5 to 6 green cardamoms powdered finely in a mortar-pestle),½ to 1  teaspoon cardamom powder (or 5 to 6 green cardamoms powdered finely in a mortar-pestle),,,NOT_QUANTIFIED,False
+140,1-2 teaspoon Kashmiri red chili powder (adjust to taste ),Kashmiri red chili powder,1.5,teaspoon,7.5,True
+141,10 strands Saffron (Kesar),strands Saffron,10.0,piece,500.0,True
+142,½ to 1 teaspoon red chilli powder  ((or paprika) (use less spicy variety)),½ to 1 teaspoon red chilli powder  ((or paprika) (use less spicy variety)),,,NOT_QUANTIFIED,False
+143,1½ cups water (or add as required),½ cups water,1.0,piece,50.0,True
+144,½ tsp turmeric,½ tsp turmeric,,,NOT_QUANTIFIED,False
+145,¾ to 1 teaspoon Kashmiri red chilli powder ((or paprika) (adjust to heat &amp; color preference)),¾ to 1 teaspoon Kashmiri red chilli powder ((or paprika) (adjust to heat &amp; color preference)),,,NOT_QUANTIFIED,False
+146,1/4 teaspoon Ground Turmeric (Haldi powder),Ground Turmeric,0.25,teaspoon,1.25,True
+147,1 teaspoon garam masala ((or biryani masala)),garam masala ),1.0,teaspoon,5.0,True
+148,1 teaspoon Red Chilli powder or to taste,Red Chilli powder or to taste,1.0,teaspoon,5.0,True
+149,"2 cups (350 grams)  tomatoes  ((sliced, use up to 420 grams from 2 large or 4 medium))",tomatoes  ),2.0,cups,180.0,True
+150,2 cloves Garlic finely chopped,Garlic finely chopped,2.0,cloves,0.2,True
+151,1.5 teaspoon rose water,rose water,1.5,teaspoon,7.5,True
+152,¼ to ½ teaspoon amchur ((only if required)),¼ to ½ teaspoon amchur ((only if required)),,,NOT_QUANTIFIED,False
+153,¾ teaspoon salt (or to taste),¾ teaspoon salt or,,,NOT_QUANTIFIED,False
+154,1 pod  black cardamom,pod  black cardamom,1.0,piece,0.3,True
+155,7 to 8 tablespoons water (or add as required),water,7.5,tablespoons,112.5,True
+156,1 tablespoon Cilantro leaves (Corainder) (chopped ),Cilantro leaves,1.0,tablespoon,15.0,True
+157,¾ teaspoon carom seeds ((ajwain)),¾ teaspoon carom seeds ((ajwain)),,,NOT_QUANTIFIED,False
+158,1 tablespoon Garlic (finely diced ),Garlic,1.0,tablespoon,15.0,True
+159,½  lemon,½  lemon,,,NOT_QUANTIFIED,False
+160,1/2 teaspoon Cumin powder (Jeera),Cumin powder,0.5,teaspoon,2.5,True
+161,¼ teaspoon garam masala (– optional),¼ teaspoon garam masala –,,,NOT_QUANTIFIED,False
+162,"1 sprig curry leaves ( chopped finely, )",sprig curry leaves,1.0,piece,50.0,True
+163,2 tablespoons golden raisins,golden raisins,2.0,tablespoons,30.0,True
+164,5 Cloves (Laung),(Laung),5.0,cloves,0.5,True
+165,¼ teaspoon hing,¼ teaspoon hing,,,NOT_QUANTIFIED,False
+166,2 tablespoon Cilantro leaves (chopped ),Cilantro leaves,2.0,tablespoon,30.0,True
+167,1/2 cup Plain Yogurt (I used full-fat),Plain Yogurt,0.5,cup,120.0,True
+168,1 tsp cumin,cumin,1.0,tsp,5.0,True
+169,1/2 cup Whole Almonds (Badam) blanched and cut lengthwise,Whole Almonds  blanched and cut lengthwise,0.5,cup,120.0,True
+170,1 teaspoon Salt (optional),Salt,1.0,teaspoon,5.0,True
+171,2 tbsp coriander (finely chopped),coriander,2.0,tbsp,30.0,True
+172,"1  tej patta ((Indian bay leaf), medium sized)",tej patta,1.0,piece,50.0,True
+173,4 Potatoes (Aloo),Potatoes,4.0,piece,200.0,True
+174,1 inch Ginger grated,Ginger grated,1.0,inch,6.0,True
+175,"1 to 1½ teaspoons garam masala  ((divided, adjust to taste))",½ teaspoons garam masala  ),1.0,piece,50.0,True
+176,1 tsp cumin / jeera,cumin / jeera,1.0,tsp,5.0,True
+177,"1 to 1½ teaspoon coriander powder  ((optional, adjust to taste))",½ teaspoon coriander powder  ),1.0,piece,50.0,True
+178,½  inch cinnamon,½  inch cinnamon,,,NOT_QUANTIFIED,False
+179,"further, add 4 boiled and mashed potato. i have pressure cooked potato for 5 whistles.","further, add 4 boiled and mashed potato. i have pressure cooked potato for 5 whistles.",,,NOT_QUANTIFIED,False
+180,2 टेबल स्पून धनिया पत्ती (बारीक कटी हुई),टेबल स्पून धनिया पत्ती,2.0,piece,100.0,True
+181,1 teaspoon Salt (adjust to taste ),Salt,1.0,teaspoon,5.0,True
+182,¼  tsp cardamom powder,¼  tsp cardamom powder,,,NOT_QUANTIFIED,False
+183,1 teaspoon Kashmiri red chili powder,Kashmiri red chili powder,1.0,teaspoon,5.0,True
+184,"¼ cup (55 grams)  rajma  ((red kidney beans, or sub with urad dal))","¼ cup (55 grams)  rajma  ((red kidney beans, or sub with urad dal))",,,NOT_QUANTIFIED,False
+185,1 tablespoon (18 grams)  ginger garlic paste  ((or ¾ tbsp. (9 grams) each grated)),ginger garlic paste   each grated)),1.0,tablespoon,15.0,True
+186,1/4 cup Red Kidney Beans (Rajma),Red Kidney Beans,0.25,cup,60.0,True
+187,1 inch ginger  (– peeled and roughly chopped),ginger,1.0,inch,6.0,True
+188,½ teaspoon cardamom powder ((or 4 pods skinned &amp; powdered)),½ teaspoon cardamom powder ((or 4 pods skinned &amp; powdered)),,,NOT_QUANTIFIED,False
+189,"1 teaspoon ginger (- finely chopped, or 1 inch peeled ginger)",ginger,1.0,teaspoon,5.0,True
+190,2 tablespoon Milk (warm),Milk,2.0,tablespoon,30.0,True
+191,1 inch ginger (cut into julienne),ginger,1.0,inch,6.0,True
+192,1  clove (- optional),(- optional),1.0,clove,0.1,True
+193,1 teaspoon salt (or add as required),salt,1.0,teaspoon,5.0,True
+194,Salt ( as needed),salt,,,NOT_QUANTIFIED,False
+195,1 tablespoon Garam masala powder,Garam masala powder,1.0,tablespoon,15.0,True
+196,1 tablespoon rose water,rose water,1.0,tablespoon,15.0,True
+197,½ teaspoon salt (or add as required),½ teaspoon salt or add,,,NOT_QUANTIFIED,False
+198,2 teaspoons lemon juice,lemon juice,2.0,teaspoons,10.0,True
+199,"2"" inch Cinnamon (Dalchini) (stick)",""" inch Cinnamon",2.0,piece,100.0,True
+200,½ teaspoon amchur (dried mango powder),½ teaspoon amchur (dried mango powder),,,NOT_QUANTIFIED,False

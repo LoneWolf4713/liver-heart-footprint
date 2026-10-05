@@ -1,0 +1,40 @@
+{
+  "component": "D5_end_to_end",
+  "sample_dishes_evaluated": 10,
+  "validation_dishes_evaluated": 10,
+  "metrics": {
+    "cooked_dish_coverage_pct": {
+      "value": 100.0,
+      "numerator": 10,
+      "denominator": 10,
+      "threshold": 70.0,
+      "passed": true
+    },
+    "median_estimated_to_measured_ratio": {
+      "value": 1.03,
+      "target_range": [
+        0.85,
+        1.15
+      ],
+      "description": "Ratio of median web recipe estimated fat to lab-measured fat across 10 non-fried cooked dishes"
+    },
+    "hfss_flagged_dishes_pct": {
+      "value": 80.0,
+      "numerator": 8,
+      "denominator": 10
+    },
+    "max_sfa_budget_pct": {
+      "value": 122.4,
+      "dish": "butter chicken"
+    },
+    "tarla_dalal_sanity_mean_abs_diff_pct": {
+      "value": 54.2,
+      "n_compared": 10
+    },
+    "absurd_outputs_count": {
+      "value": 0,
+      "description": "No negative, NaN, or biologically implausible nutrient outputs (>100g fat/serv or >2000 kcal/serv)"
+    }
+  },
+  "verdict": "PASSED"
+}

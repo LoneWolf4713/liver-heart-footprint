@@ -1,0 +1,201 @@
+sample_id,dish,line,is_liver_relevant,liver_category,food_code_gold,food_name_gold,equivalent_codes,gold_notes
+1,dal makhani,1/2 teaspoon sugar,True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+2,gulab jamun,2 tbsp ghee / clarified butter,True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+3,paneer butter masala,1 tbsp butter,True,butter,T501,"Butter, unsalted",T500|T506,Unsalted dairy butter; salted butter / ghee equivalent
+4,samosa,2 tablespoons oil (I used avocado oil),True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+5,gulab jamun,5 tbsp  all-purpose flour  ((maida)),True,maida,A018,"Wheat flour, refined (Triticum aestivum)",A019,Maida / refined wheat flour
+6,chole,2 tablespoons oil ( or as needed),True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+7,dal makhani,2 tablespoons (30 ml)  ghee ((or use oil)),True,oil,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+8,samosa,"firstly, in a large mixing bowl take 2 cup maida. you can alternatively take wheat flour / atta.",True,maida,A018,"Wheat flour, refined (Triticum aestivum)",A019,Maida / refined wheat flour
+9,samosa,2 cups (250 grams)  all-purpose flour ((maida)),True,maida,A018,"Wheat flour, refined (Triticum aestivum)",A019,Maida / refined wheat flour
+10,gulab jamun,½ cup (60 grams) maida / plain flour,True,maida,A018,"Wheat flour, refined (Triticum aestivum)",A019,Maida / refined wheat flour
+11,gajar ka halwa,"3 tablespoons ghee (45 ml, divided)",True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+12,gajar ka halwa,4 tablespoons ghee ((clarified butter)),True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+13,samosa,Oil for deep frying,True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+14,gajar ka halwa,¾ cup sugar,True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+15,paneer butter masala,"2 teaspoons oil ( 10 ml , divided, I used avocado oil, use any flavorless oil)",True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+16,paneer butter masala,2 tablespoons Butter (Salted),True,butter,T500,"Butter, salted",T501|T506,Salted table butter
+17,paneer butter masala,1 tsp sugar,True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+18,samosa,6 tablespoons (50 grams)  ghee ((clarified butter)),True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+19,dal makhani,3 tablespoons butter (- salted or unsalted),True,butter,T500,"Butter, salted",T501|T506,Salted table butter
+20,paneer butter masala,"3 to 4 tablespoons  (45 to 60 ml)   heavy cream ((sub with fresh cream, cooking cream or thickened cream))",True,cream,L519,"Cream, fresh, single",L512|L515,Fresh cream / heavy cream mapped to L519
+21,dal makhani,3 tablespoons (42 grams)  unsalted butter  ((cultured butter if you can)),True,butter,T500,"Butter, salted",T501|T506,Salted table butter
+22,gulab jamun,3 tablespoons All Purpose Flour (Maida),True,maida,A018,"Wheat flour, refined (Triticum aestivum)",A019,Maida / refined wheat flour
+23,paneer butter masala,1 teaspoon sugar,True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+24,paneer butter masala,"2 to 3 tablespoons light cream (or half &amp; half or 1 to 2 tablespoons heavy cream, optional)",True,cream,L519,"Cream, fresh, single",L512|L515,Fresh cream / heavy cream mapped to L519
+25,butter chicken,1 teaspoon Honey,True,honey,I507,Honey,I502,Natural honey mapped to I507
+26,paneer butter masala,1 teaspoon jaggery/ sugar ( (optional)),True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+27,gulab jamun,1.5 cups granulated white sugar (300 grams),True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+28,dal makhani,more amul butter (salted) (for serving),True,butter,T500,"Butter, salted",T501|T506,Salted table butter
+29,gulab jamun,1/4 cup all purpose flour [maida] (33 grams),True,maida,A018,"Wheat flour, refined (Triticum aestivum)",A019,Maida / refined wheat flour
+30,dal makhani,¼ to ⅓ cup light cream  ((25% to 30% fat) or half &amp; half or 2 tablespoons whipping or heavy cream),True,cream,L512,"Cream, fresh, whipping",L519|L515,Whipping cream mapped to L512
+31,paneer butter masala,2 tablespoons Fresh cream,True,cream,L519,"Cream, fresh, single",L512|L515,Cooking dairy cream mapped to L519
+32,gulab jamun,1 cup (200 grams) Khoya ((mawa)),True,khoya,L005,Khoa (Mawa),L003|L002,Evaporated milk solids (khoya)
+33,paneer butter masala,3 tablespoons Fresh cream,True,cream,L519,"Cream, fresh, single",L512|L515,Cooking dairy cream mapped to L519
+34,paneer butter masala,1 to 2 teaspoons butter (– optional),True,butter,T501,"Butter, unsalted",T500|T506,Unsalted dairy butter; salted butter / ghee equivalent
+35,gulab jamun,1.75 cups (250 grams) sugar,True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+36,paneer butter masala,2 tbsp oil,True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+37,samosa,pinch a ball sized dough and grease with oil.,True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+38,paneer butter masala,"1 tablespoon light cream (or 1 tablespoon heavy cream, optional)",True,cream,L519,"Cream, fresh, single",L512|L515,Fresh cream / heavy cream mapped to L519
+39,onion pakora,Oil ( for deep frying),True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+40,dal makhani,3 tablespoon Cream  (optional),True,cream,L519,"Cream, fresh, single",L512|L515,Cooking dairy cream mapped to L519
+41,samosa,"firstly, in a large kadai take 2 tsp oil and saute 1 tsp cumin, ½ tsp coriander seeds, ½ tsp fennel and pinch hing.",True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+42,chicken biryani,2 tablespoon Ghee,True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+43,gajar ka halwa,"1-1.5  cups granulated white sugar (200-300 grams, adjust to taste)",True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+44,chole,1.5 to 2 tablespoons oil,True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+45,paneer butter masala,2 tablespoons butter (or 1 tablespoon oil + 1 or 2 tablespoons butter),True,oil,T501,"Butter, unsalted",T500|T506,Unsalted dairy butter; salted butter / ghee equivalent
+46,butter chicken,"28 (42 grams,⅓ cup)  whole raw cashews ( (soaked in hot water, sub with ¼ to ⅓ cup heavy cream))",True,cream,L519,"Cream, fresh, single",L512|L515,Fresh cream / heavy cream mapped to L519
+47,gajar ka halwa,½ cup khoya / mawa,True,khoya,L005,Khoa (Mawa),L003|L002,Evaporated milk solids (khoya)
+48,poha,½ to 1 teaspoon sugar ((optional)),True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+49,poha,1½ tablespoons oil,True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+50,gajar ka halwa,½ cup sugar ((+ 2 tbsp optional) (prefer organic)),True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+51,paneer butter masala,2 tbsp cream,True,cream,L519,"Cream, fresh, single",L512|L515,Cooking dairy cream mapped to L519
+52,dal makhani,1 teaspoon Ghee,True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+53,samosa,3 tablespoons Ghee,True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+54,gulab jamun,ghee or oil (for frying),True,oil,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+55,dal makhani,"3 tablespoons butter (divided, use amul butter (salted) if possible)",True,butter,T500,"Butter, salted",T501|T506,Salted table butter
+56,gajar ka halwa,¼ cup ghee / clarified butter,True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+57,gulab jamun,1 tbsp ghee  (or oil for greasing),True,oil,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+58,butter chicken,¾ to 1 tablespoon oil,True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+59,paneer butter masala,1 tablespoon (15 ml)  oil,True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+60,dal makhani,1 tbsp ghee / clarified butter,True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+61,samosa,2 cups all purpose flour (maida) ( 260 grams ),True,maida,A018,"Wheat flour, refined (Triticum aestivum)",A019,Maida / refined wheat flour
+62,butter chicken,1/4 cup Cream (heavy whipping or coconut cream),True,cream,L512,"Cream, fresh, whipping",L519|L515,Whipping cream mapped to L512
+63,paneer butter masala,1/4 cup Cream (heavy whipping cream (coconut milk for vegan)),True,cream,L512,"Cream, fresh, whipping",L519|L515,Whipping cream mapped to L512
+64,gulab jamun,1 tablespoon Ghee,True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+65,gulab jamun,1 cup finely grated khoya [dried milk] (135 grams),True,khoya,L005,Khoa (Mawa),L003|L002,Evaporated milk solids (khoya)
+66,samosa,"1 tablespoon oil  (- I used mustard oil. sunflower, canola, grapeseed oil can be used)",True,oil,T510,"Oil, mustard",T508|T507|T509|T502,Mustard oil mapped to T510
+67,paneer butter masala,1 teaspoon Ghee,True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+68,dal makhani,1-2 tbsp ghee / clarified butter,True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+69,samosa,2-1/2 cups All Purpose Flour (Maida),True,maida,A018,"Wheat flour, refined (Triticum aestivum)",A019,Maida / refined wheat flour
+70,gajar ka halwa,10 to 12 tablespoons sugar  (or raw sugar - 180 to 190 grams - add as required),True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+71,butter chicken,1 teaspoon Honey (add more to taste),True,honey,I507,Honey,I502,Natural honey mapped to I507
+72,samosa,¼ cup (60 ml)  oil (or melted ghee),True,oil,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+73,paneer butter masala,2 tablespoon Butter,True,butter,T501,"Butter, unsalted",T500|T506,Unsalted dairy butter; salted butter / ghee equivalent
+74,poha,1 tsp sugar,True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+75,butter chicken,1 tablespoon Butter (Salted),True,butter,T500,"Butter, salted",T501|T506,Salted table butter
+76,paneer butter masala,2 tablespoons Butter (Salted),True,butter,T500,"Butter, salted",T501|T506,Salted table butter
+77,poha,2 tbsp oil,True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+78,dal makhani,1/4 cup cream (60 ml),True,cream,L519,"Cream, fresh, single",L512|L515,Cooking dairy cream mapped to L519
+79,onion pakora,1 tbsp oil (very hot ),True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+80,paneer butter masala,1 teaspoon Sugar,True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+81,butter chicken,2 tablespoon Butter ((replace with oil for dairy-free)),True,oil,T501,"Butter, unsalted",T500|T506,Unsalted dairy butter; salted butter / ghee equivalent
+82,dal makhani,2 tablespoon Butter or Oil,True,oil,T501,"Butter, unsalted",T500|T506,Unsalted dairy butter; salted butter / ghee equivalent
+83,samosa,1 tablespoon oil (or ghee),True,oil,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+84,paneer butter masala,"¼ to 1 teaspoon sugar (– optional, add as required depending on the sourness of the tomatoes)",True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+85,gulab jamun,Ghee (or oil for deep frying),True,oil,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+86,gajar ka halwa,4 tablespoons Ghee,True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+87,chicken biryani,2 tablespoon ghee (or Oil),True,oil,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+88,gajar ka halwa,2 tablespoons ghee ((clarified butter)),True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+89,butter chicken,1/4 cup Fresh cream,True,cream,L519,"Cream, fresh, single",L512|L515,Cooking dairy cream mapped to L519
+90,gulab jamun,1 ¼ to 1 ½ cups Sugar,True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+91,dal makhani,1/4 cup Fresh cream,True,cream,L519,"Cream, fresh, single",L512|L515,Cooking dairy cream mapped to L519
+92,samosa,4 tablespoons + 1 teaspoon  oil ( 65 ml ),True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+93,butter chicken,1/4 cup Fresh cream,True,cream,L519,"Cream, fresh, single",L512|L515,Cooking dairy cream mapped to L519
+94,chole,1 tablespoon Oil,True,oil,T508,"Oil, sunflower",T510|T507|T509|T502,Standard vegetable/sunflower cooking oil
+95,paneer butter masala,1 tablespoon Honey,True,honey,I507,Honey,I502,Natural honey mapped to I507
+96,paneer butter masala,2 tablespoons (30 grams)  unsalted butter,True,butter,T500,"Butter, salted",T501|T506,Salted table butter
+97,paneer butter masala,3-4 tablespoons cream ( 45-60 ml ),True,cream,L519,"Cream, fresh, single",L512|L515,Cooking dairy cream mapped to L519
+98,dal makhani,1 tablespoon light cream ((25% to 30% fat) or few teaspoons of whipping cream - optional),True,cream,L512,"Cream, fresh, whipping",L519|L515,Whipping cream mapped to L512
+99,paneer butter masala,1 tsp butter,True,butter,T501,"Butter, unsalted",T500|T506,Unsalted dairy butter; salted butter / ghee equivalent
+100,dal makhani,2 tbsp fresh cream (or as required),True,cream,L519,"Cream, fresh, single",L512|L515,Cooking dairy cream mapped to L519
+101,dal makhani,1 tsp kashmiri chilli powder (or as per your spice level),False,,G516,Chilli powder,G008,Red chilli powder
+102,chole,1/2 teaspoon Black pepper powder,False,,G031,"Pepper, black (Piper nigrum)",G551,Black pepper
+103,dal makhani,1/2 cup tomato puree (use store bought tomato puree),False,,X505,"Tomato sauce, homemade",D075,Tomato puree / sauce
+104,chicken biryani,"3 cups water ((3½ cups for pot) (refer notes, more if needed ))",False,,K505,"Water, distilled",,Cooking water
+105,gajar ka halwa,10  cashew / kaju (chopped),False,,H004,Cashewnut (Anacardium occidentale),,Cashew nut
+106,poha,1 medium potato ((optional)  cubed to ½ inch (or ½ cup mix veggies)),False,,D067,"Potato, brown skin (Solanum tuberosum)",,Potato
+107,dal makhani,2 to 3  green cardamoms,False,,G020,"Cardamom, green (Elettaria cardamomum)",G021,Green cardamom
+108,chole,1/2 teaspoon Red Chilli powder,False,,G516,Chilli powder,G008,Red chilli powder
+109,poha,3 to 4 tablespoons peanuts (or cashews),False,,H004,Cashewnut (Anacardium occidentale),,Cashew nut
+110,poha,1 tablespoon Lime juice,False,,E033,"Lemon, juice (Citrus limon)",E520,Lemon juice
+111,dal makhani,1/4 cup rajma (red kidney beans) (60 grams),False,,B018,Rajmah (Phaseolus vulgaris),,Kidney beans (rajma)
+112,paneer butter masala,1 inch Ginger (grated or finely diced),False,,G014,"Ginger, fresh (Zingiber officinale)",G554,Fresh ginger
+113,chole,"½ small bay leaf (optional, use fresh to avoid bitterness)",False,,G018,Bay leaf (Laurus nobilis),,Bay leaf / tej patta
+114,chicken biryani,¼ cup plain yogurt ((Indian curd)),False,,L520,"Yogurt, plain, whole milk",L002,Plain curd / dahi
+115,chole,1  black cardamom,False,,G021,"Cardamom, black (Elettaria cardamomum)",G020,Black cardamom
+116,chicken biryani,"½ kg (1.1 lbs)  chicken ((skinless bone-in or boneless, large pieces such as thighs, drumsticks, legs or mix of all))",False,,N003,"Chicken, poultry, breast, skinless",N001,Chicken meat
+117,paneer butter masala,1 inch ginger (– peeled and julienned),False,,G014,"Ginger, fresh (Zingiber officinale)",G554,Fresh ginger
+118,chicken biryani,2 tablespoon Mint leaves (chopped),False,,NO_MATCH,NO_MATCH,,No standard INDB representation for: 2 tablespoon Mint leaves (chopped)
+119,chicken biryani,¼ to ½ cup mint leaves (chopped fine (about 15 leaves)),False,,NO_MATCH,NO_MATCH,,No standard INDB representation for: ¼ to ½ cup mint leaves (chopped fine (ab
+120,chole,2½ to 3 cups water (– for pressure cooking the chickpeas),False,,D065,"Peas, green (Pisum sativum)",,Green peas
+121,gajar ka halwa,1.25 liters whole milk (around 5 cups),False,,NO_MATCH,NO_MATCH,,No standard INDB representation for: 1.25 liters whole milk (around 5 cups)
+122,chole,3 cups water (– for soaking chickpeas),False,,D065,"Peas, green (Pisum sativum)",,Green peas
+123,dal makhani,"1 medium white onion (115 grams, finely grated using a food processor)",False,,G017,"Onion, big (Allium cepa)",G547,Big yellow/red onion
+124,chicken biryani,3 cups Basmati rice,False,,A014,"Rice, parboiled, milled (Oryza sativa )",A013,Milled white / basmati rice
+125,poha,2 tablespoons coriander leaves ( chopped),False,,G009,Coriander leaves (Coriandrum sativum),G024,Fresh coriander leaves
+126,chole,1  black tea bag ((optional) or 2 dried amla or 1 tbsp loose leaf tea or ½ tsp dust ),False,,V510,"Tea, black, infusion, average",,Tea leaves / infusion
+127,butter chicken,1/4 cup Water,False,,K505,"Water, distilled",,Cooking water
+128,poha,10-12  Curry Leaves (Kadi Patta),False,,G011,Curry leaves (Murraya koenigii),,Curry leaves
+129,onion pakora,2 टेबल स्पून चावल का आटा,False,,NO_MATCH,NO_MATCH,,No standard INDB representation for: 2 टेबल स्पून चावल का आटा
+130,chole,2 pod black cardamom,False,,G021,"Cardamom, black (Elettaria cardamomum)",G020,Black cardamom
+131,paneer butter masala,"1 inch (10 grams)   ginger  ((peeled &amp; sliced or use 1½ to 2 teaspoon ginger garlic paste, read notes))",False,,G014,"Ginger, fresh (Zingiber officinale)",G554,Fresh ginger
+132,chole,½ to ¾ teaspoon kashmiri red chili powder ((adjust to taste)),False,,V510,"Tea, black, infusion, average",,Tea leaves / infusion
+133,chole,½ inch ginger (julienne (for garnishing)),False,,G014,"Ginger, fresh (Zingiber officinale)",G554,Fresh ginger
+134,chole,½  salt (adjust to taste),False,,NO_MATCH,NO_MATCH,,No standard INDB representation for: ½  salt (adjust to taste)
+135,chole,salt (– as required),False,,NO_MATCH,NO_MATCH,,No standard INDB representation for: salt (– as required)
+136,chole,2 tbsp coriander (finely chopped),False,,G009,Coriander leaves (Coriandrum sativum),G024,Fresh coriander leaves
+137,paneer butter masala,1 cup water ( 8 oz ),False,,K505,"Water, distilled",,Cooking water
+138,paneer butter masala,"1 &amp; ½ inch  ginger ( 15 grams , roughly chopped)",False,,G014,"Ginger, fresh (Zingiber officinale)",G554,Fresh ginger
+139,gajar ka halwa,½ to 1  teaspoon cardamom powder (or 5 to 6 green cardamoms powdered finely in a mortar-pestle),False,,G020,"Cardamom, green (Elettaria cardamomum)",G021,Green cardamom
+140,paneer butter masala,1-2 teaspoon Kashmiri red chili powder (adjust to taste ),False,,V510,"Tea, black, infusion, average",,Tea leaves / infusion
+141,chicken biryani,10 strands Saffron (Kesar),False,,NO_MATCH,NO_MATCH,,No standard INDB representation for: 10 strands Saffron (Kesar)
+142,chicken biryani,½ to 1 teaspoon red chilli powder  ((or paprika) (use less spicy variety)),False,,G516,Chilli powder,G008,Red chilli powder
+143,paneer butter masala,1½ cups water (or add as required),False,,K505,"Water, distilled",,Cooking water
+144,paneer butter masala,½ tsp turmeric,False,,G033,Turmeric powder (Curcuma domestica),,Turmeric powder
+145,paneer butter masala,¾ to 1 teaspoon Kashmiri red chilli powder ((or paprika) (adjust to heat &amp; color preference)),False,,G516,Chilli powder,G008,Red chilli powder
+146,chicken biryani,1/4 teaspoon Ground Turmeric (Haldi powder),False,,G033,Turmeric powder (Curcuma domestica),,Turmeric powder
+147,chicken biryani,1 teaspoon garam masala ((or biryani masala)),False,,G523,Curry powder,G516|G025,Spice blend / garam masala
+148,samosa,1 teaspoon Red Chilli powder or to taste,False,,G516,Chilli powder,G008,Red chilli powder
+149,paneer butter masala,"2 cups (350 grams)  tomatoes  ((sliced, use up to 420 grams from 2 large or 4 medium))",False,,D075,"Tomato, ripe, hybrid (Solanum lycopersicum)",X505,Ripe tomato
+150,dal makhani,2 cloves Garlic finely chopped,False,,G023,Cloves (Syzygium aromaticum),,Cloves
+151,gulab jamun,1.5 teaspoon rose water,False,,K505,"Water, distilled",,Cooking water
+152,chole,¼ to ½ teaspoon amchur ((only if required)),False,,V510,"Tea, black, infusion, average",,Tea leaves / infusion
+153,samosa,¾ teaspoon salt (or to taste),False,,V510,"Tea, black, infusion, average",,Tea leaves / infusion
+154,paneer butter masala,1 pod  black cardamom,False,,G021,"Cardamom, black (Elettaria cardamomum)",G020,Black cardamom
+155,samosa,7 to 8 tablespoons water (or add as required),False,,K505,"Water, distilled",,Cooking water
+156,poha,1 tablespoon Cilantro leaves (Corainder) (chopped ),False,,G009,Coriander leaves (Coriandrum sativum),G024,Fresh coriander leaves
+157,samosa,¾ teaspoon carom seeds ((ajwain)),False,,V510,"Tea, black, infusion, average",,Tea leaves / infusion
+158,butter chicken,1 tablespoon Garlic (finely diced ),False,,G012,"Garlic, small clove (Allium sativum)",G524,Fresh garlic clove
+159,poha,½  lemon,False,,E520,"Lemons, flesh only, raw, weighed with peel and pips",E033,Whole lemon
+160,dal makhani,1/2 teaspoon Cumin powder (Jeera),False,,G025,Cumin seeds (Cuminum cyminum),G550,Cumin seeds / powder
+161,chole,¼ teaspoon garam masala (– optional),False,,G523,Curry powder,G516|G025,Spice blend / garam masala
+162,onion pakora,"1 sprig curry leaves ( chopped finely, )",False,,G011,Curry leaves (Murraya koenigii),,Curry leaves
+163,gajar ka halwa,2 tablespoons golden raisins,False,,G027,Mustard seeds (Brassica nigra),,Mustard seeds
+164,chicken biryani,5 Cloves (Laung),False,,G023,Cloves (Syzygium aromaticum),,Cloves
+165,chole,¼ teaspoon hing,False,,G019,Asafoetida (Ferula foetida),,Asafoetida (hing)
+166,chicken biryani,2 tablespoon Cilantro leaves (chopped ),False,,G009,Coriander leaves (Coriandrum sativum),G024,Fresh coriander leaves
+167,chicken biryani,1/2 cup Plain Yogurt (I used full-fat),False,,L520,"Yogurt, plain, whole milk",L002,Plain curd / dahi
+168,paneer butter masala,1 tsp cumin,False,,G025,Cumin seeds (Cuminum cyminum),G550,Cumin seeds / powder
+169,gajar ka halwa,1/2 cup Whole Almonds (Badam) blanched and cut lengthwise,False,,H001,Almond (Prunus amygdalus),,Almond
+170,dal makhani,1 teaspoon Salt (optional),False,,V510,"Tea, black, infusion, average",,Tea leaves / infusion
+171,paneer butter masala,2 tbsp coriander (finely chopped),False,,G009,Coriander leaves (Coriandrum sativum),G024,Fresh coriander leaves
+172,chole,"1  tej patta ((Indian bay leaf), medium sized)",False,,G018,Bay leaf (Laurus nobilis),,Bay leaf / tej patta
+173,chicken biryani,4 Potatoes (Aloo),False,,D067,"Potato, brown skin (Solanum tuberosum)",,Potato
+174,chole,1 inch Ginger grated,False,,G014,"Ginger, fresh (Zingiber officinale)",G554,Fresh ginger
+175,butter chicken,"1 to 1½ teaspoons garam masala  ((divided, adjust to taste))",False,,G523,Curry powder,G516|G025,Spice blend / garam masala
+176,chole,1 tsp cumin / jeera,False,,G025,Cumin seeds (Cuminum cyminum),G550,Cumin seeds / powder
+177,butter chicken,"1 to 1½ teaspoon coriander powder  ((optional, adjust to taste))",False,,G024,Coriander seeds (Coriandrum sativum),G009,Coriander powder / seeds
+178,samosa,½  inch cinnamon,False,,G518,"Cinnamon, ground",,Cinnamon
+179,samosa,"further, add 4 boiled and mashed potato. i have pressure cooked potato for 5 whistles.",False,,D067,"Potato, brown skin (Solanum tuberosum)",,Potato
+180,onion pakora,2 टेबल स्पून धनिया पत्ती (बारीक कटी हुई),False,,NO_MATCH,NO_MATCH,,No standard INDB representation for: 2 टेबल स्पून धनिया पत्ती (बारीक कटी हुई)
+181,dal makhani,1 teaspoon Salt (adjust to taste ),False,,V510,"Tea, black, infusion, average",,Tea leaves / infusion
+182,gajar ka halwa,¼  tsp cardamom powder,False,,G020,"Cardamom, green (Elettaria cardamomum)",G021,Green cardamom
+183,chicken biryani,1 teaspoon Kashmiri red chili powder,False,,V510,"Tea, black, infusion, average",,Tea leaves / infusion
+184,dal makhani,"¼ cup (55 grams)  rajma  ((red kidney beans, or sub with urad dal))",False,,B003,"Black gram, dal (Phaseolus mungo)",,Black gram / urad dal
+185,dal makhani,1 tablespoon (18 grams)  ginger garlic paste  ((or ¾ tbsp. (9 grams) each grated)),False,,G014,"Ginger, fresh (Zingiber officinale)",G554,Fresh ginger
+186,dal makhani,1/4 cup Red Kidney Beans (Rajma),False,,B018,Rajmah (Phaseolus vulgaris),,Kidney beans (rajma)
+187,paneer butter masala,1 inch ginger  (– peeled and roughly chopped),False,,G014,"Ginger, fresh (Zingiber officinale)",G554,Fresh ginger
+188,gajar ka halwa,½ teaspoon cardamom powder ((or 4 pods skinned &amp; powdered)),False,,G020,"Cardamom, green (Elettaria cardamomum)",G021,Green cardamom
+189,samosa,"1 teaspoon ginger (- finely chopped, or 1 inch peeled ginger)",False,,G014,"Ginger, fresh (Zingiber officinale)",G554,Fresh ginger
+190,chicken biryani,2 tablespoon Milk (warm),False,,NO_MATCH,NO_MATCH,,No standard INDB representation for: 2 tablespoon Milk (warm)
+191,chole,1 inch ginger (cut into julienne),False,,G014,"Ginger, fresh (Zingiber officinale)",G554,Fresh ginger
+192,samosa,1  clove (- optional),False,,G023,Cloves (Syzygium aromaticum),,Cloves
+193,samosa,1 teaspoon salt (or add as required),False,,V510,"Tea, black, infusion, average",,Tea leaves / infusion
+194,onion pakora,Salt ( as needed),False,,NO_MATCH,NO_MATCH,,No standard INDB representation for: Salt ( as needed)
+195,chole,1 tablespoon Garam masala powder,False,,G523,Curry powder,G516|G025,Spice blend / garam masala
+196,gulab jamun,1 tablespoon rose water,False,,K505,"Water, distilled",,Cooking water
+197,chole,½ teaspoon salt (or add as required),False,,V510,"Tea, black, infusion, average",,Tea leaves / infusion
+198,gulab jamun,2 teaspoons lemon juice,False,,E033,"Lemon, juice (Citrus limon)",E520,Lemon juice
+199,butter chicken,"2"" inch Cinnamon (Dalchini) (stick)",False,,G518,"Cinnamon, ground",,Cinnamon
+200,samosa,½ teaspoon amchur (dried mango powder),False,,V510,"Tea, black, infusion, average",,Tea leaves / infusion

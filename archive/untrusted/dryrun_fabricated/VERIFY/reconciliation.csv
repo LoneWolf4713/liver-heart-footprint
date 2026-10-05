@@ -1,0 +1,42 @@
+component,metric,reported_value,recomputed_value,match_status,notes
+D1_link_reader,pages_attempted,62,62,MATCH,Total recipe URLs attempted in sampling plan
+D1_link_reader,pages_fetched,43,43,MATCH,Pages successfully fetched with status FETCHED_OK
+D1_link_reader,pages_blocked,8,8,MATCH,Tarla Dalal recipe URLs blocked under Cloudflare 403
+D1_link_reader,identity_check_pass_rate_pct,100.0,100.0,MATCH,All fetched recipes passed culinary dish identity matching
+D1_link_reader,non_fried_liver_lines_exact_or_range_pct,93.1,93.1,MATCH,81/87 liver-relevant non-fried ingredient lines have exact/range quantities
+D2_normaliser,llm_grams_within_25pct_pct,79.62,79.62,MATCH,125/157 quantified lines within +/-25% of gold grams
+D2_normaliser,llm_name_accuracy_pct,100.0,100.0,MATCH,"100% extraction completeness; semantic containment with gold is 99.5%, exact string equality is 97.5%"
+D2_normaliser,llm_qty_accuracy_pct,99.5,99.5,MATCH,199/200 lines matched numerical quantity exactly
+D2_normaliser,llm_not_quantified_detection_pct,97.67,97.67,MATCH,42/43 vague/unquantified lines correctly flagged
+D3_mapping,liver_equivalent_pct,97.0,97.0,MATCH,97/100 liver-relevant lines mapped to equivalent nutritional food codes
+D3_mapping,liver_exact_pct,86.0,86.0,MATCH,86/100 liver-relevant lines mapped to identical INDB food codes
+D3_mapping,d1_corpus_coverage_pct,97.47,97.47,MATCH,770/790 total lines in D1 successfully mapped to INDB codes
+D3_mapping,sample_no_match_rate_pct,1.0,1.0,MATCH,2/200 sample lines had no match in INDB (both non-liver)
+D4_frying,loso_coverage_pct,53.7,53.7,MATCH,29/54 held-out experimental samples within predicted 10th-90th percentile interval
+D4_frying,samosa_min_fat_g_100g,8.97,8.97,MATCH,Minimum Soxhlet fat (Sakhale 2011 modified casing)
+D4_frying,samosa_max_fat_g_100g,31.5,31.5,MATCH,Maximum Soxhlet fat (UK CoFID 2021 home prepared lamb samosa)
+D4_frying,samosa_spread_ratio_max_min,3.51,3.51,MATCH,Spread factor 31.5 / 8.97 = 3.51x variation across preparation settings
+D4_frying,loso_median_absolute_error_g_100g,7.24,7.24,MATCH,Median absolute prediction error in Leave-One-Source-Out cross-validation
+D5_end_to_end,cooked_dish_validation_coverage_pct,100.0,100.0,MATCH,10/10 benchmark non-fried cooked dishes fell within recipe estimated range
+D5_end_to_end,median_estimated_to_measured_ratio,1.03,1.03,MATCH,Median ratio across 10 non-fried dishes (target 0.85-1.15)
+D5_end_to_end,hfss_flagged_dishes_pct,80.0,80.0,MATCH,8/10 evaluated dishes flagged HFSS by ICMR-NIN added fat criteria (>15% E)
+D6_swaps,d6a_dishes_covered_count,3,3,MATCH,3 of 10 target dishes had explicit author substitutions in recipe cards
+D6_swaps,d6b_mean_precision_at_5,0.08,0.08,MATCH,Context similarity overlap with author-stated substitutes across 5 liver drivers
+D6_swaps,d6c_mean_load_reduction_pct,30.6,30.6,MATCH,Mean quantity reduction achieved by 25th percentile conservative benchmark
+D6_swaps,d6d_flavordb_coverage_pct,100.0,100.0,MATCH,5/5 evaluated swap ingredients have confirmed entries in FlavorDB 2.0
+D7_baselines,baseline_citations_count,22,22,MATCH,Total primary survey/guideline baseline indicators compiled
+D7_baselines,coverage_of_required_d5_metrics_pct,100.0,100.0,MATCH,100% of required dietary budget thresholds in D5 are mapped to primary citations
+D8_research_questions,d8a_accessible_recipe_urls,15281,15281,MATCH,Total recipe URLs accessible under polite rate-limited crawling (<=1 req/s)
+D8_research_questions,d8a_nonveg_share_pct,8.43,8.43,MATCH,1288/15281 accessible recipe URLs are non-vegetarian
+D8_research_questions,d8b_median_fat_ratio_web_to_textbook,1.31,1.31,MATCH,Median fat multiplier of popular web recipes vs clinical/dietetics textbook manuals
+D8_research_questions,d8c_median_hidden_load_ratio_street_to_packaged,2.08,2.08,MATCH,Median fat multiplier of unmonitored street fried snacks vs packaged/standard benchmarks
+INTEGRITY_CHECK,gold_independence_d2,INDEPENDENT,INDEPENDENT,MATCH,Gold has 100% cited reasoning; differs from LLM in 79/200 rows and Rule in 156/200 rows
+INTEGRITY_CHECK,gold_independence_d3,INDEPENDENT,INDEPENDENT,MATCH,Gold contains curated equivalent code sets and notes; differs from matcher output in 37/200 rows
+INTEGRITY_CHECK,exclusions_reconciliation_d1,RECONCILED,RECONCILED,MATCH,"All 19 un-fetched recipes (11 HTTP 404, 8 BLOCKED 403) accounted for in exclusions.csv"
+INTEGRITY_CHECK,exclusions_reconciliation_d2,RECONCILED,RECONCILED,MATCH,All 43 unquantified lines explicitly documented in exclusions.csv with scientific rationale
+INTEGRITY_CHECK,exclusions_reconciliation_d3,RECONCILED,RECONCILED,MATCH,"Both NO_MATCH sample lines (129, 180) accounted for in exclusions.csv"
+INTEGRITY_CHECK,exclusions_reconciliation_d4,RECONCILED,RECONCILED,MATCH,All 3 non-fried/baked lab items excluded with exact citations
+INTEGRITY_CHECK,exclusions_reconciliation_d5,RECONCILED,RECONCILED,MATCH,Tarla Dalal anti-bot exclusion and fallback to published baseline documented
+INTEGRITY_CHECK,exclusions_reconciliation_d6,RECONCILED,RECONCILED,MATCH,"FlavorDB entity exclusions (jaggery, cashew apple) documented"
+INTEGRITY_CHECK,exclusions_reconciliation_d7,RECONCILED,RECONCILED,MATCH,Superseded NSSO and US DGI exclusions documented
+INTEGRITY_CHECK,exclusions_reconciliation_d8,RECONCILED,RECONCILED,MATCH,Wayback longitudinal sparsity exclusion and replacement documented

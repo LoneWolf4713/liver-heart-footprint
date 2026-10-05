@@ -1,0 +1,91 @@
+{
+ "inputs": {
+  "recipe_lines_total": 10271,
+  "lines_with_food_code": 10148,
+  "lines_without_grams": 0,
+  "recipes": 1014,
+  "recipes_with_missing_codes": 19,
+  "codes_in_more_than_one_fct": [],
+  "transcription_commit": "b65621ddcf07115e7adba50809d4977402a9fd29"
+ },
+ "agreement_within_2pct_or_abs_tol": {
+  "control_UK_US_only": {
+   "energy_kj": {
+    "agree": 13,
+    "of": 13
+   },
+   "fat_g": {
+    "agree": 13,
+    "of": 13
+   },
+   "protein_g": {
+    "agree": 13,
+    "of": 13
+   },
+   "carb_g": {
+    "agree": 13,
+    "of": 13
+   },
+   "fibre_g": {
+    "agree": 13,
+    "of": 13
+   },
+   "sfa_mg": {
+    "agree": 13,
+    "of": 13
+   },
+   "sodium_mg": {
+    "agree": 13,
+    "of": 13
+   },
+   "freesugar_g": {
+    "agree": 13,
+    "of": 13
+   }
+  },
+  "test_uses_IFCT": {
+   "energy_kj": {
+    "agree": 982,
+    "of": 982
+   },
+   "fat_g": {
+    "agree": 982,
+    "of": 982
+   },
+   "protein_g": {
+    "agree": 982,
+    "of": 982
+   },
+   "carb_g": {
+    "agree": 957,
+    "of": 982
+   },
+   "fibre_g": {
+    "agree": 982,
+    "of": 982
+   },
+   "sfa_mg": {
+    "agree": 982,
+    "of": 982
+   },
+   "sodium_mg": {
+    "agree": 982,
+    "of": 982
+   },
+   "freesugar_g": {
+    "agree": 982,
+    "of": 982
+   }
+  }
+ },
+ "tolerance_abs": {
+  "energy_kj": 1,
+  "fat_g": 0.05,
+  "protein_g": 0.05,
+  "carb_g": 0.05,
+  "fibre_g": 0.05,
+  "sfa_mg": 50,
+  "sodium_mg": 2,
+  "freesugar_g": 0.05
+ }
+}

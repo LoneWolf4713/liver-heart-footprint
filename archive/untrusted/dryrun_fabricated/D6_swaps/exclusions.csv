@@ -1,0 +1,3 @@
+component,item,reason
+D6d_FlavorDB,Jaggery,Jaggery does not exist as an independent entity in FlavorDB; sugar (781) used as proxy
+D6d_FlavorDB,Cashew apple,Entity 170 (cashew apple) excluded to prevent false match; entity 411 (cashew nut) strictly used

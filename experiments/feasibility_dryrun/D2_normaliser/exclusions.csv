@@ -1,0 +1,2 @@
+item,reason
+Lines with gold grams = NOT_QUANTIFIED (43 lines),"Vague or unquantified lines ('to taste', 'for deep frying') excluded from gram error metric and evaluated separately under NOT_QUANTIFIED detection"

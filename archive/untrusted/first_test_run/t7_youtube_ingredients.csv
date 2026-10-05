@@ -1,0 +1,721 @@
+dish_id,video_id,channel,source,raw_line,status,is_liver_relevant,liver_category,unit
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,TOMATO | टमाटर 4 NOS.,count,False,,
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,CORIANDER STEMS | धनिया के डंठल 2 TBSP,exact,False,,tbsp
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,KASHMIRI / DEGI RED CHILLI POWDER | कश्मीरी / देगी लाल मिर्च पाउडर 1.5 TBSP,exact,False,,tbsp
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,CORIANDER POWDER | धनिया पाउडर 1 TBSP,exact,False,,tbsp
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,CUMIN POWDER | जीरा पाउडर 1/2 TSP,exact,False,,tsp
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,CASHEW | काजू 15 NOS. (SOAKED),count,False,,
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,OIL | तेल 1 TBSP,exact,True,oil,tbsp
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,BUTTER | मक्खन 1 TBSP,exact,True,butter,tbsp
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,SALT | नमक TO TASTE,vague,True,salt,
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,KASHMIRI RED CHILLI POWDER | कश्मीरी लाल मिर्च पाउडर A PINCH,missing,False,,pinch
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,OIL | तेल 2 TBSP,exact,True,oil,tbsp
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,BUTTER | मक्खन 1 TBSP,exact,True,butter,tbsp
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,CUMIN SEEDS | जीरा 1 TSP,exact,False,,tsp
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,GREEN CARDAMOM | हरी इलायची 3 NOS.,count,False,,
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,GARLIC | लेहसुन 1 TBSP (CHOPPED),exact,False,,tbsp
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,TURMERIC POWDER | हल्दी पाउडर 1/4 TSP,exact,False,,tsp
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,KASHMIRI RED CHILLI POWDER | कश्मीरी लाल मिर्च पाउडर 1/2 TSP,exact,False,,tsp
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,SALT | नमक TO TASTE,vague,True,salt,
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,SUGAR | शक्कर A PINCH,missing,True,sugar,pinch
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,HOT WATER | गरम पानी AS REQUIRED,vague,False,,
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,BUTTER | मक्खन 2 TBSP,exact,True,butter,tbsp
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,ROASTED KASURI METHI POWDER | भुनी हुई कसूरी मेथी पाउडर A PINCH,missing,False,,pinch
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,GARAM MASALA | गरम मसाला A PINCH,missing,False,,pinch
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,FRESH CREAM | फ्रेश क्रीम 3-4 TBSP,range,True,cream,tbsp
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,FRESH CORIANDER | हरा धनिया AS REQUIRED (CHOPPED),vague,False,,
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,"To sauté the paneer, set a pan over high heat & once it gets hot, add the oil & butter.",missing,True,oil,
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,"Once the oil gets hot, add the cubed paneer, salt & kashmiri red chilli powder, then toss the paneer over high flame for 1-2 minutes, doing this step will help the paneer to hold its structure in the gravy, once sauteed remove the paneer into a bowl & set it aside until you make the gravy.",range,True,oil,
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,"To make the gravy, heat a wok or a kadhai then add oil & butter, once the oil gets hot, add all the whole spices along with, garlic & chopped green chilli, stir well & then add the onions & cook over medium high flame until the onions turn light golden brown.",missing,True,oil,
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,"Further add the prepared paste along with salt & sugar, stir well & cook over medium high flame until the oil separates.",missing,True,oil,
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,"Once the oil separates add hot water as required to adjust the gravy then cook for 2-3 minutes, then taste the gravy & adjust the seasoning accordingly.",vague,True,oil,
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,"Your paneer butter masala is ready, serve hot with naan, tandoori roti or rumali roti.",missing,True,butter,
+paneer_butter_masala,bUounn_Bmy4,Your Food Lab,description,#YFL #SanjyotKeer #paneerbuttermasala,missing,False,,
+paneer_butter_masala,ClcXOU08I34,CookwithParul,description,Oil तेल - 2 tbsp,exact,True,oil,tbsp
+paneer_butter_masala,ClcXOU08I34,CookwithParul,description,Cinnamon Stick दालचीनी - 1 piece,count,False,,
+paneer_butter_masala,ClcXOU08I34,CookwithParul,description,Ginger Garlic Paste - 1 tbsp,exact,False,,tbsp
+paneer_butter_masala,ClcXOU08I34,CookwithParul,description,Salt as per Taste स्वादानुसार नमक,missing,True,salt,
+paneer_butter_masala,ClcXOU08I34,CookwithParul,description,Turmeric Powder हल्दी पाउडर - 1/2 tsp,exact,False,,tsp
+paneer_butter_masala,ClcXOU08I34,CookwithParul,description,Fryed Kasoori Methi Powder कसूरी मेथी - 1 tsp,exact,False,,tsp
+paneer_butter_masala,ClcXOU08I34,CookwithParul,description,Soaked Cashew nut काजू - 15 piece,count,False,,
+paneer_butter_masala,ClcXOU08I34,CookwithParul,description,Turmeric Powder हल्दी पाउडर - 1/4 tsp,exact,False,,tsp
+paneer_butter_masala,ClcXOU08I34,CookwithParul,description,Red Chili Powder लाल मिर्च पाउडर - 1/4 tsp,exact,False,,tsp
+paneer_butter_masala,ClcXOU08I34,CookwithParul,description,Butter - 2 cube,count,True,butter,
+paneer_butter_masala,ClcXOU08I34,CookwithParul,description,Oil तेल - 1/2 चम्मच,count,True,oil,
+paneer_butter_masala,ClcXOU08I34,CookwithParul,description,"होटल जैसा पनीर बटर मसाला10 Minबनायें | Restaurant Style Instant Paneer Butter Masala  | Paneer Recipe | Cook with Parul , paneer butter masala recipe,paneer butter masala restaurant style,paneer butter masala at home,paneer butter masala and naan,paneer butter masala by cook with parul,best butter paneer masala,paneer butter masala curry,paneer butter masala dhaba,paneer butter masala easy recipe,paneer butter masala for chapathi",count,True,butter,
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,Boiled dal,missing,False,,
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,WHOLE URAD DAL | साबुत उरद दाल 1 CUP,exact,False,,cup
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,RAJMA | राजमा 1/4 CUP,exact,False,,cup
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,CHANA DAL | चना दाल 2 TBSP,exact,False,,tbsp
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,WATER | पानी AS REQUIRED,vague,False,,
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,SALT | नमक 1 TSP,exact,True,salt,tsp
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,KASHMIRI RED CHILLI POWDER | कश्मीरी लाल मिर्च पाउडर 1 TSP,exact,False,,tsp
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,BUTTER | मक्खन 3 TBSP,exact,True,butter,tbsp
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,OIL | तेल 1 TSP,exact,True,oil,tsp
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,GINGER GARLIC PASTE | अदरक लहसुन की पेस्ट 2 TBSP,exact,False,,tbsp
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,KASHMIRI RED CHILLI POWDER | कश्मीरी लाल मिर्च पाउडर 2 TBSP,exact,False,,tbsp
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,GARAM MASALA | गरम मसाला 1/4 TSP,exact,False,,tsp
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,SALT A PINCH | नमक A PINCH,missing,True,salt,pinch
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,HOT WATER AS REQUIRED | गरम पानी AS REQUIRED,vague,False,,
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,FRESH CREAM | फ्रेश क्रीम 4-5 TBSP,range,True,cream,tbsp
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,ROASTED KASURI METHI POWDER | भुनी हुई कसूरी मेथी का पाउडर A LARGE PINCH,missing,False,,pinch
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,GARAM MASALA A LARGE PINCH | गरम मसाला A LARGE PINCH,missing,False,,pinch
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,BUTTER | मक्खन 2-3 TBSP,range,True,butter,tbsp
+dal_makhani,Qrdlz8kdsvk,Your Food Lab,description,SALT | नमक IF REQUIRED,missing,True,salt,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"1 ½ tbsp Ghee, घी",exact,True,ghee,tbsp
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,½ cup Kidney beans (washed & soaked overnight) राजमा,missing,False,,cup
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,¼ cup Chana dal (washed & soaked overnight) चना दाल,missing,False,,cup
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"1 tbsp Garlic juice, लहसुन का पानी",exact,False,,tbsp
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"1 ½ tsp Degi red chili powder, देगी लाल मिर्च पाउडर",exact,False,,tsp
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"¼ tsp Turmeric powder, हल्दी पाउडर",missing,False,,tsp
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"1 tsp Coriander powder, धनिया पाउडर",exact,False,,tsp
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"Salt to taste, नमक स्वादअनुसार",vague,True,salt,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"2 tbsp Unsalted butter, cubed, सफ़ेद मक्खन",exact,True,butter,tbsp
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"Salt to taste, नमक स्वादअनुसार",vague,True,salt,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"1 ½ tsp Oil, तेल",exact,True,oil,tsp
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"½ tsp Cumin seeds, जीरा",missing,False,,tsp
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"Salt to taste, नमक स्वादअनुसार",vague,True,salt,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"1 tsp Dry fenugreek leaves, कसूरी मेथी",exact,False,,tsp
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"1 ½ tbsp Ghee, घी",exact,True,ghee,tbsp
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"1 tsp Degi red chili powder, देगी लाल मिर्च पाउडर",exact,False,,tsp
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"A pinch of asafoetida, हींग",missing,False,,pinch
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"½ cup fresh Tomato puree, ताज़े टमाटर की प्यूरी",missing,False,,cup
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"Salt to taste, नमक स्वादअनुसार",vague,True,salt,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"Boiled Dal, उबली हुई दाल",missing,False,,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,2 tbsp Unsalted butter (for finishing) सफ़ेद मक्खन,exact,True,butter,tbsp
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"1 tsp Prepared Masala, तैयार किया हुआ मसाला",exact,False,,tsp
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"½ tsp Dry fenugreek leaves, crushed, कसूरी मेथी",missing,False,,tsp
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"Fresh cream, ताजा क्रीम",missing,True,cream,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"In a pressure cooker, add ghee, once it's hot, add kidney beans, whole black urad dal, chana dal.",missing,True,ghee,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"Add water as required, garlic juice, degi red chili powder, turmeric powder, coriander powder.",vague,False,,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,Add salt to taste and unsalted butter mix everything well.,vague,True,butter,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"In a grinder jar, add garlic cloves, ginger, green chili, salt to taste, oil and grind into a smooth paste and keep aside for further use.",vague,True,oil,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"In a pan, add cumin seeds, black peppercorns, salt to taste, dry fenugreek leaves and dry roast on medium flame for 2-4 minutes.",vague,True,salt,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"In a heavy bottom pot, add ghee, once it's hot, add prepared ginger garlic paste and saute it well.",missing,True,ghee,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"Add degi red chili powder, a pinch of asafoetida and saute well.",missing,False,,pinch
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"Add fresh tomato puree, salt to taste and saute well on medium flame for 4-5 minutes.",vague,True,salt,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,Add boiled dal and cover it with the lid and cook for 5-10 minutes on medium flame.,range,False,,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"Remove the lid, finish it with unsalted butter and mix well, add prepared masala, dry fenugreek leaves  and give it a last boil and switch off the flame.",missing,True,butter,
+dal_makhani,mA5XjhdwJHc,Chef Ranveer Brar,description,"Transfer it into a serving bowl, garnish it with fresh cream, coriander sprig and serve hot with steam rice.",missing,True,cream,
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,FOR BOILING:,missing,False,,
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,1 Dal Chini,count,True,sugar,
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,1/4 tsp Baking Soda,exact,False,,tsp
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,8 - 10 Boiled Chole,range,False,,
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,2 Laddle Oil,count,True,oil,
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,1 tsp Jeera,exact,False,,tsp
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,2 tsp Salt,exact,True,salt,tsp
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,1/2 tsp Haldi Powder,exact,False,,tsp
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,1 tsp Kashmiri Powder,exact,False,,tsp
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,2 tsp Coriander Powder,exact,False,,tsp
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,1 Tbsp Chole Masala,exact,False,,tbsp
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,1 tsp Kasuri Methi,exact,False,,tsp
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,1/2 tsp Black Salt,exact,True,salt,tsp
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,1 tsp Amchoor Powder,exact,False,,tsp
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,1/2 tsp Garam Masala,exact,False,,tsp
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,2 Tbsp Mustard Oil,exact,True,oil,tbsp
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,A Pinch of HING,missing,False,,pinch
+chole,Mne8b26MOU4,bharatzkitchen HINDI,description,1/2 tsp Kashmiri Red Chilli Powder,exact,False,,tsp
+chole,JclBO27u5so,NishaMadhulika,description,काबुली चना - Kabuli Chana - 1 cup (200 grams),exact,False,,cup
+chole,JclBO27u5so,NishaMadhulika,description,तेल - Oil - 2 tbsp,exact,True,oil,tbsp
+chole,JclBO27u5so,NishaMadhulika,description,घी - Ghee - 1 tbsp,exact,True,ghee,tbsp
+chole,JclBO27u5so,NishaMadhulika,description,लोंग - Clove - 4 nos,count,False,,
+chole,JclBO27u5so,NishaMadhulika,description,काली मिर्च - Black pepper - 10-12 nos,range,False,,
+chole,JclBO27u5so,NishaMadhulika,description,अन्जारदाना पाउडर - Pomegranate seeds powder - 1 tsp,exact,False,,tsp
+chole,JclBO27u5so,NishaMadhulika,description,धनिया पाउडर - Coriander Powder - 2 tsp,exact,False,,tsp
+chole,JclBO27u5so,NishaMadhulika,description,जीरा पाउडर - Cumin Powder 1 tsp,exact,False,,tsp
+chole,JclBO27u5so,NishaMadhulika,description,टमाटर - Tomato - 2 nos (200 gms),exact,False,,
+chole,JclBO27u5so,NishaMadhulika,description,हरी मिर्च - Green Chilli - 2 nos,count,False,,
+chole,JclBO27u5so,NishaMadhulika,description,कसूरी मेथी - Dry Fenugreek leaves - 1 tbsp,exact,False,,tbsp
+chole,JclBO27u5so,NishaMadhulika,description,कश्मीरी लालमिर्च - Kashmiri Red Chilli - 1 tsp,exact,False,,tsp
+chole,JclBO27u5so,NishaMadhulika,description,चायपत्ती - Tea leaves 1 tsp,exact,False,,tsp
+chole,JclBO27u5so,NishaMadhulika,description,नमक - Salt - 1 tsp,exact,True,salt,tsp
+chole,JclBO27u5so,NishaMadhulika,description,बेकिंग सोडा - Baking Soda - 1/4 tsp,exact,False,,tsp
+chole,JclBO27u5so,NishaMadhulika,description,गरम मसाला - Garam Masala - 1/2 tsp,exact,False,,tsp
+chole,JclBO27u5so,NishaMadhulika,description,घी - Ghee - 1 tbsp,exact,True,ghee,tbsp
+chole,JclBO27u5so,NishaMadhulika,description,जीरा - Cumin seeds - 1/2 tsp,exact,False,,tsp
+chole,JclBO27u5so,NishaMadhulika,description,कश्मीरी लालमिर्च - Kashmiri Red Chilli - 1/2 tsp,exact,False,,tsp
+chole,JclBO27u5so,NishaMadhulika,description,हरा धनिया - Coriander leaves - 1-2 tbsp,range,False,,tbsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Salt 1 tsp,exact,True,salt,tsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Water as required,vague,False,,
+chole,uNlriiDr2JM,Ajay Chopra,description,Oil 2 tbsp,exact,True,oil,tbsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Jeera 1 tsp,exact,False,,tsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Ginger & garlic paste 2 tbsp,exact,False,,tbsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Turmeric powder 1 tsp,exact,False,,tsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Red chilli powder 1 tsp,exact,False,,tsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Coriander powder 2 tsp,exact,False,,tsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Green chilli chopped ½ tbsp,missing,False,,tbsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Chana masala 2 tbsp,exact,False,,tbsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Coriander chopped 1 tbsp,exact,False,,tbsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Boiled chana with stock,missing,False,,
+chole,uNlriiDr2JM,Ajay Chopra,description,Salt ½ tbsp,missing,True,salt,tbsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Ghee 2 tsp,exact,True,ghee,tsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Jeera ½ tsp,missing,False,,tsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Hing ½ tsp,missing,False,,tsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Red chilli powder 1 tsp,exact,False,,tsp
+chole,uNlriiDr2JM,Ajay Chopra,description,Kasoori methi 1 tbsp,exact,False,,tbsp
+rajma,M_ncAJhIaIU,Kunal Kapur,description,Rajma (chitra) – 1¼ cup,exact,False,,cup
+rajma,M_ncAJhIaIU,Kunal Kapur,description,Oil – ⅓ cup,missing,True,oil,cup
+rajma,M_ncAJhIaIU,Kunal Kapur,description,Turmeric – ½ tsp,missing,False,,tsp
+rajma,M_ncAJhIaIU,Kunal Kapur,description,Salt,missing,True,salt,
+rajma,M_ncAJhIaIU,Kunal Kapur,description,Kasoori methi powder – ½ tsp,missing,False,,tsp
+rajma,M_ncAJhIaIU,Kunal Kapur,description,Garam masala – ¼ tsp,missing,False,,tsp
+rajma,asY7cq6j0xE,Your Food Lab,description,Boiling rajma,missing,False,,
+rajma,asY7cq6j0xE,Your Food Lab,description,WATER | पानी AS REQUIRED,vague,False,,
+rajma,asY7cq6j0xE,Your Food Lab,description,SALT | नमक A PINCH,missing,True,salt,pinch
+rajma,asY7cq6j0xE,Your Food Lab,description,OIL | तेल 6-7 TBSP,range,True,oil,tbsp
+rajma,asY7cq6j0xE,Your Food Lab,description,OIL | तेल 2-3 TBSP,range,True,oil,tbsp
+rajma,asY7cq6j0xE,Your Food Lab,description,CUMIN SEEDS | जीरा 1 TSP,exact,False,,tsp
+rajma,asY7cq6j0xE,Your Food Lab,description,BAY LEAF | तेज पत्ता 2 NOS.,count,False,,
+rajma,asY7cq6j0xE,Your Food Lab,description,GINGER GARLIC GREEN CHILLI PASTE | अदरक लेहसुन और हरी मिर्च कि पेस्ट  3 TBSP,exact,False,,tbsp
+rajma,asY7cq6j0xE,Your Food Lab,description,TURMERIC POWDER | हल्दी पाउडर 1/4 TSP,exact,False,,tsp
+rajma,asY7cq6j0xE,Your Food Lab,description,TOMATO PUREE | टमाटर कि प्युरी OF 4 NOS. (FRESH),count,False,,
+rajma,asY7cq6j0xE,Your Food Lab,description,SALT | नमक TO TASTE,vague,True,salt,
+rajma,asY7cq6j0xE,Your Food Lab,description,KASHMIRI RED CHILLI POWDER | कश्मीरी लाल मिर्च पाउडर 1 TBSP,exact,False,,tbsp
+rajma,asY7cq6j0xE,Your Food Lab,description,SPICY RED CHILLI POWDER | तीखी लाल मिर्च पाउडर 1 TBSP,exact,False,,tbsp
+rajma,asY7cq6j0xE,Your Food Lab,description,CORIANDER POWDER | धनिया पाउडर 1.5 TBSP,exact,False,,tbsp
+rajma,asY7cq6j0xE,Your Food Lab,description,CUMIN POWDER | जीरा पाउडर 1 TSP,exact,False,,tsp
+rajma,asY7cq6j0xE,Your Food Lab,description,GARAM MASALA | गरम मसाला 1/2 TSP,exact,False,,tsp
+rajma,asY7cq6j0xE,Your Food Lab,description,HOT WATER | गरम पानी AS REQUIRED,vague,False,,
+rajma,asY7cq6j0xE,Your Food Lab,description,SALT | नमक IF REQUIRED,missing,True,salt,
+rajma,asY7cq6j0xE,Your Food Lab,description,ROASTED KASURI METHI | भुनी हुई कसूरी मेथी A PINCH,missing,False,,pinch
+rajma,asY7cq6j0xE,Your Food Lab,description,GARAM MASALA | गरम मसाला A PINCH,missing,False,,pinch
+rajma,asY7cq6j0xE,Your Food Lab,description,MINT | पुदीना 1 CUP,exact,False,,cup
+rajma,asY7cq6j0xE,Your Food Lab,description,FRESH CORIANDER | हरा धनिया 1 CUP,exact,False,,cup
+rajma,asY7cq6j0xE,Your Food Lab,description,SPRING ONION GREENS | हरे प्याज़ के पत्ते 1/3 CUP,exact,False,,cup
+rajma,asY7cq6j0xE,Your Food Lab,description,GREEN CHILLIES | हरी मिर्च 3-4 NOS.,range,False,,
+rajma,asY7cq6j0xE,Your Food Lab,description,JAGGERY | गुड़ 1 TBSP,exact,True,jaggery,tbsp
+rajma,asY7cq6j0xE,Your Food Lab,description,TAMARIND | इमली 1 TBSP,exact,False,,tbsp
+rajma,asY7cq6j0xE,Your Food Lab,description,POMEGRANATE POWDER | अनारदाना पाउडर 1/2 TBSP,exact,False,,tbsp
+rajma,asY7cq6j0xE,Your Food Lab,description,CUMIN POWDER | जीरा पाउडर 1 TSP,exact,False,,tsp
+rajma,asY7cq6j0xE,Your Food Lab,description,BLACK SALT | काला नमक 1 TSP,exact,True,salt,tsp
+rajma,asY7cq6j0xE,Your Food Lab,description,SALT | नमक TO TASTE,vague,True,salt,
+rajma,asY7cq6j0xE,Your Food Lab,description,WATER | पानी AS REQUIRED,vague,False,,
+rajma,kRShwNqBQaw,NishaMadhulika,description,Rajma - राजमा - 1 cup ( 200 g ),exact,False,,cup
+rajma,kRShwNqBQaw,NishaMadhulika,description,Water - पानी - 2 cup,exact,False,,cup
+rajma,kRShwNqBQaw,NishaMadhulika,description,Salt - नमक - 1 tsp,exact,True,salt,tsp
+rajma,kRShwNqBQaw,NishaMadhulika,description,Baking Soda - बेकिंग सोडा - 1/4 tsp,exact,False,,tsp
+rajma,kRShwNqBQaw,NishaMadhulika,description,Oil - तेल - 2 - 3 tbsp,range,True,oil,tbsp
+rajma,kRShwNqBQaw,NishaMadhulika,description,Cumin - जीरा - 1/2 tsp,exact,False,,tsp
+rajma,kRShwNqBQaw,NishaMadhulika,description,Asafoetida - हींग 1 - pinch,exact,False,,pinch
+rajma,kRShwNqBQaw,NishaMadhulika,description,Turmeric - हल्दी - 1/2 tsp,exact,False,,tsp
+rajma,kRShwNqBQaw,NishaMadhulika,description,Coriander powder - धनिया पाउडर - 2 tsp,exact,False,,tsp
+rajma,kRShwNqBQaw,NishaMadhulika,description,Fenugreek - कसूरी मेथी - 1 tbsp,exact,False,,tbsp
+rajma,kRShwNqBQaw,NishaMadhulika,description,Red Chilli Powder - लाल मिर्च - 1.5 tsp,exact,False,,tsp
+rajma,kRShwNqBQaw,NishaMadhulika,description,Salt - नमक - 1/2 tsp,exact,True,salt,tsp
+aloo_paratha,LT1oQI7SMtM,Happy Cooking Moments,description,* Wheat flour 1 cup 225 g,exact,False,,cup
+aloo_paratha,LT1oQI7SMtM,Happy Cooking Moments,description,"* All purpose flour,  maida 1/ 4 cup , 50 to 60 g",range,True,maida,cup
+aloo_paratha,LT1oQI7SMtM,Happy Cooking Moments,description,* Salt 1/3 top or as per taste,count,True,salt,
+aloo_paratha,LT1oQI7SMtM,Happy Cooking Moments,description,* Oil 3 top,count,True,oil,
+aloo_paratha,LT1oQI7SMtM,Happy Cooking Moments,description,"* Boiled potatoes 3,4 mash them",count,False,,
+aloo_paratha,LT1oQI7SMtM,Happy Cooking Moments,description,"* Salt,  white,  pink and black Salt as per taste",missing,True,salt,
+aloo_paratha,LT1oQI7SMtM,Happy Cooking Moments,description,* Oil 2 tsp for frying stuffing material,exact,True,oil,tsp
+aloo_paratha,LT1oQI7SMtM,Happy Cooking Moments,description,* Cumin seed half tsp and a pinch of hing for tadka,exact,False,,tsp
+aloo_paratha,LT1oQI7SMtM,Happy Cooking Moments,description,* Oil and butter for frying parathas,vague,True,oil,
+aloo_paratha,SfaPcyQA5rc,Bong Eats,transcript,sugar   7g oil   8g distribute oil evenly hot water   100–110g mix till al,count,True,oil,
+aloo_paratha,SfaPcyQA5rc,Bong Eats,transcript,"e a nice, dry filling heat 7g vegetable oil onions fry on medium heat until brown g",exact,True,oil,g
+aloo_paratha,SfaPcyQA5rc,Bong Eats,transcript,"own and rotate using a spatula or towel butter serve with achar,",missing,True,butter,
+aloo_paratha,SfaPcyQA5rc,Bong Eats,transcript,sugar   7g oil   8g distribute oil evenly hot,count,True,sugar,
+aloo_paratha,SfaPcyQA5rc,Bong Eats,transcript,latbread atta(whole wheat flour)   150g salt   3g,count,True,salt,
+aloo_paratha,SfaPcyQA5rc,Bong Eats,transcript,"arom seeds) ¼ tsp,  chaat masala ½ tsp, salt   5g bhaja masala   1 tsp",exact,True,salt,tsp
+samosa,HCyalu9KMIs,Your Food Lab,description,Serves: 12-14 nos.,range,False,,
+samosa,HCyalu9KMIs,Your Food Lab,description,SEMOLINA | रवा 1 TBSP (COARSE),exact,False,,tbsp
+samosa,HCyalu9KMIs,Your Food Lab,description,CAROM SEEDS | अजवाइन 1 TSP (CRUSHED),exact,False,,tsp
+samosa,HCyalu9KMIs,Your Food Lab,description,SALT | नमक A PINCH,missing,True,salt,pinch
+samosa,HCyalu9KMIs,Your Food Lab,description,GHEE | घी 3 TBSP,exact,True,ghee,tbsp
+samosa,HCyalu9KMIs,Your Food Lab,description,COLD WATER | ठंडा पानी AS REQUIRED (100 ML APPROXIMATELY),exact,False,,ml
+samosa,HCyalu9KMIs,Your Food Lab,description,GREEN CHILLI | हरी मिर्च 3-4 NOS.,range,False,,
+samosa,HCyalu9KMIs,Your Food Lab,description,WATER | पानी AS REQUIRED,vague,False,,
+samosa,HCyalu9KMIs,Your Food Lab,description,CUMIN SEEDS | जीरा 1 TBSP,exact,False,,tbsp
+samosa,HCyalu9KMIs,Your Food Lab,description,CORIANDER SEEDS | साबुत धनिया 1 TBSP,exact,False,,tbsp
+samosa,HCyalu9KMIs,Your Food Lab,description,FENNEL SEEDS | सौंफ 1 TBSP,exact,False,,tbsp
+samosa,HCyalu9KMIs,Your Food Lab,description,POTATO | आलू 7-8 (MEDIUM SIZED BOILED),range,False,,
+samosa,HCyalu9KMIs,Your Food Lab,description,GHEE | घी 2 TBSP,exact,True,ghee,tbsp
+samosa,HCyalu9KMIs,Your Food Lab,description,GREEN PEAS | हरे मटर 1/3 CUP (BOILED),exact,False,,cup
+samosa,HCyalu9KMIs,Your Food Lab,description,SALT | नमक TO TASTE,vague,True,salt,
+samosa,HCyalu9KMIs,Your Food Lab,description,CHAAT MASALA | चाट मसाला A LARGE PINCH,missing,False,,pinch
+samosa,HCyalu9KMIs,Your Food Lab,description,BLACK PEPPER POWDER | काली मिर्च का पाउडर A LARGE PINCH,missing,False,,pinch
+samosa,HCyalu9KMIs,Your Food Lab,description,KASURI METHI | कसूरी मेथी 1 TBSP,exact,False,,tbsp
+samosa,HCyalu9KMIs,Your Food Lab,description,GHEE | घी AS REQUIRED,vague,True,ghee,
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,2 Cups Maida (300Gms),exact,True,maida,
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,1/2 tsp Ajwain,exact,False,,tsp
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,1 tsp Salt,exact,True,salt,tsp
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,5 Tbsp Oil,exact,True,oil,tbsp
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,1/2 Cup Water,exact,False,,cup
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,2 Tbsp Oil,exact,True,oil,tbsp
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,1/2 tsp Hing,exact,False,,tsp
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,1 tsp jeera,exact,False,,tsp
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,1 tsp Sauf,exact,False,,tsp
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,1 tsp Coriander Seeds,exact,False,,tsp
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,4 Boiled Potatoes,count,False,,
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,1/2 tsp Haldi Powder,exact,False,,tsp
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,1 tsp Red Chilli Powder,exact,False,,tsp
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,1 tsp Salt,exact,True,salt,tsp
+samosa,ZsTMhSVtKDI,bharatzkitchen HINDI,description,1 tsp Amchoor Powder,exact,False,,tsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Salt (नमक) - 1/2 tsp,exact,True,salt,tsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Carom seeds (अजवाइन) - 1/2 tsp,exact,False,,tsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Ghee (घी) - 3 tbsp,exact,True,ghee,tbsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Lukewarm water (गुनगुना पानी) - as required,vague,False,,
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Oil (तेल) - 2 tsp,exact,True,oil,tsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Asafoetida (हींग) - less 1/4 tsp,exact,False,,tsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Spices (मसाला) - 1 tsp,exact,False,,tsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Chili powder (लाल मिर्च पाउडर) - less 1/2 tsp,exact,False,,tsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Turmeric powder (हल्दी पाउडर) - 1/4 tsp,exact,False,,tsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Garam Masala powder (गरम मसाला) - 1/4 tsp,exact,False,,tsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Roasted Cumin Powder (भुना जीरा पाउडर) - 1/2 tsp,exact,False,,tsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Coriander powder (धनिया पाउडर) - 1/2 tsp,exact,False,,tsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Salt (नमक) - as per taste,missing,True,salt,
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Sugar (चीनी) - 1/2 tsp,exact,True,sugar,tsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Gram Flour (बेसन) - 1 tbsp,exact,False,,tbsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Mango powder (अमचूर पाउडर) - 1/2 tsp,exact,False,,tsp
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,* Water (पानी) - as required,vague,False,,
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,"For Samosa Filling, take a pan, put some Oil, Asafoetida, coarsely ground Fennel Seeds, Coriander Seeds, Cumin Seeds and Red Chilies in it. Then put some finely chopped Green Chilies, Red Chili Powder, Turmeric Powder, Garam Masala Powder, Roasted Cumin Powder, Coriander Powder, Salt, Sugar, and some Gram Flour in it. Roast it for 2-3 mins then put some Water, boiled and mashed Potatoes. Mix it well, put some Coriander Leaves then turn off the flame and keep the filling for cooling down.",range,True,oil,
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,"For the dough, take a bowl, put some All-Purpose Flour, Salt, Carom Seeds, Oil and bind the dough by adding Lukewarm Water. Cover it and keep it for 15-20 mins.",vague,True,oil,
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,"In the same way, make all the Samosas and fry them in the oil on medium flame.",missing,True,oil,
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,Measuring cup/spoons - https://amzn.to/3c8IPqe,exact,False,,cup
+samosa,ZJEF_iPjXgU,Masala Kitchen,description,Oil dispenser - https://amzn.to/2wUOU9M,count,True,oil,
+onion_pakora,7B5KEtf37ec,Your Food Lab,description,SALT | नमक TO TASTE,vague,True,salt,
+onion_pakora,7B5KEtf37ec,Your Food Lab,description,KASHMIRI RED CHILLI POWDER | कश्मीरी लाल मिर्च पाउडर 1 TSP,exact,False,,tsp
+onion_pakora,7B5KEtf37ec,Your Food Lab,description,GRAM FLOUR | बेसन 1 CUP,exact,False,,cup
+onion_pakora,7B5KEtf37ec,Your Food Lab,description,WATER | पानी AS REQUIRED,vague,False,,
+onion_pakora,7B5KEtf37ec,Your Food Lab,description,KASHMIRI RED CHILLI POWDER | कश्मीरी लाल मिर्च 3 TBSP,exact,False,,tbsp
+onion_pakora,7B5KEtf37ec,Your Food Lab,description,SALT | नमक 1/2 TSP,exact,True,salt,tsp
+onion_pakora,7B5KEtf37ec,Your Food Lab,description,HOT OIL | गरम तेल 5-6 TBSP,range,True,oil,tbsp
+onion_pakora,dBCCuFIYMdg,CookwithParul,description,Salt (नमक) - 1 tsp,exact,True,salt,tsp
+onion_pakora,dBCCuFIYMdg,CookwithParul,description,Asafoetida/Hing - हींग - 2 pinch,exact,False,,pinch
+onion_pakora,dBCCuFIYMdg,CookwithParul,description,Carom Seed अजवाईन - 1/2 tsp,exact,False,,tsp
+onion_pakora,dBCCuFIYMdg,CookwithParul,description,Gram flour बेसन - 3/4 cup,exact,False,,cup
+onion_pakora,dBCCuFIYMdg,CookwithParul,description,Rice flour चावल का आटा - 2 tbsp,exact,False,,tbsp
+onion_pakora,dBCCuFIYMdg,CookwithParul,description,Oil तेल,missing,True,oil,
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"⅓ cup Green peas, हरी मटर",missing,False,,cup
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"Salt to taste, नमक स्वादानुसार",vague,True,salt,
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"2-3 tbsp Butter, मक्खन",range,True,butter,tbsp
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"1 cup Onion, chopped, प्याज",exact,False,,cup
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"1 ½ cup Tomato, chopped, टमाटर",exact,False,,cup
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"2-3 tbsp Butter, मक्खन",range,True,butter,tbsp
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"¼ cup Oil, तेल",missing,True,oil,cup
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"½ tbsp Ginger Garlic paste, अदरक लहसुन का पेस्ट",missing,False,,tbsp
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"Salt to taste, नमक स्वादानुसार",vague,True,salt,
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"¼ cup fresh Tomato puree, ताज़े टमाटर की प्यूरी",missing,False,,cup
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"1 tbsp Degi red chilli powder, देगी लाल मिर्च पाउडर",exact,False,,tbsp
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"2 tbsp Butter, मक्खन",exact,True,butter,tbsp
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"1 tbsp Prepared pav bhaji masala, तैयार किया हुआ पाव भाजी मसाला",exact,False,,tbsp
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"Boiled & mashed vegetables, उबली सब्जियाँ",missing,False,,
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"1 tbsp Butter, मक्खन",exact,True,butter,tbsp
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"2 tbsp Prepared pav bhaji masala, तैयार किया हुआ पाव भाजी मसाला",exact,False,,tbsp
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"¼ tsp Sugar,  चीनी",missing,True,sugar,tsp
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"1 tbsp Coriander leaves, chopped, धनिया पत्ता",exact,False,,tbsp
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"1 tbsp Butter, मक्खन",exact,True,butter,tbsp
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"A pinch of degi red chilli powder, देगी लाल मिर्च पाउडर",missing,False,,pinch
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"1 tbsp Butter, मक्खन",exact,True,butter,tbsp
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"Butter pav, बटर पाव",missing,True,butter,
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"In a large pot or pressure cooker add cauliflower, capsicum, ginger, garlic, water, potato, carrot, green peas, salt, butter then cover and cook until soft.",missing,True,butter,
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"In a large tava or a shallow pan heat butter, oil then add onion and saute until translucent.",missing,True,oil,
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"Now add tomatoes, green chillies, ginger garlic paste, salt and saute until they are soft.",missing,True,salt,
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,Then add capsicum and continue cooking for another 2 minutes. Once done remove 2-3 tbsp masala aside for further use.,range,False,,tbsp
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"Now, add degi red chilli powder, butter, pav bhaji masala and saute for a minute.",missing,True,butter,
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"Now,  add boiled & mashed vegetables, butter, pav bhaji masala, water, sugar and continue cooking for another 2-3 minutes.",range,True,butter,
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"In a hot pan add butter degi red chilli powder and coat the pav in that inside out and toast it properly, set aside for further use.",missing,True,butter,
+pav_bhaji,wgV9pik8xqc,Chef Ranveer Brar,description,"In a hot pan add butter, prepared masala that was kept aside then coat the pav inside out properly and then toast it. Set aside for further use.",missing,True,butter,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Coriander seeds 5 tbsp,exact,False,,tbsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Cumin seeds 3 tbsp,exact,False,,tbsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Cloves 20-22 nos.,range,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Star anise 4-5 nos.,range,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Black cardamom 5-6 nos.,range,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Bay leaf 4-5 nos.,range,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Kashmiri red chillies 20-25 nos.,range,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Fennel seeds 3 tbsp,exact,False,,tbsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Kasuri methi 2 tbsp,exact,False,,tbsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Turmeric powder ½ tsp,missing,False,,tsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Dry ginger powder ½ tsp,missing,False,,tsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Hing 1 tsp,exact,False,,tsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Kaala namak 1 tsp,exact,True,salt,tsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Aamchur powder 1 tbsp,exact,False,,tbsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Salt 1 tbsp,exact,True,salt,tbsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Kashmiri red chillies 15-20 nos. (deseeded & soaked),range,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Water as required,vague,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Garlic cloves 3/4th cup,exact,False,,cup
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Water as required,vague,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,Boiling veggies:,missing,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Boiling water,missing,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Hare matar 3/4th cup,exact,False,,cup
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● A pinch of haldi powder,missing,False,,pinch
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● A pinch of salt,missing,True,salt,pinch
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Butter 50 gm + oil 2 tbsp,exact,True,oil,tbsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Jeera seeds 2 tsp,exact,False,,tsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Potatoes 7-8 medium size (boiled & mashed),range,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Boiled green peas,missing,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Boiled cauliflower florets,missing,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Beetroot 1 medium size (boiled & grated),count,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Salt to taste,vague,True,salt,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Prepared pav bhaji masala 2 tbsp,exact,False,,tbsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Kashmiri red chilli 1 tsp,exact,False,,tsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Dhaniya powder 1 tbsp,exact,False,,tbsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Haldi powder ½ tsp,missing,False,,tsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Kasuri methi 1 tsp,exact,False,,tsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Prepared garlic paste 7-8 tbsp,range,False,,tbsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Prepared red chilli paste 7-8 tbsp,range,False,,tbsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Hot water as required,vague,False,,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Butter 50 grams,exact,True,butter,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● A pinch of jeera seeds,missing,False,,pinch
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Prepared red chilli paste 4-5 tbsp,range,False,,tbsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Garlic paste/water 2-3 tbsp,range,False,,tbsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Pav bhaji masala 1 tsp,exact,False,,tsp
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● A pinch of garam masala,missing,False,,pinch
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Salt to taste,vague,True,salt,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Butter as per your preference,missing,True,butter,
+pav_bhaji,Gbuse4WX01I,Your Food Lab,description,● Lemon juice 1 tsp,exact,False,,tsp
+butter_chicken,a03U45jFxOI,Get Curried,description,1 tbsp Ginger garlic paste,exact,False,,tbsp
+butter_chicken,a03U45jFxOI,Get Curried,description,1 tbsp Red chilli powder,exact,False,,tbsp
+butter_chicken,a03U45jFxOI,Get Curried,description,Salt to taste,vague,True,salt,
+butter_chicken,a03U45jFxOI,Get Curried,description,Oil to pan fry,missing,True,oil,
+butter_chicken,a03U45jFxOI,Get Curried,description,1 tbsp garlic paste,exact,False,,tbsp
+butter_chicken,a03U45jFxOI,Get Curried,description,1 tsp kasoori methi,exact,False,,tsp
+butter_chicken,a03U45jFxOI,Get Curried,description,1/2 tsp garam masala,exact,False,,tsp
+butter_chicken,a03U45jFxOI,Get Curried,description,4 tbsp sugar,exact,True,sugar,tbsp
+butter_chicken,a03U45jFxOI,Get Curried,description,2 tbsp kashmiri chilli powder,exact,False,,tbsp
+butter_chicken,a03U45jFxOI,Get Curried,description,5 tbsp butter,exact,True,butter,tbsp
+butter_chicken,a03U45jFxOI,Get Curried,description,3 tbsp cream,exact,True,cream,tbsp
+butter_chicken,a03U45jFxOI,Get Curried,description,2 tbsp malt vinegar / 1.5 tbsp White Vinegar,exact,False,,tbsp
+butter_chicken,a03U45jFxOI,Get Curried,description,Salt to taste,vague,True,salt,
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,1 tsp salt,exact,True,salt,tsp
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,1 tsp chili powder,exact,False,,tsp
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,2 tsp lemon juice,exact,False,,tsp
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,¼ cup curd,missing,False,,cup
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,1 tbsp ginger garlic paste,exact,False,,tbsp
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,¼ cup oil,missing,True,oil,cup
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,2 tbsp butter,exact,True,butter,tbsp
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,2 onion ( 150-200 g ),range,False,,g
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,4 tomato ( 400-450 g ),range,False,,g
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,1 tbsp ginger garlic paste,exact,False,,tbsp
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,1 tsp salt,exact,True,salt,tsp
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,1 tsp chili powder,exact,False,,tsp
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,1 tsp kashmiri mirch,exact,False,,tsp
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,¼ tsp turmeric powder,missing,False,,tsp
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,1 tbsp kasuri methi,exact,False,,tbsp
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,1 tsp garam masala,exact,False,,tsp
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,¼ cup fresh cream,missing,True,cream,cup
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,1 tbsp tomato ketchup,exact,False,,tbsp
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,2 tbsp butter,exact,True,butter,tbsp
+butter_chicken,ho-M0Z4aQTU,Cook with Lubna,description,Whipping Cream: https://amzn.to/3Ql0q0X,count,True,cream,
+butter_chicken,3r-r1Eprl18,bharatzkitchen HINDI,description,2 - 3 Laddle Oil (used throughout the recipe),range,True,oil,
+butter_chicken,3r-r1Eprl18,bharatzkitchen HINDI,description,40 -50 Gms of Butter (used throughout the recipe),range,True,butter,
+butter_chicken,3r-r1Eprl18,bharatzkitchen HINDI,description,1.5 tsp Salt,exact,True,salt,tsp
+butter_chicken,3r-r1Eprl18,bharatzkitchen HINDI,description,2 tsp Sugar,exact,True,sugar,tsp
+butter_chicken,3r-r1Eprl18,bharatzkitchen HINDI,description,2 tsp Kashmiri Red Chilli Powder (used throughout the recipe),exact,False,,tsp
+butter_chicken,3r-r1Eprl18,bharatzkitchen HINDI,description,1/4 tsp Haldi Powder,exact,False,,tsp
+butter_chicken,3r-r1Eprl18,bharatzkitchen HINDI,description,1 Cup Water,exact,False,,cup
+butter_chicken,3r-r1Eprl18,bharatzkitchen HINDI,description,1 Tbsp Ginger Garlic Paste,exact,False,,tbsp
+butter_chicken,3r-r1Eprl18,bharatzkitchen HINDI,description,1 Tbsp Kasuri Methi,exact,False,,tbsp
+butter_chicken,3r-r1Eprl18,bharatzkitchen HINDI,description,1 tsp Garam Masala,exact,False,,tsp
+butter_chicken,3r-r1Eprl18,bharatzkitchen HINDI,description,1/2 tsp Elachi Powder,exact,False,,tsp
+butter_chicken,3r-r1Eprl18,bharatzkitchen HINDI,description,2 Tbsp Tomatoe KEtchup,exact,False,,tbsp
+butter_chicken,3r-r1Eprl18,bharatzkitchen HINDI,description,2 - 3 Tbsp Malai,range,True,cream,tbsp
+butter_chicken,3r-r1Eprl18,bharatzkitchen HINDI,description,1 Tbsp Raw Mustard oil,exact,True,oil,tbsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1/2 cup Curd ( 50g ),exact,False,,cup
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,2 Tbsp Ginger & Garlic Paste,exact,False,,tbsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1/4 tsp Turmeric Powder,exact,False,,tsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1.5 tsp Coriander Powder,exact,False,,tsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1/2 tsp Roasted Cumin Powder,exact,False,,tsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1 tsp Biryani Masala,exact,False,,tsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1.5 tsp Salt,exact,True,salt,tsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1/2 tsp Red chilli Powder,exact,False,,tsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,2 tsp Kashmiri Red Chilli Powder,exact,False,,tsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1 tsp Kasuri Methi,exact,False,,tsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1/2 tsp Kewra Water,exact,False,,tsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,Whole Spices ( FOR MARINATION & BOILING RICE ),missing,False,,
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,FOR RICE BOILING,missing,False,,
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,2 Tbsp Salt,exact,True,salt,tbsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1/2 tsp Biryani Masala,exact,False,,tsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1 Tbsp Desi Ghee,exact,True,ghee,tbsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1/2 Cup OIL,exact,True,oil,cup
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1/2 Cup Water,exact,False,,cup
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1 Tbsp Desi Ghee,exact,True,ghee,tbsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1/2 tsp Biryani Masala,exact,False,,tsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,1 tsp Kewra Water,exact,False,,tsp
+chicken_biryani,w8hDk8ihxBI,bharatzkitchen HINDI,description,2 tsp Food Colour,exact,False,,tsp
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,1 Tbsp Ginger Garlic Paste,exact,False,,tbsp
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,1 tsp Salt,exact,True,salt,tsp
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,1/2 tsp Haldi Powder,exact,False,,tsp
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,1 tsp Kashmiri Red Chilli Powder,exact,False,,tsp
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,1 tsp Red Chilli Powder,exact,False,,tsp
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,1 tsp Biryani Masala,exact,False,,tsp
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,4 Tbsp Curd,exact,False,,tbsp
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,1/3 Cup Oil,exact,True,oil,cup
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,1 tsp Keora Water,exact,False,,tsp
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,1 tsp Biryani Masala ( for Rice ),exact,False,,tsp
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,1 tsp Salt (for Rice),exact,True,salt,tsp
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,4 -5 Saffron Strands with 1/4 Cup Milk,range,False,,cup
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,1 Tbsp Desi Ghee,exact,True,ghee,tbsp
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,1/2 Dal Chini,count,True,sugar,
+chicken_biryani,YTYtKuLwl9U,bharatzkitchen HINDI,description,1 tsp Jeera,exact,False,,tsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• CORIANDER SEEDS | धनिया 2 TBSP,exact,False,,tbsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• CUMIN SEEDS | जीरा 1 TSP,exact,False,,tsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• CARAWAY SEEDS | शाह जीरा 2 TSP,exact,False,,tsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• GREEN CARDAMOM | हरी इलायची 2 TBSP,exact,False,,tbsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• BLACK CARDAMOM | बड़ी इलाइची 5-6 NOS.,range,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• BLACK PEPPERCORNS | काली मिर्च 1 TBSP,exact,False,,tbsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• SPICY RED CHILLIES | तीखी लाल मिर्च 7-8 NOS.,range,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• BAY LEAF | तेज पत्ता 7-8 NOS.,range,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• CLOVES | लौंग 2 TSP,exact,False,,tsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• MACE | जावित्री 3 NOS.,count,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• KASURI METHI | कसूरी मेथी 1 TBSP,exact,False,,tbsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• NUTMEG | जायफल 1/2 NOS. (GRATED),count,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• TURMERIC POWDER | हल्दी 1/2 TSP,exact,False,,tsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• SALT | नमक A PINCH,missing,True,salt,pinch
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• SALT नमक TO TASTE,vague,True,salt,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• LEMON JUICE | नींबू का रस OF 1 NOS.,count,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• GINGER GARLIC PASTE | अदरक लेहसुन कि पेस्ट 4 TBSP,exact,False,,tbsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• GREEN CHILLI PASTE | हरी मिर्च कि पेस्ट OF 3 NOS.,count,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• KASHMIRI RED CHILLI POWDER | कश्मीरी लाल मिर्च पाउडर 2 TBSP,exact,False,,tbsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• TURMERIC POWDER | हल्दी 1/2 TSP,exact,False,,tsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• CORIANDER POWDER | धनिया पाउडर 2 TSP,exact,False,,tsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• BIRYANI MASALA | बिरयानी मसाला 1.5 TBSP,exact,False,,tbsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• BRISTA OIL | बिरिसता वाला तेल 3-4 TBSP,range,True,oil,tbsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• CURD | दही 200 ML,exact,False,,ml
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• GHEE | घी 2 TBSP,exact,True,ghee,tbsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,Boiling rice,missing,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• BAY LEAF | तेज पत्ता 1-2 NOS.,range,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• CARAWAY SEEDS | शाह जीरा 1 TSP,exact,False,,tsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• GREEN CARDAMOM | हरी इलायची 3-4 NOS.,range,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• CLOVES | लौंग 4-5 NOS.,range,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• STAR ANISE | चकरी फूल 1 NOS.,count,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• BLACK PEPPERCORNS | काली मिर्च 3-4 NOS.,range,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• GREEN CHILLI | हरी मिर्च 1-2 NOS. (SLIT),range,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• LEMON JUICE | नींबू का रस OF 1/2 NOS.,count,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• SALT | नमक AS REQUIRED,vague,True,salt,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• BIRYANI MASALA | बिरयानी मसाला A PINCH,missing,False,,pinch
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• GHEE | घी 3-4 TBSP (WARM),range,True,ghee,tbsp
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• WATER | पानी AS REQUIRED,vague,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• MILK | दूध AS REQUIRED,vague,False,,
+chicken_biryani,uygb9O-MDPw,Your Food Lab,description,• SAFFRON | केसर AS REQUIRED,vague,False,,
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,For Boiling Eggs,missing,False,,
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"Salt to taste, नमक स्वादअनुसार",vague,True,salt,
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"2 tsp Vinegar, सिरका",exact,False,,tsp
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"1 ½ tbsp Oil, तेल",exact,True,oil,tbsp
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"1 tbsp Degi red chili powder, देगी लाल मिर्च पाउडर",exact,False,,tbsp
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"Salt to taste, नमक स्वादअनुसार",vague,True,salt,
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"1 heaped tbsp Coriander powder, धनिया पाउडर",exact,False,,tbsp
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"¼ cup Water, पानी",missing,False,,cup
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"1 tbsp Coriander leaves, chopped, धनिया पत्ता",exact,False,,tbsp
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"2 tsp Oil, तेल",exact,True,oil,tsp
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"7-8 hard-boiled Eggs, अंडे",range,False,,
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"Salt to taste, नमक स्वादअनुसार",vague,True,salt,
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"1 tsp Degi red chili powder, देगी लाल मिर्च पाउडर",exact,False,,tsp
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,For Boiling Eggs,missing,False,,
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"In a sauce pot, add water as required, vinegar, eggs and give it a boil.",vague,False,,
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,Cook it for 10-12 minutes or until hard boiled. Transfer it to chilled water and remove the shell.,range,False,,
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"In a heavy bottom pan or a kadai, add oil, once it's hot, add garlic, ginger, onions and saute for 3-4 minutes or until the onions are translucent.",range,True,oil,
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"Add degi red chili powder, tomatoes, salt to taste and mix well.",vague,True,salt,
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"Add some water, salt to taste, coriander powder and saute for a minute.",vague,True,salt,
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"In a pan, add oil, once it’s hot, add hard boiled eggs and toss it.",missing,True,oil,
+egg_curry,pqGMxHIfcXg,Chef Ranveer Brar,description,"Add salt to taste, degi red chili powder and toss well.",vague,True,salt,
+gulab_jamun,jz55LQr_nsk,Kabita's Kitchen,description,Khoya/ mawa - 250 grams,exact,True,khoya,
+gulab_jamun,jz55LQr_nsk,Kabita's Kitchen,description,Maida - 1/4 cup,exact,True,maida,cup
+gulab_jamun,jz55LQr_nsk,Kabita's Kitchen,description,Sugar - 3 cups,exact,True,sugar,
+gulab_jamun,jz55LQr_nsk,Kabita's Kitchen,description,Saffron - 2 pinch,exact,False,,pinch
+gulab_jamun,jz55LQr_nsk,Kabita's Kitchen,description,Baking powder -1/3 tsp,exact,False,,tsp
+gulab_jamun,jz55LQr_nsk,Kabita's Kitchen,description,Cardamom powder - 1 tsp,exact,False,,tsp
+gulab_jamun,jz55LQr_nsk,Kabita's Kitchen,description,Cooking oil or ghee for frying,vague,True,oil,
+gulab_jamun,GptRW9Lsyj0,Kunal Kapur,description,FOR SUGAR SYRUP,missing,True,sugar,
+gulab_jamun,GptRW9Lsyj0,Kunal Kapur,description,1½kg Sugar,count,True,sugar,
+gulab_jamun,GptRW9Lsyj0,Kunal Kapur,description,½ tsp Cardamom powder,missing,False,,tsp
+gulab_jamun,GptRW9Lsyj0,Kunal Kapur,description,(dhab variety) - 2cups/500gms Khoya,count,True,khoya,
+gulab_jamun,GptRW9Lsyj0,Kunal Kapur,description,1cup/125gms Flour (maida),count,True,maida,
+gulab_jamun,GptRW9Lsyj0,Kunal Kapur,description,for frying Oil,vague,True,oil,
+gajar_halwa,CNJBC-TJJTA,Kunal Kapur,description,3/4th cup Sugar,exact,True,sugar,cup
+gajar_halwa,CNJBC-TJJTA,Kunal Kapur,description,1/2 cup Milk,exact,False,,cup
+gajar_halwa,CNJBC-TJJTA,Kunal Kapur,description,Pista chopped - 1 tbsp,exact,False,,tbsp
+gajar_halwa,CNJBC-TJJTA,Kunal Kapur,description,Cashew nuts chopped - 1 tbsp,exact,False,,tbsp
+gajar_halwa,CNJBC-TJJTA,Kunal Kapur,description,3/4th cup Sugar,exact,True,sugar,cup
+gajar_halwa,CNJBC-TJJTA,Kunal Kapur,description,1 tbsp Desi Ghee,exact,True,ghee,tbsp
+gajar_halwa,CNJBC-TJJTA,Kunal Kapur,description,1/2 tsp Cardamom powder,exact,False,,tsp
+gajar_halwa,CNJBC-TJJTA,Kunal Kapur,description,Almonds chopped - 1 tbsp,exact,False,,tbsp
+gajar_halwa,CNJBC-TJJTA,Kunal Kapur,description,grated - 1/2 cup Khoya,exact,True,khoya,cup
+gajar_halwa,LKzDV94y4p4,NishaMadhulika,description,Mawa - 250 gms,exact,True,khoya,
+gajar_halwa,LKzDV94y4p4,NishaMadhulika,description,Sugar - 300 gms,exact,True,sugar,
+gajar_halwa,LKzDV94y4p4,NishaMadhulika,description,Milk - 1 cup,exact,False,,cup
+gajar_halwa,LKzDV94y4p4,NishaMadhulika,description,Ghee  - 4 tbsp,exact,True,ghee,tbsp
+gajar_halwa,LKzDV94y4p4,NishaMadhulika,description,"Add ghee to the wok, turn on flame let it melt. As ghee melts, pour the grated carrot in ghee. Roast on medium flame, for 1 to 2 minutes while mixing. Cover and cook the carrot on low medium flame for 5 minutes.",range,True,ghee,
+gajar_halwa,LKzDV94y4p4,NishaMadhulika,description,"After 5 minutes, stir the carrots. Cover and cook it again on medium flame for 5 to 6 minutes. Carrot is juicy and sugar has dissolved. Carrot is cooked for 15 minutes, stirred at regular intervals.",range,True,sugar,
+gajar_halwa,LKzDV94y4p4,NishaMadhulika,description,"After 15 minutes, add sugar to it. Cover and cook it for 3 to 4 minutes minutes on low flame.Check halwa. Cook carrot open until its juices reduce. Increase flame. Check at regular intervals.",range,True,sugar,
+gajar_halwa,LKzDV94y4p4,NishaMadhulika,description,"Meanwhile crumble and add mawa till ghee separates from it. Stir and cook it on low medium flame till it changes color and is aromatic. Turn off flame, roast mawa for a while.",missing,True,ghee,
+gajar_halwa,LKzDV94y4p4,NishaMadhulika,description,To preserve carrot in sugar,missing,True,sugar,
+gajar_halwa,LKzDV94y4p4,NishaMadhulika,description,"Take any container which can be closed easily. Keep the carrot sugar cooked mix, let it cool, then keep in freezer. Use later anytime for upto 6 month.",count,True,sugar,
+gajar_halwa,LKzDV94y4p4,NishaMadhulika,description,"Take out the halwa from the freezer. Bring it to to room temperature. Then take mawa, roast it, add preserved carrot, desired dry fruits and make yummy halwa. Cook for 5 minutes and it will be ready for serving.",count,True,khoya,
+gajar_halwa,LKzDV94y4p4,NishaMadhulika,description,You can adjust the quantity of sugar as desired.,missing,True,sugar,
+gajar_halwa,LKzDV94y4p4,NishaMadhulika,description,"We had roasted the mawa,you can also take it unroasted.",missing,True,khoya,
+gajar_halwa,Itmgm80jDJA,Kabita's Kitchen,description,Sugar -1/2 cup,exact,True,sugar,cup
+gajar_halwa,Itmgm80jDJA,Kabita's Kitchen,description,Khoya/mawa - 1/4 cup,exact,True,khoya,cup
+gajar_halwa,Itmgm80jDJA,Kabita's Kitchen,description,Ghee -1/4 cup,exact,True,ghee,cup
+gajar_halwa,Itmgm80jDJA,Kabita's Kitchen,description,Cashews - 2 tbsp,exact,False,,tbsp
+gajar_halwa,Itmgm80jDJA,Kabita's Kitchen,description,Raisins -2 tbsp,exact,False,,tbsp
+gajar_halwa,Itmgm80jDJA,Kabita's Kitchen,description,Almonds - 2 tbsp,exact,False,,tbsp
+jalebi,hgwdaU-K5wk,Your Food Lab,description,WATER | पानी 80 ML,exact,False,,ml
+jalebi,hgwdaU-K5wk,Your Food Lab,description,WATER | पानी 325-350 ML,range,False,,ml
+jalebi,hgwdaU-K5wk,Your Food Lab,description,WATER | पानी 8 TBSP,exact,False,,tbsp
+jalebi,hgwdaU-K5wk,Your Food Lab,description,SUGAR | शक्कर 1 KG,exact,True,sugar,
+jalebi,hgwdaU-K5wk,Your Food Lab,description,WATER | पानी 450 ML,exact,False,,ml
+jalebi,hgwdaU-K5wk,Your Food Lab,description,ORGANIC FOOD COLOUR | आर्गेनिक फूड कलर 1/2 TSP,exact,False,,tsp
+jalebi,hgwdaU-K5wk,Your Food Lab,description,LEMON JUICE | निंबू का रस 1/2 TSP,exact,False,,tsp
+jalebi,hgwdaU-K5wk,Your Food Lab,description,"To check the consistency, dip a spatula or a spoon in the sugar syrup then remove it out & let it cool down slightly, then take some of the syrup on your index finger & pinch it using your thumb, when you pull your thumb away a string of the sugar should form & then break immediately.",vague,True,sugar,spoon
+jalebi,hgwdaU-K5wk,Your Food Lab,description,"Switch off the flame once your sugar syrup is ready, make sure you keep the sugar syrup warm when you dip fried jalebis in it.",missing,True,sugar,
+jalebi,hgwdaU-K5wk,Your Food Lab,description,OIL | तेल AS REQUIRED,vague,True,oil,
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,Refined flour – 1 cup (125 grams),exact,False,,cup
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,Urad lentil – ¼ cup (50 grams) (Soaked),exact,False,,cup
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,Sugar – 2 cup (450 grams),exact,True,sugar,cup
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,Red food colour – less than ½ pinch,missing,False,,pinch
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,Baking powder – 1/3 tsp,exact,False,,tsp
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,Ghee or refined oil – for frying,vague,True,oil,
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,Take refined flour in a big mixing bowl and to it add baking powder and red food color. Now add water in small portions and stir to dissolve all lumps. Make a smooth batter from the flour. Add ground dal to the batter and mix everything really well. The batter for making jalebis should not be too thick or too thin in consistency. We used 3/4 cup of water for making this much quantity of water. Batter for making jalebis is now ready.,exact,False,,cup
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,Sugar syrup is now ready for making the jalebis. Peel the cardamom and ground the seeds to make a fine powder.,missing,True,sugar,
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,Prepare Sugar Syrup for Jalebi,missing,True,sugar,
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,"Take sugar in any vessel to make the syrup. Add 1.5 cup water into it and let it simmer until the sugar dissolves completely. Keep stirring at every 1 to 2 minutes. Once the sugar dissolves completely, cook it for 4 to 5 minutes.",range,True,sugar,cup
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,Mix 1 tsp lemon juice to the syrup. It helps syrup from crystallization. To the syrup mix cardamom powder,exact,False,,tsp
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,Heat enough ghee in a wok for frying the jalebis. Take a cone for making the jalebis (you can even use a sauce bottle to make the jalebis or use any polythene bag).,vague,True,ghee,
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,"Place the cone inside a glass and fill it with the prepared batter. Make a small cut at the pointed end. When the oil is medium hot, press the cone slightly and move the wrist in circular motion to make round jalebis. Make as  many jalebis as possible in the wok at once.",missing,True,oil,
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,"Fry the jalebis until they get crispy and golden brown in color. When the jalebis get golden brown and crunchy, drain them out and place them on a slotted spoon, so that excess ghee drains back to the wok. Dip the fried jalebis immediately to the sugar syrup. Keep the jalebis drenched in syrup for 1 to 2  minutes so that they absorb the syrup well. Then take out the syrup and place them on a plate. Similarly, fry rest of the jalebis and drench them in the syrup.",range,True,ghee,spoon
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,The ghee for frying jalebis should be more than medium hot. If the ghee is not rightly heated then the jalebis will not puff up and  if the ghee is too hot then the jalebis will burn too quickly.,vague,True,ghee,
+jalebi,yRPoxGhRbZM,NishaMadhulika,description,Dip the jalebis in warm syrup. Jalebis will soak syrup immediately and you will get lip smacking jalebis.,missing,False,,
+poha,VKvwWeVy8Nw,Kabita's Kitchen,description,Flattened rice(Poha)-100 gm (2 cup),exact,False,,cup
+poha,VKvwWeVy8Nw,Kabita's Kitchen,description,Peanuts (moongfali/shingdana)-50 gm (1/2 cup),exact,False,,cup
+poha,VKvwWeVy8Nw,Kabita's Kitchen,description,Lemon juice-2 tbsp,exact,False,,tbsp
+poha,VKvwWeVy8Nw,Kabita's Kitchen,description,Cumin seeds-1/2 tsp,exact,False,,tsp
+poha,VKvwWeVy8Nw,Kabita's Kitchen,description,Mustard seeds-1/2 tsp,exact,False,,tsp
+poha,VKvwWeVy8Nw,Kabita's Kitchen,description,Sugar-1/2 tsp (optional),exact,True,sugar,tsp
+poha,VKvwWeVy8Nw,Kabita's Kitchen,description,Turmeric powder-1/3 tsp,exact,False,,tsp
+poha,VKvwWeVy8Nw,Kabita's Kitchen,description,Salt to taste,vague,True,salt,
+poha,VKvwWeVy8Nw,Kabita's Kitchen,description,Cooking oil-3 to 4 tbsp,range,True,oil,tbsp
+poha,UXaOuBoatUA,Sanjeev Kapoor Khazana ,description,3 tbsps oil,count,True,oil,
+poha,UXaOuBoatUA,Sanjeev Kapoor Khazana ,description,1 tsp mustard seeds,exact,False,,tsp
+poha,UXaOuBoatUA,Sanjeev Kapoor Khazana ,description,1 tsp cumin seeds,exact,False,,tsp
+poha,UXaOuBoatUA,Sanjeev Kapoor Khazana ,description,A pinch asafoetida,missing,False,,pinch
+poha,UXaOuBoatUA,Sanjeev Kapoor Khazana ,description,Salt to taste,vague,True,salt,
+poha,UXaOuBoatUA,Sanjeev Kapoor Khazana ,description,½ tsp sugar,missing,True,sugar,tsp
+poha,UXaOuBoatUA,Sanjeev Kapoor Khazana ,description,½ tsp turmeric powder,missing,False,,tsp
+poha,bYKYHNH3FEw,CookingShooking Hindi,description,Poha - 2 cup,exact,False,,cup
+poha,bYKYHNH3FEw,CookingShooking Hindi,description,Oil - 2 tbsp,exact,True,oil,tbsp
+poha,bYKYHNH3FEw,CookingShooking Hindi,description,Sarso - 1 tsp,exact,False,,tsp
+poha,bYKYHNH3FEw,CookingShooking Hindi,description,Haldi Powder - 1/2 tsp,exact,False,,tsp
+poha,bYKYHNH3FEw,CookingShooking Hindi,description,Red Chilli Powder 1/2 tsp,exact,False,,tsp
+poha,bYKYHNH3FEw,CookingShooking Hindi,description,Dhaniya Powder - 1/2 tsp,exact,False,,tsp
+poha,bYKYHNH3FEw,CookingShooking Hindi,description,Namak - 1 tsp,exact,True,salt,tsp
+poha,bYKYHNH3FEw,CookingShooking Hindi,description,Cheeni - 1 tsp,exact,True,sugar,tsp
+poha,bYKYHNH3FEw,CookingShooking Hindi,description,Amchur - 1/2 tsp,exact,False,,tsp
+poha,bYKYHNH3FEw,CookingShooking Hindi,description,Hara Dhaniya - 2 tbsp,exact,False,,tbsp
+poha,bYKYHNH3FEw,CookingShooking Hindi,description,Measuring Cup & Spoon Set - https://amzn.to/2KZBVpq,exact,False,,cup
+poha,bYKYHNH3FEw,CookingShooking Hindi,description,"Parchment Paper - much better than butter paper, and it is reusable - https://amzn.to/2MZFGvC",count,True,butter,
+poha,bYKYHNH3FEw,CookingShooking Hindi,description,Whipping Cream - https://amzn.to/2ugPB8m,count,True,cream,
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,Suji - 1 cup,exact,False,,cup
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,Besan - 1 tbsp,exact,False,,tbsp
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,Gehu ka Atta - 1 tbsp,exact,False,,tbsp
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,Namak - taste hisab se,missing,True,salt,
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,Dahi - 1 cup,exact,False,,cup
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,Baking Soda - 1/4 tsp,exact,False,,tsp
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,Oil - Dosa sekne ke lie,missing,True,oil,
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,Oil - 1 tbsp,exact,True,oil,tbsp
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,Sarso - 1 tsp,exact,False,,tsp
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,Chana dal - 1 tbsp,exact,False,,tbsp
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,Salt - to taste,vague,True,salt,
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,Haldi Powder - 1/2 tsp,exact,False,,tsp
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,Red Chilli Powder - 1/4 tsp,exact,False,,tsp
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,"Aloo - 5 (boiled, peeled, chopped)",count,False,,
+masala_dosa,sX5pYdNbmgo,CookingShooking Hindi,description,Hara Dhania - 2 tbsp,exact,False,,tbsp
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Toor Dal - 1/2 cup,exact,False,,cup
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Drumstick - 1/4 cup,exact,False,,cup
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Pumpkin - 1/4 cup,exact,False,,cup
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Potato -1/2 cup,exact,False,,cup
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Bottle gourd - 1/4 cup,exact,False,,cup
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Onion -1/2 cup,exact,False,,cup
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Tomato -1/2 cup,exact,False,,cup
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Mustard seeds - 1 tsp,exact,False,,tsp
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Asafoetida -1/4 tsp,exact,False,,tsp
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Turmeric powder - 1 tsp,exact,False,,tsp
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Red chilli powder -1 tsp,exact,False,,tsp
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Sambar Masala - 2 tbsp,exact,False,,tbsp
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Garlic - 1 tsp,exact,False,,tsp
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Cooking oil - 5 tbsp,exact,True,oil,tbsp
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,Salt to taste,vague,True,salt,
+sambar,QF4CICYuEOw,Kabita's Kitchen,description,"प्रेशर कुकर में होटल जैसा सांभर आसान तरीके से, sambar recipe, how to make sambar, best sambar recipe, sambar in pressure cooker, easy sambar recipe, sambar recipe by kabitaskitchen, how to make quick sambar, hotel sambar recipe, tiffin sambar recipe, sambhar kaise banate hai, Sambar Recipe, Hotel Sambar Recipe,",missing,False,,
+sambar,EkJC0GgY5wk,Kanak's Kitchen Hindi,description,1 cup/150 gms tuar dal,exact,False,,cup
+sambar,EkJC0GgY5wk,Kanak's Kitchen Hindi,description,salt,missing,True,salt,
+sambar,EkJC0GgY5wk,Kanak's Kitchen Hindi,description,1/4 tsp turmeric powder,exact,False,,tsp
+sambar,EkJC0GgY5wk,Kanak's Kitchen Hindi,description,2 tbsp oil,exact,True,oil,tbsp
+sambar,EkJC0GgY5wk,Kanak's Kitchen Hindi,description,1 tsp rai/mustard seeds,exact,False,,tsp
+sambar,EkJC0GgY5wk,Kanak's Kitchen Hindi,description,1/2 tsp methi seeds,exact,False,,tsp
+sambar,EkJC0GgY5wk,Kanak's Kitchen Hindi,description,1/2 tsp heeng,exact,False,,tsp
+sambar,EkJC0GgY5wk,Kanak's Kitchen Hindi,description,1/2 tsp red chilly powder,exact,False,,tsp
+sambar,EkJC0GgY5wk,Kanak's Kitchen Hindi,description,2 tsp sambhar powder,exact,False,,tsp
+sambar,EkJC0GgY5wk,Kanak's Kitchen Hindi,description,4-5 tbsp tamarind pulp,range,False,,tbsp
+sambar,EkJC0GgY5wk,Kanak's Kitchen Hindi,description,piece of gud/jaggery,missing,True,jaggery,
+sambar,UKRULeFcdCU,NishaMadhulika,description,Tuvar Dal - अरहर की दाल - 2 tbsp,exact,False,,tbsp
+sambar,UKRULeFcdCU,NishaMadhulika,description,Bottle Gourd - लौकी - 1 small piece,count,False,,
+sambar,UKRULeFcdCU,NishaMadhulika,description,Pumpkin - कद्दू - 1 small piece,count,False,,
+sambar,UKRULeFcdCU,NishaMadhulika,description,Carrot - गाजर - 1 small piece,count,False,,
+sambar,UKRULeFcdCU,NishaMadhulika,description,"Ginger - अदरक - 1 tsp, grated",exact,False,,tsp
+sambar,UKRULeFcdCU,NishaMadhulika,description,Turmeric Powder - हल्दी पाउडर - 1/2 tsp,exact,False,,tsp
+sambar,UKRULeFcdCU,NishaMadhulika,description,Salt - नमक - 1.5 tsp,exact,True,salt,tsp
+sambar,UKRULeFcdCU,NishaMadhulika,description,Sambar Masala - सांभर मसाला - 2 tbsp,exact,False,,tbsp
+sambar,UKRULeFcdCU,NishaMadhulika,description,Kashmiri Red Chilli - कश्मीरी लाल मिर्च - 1/2 tsp,exact,False,,tsp
+sambar,UKRULeFcdCU,NishaMadhulika,description,Tamarind Pulp - इमली पल्प - 2 tbsp,exact,False,,tbsp
+sambar,UKRULeFcdCU,NishaMadhulika,description,Coriander Leaves - धनिया पत्ता - 1-2 tbsp,range,False,,tbsp
+sambar,UKRULeFcdCU,NishaMadhulika,description,Oil - तेल - 1 tbsp,exact,True,oil,tbsp
+sambar,UKRULeFcdCU,NishaMadhulika,description,Mustard Seeds - सरसों - 1/2 tsp,exact,False,,tsp
+sambar,UKRULeFcdCU,NishaMadhulika,description,Fenugreek Seeds - मेथी दाना - 1/4 tsp (optional),exact,False,,tsp
+sambar,UKRULeFcdCU,NishaMadhulika,description,Asafoetida - हींग - 1/2 a pinch,exact,False,,pinch
+sambar,UKRULeFcdCU,NishaMadhulika,description,Kashmiri Red Chilli - कश्मीरी लाल मिर्च - 1 pinch,exact,False,,pinch
+sambar,UKRULeFcdCU,NishaMadhulika,description,1. Wash and soak 2 tbsp of arhar dal/Pigeon pea in lukewarm water for 20-25 minutes.,range,False,,tbsp
+sambar,UKRULeFcdCU,NishaMadhulika,description,3. Take 1 tbsp of tamarind/imli and soak it in 1/2 cup of warm water for 30 minutes.,exact,False,,cup
+sambar,UKRULeFcdCU,NishaMadhulika,description,"4. After 20 minutes, add soaked dal and 1 tbsp  of water to the mixer and grind the dal coarsely.",exact,False,,tbsp
+sambar,UKRULeFcdCU,NishaMadhulika,description,"5. Add coarsely ground dal, 1.5 cup of water, chopped veggies, 1/4 tsp of turmeric powder, 1.5 tsp of salt to the cooker.",exact,True,salt,cup
+sambar,UKRULeFcdCU,NishaMadhulika,description,"9. Add 1 more cup of water, 1/2 tsp of red chili powder, 1 tbsp of sambar masala, 1 tbsp of grated ginger, some chopped coriander, 2 tbsp of tamarind pulp to the sambar, and cook it for 3-4  minutes.",range,False,,cup
+sambar,UKRULeFcdCU,NishaMadhulika,description,11. Take the sambar out in a bowl and heat 1 tbsp of oil in the Tadka pan.,exact,True,oil,tbsp
+sambar,UKRULeFcdCU,NishaMadhulika,description,"12. Add 1/2 tsp of mustard seeds, 1/4 tsp of fenugreek seeds, 1/2 pinch hing, 10-12 curry leaves, 2-red chilies, 1-pinch red chili powder to the oil, and mix well.",range,True,oil,tsp
+kheer,E-sqwFKa7_o,NishaMadhulika,description,चावल - Rice - 2 tbsp (30 grams),exact,False,,tbsp
+kheer,E-sqwFKa7_o,NishaMadhulika,description,"दूध - Milk - 1/2 Litre, Full cream",count,True,cream,
+kheer,E-sqwFKa7_o,NishaMadhulika,description,बादाम - Almond - 1 tbsp,exact,False,,tbsp
+kheer,E-sqwFKa7_o,NishaMadhulika,description,काजू - Cashews - 1 tbsp,exact,False,,tbsp
+kheer,E-sqwFKa7_o,NishaMadhulika,description,"नारियल - Coconut - 1 tbsp,  chopped",exact,False,,tbsp
+kheer,E-sqwFKa7_o,NishaMadhulika,description,चिरोंजी - Chironji - 1 tsp,exact,False,,tsp
+kheer,E-sqwFKa7_o,NishaMadhulika,description,किशमिश - Raisins - 1 tbsp,exact,False,,tbsp
+kheer,E-sqwFKa7_o,NishaMadhulika,description,मलाई - Fresh Malai - 3 tsp,exact,True,cream,tsp
+kheer,E-sqwFKa7_o,NishaMadhulika,description,चीनी - Sugar - 1/4 Cup (50 grams),exact,True,sugar,cup
+kheer,iQkBtKDFakQ,Chef Bhupi's kitchen,description,Broken rice-30 gm,exact,False,,gm
+kheer,iQkBtKDFakQ,Chef Bhupi's kitchen,description,Sugar-70 gm,exact,True,sugar,gm
+kheer,iQkBtKDFakQ,Chef Bhupi's kitchen,description,Saffron-1 pinch,exact,False,,pinch
+kheer,iQkBtKDFakQ,Chef Bhupi's kitchen,description,Cashewnuts-1/4 cup,exact,False,,cup
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Jeera - 1 tsp,exact,False,,tsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Corn flour - 3 tbsp,exact,False,,tbsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Oil - fry ke lie,missing,True,oil,
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Ghee - fry karne ke lie,missing,True,ghee,
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Chana Dal - 1/4 cup (1-2 hour soak karna hai),range,False,,cup
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Namak - 1/2 tsp,exact,True,salt,tsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Haldi - 1/4 tsp,exact,False,,tsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Oil - 1 tsp,exact,True,oil,tsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Jeera - 1/2 tsp,exact,False,,tsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Heeng - 1/4 tsp,exact,False,,tsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Meethi Creamy Dahi ke lie,missing,False,,
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Cheeni - 50g,count,True,sugar,
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Cream (Dairy wala) - 50g,count,True,cream,
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Kala Namak - As per taste,missing,True,salt,
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,White Namak - As per taste,missing,True,salt,
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,"Sukha Amchoor - 15g (boil karke, pis ke add kiya hai)",count,False,,
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Gud - 100g,count,True,jaggery,
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Cheeni - 200g,count,True,sugar,
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,White Namak - 1/4 tsp,exact,True,salt,tsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Black salt - 1/2 tsp,exact,True,salt,tsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Saunf - 1/4 tsp,exact,False,,tsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Jeera powder - 1/4 tsp,exact,False,,tsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Garam masala - 1/16 tsp,exact,False,,tsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Black pepper powder - 1/4 tsp,exact,False,,tsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Chilli powder - 1/4 tsp,exact,False,,tsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Saunth powder - 1 tsp,exact,False,,tsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Dhania Seeds - 2 tbsp,exact,False,,tbsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Jeera - 2 tbsp,exact,False,,tbsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Saunf - 1/2 tbsp,exact,False,,tbsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Ajwain - 1/4 tbsp,exact,False,,tbsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Kali mirch - 1/2 tbsp,exact,False,,tbsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,White Salt - 1/2 tbsp,exact,True,salt,tbsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Kashmiri Chilli Powder - 1 tbsp,exact,False,,tbsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Black Salt - 1 tbsp,exact,True,salt,tbsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Chilli Flakes - 1 tbsp,exact,False,,tbsp
+aloo_tikki,STgKQ3jC8wY,CookingShooking Hindi,description,Chat Masala - 4 tbsp,exact,False,,tbsp

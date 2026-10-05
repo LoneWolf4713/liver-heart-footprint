@@ -1,0 +1,6 @@
+dish,recipe_source,recipe_stated_fat_g_100g,model_pred_p10,model_pred_p90,model_pred_mid,unmodelled_gap_g_100g,unmodelled_gap_pct,notes
+Samosa,Hebbar's Kitchen,4.5,12.4,31.99,23.5,19.0,80.9,"Recipe lists 'oil for deep frying'; without uptake model, fat is under-reported by 80.9%"
+Onion Pakora,Veg Recipes of India,1.5,14.7,26.4,20.3,18.8,92.6,Recipe states 'oil for frying as required'; fat under-reported by 92.6%
+Puri / Poori,Cook with Manali,2.0,15.6,22.3,18.9,16.9,89.4,No frying oil stated in ingredients; absorbed oil represents ~89.4% of total final fat
+Gulab Jamun,Indian Healthy Recipes,9.2,14.8,23.6,19.2,10.0,52.1,Deep fried in ghee; uptake adds 10.0g fat per 100g
+Bhatura,Hebbar's Kitchen,3.0,10.0,19.6,14.8,11.8,79.7,Deep fried leavened dough; uptake adds ~11.8g fat per 100g

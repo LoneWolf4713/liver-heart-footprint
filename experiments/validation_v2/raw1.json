@@ -1,0 +1,208 @@
+[
+ {
+  "dish": "saag",
+  "url": "https://www.indianhealthyrecipes.com/spinach-curry/",
+  "status": "OK",
+  "fetch_date": "2026-10-01",
+  "title": "Spinach Curry Recipe (Palak Curry)",
+  "yield_": "[\"2\"]",
+  "ingredients": "[\"2½ cups (150 grams)   chopped spinach ((tightly packed, palak))\", \"1½ tablespoons oil\", \"½ teaspoon cumin seeds\", \"½ cup (1 medium)  onion ((fine chopped))\", \"1 to 2  green chilies\", \"1 tablespoon ginger garlic ((½ tbsp ginger ½ tbsp garlic, or 1 tsp paste))\", \"½ teaspoon salt ((adjust to taste))\", \"⅛ teaspoon turmeric\", \"1½ tablespoon besan ((gram flour) (substitute 4 tbsps almond meal or 6 tbsps fresh/frozen coconut))\", \"¾ teaspoon garam masala ((adjust to taste))\", \"1¼ cup water ((more if needed))\", \"½ to ¾ tablespoon kasuri methi ((dried fenugreek leaves, adjust to taste))\", \"1 to 1½ tablespoon lemon juice ((for serving))\", \"¾ tablespoon ghee  (or 1 tbsp butter or oil)\", \"2 to 3  garlic cloves ((sliced))\", \"1 to 2  dried red chilies ((broken))\", \"⅛ teaspoon hing ((asafoetida))\"]"
+ },
+ {
+  "dish": "saag",
+  "url": "https://www.vegrecipesofindia.com/aloo-palak-sabzi-recipe/",
+  "status": "OK",
+  "fetch_date": "2026-10-01",
+  "title": "Palak Ki Sabji | Palak Sabzi",
+  "yield_": "[\"3\"]",
+  "ingredients": "[\"2 tablespoons oil (- any neutral flavored oil)\", \"3  potatoes (- medium-sized or 1.25 cups chopped potatoes)\", \"200 grams spinach (or 3 cups finely chopped spinach)\", \"1  onion (medium-sized or ⅓ cup chopped onions)\", \"½ teaspoon finely chopped garlic\", \"2 to 3  green chilies (- sliced or slit)\", \"¼ teaspoon turmeric powder\", \"¼ teaspoon kashmiri chilli powder (or sweet paprika)\", \"½ teaspoon coriander powder ((ground coriander))\", \"½ teaspoon cumin powder ((ground cumin))\", \"½ cup water\", \"salt (as required)\", \"¼ teaspoon garam masala\", \"3 tablespoons grated coconut (- fresh or frozen, can also add desiccated coconut)\"]"
+ },
+ {
+  "dish": "saag",
+  "url": "https://www.archanaskitchen.com/palak-sabzi-recipe-indian-spinach-curry",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "methi aloo",
+  "url": "https://hebbarskitchen.com/aloo-methi-recipe-alu-methi-recipe/",
+  "status": "OK",
+  "fetch_date": "2026-10-01",
+  "title": "Aloo Methi Recipe | Potato Fenugreek Leaves Curry",
+  "yield_": "[\"3\", \"3 Servings\"]",
+  "ingredients": "[\"1 bunch  methi / fenugreek (finely chopped)\", \"2 tbsp oil\", \"1 tsp cumin\", \"10 clove garlic (finely chopped)\", \"1 inch ginger (finely chopped)\", \"2  chilli (finely chopped)\", \"1  onion (finely chopped)\", \"3  potatoes (chopped)\", \"½ tsp turmeric\", \"1 tsp chilli powder\", \"½ tsp cumin powder\", \"½ tsp coriander powder\", \"1 tsp salt\", \"2  tomato (finely chopped)\", \"½ tsp garam masala\", \"½ tsp kala namak\"]"
+ },
+ {
+  "dish": "methi aloo",
+  "url": "https://www.indianhealthyrecipes.com/aloo-methi-recipe/",
+  "status": "OK",
+  "fetch_date": "2026-10-01",
+  "title": "Aloo Methi Recipe | Potato Fenugreek Leaves Fry",
+  "yield_": "[\"3\"]",
+  "ingredients": "[\"250 grams (2 cups)  potatoes  ((chopped to 1 inch pieces))\", \"1½ cups methi leaves (fenugreek leaves (tightly packed, roughly chopped))\", \"2 cloves garlic  ((chopped or ¾inch ginger chopped))\", \"¾ teaspoon cumin seeds ((jeera))\", \"2 tablespoons oil (or ghee (or mustard oil))\", \"½ teaspoon salt  ((adjust to taste))\", \"2  green chilies ( slit or chopped)\", \"¼ teaspoon turmeric  ((optional))\", \"1 pinch hing ((asafoetida, optional))\", \"½ to ¾  teaspoon garam masala  ((adjust to taste))\"]"
+ },
+ {
+  "dish": "methi aloo",
+  "url": "https://www.archanaskitchen.com/aloo-methi-recipe-potatoes-with-fenugreek-leaves",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "bhindi sabzi",
+  "url": "https://www.archanaskitchen.com/recipe/bhindi-tamatar-ki-sabzi-spiced-okra-with-tomatoes",
+  "status": "OK",
+  "fetch_date": "2026-10-01",
+  "title": "Bhindi Masala Recipe - Bhindi Tamatar Ki Sabzi",
+  "yield_": "\"4\"",
+  "ingredients": "[\"400 grams Bhindi (Lady Finger/Okra) \", \"1 Onion thinly sliced\", \"2 Tomatoes finely chopped\", \"1/2 teaspoon Turmeric powder (Haldi) \", \"1 teaspoon Coriander Powder (Dhania) \", \"1 teaspoon Red Chilli powder \", \" Salt to taste\"]"
+ },
+ {
+  "dish": "bhindi sabzi",
+  "url": "https://www.indianhealthyrecipes.com/bhindi-masala-recipe/",
+  "status": "OK",
+  "fetch_date": "2026-10-01",
+  "title": "Bhindi Masala Recipe (Okra Masala)",
+  "yield_": "[\"3\", \"3 people\"]",
+  "ingredients": "[\"250 grams bhindi  ((ladies finger - okra))\", \"3  tablespoons oil\", \"½  teaspoon cumin seeds ((jeera))\", \"1 cup onions ((2 medium) (finely chopped or processed) )\", \"1  green chilli slit  ((optional))\", \"¾ tablespoons ginger garlic (paste or crushed)\", \"1 cup tomatoes  ((2 medium) (deseeded &amp; chopped or pureed))\", \"½ teaspoon salt ((adjust to taste))\", \"¼  teaspoon turmeric (or haldi)\", \"½  to 1 teaspoon red chili powder\", \"¾ to 1 teaspoon garam masala\", \"¾ teaspoon coriander powder ((optional))\", \"½  teaspoon kasuri methi  ((dried fenugreek leaves) (optional))\", \"water as needed\", \"2 tablespoons coriander leaves (or cilantro (optional))\"]"
+ },
+ {
+  "dish": "bhindi sabzi",
+  "url": "https://www.vegrecipesofindia.com/bhindi-bhaji-recipe/",
+  "status": "OK",
+  "fetch_date": "2026-10-01",
+  "title": "Bhindi ki Sabji (Punjabi Style Bhindi Sabzi)",
+  "yield_": "[\"3\"]",
+  "ingredients": "[\"2 tablespoons oil\", \"¾ to 1  cup chopped onions (or 1 large onion)\", \"¾ to 1  cup chopped tomatoes (or 1 large tomato)\", \"250 grams bhindi ((okra or lady finger))\", \"1 teaspoon chopped green chilies (or serrano pepper or 1 green chilli)\", \"1 teaspoon fennel powder ((ground fennel))\", \"1 teaspoon coriander powder ((ground coriander))\", \"½ teaspoon turmeric powder ((ground turmeric))\", \"1 pinch asafetida ((hing))\", \"1 to 2 pinches dry mango powder ((amchur))\", \"¼ teaspoon garam masala\", \"salt ( as required)\", \"1 to 2 tablespoons chopped coriander leaves ((cilantro))\"]"
+ },
+ {
+  "dish": "sambar",
+  "url": "https://www.indianhealthyrecipes.com/sambar-recipe/",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "sambar",
+  "url": "https://hebbarskitchen.com/sambar-recipe-sambar-powder/",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "sambar",
+  "url": "https://www.archanaskitchen.com/sambar-recipe-south-indian-style-lentil-and-vegetable-stew",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "vegetable pilau",
+  "url": "https://www.indianhealthyrecipes.com/vegetable-pulao-recipe/",
+  "status": "OK",
+  "fetch_date": "2026-10-01",
+  "title": "Coconut Milk Pulao",
+  "yield_": "[\"2\"]",
+  "ingredients": "[\"1 cup rice ( (aged rice – basmati or any short rice))\", \"2 cups coconut milk  ((1 cup canned milk, 1 cup water, refer notes))\", \"2 tablespoons ghee ((use oil to make it vegan))\", \"1 small  onion (sliced)\", \"1  green chilli ((slit or chopped, skip for kids))\", \"¼ cup carrot ((1 medium))\", \"¼  cup potato  ((1 medium))\", \"¼  cup green beans ((6 to 7))\", \"¼ cup green peas ( (fresh or frozen))\", \"1 to 1 ½ teaspoon ginger garlic paste\", \"¼ cup mint leaves  (chopped finely (handful pudina leaves))\", \"½ to ¾ teaspoon salt ((adjust to taste))\", \"10  cashewnuts ((20 split, optional))\", \"1  bay leaf\", \"3  green cardamoms\", \"4  cloves\", \"1 inch cinnamon\", \"1  star anise\", \"¾ teaspoon shahi jeera ( (substitute with cumin seeds))\", \"1  strand mace\", \"1  black cardamom\", \"½ teaspoon crushed fennel seeds ( (optional))\", \"¼ teaspoon crushed black pepper ( (optional))\"]"
+ },
+ {
+  "dish": "vegetable pilau",
+  "url": "https://hebbarskitchen.com/veg-pulao-recipe-vegetable-pulav/",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "vegetable pilau",
+  "url": "https://www.archanaskitchen.com/vegetable-pulao-recipe",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "chicken biryani",
+  "url": "https://www.indianhealthyrecipes.com/chicken-biryani-recipe/",
+  "status": "OK",
+  "fetch_date": "2026-10-01",
+  "title": "Chicken Biryani Recipe",
+  "yield_": "[\"4\", \"4 people\"]",
+  "ingredients": "[\"½ kg (1.1 lbs)  chicken ((skinless bone-in or boneless, large pieces such as thighs, drumsticks, legs or mix of all))\", \"3 tablespoons plain yogurt ((curd or dahi))\", \"1¼ tablespoons ginger garlic paste ((1 inch ginger &amp; 4 garlic cloves crushed))\", \"½ to ¾ teaspoon salt ((adjust to tase))\", \"¼ teaspoon turmeric\", \"½ to 1 teaspoon red chilli powder  ((or paprika) (use less spicy variety))\", \"½ to 1 tablespoon garam masala ((or biryani masala) (Refer notes))\", \"1 tablespoon Lemon juice  ((optional))\", \"1  bay leaf  ((tej patta))\", \"4  green cardamoms ((choti elaichi))\", \"6  cloves ((lavang))\", \"1 inch cinnamon ((dalchini))\", \"1  star anise ((chakri phool ))\", \"¾ teaspoon shahi jeera ((caraway seeds) (substitute with cumin))\", \"1 strand mace  ((javitri, omit if you don&#39;t like))\", \"2 cups basmati rice ((aged rice only))\", \"2 tablespoon ghee (or Oil)\", \"1 large onion  (sliced thinly)\", \"¼ to ½ cup mint leaves (chopped fine (about 15 leaves))\", \"1  green chili ((slit or chopped))\", \"¼ cup plain yogurt ((Indian curd))\", \"¼ to ½ teaspoon red chili powder  ((optional, for heat))\", \"1 teaspoon garam masala ((or biryani masala))\", \"3 cups water ((3½ cups for pot) (refer notes, more if needed ))\", \"¾ teaspoon salt ((to stir in water))\", \"2 tablespoon fried onions ((optional))\", \"1 pinch saffron ((optional)(soaked in 2 tbsps hot milk))\"]"
+ },
+ {
+  "dish": "chicken biryani",
+  "url": "https://hebbarskitchen.com/chicken-biryani-recipe/",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "chicken biryani",
+  "url": "https://www.archanaskitchen.com/hyderabadi-chicken-dum-biryani-recipe",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "chicken tikka masala",
+  "url": "https://www.indianhealthyrecipes.com/chicken-tikka-masala/",
+  "status": "OK",
+  "fetch_date": "2026-10-01",
+  "title": "Chicken Tikka Masala Recipe",
+  "yield_": "[\"6\"]",
+  "ingredients": "[\"1½ lbs. (700 grams)  chicken boneless ((Preferably thighs, or breasts))\", \"½ cup (120 ml)  Greek yogurt ((hung curd))\", \"½ to 1 teaspoon Kashmiri red chili powder ((use less for low heat, use 1½ teaspoons for extra heat))\", \"1 teaspoon garam masala\", \"¼ teaspoon turmeric\", \"1 teaspoon coriander powder\", \"½ teaspoon cumin powder\", \"½ teaspoon salt\", \"1 tablespoon lemon juice\", \"1 tablespoon kasuri methi\", \"1 tablespoon ginger garlic paste ((or ¾ tbsp grated ginger + ¾ tbsp grated garlic))\", \"1 tablespoon oil ((mustard oil if you have))\", \"3 tablespoons oil ((or ghee))\", \"1½ cups (180 grams)  onions  ((fine chopped, 1x - 1 large or 2 medium))\", \"1  green chilli ((optional))\", \"1 teaspoon salt\", \"1 tablespoon ginger garlic paste ((or ¾ tbsp grated ginger + ¾ tbsp grated garlic))\", \"½ to 1 teaspoon Kashmiri red chili powder ((can use up to 1 tablespoon for extra heat))\", \"2 teaspoons garam masala ((adjust to taste))\", \"1 tablespoon coriander powder\", \"1 to 1½ teaspoon cumin powder\", \"1 to 2 teaspoons sugar ((adjust to taste))\", \"1 lb. (450 grams)   tomatoes ((pureed/chopped or 10 oz. (1¼ cup) tomato puree/ passata or 14 oz can peeled tomatoes, read notes))\", \"1  cup hot water\", \"1 tablespoon kasuri methi ((dried fenugreek leaves))\", \"½ cup heavy cream/whipping cream ((or 1x - ⅓ cup whole raw cashews, 30, refer notes))\", \"3 tablespoons heavy cream ((or any cream))\", \"3 tablespoons coriander leaves ((fine chopped))\"]"
+ },
+ {
+  "dish": "chicken tikka masala",
+  "url": "https://www.pipingpotcurry.com/chicken-tikka-masala/",
+  "status": "OK",
+  "fetch_date": "2026-10-01",
+  "title": "Chicken Tikka Masala Pasta Recipe",
+  "yield_": "[\"4\"]",
+  "ingredients": "[\"1  lb Chicken thighs (boneless, cut into 1-2 inch pieces )\", \"1/4 cup Yogurt (thick )\", \"3/4 tablespoon Ginger  (grated)\", \"3/4 tablespoon Garlic (minced)\", \"1 tablespoon Lime juice\", \"1 teaspoon Kashmiri red chili powder (mild, adjust to taste )\", \"1/2 teaspoon Ground Turmeric (Haldi powder)\", \"1 teaspoon Garam masala\", \"1 teaspoon Salt  (adjust to taste)\", \"1/2 teaspoon Garam masala\", \"1 teaspoon Kashmiri red chili powder (mild, adjust to taste)\", \"1/2 teaspoon Ground Turmeric (Haldi powder)\", \"2 tablespoon Ghee or Oil  (divided)\", \"1 cup Onion  (finely diced)\", \"1 teaspoon  Ginger  (grated )\", \"1 teaspoon Garlic (minced )\", \"2 cup Water\", \"8 ounces Spaghetti  (or another pasta )\", \"1 cup Tomato Puree (canned)\", \"1/2 cup Heavy cream (or more for creamier texture)\", \"1 tablespoon Dried Fenugreek leaves (Kasoori Methi) (optional)\", \"Lime juice  (to drizzle )\", \"Cilantro  (to garnish)\"]"
+ },
+ {
+  "dish": "chicken tikka masala",
+  "url": "https://www.cookwithmanali.com/chicken-tikka-masala/",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "chicken korma",
+  "url": "https://www.indianhealthyrecipes.com/chicken-korma-recipe/",
+  "status": "OK",
+  "fetch_date": "2026-10-01",
+  "title": "Chicken Korma Recipe",
+  "yield_": "[\"4\"]",
+  "ingredients": "[\"½ kg (1.2 lbs)  chicken  ((bone-in preferred but boneless is ok) )\", \"¼ teaspoon ground turmeric\", \"3 tablespoons curd ((plain yogurt or coconut milk))\", \"1 tablespoon ginger garlic paste ((or ½ tbsps. each fine grated))\", \"¾ to 1 teaspoon garam masala  (or korma masala)\", \"1 to 1¼ teaspoon Kashmiri red chili powder  ((less spicy variety, minimum ½ tsp))\", \"½ teaspoon sea salt\", \"1½ tablespoon oil or ghee\", \"2  green cardamoms\", \"1 cup onions (sliced (2 medium yellow onions))\", \"10  whole cashew nuts (or almonds (or use 5 each))\", \"¼ cup curd ((plain yogurt or coconut milk))\", \"1 to 2 tablespoon oil or ghee ((use as per your preference))\", \"1 small  Indian bay leaf ((optional))\", \"4  cloves ((optional))\", \"2 inch cinnamon ((optional))\", \"1  cardamom ((optional))\", \"1 to 2   green chilies (slit or chopped (optional, Thai/Indian or serrano peppers))\", \"½ cup hot water ((more if needed))\", \"¼ teaspoon salt  ((adjust to taste))\", \"½ to ¾ teaspoon garam masala\", \"1½ teaspoon coriander powder ((ground coriander))\", \"¼ teaspoon Kashmiri red chili powder  ((optional, for color))\", \"2 tablespoons coriander leaves ((cilantro) fine chopped to garnish)\"]"
+ },
+ {
+  "dish": "chicken korma",
+  "url": "https://www.pipingpotcurry.com/chicken-korma/",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "chicken korma",
+  "url": "https://www.cookwithmanali.com/chicken-korma/",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "chicken jalfrezi",
+  "url": "https://www.indianhealthyrecipes.com/chicken-jalfrezi/",
+  "status": "OK",
+  "fetch_date": "2026-10-01",
+  "title": "Chicken Jalfrezi Recipe (Restaurant Style)",
+  "yield_": "[\"4\", \"4 to 5\"]",
+  "ingredients": "[\"500 to 600 grams (1.25 lbs)  Boneless chicken\", \"2 teaspoons lemon juice\", \"¼ teaspoon salt\", \"¼ teaspoon black pepper  ((crushed/ powder))\", \"½ teaspoons Kashmiri red chili powder\", \"2 tablespoons oil\", \"¾ cup (100 grams)  onions ((fine chopped, 1 medium))\", \"½ tablespoon (1 inch)  ginger grated (( or paste))\", \"½ to ¾ tablespoon (4 to 5 medium cloves)  garlic grated (( or paste))\", \"1 teaspoon Kashmiri red chilli powder\", \"¾ to 1 teaspoon garam masala\", \"1 to 1 ½ teaspoon coriander powder\", \"½ teaspoon cumin powder\", \"½ teaspoon fennel powder ( (optional, read notes))\", \"¼ teaspoon turmeric\", \"1 teaspoon sugar  ((use if using passata))\", \"¾ cup tomato puree  ((- passata or 1¼ cups tomatoes chopped &amp; pureed, 2 large, 250 grams))\", \"1 tablespoon kasuri methi\", \"¼ cup hot water ( (read notes))\", \"1 to 2 tablespoon ghee (or oil)\", \"1  dried red chilli ((optional))\", \"1  green chilli ((deseed &amp; slit))\", \"1 inch ginger juliennes  ((optional))\", \"½ cup (45 grams)  onions  ((diced, layers separated,1 small))\", \"1½ cups (130 to 140 grams)  bell pepper ( (diced - green, red, yellow, orange))\", \"1 tablespoon soya sauce (Optional - or tamari or ½ tablespoon Worcestershire sauce.)\", \"2 tablespoons coriander leaves  (fine chopped (optional, to garnish))\"]"
+ },
+ {
+  "dish": "chicken jalfrezi",
+  "url": "https://www.pipingpotcurry.com/chicken-jalfrezi/",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "chicken jalfrezi",
+  "url": "https://www.cookwithmanali.com/chicken-jalfrezi/",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "prawn bhuna",
+  "url": "https://www.indianhealthyrecipes.com/prawn-masala/",
+  "status": "HTTP_404"
+ },
+ {
+  "dish": "prawn bhuna",
+  "url": "https://www.pipingpotcurry.com/shrimp-masala/",
+  "status": "OK",
+  "fetch_date": "2026-10-01",
+  "title": "Shrimp Masala (Indian Shrimp Curry)",
+  "yield_": "[\"4\"]",
+  "ingredients": "[\"1 pound Shrimp (cleaned, defrost before cooking)\", \"1 tablespoon Lime juice\", \"1 teaspoon Kashmiri Red Chili powder (mild, adjust to taste)\", \"1/2 teaspoon Ground Turmeric (Haldi powder)\", \"1/2 teaspoon Salt (adjust to taste)\", \"2 tablespoon Oil\", \"1 teaspoon Mustard Seeds (Rai)\", \"8-10  Curry Leaves\", \"1  Green chili  (optional )\", \"1 cup Onion (thinly sliced  )\", \"1/2 tablespoon Ginger  (minced  )\", \"1/2 tablespoon Garlic (minced)\", \"3/4 cup  Tomato  (diced )\", \"1/4 cup Water\", \"Cilantro  (to garnish)\", \"1/2 teaspoon Garam masala\", \"1/2 teaspoon Kashmiri red chili powder  (adjust to taste)\", \"1/2 teaspoon Ground Turmeric (Haldi powder)\", \"1/2  teaspoon Salt  (adjust to taste )\", \"1/2 teaspoon Black Pepper (freshly crushed )\"]"
+ },
+ {
+  "dish": "prawn bhuna",
+  "url": "https://www.cookwithmanali.com/prawn-masala/",
+  "status": "HTTP_404"
+ }
+]

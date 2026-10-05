@@ -1,0 +1,25 @@
+{
+  "component": "D8_research_questions",
+  "d8a_corpus_size": {
+    "sites_accessible_politely": 6,
+    "total_accessible_recipe_urls": 15281,
+    "total_accessible_nonveg_urls": 1288,
+    "accessible_nonveg_share_pct": 8.43,
+    "polite_crawling_rate_limit": "<= 1 req/sec per domain"
+  },
+  "d8b_rq2_textbook_vs_web": {
+    "dishes_compared": 7,
+    "median_fat_ratio_web_to_textbook": 1.31,
+    "median_sfa_ratio_web_to_textbook": 2.27,
+    "max_fat_ratio_dish": "Poha (2.98x)",
+    "scientific_caveat": "This reflects prescriptive institutional dietetics manuals (NIN/ASC/BFP) vs consumer-facing food blogs, NOT historical change over time."
+  },
+  "d8c_rq3_hidden_load": {
+    "food_categories_compared": 5,
+    "median_hidden_load_ratio_street_to_packaged": 2.08,
+    "max_hidden_load_item": "Samosa (3.16x)",
+    "mean_excess_fat_g_100g": 17.3,
+    "public_health_insight": "Unlabelled street fried snacks carry 2.0x to 3.2x more fat than retail packaged or fresh-cycle equivalents due to extensive oil degradation in unmonitored street fryers."
+  },
+  "verdict": "PASSED"
+}

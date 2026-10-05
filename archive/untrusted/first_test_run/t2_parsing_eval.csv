@@ -1,0 +1,101 @@
+raw_ingredient_line,is_liver_relevant,gold_name,gold_qty,gold_unit,gold_grams,parsed_name,parsed_qty,parsed_unit,auto_grams_240,auto_grams_200,name_correct,qty_correct,pct_error_240,pct_error_200,indb_match,matched_indb_food,failure_type
+salt (namak) to taste,True,salt namak,0.5,to_taste,3.0,salt namak,,,2.5,2.5,True,True,16.7,16.7,True,salt,Vague measurement
+1 tablespoon ghee,True,ghee,1.0,tbsp,13.7,ghee,1.0,tablespoon,13.7,13.7,True,True,0.0,0.0,True,"ghee, butter",None
+oil for deep-frying,True,oil for deep frying,1.0,count,10.0,oil for deep frying,,,25.0,25.0,True,False,150.0,150.0,True,"oil, sunflower",None
+salt (namak) to taste,True,salt namak,0.5,to_taste,3.0,salt namak,,,2.5,2.5,True,True,16.7,16.7,True,salt,Vague measurement
+"2 to 3 tablespoons  butter (- for topping, add more for a richer taste)",True,to butter for topping add more for a richer taste,2.0,tbsp,28.8,to butter for topping add more for a richer taste,2.0,tablespoons,28.8,28.8,True,True,0.0,0.0,True,"butter, unsalted",None
+salt (namak) to taste,True,salt namak,0.5,to_taste,3.0,salt namak,,,2.5,2.5,True,True,16.7,16.7,True,salt,Vague measurement
+salt (– as required),True,salt –,0.5,to_taste,3.0,salt –,,,25.0,25.0,True,False,733.3,733.3,True,salt,None
+¾ teaspoon salt,True,¾ salt,1.0,tsp,6.0,¾ salt,,teaspoon,6.0,6.0,True,False,0.0,0.0,True,salt,None
+Salt to taste,True,salt,0.5,to_taste,3.0,salt,,,2.5,2.5,True,True,16.7,16.7,True,salt,Vague measurement
+Salt to taste,True,salt,0.5,to_taste,3.0,salt,,,2.5,2.5,True,True,16.7,16.7,True,salt,Vague measurement
+Oil for deep frying,True,oil for deep frying,1.0,count,10.0,oil for deep frying,,,25.0,25.0,True,False,150.0,150.0,True,"oil, sunflower",None
+2 tbsp oil,True,oil,2.0,tbsp,27.6,oil,2.0,tbsp,27.6,27.6,True,True,0.0,0.0,True,"oil, sunflower",None
+1 tablespoon butter,True,butter,1.0,tbsp,14.4,butter,1.0,tablespoon,14.4,14.4,True,True,0.0,0.0,True,"butter, unsalted",None
+½ to ¾ teaspoon salt ((adjust to tase)),True,½ to ¾ salt adjust to tase,1.0,tsp,6.0,½ to ¾ salt adjust to tase,,teaspoon,6.0,6.0,True,False,0.0,0.0,True,salt,None
+2 tbsp  fresh cream,True,cream,2.0,tbsp,30.3,cream,2.0,tbsp,30.3,30.3,True,True,0.0,0.0,True,"ice cream, dairy, vanilla, soft scoop",None
+4 tsp butter,True,butter,4.0,tsp,19.2,butter,4.0,tsp,19.2,19.2,True,True,0.0,0.0,True,"butter, unsalted",None
+½ teaspoon sugar ((optional)),True,½ sugar optional,1.0,tsp,4.2,½ sugar optional,,teaspoon,4.2,4.2,True,False,0.0,0.0,True,"sugar, white",None
+½ cup (60 grams) maida / plain flour,True,½ grams maida / plain flour,60.0,cup,7920.0,½ grams maida / plain flour,60.0,cup,7920.0,6600.0,True,True,0.0,16.7,True,"yogurt, whole milk, plain",None
+Salt to taste,True,salt,0.5,to_taste,3.0,salt,,,2.5,2.5,True,True,16.7,16.7,True,salt,Vague measurement
+3 to 4 tablespoons oil (or ghee - I used sunflower oil),True,to oil or ghee i used sunflower oil,3.0,tbsp,41.4,to oil or ghee i used sunflower oil,3.0,tablespoons,41.4,41.4,True,True,0.0,0.0,True,"oil, sunflower",None
+1 tbsp  ghee,True,ghee,1.0,tbsp,13.7,ghee,1.0,tbsp,13.7,13.7,True,True,0.0,0.0,True,"ghee, butter",None
+1 tsp butter,True,butter,1.0,tsp,4.8,butter,1.0,tsp,4.8,4.8,True,True,0.0,0.0,True,"butter, unsalted",None
+1 teaspoon oil (to mix in the bhaji batter),True,oil to mix in the bhaji batter,1.0,tsp,4.6,oil to mix in the bhaji batter,1.0,teaspoon,4.6,4.6,True,True,0.0,0.0,True,"oil, sunflower",None
+salt to taste,True,salt,0.5,to_taste,3.0,salt,,,2.5,2.5,True,True,16.7,16.7,True,salt,Vague measurement
+4 teaspoons Salt,True,salt,4.0,tsp,24.0,salt,4.0,teaspoons,24.0,24.0,True,True,0.0,0.0,True,salt,None
+a pinch of sugar,True,a of sugar,1.0,pinch,0.5,a of sugar,,pinch,0.5,0.5,True,False,0.0,0.0,True,"sugar, white",None
+2 cups  maida (plain flour),True,maida plain flour,2.0,cup,264.0,maida plain flour,2.0,cups,264.0,220.0,True,True,0.0,16.7,True,"yogurt, whole milk, plain",None
+2 tablespoons Butter (Salted),True,butter salted,2.0,tbsp,28.8,butter salted,2.0,tablespoons,28.8,28.8,True,True,0.0,0.0,True,"butter, unsalted",None
+¾ teaspoon Salt  ((adjust to taste)),True,¾ salt adjust,0.5,to_taste,3.0,¾ salt adjust,,teaspoon,6.0,6.0,True,True,100.0,100.0,True,salt,Vague measurement
+¼ teaspoon salt ((adjust to taste)),True,¼ salt adjust,0.5,to_taste,3.0,¼ salt adjust,,teaspoon,6.0,6.0,True,True,100.0,100.0,True,salt,Vague measurement
+2 to 3 tablespoons ghee  ((or oil)),True,to ghee or oil,2.0,tbsp,27.6,to ghee or oil,2.0,tablespoons,27.6,27.6,True,True,0.0,0.0,True,"oil, sunflower",None
+1 tsp ghee / clarified butter,True,ghee / clarified butter,1.0,tsp,4.5,ghee / clarified butter,1.0,tsp,4.5,4.5,True,True,0.0,0.0,True,"butter, unsalted",None
+½ tsp salt,True,½ salt,1.0,tsp,6.0,½ salt,,tsp,6.0,6.0,True,False,0.0,0.0,True,salt,None
+"¼ to 1 teaspoon sugar (– optional, add as required depending on the sourness of the tomatoes)",True,¼ to sugar – optional add depending on the sourness of the tomatoes,0.5,to_taste,2.1,¼ to sugar – optional add depending on the sourness of the tomatoes,1.0,teaspoon,4.2,4.2,True,False,100.0,100.0,True,"sugar, white",None
+2 tsp melted ghee,True,melted ghee,2.0,tsp,9.1,melted ghee,2.0,tsp,9.1,9.1,True,True,0.0,0.0,True,"ghee, butter",None
+1 cup (200 grams) Khoya ((mawa)),True,grams khoya mawa,1.0,cup,240.0,grams khoya mawa,1.0,cup,240.0,200.0,True,True,0.0,16.7,True,khoya,None
+1 teaspoon Salt as required,True,salt,0.5,to_taste,3.0,salt,1.0,teaspoon,6.0,6.0,True,False,100.0,100.0,True,salt,None
+1 ¼ to 1 ½ cups Sugar,True,¼ to ½ sugar,1.0,cup,204.0,¼ to ½ sugar,1.0,cups,204.0,170.0,True,True,0.0,16.7,True,"sugar, white",None
+1 tbsp ghee,True,ghee,1.0,tbsp,13.7,ghee,1.0,tbsp,13.7,13.7,True,True,0.0,0.0,True,"ghee, butter",None
+3 tablespoons butter (- salted or unsalted),True,butter salted or unsalted,3.0,tbsp,43.2,butter salted or unsalted,3.0,tablespoons,43.2,43.2,True,True,0.0,0.0,True,"butter, unsalted",None
+1 tablespoon butter  ((to toast pav)),True,butter to toast pav,1.0,tbsp,14.4,butter to toast pav,1.0,tablespoon,14.4,14.4,True,True,0.0,0.0,True,"butter, unsalted",None
+1 tbsp  oil,True,oil,1.0,tbsp,13.8,oil,1.0,tbsp,13.8,13.8,True,True,0.0,0.0,True,"oil, sunflower",None
+¾ teaspoon salt (or add as required),True,¾ salt or add,0.5,to_taste,3.0,¾ salt or add,,teaspoon,6.0,6.0,True,False,100.0,100.0,True,salt,None
+2 tbsp oil,True,oil,2.0,tbsp,27.6,oil,2.0,tbsp,27.6,27.6,True,True,0.0,0.0,True,"oil, sunflower",None
+1 tsp sugar,True,sugar,1.0,tsp,4.2,sugar,1.0,tsp,4.2,4.2,True,True,0.0,0.0,True,"sugar, white",None
+⅓ cup (80 to 100 ml)  heavy cream ( or whipping cream (divided)),True,⅓ to ml heavy cream or whipping cream divided,80.0,cup,19392.0,⅓ to ml heavy cream or whipping cream divided,80.0,cup,19392.0,16160.0,True,True,0.0,16.7,True,"ice cream, dairy, vanilla, soft scoop",None
+1 teaspoon Honey,True,honey,1.0,tsp,5.0,honey,1.0,teaspoon,5.0,5.0,True,True,0.0,0.0,True,honey,None
+10 to 12 tablespoons sugar  (or raw sugar - 180 to 190 grams - add as required),True,to sugar or raw sugar to grams add,0.5,to_taste,2.1,to sugar or raw sugar to grams add,10.0,tablespoons,127.5,127.5,True,False,5900.0,5900.0,True,"sugar, white",None
+salt (as required),True,salt,0.5,to_taste,3.0,salt,,,25.0,25.0,True,False,733.3,733.3,True,salt,None
+salt (as required),True,salt,0.5,to_taste,3.0,salt,,,25.0,25.0,True,False,733.3,733.3,True,salt,None
+"1/4 cup  milk ( whole Buffalo, 6.5% fat )",False,milk whole buffalo % fat,0.25,cup,61.8,milk whole buffalo % fat,0.25,cup,61.8,51.5,True,True,0.0,16.7,True,"milk, whole, cow",None
+1 tsp ginger garlic paste,False,ginger garlic,1.0,tsp,5.0,ginger garlic,1.0,tsp,5.0,5.0,True,True,0.0,0.0,True,"ginger, fresh (zingiber officinale)",None
+1 cup  rajma (kidney beans),False,rajma kidney beans,1.0,cup,240.0,rajma kidney beans,1.0,cup,240.0,200.0,True,True,0.0,16.7,True,"beansprouts, mung, boiled in unsalted water",None
+10  ladi pav,False,ladi pav,10.0,count,100.0,ladi pav,10.0,,250.0,250.0,True,True,150.0,150.0,True,poppy seeds (papaver somniferum),Count unit
+⅛ tsp turmeric powder / haldi / yellow food colour (optional),False,⅛ turmeric / haldi / yellow food colour optional,1.0,tsp,5.0,⅛ turmeric / haldi / yellow food colour optional,,tsp,5.0,5.0,True,False,0.0,0.0,True,turmeric powder (curcuma domestica),None
+2 inch Ginger finely chopped,False,inch ginger,2.0,count,20.0,inch ginger,2.0,,50.0,50.0,True,True,150.0,150.0,True,"ginger, fresh (zingiber officinale)",Count unit
+2  cloves,False,cloves,2.0,count,3.0,cloves,2.0,,50.0,50.0,True,True,1566.7,1566.7,True,cloves (syzygium aromaticum),Count unit
+2  tablespoon corn flour ((cornstarch or rice flour) or (poha powder if pan frying) (2 tbsps more if needed)),False,corn flour cornstarch or rice flour or poha if pan frying tbsps more if needed,2.0,tbsp,16.5,corn flour cornstarch or rice flour or poha if pan frying tbsps more if needed,2.0,tablespoon,16.5,16.5,True,True,0.0,0.0,True,paneer,None
+¾ to 1 cup onions (thinly sliced ),False,¾ to onions thinly,1.0,cup,240.0,¾ to onions thinly,1.0,cup,240.0,200.0,True,True,0.0,16.7,True,"spring onions, bulbs and tops, raw",None
+"1 inch ginger (– peeled and julienned, reserve a few for garnish)",False,inch ginger – peeled and julienned reserve a few for garnish,1.0,count,10.0,inch ginger – peeled and julienned reserve a few for garnish,1.0,,25.0,25.0,True,True,150.0,150.0,True,"lemons, flesh only, raw, weighed with peel and pips",Count unit
+300 grams Boneless chicken cut into pieces,False,boneless chicken cut into pieces,300.0,g,300.0,boneless chicken cut into pieces,300.0,grams,300.0,300.0,True,True,0.0,0.0,True,"chicken, poultry, breast, skinless",None
+1 cup Homemade tomato puree,False,homemade tomato puree,1.0,cup,240.0,homemade tomato puree,1.0,cup,240.0,200.0,True,True,0.0,16.7,True,"tomato, ripe, hybrid (solanum lycopersicum)",None
+generous pinch hing / asafoetida,False,generous hing / asafoetida,1.0,pinch,0.5,generous hing / asafoetida,,pinch,0.5,0.5,True,False,0.0,0.0,True,asafoetida (ferula assa-foetida),None
+1 inch cinnamon,False,inch cinnamon,1.0,count,10.0,inch cinnamon,1.0,,25.0,25.0,True,True,150.0,150.0,True,"cinnamon, ground",Count unit
+"1 to 1½ teaspoon coriander powder  ((optional, adjust to taste))",False,to 1½ coriander optional adjust,0.5,to_taste,2.5,to 1½ coriander optional adjust,1.0,teaspoon,5.0,5.0,True,False,100.0,100.0,True,coriander leaves (coriandrum sativum),Vague measurement
+1 cup Soybeans (Whole Soya dal),False,soybeans whole soya dal,1.0,cup,240.0,soybeans whole soya dal,1.0,cup,240.0,200.0,True,True,0.0,16.7,True,"milk, whole, cow",None
+2 cups Idli Rice,False,idli rice,2.0,cup,480.0,idli rice,2.0,cups,480.0,400.0,True,True,0.0,16.7,True,rice flakes (oryza sativa ),None
+"1 to 2 tablespoons coriander leaves (– chopped, (cilantro), optional)",False,to coriander – cilantro optional,1.0,tbsp,15.0,to coriander – cilantro optional,1.0,tablespoons,15.0,15.0,True,True,0.0,0.0,True,coriander leaves (coriandrum sativum),None
+2 cups/300 grams or 4 to 5 medium-sized  tomato (– diced),False,/ grams or to medium sized tomato – diced,2.0,cup,480.0,/ grams or to medium sized tomato – diced,2.0,cups,480.0,400.0,True,True,0.0,16.7,True,"tomato, ripe, hybrid (solanum lycopersicum)",None
+1/2 cup thinly sliced onions,False,thinly onions,0.5,cup,120.0,thinly onions,0.5,cup,120.0,100.0,True,True,0.0,16.7,True,"spring onions, bulbs and tops, raw",None
+½ teaspoon carom seeds ((ajwain or vaamu ) (skip if you don&#x27;t have)),False,½ carom ajwain or vaamu skip if you don&#x27;t have,1.0,tsp,5.0,½ carom ajwain or vaamu skip if you don&#x27;t have,,teaspoon,5.0,5.0,True,False,0.0,0.0,True,ajwain seed whole organic spices,None
+2 tbsp peanut,False,peanut,2.0,tbsp,30.0,peanut,2.0,tbsp,30.0,30.0,True,True,0.0,0.0,True,"peanuts, dry roasted",None
+2 tsp  chole masala,False,chole masala,2.0,tsp,10.0,chole masala,2.0,tsp,10.0,10.0,True,True,0.0,0.0,True,garam masala,None
+2  large tomatoes (finely chopped),False,large tomatoes,2.0,count,180.0,large tomatoes,2.0,,50.0,50.0,True,True,72.2,72.2,True,"tomatoes, cherry, raw",Count unit
+6 sprig Coriander (Dhania) Leaves chopped,False,sprig coriander dhania,6.0,count,60.0,sprig coriander dhania,6.0,,150.0,150.0,True,True,150.0,150.0,True,coriander leaves (coriandrum sativum),Count unit
+½ cup green peas ((boiled or frozen)),False,½ green peas boiled or frozen,1.0,cup,220.8,½ green peas boiled or frozen,,cup,220.8,184.0,True,False,0.0,16.7,True,"mango, green, raw (mangifera indica)",None
+2 tbsp finely chopped coriander (dhania),False,coriander dhania,2.0,tbsp,30.0,coriander dhania,2.0,tbsp,30.0,30.0,True,True,0.0,0.0,True,coriander leaves (coriandrum sativum),None
+1 tablespoon Whole Almonds (Badam) blanched and peeled,False,whole almonds badam blanched and peeled,1.0,tbsp,15.0,whole almonds badam blanched and peeled,1.0,tablespoon,15.0,15.0,True,True,0.0,0.0,True,"milk, whole, cow",None
+2 tablespoons peanuts,False,peanuts,2.0,tbsp,30.0,peanuts,2.0,tablespoons,30.0,30.0,True,True,0.0,0.0,True,"peanuts, dry roasted",None
+½ to 1 teaspoon dry mango powder ((amchur powder)),False,½ to dry mango amchur,1.0,tsp,5.0,½ to dry mango amchur,1.0,teaspoon,5.0,5.0,True,True,0.0,0.0,True,"mango, green, raw (mangifera indica)",None
+¾ teaspoon shahi jeera ((caraway seeds) (substitute with cumin)),False,¾ shahi jeera caraway substitute with cumin,1.0,tsp,5.0,¾ shahi jeera caraway substitute with cumin,,teaspoon,5.0,5.0,True,False,0.0,0.0,True,"lemons, flesh only, raw, weighed with peel and pips",None
+2  chilli (finely chopped),False,chilli,2.0,count,10.0,chilli,2.0,,50.0,50.0,True,True,400.0,400.0,True,"chillies, green - all varieties (capsicum annum)",Count unit
+1 teaspoon Cumin seeds (Jeera),False,cumin jeera,1.0,tsp,5.0,cumin jeera,1.0,teaspoon,5.0,5.0,True,True,0.0,0.0,True,cumin seeds (cuminum cyminum),None
+"1 to 1½ cups chopped vegetables (– like okra, french beans, potatoes, small round brinjals, pumpkin)",False,to 1½ vegetables – like okra french beans potatoes small round brinjals pumpkin,1.0,cup,240.0,to 1½ vegetables – like okra french beans potatoes small round brinjals pumpkin,1.0,cups,240.0,200.0,True,True,0.0,16.7,True,"cinnamon, ground",None
+4  green cardamoms ((choti elaichi)),False,green cardamoms choti elaichi,4.0,count,2.0,green cardamoms choti elaichi,4.0,,100.0,100.0,True,True,4900.0,4900.0,True,"mango, green, raw (mangifera indica)",Count unit
+"1  onion (- medium to large, finely chopped)",False,onion medium to large,1.0,count,80.0,onion medium to large,1.0,,25.0,25.0,True,True,68.8,68.8,True,"onion, big (allium cepa)",Count unit
+1/8 tsp  cardamom (elaichi) powder,False,cardamom elaichi,0.125,tsp,0.6,cardamom elaichi,0.125,tsp,0.6,0.6,True,True,0.0,0.0,True,"cardamom, green (elettaria cardamomum)",None
+1 Tomato pureed,False,tomato pureed,1.0,count,90.0,tomato pureed,1.0,,25.0,25.0,True,True,72.2,72.2,True,"tomato, ripe, hybrid (solanum lycopersicum)",Count unit
+½  cup curd ((plain yogurt) (or water if fermenting batter) (120 ml)),False,½ curd plain yogurt or water if fermenting batter ml,120.0,cup,28800.0,½ curd plain yogurt or water if fermenting batter ml,120.0,cup,28800.0,24000.0,True,True,0.0,16.7,True,"water, distilled",None
+1 teaspoon Chana dal (Bengal Gram Dal),False,chana dal bengal gram dal,1.0,tsp,5.0,chana dal bengal gram dal,1.0,teaspoon,5.0,5.0,True,True,0.0,0.0,True,lentil dal (lens culinaris),None
+1  green chili ((slit or chopped)),False,green chili slit or,1.0,count,10.0,green chili slit or,1.0,,25.0,25.0,True,True,150.0,150.0,True,"mango, green, raw (mangifera indica)",Count unit
+1 teaspoon coriander seeds,False,coriander,1.0,tsp,5.0,coriander,1.0,teaspoon,5.0,5.0,True,True,0.0,0.0,True,coriander leaves (coriandrum sativum),None
+Few Ginger juliennes ( (optional)),False,few ginger juliennes optional,1.0,count,10.0,few ginger juliennes optional,,,25.0,25.0,True,False,150.0,150.0,True,"ginger, fresh (zingiber officinale)",None
+1 tsp  chaat masala,False,chaat masala,1.0,tsp,5.0,chaat masala,1.0,tsp,5.0,5.0,True,True,0.0,0.0,True,garam masala,None
+"1  tomato (– small to medium-sized, sliced or chopped)",False,tomato – small to medium sized or,1.0,count,90.0,tomato – small to medium sized or,1.0,,25.0,25.0,True,True,72.2,72.2,True,"tomato, ripe, hybrid (solanum lycopersicum)",Count unit
+1 tablespoon rose water,False,rose water,1.0,tbsp,15.0,rose water,1.0,tablespoon,15.0,15.0,True,True,0.0,0.0,True,"water, distilled",None
+1/2 tsp  garam masala,False,garam masala,0.5,tsp,2.5,garam masala,0.5,tsp,2.5,2.5,True,True,0.0,0.0,True,garam masala,None
+"¾ cup (100 grams) milk powder, unsweetened",False,¾ grams milk unsweetened,100.0,cup,24720.0,¾ grams milk unsweetened,100.0,cup,24720.0,20600.0,True,True,0.0,16.7,True,"milk, whole, cow",None
+¾ teaspoon garam masala,False,¾ garam masala,1.0,tsp,5.0,¾ garam masala,,teaspoon,5.0,5.0,True,False,0.0,0.0,True,garam masala,None
+1 pinch saffron strands (or 14 to 16 saffron strands),False,saffron strands or to saffron strands,1.0,pinch,0.5,saffron strands or to saffron strands,1.0,pinch,0.5,0.5,True,True,0.0,0.0,True,saffron,None

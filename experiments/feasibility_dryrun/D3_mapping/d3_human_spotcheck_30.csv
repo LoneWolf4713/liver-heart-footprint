@@ -1,0 +1,31 @@
+sample_id,dish,line,is_liver_relevant,liver_category,food_code_gold,food_name_gold,equivalent_codes,gold_notes
+1,dal makhani,1/2 teaspoon sugar,True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+11,gajar ka halwa,"3 tablespoons ghee (45 ml, divided)",True,ghee,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+19,dal makhani,3 tablespoons butter (- salted or unsalted),True,butter,T500,"Butter, salted",T501|T506,Salted table butter
+23,paneer butter masala,1 teaspoon sugar,True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+31,paneer butter masala,2 tablespoons Fresh cream,True,cream,L519,"Cream, fresh, single",L512|L515,Cooking dairy cream mapped to L519
+34,paneer butter masala,1 to 2 teaspoons butter (– optional),True,butter,T501,"Butter, unsalted",T500|T506,Unsalted dairy butter; salted butter / ghee equivalent
+40,dal makhani,3 tablespoon Cream  (optional),True,cream,L519,"Cream, fresh, single",L512|L515,Cooking dairy cream mapped to L519
+45,paneer butter masala,2 tablespoons butter (or 1 tablespoon oil + 1 or 2 tablespoons butter),True,oil,T501,"Butter, unsalted",T500|T506,Unsalted dairy butter; salted butter / ghee equivalent
+46,butter chicken,"28 (42 grams,⅓ cup)  whole raw cashews ( (soaked in hot water, sub with ¼ to ⅓ cup heavy cream))",True,cream,L519,"Cream, fresh, single",L512|L515,Fresh cream / heavy cream mapped to L519
+54,gulab jamun,ghee or oil (for frying),True,oil,T506,"Ghee, butter",T501|T500,Desi ghee / clarified butter mapped to T506
+71,butter chicken,1 teaspoon Honey (add more to taste),True,honey,I507,Honey,I502,Natural honey mapped to I507
+74,poha,1 tsp sugar,True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+81,butter chicken,2 tablespoon Butter ((replace with oil for dairy-free)),True,oil,T501,"Butter, unsalted",T500|T506,Unsalted dairy butter; salted butter / ghee equivalent
+84,paneer butter masala,"¼ to 1 teaspoon sugar (– optional, add as required depending on the sourness of the tomatoes)",True,sugar,I502,"Sugar, white",I503|I504,Refined cane sugar mapped to I502
+91,dal makhani,1/4 cup Fresh cream,True,cream,L519,"Cream, fresh, single",L512|L515,Cooking dairy cream mapped to L519
+101,dal makhani,1 tsp kashmiri chilli powder (or as per your spice level),False,,G516,Chilli powder,G008,Red chilli powder
+111,dal makhani,1/4 cup rajma (red kidney beans) (60 grams),False,,B018,Rajmah (Phaseolus vulgaris),,Kidney beans (rajma)
+119,chicken biryani,¼ to ½ cup mint leaves (chopped fine (about 15 leaves)),False,,NO_MATCH,NO_MATCH,,No standard INDB representation for: ¼ to ½ cup mint leaves (chopped fine (ab
+123,dal makhani,"1 medium white onion (115 grams, finely grated using a food processor)",False,,G017,"Onion, big (Allium cepa)",G547,Big yellow/red onion
+131,paneer butter masala,"1 inch (10 grams)   ginger  ((peeled &amp; sliced or use 1½ to 2 teaspoon ginger garlic paste, read notes))",False,,G014,"Ginger, fresh (Zingiber officinale)",G554,Fresh ginger
+134,chole,½  salt (adjust to taste),False,,NO_MATCH,NO_MATCH,,No standard INDB representation for: ½  salt (adjust to taste)
+140,paneer butter masala,1-2 teaspoon Kashmiri red chili powder (adjust to taste ),False,,V510,"Tea, black, infusion, average",,Tea leaves / infusion
+145,paneer butter masala,¾ to 1 teaspoon Kashmiri red chilli powder ((or paprika) (adjust to heat &amp; color preference)),False,,G516,Chilli powder,G008,Red chilli powder
+146,chicken biryani,1/4 teaspoon Ground Turmeric (Haldi powder),False,,G033,Turmeric powder (Curcuma domestica),,Turmeric powder
+154,paneer butter masala,1 pod  black cardamom,False,,G021,"Cardamom, black (Elettaria cardamomum)",G020,Black cardamom
+171,paneer butter masala,2 tbsp coriander (finely chopped),False,,G009,Coriander leaves (Coriandrum sativum),G024,Fresh coriander leaves
+174,chole,1 inch Ginger grated,False,,G014,"Ginger, fresh (Zingiber officinale)",G554,Fresh ginger
+181,dal makhani,1 teaspoon Salt (adjust to taste ),False,,V510,"Tea, black, infusion, average",,Tea leaves / infusion
+184,dal makhani,"¼ cup (55 grams)  rajma  ((red kidney beans, or sub with urad dal))",False,,B003,"Black gram, dal (Phaseolus mungo)",,Black gram / urad dal
+191,chole,1 inch ginger (cut into julienne),False,,G014,"Ginger, fresh (Zingiber officinale)",G554,Fresh ginger

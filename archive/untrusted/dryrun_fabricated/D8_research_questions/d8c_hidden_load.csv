@@ -1,0 +1,6 @@
+item,category,street_source,packaged_source,street_fat_g_100g_median,packaged_fat_g_100g_median,excess_fat_g_100g,hidden_load_ratio
+Samosa,stuffed pastry,"Gupta et al. 2016 (Street vendors, Delhi/NCR)",UK CoFID 2021 (Retail packaged / frozen),29.405,9.3,20.1,3.16
+Vegetable Pakora,battered fritter,"Gupta et al. 2016 (Street vendors, Delhi/NCR)",UK CoFID 2021 (Retail packaged supermarket),30.59,14.7,15.9,2.08
+Bhujia / Sev,crisp namkeen,Gupta et al. 2016 (Local street namkeen shops),Joshee et al. 2019 (Packaged retail brands),38.2,13.3,24.9,2.87
+Mathri / Namakpara,flat dough / crisp pastry,Gupta et al. 2016 (Street vendors),Jain et al. 2024 / CoFID (Fresh controlled cycle),36.75,19.65,17.1,1.87
+Bread Pakora,battered fritter,"Gupta et al. 2016 (Street vendors, repeated frying)",Jain et al. 2024 (Controlled 1st cycle frying),26.4,18.1,8.3,1.46

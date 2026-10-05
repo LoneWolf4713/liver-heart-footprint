@@ -1,0 +1,22 @@
+{
+  "test": "D7_baselines",
+  "total_baselines_compiled": 22,
+  "primary_sources_cited": [
+    "NSO Nutritional Intake in India (HCES 2022-24, July 2025)",
+    "ICMR-INDIAB-21 (Anjana et al., Nature Medicine 2025)",
+    "ICMR-NIN Dietary Guidelines for Indians 2024",
+    "Phenome India Cohort (Lancet Reg Health Southeast Asia 2026)"
+  ],
+  "pass_criterion": "Every number used in D5 has a primary-source citation",
+  "passed": true,
+  "d5_required_metrics_covered": {
+    "energy_budget_kcal": 2000,
+    "sfa_high_risk_pct_e": 7.0,
+    "sfa_general_pct_e": 10.0,
+    "added_sugar_limit_g": 25.0,
+    "salt_limit_g": 5.0,
+    "hfss_added_fat_pct_e": 15.0
+  },
+  "coverage_numerator": 22,
+  "coverage_denominator": 22
+}

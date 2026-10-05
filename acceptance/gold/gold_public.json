@@ -1,0 +1,3252 @@
+[
+ {
+  "gid": "G001",
+  "recipe_id": "D1-01",
+  "line_index": 4,
+  "line": "4  cloves",
+  "status": "QUANTIFIED",
+  "qty": 4,
+  "qty_min": 4,
+  "qty_max": 4,
+  "unit": [
+   "piece",
+   "clove"
+  ],
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "clove"
+  ],
+  "codes": [
+   "G023",
+   "G011",
+   "G012"
+  ],
+  "grams_code": "G023",
+  "grams": 2.1,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G002",
+  "recipe_id": "D1-01",
+  "line_index": 6,
+  "line": "1  bay leaf",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "bay"
+  ],
+  "codes": [
+   "G512"
+  ],
+  "grams_code": "G512",
+  "grams": 0.4,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G003",
+  "recipe_id": "D1-01",
+  "line_index": 9,
+  "line": "1 inch ginger",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "inch",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "ginger"
+  ],
+  "codes": [
+   "G014"
+  ],
+  "grams_code": "G014",
+  "grams": 12.66,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G004",
+  "recipe_id": "D1-01",
+  "line_index": 15,
+  "line": "½ tsp turmeric",
+  "status": "QUANTIFIED",
+  "qty": 0.5,
+  "qty_min": 0.5,
+  "qty_max": 0.5,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "turmeric"
+  ],
+  "codes": [
+   "G033"
+  ],
+  "grams_code": "G033",
+  "grams": 1.5,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G005",
+  "recipe_id": "D1-01",
+  "line_index": 19,
+  "line": "½ tsp garam masala",
+  "status": "QUANTIFIED",
+  "qty": 0.5,
+  "qty_min": 0.5,
+  "qty_max": 0.5,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "garam masala"
+  ],
+  "codes": [
+   "G523"
+  ],
+  "grams_code": "G523",
+  "grams": 1.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G006",
+  "recipe_id": "D1-01",
+  "line_index": 20,
+  "line": "1 tsp salt",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "salt"
+  ],
+  "codes": [
+   "G528"
+  ],
+  "grams_code": "G528",
+  "grams": 6.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G007",
+  "recipe_id": "D1-02",
+  "line_index": 2,
+  "line": "water for soaking",
+  "status": "WATER",
+  "qty": null,
+  "qty_min": null,
+  "qty_max": null,
+  "unit": null,
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "water"
+  ],
+  "codes": null,
+  "grams_code": null,
+  "grams": null,
+  "grams_basis": "NOT_APPLICABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G008",
+  "recipe_id": "D1-02",
+  "line_index": 5,
+  "line": "1-2 tbsp ghee / clarified butter",
+  "status": "QUANTIFIED",
+  "qty": 1.5,
+  "qty_min": 1,
+  "qty_max": 2,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "ghee"
+  ],
+  "codes": [
+   "T013",
+   "T506"
+  ],
+  "grams_code": "T013",
+  "grams": 19.2,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G009",
+  "recipe_id": "D1-02",
+  "line_index": 13,
+  "line": "1 tsp kashmiri chilli powder (or as per your spice level)",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "chilli powder",
+   "chili powder"
+  ],
+  "codes": [
+   "G516",
+   "G022"
+  ],
+  "grams_code": "G516",
+  "grams": 2.7,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G011",
+  "recipe_id": "D1-02",
+  "line_index": 20,
+  "line": "¾ tsp kashmiri red chilli powder",
+  "status": "QUANTIFIED",
+  "qty": 0.75,
+  "qty_min": 0.75,
+  "qty_max": 0.75,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "chilli powder",
+   "chili powder"
+  ],
+  "codes": [
+   "G516",
+   "G022"
+  ],
+  "grams_code": "G516",
+  "grams": 2.025,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G017",
+  "recipe_id": "D1-05",
+  "line_index": 7,
+  "line": "2 cup water",
+  "status": "WATER",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "cup",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "water"
+  ],
+  "codes": null,
+  "grams_code": null,
+  "grams": null,
+  "grams_basis": "NOT_APPLICABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G020",
+  "recipe_id": "D1-08",
+  "line_index": 0,
+  "line": "2½ cup poha",
+  "status": "QUANTIFIED",
+  "qty": 2.5,
+  "qty_min": 2.5,
+  "qty_max": 2.5,
+  "unit": "cup",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "poha"
+  ],
+  "codes": [
+   "A011"
+  ],
+  "grams_code": "A011",
+  "grams": 137.5,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G021",
+  "recipe_id": "D1-09",
+  "line_index": 5,
+  "line": "2 cups (350 grams)  tomatoes  ((sliced, use up to 420 grams from 2 large or 4 medium))",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "cup",
+  "size": null,
+  "stated_g": 350,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "tomato"
+  ],
+  "codes": [
+   "D075",
+   "D076"
+  ],
+  "grams_code": "D075",
+  "grams": 350,
+  "grams_basis": "STATED_MASS",
+  "grams_flags": []
+ },
+ {
+  "gid": "G022",
+  "recipe_id": "D1-09",
+  "line_index": 8,
+  "line": "1 teaspoon jaggery/ sugar ( (optional))",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": true,
+  "name_any": [
+   "jaggery",
+   "sugar"
+  ],
+  "codes": [
+   "I001",
+   "I502"
+  ],
+  "grams_code": "I001",
+  "grams": 4.2,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G026",
+  "recipe_id": "D1-09",
+  "line_index": 18,
+  "line": "½ tablespoon kasuri methi ( (dried fenugreek leaves, crushed))",
+  "status": "QUANTIFIED",
+  "qty": 0.5,
+  "qty_min": 0.5,
+  "qty_max": 0.5,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "methi",
+   "fenugreek"
+  ],
+  "codes": [
+   "C020"
+  ],
+  "grams_code": "C020",
+  "grams": 0.5,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G027",
+  "recipe_id": "D1-10",
+  "line_index": 2,
+  "line": "4 cups (960 ml)  water to pressure cook the dal ( (more to cook in pot))",
+  "status": "WATER",
+  "qty": 4,
+  "qty_min": 4,
+  "qty_max": 4,
+  "unit": "cup",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": 960,
+  "optional": false,
+  "name_any": [
+   "water"
+  ],
+  "codes": null,
+  "grams_code": null,
+  "grams": null,
+  "grams_basis": "NOT_APPLICABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G028",
+  "recipe_id": "D1-10",
+  "line_index": 4,
+  "line": "3 tablespoons (42 grams)  unsalted butter  ((cultured butter if you can))",
+  "status": "QUANTIFIED",
+  "qty": 3,
+  "qty_min": 3,
+  "qty_max": 3,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": 42,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "butter"
+  ],
+  "codes": [
+   "T501",
+   "T500"
+  ],
+  "grams_code": "T501",
+  "grams": 42,
+  "grams_basis": "STATED_MASS",
+  "grams_flags": []
+ },
+ {
+  "gid": "G029",
+  "recipe_id": "D1-10",
+  "line_index": 7,
+  "line": "1 cup (220 grams)  tomato puree  ((bottled or 2 to 3 medium tomatoes pureed in a blender))",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "cup",
+  "size": null,
+  "stated_g": 220,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "tomato"
+  ],
+  "codes": [
+   "D075",
+   "D076",
+   "X504"
+  ],
+  "grams_code": "D075",
+  "grams": 220,
+  "grams_basis": "STATED_MASS",
+  "grams_flags": []
+ },
+ {
+  "gid": "G030",
+  "recipe_id": "D1-11",
+  "line_index": 2,
+  "line": "1  black tea bag ((optional) or 2 dried amla or 1 tbsp loose leaf tea or ½ tsp dust )",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": true,
+  "name_any": [
+   "tea"
+  ],
+  "codes": [
+   "V510",
+   "UNMAPPED"
+  ],
+  "grams_code": null,
+  "grams": null,
+  "grams_basis": "UNQUANTIFIABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G033",
+  "recipe_id": "D1-11",
+  "line_index": 21,
+  "line": "1 teaspoon coriander powder",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "coriander"
+  ],
+  "codes": [
+   "G024"
+  ],
+  "grams_code": "G024",
+  "grams": 1.8,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G034",
+  "recipe_id": "D1-12",
+  "line_index": 1,
+  "line": "2 cups milk ((1 cup for Instant pot))",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "cup",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "milk"
+  ],
+  "codes": [
+   "L002",
+   "L001"
+  ],
+  "grams_code": "L002",
+  "grams": 480.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G036",
+  "recipe_id": "D1-14",
+  "line_index": 20,
+  "line": "Tamarind Chutney ((or make from separate recipe card below))",
+  "status": "UNQUANTIFIED",
+  "qty": null,
+  "qty_min": null,
+  "qty_max": null,
+  "unit": null,
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "tamarind"
+  ],
+  "codes": [
+   "UNMAPPED"
+  ],
+  "grams_code": null,
+  "grams": null,
+  "grams_basis": "NOT_APPLICABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G038",
+  "recipe_id": "D1-17",
+  "line_index": 7,
+  "line": "¾ to 1 teaspoon garam masala  ((adjust to taste))",
+  "status": "QUANTIFIED",
+  "qty": 0.875,
+  "qty_min": 0.75,
+  "qty_max": 1,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "garam masala"
+  ],
+  "codes": [
+   "G523"
+  ],
+  "grams_code": "G523",
+  "grams": 1.75,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G041",
+  "recipe_id": "D1-18",
+  "line_index": 6,
+  "line": "½ to 1 tablespoon garam masala ((or biryani masala) (Refer notes))",
+  "status": "QUANTIFIED",
+  "qty": 0.75,
+  "qty_min": 0.5,
+  "qty_max": 1,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "garam masala"
+  ],
+  "codes": [
+   "G523"
+  ],
+  "grams_code": "G523",
+  "grams": 4.725,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G042",
+  "recipe_id": "D1-18",
+  "line_index": 12,
+  "line": "1  star anise ((chakri phool ))",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "star anise"
+  ],
+  "codes": [
+   "G537"
+  ],
+  "grams_code": "G537",
+  "grams": 2.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G043",
+  "recipe_id": "D1-18",
+  "line_index": 18,
+  "line": "¼ to ½ cup mint leaves (chopped fine (about 15 leaves))",
+  "status": "QUANTIFIED",
+  "qty": 0.375,
+  "qty_min": 0.25,
+  "qty_max": 0.5,
+  "unit": "cup",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "mint"
+  ],
+  "codes": [
+   "G016"
+  ],
+  "grams_code": "G016",
+  "grams": 6.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G044",
+  "recipe_id": "D1-18",
+  "line_index": 19,
+  "line": "1  green chili ((slit or chopped))",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "chil"
+  ],
+  "codes": [
+   "G008",
+   "G001",
+   "G002",
+   "G003",
+   "G004",
+   "G005",
+   "G006",
+   "G007"
+  ],
+  "grams_code": "G008",
+  "grams": 3.33,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G045",
+  "recipe_id": "D1-18",
+  "line_index": 20,
+  "line": "¼ cup plain yogurt ((Indian curd))",
+  "status": "QUANTIFIED",
+  "qty": 0.25,
+  "qty_min": 0.25,
+  "qty_max": 0.25,
+  "unit": "cup",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "yogurt",
+   "curd"
+  ],
+  "codes": [
+   "L520"
+  ],
+  "grams_code": "L520",
+  "grams": 61.25,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G046",
+  "recipe_id": "D1-19",
+  "line_index": 1,
+  "line": "4 Tomatoes chopped",
+  "status": "QUANTIFIED",
+  "qty": 4,
+  "qty_min": 4,
+  "qty_max": 4,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "tomato"
+  ],
+  "codes": [
+   "D075",
+   "D076"
+  ],
+  "grams_code": "D075",
+  "grams": 200.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": [
+   "SIZE_ASSUMED_MEDIUM"
+  ]
+ },
+ {
+  "gid": "G047",
+  "recipe_id": "D1-19",
+  "line_index": 5,
+  "line": "1 Onion finely chopped",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "onion"
+  ],
+  "codes": [
+   "G017",
+   "G018"
+  ],
+  "grams_code": "G017",
+  "grams": 60.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": [
+   "SIZE_ASSUMED_MEDIUM"
+  ]
+ },
+ {
+  "gid": "G048",
+  "recipe_id": "D1-20",
+  "line_index": 8,
+  "line": "1 inch Cinnamon Stick (Dalchini) broken",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "inch",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "cinnamon"
+  ],
+  "codes": [
+   "G518"
+  ],
+  "grams_code": "G518",
+  "grams": 2.5,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G049",
+  "recipe_id": "D1-21",
+  "line_index": 3,
+  "line": "1 Tomato pureed",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "tomato"
+  ],
+  "codes": [
+   "D075",
+   "D076"
+  ],
+  "grams_code": "D075",
+  "grams": 50.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": [
+   "SIZE_ASSUMED_MEDIUM"
+  ]
+ },
+ {
+  "gid": "G050",
+  "recipe_id": "D1-21",
+  "line_index": 13,
+  "line": "1 teaspoon Black Salt (Kala Namak)",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "black salt",
+   "namak"
+  ],
+  "codes": [
+   "G540",
+   "G528"
+  ],
+  "grams_code": "G540",
+  "grams": 6.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G051",
+  "recipe_id": "D1-22",
+  "line_index": 1,
+  "line": "4 tablespoons Ghee",
+  "status": "QUANTIFIED",
+  "qty": 4,
+  "qty_min": 4,
+  "qty_max": 4,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "ghee"
+  ],
+  "codes": [
+   "T013",
+   "T506"
+  ],
+  "grams_code": "T013",
+  "grams": 51.2,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G052",
+  "recipe_id": "D1-23",
+  "line_index": 4,
+  "line": "Milk or water to knead (if needed)",
+  "status": "UNQUANTIFIED",
+  "qty": null,
+  "qty_min": null,
+  "qty_max": null,
+  "unit": null,
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "milk"
+  ],
+  "codes": [
+   "L002",
+   "L001",
+   "UNMAPPED"
+  ],
+  "grams_code": null,
+  "grams": null,
+  "grams_basis": "NOT_APPLICABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G053",
+  "recipe_id": "D1-25",
+  "line_index": 6,
+  "line": "1 teaspoon Salt",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "salt"
+  ],
+  "codes": [
+   "G528"
+  ],
+  "grams_code": "G528",
+  "grams": 6.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G054",
+  "recipe_id": "D1-26",
+  "line_index": 6,
+  "line": "2 Onions finely chopped",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "onion"
+  ],
+  "codes": [
+   "G017",
+   "G018"
+  ],
+  "grams_code": "G017",
+  "grams": 120.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": [
+   "SIZE_ASSUMED_MEDIUM"
+  ]
+ },
+ {
+  "gid": "G056",
+  "recipe_id": "D1-27",
+  "line_index": 13,
+  "line": "½ teaspoon garam masala (+  1/4 teaspoon , if needed)",
+  "status": "QUANTIFIED",
+  "qty": 0.5,
+  "qty_min": 0.5,
+  "qty_max": 0.5,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "garam masala"
+  ],
+  "codes": [
+   "G523"
+  ],
+  "grams_code": "G523",
+  "grams": 1.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G059",
+  "recipe_id": "D1-29",
+  "line_index": 20,
+  "line": "¼ teaspoon garam masala",
+  "status": "QUANTIFIED",
+  "qty": 0.25,
+  "qty_min": 0.25,
+  "qty_max": 0.25,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "garam masala"
+  ],
+  "codes": [
+   "G523"
+  ],
+  "grams_code": "G523",
+  "grams": 0.5,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G060",
+  "recipe_id": "D1-31",
+  "line_index": 2,
+  "line": "pinch  cardamom powder",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "pinch",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "cardamom"
+  ],
+  "codes": [
+   "G020"
+  ],
+  "grams_code": "G020",
+  "grams": 0.5,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": [
+   "PINCH_AS_QUARTER_TSP"
+  ]
+ },
+ {
+  "gid": "G061",
+  "recipe_id": "D1-31",
+  "line_index": 7,
+  "line": "2 cups water (16 oz)",
+  "status": "WATER",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "cup",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "water"
+  ],
+  "codes": null,
+  "grams_code": null,
+  "grams": null,
+  "grams_basis": "NOT_APPLICABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G063",
+  "recipe_id": "D1-32",
+  "line_index": 6,
+  "line": "2 tablespoons oil (I used avocado oil)",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "oil"
+  ],
+  "codes": [
+   "T001",
+   "T002",
+   "T003",
+   "T004",
+   "T005",
+   "T006",
+   "T007",
+   "T008",
+   "T009",
+   "T010",
+   "T011",
+   "T012",
+   "T502",
+   "T507",
+   "T508",
+   "T509",
+   "T510"
+  ],
+  "grams_code": "T508",
+  "grams": 27.2,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G064",
+  "recipe_id": "D1-32",
+  "line_index": 9,
+  "line": "2 teaspoons coriander seeds (crushed)",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "coriander"
+  ],
+  "codes": [
+   "G024"
+  ],
+  "grams_code": "G024",
+  "grams": 3.6,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G065",
+  "recipe_id": "D1-32",
+  "line_index": 10,
+  "line": "1 teaspoon finely chopped ginger",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "ginger"
+  ],
+  "codes": [
+   "G014"
+  ],
+  "grams_code": "G014",
+  "grams": 2.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G066",
+  "recipe_id": "D1-33",
+  "line_index": 1,
+  "line": "2 tablespoon Butter",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "butter"
+  ],
+  "codes": [
+   "T501",
+   "T500"
+  ],
+  "grams_code": "T501",
+  "grams": 28.4,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G067",
+  "recipe_id": "D1-33",
+  "line_index": 2,
+  "line": "1  Green chili pepper  ((optional))",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": true,
+  "name_any": [
+   "chil"
+  ],
+  "codes": [
+   "G008",
+   "G001",
+   "G002",
+   "G003",
+   "G004",
+   "G005",
+   "G006",
+   "G007"
+  ],
+  "grams_code": "G008",
+  "grams": 3.33,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G068",
+  "recipe_id": "D1-33",
+  "line_index": 9,
+  "line": "2 tablespoon Dried Fenugreek leaves (Kasoori Methi)",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "fenugreek",
+   "methi"
+  ],
+  "codes": [
+   "C020"
+  ],
+  "grams_code": "C020",
+  "grams": 2.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G069",
+  "recipe_id": "D1-33",
+  "line_index": 20,
+  "line": "2  Black Cardamom (Moti Elaichi)",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "cardamom"
+  ],
+  "codes": [
+   "G021"
+  ],
+  "grams_code": "G021",
+  "grams": null,
+  "grams_basis": "UNQUANTIFIABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G070",
+  "recipe_id": "D1-34",
+  "line_index": 2,
+  "line": "2 tablespoon Butter or Oil",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "butter"
+  ],
+  "codes": [
+   "T501",
+   "T500",
+   "T001",
+   "T002",
+   "T003",
+   "T004",
+   "T005",
+   "T006",
+   "T007",
+   "T008",
+   "T009",
+   "T010",
+   "T011",
+   "T012",
+   "T502",
+   "T507",
+   "T508",
+   "T509",
+   "T510"
+  ],
+  "grams_code": "T501",
+  "grams": 28.4,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G071",
+  "recipe_id": "D1-34",
+  "line_index": 17,
+  "line": "1 tablespoon Ghee or Oil (optional)",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": true,
+  "name_any": [
+   "ghee"
+  ],
+  "codes": [
+   "T013",
+   "T506",
+   "T001",
+   "T002",
+   "T003",
+   "T004",
+   "T005",
+   "T006",
+   "T007",
+   "T008",
+   "T009",
+   "T010",
+   "T011",
+   "T012",
+   "T502",
+   "T507",
+   "T508",
+   "T509",
+   "T510"
+  ],
+  "grams_code": "T013",
+  "grams": 12.8,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G073",
+  "recipe_id": "D1-35",
+  "line_index": 6,
+  "line": "2  Green Chili Pepper (diced, adjust to taste)",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "chil"
+  ],
+  "codes": [
+   "G008",
+   "G001",
+   "G002",
+   "G003",
+   "G004",
+   "G005",
+   "G006",
+   "G007"
+  ],
+  "grams_code": "G008",
+  "grams": 6.66,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G076",
+  "recipe_id": "D1-36",
+  "line_index": 1,
+  "line": "2 tablespoon Butter ((replace with oil for dairy-free))",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "butter"
+  ],
+  "codes": [
+   "T501",
+   "T500"
+  ],
+  "grams_code": "T501",
+  "grams": 28.4,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G077",
+  "recipe_id": "D1-36",
+  "line_index": 9,
+  "line": "1/4 cup Cream (heavy whipping or coconut cream)",
+  "status": "QUANTIFIED",
+  "qty": 0.25,
+  "qty_min": 0.25,
+  "qty_max": 0.25,
+  "unit": "cup",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "cream"
+  ],
+  "codes": [
+   "L512",
+   "L519",
+   "L515"
+  ],
+  "grams_code": "L512",
+  "grams": 60.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G078",
+  "recipe_id": "D1-37",
+  "line_index": 5,
+  "line": "1  Onion (thinly sliced)",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "onion"
+  ],
+  "codes": [
+   "G017",
+   "G018"
+  ],
+  "grams_code": "G017",
+  "grams": 60.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": [
+   "SIZE_ASSUMED_MEDIUM"
+  ]
+ },
+ {
+  "gid": "G079",
+  "recipe_id": "D1-37",
+  "line_index": 11,
+  "line": "1 teaspoon Kashmiri red chili powder",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "chili powder",
+   "chilli powder"
+  ],
+  "codes": [
+   "G516",
+   "G022"
+  ],
+  "grams_code": "G516",
+  "grams": 2.7,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G080",
+  "recipe_id": "D1-37",
+  "line_index": 19,
+  "line": "1 stick Cinnamon (Dalchini)",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "stick",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "cinnamon"
+  ],
+  "codes": [
+   "G518"
+  ],
+  "grams_code": "G518",
+  "grams": 1.3,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G081",
+  "recipe_id": "D1-38",
+  "line_index": 2,
+  "line": "2 cups/300 grams or 4 to 5 medium-sized  tomato (– diced)",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "cup",
+  "size": null,
+  "stated_g": 300,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "tomato"
+  ],
+  "codes": [
+   "D075",
+   "D076"
+  ],
+  "grams_code": "D075",
+  "grams": 300,
+  "grams_basis": "STATED_MASS",
+  "grams_flags": []
+ },
+ {
+  "gid": "G082",
+  "recipe_id": "D1-38",
+  "line_index": 7,
+  "line": "½ to 1 teaspoon kashmiri chilli powder (or deghi mirch or ¼ to ½ teaspoon cayenne pepper or paprika)",
+  "status": "QUANTIFIED",
+  "qty": 0.75,
+  "qty_min": 0.5,
+  "qty_max": 1,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "chilli powder",
+   "chili powder"
+  ],
+  "codes": [
+   "G516",
+   "G022"
+  ],
+  "grams_code": "G516",
+  "grams": 2.025,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G084",
+  "recipe_id": "D1-38",
+  "line_index": 18,
+  "line": "1 inch ginger (– peeled and julienned)",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "inch",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "ginger"
+  ],
+  "codes": [
+   "G014"
+  ],
+  "grams_code": "G014",
+  "grams": 12.66,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G085",
+  "recipe_id": "D1-38",
+  "line_index": 19,
+  "line": "1 tablespoon light cream (or 1 tablespoon heavy cream, optional)",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": true,
+  "name_any": [
+   "cream"
+  ],
+  "codes": [
+   "L512",
+   "L519",
+   "L515"
+  ],
+  "grams_code": "L515",
+  "grams": 15.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G086",
+  "recipe_id": "D1-39",
+  "line_index": 1,
+  "line": "¼ cup or 40 grams rajma ((kidney beans))",
+  "status": "QUANTIFIED",
+  "qty": 0.25,
+  "qty_min": 0.25,
+  "qty_max": 0.25,
+  "unit": "cup",
+  "size": null,
+  "stated_g": 40,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "rajma",
+   "kidney"
+  ],
+  "codes": [
+   "B018",
+   "B019",
+   "B020"
+  ],
+  "grams_code": "B020",
+  "grams": 40,
+  "grams_basis": "STATED_MASS",
+  "grams_flags": []
+ },
+ {
+  "gid": "G087",
+  "recipe_id": "D1-39",
+  "line_index": 3,
+  "line": "3 tablespoons butter (- salted or unsalted)",
+  "status": "QUANTIFIED",
+  "qty": 3,
+  "qty_min": 3,
+  "qty_max": 3,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "butter"
+  ],
+  "codes": [
+   "T501",
+   "T500"
+  ],
+  "grams_code": "T501",
+  "grams": 42.6,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G089",
+  "recipe_id": "D1-39",
+  "line_index": 13,
+  "line": "200 grams or 2 large  tomatoes (- roughly chopped and pureed or 1 cup tomato puree)",
+  "status": "QUANTIFIED",
+  "qty": 200,
+  "qty_min": 200,
+  "qty_max": 200,
+  "unit": "g",
+  "size": null,
+  "stated_g": 200,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "tomato"
+  ],
+  "codes": [
+   "D075",
+   "D076"
+  ],
+  "grams_code": "D075",
+  "grams": 200,
+  "grams_basis": "STATED_MASS",
+  "grams_flags": []
+ },
+ {
+  "gid": "G090",
+  "recipe_id": "D1-39",
+  "line_index": 18,
+  "line": "¼ teaspoon dry fenugreek leaves (- crushed, (kasuri methi), optional)",
+  "status": "QUANTIFIED",
+  "qty": 0.25,
+  "qty_min": 0.25,
+  "qty_max": 0.25,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": true,
+  "name_any": [
+   "fenugreek",
+   "methi"
+  ],
+  "codes": [
+   "C020"
+  ],
+  "grams_code": "C020",
+  "grams": 0.0825,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G091",
+  "recipe_id": "D1-39",
+  "line_index": 20,
+  "line": "1 small piece charcoal",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": "small",
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "charcoal"
+  ],
+  "codes": [
+   "NON_FOOD",
+   "UNMAPPED"
+  ],
+  "grams_code": null,
+  "grams": null,
+  "grams_basis": "UNQUANTIFIABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G092",
+  "recipe_id": "D1-40",
+  "line_index": 2,
+  "line": "2½ to 3 cups water (– for pressure cooking the chickpeas)",
+  "status": "WATER",
+  "qty": 2.75,
+  "qty_min": 2.5,
+  "qty_max": 3,
+  "unit": "cup",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "water"
+  ],
+  "codes": null,
+  "grams_code": null,
+  "grams": null,
+  "grams_basis": "NOT_APPLICABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G093",
+  "recipe_id": "D1-40",
+  "line_index": 9,
+  "line": "½ teaspoon red chili powder (or cayenne pepper)",
+  "status": "QUANTIFIED",
+  "qty": 0.5,
+  "qty_min": 0.5,
+  "qty_max": 0.5,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "chili powder",
+   "chilli powder"
+  ],
+  "codes": [
+   "G516",
+   "G022"
+  ],
+  "grams_code": "G516",
+  "grams": 1.35,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G095",
+  "recipe_id": "D1-40",
+  "line_index": 25,
+  "line": "½ teaspoon dry pomegranate seeds (– optional)",
+  "status": "QUANTIFIED",
+  "qty": 0.5,
+  "qty_min": 0.5,
+  "qty_max": 0.5,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": true,
+  "name_any": [
+   "pomegranate"
+  ],
+  "codes": [
+   "UNMAPPED",
+   "E055"
+  ],
+  "grams_code": null,
+  "grams": null,
+  "grams_basis": "UNQUANTIFIABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G096",
+  "recipe_id": "D1-40",
+  "line_index": 26,
+  "line": "1 to 2  kashmiri red chilies",
+  "status": "QUANTIFIED",
+  "qty": 1.5,
+  "qty_min": 1,
+  "qty_max": 2,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "chil"
+  ],
+  "codes": [
+   "G022"
+  ],
+  "grams_code": "G022",
+  "grams": 4.995,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G097",
+  "recipe_id": "D1-42",
+  "line_index": 3,
+  "line": "2 tablespoons sooji ((rava or semolina), finer variety)",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "sooji",
+   "rava",
+   "semolina"
+  ],
+  "codes": [
+   "A022"
+  ],
+  "grams_code": "A022",
+  "grams": 20.8,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G098",
+  "recipe_id": "D1-42",
+  "line_index": 11,
+  "line": "1 tablespoon milk ((optional) - *read notes)",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": true,
+  "name_any": [
+   "milk"
+  ],
+  "codes": [
+   "L002",
+   "L001"
+  ],
+  "grams_code": "L002",
+  "grams": 15.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G099",
+  "recipe_id": "D1-43",
+  "line_index": 11,
+  "line": "2 teaspoons  green chillies  (- finely chopped or 2 tsp finely chopped serrano peppers or 1 to 2 green chillies)",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "chil"
+  ],
+  "codes": [
+   "G008",
+   "G001",
+   "G002",
+   "G003",
+   "G004",
+   "G005",
+   "G006",
+   "G007"
+  ],
+  "grams_code": "G008",
+  "grams": 4.0,
+  "grams_basis": "GROUP_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G100",
+  "recipe_id": "D1-43",
+  "line_index": 14,
+  "line": "1 to 2 teaspoons dry mango powder ((amchur), adjust to taste)",
+  "status": "QUANTIFIED",
+  "qty": 1.5,
+  "qty_min": 1,
+  "qty_max": 2,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "mango",
+   "amchur"
+  ],
+  "codes": [
+   "G535"
+  ],
+  "grams_code": "G535",
+  "grams": 3.0,
+  "grams_basis": "GROUP_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G101",
+  "recipe_id": "V2-R01",
+  "line_index": 0,
+  "line": "2½ cups (150 grams)   chopped spinach ((tightly packed, palak))",
+  "status": "QUANTIFIED",
+  "qty": 2.5,
+  "qty_min": 2.5,
+  "qty_max": 2.5,
+  "unit": "cup",
+  "size": null,
+  "stated_g": 150,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "spinach",
+   "palak"
+  ],
+  "codes": [
+   "C033"
+  ],
+  "grams_code": "C033",
+  "grams": 150,
+  "grams_basis": "STATED_MASS",
+  "grams_flags": []
+ },
+ {
+  "gid": "G103",
+  "recipe_id": "V2-R02",
+  "line_index": 5,
+  "line": "2 to 3  green chilies (- sliced or slit)",
+  "status": "QUANTIFIED",
+  "qty": 2.5,
+  "qty_min": 2,
+  "qty_max": 3,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "chil"
+  ],
+  "codes": [
+   "G008",
+   "G001",
+   "G002",
+   "G003",
+   "G004",
+   "G005",
+   "G006",
+   "G007"
+  ],
+  "grams_code": "G008",
+  "grams": 8.325,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G104",
+  "recipe_id": "V2-R03",
+  "line_index": 3,
+  "line": "10 clove garlic (finely chopped)",
+  "status": "QUANTIFIED",
+  "qty": 10,
+  "qty_min": 10,
+  "qty_max": 10,
+  "unit": "clove",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "garlic"
+  ],
+  "codes": [
+   "G011",
+   "G012"
+  ],
+  "grams_code": "G011",
+  "grams": 6.25,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G106",
+  "recipe_id": "V2-R04",
+  "line_index": 9,
+  "line": "½ to ¾  teaspoon garam masala  ((adjust to taste))",
+  "status": "QUANTIFIED",
+  "qty": 0.625,
+  "qty_min": 0.5,
+  "qty_max": 0.75,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "garam masala"
+  ],
+  "codes": [
+   "G523"
+  ],
+  "grams_code": "G523",
+  "grams": 1.25,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G107",
+  "recipe_id": "V2-R05",
+  "line_index": 0,
+  "line": "400 grams Bhindi (Lady Finger/Okra)",
+  "status": "QUANTIFIED",
+  "qty": 400,
+  "qty_min": 400,
+  "qty_max": 400,
+  "unit": "g",
+  "size": null,
+  "stated_g": 400,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "bhindi",
+   "okra"
+  ],
+  "codes": [
+   "D056"
+  ],
+  "grams_code": "D056",
+  "grams": 400,
+  "grams_basis": "STATED_MASS",
+  "grams_flags": []
+ },
+ {
+  "gid": "G110",
+  "recipe_id": "V2-R07",
+  "line_index": 2,
+  "line": "¾ to 1  cup chopped tomatoes (or 1 large tomato)",
+  "status": "QUANTIFIED",
+  "qty": 0.875,
+  "qty_min": 0.75,
+  "qty_max": 1,
+  "unit": "cup",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "tomato"
+  ],
+  "codes": [
+   "D075",
+   "D076"
+  ],
+  "grams_code": "D075",
+  "grams": 157.5,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G111",
+  "recipe_id": "V2-R07",
+  "line_index": 11,
+  "line": "salt ( as required)",
+  "status": "UNQUANTIFIED",
+  "qty": null,
+  "qty_min": null,
+  "qty_max": null,
+  "unit": null,
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "salt"
+  ],
+  "codes": [
+   "G528"
+  ],
+  "grams_code": null,
+  "grams": null,
+  "grams_basis": "NOT_APPLICABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G113",
+  "recipe_id": "V2-R09",
+  "line_index": 13,
+  "line": "1½ cups (180 grams)  onions  ((fine chopped, 1x - 1 large or 2 medium))",
+  "status": "QUANTIFIED",
+  "qty": 1.5,
+  "qty_min": 1.5,
+  "qty_max": 1.5,
+  "unit": "cup",
+  "size": null,
+  "stated_g": 180,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "onion"
+  ],
+  "codes": [
+   "G017",
+   "G018"
+  ],
+  "grams_code": "G017",
+  "grams": 180,
+  "grams_basis": "STATED_MASS",
+  "grams_flags": []
+ },
+ {
+  "gid": "G114",
+  "recipe_id": "V2-R09",
+  "line_index": 19,
+  "line": "1 tablespoon coriander powder",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "coriander"
+  ],
+  "codes": [
+   "G024"
+  ],
+  "grams_code": "G024",
+  "grams": 5.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G115",
+  "recipe_id": "V2-R10",
+  "line_index": 13,
+  "line": "1 small  Indian bay leaf ((optional))",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": "small",
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": true,
+  "name_any": [
+   "bay"
+  ],
+  "codes": [
+   "G512"
+  ],
+  "grams_code": "G512",
+  "grams": 0.4,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G116",
+  "recipe_id": "V2-R10",
+  "line_index": 16,
+  "line": "1  cardamom ((optional))",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": true,
+  "name_any": [
+   "cardamom"
+  ],
+  "codes": [
+   "G020"
+  ],
+  "grams_code": "G020",
+  "grams": 0.5,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G117",
+  "recipe_id": "V2-R10",
+  "line_index": 23,
+  "line": "2 tablespoons coriander leaves ((cilantro) fine chopped to garnish)",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "coriander",
+   "cilantro"
+  ],
+  "codes": [
+   "G009"
+  ],
+  "grams_code": "G009",
+  "grams": 2.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G118",
+  "recipe_id": "V2-R11",
+  "line_index": 8,
+  "line": "½ to ¾ tablespoon (4 to 5 medium cloves)  garlic grated (( or paste))",
+  "status": "QUANTIFIED",
+  "qty": 0.625,
+  "qty_min": 0.5,
+  "qty_max": 0.75,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "garlic"
+  ],
+  "codes": [
+   "G011",
+   "G012"
+  ],
+  "grams_code": "G011",
+  "grams": 5.25,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G119",
+  "recipe_id": "V2-R12",
+  "line_index": 0,
+  "line": "¾ cup toor dal ((split pigeon peas) (refer notes))",
+  "status": "QUANTIFIED",
+  "qty": 0.75,
+  "qty_min": 0.75,
+  "qty_max": 0.75,
+  "unit": "cup",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "toor",
+   "pigeon"
+  ],
+  "codes": [
+   "B021"
+  ],
+  "grams_code": "B021",
+  "grams": 131.25,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G120",
+  "recipe_id": "V2-R12",
+  "line_index": 8,
+  "line": "1 medium onion diced ((or 12 to 15 shallots)  (150 grams))",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": "medium",
+  "stated_g": 150,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "onion"
+  ],
+  "codes": [
+   "G017",
+   "G018"
+  ],
+  "grams_code": "G017",
+  "grams": 150,
+  "grams_basis": "STATED_MASS",
+  "grams_flags": []
+ },
+ {
+  "gid": "G121",
+  "recipe_id": "V2-R12",
+  "line_index": 14,
+  "line": "1 tablespoon ghee ( or oil)",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "ghee"
+  ],
+  "codes": [
+   "T013",
+   "T506",
+   "T001",
+   "T002",
+   "T003",
+   "T004",
+   "T005",
+   "T006",
+   "T007",
+   "T008",
+   "T009",
+   "T010",
+   "T011",
+   "T012",
+   "T502",
+   "T507",
+   "T508",
+   "T509",
+   "T510"
+  ],
+  "grams_code": "T013",
+  "grams": 12.8,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G122",
+  "recipe_id": "V2-R12",
+  "line_index": 22,
+  "line": "1 tablespoon chana dal ((skinned split bengal gram))",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "chana",
+   "bengal"
+  ],
+  "codes": [
+   "B001"
+  ],
+  "grams_code": "B001",
+  "grams": 12.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G123",
+  "recipe_id": "V2-R12",
+  "line_index": 23,
+  "line": "1 teaspoon urad dal ((skinned split black gram))",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "urad",
+   "black gram"
+  ],
+  "codes": [
+   "B003"
+  ],
+  "grams_code": "B003",
+  "grams": 4.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G124",
+  "recipe_id": "V2-R13",
+  "line_index": 3,
+  "line": "¼  teaspoon turmeric powder ((ground turmeric))",
+  "status": "QUANTIFIED",
+  "qty": 0.25,
+  "qty_min": 0.25,
+  "qty_max": 0.25,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "turmeric"
+  ],
+  "codes": [
+   "G033"
+  ],
+  "grams_code": "G033",
+  "grams": 0.75,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G125",
+  "recipe_id": "V2-R13",
+  "line_index": 12,
+  "line": "1½ to 2 cups water (or add as required)",
+  "status": "WATER",
+  "qty": 1.75,
+  "qty_min": 1.5,
+  "qty_max": 2,
+  "unit": "cup",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "water"
+  ],
+  "codes": null,
+  "grams_code": null,
+  "grams": null,
+  "grams_basis": "NOT_APPLICABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G126",
+  "recipe_id": "V2-R14",
+  "line_index": 2,
+  "line": "1 tsp oil",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "oil"
+  ],
+  "codes": [
+   "T001",
+   "T002",
+   "T003",
+   "T004",
+   "T005",
+   "T006",
+   "T007",
+   "T008",
+   "T009",
+   "T010",
+   "T011",
+   "T012",
+   "T502",
+   "T507",
+   "T508",
+   "T509",
+   "T510"
+  ],
+  "grams_code": "T508",
+  "grams": 4.5,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G127",
+  "recipe_id": "V2-R14",
+  "line_index": 5,
+  "line": "1  tomato (cubed)",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "tomato"
+  ],
+  "codes": [
+   "D075",
+   "D076"
+  ],
+  "grams_code": "D075",
+  "grams": 50.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": [
+   "SIZE_ASSUMED_MEDIUM"
+  ]
+ },
+ {
+  "gid": "G128",
+  "recipe_id": "V2-R14",
+  "line_index": 8,
+  "line": "1  potato (cubed)",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "potato"
+  ],
+  "codes": [
+   "F006",
+   "F007",
+   "F008"
+  ],
+  "grams_code": "F006",
+  "grams": 70.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": [
+   "SIZE_ASSUMED_MEDIUM"
+  ]
+ },
+ {
+  "gid": "G129",
+  "recipe_id": "V2-R14",
+  "line_index": 13,
+  "line": "2½ cup water",
+  "status": "WATER",
+  "qty": 2.5,
+  "qty_min": 2.5,
+  "qty_max": 2.5,
+  "unit": "cup",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "water"
+  ],
+  "codes": null,
+  "grams_code": null,
+  "grams": null,
+  "grams_basis": "NOT_APPLICABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G131",
+  "recipe_id": "V2-R15",
+  "line_index": 14,
+  "line": "2 sprigs  curry leaves",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "sprig",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "curry"
+  ],
+  "codes": [
+   "G010"
+  ],
+  "grams_code": "G010",
+  "grams": 4.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G132",
+  "recipe_id": "V2-R16",
+  "line_index": 1,
+  "line": "water (– as required for soaking)",
+  "status": "WATER",
+  "qty": null,
+  "qty_min": null,
+  "qty_max": null,
+  "unit": null,
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "water"
+  ],
+  "codes": null,
+  "grams_code": null,
+  "grams": null,
+  "grams_basis": "NOT_APPLICABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G133",
+  "recipe_id": "V2-R16",
+  "line_index": 9,
+  "line": "3 tablespoons ghee (or oil)",
+  "status": "QUANTIFIED",
+  "qty": 3,
+  "qty_min": 3,
+  "qty_max": 3,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "ghee"
+  ],
+  "codes": [
+   "T013",
+   "T506",
+   "T001",
+   "T002",
+   "T003",
+   "T004",
+   "T005",
+   "T006",
+   "T007",
+   "T008",
+   "T009",
+   "T010",
+   "T011",
+   "T012",
+   "T502",
+   "T507",
+   "T508",
+   "T509",
+   "T510"
+  ],
+  "grams_code": "T013",
+  "grams": 38.4,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G134",
+  "recipe_id": "V2-R16",
+  "line_index": 12,
+  "line": "1 to 1½ inches ginger (– crushed to a paste in a mortar-pestle)",
+  "status": "QUANTIFIED",
+  "qty": 1.25,
+  "qty_min": 1,
+  "qty_max": 1.5,
+  "unit": "inch",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "ginger"
+  ],
+  "codes": [
+   "G014"
+  ],
+  "grams_code": "G014",
+  "grams": 15.825,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G135",
+  "recipe_id": "V2-R16",
+  "line_index": 30,
+  "line": "1 to 2 tablespoons chopped coriander leaves ( or mint leaves)",
+  "status": "QUANTIFIED",
+  "qty": 1.5,
+  "qty_min": 1,
+  "qty_max": 2,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "coriander"
+  ],
+  "codes": [
+   "G009"
+  ],
+  "grams_code": "G009",
+  "grams": 1.5,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G136",
+  "recipe_id": "V2-R17",
+  "line_index": 1,
+  "line": "2 tablespoons Ghee",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "ghee"
+  ],
+  "codes": [
+   "T013",
+   "T506"
+  ],
+  "grams_code": "T013",
+  "grams": 25.6,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G137",
+  "recipe_id": "V2-R17",
+  "line_index": 9,
+  "line": "1 Mint Leaves (Pudina) small bunch, chopped",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "bunch",
+  "size": "small",
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "mint"
+  ],
+  "codes": [
+   "G016"
+  ],
+  "grams_code": "G016",
+  "grams": null,
+  "grams_basis": "UNQUANTIFIABLE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G139",
+  "recipe_id": "V2-R18",
+  "line_index": 10,
+  "line": "2 teaspoon Oil",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "oil"
+  ],
+  "codes": [
+   "T001",
+   "T002",
+   "T003",
+   "T004",
+   "T005",
+   "T006",
+   "T007",
+   "T008",
+   "T009",
+   "T010",
+   "T011",
+   "T012",
+   "T502",
+   "T507",
+   "T508",
+   "T509",
+   "T510"
+  ],
+  "grams_code": "T508",
+  "grams": 9.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G141",
+  "recipe_id": "V2-R19",
+  "line_index": 14,
+  "line": "6  Cloves (Laung)",
+  "status": "QUANTIFIED",
+  "qty": 6,
+  "qty_min": 6,
+  "qty_max": 6,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "clove",
+   "laung"
+  ],
+  "codes": [
+   "G023"
+  ],
+  "grams_code": "G023",
+  "grams": 3.15,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G143",
+  "recipe_id": "V2-R20",
+  "line_index": 14,
+  "line": "10-12 strands Saffron (Kesar)",
+  "status": "QUANTIFIED",
+  "qty": 11,
+  "qty_min": 10,
+  "qty_max": 12,
+  "unit": "strand",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "saffron",
+   "kesar"
+  ],
+  "codes": [
+   "G529"
+  ],
+  "grams_code": "G529",
+  "grams": 0.0275,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G144",
+  "recipe_id": "V2-R20",
+  "line_index": 17,
+  "line": "1 tablespoon Salt",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "salt"
+  ],
+  "codes": [
+   "G528"
+  ],
+  "grams_code": "G528",
+  "grams": 18.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G146",
+  "recipe_id": "V2-R21",
+  "line_index": 3,
+  "line": "3/4 tablespoon Garlic (minced)",
+  "status": "QUANTIFIED",
+  "qty": 0.75,
+  "qty_min": 0.75,
+  "qty_max": 0.75,
+  "unit": "tbsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "garlic"
+  ],
+  "codes": [
+   "G011",
+   "G012"
+  ],
+  "grams_code": "G011",
+  "grams": 6.3,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G147",
+  "recipe_id": "V2-R21",
+  "line_index": 9,
+  "line": "1/2 teaspoon Garam masala",
+  "status": "QUANTIFIED",
+  "qty": 0.5,
+  "qty_min": 0.5,
+  "qty_max": 0.5,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "garam masala"
+  ],
+  "codes": [
+   "G523"
+  ],
+  "grams_code": "G523",
+  "grams": 1.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G148",
+  "recipe_id": "V2-R22",
+  "line_index": 11,
+  "line": "1 Tomato",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "tomato"
+  ],
+  "codes": [
+   "D075",
+   "D076"
+  ],
+  "grams_code": "D075",
+  "grams": 50.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": [
+   "SIZE_ASSUMED_MEDIUM"
+  ]
+ },
+ {
+  "gid": "G149",
+  "recipe_id": "V2-R25",
+  "line_index": 0,
+  "line": "400 g King prawns (About 14oz, peeled and deveined)",
+  "status": "QUANTIFIED",
+  "qty": 400,
+  "qty_min": 400,
+  "qty_max": 400,
+  "unit": "g",
+  "size": null,
+  "stated_g": 400,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "prawn"
+  ],
+  "codes": [
+   "S008",
+   "S009",
+   "S010",
+   "Q007",
+   "Q008"
+  ],
+  "grams_code": "S008",
+  "grams": 400,
+  "grams_basis": "STATED_MASS",
+  "grams_flags": []
+ },
+ {
+  "gid": "G151",
+  "recipe_id": "V2-R26",
+  "line_index": 0,
+  "line": "350 g Large King Prawns (12oz (Shelled weight))",
+  "status": "QUANTIFIED",
+  "qty": 350,
+  "qty_min": 350,
+  "qty_max": 350,
+  "unit": "g",
+  "size": null,
+  "stated_g": 350,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "prawn"
+  ],
+  "codes": [
+   "S008",
+   "S009",
+   "S010",
+   "Q007",
+   "Q008"
+  ],
+  "grams_code": "S008",
+  "grams": 350,
+  "grams_basis": "STATED_MASS",
+  "grams_flags": []
+ },
+ {
+  "gid": "G152",
+  "recipe_id": "V2-R26",
+  "line_index": 2,
+  "line": "¼ Tsp Ground Cumin",
+  "status": "QUANTIFIED",
+  "qty": 0.25,
+  "qty_min": 0.25,
+  "qty_max": 0.25,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "cumin"
+  ],
+  "codes": [
+   "G025"
+  ],
+  "grams_code": "G025",
+  "grams": 0.525,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G153",
+  "recipe_id": "V2-R26",
+  "line_index": 11,
+  "line": "2  Green Chilli Peppers",
+  "status": "QUANTIFIED",
+  "qty": 2,
+  "qty_min": 2,
+  "qty_max": 2,
+  "unit": "piece",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "chil"
+  ],
+  "codes": [
+   "G008",
+   "G001",
+   "G002",
+   "G003",
+   "G004",
+   "G005",
+   "G006",
+   "G007"
+  ],
+  "grams_code": "G008",
+  "grams": 6.66,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G154",
+  "recipe_id": "V2-R26",
+  "line_index": 12,
+  "line": "1 Tsp Brown Mustard Seeds",
+  "status": "QUANTIFIED",
+  "qty": 1,
+  "qty_min": 1,
+  "qty_max": 1,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "mustard"
+  ],
+  "codes": [
+   "H013"
+  ],
+  "grams_code": "H013",
+  "grams": 2.0,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G155",
+  "recipe_id": "V2-R26",
+  "line_index": 16,
+  "line": "½ Tsp Kashmiri Chilli Powder",
+  "status": "QUANTIFIED",
+  "qty": 0.5,
+  "qty_min": 0.5,
+  "qty_max": 0.5,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "chilli powder",
+   "chili powder"
+  ],
+  "codes": [
+   "G516",
+   "G022"
+  ],
+  "grams_code": "G516",
+  "grams": 1.35,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G156",
+  "recipe_id": "V2-R26",
+  "line_index": 18,
+  "line": "¼ Tsp Sugar",
+  "status": "QUANTIFIED",
+  "qty": 0.25,
+  "qty_min": 0.25,
+  "qty_max": 0.25,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "sugar"
+  ],
+  "codes": [
+   "I502",
+   "I503"
+  ],
+  "grams_code": "I502",
+  "grams": 1.05,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G159",
+  "recipe_id": "V2-R28",
+  "line_index": 7,
+  "line": "1½ teaspoon Turmeric Powder",
+  "status": "QUANTIFIED",
+  "qty": 1.5,
+  "qty_min": 1.5,
+  "qty_max": 1.5,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "turmeric"
+  ],
+  "codes": [
+   "G033"
+  ],
+  "grams_code": "G033",
+  "grams": 4.5,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ },
+ {
+  "gid": "G160",
+  "recipe_id": "V2-R28",
+  "line_index": 15,
+  "line": "½ teaspoon Lemon Juice",
+  "status": "QUANTIFIED",
+  "qty": 0.5,
+  "qty_min": 0.5,
+  "qty_max": 0.5,
+  "unit": "tsp",
+  "size": null,
+  "stated_g": null,
+  "stated_ml": null,
+  "optional": false,
+  "name_any": [
+   "lemon"
+  ],
+  "codes": [
+   "E033"
+  ],
+  "grams_code": "E033",
+  "grams": 2.5,
+  "grams_basis": "CODE_MEASURE",
+  "grams_flags": []
+ }
+]

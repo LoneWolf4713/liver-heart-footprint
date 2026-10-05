@@ -1,0 +1,10 @@
+id,value,unit,source
+KJ_PER_KCAL,4.184,kJ per kcal,"FAO Food and Nutrition Paper 77 (2003), Food energy: methods of analysis and conversion factors (thermochemical calorie)"
+FAT_KJ_PER_G,37,kJ per g fat,"FAO Food and Nutrition Paper 77 (2003), general (Atwater) factor for fat"
+FAT_KCAL_PER_G,9,kcal per g fat,"FAO Food and Nutrition Paper 77 (2003), general (Atwater) factor for fat"
+SODIUM_MG_PER_G_SALT,393.4,mg sodium per g NaCl,"Molar masses Na 22.990 and NaCl 58.443 g/mol (IUPAC standard atomic weights): 22.990/58.443 x 1000"
+PINCH_FRACTION_OF_TSP,0.25,tsp per pinch or dash,"INDB Units.xlsx: 'Spice powders 1 sprinkle/pinch = 0.25 tsp' and '1 dash = 0.25 tsp'"
+SPICE_LINE_MAX_G,30,g,"Project sanity rule (AGENTS.md rule 7; research_log 36): no single spice/condiment line above 30 g"
+RECIPE_MASS_MIN_G,200,g,"Project sanity rule (research_log 37 section 3): plausible whole-recipe non-water mass lower bound"
+RECIPE_MASS_MAX_G,5000,g,"Project sanity rule (research_log 37 section 3): plausible whole-recipe non-water mass upper bound"
+FUZZY_MATCH_CUTOFF,0.85,similarity 0-1,"Project tuning parameter for difflib name matching (not a measured value); change only with a re-run of acceptance/test_t4_match.py"

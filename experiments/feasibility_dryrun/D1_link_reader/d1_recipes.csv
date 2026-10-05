@@ -1,0 +1,63 @@
+dish,site,url,status,http_code,identity_pass,has_jsonld,servings,num_ingredients,notes
+paneer butter masala,hebbarskitchen.com,https://hebbarskitchen.com/paneer-butter-masala-recipe/,FETCHED_OK,200,True,True,"['5', '5 Servings']",26,JSON-LD extracted
+dal makhani,hebbarskitchen.com,https://hebbarskitchen.com/punjabi-dal-makhani-recipe/,FETCHED_OK,200,True,True,"['4', '4 Servings']",22,JSON-LD extracted
+chole,hebbarskitchen.com,https://hebbarskitchen.com/chana-masala-recipe-chickpea-masala/,FETCHED_OK,200,True,True,"['5', '5 Servings']",28,JSON-LD extracted
+gajar ka halwa,hebbarskitchen.com,https://hebbarskitchen.com/carrot-halwa-recipe-gajar-halwa-recipe/,FETCHED_OK,200,True,True,"['1', '1 box']",8,JSON-LD extracted
+gulab jamun,hebbarskitchen.com,https://hebbarskitchen.com/milk-powder-gulab-jamun-recipe/,FETCHED_OK,200,True,True,"['14', '14 pieces']",12,JSON-LD extracted
+samosa,hebbarskitchen.com,https://hebbarskitchen.com/samosa-recipe/,FETCHED_OK,200,True,False,,9,Fallback used
+onion pakora,hebbarskitchen.com,https://hebbarskitchen.com/onion-pakoda-recipe/,FETCHED_OK,200,True,True,"['4', '4 सर्विंग्स']",13,JSON-LD extracted
+poha,hebbarskitchen.com,https://hebbarskitchen.com/poha-recipe-2-ways-kanda-poha-aloo-poha/,FETCHED_OK,200,True,True,"['2', '2 Servings']",16,JSON-LD extracted
+paneer butter masala,indianhealthyrecipes.com,https://www.indianhealthyrecipes.com/paneer-butter-masala-restaurant-style/,FETCHED_OK,200,True,True,['4'],21,JSON-LD extracted
+dal makhani,indianhealthyrecipes.com,https://www.indianhealthyrecipes.com/dal-makhani-recipe/,FETCHED_OK,200,True,True,"['4', '4 to 5']",15,JSON-LD extracted
+chole,indianhealthyrecipes.com,https://www.indianhealthyrecipes.com/chole/,FETCHED_OK,200,True,True,['4'],30,JSON-LD extracted
+gajar ka halwa,indianhealthyrecipes.com,https://www.indianhealthyrecipes.com/carrot-halwa-recipe-gajar-ka-halwa-recipe/,FETCHED_OK,200,True,True,"['4', '4 people']",7,JSON-LD extracted
+gulab jamun,indianhealthyrecipes.com,https://www.indianhealthyrecipes.com/gulab-jamun-recipe-using-milk-powder/,FETCHED_OK,200,True,True,"['14', '14 to 18 Jamuns']",13,JSON-LD extracted
+samosa,indianhealthyrecipes.com,https://www.indianhealthyrecipes.com/samosa-recipe-make-samosa/,FETCHED_OK,200,True,True,"['10', '10 samosa']",21,JSON-LD extracted
+onion pakora,indianhealthyrecipes.com,https://www.indianhealthyrecipes.com/onion-pakora-recipe-onion-pakoda-recipe/,FETCHED_OK,200,True,True,['3'],15,JSON-LD extracted
+poha,indianhealthyrecipes.com,https://www.indianhealthyrecipes.com/poha-recipe-kanda-batata-poha/,FETCHED_OK,200,True,True,['2'],15,JSON-LD extracted
+butter chicken,indianhealthyrecipes.com,https://www.indianhealthyrecipes.com/butter-chicken/,FETCHED_OK,200,True,True,['4'],32,JSON-LD extracted
+chicken biryani,indianhealthyrecipes.com,https://www.indianhealthyrecipes.com/chicken-biryani-recipe/,FETCHED_OK,200,True,True,"['4', '4 people']",27,JSON-LD extracted
+paneer butter masala,archanaskitchen.com,https://www.archanaskitchen.com/recipe/restaurant-style-paneer-butter-masala-recipe-paneer-makhani-recipe,FETCHED_OK,200,True,True,4,23,JSON-LD extracted
+dal makhani,archanaskitchen.com,https://www.archanaskitchen.com/recipe/dal-makhani-a-staple-food-of-punjab-region,FETCHED_OK,200,True,True,4,19,JSON-LD extracted
+chole,archanaskitchen.com,https://www.archanaskitchen.com/recipe/chola-chana-masala-north-indian-spiced-chickpea-curry,FETCHED_OK,200,True,True,4,17,JSON-LD extracted
+gajar ka halwa,archanaskitchen.com,https://www.archanaskitchen.com/recipe/gajjar-halwa-carrot-pudding,FETCHED_OK,200,True,True,10,7,JSON-LD extracted
+gulab jamun,archanaskitchen.com,https://www.archanaskitchen.com/recipe/gulab-jamun-recipe-with-khoya,FETCHED_OK,200,True,True,6,9,JSON-LD extracted
+samosa,archanaskitchen.com,https://www.archanaskitchen.com/recipe/samosas-a-spiced-potato-tea-time-snack,FETCHED_OK,200,True,True,12,19,JSON-LD extracted
+onion pakora,archanaskitchen.com,https://www.archanaskitchen.com/recipe/onion-pakoda-onion-fritters,HTTP_404,404,False,False,,0,HTTP 404
+poha,archanaskitchen.com,https://www.archanaskitchen.com/recipe/kanda-batata-poha-recipe,HTTP_404,404,False,False,,0,HTTP 404
+butter chicken,archanaskitchen.com,https://www.archanaskitchen.com/recipe/butter-chicken-recipe-classic-indian-chicken-gravy,FETCHED_OK,200,True,True,4,19,JSON-LD extracted
+chicken biryani,archanaskitchen.com,https://www.archanaskitchen.com/recipe/calcutta-style-chicken-biryani-recipe,FETCHED_OK,200,True,True,3-4,18,JSON-LD extracted
+paneer butter masala,cookwithmanali.com,https://www.cookwithmanali.com/paneer-butter-masala/,FETCHED_OK,200,True,True,['4'],22,JSON-LD extracted
+dal makhani,cookwithmanali.com,https://www.cookwithmanali.com/dal-makhani/,FETCHED_OK,200,True,True,['5'],17,JSON-LD extracted
+chole,cookwithmanali.com,https://www.cookwithmanali.com/punjabi-chole-chickpeas-curry/,FETCHED_OK,200,True,True,['5'],23,JSON-LD extracted
+gajar ka halwa,cookwithmanali.com,https://www.cookwithmanali.com/gajar-halwa/,FETCHED_OK,200,True,True,['6'],6,JSON-LD extracted
+gulab jamun,cookwithmanali.com,https://www.cookwithmanali.com/gulab-jamun/,FETCHED_OK,200,True,True,"['14', '14 gulab jamun']",12,JSON-LD extracted
+samosa,cookwithmanali.com,https://www.cookwithmanali.com/samosa-recipe/,FETCHED_OK,200,True,True,"['14', '14 samosa']",19,JSON-LD extracted
+onion pakora,cookwithmanali.com,https://www.cookwithmanali.com/onion-pakoda/,HTTP_404,404,False,False,,0,HTTP 404
+poha,cookwithmanali.com,https://www.cookwithmanali.com/kanda-poha/,HTTP_404,404,False,False,,0,HTTP 404
+paneer butter masala,pipingpotcurry.com,https://pipingpotcurry.com/paneer-butter-masala/,FETCHED_OK,200,True,True,['6'],23,JSON-LD extracted
+dal makhani,pipingpotcurry.com,https://pipingpotcurry.com/dal-makhani-instant-pot/,FETCHED_OK,200,True,True,['4'],19,JSON-LD extracted
+chole,pipingpotcurry.com,https://pipingpotcurry.com/punjabi-chana-masala-chole-instant-pot/,HTTP_404,404,False,False,,0,HTTP 404
+gajar ka halwa,pipingpotcurry.com,https://pipingpotcurry.com/gajar-halwa-instant-pot-recipe/,HTTP_404,404,False,False,,0,HTTP 404
+gulab jamun,pipingpotcurry.com,https://pipingpotcurry.com/gulab-jamun-recipe/,HTTP_404,404,False,False,,0,HTTP 404
+samosa,pipingpotcurry.com,https://pipingpotcurry.com/air-fryer-samosa-recipe/,HTTP_404,404,False,False,,0,HTTP 404
+onion pakora,pipingpotcurry.com,https://pipingpotcurry.com/onion-pakoda/,HTTP_404,404,False,False,,0,HTTP 404
+poha,pipingpotcurry.com,https://pipingpotcurry.com/poha-recipe/,FETCHED_OK,200,True,True,['3'],17,JSON-LD extracted
+butter chicken,pipingpotcurry.com,https://pipingpotcurry.com/butter-chicken-instant-pot/,FETCHED_OK,200,True,True,['5'],22,JSON-LD extracted
+chicken biryani,pipingpotcurry.com,https://pipingpotcurry.com/chicken-biryani-instant-pot/,FETCHED_OK,200,True,True,['4'],25,JSON-LD extracted
+paneer butter masala,vegrecipesofindia.com,https://www.vegrecipesofindia.com/paneer-butter-masala/,FETCHED_OK,200,True,True,['4'],21,JSON-LD extracted
+dal makhani,vegrecipesofindia.com,https://www.vegrecipesofindia.com/dal-makhani-restaurant-style-recipe/,FETCHED_OK,200,True,True,['4'],25,JSON-LD extracted
+chole,vegrecipesofindia.com,https://www.vegrecipesofindia.com/punjabi-chole-chickpeas-in-a-spicy-gravy/,FETCHED_OK,200,True,True,['5'],32,JSON-LD extracted
+gajar ka halwa,vegrecipesofindia.com,https://www.vegrecipesofindia.com/gajar-halwa-recipe-gajar-ka-halwa/,FETCHED_OK,200,True,True,['6'],9,JSON-LD extracted
+gulab jamun,vegrecipesofindia.com,https://www.vegrecipesofindia.com/gulab-jamun-recipe-with-khoya/,FETCHED_OK,200,True,True,"['20', '20 Gulab Jamun']",12,JSON-LD extracted
+samosa,vegrecipesofindia.com,https://www.vegrecipesofindia.com/samosa-recipe-punjabi-samosa/,FETCHED_OK,200,True,True,"['12', '12 Samosa']",25,JSON-LD extracted
+onion pakora,vegrecipesofindia.com,https://www.vegrecipesofindia.com/onion-pakoda-recipe-pakora-recipes/,HTTP_404,404,False,False,,0,HTTP 404
+poha,vegrecipesofindia.com,https://www.vegrecipesofindia.com/kanda-poha-recipe-how-to-make-kanda-poha/,HTTP_404,404,False,False,,0,HTTP 404
+paneer butter masala,tarladalal.com,https://www.tarladalal.com/paneer-butter-masala-38973r,BLOCKED,403,False,False,,0,Anti-bot challenge/403
+dal makhani,tarladalal.com,https://www.tarladalal.com/dal-makhani-168r,BLOCKED,403,False,False,,0,Anti-bot challenge/403
+chole,tarladalal.com,https://www.tarladalal.com/chole-chana-masala-155r,BLOCKED,403,False,False,,0,Anti-bot challenge/403
+gajar ka halwa,tarladalal.com,https://www.tarladalal.com/gajar-ka-halwa-3889r,BLOCKED,403,False,False,,0,Anti-bot challenge/403
+gulab jamun,tarladalal.com,https://www.tarladalal.com/gulab-jamun-recipe-121r,BLOCKED,403,False,False,,0,Anti-bot challenge/403
+samosa,tarladalal.com,https://www.tarladalal.com/samosa-recipe-punjabi-samosa-156r,BLOCKED,403,False,False,,0,Anti-bot challenge/403
+onion pakora,tarladalal.com,https://www.tarladalal.com/kanda-bhajiya-onion-pakora-3375r,BLOCKED,403,False,False,,0,Anti-bot challenge/403
+poha,tarladalal.com,https://www.tarladalal.com/kanda-poha-3277r,BLOCKED,403,False,False,,0,Anti-bot challenge/403

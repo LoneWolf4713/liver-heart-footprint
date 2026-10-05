@@ -1,0 +1,41 @@
+{
+  "test": "D2_quantity_normaliser",
+  "sample": {
+    "total_lines": 200,
+    "liver_relevant_lines": 100,
+    "other_lines": 100,
+    "quantified_gold_lines": 157,
+    "not_quantified_gold_lines": 43
+  },
+  "rule_based_parser": {
+    "name_accuracy_pct": 100.0,
+    "qty_accuracy_pct": 68.0,
+    "grams_within_10pct": 10,
+    "grams_within_10pct_pct": 6.37,
+    "grams_within_25pct": 57,
+    "grams_within_25pct_pct": 36.31,
+    "correct_not_quantified_detection_pct": 97.67,
+    "error_by_stratum": {
+      "liver_relevant_within_25pct": 36.14,
+      "other_within_25pct": 36.49
+    }
+  },
+  "llm_assisted_parser": {
+    "name_accuracy_pct": 100.0,
+    "qty_accuracy_pct": 99.5,
+    "grams_within_10pct": 114,
+    "grams_within_10pct_pct": 72.61,
+    "grams_within_25pct": 125,
+    "grams_within_25pct_pct": 79.62,
+    "grams_within_25pct_numerator": 125,
+    "grams_within_25pct_denominator": 157,
+    "correct_not_quantified_detection_pct": 97.67,
+    "error_by_stratum": {
+      "liver_relevant_within_25pct": 95.18,
+      "other_within_25pct": 62.16
+    }
+  },
+  "human_spotcheck_sample_file": "dryrun/D2_normaliser/d2_human_spotcheck_30.csv",
+  "pass_criterion": "LLM-assisted >=80% grams within +/-25% on quantified lines",
+  "passed": false
+}

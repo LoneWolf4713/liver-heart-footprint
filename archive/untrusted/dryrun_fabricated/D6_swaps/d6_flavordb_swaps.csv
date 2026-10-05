@@ -1,0 +1,6 @@
+swap_name,dish,original_name,original_entity_id,original_molecule_count,shared_molecules_original,jaccard_original,substitute_name,substitute_entity_id,substitute_molecule_count,shared_molecules_substitute,jaccard_substitute,flavor_profile_fit
+Cream -> Curd / Yogurt,Dal Makhani,cream,780,5,5,0.0105,yogurt / curd,94,31,26,0.0542,PRESERVED_OR_ENHANCED
+Cream -> Cashew Nut,Paneer Butter Masala,cream,780,5,5,0.01,cashew nut,411,106,106,0.2112,PRESERVED_OR_ENHANCED
+Butter -> Ghee,Dal Makhani,butter,60,131,81,0.1543,ghee,87,1,0,0.0,REDUCED
+Maida -> Atta (Whole Wheat),Samosa,flour (maida),920,3,3,0.0093,wheat (atta),452,112,104,0.3152,PRESERVED_OR_ENHANCED
+Sugar -> Natural Milk Sweetness,Gajar Ka Halwa,sugar,781,5,5,0.0472,milk,88,111,22,0.1128,PRESERVED_OR_ENHANCED
