@@ -47,7 +47,10 @@ for r in samples():
 print(f"  sample quantified lines matched: {total}")
 check(match_name("maida")["code"] == "A018", "maida -> A018")
 check(match_name("besan")["code"] == "A504", "besan -> A504")
-check(match_name("ghee")["code"] in ("T506", "T013"), "ghee -> T506/T013")
+for nm, code in (("ghee", "T013"), ("oil", "T508"), ("milk", "L901"), ("curd", "L902"), ("dahi", "L902"), ("paneer", "L903"),
+                 ("butter", "L904"), ("fresh cream", "L905"), ("malai", "L906"), ("chicken", "N500"), ("boneless chicken", "N500"),
+                 ("mustard oil", "T510")):
+    check(match_name(nm)["code"] == code, f"project default: {nm} -> {code} (docs/SPEC.md section 5), got {match_name(nm)['code']}")
 check(match_name("sunflower oil")["code"] in ("T508", "T012"), "sunflower oil -> T508/T012 (UK preferred)")
 check(match_name("xqzv blorf")["code"] == "UNMAPPED", "nonsense -> UNMAPPED")
 finish("T4 match")

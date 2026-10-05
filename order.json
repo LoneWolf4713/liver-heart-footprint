@@ -38,7 +38,8 @@
   "docs/BUILD_GUIDE.md",
   "README.md",
   "data/README.md",
-  ".gitignore"
+  ".gitignore",
+  "data/curated/indian_products.csv"
  ],
  "always_allowed": [
   "tests/*",

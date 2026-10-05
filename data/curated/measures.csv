@@ -1,16 +1,16 @@
 match_type,match,unit,size,grams,source,note
-code,T001;T002;T003;T004;T005;T006;T007;T008;T009;T010;T011;T012;T502;T507;T508;T509;T510;T504,tsp,,4.5,USDA FDC SR Legacy 171411 (Oil soybean salad or cooking) portion,
+code,T001;T002;T003;T004;T005;T006;T007;T008;T009;T010;T011;T012;T502;T507;T508;T509;T510;T504,tsp,,5,"ICMR-NIN Dietary Guidelines for Indians 2024, Annexure II (scale-measured household measures), p.113: 'Oil/ghee 5 g = 1 teaspoon'",Indian scale-measured; USDA FDC 171411 gives 4.5 g
 code,T001;T002;T003;T004;T005;T006;T007;T008;T009;T010;T011;T012;T502;T507;T508;T509;T510;T504,tbsp,,13.6,USDA FDC SR Legacy 171411 portion,
 code,T001;T002;T003;T004;T005;T006;T007;T008;T009;T010;T011;T012;T502;T507;T508;T509;T510;T504,cup,,218,USDA FDC SR Legacy 171411 portion,
 code,T001;T002;T003;T004;T005;T006;T007;T008;T009;T010;T011;T012;T502;T507;T508;T509;T510;T504,ml,,0.92,derived: FDC 171411 tbsp 13.6 g / 14.79 ml,density g per ml
-code,T013;T506;T014,tbsp,,12.8,USDA FDC SR Legacy 173412 (Butter oil anhydrous) portion,ghee; vanaspati assumed same
-code,T013;T506;T014,tsp,,4.27,derived: FDC 173412 tbsp / 3,
-code,T013;T506;T014,cup,,205,USDA FDC SR Legacy 173412 portion,
-code,T013;T506;T014,ml,,0.87,derived: FDC 173412 tbsp 12.8 g / 14.79 ml,density g per ml
-code,T500;T501,tbsp,,14.2,USDA FDC SR Legacy 173430 (Butter without salt) portion; INDB Units.xlsx Butter 1tbsp,
-code,T500;T501,tsp,,4.73,derived: FDC 173430 tbsp / 3,
-code,T500;T501,cup,,227,USDA FDC SR Legacy 173430 portion,
-code,T500;T501,pat,,5,USDA FDC SR Legacy 173430 portion,
+code,T013;T506;T014,tbsp,,13.38,"derived: Amul Pure Ghee label 90.5 g fat per 100 ml (density 0.905 g/ml, sabardairy.org) x 14.79 ml",ICMR-NIN adult charts give 1 tbsp oil = 10 g (conflict; Phase 2 range)
+code,T013;T506;T014,tsp,,5,"ICMR-NIN Dietary Guidelines for Indians 2024, Annexure II (scale-measured household measures), p.113: 'Oil/ghee 5 g = 1 teaspoon'",ghee; vanaspati assumed same
+code,T013;T506;T014,cup,,217.2,derived: Amul Pure Ghee label density 0.905 g/ml x 240 ml,
+code,T013;T506;T014,ml,,0.905,"derived: Amul Pure Ghee label 90.5 g fat per 100 ml (sabardairy.org, fetched 2026-10-05)",density g per ml
+code,T500;T501;L904,tbsp,,14.2,USDA FDC SR Legacy 173430 (Butter without salt) portion; INDB Units.xlsx Butter 1tbsp,
+code,T500;T501;L904,tsp,,4.73,derived: FDC 173430 tbsp / 3,
+code,T500;T501;L904,cup,,227,USDA FDC SR Legacy 173430 portion,
+code,T500;T501;L904,pat,,5,USDA FDC SR Legacy 173430 portion,
 code,G528;G540,tsp,,6,USDA FDC SR Legacy 173468 (Salt table) portion,black salt (G540) assumed same as table salt
 code,G528;G540,tbsp,,18,USDA FDC SR Legacy 173468 portion,
 code,G528;G540,cup,,292,USDA FDC SR Legacy 173468 portion,
@@ -108,7 +108,7 @@ code,A022,cup,,167,INDB Units.xlsx Semolina 1cup 167g; USDA FDC SR Legacy 168933
 code,A022,tbsp,,10.4,derived: 167 g per cup / 16,
 code,B001;B003;B010;B013;B021,cup,,175,INDB Units.xlsx Urad/Green gram/Masoor/Arhar dal 1cup 175g (ASC manual),
 code,B001;B003;B010;B013;B021,tbsp,,12,INDB Units.xlsx Lentils 1tbsp 12g (USDA),applied to all dals
-code,B001;B003;B010;B013;B021,tsp,,4,derived: 12 g per tbsp / 3,
+code,B001;B003;B010;B013;B021,tsp,,5,"ICMR-NIN Dietary Guidelines for Indians 2024, Annexure II (scale-measured household measures), p.113: 'Redgram dal 5 g = 1 teaspoon'","applied to all dals; tbsp row (12 g, USDA) is less than 3 tsp: household spoons differ (Phase 2 range)"
 code,B018;B019;B020,cup,,184,INDB Units.xlsx Kidney beans raw 1cup 184g (USDA),
 code,B018;B019;B020,tbsp,,11,INDB Units.xlsx Kidney beans 1tbsp 11g (USDA),
 code,B002;B500;B509,cup,,200,INDB Units.xlsx Chickpeas raw 1cup 200g (USDA),
@@ -152,18 +152,18 @@ code,E033,cup,,244,INDB Units.xlsx Lemon juice raw 1cup 244g; USDA FDC SR Legacy
 code,E064,tbsp,,10,INDB Units.xlsx Tamarind 1tbsp 10g,
 code,E064,cup,,120,INDB Units.xlsx Tamarind 1cup 120g; USDA FDC SR Legacy 167763 cup pulp,
 code,E064,ball,,50,INDB Units.xlsx Tamarind 1ball size 50g,
-code,L001;L002,cup,,240,INDB Units.xlsx 1 cup 240ml/240g; INDB.do line 189,
-code,L001;L002,tbsp,,15,INDB.do line 188,
-code,L001;L002,tsp,,5,INDB.do line 187,
-code,L001;L002,ml,,1.0,INDB.do line 190,density g per ml
-code,L520,cup,,245,INDB Units.xlsx Yogurt plain whole milk 1cup 245g,
-code,L520,tbsp,,15,INDB.do line 188 (group L),
-code,L520,tsp,,5,INDB.do line 187 (group L),
-code,L512;L519;L515,cup,,240,INDB Units.xlsx Cream heavy 1cup 240g; Cream fluid light 1cup 240g,
-code,L512;L519;L515,tbsp,,15,INDB Units.xlsx Cream fluid light 1tbsp 15g; USDA FDC SR Legacy 170859,
-code,L512;L519;L515,ml,,1.0,derived: FDC 170859 tbsp 15 g / 14.79 ml (rounded),density g per ml
-code,L003,cup,,246,INDB Units.xlsx Paneer 1cup 246g (USDA),
-code,L003,cube,,20,INDB Units.xlsx Paneer 1cube 20g,
+code,L001;L002;L901,cup,,240,INDB Units.xlsx 1 cup 240ml/240g; INDB.do line 189,
+code,L001;L002;L901,tbsp,,15,INDB.do line 188,
+code,L001;L002;L901,tsp,,5,INDB.do line 187,
+code,L001;L002;L901,ml,,1.0,INDB.do line 190,density g per ml
+code,L520;L902,cup,,245,INDB Units.xlsx Yogurt plain whole milk 1cup 245g,
+code,L520;L902,tbsp,,15,INDB.do line 188 (group L),
+code,L520;L902,tsp,,5,INDB.do line 187 (group L),
+code,L512;L519;L515;L905,cup,,240,INDB Units.xlsx Cream heavy 1cup 240g; Cream fluid light 1cup 240g,
+code,L512;L519;L515;L905,tbsp,,15,INDB Units.xlsx Cream fluid light 1tbsp 15g; USDA FDC SR Legacy 170859,
+code,L512;L519;L515;L905,ml,,1.0,derived: FDC 170859 tbsp 15 g / 14.79 ml (rounded),density g per ml
+code,L003;L903,cup,,246,INDB Units.xlsx Paneer 1cup 246g (USDA),
+code,L003;L903,cube,,20,INDB Units.xlsx Paneer 1cube 20g,
 code,L508,cup,,304,INDB Units.xlsx Milk condensed sweetened 1cup 304g,
 code,L500,cup,,132,INDB Units.xlsx Cheese cheddar 1cup 132g,
 code,L500;L505,slice,,28,INDB Units.xlsx Cheese cheddar 1slice 28g,
@@ -238,3 +238,7 @@ any,*,oz,,28.35,definition (avoirdupois ounce),
 any,*,lb,,453.6,definition (avoirdupois pound),
 code,G014,tbsp,,6.0,derived: USDA FDC SR Legacy 169231 tsp 2.0 g x 3,
 code,G011;G012;G013,tbsp,,8.4,derived: USDA FDC SR Legacy 169230 tsp 2.8 g x 3,
+code,A014;A015;A013,tsp,,5,"ICMR-NIN Dietary Guidelines for Indians 2024, Annexure II (scale-measured household measures), p.113: 'Rice 10 g = 2 teaspoons'",
+code,A019,tsp,,3.33,"ICMR-NIN Dietary Guidelines for Indians 2024, Annexure II (scale-measured household measures), p.113: 'Wheat 10 g = 3 teaspoons of wheat flour'",
+code,A011,tsp,,2.5,"ICMR-NIN Dietary Guidelines for Indians 2024, Annexure II (scale-measured household measures), p.113: 'Rice flakes 10 g = 4 teaspoons'",
+code,B018;B019;B020,tsp,,5,"ICMR-NIN Dietary Guidelines for Indians 2024, Annexure II (scale-measured household measures), p.113: 'Rajmah 5 g = 1 teaspoon'",

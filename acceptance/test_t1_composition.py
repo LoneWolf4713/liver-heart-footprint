@@ -27,7 +27,6 @@ ifct = pd.read_csv(os.path.join(RAW, "ifct2017_transcription", "ifct2017_composi
 uk = pd.read_excel(os.path.join(RAW, "indb", "UK_fct.xlsx"), sheet_name="Sheet1")
 us = pd.read_excel(os.path.join(RAW, "indb", "US_fct.xlsx"), sheet_name="Sheet1")
 uk, us = uk[uk.food_code.notna()], us[us.food_code.notna()]
-check(len(t) == len(ifct) + len(uk) + len(us), f"expected {len(ifct) + len(uk) + len(us)} rows, got {len(t)}")
 KJ = float(c.set_index("id").loc["KJ_PER_KCAL", "value"])
 FKJ = float(c.set_index("id").loc["FAT_KJ_PER_G", "value"])
 FKC = float(c.set_index("id").loc["FAT_KCAL_PER_G", "value"])
@@ -42,6 +41,19 @@ def nan_or(x):
     v = pd.to_numeric(x, errors="coerce")
     return float("nan") if pd.isna(v) else float(v)
 
+
+inp = pd.read_csv(os.path.join(CUR, "indian_products.csv"))
+check(len(t) == len(ifct) + len(uk) + len(us) + len(inp), f"expected {len(ifct) + len(uk) + len(us) + len(inp)} rows, got {len(t)}")
+for r in inp.itertuples():
+    if r.code not in t.index:
+        check(False, f"IN_LABEL code {r.code} missing"); continue
+    row = t.loc[r.code]
+    check(row["source"] == "IN_LABEL" and row["energy_flag"] == r.energy_flag, f"{r.code}: source/energy_flag wrong")
+    for k in ("energy_kj", "energy_kcal", "fat_g", "sfa_g", "mufa_g", "pufa_g", "carb_g", "freesugar_g", "fibre_g", "protein_g", "sodium_mg"):
+        check(close(float(row[k]), num(getattr(r, k)), rel=1e-6, abs_=1e-9), f"{r.code} {k}: got {row[k]}, expected {getattr(r, k)}")
+    for k in ("tfa_g", "water_g"):
+        v = nan_or(getattr(r, k))
+        check((math.isnan(v) and math.isnan(row[k])) or close(float(row[k]), v, rel=1e-6, abs_=1e-9), f"{r.code} {k}: unknown must stay NaN")
 
 bad = 0
 for r in ifct.itertuples():

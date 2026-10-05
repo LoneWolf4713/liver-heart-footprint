@@ -64,3 +64,5 @@ Tool notes:
 - 40_BUILD_METHOD_RED_TEAM.md: red team of building with session-architect/builder; checks run; 13 failure points + fixes
 - 41_IFCT_TRANSCRIPTION_CHECK.md: public IFCT 2017 transcription reproduces INDB for 982/982 dishes; oils energy=0 defect; decision to use it
 - 42_PHASE1_BUILD_PACKAGE.md: Phase 1 builder package (spec, cited tables, 160 gold lines, 10 tests, reference impl check, 9 mutations caught)
+- 43_ASSUMPTIONS_AND_LIMITATIONS.md, 44_ASSUMPTION_RESEARCH_RESULTS.md (+ research_dairy/oils/measures_2026-10-05.md raw agent notes): assumptions log and research results
+- 45_USER_DECISIONS_INDIAN_DEFAULTS.md: Indian product defaults applied (toned milk, Amul dahi/paneer/butter/cream, malai, IFCT ghee, UK chicken, NIN teaspoons)

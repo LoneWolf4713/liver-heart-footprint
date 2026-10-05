@@ -40,7 +40,7 @@ Numeric-literal rule (checked by a test on every task): `src/lhf/*.py` may conta
 - `load_table() -> pandas.DataFrame`, cached, indexed by `code` (str). Columns:
   `name, source, energy_kj, energy_kcal, fat_g, sfa_g, mufa_g, pufa_g, tfa_g, carb_g, freesugar_g, fibre_g, protein_g, sodium_mg, water_g, energy_flag`.
   All values per 100 g edible portion.
-- Sources, combined into one table (no code appears twice):
+- Sources, combined into one table (no code appears twice; 746 rows):
   - `IFCT2017`: `data/raw/ifct2017_transcription/ifct2017_compositions.csv`, 542 rows. Column map:
     - `enerc`→energy_kj
     - `fatce`→fat_g
@@ -60,6 +60,7 @@ Numeric-literal rule (checked by a test on every task): `src/lhf/*.py` may conta
   - `INDB_US`: `data/raw/indb/US_fct.xlsx` sheet `Sheet1` (54 rows).
 
     Both INDB sheets use the column names directly. sfa/mufa/pufa are mg in the source, so divide by 1000. water_g and tfa_g are not in these sheets, so they are NaN.
+  - `IN_LABEL`: `data/curated/indian_products.csv` (6 rows, codes L901-L906: Amul toned milk, Amul dahi, Amul Malai Paneer, Amul salted butter, Amul fresh cream, home-made malai). It already has the unified columns and units; read them as they are. Empty tfa_g/water_g mean unknown (NaN); other empty values follow the missing-value rule. Its `energy_flag` column (LABEL or DERIVED_ENERGY) is kept as is.
 - Missing values: for every nutrient except `tfa_g` and `water_g`, a missing value (NaN, "N", "Tr", "NA", blank) becomes 0, exactly as INDB.do does. `tfa_g` and `water_g` stay NaN, meaning unknown.
 - Energy defect fix: in the IFCT transcription, the 14 fats and oils (codes T001-T014) have energy 0. For these rows:
   - energy_kj = fat_g × FAT_KJ_PER_G and energy_kcal = fat_g × FAT_KCAL_PER_G;
@@ -148,7 +149,15 @@ Rules:
 - Use `data/curated/aliases.csv` (columns alias,code,note), which the T4 builder creates. Aliases cover Indian names, Hindi in Devanagari, and common English variants (e.g. maida→A018, besan→A504, jeera→G025, hing→G019, kasuri methi→C020, toor dal→B021, curd→L520).
 - Then exact or fuzzy matching against composition names. Use stdlib `difflib` only, with cutoff = constant FUZZY_MATCH_CUTOFF.
 - Then UNMAPPED. Non-food items (charcoal) give NON_FOOD.
-- **Priority:** prefer IFCT2017 codes. Exception: for fats and oils, prefer the INDB_UK codes T5xx (INDB itself does this).
+- **Priority:** prefer IFCT2017 codes. Exceptions (project decisions, research_log 44-45):
+  - generic "oil"/"cooking oil"/"refined oil" → sunflower oil T508 (home recipes; a restaurant setting will use palm T007 in Phase 2); named oils → their own code (mustard T510, coconut T507, ...);
+  - "ghee" → IFCT T013 (lab-measured Indian ghee);
+  - "milk" → toned milk L901; "full cream/whole milk" → L002; "buffalo milk" → L001;
+  - "curd", "dahi", "yogurt" → L902 (Amul dahi); "greek yogurt" → L520;
+  - "paneer", "cottage cheese" → L903 (Amul Malai Paneer);
+  - "butter" → L904 (Amul salted); "unsalted butter" → T501;
+  - "cream", "fresh cream", "light cream" → L905; "heavy cream", "whipping cream" → L512; "malai" → L906;
+  - every "chicken" name → N500 (UK whole chicken; IFCT poultry fatty acids look incomplete, research_log 44).
 - Every alias code must exist in the composition table.
 - Aliases must be general names. They must never be whole ingredient lines copied from a test file (a test checks this).
 

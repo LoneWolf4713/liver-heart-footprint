@@ -16,6 +16,7 @@ Trust: [V] verified/real | [P] partially verified | never use anything in `archi
 | File | Content | Trust |
 |---|---|---|
 | measures.csv (+ measures_README.md) | Household measure -> grams, every row cited (INDB Units.xlsx, USDA FDC SR Legacy portions, INDB.do rules) | [V] sources; assumptions flagged in note column |
+| indian_products.csv | 6 Indian products (Amul toned milk, dahi, Malai Paneer, salted butter, fresh cream; home malai) per 100 g, codes L901-L906, with citations and derivations | [V] labels; cream/malai partly derived [U] |
 | constants.csv | Conversion factors and sanity bounds with sources (FAO FNP 77, IUPAC, INDB) | [V] |
 | classes.csv | Food code -> class (ADDED_SUGAR, REFINED_GRAIN, COOKING_OIL, DAIRY_FAT, HYDROGENATED_FAT, SALT, SPICE, WATER) | project decisions; [U] items marked |
 | aliases.csv | Ingredient name -> code (created by build task T4) | checked by acceptance tests + hidden set |
