@@ -66,3 +66,4 @@ Tool notes:
 - 42_PHASE1_BUILD_PACKAGE.md: Phase 1 builder package (spec, cited tables, 160 gold lines, 10 tests, reference impl check, 9 mutations caught)
 - 43_ASSUMPTIONS_AND_LIMITATIONS.md, 44_ASSUMPTION_RESEARCH_RESULTS.md (+ research_dairy/oils/measures_2026-10-05.md raw agent notes): assumptions log and research results
 - 45_USER_DECISIONS_INDIAN_DEFAULTS.md: Indian product defaults applied (toned milk, Amul dahi/paneer/butter/cream, malai, IFCT ghee, UK chicken, NIN teaspoons)
+- 46_DELIVERABLES_TONE_DOWN_ANALYSIS.md: analysis for reducing to 4 crisp, verifiable deliverables

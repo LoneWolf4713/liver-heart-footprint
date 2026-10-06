@@ -10,4 +10,4 @@ Paste an Indian recipe link and get its per-serving liver and heart footprint (s
 - History and audits: `docs/research_log/` (index: `00_README_and_method.md`)
 - Session history: `docs/session_log.md`
 
-Status (2026-10-05): proposal submitted; IFCT transcription verified against INDB; Phase 1 build package ready (AGENTS.md, order.json, acceptance/, docs/SPEC.md). Human guide: docs/BUILD_GUIDE.md.
+Status (2026-10-06): scope revised to 4 deliverables (fried-food dataset, engine, atlas, web app; docs/submission/revision_2026-10-06). Phase 1 (engine core) build package ready and locked; human guide: docs/BUILD_GUIDE.md.

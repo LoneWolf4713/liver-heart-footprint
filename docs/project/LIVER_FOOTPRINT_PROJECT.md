@@ -298,3 +298,31 @@ Our caveats answer several of these directly: cooking and frying are modelled, I
 **Risks:** over-claiming precision (avoid it by using ranges), and scope for two people (prioritise the engine, frying model and app; then the atlas and swaps).
 
 **Symposium:** not guaranteed, but this is the strongest candidate evaluated.
+
+## 22. Revised scope: four crisp deliverables (2026-10-06; supersedes section 17)
+**Why it changed.** The professor asked for deliverables he can verify; vague promises lose marks. The team chose four deliverables and dropped the substitution engine (old D3), which had the least data (6 real author-stated swaps) and depended on a large recipe corpus for its quantity rule.
+
+**How they fit together.** D2 is the engine:
+- D1 feeds D2 with oil-uptake ranges for fried dishes;
+- D3 runs D2 in bulk;
+- D4 is the app around D2.
+
+| # | Deliverable | Promise | Verification | Status on 2026-10-06 |
+|---|---|---|---|---|
+| D1 | Indian Fried-Food Fat Dataset | ≥60 lab-measured fat values from ≥5 published sources, each row cited; fat ranges for 5 fried-food categories | Rows traced to sources; script recomputes ranges and reports held-out-source hit rate | 69 rows (61 verified, 8 to check) from 10 sources |
+| D2 | Recipe Liver and Heart Load Engine | Per-serving energy, fat, SFA, added sugar, sodium, refined carbs as % of ICMR-NIN/WHO limits (Liver and Heart views, no composite score), traced to lines; fried dishes use D1 | Reproduces INDB for ≥95% of ~1,000 dishes; accuracy on ≥150 annotated lines; ≥10 lab-analysed dishes compared | Phase 1 build package locked and fully tested with the architect's reference; 160 annotated lines; 13 lab dishes available |
+| D3 | Liver and Heart Footprint Atlas | ≥1,000 INDB recipes + ≥1,000 web recipes from ≥3 sites; load by dish category; ingredient-group contributions to SFA, sugar, sodium; textbook vs web for ≥20 shared dishes | Script-generated figures from saved results; coverage reported | INDB 1,014 recipes in hand (932 with servings); ~18,400 sitemap URLs on 5 polite sites (counted 2026-10-06) |
+| D4 | Web Application | Paste an ingredient list or a link from ≥3 supported sites; per-serving bars, per-ingredient table with sources, top contributors | Live demo on ≥10 links; app values equal engine output | Not started |
+
+**Not promised, possible extensions:**
+- question-answering assistant (needs an LLM API key);
+- home vs street frying settings;
+- region analysis where cuisine tags exist;
+- FlavorDB pairing;
+- swaps.
+
+**The "reducing" part of the title** is met by driver identification: the ingredient groups and lines that contribute most of each load.
+
+**Files:**
+- `docs/submission/revision_2026-10-06/` (PROPOSAL.md/.pdf, FORM_FIELDS.md/.pdf);
+- the originals in `docs/submission/` stay as the record of what was first submitted.
