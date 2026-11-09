@@ -1,0 +1,176 @@
+"""Household measures to grams conversion for Phase 1 core engine (SPEC §6)."""
+import csv
+import os
+
+from lhf import constants
+from lhf.paths import DATA_CURATED
+
+_MEASURES = None
+
+
+def _load_measures():
+    global _MEASURES
+    if _MEASURES is not None:
+        return _MEASURES
+
+    path = os.path.join(DATA_CURATED, "measures.csv")
+    any_measures = {}
+    code_measures = {}
+    group_measures = {}
+
+    with open(path, encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            grams_val = float(row["grams"])
+            m_type = row["match_type"].strip()
+            unit_val = row["unit"].strip().lower()
+            size_val = row["size"].strip().lower() if row["size"] else ""
+
+            if m_type == "any":
+                any_measures[unit_val] = grams_val
+            elif m_type == "code":
+                for code_item in row["match"].split(";"):
+                    clean_code = code_item.strip().upper()
+                    key = (clean_code, unit_val)
+                    if key not in code_measures:
+                        code_measures[key] = []
+                    code_measures[key].append({"size": size_val, "grams": grams_val})
+            elif m_type == "group":
+                grp = row["match"].strip().upper()
+                group_measures[(grp, unit_val)] = grams_val
+
+    _MEASURES = (any_measures, code_measures, group_measures)
+    return _MEASURES
+
+
+def _get_density(code):
+    if code and code not in ("UNMAPPED", "NON_FOOD"):
+        _, code_measures, group_measures = _load_measures()
+        if (code, "ml") in code_measures:
+            return code_measures[(code, "ml")][0]["grams"], False
+        if (code[0], "ml") in group_measures:
+            return group_measures[(code[0], "ml")], False
+    return 1, True
+
+
+def _resolve_code_measure(code, unit, size):
+    _, code_measures, _ = _load_measures()
+    rows = code_measures.get((code, unit))
+    if not rows:
+        return None, None
+
+    chosen = None
+    flag = None
+
+    if size is not None:
+        for r in rows:
+            if r["size"] == size:
+                chosen = r
+                break
+
+    if chosen is None:
+        for r in rows:
+            if not r["size"]:
+                chosen = r
+                break
+
+    if chosen is None:
+        for r in rows:
+            if r["size"] == "medium":
+                chosen = r
+                if size is None:
+                    flag = "SIZE_ASSUMED_MEDIUM"
+                else:
+                    flag = "SIZE_SUBSTITUTED"
+                break
+
+    return chosen, flag
+
+
+def grams_for(qty, unit, size, stated_g, stated_ml, code):
+    """Convert household measure to grams applying rules 1-9 in order."""
+    # 1. stated_g is not None -> grams = stated_g, basis STATED_MASS
+    if stated_g is not None:
+        return {"grams": float(stated_g), "basis": "STATED_MASS", "flags": []}
+
+    # Normalize code if string
+    if isinstance(code, str):
+        code = code.strip().upper()
+        if not code:
+            code = None
+
+    # 2. stated_ml is not None -> grams = stated_ml * density, basis STATED_VOLUME
+    if stated_ml is not None:
+        density, assumed = _get_density(code)
+        flags = ["DENSITY_ASSUMED_1"] if assumed else []
+        return {"grams": float(stated_ml) * density, "basis": "STATED_VOLUME", "flags": flags}
+
+    # Normalize unit and size
+    if isinstance(unit, list):
+        unit = unit[0] if len(unit) > 0 else None
+    if isinstance(unit, str):
+        unit = unit.strip().lower()
+        if not unit:
+            unit = None
+
+    if isinstance(size, list):
+        size = size[0] if len(size) > 0 else None
+    if isinstance(size, str):
+        size = size.strip().lower()
+        if not size:
+            size = None
+
+    # 3. qty is None or unit is None -> None, basis UNQUANTIFIABLE
+    if qty is None or unit is None:
+        return {"grams": None, "basis": "UNQUANTIFIABLE", "flags": []}
+
+    any_measures, _, group_measures = _load_measures()
+
+    # 4. unit in g, kg, mg, oz, lb -> qty * any row, basis MASS_UNIT
+    if unit in any_measures:
+        return {"grams": float(qty) * any_measures[unit], "basis": "MASS_UNIT", "flags": []}
+
+    # 5. unit in ml, l -> qty * (1000 if l) * density as in rule 2, basis VOLUME_UNIT
+    if unit in ("ml", "l"):
+        mult = 1000 if unit == "l" else 1
+        density, assumed = _get_density(code)
+        flags = ["DENSITY_ASSUMED_1"] if assumed else []
+        return {"grams": float(qty) * mult * density, "basis": "VOLUME_UNIT", "flags": flags}
+
+    # When code is None or UNMAPPED/NON_FOOD, only rules 1-5 can apply
+    if not code or code in ("UNMAPPED", "NON_FOOD"):
+        return {"grams": None, "basis": "UNQUANTIFIABLE", "flags": []}
+
+    # 6. Code rows for (code, unit), basis CODE_MEASURE
+    chosen, flag = _resolve_code_measure(code, unit, size)
+    if chosen is not None:
+        flags = [flag] if flag else []
+        return {"grams": float(qty) * chosen["grams"], "basis": "CODE_MEASURE", "flags": flags}
+
+    # 7. Group row for (first letter of code, unit), basis GROUP_MEASURE
+    grp = code[0]
+    if (grp, unit) in group_measures:
+        return {"grams": float(qty) * group_measures[(grp, unit)], "basis": "GROUP_MEASURE", "flags": []}
+
+    # 8. unit pinch or dash with no row found in rules 6-7 -> qty * PINCH_FRACTION_OF_TSP * (tsp weight found by rules 6-7)
+    if unit in ("pinch", "dash"):
+        tsp_chosen, _ = _resolve_code_measure(code, "tsp", None)
+        tsp_grams = None
+        tsp_basis = None
+        if tsp_chosen is not None:
+            tsp_grams = tsp_chosen["grams"]
+            tsp_basis = "CODE_MEASURE"
+        elif (grp, "tsp") in group_measures:
+            tsp_grams = group_measures[(grp, "tsp")]
+            tsp_basis = "GROUP_MEASURE"
+
+        if tsp_grams is not None:
+            pinch_frac = constants.get("PINCH_FRACTION_OF_TSP")
+            return {
+                "grams": float(qty) * pinch_frac * tsp_grams,
+                "basis": tsp_basis,
+                "flags": ["PINCH_AS_QUARTER_TSP"],
+            }
+
+    # 9. Otherwise -> None, basis UNQUANTIFIABLE
+    return {"grams": None, "basis": "UNQUANTIFIABLE", "flags": []}
