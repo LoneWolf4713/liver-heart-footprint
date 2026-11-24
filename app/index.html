@@ -1604,6 +1604,182 @@
       padding: 24px 28px;
       margin-bottom: 28px;
     }
+
+    /* ======================================================== */
+    /* D3 ATLAS: PRESENTATION VIEWER & DATASET EXTENSIONS       */
+    /* ======================================================== */
+    .atlas-metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 44px;
+    }
+
+    .atlas-metric-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 24px 26px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+      transition: all 0.2s ease;
+    }
+
+    .atlas-metric-card:hover {
+      border-color: #d2d2d7;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+    }
+
+    .atlas-metric-val {
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .atlas-metric-label {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .atlas-metric-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Presentation-Ready Single Figure Viewer */
+    .figure-viewer-container {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin-bottom: 48px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+    }
+
+    .figure-viewer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 22px;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .figure-selector-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .figure-selector-chip {
+      background: #f5f5f7;
+      border: 1px solid #e5e5ea;
+      border-radius: 8px;
+      padding: 7px 14px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #636366;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .figure-selector-chip:hover {
+      background: #e8e8ed;
+      color: #1d1d1f;
+    }
+
+    .figure-selector-chip.active {
+      background: #0071e3;
+      color: #ffffff;
+      border-color: #0071e3;
+      box-shadow: 0 2px 6px rgba(0, 113, 227, 0.25);
+    }
+
+    .figure-nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .figure-nav-btn {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-main);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .figure-nav-btn:hover {
+      background: #f5f5f7;
+      border-color: #d2d2d7;
+    }
+
+    .figure-nav-counter {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 600;
+      color: #86868b;
+      margin: 0 4px;
+    }
+
+    .figure-stage-viewport {
+      background: #fbfbfd;
+      border: 1px solid #e5e5ea;
+      border-radius: 10px;
+      padding: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+      min-height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .figure-stage-img {
+      max-height: 540px;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    }
+
+    .figure-insight-card {
+      background: #f8fafd;
+      border: 1px solid #d0e2ff;
+      border-left: 4px solid #0071e3;
+      border-radius: 8px;
+      padding: 18px 22px;
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: #1d1d1f;
+    }
+
+    .figure-insight-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #0071e3;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
   </style>
 
   <!-- Pre-loaded Offline Datasets -->
@@ -2980,69 +3156,163 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
       <!-- TAB 3: D3 · ATLAS                          -->
       <!-- ========================================== -->
       <div x-show="currentTab === 'd3'" x-transition.opacity.duration.150ms>
-        <div style="margin-bottom: 24px;">
-          <h2 style="font-size: 24px; font-weight: 700; margin: 0 0 6px 0;">Cuisine-Scale Nutritional Atlas</h2>
-          <p style="font-size: 14px; color: var(--text-muted); margin: 0;">
-            Macro-scale analysis across 1,014 INDB textbook recipes, 71 web recipes, and 11,610 ingredient lines.
+        <div style="margin-bottom: 38px;">
+          <div style="font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0071e3; margin-bottom: 6px;">
+            Deliverable 3 (D3) &middot; Macro-Scale Computational Atlas
+          </div>
+          <h2 style="font-size: 28px; font-weight: 800; letter-spacing: -0.025em; margin: 0 0 10px 0; color: var(--text-main);">
+            1,014-Recipe Nutritional Atlas &amp; Cross-Setting Inflation
+          </h2>
+          <p style="font-size: 14.5px; color: var(--text-muted); max-width: 880px; line-height: 1.55; margin: 0;">
+            Macro-level computational analysis across 1,014 standardized INDB textbook formulations, 71 real-world web recipes, and 11,610 parsed ingredient lines comparing traditional baselines against modern culinary lipid inflation.
           </p>
         </div>
 
-        <!-- Scale Stats Row -->
-        <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; margin-bottom: 32px;">
-          <div style="border: 1px solid var(--border-subtle); border-radius: 10px; padding: 16px; text-align: center;">
-            <div style="font-size: 26px; font-weight: 800; color: #0071e3;" x-text="atlas.metrics.indb_recipes_total || 1014"></div>
-            <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">INDB Recipes</div>
+        <!-- Scale Stats Grid -->
+        <div class="atlas-metrics-grid">
+          <div class="atlas-metric-card">
+            <div class="atlas-metric-val" style="color: #0071e3;" x-text="atlas.metrics.indb_recipes_total || 1014"></div>
+            <div class="atlas-metric-label">INDB Textbook Baseline</div>
+            <div class="atlas-metric-sub">Standardized formulations across ASC (490), BFP (376), and OSR (148) in the national repository.</div>
           </div>
-          <div style="border: 1px solid var(--border-subtle); border-radius: 10px; padding: 16px; text-align: center;">
-            <div style="font-size: 26px; font-weight: 800;" x-text="atlas.metrics.web_recipes_total || 71"></div>
-            <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Web Recipes</div>
+
+          <div class="atlas-metric-card">
+            <div class="atlas-metric-val" style="color: #1d1d1f;" x-text="(atlas.metrics.lines_total || 11610).toLocaleString()"></div>
+            <div class="atlas-metric-label">Parsed Ingredient Lines</div>
+            <div class="atlas-metric-sub">Standardized across 1,085 recipes with physical bulk density and high-confidence IFCT matching.</div>
           </div>
-          <div style="border: 1px solid var(--border-subtle); border-radius: 10px; padding: 16px; text-align: center;">
-            <div style="font-size: 26px; font-weight: 800;" x-text="atlas.metrics.lines_total || 11610"></div>
-            <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Lines Analyzed</div>
+
+          <div class="atlas-metric-card">
+            <div class="atlas-metric-val" style="color: var(--color-warning);" x-text="atlas.metrics.frying_bath_corrections_applied || 103"></div>
+            <div class="atlas-metric-label">Frying Bath Corrections</div>
+            <div class="atlas-metric-sub">Deep-immersion oil baths excluded; actual absorbed fat injected via empirical Soxhlet laboratory assays.</div>
           </div>
-          <div style="border: 1px solid var(--border-subtle); border-radius: 10px; padding: 16px; text-align: center;">
-            <div style="font-size: 26px; font-weight: 800; color: var(--color-warning);" x-text="atlas.metrics.frying_bath_corrections_applied || 103"></div>
-            <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Frying Corrected</div>
+
+          <div class="atlas-metric-card">
+            <div class="atlas-metric-val" style="color: #c62828;">6.31&times;</div>
+            <div class="atlas-metric-label">Peak SFA Inflation (Biryani)</div>
+            <div class="atlas-metric-sub">Chicken Biryani saturated fat skyrockets from 1.49g in textbook to 9.37g in commercial web recipes.</div>
           </div>
-          <div style="border: 1px solid var(--border-subtle); border-radius: 10px; padding: 16px; text-align: center;">
-            <div style="font-size: 26px; font-weight: 800; color: #28cd41;" x-text="`${atlas.metrics.median_fat_inflation_web_div_textbook || 0.77}×`"></div>
-            <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Fat Inflation</div>
+
+          <div class="atlas-metric-card">
+            <div class="atlas-metric-val" style="color: #ff9500;" x-text="`${atlas.metrics.highest_sfa_median_pct || 32.5}%`"></div>
+            <div class="atlas-metric-label">Highest SFA Median (Street Snacks)</div>
+            <div class="atlas-metric-sub">Snacks &amp; Street Food exhausts 32.5% of the daily limit per portion, followed by Sweets at 31.6%.</div>
           </div>
-          <div style="border: 1px solid var(--border-subtle); border-radius: 10px; padding: 16px; text-align: center;">
-            <div style="font-size: 26px; font-weight: 800; color: #af52de;" x-text="`${atlas.metrics.median_sfa_inflation_web_div_textbook || 0.93}×`"></div>
-            <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">SFA Inflation</div>
+
+          <div class="atlas-metric-card">
+            <div class="atlas-metric-val" style="color: #af52de;" x-text="`${atlas.metrics.highest_sugar_median_pct || 61.9}%`"></div>
+            <div class="atlas-metric-label">Highest Sugar Median (Mithai)</div>
+            <div class="atlas-metric-sub">Sweets deliver 15.46g free sugars (61.9% WHO ceiling); pairing with a sweet beverage pushes intake to 121.9%.</div>
+          </div>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- PRESENTATION-READY SINGLE FIGURE VIEWER                  -->
+        <!-- ======================================================== -->
+        <div class="figure-viewer-container">
+          <!-- Viewer Top Control Header -->
+          <div class="figure-viewer-header">
+            <div>
+              <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0071e3; margin-bottom: 4px;">
+                Presentation Slideshow &middot; High-Resolution Figure Viewer
+              </div>
+              <h3 style="font-size: 20px; font-weight: 700; color: var(--text-main); margin: 0 0 3px 0;" x-text="figures[activeFigureIndex].title"></h3>
+              <div style="font-size: 13px; color: var(--text-muted);" x-text="figures[activeFigureIndex].subtitle"></div>
+            </div>
+
+            <!-- Jump Selector & Prev/Next -->
+            <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+              <!-- Quick Jump Chips -->
+              <div class="figure-selector-chips">
+                <template x-for="(fig, idx) in figures" :key="fig.id">
+                  <button 
+                    type="button"
+                    class="figure-selector-chip"
+                    :class="{ 'active': activeFigureIndex === idx }"
+                    @click="activeFigureIndex = idx">
+                    <span x-text="fig.chipLabel"></span>
+                  </button>
+                </template>
+              </div>
+
+              <!-- Directional Buttons & Counter -->
+              <div class="figure-nav-controls">
+                <button type="button" class="figure-nav-btn" @click="prevFigure()" title="Previous Figure">
+                  &larr; Prev
+                </button>
+                <span class="figure-nav-counter" x-text="`${activeFigureIndex + 1} / ${figures.length}`"></span>
+                <button type="button" class="figure-nav-btn" @click="nextFigure()" title="Next Figure">
+                  Next &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage Viewport (Large Full Size) -->
+          <div class="figure-stage-viewport">
+            <img 
+              :src="figures[activeFigureIndex].src" 
+              :alt="figures[activeFigureIndex].title" 
+              class="figure-stage-img">
+          </div>
+
+          <!-- Analytical Insight Box -->
+          <div class="figure-insight-card">
+            <div class="figure-insight-label">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              Key Clinical &amp; Gastronomic Finding
+            </div>
+            <div style="font-size: 13.5px; line-height: 1.6; color: #2c2c2e;" x-text="figures[activeFigureIndex].insight"></div>
           </div>
         </div>
 
         <!-- 11-Category Summary Table -->
-        <div style="margin-bottom: 32px;">
+        <div style="margin-bottom: 48px;">
           <div class="dashboard-section-header">
-            <div class="section-title">Per-Category Nutrient Medians (11 Culinary Categories)</div>
-            <div class="section-desc">INDB Dataset</div>
+            <div>
+              <div class="section-title">Per-Category Nutrient Medians (11 Culinary Categories)</div>
+              <div class="section-desc">INDB Dataset &middot; Standardized Portions (n=932 Recipes with Verified Servings)</div>
+            </div>
           </div>
 
           <div class="data-table-container">
             <table class="data-table">
               <thead>
                 <tr>
-                  <th>Category</th>
+                  <th>Culinary Category</th>
                   <th>Recipes</th>
                   <th>SFA Median</th>
-                  <th>SFA % Limit</th>
-                  <th>Sugar % Limit</th>
-                  <th>Sodium % Limit</th>
-                  <th>Energy</th>
+                  <th>SFA % Daily Limit</th>
+                  <th>Sugar % Daily Limit</th>
+                  <th>Sodium % Daily Limit</th>
+                  <th>Energy Median</th>
                 </tr>
               </thead>
               <tbody>
                 <template x-for="cat in atlas.categories" :key="cat.category">
                   <tr>
-                    <td style="font-weight: 600;" x-text="cat.category"></td>
+                    <td style="font-weight: 700; font-size: 13.5px;" x-text="cat.category"></td>
                     <td class="mono-cell" x-text="cat.recipes_total"></td>
                     <td class="mono-cell" x-text="`${parseFloat(cat.sfa_g_median).toFixed(1)}g`"></td>
-                    <td class="mono-cell" :style="parseFloat(cat.sfa_pct_gen_limit_median) >= 30 ? 'color: var(--color-danger); font-weight: 700;' : ''" x-text="`${parseFloat(cat.sfa_pct_gen_limit_median).toFixed(1)}%`"></td>
-                    <td class="mono-cell" :style="parseFloat(cat.sugar_pct_limit_median) >= 50 ? 'color: var(--color-danger); font-weight: 700;' : ''" x-text="`${parseFloat(cat.sugar_pct_limit_median).toFixed(1)}%`"></td>
+                    <td class="mono-cell">
+                      <span 
+                        :class="parseFloat(cat.sfa_pct_gen_limit_median) >= 30 ? 'badge badge-red' : (parseFloat(cat.sfa_pct_gen_limit_median) >= 20 ? 'badge badge-amber' : 'badge badge-gray')"
+                        style="font-weight: 600;"
+                        x-text="`${parseFloat(cat.sfa_pct_gen_limit_median).toFixed(1)}%`">
+                      </span>
+                    </td>
+                    <td class="mono-cell">
+                      <span 
+                        :class="parseFloat(cat.sugar_pct_limit_median) >= 50 ? 'badge badge-red' : 'badge badge-gray'"
+                        style="font-weight: 600;"
+                        x-text="`${parseFloat(cat.sugar_pct_limit_median).toFixed(1)}%`">
+                      </span>
+                    </td>
                     <td class="mono-cell" x-text="`${parseFloat(cat.sodium_pct_limit_median).toFixed(1)}%`"></td>
                     <td class="mono-cell" x-text="`${Math.round(parseFloat(cat.energy_kcal_median))} kcal`"></td>
                   </tr>
@@ -3050,43 +3320,57 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
               </tbody>
             </table>
           </div>
-          <div style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">
-            * Soups &amp; Stews sodium reflects pot-level INDB transcription artifacts; per-bowl intake is substantially lower.
+          <div style="font-size: 12px; color: var(--text-muted); margin-top: 10px; line-height: 1.5;">
+            * <strong>Note on Soups &amp; Stews sodium:</strong> Reflects a historical institutional transcription artifact in INDB row 596 (<code>ASC079</code> Clear Tomato Soup), where <em>"0.5 cup vegetable stock"</em> was recorded as 120g of commercial bouillon cubes. Per-bowl table intake is substantially lower.
           </div>
         </div>
 
         <!-- 15-Dish Benchmark Table -->
-        <div style="margin-bottom: 32px;">
+        <div style="margin-bottom: 48px;">
           <div class="dashboard-section-header">
-            <div class="section-title">Textbook (INDB) vs. Modern Web Recipe Inflation (15 Dishes)</div>
-            <div class="section-desc">Comparative Analysis</div>
+            <div>
+              <div class="section-title">Textbook (INDB) vs. Modern Web Recipe Inflation (15 Dishes)</div>
+              <div class="section-desc">Paired Comparative Analysis Across 19 Benchmark Dishes and 71 Web Scrapes</div>
+            </div>
           </div>
 
           <div class="data-table-container">
             <table class="data-table">
               <thead>
                 <tr>
-                  <th>Dish</th>
+                  <th>Dish Name</th>
                   <th>INDB Fat</th>
                   <th>Web Fat</th>
                   <th>Fat Ratio</th>
                   <th>INDB SFA</th>
                   <th>Web SFA</th>
                   <th>SFA Ratio</th>
-                  <th>Culinary Driver</th>
+                  <th>Culinary Driver &amp; Etiology</th>
                 </tr>
               </thead>
               <tbody>
                 <template x-for="dish in atlas.textbook_vs_web" :key="dish.dish">
                   <tr>
-                    <td style="font-weight: 600;" x-text="dish.dish"></td>
+                    <td style="font-weight: 700; font-size: 13.5px;" x-text="formatDishName(dish.dish)"></td>
                     <td class="mono-cell" x-text="`${parseFloat(dish.indb_fat_g).toFixed(1)}g`"></td>
                     <td class="mono-cell" x-text="`${parseFloat(dish.web_fat_g).toFixed(1)}g`"></td>
-                    <td class="mono-cell" :style="parseFloat(dish.fat_ratio) > 1.2 ? 'color: var(--color-danger); font-weight: 700;' : ''" x-text="`${parseFloat(dish.fat_ratio).toFixed(2)}×`"></td>
+                    <td class="mono-cell">
+                      <span 
+                        :class="parseFloat(dish.fat_ratio) > 1.25 ? 'badge badge-red' : (parseFloat(dish.fat_ratio) < 0.8 ? 'badge badge-green' : 'badge badge-gray')"
+                        style="font-weight: 600;"
+                        x-text="`${parseFloat(dish.fat_ratio).toFixed(2)}×`">
+                      </span>
+                    </td>
                     <td class="mono-cell" x-text="`${parseFloat(dish.indb_sfa_g).toFixed(1)}g`"></td>
                     <td class="mono-cell" x-text="`${parseFloat(dish.web_sfa_g).toFixed(1)}g`"></td>
-                    <td class="mono-cell" :style="parseFloat(dish.sfa_ratio) > 1.5 ? 'color: var(--color-danger); font-weight: 700;' : ''" x-text="`${parseFloat(dish.sfa_ratio).toFixed(2)}×`"></td>
-                    <td style="font-size: 11px; color: #636366;" x-text="getInflationNote(dish.dish)"></td>
+                    <td class="mono-cell">
+                      <span 
+                        :class="parseFloat(dish.sfa_ratio) > 1.5 ? 'badge badge-red' : (parseFloat(dish.sfa_ratio) < 0.8 ? 'badge badge-green' : 'badge badge-gray')"
+                        style="font-weight: 600;"
+                        x-text="`${parseFloat(dish.sfa_ratio).toFixed(2)}×`">
+                      </span>
+                    </td>
+                    <td style="font-size: 12px; color: #48484a; line-height: 1.45;" x-text="getInflationNote(dish.dish)"></td>
                   </tr>
                 </template>
               </tbody>
@@ -3094,25 +3378,6 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
           </div>
         </div>
 
-        <!-- Embedded Figures Grid -->
-        <div class="figures-grid">
-          <div class="figure-card">
-            <img src="/static/figures/fig1_category_footprint_bars.png" alt="Category Footprint">
-            <div class="figure-caption">Figure 1 · Median Category Footprint Bars across ICMR-NIN Limits</div>
-          </div>
-          <div class="figure-card">
-            <img src="/static/figures/fig2_culprit_decomposition.png" alt="Fat Driver Decomposition">
-            <div class="figure-caption">Figure 2 · SFA Decomposition: Dairy Fat vs Cooking Oil vs Other</div>
-          </div>
-          <div class="figure-card">
-            <img src="/static/figures/fig3_textbook_vs_web_inflation.png" alt="Textbook vs Web Inflation">
-            <div class="figure-caption">Figure 3 · Web vs Textbook Lipid Inflation across 15 Benchmark Dishes</div>
-          </div>
-          <div class="figure-card">
-            <img src="/static/figures/fig4_liver_risk_matrix.png" alt="Liver Risk Matrix">
-            <div class="figure-caption">Figure 4 · Cardiometabolic vs Hepatic Risk Matrix</div>
-          </div>
-        </div>
       </div>
 
 
@@ -3138,6 +3403,53 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
         labRows: window.LAB_DATA || [],
         demos: window.DEMO_RECIPES || {},
         atlas: window.ATLAS_DATA || { metrics: {}, categories: [], textbook_vs_web: [] },
+
+        // Presentation Figure Slideshow State
+        activeFigureIndex: 0,
+        figures: [
+          {
+            id: 1,
+            title: 'Figure 1 · Category Footprint Bars across ICMR-NIN Limits',
+            subtitle: 'Median per-serving cardiometabolic budget consumption across 11 culinary categories in INDB (n=932 valid serving sizes).',
+            src: '/static/figures/fig1_category_footprint_bars.png',
+            chipLabel: 'Fig 1 · Category Budgets',
+            badge: 'Category Budgets',
+            insight: 'Snacks & Street Food (32.5% of SFA budget) and Sweets & Desserts (31.6% SFA budget) impose the heaviest vascular loads. Sweets (61.9%) and Beverages (60.0%) dominate the liver de novo lipogenesis pathway, together exhausting 121.9% of the WHO added sugar ceiling. In contrast, traditional Dals & Legumes are metabolically benign by default (4.8% SFA budget).'
+          },
+          {
+            id: 2,
+            title: 'Figure 2 · SFA Culprit Decomposition: Dairy Fat vs. Cooking Oil vs. Inherent Lipids',
+            subtitle: 'Functional classification of saturated fatty acid sources across 11 culinary categories.',
+            src: '/static/figures/fig2_culprit_decomposition.png',
+            chipLabel: 'Fig 2 · Culprit Sources',
+            badge: 'Culprit Sources',
+            insight: 'Dairy fat (ghee, butter, cream, paneer) drives over 51% of all saturated fat in Sweets & Desserts (53.7%) and Curries & Gravies (51.5%). In contrast, added cooking oil dominates in Snacks & Street Food (44.9%) and Vegetables & Sabzis (45.7%). Traditional dals derive nearly half (48.9%) of their minimal lipids from inherent plant structures.'
+          },
+          {
+            id: 3,
+            title: 'Figure 3 · Web vs. Textbook Lipid Inflation across 15 Benchmark Dishes',
+            subtitle: 'Paired comparative analysis of 1,014 standardized INDB formulations against 71 popular consumer web recipes.',
+            src: '/static/figures/fig3_textbook_vs_web_inflation.png',
+            chipLabel: 'Fig 3 · Web Inflation',
+            badge: 'Web vs INDB Inflation',
+            insight: 'The overall median fat inflation is 0.77× and SFA inflation is 0.93× across typical home staples. However, elite restaurant dishes diverge dramatically: Chicken Biryani spikes 6.31× in SFA (1.49g → 9.37g per serving due to heavy ghee and skin-on poultry), while Paneer Butter Masala increases SFA by 1.90× (8.38g → 15.94g, consuming 91.6% of the daily allowance).'
+          },
+          {
+            id: 4,
+            title: 'Figure 4 · Cardiometabolic vs. Hepatic Metabolic Risk Matrix',
+            subtitle: 'Cross-tabulation of Saturated Fatty Acid burden (% of ICMR-NIN ceiling) against Free Added Sugar intake (% of WHO ceiling).',
+            src: '/static/figures/fig4_liver_risk_matrix.png',
+            chipLabel: 'Fig 4 · Risk Matrix',
+            badge: 'Dual-Organ Matrix',
+            insight: 'Illustrates the bifurcated nature of Indian dietary pathology: Festive Sweets and Beverages occupy the high-hepatic/high-sugar quadrant driving fatty liver (MASLD) progression, while Fried Snacks and Rich Curries populate the high-cardiovascular quadrant driving atherogenic dyslipidemia and vascular stiffness.'
+          }
+        ],
+        nextFigure() {
+          this.activeFigureIndex = (this.activeFigureIndex + 1) % this.figures.length;
+        },
+        prevFigure() {
+          this.activeFigureIndex = (this.activeFigureIndex - 1 + this.figures.length) % this.figures.length;
+        },
 
         // Active Recipe State
         activeResult: null,
@@ -3430,16 +3742,26 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
         },
 
         getInflationNote(dish) {
+          if (!dish) return '';
+          const d = dish.toLowerCase().trim();
           const notes = {
-            'Paneer Butter Masala': 'Web doubles SFA via commercial cream/butter',
-            'Chicken Biryani': 'Commercial ghee layering (6.31× SFA inflation)',
-            'Dal Makhani': 'Heavy cream & butter addition in web recipes',
-            'Vegetable Pulao': 'Web recipes add ghee on top (4× SFA inflation)',
-            'Bhindi Sabzi': 'Control dish — textbook and web are identical',
-            'Samosa': 'Frying bath corrected; single snack portion',
-            'Gulab Jamun': 'INDB multi-portion coding artifact'
+            'paneer butter masala': 'Web doubles SFA via heavy cream and dairy butter finishing (1.90× SFA inflation)',
+            'chicken biryani': 'Commercial ghee layering & skin-on poultry drive massive 6.31× SFA explosion',
+            'dal makhani': 'Heavy dairy cream and butter finish in restaurant/web recipes (1.26× SFA)',
+            'vegetable pulao': 'Web recipes layer extra ghee on cooked grains (4.01× SFA inflation)',
+            'sarson ka saag': 'Generous extra tadka oil and white butter topping in web recipes (1.77× fat)',
+            'poha': 'Web recipes increase oil volume & roasted peanut garnishes (1.61× fat)',
+            'bhindi sabzi': 'Control dish — home textbook and web formulations are nearly identical (1.01×)',
+            'butter chicken': 'Saturated fat parity between traditional and modern butter sauces (1.09× SFA)',
+            'gajar ka halwa': 'High saturated fat parity in traditional milk-solid mithai (0.93× SFA)',
+            'chole': 'Textbook recipes use substantial whole-pot sauté oil; web uses lighter portions',
+            'methi aloo': 'Modest daily home preparation with light tempering oil in web versions',
+            'sambar': 'Modest home preparation with minimal tadka oil in modern versions',
+            'samosa': 'Frying bath corrected; INDB quotes 2-samosa course vs single piece online',
+            'onion pakora': 'Frying bath corrected; INDB quotes full tea-time plate vs single serving',
+            'gulab jamun': 'INDB multi-portion coding artifact; corrected single portion in web'
           };
-          return notes[dish] || 'Standard recipe variance';
+          return notes[d] || 'Standard recipe variance';
         }
       };
     }
