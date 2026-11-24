@@ -12,16 +12,16 @@
     :root {
       --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
       --font-mono: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --color-safe: #34c759;
+      --color-safe: #28cd41;
       --color-warning: #ff9500;
       --color-danger: #ff3b30;
       --color-accent: #0071e3;
       --color-accent-hover: #0077ed;
-      --bg-canvas: #fbfbfd;
-      --bg-card: #ffffff;
+      --bg-canvas: #ffffff;
       --border-subtle: #e5e5ea;
       --border-divider: #f2f2f7;
-      --text-main: #1d1d1f;
+      --text-main: #111111;
+      --text-body: #333336;
       --text-muted: #6e6e73;
     }
 
@@ -40,200 +40,280 @@
     }
 
     /* ======================================================== */
-    /* 1. HERO LANDING SCREEN (Apple Editorial Style)           */
+    /* 1. HERO LANDING SCREEN (Pure White, Unboxed Editorial)   */
     /* ======================================================== */
     .hero-container {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 40px 24px 60px 24px;
-      max-width: 1080px;
+      padding: 48px 24px 40px 24px;
+      max-width: 920px;
       margin: 0 auto;
+    }
+
+    .hero-top-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 28px;
     }
 
     .hero-top-badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 6px 14px;
-      background: #f2f2f7;
+      padding: 5px 14px;
+      background: #f5f5f7;
       border: 1px solid var(--border-subtle);
       border-radius: 20px;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 500;
       color: var(--text-muted);
-      align-self: flex-start;
+      letter-spacing: 0.01em;
     }
 
     .hero-top-badge .dot {
-      width: 8px;
-      height: 8px;
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
       background: var(--color-safe);
     }
 
     .hero-content {
-      padding: 40px 0 20px 0;
       text-align: center;
+      padding: 10px 0 30px 0;
     }
 
+    /* Solid Black Authoritative Typography (No Gradient) */
     .hero-headline {
-      font-size: 56px;
-      line-height: 1.08;
+      font-size: 52px;
+      line-height: 1.12;
       font-weight: 700;
       letter-spacing: -0.03em;
-      color: #1d1d1f;
+      color: var(--text-main);
       margin: 0 0 18px 0;
     }
 
-    .hero-headline span {
-      background: linear-gradient(135deg, #0071e3 0%, #43a047 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
     .hero-subhead {
-      font-size: 21px;
-      line-height: 1.45;
+      font-size: 19px;
+      line-height: 1.5;
       font-weight: 400;
-      letter-spacing: -0.01em;
-      color: #48484a;
-      max-width: 780px;
+      color: var(--text-body);
+      max-width: 720px;
       margin: 0 auto 28px auto;
+      letter-spacing: -0.01em;
     }
 
-    .hero-authors {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--text-muted);
-      margin-bottom: 44px;
+    /* Highlighted Authors Block */
+    .hero-authors-block {
+      margin-bottom: 40px;
     }
 
-    .hero-authors strong {
+    .author-team {
+      font-size: 16px;
+      font-weight: 600;
       color: var(--text-main);
-    }
-
-    /* Big Action Box in Hero */
-    .hero-action-card {
-      background: #ffffff;
-      border: 1px solid var(--border-subtle);
-      border-radius: 18px;
-      padding: 24px 28px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
-      max-width: 760px;
-      margin: 0 auto;
-      text-align: left;
-    }
-
-    .hero-input-group {
       display: flex;
+      justify-content: center;
+      align-items: center;
       gap: 12px;
-      margin-top: 14px;
+      margin-bottom: 6px;
     }
 
-    .hero-input {
+    .author-roll {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    .author-supervisor {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .author-supervisor strong {
+      color: var(--text-body);
+    }
+
+    /* Direct Input Section (Completely Unboxed) */
+    .hero-input-section {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .mode-toggle-bar {
+      display: inline-flex;
+      background: #f2f2f7;
+      padding: 3px;
+      border-radius: 8px;
+      margin-bottom: 14px;
+    }
+
+    .mode-btn {
+      padding: 5px 14px;
+      font-size: 12px;
+      font-weight: 500;
+      border: none;
+      background: transparent;
+      color: #636366;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .mode-btn.active {
+      background: #ffffff;
+      color: var(--text-main);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+      font-weight: 600;
+    }
+
+    .search-bar-unified {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .search-input {
       flex: 1;
-      height: 52px;
-      padding: 0 18px;
-      font-size: 15px;
+      height: 48px;
+      padding: 0 16px;
+      font-size: 14px;
       font-family: inherit;
       border: 1px solid #d2d2d7;
-      border-radius: 12px;
-      background: #fbfbfd;
-      outline: none;
-      transition: all 0.2s ease;
-    }
-
-    .hero-input:focus {
+      border-radius: 10px;
       background: #ffffff;
-      border-color: var(--color-accent);
-      box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.15);
+      outline: none;
+      color: var(--text-main);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .hero-submit-btn {
-      height: 52px;
-      padding: 0 26px;
-      font-size: 15px;
+    .search-input:focus {
+      border-color: var(--color-accent);
+      box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
+    }
+
+    .search-btn {
+      height: 48px;
+      padding: 0 22px;
+      font-size: 14px;
       font-weight: 600;
       color: #ffffff;
       background: var(--color-accent);
       border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: background 0.15s ease, transform 0.1s ease;
-      white-space: nowrap;
-    }
-
-    .hero-submit-btn:hover {
-      background: var(--color-accent-hover);
-    }
-
-    .hero-submit-btn:active {
-      transform: scale(0.98);
-    }
-
-    /* Pre-loaded Benchmark Pills */
-    .hero-pills-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-top: 20px;
-      flex-wrap: wrap;
-    }
-
-    .hero-pill-label {
-      font-size: 12px;
-      font-weight: 600;
-      color: #86868b;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    .pill-btn {
-      background: #f5f5f7;
-      border: 1px solid var(--border-subtle);
-      border-radius: 20px;
-      padding: 8px 16px;
-      font-size: 13px;
-      font-weight: 500;
-      color: #1d1d1f;
+      border-radius: 10px;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
       gap: 6px;
+      transition: background 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .search-btn:hover {
+      background: var(--color-accent-hover);
+    }
+
+    .paste-area-unified {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: left;
+    }
+
+    .paste-meta-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .sub-input {
+      height: 42px;
+      padding: 0 14px;
+      font-size: 13px;
+      font-family: inherit;
+      border: 1px solid #d2d2d7;
+      border-radius: 8px;
+      outline: none;
+      flex: 1;
+    }
+
+    .sub-input:focus {
+      border-color: var(--color-accent);
+    }
+
+    .paste-textarea {
+      height: 90px;
+      padding: 12px 14px;
+      font-size: 13px;
+      font-family: inherit;
+      border: 1px solid #d2d2d7;
+      border-radius: 8px;
+      outline: none;
+      resize: vertical;
+    }
+
+    .paste-textarea:focus {
+      border-color: var(--color-accent);
+    }
+
+    /* Compact, Single-Line Benchmark Chips */
+    .benchmarks-strip {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+
+    .bench-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-right: 2px;
+    }
+
+    .bench-chip {
+      background: #ffffff;
+      border: 1px solid #d2d2d7;
+      border-radius: 6px;
+      padding: 5px 11px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-main);
+      cursor: pointer;
       transition: all 0.15s ease;
     }
 
-    .pill-btn:hover {
-      background: #e5e5ea;
-      border-color: #d1d1d6;
-      transform: translateY(-1px);
+    .bench-chip:hover {
+      background: #f5f5f7;
+      border-color: #b0b0b5;
     }
 
-    .hero-quick-links {
-      margin-top: 32px;
+    .hero-nav-links {
+      margin-top: 36px;
       display: flex;
       justify-content: center;
-      gap: 24px;
+      align-items: center;
+      gap: 16px;
       font-size: 13px;
       color: var(--color-accent);
+      flex-wrap: wrap;
     }
 
-    .hero-quick-links a {
+    .hero-nav-links a {
       color: inherit;
       text-decoration: none;
       font-weight: 500;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
     }
 
-    .hero-quick-links a:hover {
+    .hero-nav-links a:hover {
       text-decoration: underline;
+    }
+
+    .dot-sep {
+      color: #c7c7cc;
     }
 
     /* ======================================================== */
@@ -243,9 +323,9 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(255, 255, 255, 0.88);
-      backdrop-filter: saturate(180%) blur(20px);
-      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--border-subtle);
       padding: 10px 32px;
       display: flex;
@@ -256,14 +336,14 @@
     .header-left {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 14px;
     }
 
     .back-home-btn {
-      background: #f2f2f7;
-      border: 1px solid var(--border-subtle);
-      border-radius: 8px;
-      padding: 6px 12px;
+      background: #ffffff;
+      border: 1px solid #d2d2d7;
+      border-radius: 6px;
+      padding: 5px 12px;
       font-size: 12px;
       font-weight: 500;
       color: var(--text-main);
@@ -275,7 +355,8 @@
     }
 
     .back-home-btn:hover {
-      background: #e5e5ea;
+      background: #f5f5f7;
+      border-color: #b0b0b5;
     }
 
     .header-title-text {
@@ -292,20 +373,20 @@
 
     .segmented-control {
       display: inline-flex;
-      background: #eeeeee;
+      background: #f2f2f7;
       padding: 3px;
-      border-radius: 9px;
+      border-radius: 8px;
       user-select: none;
     }
 
     .segmented-btn {
-      padding: 7px 18px;
+      padding: 6px 16px;
       font-size: 13px;
       font-weight: 500;
       border: none;
       background: transparent;
-      color: #555555;
-      border-radius: 7px;
+      color: #636366;
+      border-radius: 6px;
       cursor: pointer;
       transition: all 0.15s ease;
       white-space: nowrap;
@@ -314,7 +395,7 @@
     .segmented-btn.active {
       background: #ffffff;
       color: #000000;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 0.5px 1px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
       font-weight: 600;
     }
 
@@ -327,7 +408,7 @@
     .badge-course {
       font-size: 11px;
       font-weight: 600;
-      background: #f2f2f7;
+      background: #f5f5f7;
       color: #636366;
       padding: 4px 10px;
       border-radius: 6px;
@@ -335,42 +416,39 @@
     }
 
     /* ======================================================== */
-    /* 3. APP MAIN VIEWPORT & COMPONENTS                        */
+    /* 3. APP MAIN VIEWPORT & COMPONENTS (Clean White Layout)   */
     /* ======================================================== */
     .app-main {
-      max-width: 1140px;
+      max-width: 1080px;
       margin: 0 auto;
-      padding: 32px 24px 60px 24px;
+      padding: 28px 24px 60px 24px;
     }
 
-    /* Sub-bar for quickly switching recipe in Live tab */
     .recipe-bar {
-      background: #ffffff;
       border: 1px solid var(--border-subtle);
-      border-radius: 12px;
-      padding: 14px 20px;
+      border-radius: 10px;
+      padding: 12px 18px;
       margin-bottom: 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
+      background: #ffffff;
     }
 
-    /* Hero Sentence Card */
     .hero-banner {
-      background: #ffffff;
       border: 1px solid var(--border-subtle);
-      border-left: 5px solid var(--color-accent);
-      padding: 22px 26px;
-      border-radius: 12px;
+      border-left: 4px solid var(--color-accent);
+      padding: 20px 24px;
+      border-radius: 10px;
       margin-bottom: 24px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+      background: #ffffff;
     }
 
     .hero-sentence {
       font-size: 20px;
       font-weight: 700;
-      color: #1d1d1f;
+      color: var(--text-main);
       letter-spacing: -0.01em;
       margin: 0 0 6px 0;
     }
@@ -381,15 +459,14 @@
       margin: 0;
     }
 
-    /* Frying Correction Banner */
     .frying-banner {
-      background: #fff9f0;
+      background: #fffdfa;
       border: 1px solid #ffe8cc;
-      border-left: 5px solid var(--color-warning);
-      border-radius: 12px;
-      padding: 18px 22px;
+      border-left: 4px solid var(--color-warning);
+      border-radius: 10px;
+      padding: 16px 20px;
       margin-bottom: 24px;
-      font-size: 14px;
+      font-size: 13px;
       color: #5c3b00;
       line-height: 1.5;
     }
@@ -398,33 +475,31 @@
       color: #944000;
     }
 
-    /* Dual Footprint Grid */
     .footprint-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 22px;
+      gap: 20px;
       margin-bottom: 24px;
     }
 
     .card {
       background: #ffffff;
       border: 1px solid var(--border-subtle);
-      border-radius: 12px;
-      padding: 22px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+      border-radius: 10px;
+      padding: 20px;
     }
 
     .card-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
       border-bottom: 1px solid var(--border-divider);
       padding-bottom: 12px;
     }
 
     .card-title {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 600;
       color: var(--text-main);
       margin: 0;
@@ -434,7 +509,7 @@
     }
 
     .meter-row {
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
     .meter-row:last-child {
@@ -445,7 +520,7 @@
       display: flex;
       justify-content: space-between;
       font-size: 13px;
-      margin-bottom: 7px;
+      margin-bottom: 6px;
     }
 
     .meter-label {
@@ -459,15 +534,15 @@
     }
 
     .meter-track {
-      height: 9px;
-      background: #ebebee;
-      border-radius: 5px;
+      height: 8px;
+      background: #f2f2f7;
+      border-radius: 4px;
       overflow: hidden;
     }
 
     .meter-fill {
       height: 100%;
-      border-radius: 5px;
+      border-radius: 4px;
       transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
@@ -476,13 +551,12 @@
     .fill-danger { background-color: var(--color-danger); }
     .fill-neutral { background-color: #8e8e93; }
 
-    /* Driver Rows */
     .driver-row {
       display: flex;
       align-items: center;
       gap: 12px;
       font-size: 13px;
-      margin-bottom: 12px;
+      margin-bottom: 11px;
     }
 
     .driver-name {
@@ -495,30 +569,29 @@
 
     .driver-bar-container {
       flex: 1;
-      height: 7px;
+      height: 6px;
       background: #f2f2f7;
-      border-radius: 4px;
+      border-radius: 3px;
       overflow: hidden;
     }
 
     .driver-bar-fill {
       height: 100%;
       background: var(--color-accent);
-      border-radius: 4px;
+      border-radius: 3px;
     }
 
     .driver-pct {
-      width: 50px;
+      width: 48px;
       text-align: right;
       font-family: var(--font-mono);
       font-weight: 600;
       color: #636366;
     }
 
-    /* Dense Data Tables */
     .data-table-container {
       border: 1px solid var(--border-subtle);
-      border-radius: 10px;
+      border-radius: 8px;
       overflow: hidden;
       background: #ffffff;
     }
@@ -531,8 +604,8 @@
     }
 
     table.data-table th {
-      background: #f8f8fa;
-      padding: 12px 14px;
+      background: #fafafa;
+      padding: 10px 12px;
       font-weight: 600;
       color: #636366;
       border-bottom: 1px solid var(--border-subtle);
@@ -541,9 +614,9 @@
     }
 
     table.data-table td {
-      padding: 11px 14px;
+      padding: 10px 12px;
       border-bottom: 1px solid #f2f2f7;
-      color: #1d1d1f;
+      color: var(--text-main);
     }
 
     table.data-table tr:last-child td {
@@ -551,7 +624,7 @@
     }
 
     table.data-table tr:hover {
-      background: #f9f9fb;
+      background: #fcfcfd;
     }
 
     .mono-cell {
@@ -562,10 +635,9 @@
     .badge {
       display: inline-block;
       padding: 2px 7px;
-      border-radius: 5px;
+      border-radius: 4px;
       font-size: 11px;
       font-weight: 600;
-      letter-spacing: 0.02em;
     }
 
     .badge-gray { background: #f2f2f7; color: #636366; }
@@ -573,42 +645,39 @@
     .badge-red { background: #ffebee; color: #c62828; }
     .badge-blue { background: #e3f2fd; color: #1565c0; }
 
-    /* Callout Card */
     .callout-box {
-      background: #fbfbfd;
       border: 1px solid var(--border-subtle);
-      border-radius: 10px;
-      padding: 18px 22px;
+      border-radius: 8px;
+      padding: 16px 20px;
       margin-top: 18px;
+      background: #ffffff;
     }
 
     .callout-title {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 600;
-      color: #1d1d1f;
-      margin-bottom: 6px;
+      color: var(--text-main);
+      margin-bottom: 5px;
     }
 
     .callout-body {
-      font-size: 13px;
+      font-size: 12px;
       color: #48484a;
       line-height: 1.5;
     }
 
-    /* Embedded Figure Grid */
     .figures-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 22px;
+      gap: 20px;
       margin-top: 24px;
     }
 
     .figure-card {
       border: 1px solid var(--border-subtle);
-      border-radius: 10px;
+      border-radius: 8px;
       overflow: hidden;
       background: #ffffff;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
     }
 
     .figure-card img {
@@ -619,7 +688,7 @@
     }
 
     .figure-caption {
-      padding: 12px 16px;
+      padding: 10px 14px;
       font-size: 12px;
       font-weight: 500;
       color: #636366;
@@ -642,84 +711,98 @@
   <!-- ======================================================== -->
   <div x-show="view === 'hero'" x-transition.opacity.duration.200ms class="hero-container">
     
-    <!-- Top Pill -->
-    <div class="hero-top-badge">
-      <div class="dot"></div>
-      BIO544 Computational Gastronomy · Monsoon 2026 · Group 45
+    <!-- Centered Course Pill -->
+    <div class="hero-top-wrapper">
+      <div class="hero-top-badge">
+        <div class="dot"></div>
+        BIO544 Computational Gastronomy · Monsoon 2026 · Group 45
+      </div>
     </div>
 
-    <!-- Center Editorial Intro -->
+    <!-- Editorial Intro (Solid Black Typography, No Card Wrappers) -->
     <div class="hero-content">
       <h1 class="hero-headline">
-        Liver & Heart Footprint<br>
-        <span>of Indian Recipes</span>
+        Liver &amp; Heart Footprint<br>of Indian Recipes
       </h1>
       
       <p class="hero-subhead">
         Quantitative cardiometabolic and hepatic dietary risk modeling against ICMR-NIN 2024 and WHO daily limits, calibrated with empirical laboratory frying data.
       </p>
 
-      <div class="hero-authors">
-        By <strong>Parth Verma</strong> (2024407) &amp; <strong>Pratyaksh Kumar</strong> (2024431) · Supervised by <strong>Prof. Ganesh Bagler</strong> · IIIT-Delhi
+      <!-- Prominent Authors Attribution Block -->
+      <div class="hero-authors-block">
+        <div class="author-team">
+          <span>Parth Verma <span class="author-roll">(2024407)</span></span>
+          <span style="color: #c7c7cc;">&middot;</span>
+          <span>Pratyaksh Kumar <span class="author-roll">(2024431)</span></span>
+        </div>
+        <div class="author-supervisor">
+          Supervised by <strong>Prof. Ganesh Bagler</strong> &middot; IIIT-Delhi
+        </div>
       </div>
 
-      <!-- Hero Action Box -->
-      <div class="hero-action-card">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-          <div style="display: flex; gap: 8px;">
-            <button class="pill-btn" :style="inputMode === 'url' ? 'background: #0071e3; color: #fff; border-color: #0071e3;' : ''" @click="inputMode = 'url'">Recipe URL</button>
-            <button class="pill-btn" :style="inputMode === 'paste' ? 'background: #0071e3; color: #fff; border-color: #0071e3;' : ''" @click="inputMode = 'paste'">Paste Ingredients</button>
+      <!-- Direct Unboxed Input Section -->
+      <div class="hero-input-section">
+        
+        <!-- Toggle Bar -->
+        <div style="text-align: center; margin-bottom: 12px;">
+          <div class="mode-toggle-bar">
+            <button class="mode-btn" :class="{ 'active': inputMode === 'url' }" @click="inputMode = 'url'">Recipe URL</button>
+            <button class="mode-btn" :class="{ 'active': inputMode === 'paste' }" @click="inputMode = 'paste'">Paste Ingredients</button>
           </div>
-          <span style="font-size: 12px; color: var(--text-muted);">schema.org/Recipe supported</span>
         </div>
 
-        <!-- URL Mode Input -->
-        <div x-show="inputMode === 'url'" class="hero-input-group">
-          <input type="text" class="hero-input" placeholder="Paste Indian recipe URL (e.g. Hebbars Kitchen, Swasthi's, VegRecipesOfIndia)..." x-model="recipeUrl">
-          <button class="hero-submit-btn" @click="launchWithCurrent()">
-            Analyze Footprint →
+        <!-- URL Input -->
+        <div x-show="inputMode === 'url'" class="search-bar-unified">
+          <input type="text" class="search-input" placeholder="Paste an Indian recipe URL (e.g. Hebbars Kitchen, Swasthi's, VegRecipesOfIndia)..." x-model="recipeUrl" @keydown.enter="launchWithCurrent()">
+          <button class="search-btn" @click="launchWithCurrent()">
+            Analyze Recipe &rarr;
           </button>
         </div>
 
-        <!-- Paste Mode Input -->
-        <div x-show="inputMode === 'paste'" style="margin-top: 14px; display: flex; flex-direction: column; gap: 10px;">
-          <div style="display: flex; gap: 10px;">
-            <input type="text" class="hero-input" style="height: 44px;" placeholder="Dish Name (e.g. Samosa)" x-model="pasteDish">
-            <input type="number" class="hero-input" style="height: 44px; width: 120px;" placeholder="Servings" x-model.number="pasteServings">
+        <!-- Paste Mode -->
+        <div x-show="inputMode === 'paste'" class="paste-area-unified">
+          <div class="paste-meta-row">
+            <input type="text" class="sub-input" placeholder="Dish Name (e.g. Samosa)" x-model="pasteDish">
+            <input type="number" class="sub-input" style="max-width: 140px;" placeholder="Servings (4)" x-model.number="pasteServings">
           </div>
-          <textarea class="hero-input" style="height: 90px; padding: 12px 18px; resize: vertical;" placeholder="Paste ingredient lines (one per line)..." x-model="pasteLines"></textarea>
-          <div style="text-align: right;">
-            <button class="hero-submit-btn" style="height: 44px;" @click="launchWithCurrent()">
-              Analyze Custom Recipe →
+          <textarea class="paste-textarea" placeholder="Paste ingredient lines (one per line)..." x-model="pasteLines"></textarea>
+          <div style="text-align: right; margin-top: 4px;">
+            <button class="search-btn" style="height: 42px;" @click="launchWithCurrent()">
+              Analyze Custom Recipe &rarr;
             </button>
           </div>
         </div>
 
-        <!-- Pre-loaded Benchmark Pills -->
-        <div class="hero-pills-row">
-          <span class="hero-pill-label">Try Pre-Loaded:</span>
-          <button class="pill-btn" @click="launchWithDemo('paneer_butter_masala')">
-            <span>🥘</span> Paneer Butter Masala
+        <!-- Single-Line Compact Benchmark Chips -->
+        <div class="benchmarks-strip">
+          <span class="bench-label">Quick benchmarks:</span>
+          <button class="bench-chip" @click="launchWithDemo('paneer_butter_masala')">
+            Paneer Butter Masala
           </button>
-          <button class="pill-btn" @click="launchWithDemo('samosa_test')">
-            <span>🥟</span> Samosa (Frying Corrected)
+          <button class="bench-chip" @click="launchWithDemo('samosa_test')">
+            Samosa (Fried)
           </button>
-          <button class="pill-btn" @click="launchWithDemo('chicken_biryani')">
-            <span>🍗</span> Chicken Biryani (Ghee Layered)
+          <button class="bench-chip" @click="launchWithDemo('chicken_biryani')">
+            Chicken Biryani
           </button>
+        </div>
+
+        <!-- Direct Nav Links -->
+        <div class="hero-nav-links">
+          <a href="#" @click.prevent="openTabDirect('d3')">Cuisine Atlas (1,014 Recipes) &rarr;</a>
+          <span class="dot-sep">&middot;</span>
+          <a href="#" @click.prevent="openTabDirect('d1')">70-Row Lab Dataset &rarr;</a>
+          <span class="dot-sep">&middot;</span>
+          <a href="#" @click.prevent="openTabDirect('d2')">5-Stage Engine &rarr;</a>
+          <span class="dot-sep">&middot;</span>
+          <a href="#" @click.prevent="openTabDirect('about')">Methodology &amp; Sources &rarr;</a>
         </div>
       </div>
 
-      <!-- Quick Exploration Shortcuts -->
-      <div class="hero-quick-links">
-        <a href="#" @click.prevent="openTabDirect('d3')">Explore Atlas (1,014 INDB Recipes) →</a>
-        <a href="#" @click.prevent="openTabDirect('d1')">70-Row Lab Dataset →</a>
-        <a href="#" @click.prevent="openTabDirect('d2')">5-Stage Methodology →</a>
-        <a href="#" @click.prevent="openTabDirect('about')">About &amp; Sources →</a>
-      </div>
     </div>
 
-    <!-- Bottom Footer Note -->
+    <!-- Bottom Attribution -->
     <div style="text-align: center; font-size: 12px; color: var(--text-muted);">
       BIO544 Computational Gastronomy · Deliverable 4 (Interactive Web Application)
     </div>
@@ -727,20 +810,20 @@
 
 
   <!-- ======================================================== -->
-  <!-- SCREEN 2: MAIN APP & DELIVERABLES VIEW                   -->
+  <!-- SCREEN 2: MAIN APP & DELIVERABLES VIEW (Clean White)     -->
   <!-- ======================================================== -->
   <div x-show="view === 'app'" x-transition.opacity.duration.200ms>
     
-    <!-- Sticky Apple Top Navigation Header -->
+    <!-- Sticky Top Navigation Header -->
     <header class="app-header">
       <div class="header-left">
         <button class="back-home-btn" @click="view = 'hero'">
-          ← Home
+          &larr; Home
         </button>
         <span class="header-title-text">Liver &amp; Heart Footprint</span>
       </div>
 
-      <!-- Apple Segmented Navigation -->
+      <!-- Segmented Navigation -->
       <div class="header-center">
         <div class="segmented-control">
           <button class="segmented-btn" :class="{ 'active': currentTab === 'd4' }" @click="currentTab = 'd4'">
@@ -776,24 +859,24 @@
         
         <!-- Recipe Quick Switcher Bar -->
         <div class="recipe-bar">
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <span style="font-size: 13px; font-weight: 600; color: #1d1d1f;">Active Recipe:</span>
-            <span style="font-size: 14px; font-weight: 700; color: var(--color-accent);" x-text="activeResult ? activeResult.recipe.dish : '—'"></span>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 13px; font-weight: 600; color: #111;">Active Recipe:</span>
+            <span style="font-size: 13px; font-weight: 700; color: var(--color-accent);" x-text="activeResult ? activeResult.recipe.dish : '—'"></span>
             <span class="badge badge-gray" x-text="activeResult ? `${activeResult.recipe.servings} servings` : ''"></span>
           </div>
 
-          <div style="display: flex; gap: 8px;">
-            <button class="pill-btn" :style="selectedDemo === 'paneer_butter_masala' ? 'background: #0071e3; color: #fff; border-color: #0071e3;' : ''" @click="loadDemo('paneer_butter_masala')">
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <button class="bench-chip" :style="selectedDemo === 'paneer_butter_masala' ? 'background: #0071e3; color: #fff; border-color: #0071e3;' : ''" @click="loadDemo('paneer_butter_masala')">
               Paneer Butter Masala
             </button>
-            <button class="pill-btn" :style="selectedDemo === 'samosa_test' ? 'background: #0071e3; color: #fff; border-color: #0071e3;' : ''" @click="loadDemo('samosa_test')">
+            <button class="bench-chip" :style="selectedDemo === 'samosa_test' ? 'background: #0071e3; color: #fff; border-color: #0071e3;' : ''" @click="loadDemo('samosa_test')">
               Samosa (Fried)
             </button>
-            <button class="pill-btn" :style="selectedDemo === 'chicken_biryani' ? 'background: #0071e3; color: #fff; border-color: #0071e3;' : ''" @click="loadDemo('chicken_biryani')">
+            <button class="bench-chip" :style="selectedDemo === 'chicken_biryani' ? 'background: #0071e3; color: #fff; border-color: #0071e3;' : ''" @click="loadDemo('chicken_biryani')">
               Chicken Biryani
             </button>
-            <button class="back-home-btn" style="margin-left: 8px;" @click="view = 'hero'">
-              + Custom Recipe
+            <button class="back-home-btn" style="margin-left: 6px;" @click="view = 'hero'">
+              + Change Recipe
             </button>
           </div>
         </div>
@@ -806,7 +889,7 @@
               <p class="hero-subtext">
                 Evaluated for <span style="font-weight: 600;" x-text="activeResult.recipe.dish"></span> 
                 (<span x-text="activeResult.recipe.servings"></span> servings). 
-                Daily ceilings derived from ICMR-NIN 2024 (2,240 kcal urban adult reference) and WHO guidelines.
+                Daily ceilings derived from ICMR-NIN 2024 (2,240 kcal urban adult baseline) and WHO guidelines.
               </p>
             </div>
 
@@ -818,7 +901,7 @@
               benchmarked against Soxhlet lab extraction data (<span x-text="activeResult.frying_correction.lab_match"></span>). 
               Counting the entire oil bath would have inflated fat intake by 
               <span style="font-weight: 700;" x-text="(activeResult.frying_correction.oil_mass_removed_g / activeResult.frying_correction.absorbed_fat_g).toFixed(1)"></span>×.
-              <a href="#" @click.prevent="currentTab = 'd1'" style="color: #0071e3; text-decoration: none; font-weight: 500; margin-left: 6px;">Inspect lab dataset →</a>
+              <a href="#" @click.prevent="currentTab = 'd1'" style="color: #0071e3; text-decoration: none; font-weight: 500; margin-left: 6px;">Inspect lab dataset &rarr;</a>
             </div>
 
             <!-- Block 3: Dual Footprint Cards -->
@@ -828,7 +911,7 @@
               <div class="card">
                 <div class="card-header">
                   <h3 class="card-title">
-                    <span style="font-size: 18px;">🩺</span> Liver Footprint (MASLD Axis)
+                    <span style="font-size: 16px;">🩺</span> Liver Footprint (MASLD Axis)
                   </h3>
                   <span class="badge badge-gray">Per Serving</span>
                 </div>
@@ -882,7 +965,7 @@
               <div class="card">
                 <div class="card-header">
                   <h3 class="card-title">
-                    <span style="font-size: 18px;">❤️</span> Heart Footprint (CVD Axis)
+                    <span style="font-size: 16px;">❤️</span> Heart Footprint (CVD Axis)
                   </h3>
                   <span class="badge badge-gray">Per Serving</span>
                 </div>
@@ -961,7 +1044,7 @@
             </div>
 
             <!-- Block 5: Coverage & Diagnostic Footnote -->
-            <div style="display: flex; justify-content: space-between; align-items: center; padding: 14px 20px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; margin-bottom: 24px; font-size: 13px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border: 1px solid var(--border-subtle); border-radius: 8px; margin-bottom: 24px; font-size: 13px; background: #ffffff;">
               <div>
                 <span style="font-weight: 600;">IFCT Coverage:</span> 
                 <span x-text="`${activeResult.coverage.lines_included} of ${activeResult.coverage.lines_total} ingredient lines matched to IFCT 2017.`"></span>
@@ -1034,18 +1117,18 @@
         </div>
 
         <!-- Filter Controls -->
-        <div class="card" style="padding: 16px 20px; margin-bottom: 20px;">
+        <div class="card" style="padding: 14px 18px; margin-bottom: 20px;">
           <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
             <div style="display: flex; gap: 6px; align-items: center;">
               <span style="font-size: 12px; font-weight: 600; color: #636366;">Category:</span>
               <template x-for="cat in labCategories" :key="cat">
-                <button class="pill-btn" :style="selectedLabCategory === cat ? 'background: #0071e3; color: #fff; border-color: #0071e3;' : ''" @click="selectedLabCategory = cat" x-text="cat"></button>
+                <button class="bench-chip" :style="selectedLabCategory === cat ? 'background: #0071e3; color: #fff; border-color: #0071e3;' : ''" @click="selectedLabCategory = cat" x-text="cat"></button>
               </template>
             </div>
             <div style="display: flex; gap: 6px; align-items: center; margin-left: auto;">
               <span style="font-size: 12px; font-weight: 600; color: #636366;">Setting:</span>
               <template x-for="set in labSettings" :key="set">
-                <button class="pill-btn" :style="selectedLabSetting === set ? 'background: #0071e3; color: #fff; border-color: #0071e3;' : ''" @click="selectedLabSetting = set" x-text="set"></button>
+                <button class="bench-chip" :style="selectedLabSetting === set ? 'background: #0071e3; color: #fff; border-color: #0071e3;' : ''" @click="selectedLabSetting = set" x-text="set"></button>
               </template>
             </div>
           </div>
@@ -1116,47 +1199,47 @@
             <span class="badge badge-blue">Deterministic Rule Engine</span>
           </div>
 
-          <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-bottom: 8px;">
-            <div style="background: #fbfbfd; border: 1px solid var(--border-subtle); border-radius: 10px; padding: 16px;">
-              <span class="badge badge-gray" style="margin-bottom: 10px;">Step 1</span>
+          <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 8px;">
+            <div style="border: 1px solid var(--border-subtle); border-radius: 8px; padding: 14px;">
+              <span class="badge badge-gray" style="margin-bottom: 8px;">Step 1</span>
               <div style="font-weight: 600; font-size: 14px; margin-bottom: 4px;">Parse</div>
-              <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">Extract quantity, unit &amp; tokens from raw text using 50+ Indian culinary units.</div>
+              <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">Extract quantity, unit &amp; tokens from raw text using 50+ Indian culinary units.</div>
               <div style="font-size: 11px; font-family: var(--font-mono); background: #f2f2f7; padding: 6px; border-radius: 4px;">
                 "500 ml oil for deep frying" → qty=500, unit=ml
               </div>
             </div>
 
-            <div style="background: #fbfbfd; border: 1px solid var(--border-subtle); border-radius: 10px; padding: 16px;">
-              <span class="badge badge-gray" style="margin-bottom: 10px;">Step 2</span>
+            <div style="border: 1px solid var(--border-subtle); border-radius: 8px; padding: 14px;">
+              <span class="badge badge-gray" style="margin-bottom: 8px;">Step 2</span>
               <div style="font-weight: 600; font-size: 14px; margin-bottom: 4px;">Convert</div>
-              <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">Resolve density per ingredient class via curated measures table.</div>
+              <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">Resolve density per ingredient class via curated measures table.</div>
               <div style="font-size: 11px; font-family: var(--font-mono); background: #f2f2f7; padding: 6px; border-radius: 4px;">
                 2 cups maida → 2 × 120g = 240g
               </div>
             </div>
 
-            <div style="background: #fbfbfd; border: 1px solid var(--border-subtle); border-radius: 10px; padding: 16px;">
-              <span class="badge badge-gray" style="margin-bottom: 10px;">Step 3</span>
+            <div style="border: 1px solid var(--border-subtle); border-radius: 8px; padding: 14px;">
+              <span class="badge badge-gray" style="margin-bottom: 8px;">Step 3</span>
               <div style="font-weight: 600; font-size: 14px; margin-bottom: 4px;">Match</div>
-              <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">Fuzzy string matching against 1,003 IFCT 2017 entries (cutoff 0.85).</div>
+              <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">Fuzzy string matching against 1,003 IFCT 2017 entries (cutoff 0.85).</div>
               <div style="font-size: 11px; font-family: var(--font-mono); background: #f2f2f7; padding: 6px; border-radius: 4px;">
                 "maida" → A018 (Confidence: 1.0)
               </div>
             </div>
 
-            <div style="background: #fbfbfd; border: 1px solid var(--border-subtle); border-radius: 10px; padding: 16px;">
-              <span class="badge badge-amber" style="margin-bottom: 10px;">Step 4</span>
+            <div style="border: 1px solid var(--border-subtle); border-radius: 8px; padding: 14px;">
+              <span class="badge badge-amber" style="margin-bottom: 8px;">Step 4</span>
               <div style="font-weight: 600; font-size: 14px; margin-bottom: 4px;">Frying Correction</div>
-              <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">Exclude immersion bath oil; re-inject absorbed fat from lab lookup.</div>
+              <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">Exclude immersion bath oil; re-inject absorbed fat from lab lookup.</div>
               <div style="font-size: 11px; font-family: var(--font-mono); background: #fff4e5; padding: 6px; border-radius: 4px; color: #944000;">
                 460g bath excluded → 22g absorbed fat injected
               </div>
             </div>
 
-            <div style="background: #fbfbfd; border: 1px solid var(--border-subtle); border-radius: 10px; padding: 16px;">
-              <span class="badge badge-gray" style="margin-bottom: 10px;">Step 5</span>
+            <div style="border: 1px solid var(--border-subtle); border-radius: 8px; padding: 14px;">
+              <span class="badge badge-gray" style="margin-bottom: 8px;">Step 5</span>
               <div style="font-weight: 600; font-size: 14px; margin-bottom: 4px;">Score</div>
-              <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">Sum nutrients ÷ servings; score against ICMR-NIN &amp; WHO ceilings.</div>
+              <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">Sum nutrients ÷ servings; score against ICMR-NIN &amp; WHO ceilings.</div>
               <div style="font-size: 11px; font-family: var(--font-mono); background: #f2f2f7; padding: 6px; border-radius: 4px;">
                 SFA: 4.16g / 24.9g = 16.7% limit
               </div>
@@ -1254,29 +1337,29 @@
         </div>
 
         <!-- Top Scale Stats Row -->
-        <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; margin-bottom: 24px;">
-          <div class="card" style="margin: 0; padding: 16px; text-align: center;">
-            <div style="font-size: 24px; font-weight: 700; color: #0071e3;" x-text="atlas.metrics.indb_recipes_total || 1014"></div>
+        <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 24px;">
+          <div class="card" style="margin: 0; padding: 14px; text-align: center;">
+            <div style="font-size: 22px; font-weight: 700; color: #0071e3;" x-text="atlas.metrics.indb_recipes_total || 1014"></div>
             <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">INDB Recipes</div>
           </div>
-          <div class="card" style="margin: 0; padding: 16px; text-align: center;">
-            <div style="font-size: 24px; font-weight: 700;" x-text="atlas.metrics.web_recipes_total || 71"></div>
+          <div class="card" style="margin: 0; padding: 14px; text-align: center;">
+            <div style="font-size: 22px; font-weight: 700;" x-text="atlas.metrics.web_recipes_total || 71"></div>
             <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Web Recipes</div>
           </div>
-          <div class="card" style="margin: 0; padding: 16px; text-align: center;">
-            <div style="font-size: 24px; font-weight: 700;" x-text="atlas.metrics.lines_total || 11610"></div>
+          <div class="card" style="margin: 0; padding: 14px; text-align: center;">
+            <div style="font-size: 22px; font-weight: 700;" x-text="atlas.metrics.lines_total || 11610"></div>
             <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Lines Analyzed</div>
           </div>
-          <div class="card" style="margin: 0; padding: 16px; text-align: center;">
-            <div style="font-size: 24px; font-weight: 700; color: var(--color-warning);" x-text="atlas.metrics.frying_bath_corrections_applied || 103"></div>
+          <div class="card" style="margin: 0; padding: 14px; text-align: center;">
+            <div style="font-size: 22px; font-weight: 700; color: var(--color-warning);" x-text="atlas.metrics.frying_bath_corrections_applied || 103"></div>
             <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Frying Corrected</div>
           </div>
-          <div class="card" style="margin: 0; padding: 16px; text-align: center;">
-            <div style="font-size: 24px; font-weight: 700; color: #34c759;" x-text="`${atlas.metrics.median_fat_inflation_web_div_textbook || 0.77}×`"></div>
+          <div class="card" style="margin: 0; padding: 14px; text-align: center;">
+            <div style="font-size: 22px; font-weight: 700; color: #28cd41;" x-text="`${atlas.metrics.median_fat_inflation_web_div_textbook || 0.77}×`"></div>
             <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Fat Inflation</div>
           </div>
-          <div class="card" style="margin: 0; padding: 16px; text-align: center;">
-            <div style="font-size: 24px; font-weight: 700; color: #af52de;" x-text="`${atlas.metrics.median_sfa_inflation_web_div_textbook || 0.93}×`"></div>
+          <div class="card" style="margin: 0; padding: 14px; text-align: center;">
+            <div style="font-size: 22px; font-weight: 700; color: #af52de;" x-text="`${atlas.metrics.median_sfa_inflation_web_div_textbook || 0.93}×`"></div>
             <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">SFA Inflation</div>
           </div>
         </div>
@@ -1427,10 +1510,10 @@
 
         <!-- Team Credits -->
         <div class="callout-box" style="text-align: center; padding: 24px;">
-          <div style="font-size: 15px; font-weight: 700; color: #1d1d1f;">Group 45 — Computational Gastronomy</div>
+          <div style="font-size: 15px; font-weight: 700; color: #111;">Group 45 — Computational Gastronomy</div>
           <div style="font-size: 13px; color: var(--text-muted); margin-top: 6px;">
-            Parth Verma (2024407) · Pratyaksh Kumar (2024431)<br>
-            Instructor: Prof. Ganesh Bagler · IIIT-Delhi
+            Parth Verma (2024407) &middot; Pratyaksh Kumar (2024431)<br>
+            Instructor: Prof. Ganesh Bagler &middot; IIIT-Delhi
           </div>
         </div>
       </div>
@@ -1481,9 +1564,10 @@
 
         launchWithCurrent() {
           if (this.inputMode === 'url') {
-            if (this.recipeUrl.toLowerCase().includes('samosa')) {
+            const url = this.recipeUrl.toLowerCase();
+            if (url.includes('samosa')) {
               this.loadDemo('samosa_test');
-            } else if (this.recipeUrl.toLowerCase().includes('biryani')) {
+            } else if (url.includes('biryani')) {
               this.loadDemo('chicken_biryani');
             } else {
               this.loadDemo('paneer_butter_masala');
