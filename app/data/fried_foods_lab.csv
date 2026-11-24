@@ -1,0 +1,70 @@
+item,category,setting,oil,fat_g_100g,SFA_pct_of_fat,method,n_samples,source,table_page,notes
+Samosa,stuffed pastry,street,Vanaspati/Palm,29.62,60.21,Soxhlet,1,Gupta 2016,Table 1,Village street food sample
+Samosa,stuffed pastry,street,Vanaspati/Palm,29.19,49.16,Soxhlet,1,Gupta 2016,Table 2,Urban slum street food sample
+Kachori,stuffed pastry,street,Vanaspati/Palm,31.99,45.73,Soxhlet,1,Gupta 2016,Table 1,Village street puffed fried snack
+Kachori,stuffed pastry,street,Vanaspati/Palm,46.61,85.4,Soxhlet,1,Gupta 2016,Table 2,Urban slum street puffed fried snack
+Bread Pakora,battered fritter,street,Vanaspati/Palm,47.6,25.95,Soxhlet,1,Gupta 2016,Table 1,Village street bread pakora
+Bread Pakora,battered fritter,street,Vanaspati/Palm,26.4,64.07,Soxhlet,1,Gupta 2016,Table 2,Urban slum bread pakora
+Pakoras,battered fritter,street,Vanaspati/Palm,30.59,46.95,Soxhlet,1,Gupta 2016,Table 2,Urban slum mixed vegetable pakoras
+Aloo Tikki,other,street,Vanaspati/Palm,27.41,60.39,Soxhlet,1,Gupta 2016,Table 2,Shallow/deep fried potato patty
+Bhatura,flat dough,street,Vanaspati/Palm,10.0,47.01,Soxhlet,1,Gupta 2016,Table 1,Deep-fried leavened bread
+Bhatura,flat dough,street,Vanaspati/Palm,19.6,58.81,Soxhlet,1,Gupta 2016,Table 2,Deep-fried leavened bread
+Mathri,crisp namkeen,street,Vanaspati/Palm,57.18,18.19,Soxhlet,1,Gupta 2016,Table 1,Village fried thick wheat crackers
+Mathri,crisp namkeen,street,Vanaspati/Palm,38.5,87.34,Soxhlet,1,Gupta 2016,Table 2,Slum fried thick wheat crackers
+Namakpara,crisp namkeen,street,Vanaspati/Palm,35.0,84.49,Soxhlet,1,Gupta 2016,Table 2,Fried salted wheat dough cubes
+Chakri,crisp namkeen,street,Vanaspati/Palm,36.79,63.94,Soxhlet,1,Gupta 2016,Table 2,Spiral wheat crackers
+Bhujia,crisp namkeen,street,Vanaspati/Palm,39.61,59.62,Soxhlet,1,Gupta 2016,Table 2,Gram flour fried strands
+Moong Dal Fried,crisp namkeen,street,Vanaspati/Palm,17.81,59.39,Soxhlet,1,Gupta 2016,Table 1,Fried salted split moong
+Moong Dal Fried,crisp namkeen,street,Vanaspati/Palm,27.39,33.28,Soxhlet,1,Gupta 2016,Table 2,Fried salted split moong
+Boondi Ladoo,syrup-soaked sweet,street,Vanaspati/Palm,14.59,55.68,Soxhlet,1,Gupta 2016,Table 2,Fried boondi in sugar syrup
+Besan Ladoo,syrup-soaked sweet,street,Ghee/Vanaspati,23.79,62.45,Soxhlet,1,Gupta 2016,Table 2,Ghee-roasted gram flour ball
+Soan Papdi,syrup-soaked sweet,street,Ghee/Vanaspati,39.0,62.94,Soxhlet,1,Gupta 2016,Table 1,Flaky gram flour sweet
+Soan Papdi,syrup-soaked sweet,street,Ghee/Vanaspati,20.2,49.81,Soxhlet,1,Gupta 2016,Table 2,Flaky gram flour sweet
+Onion Pakora / Bhaji,battered fritter,home,Vegetable oil,14.7,,proximate,1,UK CoFID 2021,Food Code 15-828,Homemade onion pakora fried in veg oil
+Aubergine Pakora,battered fritter,home,Vegetable oil,22.5,,proximate,1,UK CoFID 2021,Food Code 15-826,Homemade aubergine pakora
+Cauliflower Pakora,battered fritter,home,Vegetable oil,23.9,,proximate,1,UK CoFID 2021,Food Code 15-827,Homemade cauliflower pakora
+Potato Cauliflower Pakora,battered fritter,home,Vegetable oil,22.3,,proximate,1,UK CoFID 2021,Food Code 15-829,Homemade mixed vegetable pakora
+Potato Carrot Pea Pakora,battered fritter,home,Vegetable oil,22.7,,proximate,1,UK CoFID 2021,Food Code 15-830,Homemade mixed vegetable pakora
+Potato Pakora,battered fritter,home,Vegetable oil,19.6,,proximate,1,UK CoFID 2021,Food Code 15-831,Homemade potato pakora
+Spinach Pakora,battered fritter,home,Vegetable oil,22.2,,proximate,1,UK CoFID 2021,Food Code 15-832,Homemade spinach pakora
+Vegetable Pakora Takeaway,battered fritter,restaurant-takeaway,Vegetable oil,22.0,,proximate,11,UK CoFID 2021,Food Code 15-620,University of Leeds restaurant/takeaway analysis
+Vegetable Pakora Retail,battered fritter,retail-packaged,Vegetable oil,14.7,,proximate,5,UK CoFID 2021,Food Code 15-653,Retail packaged commercial pakoras
+Pakoras Homemade,battered fritter,home,Vegetable oil,8.1,,proximate,1,UK CoFID 2021,Food Code 11-1101,Homemade light vegetable pakoras
+Samosa Meat Takeaway,stuffed pastry,restaurant-takeaway,Vegetable oil,17.3,,proximate,10,UK CoFID 2021,Food Code 19-326,Aspland and James restaurant takeaway analysis
+Samosa Lamb Deep Fried,stuffed pastry,home,Rapeseed oil,31.5,,proximate,1,UK CoFID 2021,Food Code 19-597,Homemade lamb samosa deep fried
+Samosa Vegetable Retail,stuffed pastry,retail-packaged,Vegetable oil,9.3,,proximate,5,UK CoFID 2021,Food Code 15-305,LGC retail packaged vegetable samosa
+Puri,flat dough,home,Vegetable oil,22.3,,proximate,9,UK CoFID 2021,Food Code 11-911,University of Leeds homemade puri analysis
+Papadums Takeaway,crisp namkeen,restaurant-takeaway,Vegetable oil,38.8,,proximate,10,UK CoFID 2021,Food Code 11-998,Deep fried poppadums takeaway
+Sev / Ganthia,crisp namkeen,home,Vegetable oil,25.1,,proximate,1,UK CoFID 2021,Food Code 17-836,Homemade crisp chickpea noodles
+Chevda,crisp namkeen,home,Vegetable oil,31.8,,proximate,1,UK CoFID 2021,Food Code 17-782,Homemade savory flattened rice snack
+Bombay Mix,crisp namkeen,retail-packaged,Vegetable oil,32.9,,proximate,5,UK CoFID 2021,Food Code 17-764,LGC commercial retail mix
+Onion Pakora / Bhaji,battered fritter,restaurant-takeaway,Vegetable oil,16.98,17.9,proximate,30,safefood 2015,"Appendix B, Page 30","Foodtest Laboratories, 30 takeaway portions, SD 5.46"
+Chicken Pakora,battered fritter,restaurant-takeaway,Vegetable oil,10.32,18.7,proximate,30,safefood 2015,"Appendix B, Page 30","Foodtest Laboratories, 30 takeaway portions, SD 5.34"
+Puri (White flour),flat dough,lab-controlled,Vegetable oil,22.1,,proximate,6,Chen 2009,Table 3,"Deep fried white wheat dough, 18.4g oil uptake per 100g"
+Puri (Wholemeal flour),flat dough,lab-controlled,Vegetable oil,15.6,,proximate,6,Chen 2009,Table 3,Deep fried wholemeal dough
+Bread Pakora,battered fritter,street,Refined oil (cycle 1),18.1,27.46,proximate,3,Jain 2024,Table 1,Delhi street snack fresh cycle analysis
+Mathri,crisp namkeen,street,Refined oil (cycle 1),21.8,23.81,proximate,3,Jain 2024,Table 1,Traditional flaky pastry fresh cycle analysis
+Poori,flat dough,lab-controlled,Refined oil (cycle 1),16.88,22.1,proximate,3,Jain 2024,Table 1,Poori fresh cycle analysis (converted from dry basis 22.5% at 25% moisture)
+Samosa (Control),stuffed pastry,lab-controlled,Groundnut oil,12.4,,proximate,3,Sakhale 2011,Table 2,Standard wheat casing control samosa
+Samosa (Modified casing),stuffed pastry,lab-controlled,Groundnut oil,8.97,,proximate,3,Sakhale 2011,Table 2,Hydrocolloid casing modified samosa (mean 8.56-9.38)
+Poori (Control),flat dough,lab-controlled,Refined sunflower oil,21.4,,proximate,5,Yadav 2012,Table 3,Control deep fat fried poori
+Poori (Fibre added),flat dough,lab-controlled,Refined sunflower oil,17.12,,proximate,5,Yadav 2012,Table 3,Poori with 11g oat bran + 3g wheat bran
+Fried Papad (Control sun-dried),crisp namkeen,lab-controlled,Refined oil,11.4,,proximate,3,Gaikwad 2022,Table 2,Traditional sun-dried deep fried black gram papad
+Fried Papad (MAHD dried),crisp namkeen,lab-controlled,Refined oil,7.9,,proximate,3,Gaikwad 2022,Table 4,Microwave-assisted hot air dried fried papad
+Pantoa / Gulab Jamun (Ghee),syrup-soaked sweet,lab-controlled,Desi Ghee,14.8,65.0,proximate,3,Neethu 2025,Table 1,Immersion fried dairy sweet in clarified butter
+Pantoa / Gulab Jamun (Sunflower oil),syrup-soaked sweet,lab-controlled,Sunflower oil,23.6,11.5,proximate,3,Neethu 2025,Table 1,Immersion fried dairy sweet in sunflower oil
+Samosa,stuffed pastry,restaurant-takeaway,Mixed/Unknown,7.71,42.1,FAME-sum,3,Joshee 2019,Table 2,GC fatty acid sum (midpoint of 6.75-8.67)
+Bhaji,battered fritter,street,Mixed/Unknown,7.15,38.5,FAME-sum,3,Joshee 2019,Table 2,GC fatty acid sum (midpoint of 3.64-10.67)
+Batata Vada,battered fritter,street,Mixed/Unknown,6.28,45.2,FAME-sum,3,Joshee 2019,Table 2,GC fatty acid sum (midpoint of 3.14-9.42)
+Medu Vada,battered fritter,restaurant-takeaway,Mixed/Unknown,6.38,40.8,FAME-sum,2,Joshee 2019,Table 2,GC fatty acid sum (midpoint of 6.11-6.65)
+Pav Pattice,battered fritter,street,Mixed/Unknown,8.08,36.4,FAME-sum,1,Joshee 2019,Table 2,GC fatty acid sum
+Puri,flat dough,restaurant-takeaway,Mixed/Unknown,9.45,34.2,FAME-sum,5,Joshee 2019,Table 1,GC fatty acid sum (midpoint of 6.9-12.0)
+Jalebi,syrup-soaked sweet,street,Mixed/Unknown,4.8,48.0,FAME-sum,1,Joshee 2019,Table 2,GC fatty acid sum
+Paratha (Fried),flat dough,restaurant-takeaway,Mixed/Unknown,5.2,39.5,FAME-sum,1,Joshee 2019,Table 2,GC fatty acid sum
+Gathiya,crisp namkeen,retail-packaged,Refined oil,17.77,38.0,FAME-sum,3,Joshee 2019,Table 1,GC fatty acid sum (midpoint of 13.28-22.26)
+Chakali,crisp namkeen,retail-packaged,Refined oil,13.0,42.0,FAME-sum,5,Joshee 2019,Table 1,GC fatty acid sum (midpoint of 8.20-17.81)
+Sev,crisp namkeen,retail-packaged,Refined oil,13.82,35.5,FAME-sum,6,Joshee 2019,Table 1,GC fatty acid sum (midpoint of 10.39-17.25)
+Farsan,crisp namkeen,retail-packaged,Refined oil,13.3,41.2,FAME-sum,1,Joshee 2019,Table 1,GC fatty acid sum
+Fafda,crisp namkeen,street,Refined oil,6.1,37.1,FAME-sum,1,Joshee 2019,Table 1,GC fatty acid sum
+Chiwda,crisp namkeen,retail-packaged,Refined oil,8.2,33.0,FAME-sum,1,Joshee 2019,Table 1,GC fatty acid sum
+Murukku,crisp namkeen,retail-packaged,Refined oil,10.5,44.0,FAME-sum,1,Joshee 2019,Table 1,GC fatty acid sum
