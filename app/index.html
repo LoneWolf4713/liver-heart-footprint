@@ -1245,6 +1245,199 @@
       font-weight: 500;
       color: #636366;
     }
+
+    /* Badges */
+    .badge-green { background: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
+    .badge-purple { background: #f3e5f5; color: #7b1fa2; border: 1px solid #e1bee7; }
+
+    /* ======================================================== */
+    /* D1 LAB DATASET VISUAL EXTENSIONS                         */
+    /* ======================================================== */
+    .lab-metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .lab-metric-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 22px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+      transition: all 0.2s ease;
+    }
+
+    .lab-metric-card:hover {
+      border-color: #d2d2d7;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    }
+
+    .lab-card-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .circle-blue {
+      border: 3.5px solid #0071e3 !important;
+      background: #f0f7ff !important;
+      color: #0051ba !important;
+    }
+
+    .circle-purple {
+      border: 3.5px solid #af52de !important;
+      background: #faf2ff !important;
+      color: #7b1fa2 !important;
+    }
+
+    /* Pipeline Bridge Banner: Curries vs Fried Foods */
+    .lab-bridge-banner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      background: #fbfbfd;
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 22px 28px;
+      margin-bottom: 40px;
+    }
+
+    .bridge-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .bridge-icon {
+      font-size: 26px;
+      line-height: 1;
+      padding-top: 2px;
+    }
+
+    .bridge-item-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .bridge-item-desc {
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: #48484a;
+    }
+
+    /* Setting Disparity Spectrum Card */
+    .setting-spectrum-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 26px 32px;
+      margin-bottom: 40px;
+    }
+
+    .spectrum-row {
+      display: grid;
+      grid-template-columns: 180px 1fr 90px;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .spectrum-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .spectrum-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .spectrum-track {
+      height: 10px;
+      background: #f2f2f7;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .spectrum-fill {
+      height: 100%;
+      border-radius: 5px;
+      transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .spectrum-val {
+      font-family: var(--font-mono);
+      font-size: 13.5px;
+      font-weight: 700;
+      text-align: right;
+      color: var(--text-main);
+    }
+
+    .spectrum-note {
+      grid-column: 2 / span 2;
+      font-size: 11.5px;
+      color: #636366;
+      margin-top: -12px;
+      line-height: 1.4;
+    }
+
+    /* Methods Grid */
+    .methods-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .method-card {
+      background: #fbfbfd;
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .method-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .method-tag {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--color-accent);
+      margin-bottom: 8px;
+    }
+
+    .method-body {
+      font-size: 12px;
+      color: #48484a;
+      line-height: 1.5;
+    }
   </style>
 
   <!-- Pre-loaded Offline Datasets -->
@@ -1945,15 +2138,203 @@
       <!-- TAB 1: D1 · LAB DATASET                    -->
       <!-- ========================================== -->
       <div x-show="currentTab === 'd1'" x-transition.opacity.duration.150ms>
-        <div style="margin-bottom: 24px;">
-          <h2 style="font-size: 24px; font-weight: 700; margin: 0 0 6px 0;">Curated Fried Foods Laboratory Dataset</h2>
-          <p style="font-size: 14px; color: var(--text-muted); margin: 0;">
-            70 empirical lipid measurements from 5 peer-reviewed sources. This dataset calibrates our frying bath correction.
+        
+        <!-- Header -->
+        <div style="margin-bottom: 32px;">
+          <h2 style="font-size: 26px; font-weight: 700; margin: 0 0 8px 0; letter-spacing: -0.02em;">Curated Fried Foods Laboratory Dataset (D1)</h2>
+          <p style="font-size: 14.5px; color: var(--text-muted); margin: 0; line-height: 1.5; max-width: 920px;">
+            A peer-reviewed benchmark of <strong>69 empirical lipid measurements</strong> compiled from 10 laboratory studies across South Asian culinary settings. This dataset calibrates deep-frying bath oil absorption in D2 and D4.
           </p>
         </div>
 
-        <!-- Filter Controls -->
-        <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-bottom: 20px; padding: 14px 0; border-bottom: 1px solid var(--border-divider);">
+        <!-- Top Executive Metrics 3-Card Grid -->
+        <div class="lab-metrics-grid">
+          <!-- Card 1: Corpus -->
+          <div class="lab-metric-card">
+            <div class="lab-card-title">
+              <span>📚</span> Empirical Reference Corpus
+            </div>
+            <div>
+              <span class="badge badge-blue">10 Published Studies</span>
+            </div>
+            <div class="score-circle-widget circle-blue">
+              <span class="circle-score-val">69</span>
+              <span class="circle-score-denom">Samples</span>
+            </div>
+            <div class="exec-card-primary-line">Gupta 2016, UK CoFID, Joshee 2019, Jain 2024</div>
+          </div>
+
+          <!-- Card 2: Setting Spread -->
+          <div class="lab-metric-card">
+            <div class="lab-card-title">
+              <span>⚡️</span> Real-World Setting Spread
+            </div>
+            <div>
+              <span class="badge badge-amber">4× Commercial Variance</span>
+            </div>
+            <div class="score-circle-widget circle-warning">
+              <span class="circle-score-val">4.0×</span>
+              <span class="circle-score-denom">Spread</span>
+            </div>
+            <div class="exec-card-primary-line">7.7g (takeaway) to 46.6g (street kachori)</div>
+          </div>
+
+          <!-- Card 3: Conservative Baseline -->
+          <div class="lab-metric-card">
+            <div class="lab-card-title">
+              <span>🎯</span> Samosa Baseline Resolution
+            </div>
+            <div>
+              <span class="badge badge-green">Conservative Median</span>
+            </div>
+            <div class="score-circle-widget circle-safe">
+              <span class="circle-score-val">12.4g</span>
+              <span class="circle-score-denom">/ 100g</span>
+            </div>
+            <div class="exec-card-primary-line">Pooled statistical median across all settings</div>
+          </div>
+        </div>
+
+        <!-- Pipeline Bridge Banner: Curries vs Deep-Fried Foods -->
+        <div class="lab-bridge-banner">
+          <div class="bridge-item">
+            <span class="bridge-icon">🍲</span>
+            <div>
+              <div class="bridge-item-title">Simmered Curries &amp; Gravies (e.g. Paneer Butter Masala)</div>
+              <div class="bridge-item-desc">
+                <strong>Direct IFCT 2017 Aggregation:</strong> 100% of the butter (50g), cream (30g), and paneer are simmered into the sauce and consumed in full. There is no discarded oil bath; hence, the frying correction is <em>not applied</em>.
+              </div>
+            </div>
+          </div>
+          <div class="bridge-item">
+            <span class="bridge-icon">🥟</span>
+            <div>
+              <div class="bridge-item-title">Deep-Fried Immersion Foods (e.g. Samosa, Kachori)</div>
+              <div class="bridge-item-desc">
+                <strong>D1 Bath Oil Exclusion &amp; Lab Substitution:</strong> The recipe calls for 500ml oil for deep frying. The engine strips the 460g pan bath and substitutes empirical matrix retention (12.4g/100g) from this laboratory dataset.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Commercial Setting Disparity Visual Spectrum (Horizontal Bars) -->
+        <div class="setting-spectrum-card">
+          <div style="margin-bottom: 22px;">
+            <div style="font-size: 16px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">
+              Commercial Setting Lipid Disparity (Why Setting Matters)
+            </div>
+            <div style="font-size: 13px; color: var(--text-muted); line-height: 1.45;">
+              The same culinary dish exhibits up to a 4× lipid spread depending on oil thermal degradation, reuse cycles, and fryer temperature control:
+            </div>
+          </div>
+
+          <!-- Street -->
+          <div class="spectrum-row">
+            <div class="spectrum-label">
+              <span>🏪 Street / Halwai</span>
+            </div>
+            <div class="spectrum-track">
+              <div class="spectrum-fill fill-danger" style="width: 58%;"></div>
+            </div>
+            <div class="spectrum-val" style="color: #c62828;">29.2 g</div>
+            <div class="spectrum-note">Repeated frying cycles in unbranded palm/vanaspati; thermal oxidation increases oil viscosity and surface cling.</div>
+          </div>
+
+          <!-- Retail Packaged -->
+          <div class="spectrum-row">
+            <div class="spectrum-label">
+              <span>📦 Retail Packaged</span>
+            </div>
+            <div class="spectrum-track">
+              <div class="spectrum-fill fill-warning" style="width: 55%;"></div>
+            </div>
+            <div class="spectrum-val" style="color: #b25e00;">27.8 g</div>
+            <div class="spectrum-note">Continuous industrial conveyor fryers engineered for low moisture, high crispness, and long retail shelf-life.</div>
+          </div>
+
+          <!-- Home Cooking -->
+          <div class="spectrum-row">
+            <div class="spectrum-label">
+              <span>🏠 Home Cooking</span>
+            </div>
+            <div class="spectrum-track">
+              <div class="spectrum-fill fill-warning" style="width: 45%;"></div>
+            </div>
+            <div class="spectrum-val" style="color: #b25e00;">22.4 g</div>
+            <div class="spectrum-note">Small-batch kadai frying; oil temperature abruptly drops when cold food enters, extending frying time.</div>
+          </div>
+
+          <!-- Restaurant / Takeaway -->
+          <div class="spectrum-row">
+            <div class="spectrum-label">
+              <span>🍽️ Restaurant Takeaway</span>
+            </div>
+            <div class="spectrum-track">
+              <div class="spectrum-fill" style="width: 33%; background: #0071e3;"></div>
+            </div>
+            <div class="spectrum-val" style="color: #0071e3;">16.5 g</div>
+            <div class="spectrum-note">Thermostat-regulated commercial deep fryers (175–185°C); rapid surface crust flash-seal prevents inner oil soaking.</div>
+          </div>
+
+          <!-- Lab-Controlled -->
+          <div class="spectrum-row">
+            <div class="spectrum-label">
+              <span>🔬 Lab-Controlled</span>
+            </div>
+            <div class="spectrum-track">
+              <div class="spectrum-fill fill-safe" style="width: 31%;"></div>
+            </div>
+            <div class="spectrum-val" style="color: #2e7d32;">15.6 g</div>
+            <div class="spectrum-note">Calibrated single-use oil, strict submersion timing, and standardized 60-second wire-mesh drainage.</div>
+          </div>
+        </div>
+
+        <!-- Analytical Methods Comparison (3 Cards) -->
+        <div style="margin-bottom: 32px;">
+          <div style="margin-bottom: 16px;">
+            <div style="font-size: 16px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">
+              Laboratory Extraction Methodology
+            </div>
+            <div style="font-size: 13px; color: var(--text-muted);">
+              Peer-reviewed analytical standards used across the 10 literature sources:
+            </div>
+          </div>
+
+          <div class="methods-grid">
+            <div class="method-card">
+              <div class="method-name"><span>🧪</span> Soxhlet Extraction</div>
+              <div class="method-tag">Solvent Gravimetric</div>
+              <div class="method-body">
+                Continuous petroleum ether or n-hexane solvent extraction. Dissolves all crude neutral extractable lipids gravimetrically. Standard method used in Gupta 2016 street foods.
+              </div>
+            </div>
+
+            <div class="method-card">
+              <div class="method-name"><span>🔬</span> Proximate Analysis</div>
+              <div class="method-tag">AOAC Acid Hydrolysis</div>
+              <div class="method-body">
+                Hot hydrochloric acid digestion breaks down starch/protein matrix before ether extraction. Official standard used by national food agencies (UK CoFID, safefood) capturing bound lipids.
+              </div>
+            </div>
+
+            <div class="method-card">
+              <div class="method-name"><span>🧬</span> FAME-Sum Chromatography</div>
+              <div class="method-tag">GC-FID Gas Chromatography</div>
+              <div class="method-body">
+                Transesterification of lipids into Fatty Acid Methyl Esters; capillary gas chromatography quantifies exact molecular peaks for saturated and trans fats (Joshee 2019).
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Controls & Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+          <div style="font-size: 16px; font-weight: 700; color: var(--text-main);">
+            Browse Empirical Records (<span x-text="filteredLabRows.length"></span> of 69 Samples)
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-bottom: 20px; padding: 14px 0; border-top: 1px solid var(--border-divider); border-bottom: 1px solid var(--border-divider);">
           <div style="display: flex; gap: 6px; align-items: center;">
             <span style="font-size: 12px; font-weight: 600; color: #636366;">Category:</span>
             <template x-for="cat in labCategories" :key="cat">
@@ -1968,11 +2349,12 @@
           </div>
         </div>
 
-        <!-- 70-Row Table -->
+        <!-- 69-Row Table with Serial Number and Badges -->
         <div class="data-table-container">
           <table class="data-table">
             <thead>
               <tr>
+                <th style="width: 48px; text-align: center;">#</th>
                 <th>Item</th>
                 <th>Category</th>
                 <th>Setting</th>
@@ -1987,13 +2369,27 @@
             <tbody>
               <template x-for="(row, idx) in filteredLabRows" :key="idx">
                 <tr>
+                  <td class="mono-cell" style="text-align: center; color: var(--text-muted); font-size: 12px; font-weight: 600;" x-text="idx + 1"></td>
                   <td style="font-weight: 600;" x-text="row.item"></td>
                   <td><span class="badge badge-gray" x-text="row.category"></span></td>
-                  <td x-text="row.setting"></td>
+                  <td>
+                    <span class="badge" 
+                          :class="{
+                            'badge-amber': row.setting === 'street',
+                            'badge-blue': row.setting === 'restaurant-takeaway',
+                            'badge-green': row.setting === 'home',
+                            'badge-gray': row.setting === 'lab-controlled',
+                            'badge-purple': row.setting === 'retail-packaged'
+                          }" 
+                          x-text="row.setting">
+                    </span>
+                  </td>
                   <td x-text="row.oil || 'Unspecified'"></td>
                   <td class="mono-cell" style="font-weight: 700;" x-text="row.fat_g_100g"></td>
                   <td class="mono-cell" x-text="row.SFA_pct_of_fat ? `${row.SFA_pct_of_fat}%` : '—'"></td>
-                  <td x-text="row.method"></td>
+                  <td>
+                    <span class="badge badge-gray" style="font-size: 11px;" x-text="row.method"></span>
+                  </td>
                   <td class="mono-cell" x-text="row.n_samples"></td>
                   <td style="color: #636366;" x-text="row.source"></td>
                 </tr>
@@ -2002,17 +2398,6 @@
           </table>
         </div>
 
-        <!-- The Range Problem Callout -->
-        <div class="callout-box">
-          <div class="callout-title">The Range Problem in Dietary Epidemiology</div>
-          <div class="callout-body">
-            The same culinary dish exhibits up to a <strong>4× lipid spread</strong> across real-world settings. 
-            For example, Samosa total fat ranges from <strong>7.71 g/100g</strong> (gas chromatography FAME-sum in restaurant takeaway) 
-            to <strong>29.62 g/100g</strong> (Soxhlet extraction in village street food, Gupta 2016). Both are valid empirical figures: 
-            thermal oxidation, repeated frying cycles, and batter porosity fundamentally alter lipid retention. 
-            Our pipeline matches recipes by specific dish classification and setting, falling back to category medians.
-          </div>
-        </div>
       </div>
 
       <!-- ========================================== -->
