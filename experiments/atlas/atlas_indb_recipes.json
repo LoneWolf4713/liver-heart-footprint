@@ -17367,7 +17367,7 @@
       "energy_kj": 2844.862608959999,
       "energy_kcal": 755.5007765200768,
       "fat_g": 112.88570500000004,
-      "sfa_g": 30.9720867,
+      "sfa_g": 32.3938699,
       "mufa_g": 99.72210314899999,
       "pufa_g": 304.2876477,
       "tfa_g": NaN,
@@ -17385,7 +17385,7 @@
       "energy_kj": 1422.4313044799994,
       "energy_kcal": 377.7503882600384,
       "fat_g": 56.44285250000002,
-      "sfa_g": 15.48604335,
+      "sfa_g": 16.19693495,
       "mufa_g": 49.861051574499996,
       "pufa_g": 152.14382385,
       "tfa_g": NaN,
@@ -17424,11 +17424,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 15.48604335,
+          "amount": 16.19693495,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 62.220709888392854,
-          "pct_energy": 6.2220709888392856,
+          "pct_of_limit": 65.07697078125,
+          "pct_energy": 6.507697078125001,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -17558,18 +17558,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 71.08916,
-      "absorbed_sfa_g": 28.435664000000003,
+      "absorbed_sfa_g": 29.857447200000003,
       "fat_g_per_100g_lab": 17.3,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Samosa Meat Takeaway"
+      "sfa_pct_of_fat_lab": 42.0,
+      "lab_match": "lab_match:Samosa Meat Takeaway",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 30.9720867,
+      "total_sfa_g": 32.3938699,
       "dairy_sfa_g": 2.0836,
-      "oil_sfa_g": 28.435664000000003,
+      "oil_sfa_g": 29.857447200000003,
       "other_sfa_g": 0.45282269999999514,
-      "dairy_sfa_pct": 6.7273478218695555,
-      "oil_sfa_pct": 91.81061733241242,
+      "dairy_sfa_pct": 6.432081151255102,
+      "oil_sfa_pct": 92.17005344582188,
       "total_fat_g": 112.88570500000004,
       "dairy_fat_g": 3.2880000000000003,
       "oil_fat_g": 71.08916,
@@ -21229,7 +21233,11 @@
       "absorbed_sfa_g": 5.4671864,
       "fat_g_per_100g_lab": 17.12,
       "sfa_pct_of_fat_lab": 22.1,
-      "lab_match": "lab_match:Poori"
+      "lab_match": "lab_match:Poori",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 7.968786399999996,
@@ -21455,7 +21463,11 @@
       "absorbed_sfa_g": 7.377864,
       "fat_g_per_100g_lab": 17.12,
       "sfa_pct_of_fat_lab": 22.1,
-      "lab_match": "lab_match:Poori"
+      "lab_match": "lab_match:Poori",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 9.983264000000002,
@@ -21681,7 +21693,11 @@
       "absorbed_sfa_g": 6.431984,
       "fat_g_per_100g_lab": 17.12,
       "sfa_pct_of_fat_lab": 22.1,
-      "lab_match": "lab_match:Poori"
+      "lab_match": "lab_match:Poori",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 8.995633999999995,
@@ -21907,7 +21923,11 @@
       "absorbed_sfa_g": 4.310185984,
       "fat_g_per_100g_lab": 17.12,
       "sfa_pct_of_fat_lab": 22.1,
-      "lab_match": "lab_match:Poori"
+      "lab_match": "lab_match:Poori",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 6.890740284000003,
@@ -22133,7 +22153,11 @@
       "absorbed_sfa_g": 4.3888832,
       "fat_g_per_100g_lab": 17.12,
       "sfa_pct_of_fat_lab": 22.1,
-      "lab_match": "lab_match:Poori"
+      "lab_match": "lab_match:Poori",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 6.915851199999997,
@@ -27229,7 +27253,11 @@
       "absorbed_sfa_g": 29.136300000000002,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 42.73759937,
@@ -28530,7 +28558,11 @@
       "absorbed_sfa_g": 8.006870300000001,
       "fat_g_per_100g_lab": 14.8,
       "sfa_pct_of_fat_lab": 52.91,
-      "lab_match": "lab_match:Bhatura"
+      "lab_match": "lab_match:Bhatura",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 2
     },
     "drivers": {
       "total_sfa_g": 8.467710299999998,
@@ -29207,7 +29239,7 @@
       "energy_kj": 3350.4570525599993,
       "energy_kcal": 840.1781483173994,
       "fat_g": 59.67458599999999,
-      "sfa_g": 20.3359797,
+      "sfa_g": 10.01063649,
       "mufa_g": 51.78857325999999,
       "pufa_g": 159.93641789999998,
       "tfa_g": NaN,
@@ -29225,7 +29257,7 @@
       "energy_kj": 1675.2285262799996,
       "energy_kcal": 420.0890741586997,
       "fat_g": 29.837292999999995,
-      "sfa_g": 10.16798985,
+      "sfa_g": 5.005318245,
       "mufa_g": 25.894286629999996,
       "pufa_g": 79.96820894999999,
       "tfa_g": NaN,
@@ -29264,11 +29296,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 10.16798985,
+          "amount": 5.005318245,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 40.85353064732143,
-          "pct_energy": 4.085353064732143,
+          "pct_of_limit": 20.110653662946426,
+          "pct_energy": 2.0110653662946425,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -29398,18 +29430,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "absorbed_fat_g": 46.72100999999999,
-      "absorbed_sfa_g": 18.688404,
+      "absorbed_sfa_g": 8.363060789999999,
       "fat_g_per_100g_lab": 14.7,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Onion Pakora / Bhaji"
+      "sfa_pct_of_fat_lab": 17.9,
+      "lab_match": "lab_match:Onion Pakora / Bhaji",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 20.3359797,
+      "total_sfa_g": 10.01063649,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 20.128404,
-      "other_sfa_g": 0.20757569999999959,
+      "oil_sfa_g": 9.803060789999998,
+      "other_sfa_g": 0.20757570000000136,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 98.979268748975,
+      "oil_sfa_pct": 97.9264485309465,
       "total_fat_g": 59.67458599999999,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 58.70900999999999,
@@ -33497,7 +33533,11 @@
       "absorbed_sfa_g": 103.0426892235,
       "fat_g_per_100g_lab": 23.79,
       "sfa_pct_of_fat_lab": 62.45,
-      "lab_match": "lab_match:Besan Ladoo"
+      "lab_match": "lab_match:Besan Ladoo",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
       "total_sfa_g": 107.0606163235,
@@ -42968,7 +43008,11 @@
       "absorbed_sfa_g": 31.546514914200003,
       "fat_g_per_100g_lab": 27.41,
       "sfa_pct_of_fat_lab": 60.39,
-      "lab_match": "lab_match:Aloo Tikki"
+      "lab_match": "lab_match:Aloo Tikki",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
       "total_sfa_g": 34.7512314892,
@@ -43409,7 +43453,11 @@
       "absorbed_sfa_g": 31.29,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 42.63406,
@@ -45140,7 +45188,11 @@
       "absorbed_sfa_g": 6.8256000000000006,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 13.057639430000002,
@@ -47524,7 +47576,11 @@
       "absorbed_sfa_g": 5.9562,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 7.028966280000003,
@@ -47752,7 +47808,11 @@
       "absorbed_sfa_g": 12.289800000000001,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 19.430817379999993,
@@ -47978,7 +48038,11 @@
       "absorbed_sfa_g": 12.294600000000003,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 19.351072375,
@@ -49064,7 +49128,11 @@
       "absorbed_sfa_g": 2.6921268,
       "fat_g_per_100g_lab": 10.32,
       "sfa_pct_of_fat_lab": 18.7,
-      "lab_match": "lab_match:Chicken Pakora"
+      "lab_match": "lab_match:Chicken Pakora",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
       "total_sfa_g": 3.550359175,
@@ -49741,7 +49809,7 @@
       "energy_kj": 3807.2269399999996,
       "energy_kcal": 984.2561663479927,
       "fat_g": 78.96662499999996,
-      "sfa_g": 29.9405245,
+      "sfa_g": 29.582999499999996,
       "mufa_g": 99.74172449999999,
       "pufa_g": 307.76866249999995,
       "tfa_g": NaN,
@@ -49759,7 +49827,7 @@
       "energy_kj": 3807.2269399999996,
       "energy_kcal": 984.2561663479927,
       "fat_g": 78.96662499999996,
-      "sfa_g": 29.9405245,
+      "sfa_g": 29.582999499999996,
       "mufa_g": 99.74172449999999,
       "pufa_g": 307.76866249999995,
       "tfa_g": NaN,
@@ -49798,11 +49866,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 29.9405245,
+          "amount": 29.582999499999996,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 120.29675022321429,
-          "pct_energy": 12.02967502232143,
+          "pct_of_limit": 118.86026584821427,
+          "pct_energy": 11.886026584821426,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -49932,18 +50000,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 71.505,
-      "absorbed_sfa_g": 28.602,
+      "absorbed_sfa_g": 28.244474999999998,
       "fat_g_per_100g_lab": 31.5,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Samosa Lamb Deep Fried"
+      "sfa_pct_of_fat_lab": 39.5,
+      "lab_match": "lab_match:Samosa Lamb Deep Fried",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 29.9405245,
+      "total_sfa_g": 29.582999499999996,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 29.082,
+      "oil_sfa_g": 28.724474999999998,
       "other_sfa_g": 0.8585244999999979,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 97.13256693282044,
+      "oil_sfa_pct": 97.09791260348702,
       "total_fat_g": 78.96662499999996,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 75.50099999999999,
@@ -49967,7 +50039,7 @@
       "energy_kj": 3242.38031,
       "energy_kcal": 849.7038456022947,
       "fat_g": 75.36070000000001,
-      "sfa_g": 30.548235000000005,
+      "sfa_g": 30.205278750000005,
       "mufa_g": 99.92056399999998,
       "pufa_g": 305.08727999999996,
       "tfa_g": NaN,
@@ -49985,7 +50057,7 @@
       "energy_kj": 3242.38031,
       "energy_kcal": 849.7038456022947,
       "fat_g": 75.36070000000001,
-      "sfa_g": 30.548235000000005,
+      "sfa_g": 30.205278750000005,
       "mufa_g": 99.92056399999998,
       "pufa_g": 305.08727999999996,
       "tfa_g": NaN,
@@ -50024,11 +50096,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 30.548235000000005,
+          "amount": 30.205278750000005,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 122.73844419642859,
-          "pct_energy": 12.273844419642858,
+          "pct_of_limit": 121.36049497767858,
+          "pct_energy": 12.136049497767859,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -50158,18 +50230,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 68.59125,
-      "absorbed_sfa_g": 27.436500000000002,
+      "absorbed_sfa_g": 27.093543750000002,
       "fat_g_per_100g_lab": 31.5,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Samosa Lamb Deep Fried"
+      "sfa_pct_of_fat_lab": 39.5,
+      "lab_match": "lab_match:Samosa Lamb Deep Fried",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 30.548235000000005,
+      "total_sfa_g": 30.205278750000005,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 27.436500000000002,
+      "oil_sfa_g": 27.093543750000002,
       "other_sfa_g": 3.111735000000003,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 89.81369954761706,
+      "oil_sfa_pct": 89.69804243240098,
       "total_fat_g": 75.36070000000001,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 68.59125,
@@ -50387,7 +50463,11 @@
       "absorbed_sfa_g": 29.2758,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 35.85926178000001,
@@ -55911,7 +55991,11 @@
       "absorbed_sfa_g": 14.43989808,
       "fat_g_per_100g_lab": 14.59,
       "sfa_pct_of_fat_lab": 55.68,
-      "lab_match": "lab_match:Boondi Ladoo"
+      "lab_match": "lab_match:Boondi Ladoo",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
       "total_sfa_g": 17.48509308,
@@ -56352,7 +56436,11 @@
       "absorbed_sfa_g": 13.5014,
       "fat_g_per_100g_lab": 17.0,
       "sfa_pct_of_fat_lab": 38.0,
-      "lab_match": "category_default:battered fritter"
+      "lab_match": "category_default:battered fritter",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 16.535905000000003,
@@ -56578,7 +56666,11 @@
       "absorbed_sfa_g": 13.14,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 20.366844400000005,
@@ -70349,7 +70441,11 @@
       "absorbed_sfa_g": 9.528,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 24.793254460000007,
@@ -70575,7 +70671,11 @@
       "absorbed_sfa_g": 33.804432000000006,
       "fat_g_per_100g_lab": 19.200000000000003,
       "sfa_pct_of_fat_lab": 38.25,
-      "lab_match": "lab_match:Pantoa / Gulab Jamun"
+      "lab_match": "lab_match:Pantoa / Gulab Jamun",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 2
     },
     "drivers": {
       "total_sfa_g": 46.90041950000001,
@@ -70801,7 +70901,11 @@
       "absorbed_sfa_g": 25.068,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 30.6704305,
@@ -71048,7 +71152,7 @@
       "energy_kj": 2187.004192,
       "energy_kcal": 595.5472399617585,
       "fat_g": 43.148999999999994,
-      "sfa_g": 15.850198000000006,
+      "sfa_g": 15.087758000000006,
       "mufa_g": 99.35013099999999,
       "pufa_g": 306.66927499999997,
       "tfa_g": NaN,
@@ -71066,7 +71170,7 @@
       "energy_kj": 2187.004192,
       "energy_kcal": 595.5472399617585,
       "fat_g": 43.148999999999994,
-      "sfa_g": 15.850198000000006,
+      "sfa_g": 15.087758000000006,
       "mufa_g": 99.35013099999999,
       "pufa_g": 306.66927499999997,
       "tfa_g": NaN,
@@ -71105,11 +71209,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 15.850198000000006,
+          "amount": 15.087758000000006,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 63.683831250000026,
-          "pct_energy": 6.368383125000003,
+          "pct_of_limit": 60.62045625000002,
+          "pct_energy": 6.062045625000001,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -71239,18 +71343,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 38.12200000000001,
-      "absorbed_sfa_g": 15.248800000000003,
+      "absorbed_sfa_g": 14.486360000000003,
       "fat_g_per_100g_lab": 19.6,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Potato Pakora"
+      "sfa_pct_of_fat_lab": 38.0,
+      "lab_match": "lab_match:Potato Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 15.850198000000006,
+      "total_sfa_g": 15.087758000000006,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 15.488800000000003,
+      "oil_sfa_g": 14.726360000000003,
       "other_sfa_g": 0.361398000000003,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 97.71991491841298,
+      "oil_sfa_pct": 97.60469381865747,
       "total_fat_g": 43.148999999999994,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 40.120000000000005,
@@ -71274,7 +71382,7 @@
       "energy_kj": 1755.3236839999968,
       "energy_kcal": 492.3731223709361,
       "fat_g": 33.626499999999965,
-      "sfa_g": 12.051798000000007,
+      "sfa_g": 5.733076500000006,
       "mufa_g": 99.37056299999999,
       "pufa_g": 306.651675,
       "tfa_g": NaN,
@@ -71292,7 +71400,7 @@
       "energy_kj": 1755.3236839999968,
       "energy_kcal": 492.3731223709361,
       "fat_g": 33.626499999999965,
-      "sfa_g": 12.051798000000007,
+      "sfa_g": 5.733076500000006,
       "mufa_g": 99.37056299999999,
       "pufa_g": 306.651675,
       "tfa_g": NaN,
@@ -71331,11 +71439,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 12.051798000000007,
+          "amount": 5.733076500000006,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 48.42240267857146,
-          "pct_energy": 4.842240267857145,
+          "pct_of_limit": 23.034682366071454,
+          "pct_energy": 2.3034682366071455,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -71465,18 +71573,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 28.5915,
-      "absorbed_sfa_g": 11.4366,
+      "absorbed_sfa_g": 5.1178785,
       "fat_g_per_100g_lab": 14.7,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Onion Pakora / Bhaji"
+      "sfa_pct_of_fat_lab": 17.9,
+      "lab_match": "lab_match:Onion Pakora / Bhaji",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 12.051798000000007,
+      "total_sfa_g": 5.733076500000006,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 11.6766,
+      "oil_sfa_g": 5.3578785,
       "other_sfa_g": 0.37519800000000636,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 96.88678817882604,
+      "oil_sfa_pct": 93.45555566893262,
       "total_fat_g": 33.626499999999965,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 30.5895,
@@ -71500,7 +71612,7 @@
       "energy_kj": 2345.1401479999968,
       "energy_kcal": 633.3426405353723,
       "fat_g": 51.680499999999995,
-      "sfa_g": 19.25435000000001,
+      "sfa_g": 18.32464000000001,
       "mufa_g": 99.35893899999999,
       "pufa_g": 306.738875,
       "tfa_g": NaN,
@@ -71518,7 +71630,7 @@
       "energy_kj": 2345.1401479999968,
       "energy_kcal": 633.3426405353723,
       "fat_g": 51.680499999999995,
-      "sfa_g": 19.25435000000001,
+      "sfa_g": 18.32464000000001,
       "mufa_g": 99.35893899999999,
       "pufa_g": 306.738875,
       "tfa_g": NaN,
@@ -71557,11 +71669,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 19.25435000000001,
+          "amount": 18.32464000000001,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 77.36122767857147,
-          "pct_energy": 7.736122767857147,
+          "pct_of_limit": 73.62578571428575,
+          "pct_energy": 7.362578571428576,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -71691,18 +71803,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 46.4855,
-      "absorbed_sfa_g": 18.5942,
+      "absorbed_sfa_g": 17.66449,
       "fat_g_per_100g_lab": 23.9,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Cauliflower Pakora"
+      "sfa_pct_of_fat_lab": 38.0,
+      "lab_match": "lab_match:Cauliflower Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 19.25435000000001,
+      "total_sfa_g": 18.32464000000001,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 18.8342,
+      "oil_sfa_g": 17.90449,
       "other_sfa_g": 0.42015000000001024,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 97.81789569629716,
+      "oil_sfa_pct": 97.70718551633205,
       "total_fat_g": 51.680499999999995,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 48.4835,
@@ -71726,7 +71842,7 @@
       "energy_kj": 2000.0530419999982,
       "energy_kcal": 550.8648427342246,
       "fat_g": 40.843749999999964,
-      "sfa_g": 14.923724000000009,
+      "sfa_g": 14.209909000000009,
       "mufa_g": 99.36324299999998,
       "pufa_g": 306.71547499999997,
       "tfa_g": NaN,
@@ -71744,7 +71860,7 @@
       "energy_kj": 2000.0530419999982,
       "energy_kcal": 550.8648427342246,
       "fat_g": 40.843749999999964,
-      "sfa_g": 14.923724000000009,
+      "sfa_g": 14.209909000000009,
       "mufa_g": 99.36324299999998,
       "pufa_g": 306.71547499999997,
       "tfa_g": NaN,
@@ -71783,11 +71899,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 14.923724000000009,
+          "amount": 14.209909000000009,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 59.96139107142861,
-          "pct_energy": 5.996139107142861,
+          "pct_of_limit": 57.093384375000035,
+          "pct_energy": 5.709338437500003,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -71917,18 +72033,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 35.69075,
-      "absorbed_sfa_g": 14.2763,
+      "absorbed_sfa_g": 13.562485,
       "fat_g_per_100g_lab": 18.35,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Vegetable Pakora Retail, Vegetable Pakora Takeaway"
+      "sfa_pct_of_fat_lab": 38.0,
+      "lab_match": "lab_match:Vegetable Pakora Retail, Vegetable Pakora Takeaway",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 2
     },
     "drivers": {
-      "total_sfa_g": 14.923724000000009,
+      "total_sfa_g": 14.209909000000009,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 14.516300000000001,
+      "oil_sfa_g": 13.802485,
       "other_sfa_g": 0.4074240000000078,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 97.2699575521498,
+      "oil_sfa_pct": 97.1328176696979,
       "total_fat_g": 40.843749999999964,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 37.68875,
@@ -71952,7 +72072,7 @@
       "energy_kj": 1850.2453039999966,
       "energy_kcal": 515.0599340344163,
       "fat_g": 39.39799999999999,
-      "sfa_g": 14.359350000000006,
+      "sfa_g": 13.673370000000006,
       "mufa_g": 99.35620699999998,
       "pufa_g": 306.684075,
       "tfa_g": NaN,
@@ -71970,7 +72090,7 @@
       "energy_kj": 1850.2453039999966,
       "energy_kcal": 515.0599340344163,
       "fat_g": 39.39799999999999,
-      "sfa_g": 14.359350000000006,
+      "sfa_g": 13.673370000000006,
       "mufa_g": 99.35620699999998,
       "pufa_g": 306.684075,
       "tfa_g": NaN,
@@ -72009,11 +72129,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 14.359350000000006,
+          "amount": 13.673370000000006,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 57.69381696428574,
-          "pct_energy": 5.769381696428574,
+          "pct_of_limit": 54.93764732142859,
+          "pct_energy": 5.493764732142859,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -72143,18 +72263,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 34.299,
-      "absorbed_sfa_g": 13.7196,
+      "absorbed_sfa_g": 13.033619999999999,
       "fat_g_per_100g_lab": 22.2,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Spinach Pakora"
+      "sfa_pct_of_fat_lab": 38.0,
+      "lab_match": "lab_match:Spinach Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 14.359350000000006,
+      "total_sfa_g": 13.673370000000006,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 13.9596,
+      "oil_sfa_g": 13.27362,
       "other_sfa_g": 0.39975000000000627,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 97.21609961453683,
+      "oil_sfa_pct": 97.07643397348272,
       "total_fat_g": 39.39799999999999,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 36.297,
@@ -72178,7 +72302,7 @@
       "energy_kj": 1872.8631559999997,
       "energy_kcal": 520.4657304015288,
       "fat_g": 39.62850000000001,
-      "sfa_g": 14.427550000000005,
+      "sfa_g": 9.586833250000005,
       "mufa_g": 99.347135,
       "pufa_g": 306.744075,
       "tfa_g": NaN,
@@ -72196,7 +72320,7 @@
       "energy_kj": 1872.8631559999997,
       "energy_kcal": 520.4657304015288,
       "fat_g": 39.62850000000001,
-      "sfa_g": 14.427550000000005,
+      "sfa_g": 9.586833250000005,
       "mufa_g": 99.347135,
       "pufa_g": 306.744075,
       "tfa_g": NaN,
@@ -72235,11 +72359,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 14.427550000000005,
+          "amount": 9.586833250000005,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 57.96783482142859,
-          "pct_energy": 5.796783482142859,
+          "pct_of_limit": 38.51852645089288,
+          "pct_energy": 3.8518526450892883,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -72369,18 +72493,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 34.4535,
-      "absorbed_sfa_g": 13.7814,
+      "absorbed_sfa_g": 8.94068325,
       "fat_g_per_100g_lab": 22.3,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Aubergine Pakora, Cauliflower Pakora, Onion Pakora / Bhaji, Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora, Spinach Pakora"
+      "sfa_pct_of_fat_lab": 25.95,
+      "lab_match": "lab_match:Aubergine Pakora, Cauliflower Pakora, Onion Pakora / Bhaji, Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora, Spinach Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 7
     },
     "drivers": {
-      "total_sfa_g": 14.427550000000005,
+      "total_sfa_g": 9.586833250000005,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 14.0214,
+      "oil_sfa_g": 9.18068325,
       "other_sfa_g": 0.40615000000000556,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 97.18489972309918,
+      "oil_sfa_pct": 95.76346026462905,
       "total_fat_g": 39.62850000000001,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 36.451499999999996,
@@ -72404,7 +72532,7 @@
       "energy_kj": 2181.2360359999975,
       "energy_kcal": 594.1686175908217,
       "fat_g": 46.10150000000001,
-      "sfa_g": 16.718950000000007,
+      "sfa_g": 11.564918250000007,
       "mufa_g": 101.07957499999999,
       "pufa_g": 307.142075,
       "tfa_g": NaN,
@@ -72422,7 +72550,7 @@
       "energy_kj": 2181.2360359999975,
       "energy_kcal": 594.1686175908217,
       "fat_g": 46.10150000000001,
-      "sfa_g": 16.718950000000007,
+      "sfa_g": 11.564918250000007,
       "mufa_g": 101.07957499999999,
       "pufa_g": 307.142075,
       "tfa_g": NaN,
@@ -72461,11 +72589,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 16.718950000000007,
+          "amount": 11.564918250000007,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 67.17435267857145,
-          "pct_energy": 6.717435267857145,
+          "pct_of_limit": 46.46618939732146,
+          "pct_energy": 4.646618939732146,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -72595,18 +72723,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 36.6835,
-      "absorbed_sfa_g": 14.6734,
+      "absorbed_sfa_g": 9.519368250000001,
       "fat_g_per_100g_lab": 22.3,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Aubergine Pakora, Cauliflower Pakora, Onion Pakora / Bhaji, Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora, Spinach Pakora"
+      "sfa_pct_of_fat_lab": 25.95,
+      "lab_match": "lab_match:Aubergine Pakora, Cauliflower Pakora, Onion Pakora / Bhaji, Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora, Spinach Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 7
     },
     "drivers": {
-      "total_sfa_g": 16.718950000000007,
+      "total_sfa_g": 11.564918250000007,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 14.913400000000001,
+      "oil_sfa_g": 9.759368250000001,
       "other_sfa_g": 1.8055500000000055,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 89.20057778748064,
+      "oil_sfa_pct": 84.38769768216905,
       "total_fat_g": 46.10150000000001,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 38.6815,
@@ -72824,7 +72956,11 @@
       "absorbed_sfa_g": 12.6502728,
       "fat_g_per_100g_lab": 26.4,
       "sfa_pct_of_fat_lab": 27.46,
-      "lab_match": "lab_match:Bread Pakora"
+      "lab_match": "lab_match:Bread Pakora",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 13.216822800000006,
@@ -72856,7 +72992,7 @@
       "energy_kj": 2473.121133999998,
       "energy_kcal": 663.9233446462708,
       "fat_g": 49.52949999999999,
-      "sfa_g": 19.872300000000006,
+      "sfa_g": 14.647772375000006,
       "mufa_g": 101.49709999999999,
       "pufa_g": 306.80559999999997,
       "tfa_g": NaN,
@@ -72874,7 +73010,7 @@
       "energy_kj": 2473.121133999998,
       "energy_kcal": 663.9233446462708,
       "fat_g": 49.52949999999999,
-      "sfa_g": 19.872300000000006,
+      "sfa_g": 14.647772375000006,
       "mufa_g": 101.49709999999999,
       "pufa_g": 306.80559999999997,
       "tfa_g": NaN,
@@ -72913,11 +73049,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 19.872300000000006,
+          "amount": 14.647772375000006,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 79.84406250000002,
-          "pct_energy": 7.984406250000002,
+          "pct_of_limit": 58.8526568638393,
+          "pct_energy": 5.885265686383931,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -73047,18 +73183,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 37.18525,
-      "absorbed_sfa_g": 14.874100000000002,
+      "absorbed_sfa_g": 9.649572375000002,
       "fat_g_per_100g_lab": 22.3,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Aubergine Pakora, Cauliflower Pakora, Onion Pakora / Bhaji, Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora, Spinach Pakora"
+      "sfa_pct_of_fat_lab": 25.95,
+      "lab_match": "lab_match:Aubergine Pakora, Cauliflower Pakora, Onion Pakora / Bhaji, Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora, Spinach Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 7
     },
     "drivers": {
-      "total_sfa_g": 19.872300000000006,
+      "total_sfa_g": 14.647772375000006,
       "dairy_sfa_g": 4.4255,
-      "oil_sfa_g": 15.114100000000002,
+      "oil_sfa_g": 9.889572375000002,
       "other_sfa_g": 0.33270000000000444,
-      "dairy_sfa_pct": 22.269691983313454,
-      "oil_sfa_pct": 76.0561183154441,
+      "dairy_sfa_pct": 30.21278517102843,
+      "oil_sfa_pct": 67.5158796970314,
       "total_fat_g": 49.52949999999999,
       "dairy_fat_g": 7.39,
       "oil_fat_g": 39.18325,
@@ -73082,7 +73222,7 @@
       "energy_kj": 2600.354517039998,
       "energy_kcal": 696.4719017782031,
       "fat_g": 59.29506599999998,
-      "sfa_g": 21.9856427,
+      "sfa_g": 32.754231751,
       "mufa_g": 100.15447235999999,
       "pufa_g": 307.21312589999997,
       "tfa_g": NaN,
@@ -73100,7 +73240,7 @@
       "energy_kj": 1300.177258519999,
       "energy_kcal": 348.23595088910156,
       "fat_g": 29.64753299999999,
-      "sfa_g": 10.99282135,
+      "sfa_g": 16.3771158755,
       "mufa_g": 50.07723617999999,
       "pufa_g": 153.60656294999998,
       "tfa_g": NaN,
@@ -73139,11 +73279,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 10.99282135,
+          "amount": 16.3771158755,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 44.16758578125,
-          "pct_energy": 4.416758578125,
+          "pct_of_limit": 65.80091199977677,
+          "pct_energy": 6.580091199977679,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -73273,18 +73413,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 52.81309,
-      "absorbed_sfa_g": 21.125236,
+      "absorbed_sfa_g": 31.893825051,
       "fat_g_per_100g_lab": 22.3,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora"
+      "sfa_pct_of_fat_lab": 60.39,
+      "lab_match": "lab_match:Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
-      "total_sfa_g": 21.9856427,
+      "total_sfa_g": 32.754231751,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 21.605236,
-      "other_sfa_g": 0.3804066999999982,
+      "oil_sfa_g": 32.373825051,
+      "other_sfa_g": 0.38040670000000176,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 98.26974946700103,
+      "oil_sfa_pct": 98.8386028929273,
       "total_fat_g": 59.29506599999998,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 56.809090000000005,
@@ -73502,7 +73646,11 @@
       "absorbed_sfa_g": 22.288219791999996,
       "fat_g_per_100g_lab": 12.4,
       "sfa_pct_of_fat_lab": 49.16,
-      "lab_match": "lab_match:Samosa"
+      "lab_match": "lab_match:Samosa",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 5
     },
     "drivers": {
       "total_sfa_g": 28.579381591999994,
@@ -73728,7 +73876,11 @@
       "absorbed_sfa_g": 20.06750528,
       "fat_g_per_100g_lab": 12.4,
       "sfa_pct_of_fat_lab": 49.16,
-      "lab_match": "lab_match:Samosa"
+      "lab_match": "lab_match:Samosa",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 5
     },
     "drivers": {
       "total_sfa_g": 35.58513328,
@@ -73954,7 +74106,11 @@
       "absorbed_sfa_g": 20.06750528,
       "fat_g_per_100g_lab": 12.4,
       "sfa_pct_of_fat_lab": 49.16,
-      "lab_match": "lab_match:Samosa"
+      "lab_match": "lab_match:Samosa",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 5
     },
     "drivers": {
       "total_sfa_g": 31.411138279999996,
@@ -74180,7 +74336,11 @@
       "absorbed_sfa_g": 11.962739249999998,
       "fat_g_per_100g_lab": 38.5,
       "sfa_pct_of_fat_lab": 23.81,
-      "lab_match": "lab_match:Mathri"
+      "lab_match": "lab_match:Mathri",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 15.317469250000002,
@@ -74406,7 +74566,11 @@
       "absorbed_sfa_g": 57.91143363749999,
       "fat_g_per_100g_lab": 39.3,
       "sfa_pct_of_fat_lab": 65.565,
-      "lab_match": "lab_match:Kachori"
+      "lab_match": "lab_match:Kachori",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 2
     },
     "drivers": {
       "total_sfa_g": 61.53168863749999,
@@ -74438,7 +74602,7 @@
       "energy_kj": 1525.9164559999997,
       "energy_kcal": 438.59342638623383,
       "fat_g": 31.032671000000004,
-      "sfa_g": 11.9583434,
+      "sfa_g": 11.3835734,
       "mufa_g": 98.879963909,
       "pufa_g": 304.24370259999995,
       "tfa_g": NaN,
@@ -74456,7 +74620,7 @@
       "energy_kj": 1525.9164559999997,
       "energy_kcal": 438.59342638623383,
       "fat_g": 31.032671000000004,
-      "sfa_g": 11.9583434,
+      "sfa_g": 11.3835734,
       "mufa_g": 98.879963909,
       "pufa_g": 304.24370259999995,
       "tfa_g": NaN,
@@ -74495,11 +74659,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 11.9583434,
+          "amount": 11.3835734,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 48.04691544642857,
-          "pct_energy": 4.804691544642858,
+          "pct_of_limit": 45.73757169642857,
+          "pct_energy": 4.573757169642858,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -74629,18 +74793,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 28.7385,
-      "absorbed_sfa_g": 11.4954,
+      "absorbed_sfa_g": 10.92063,
       "fat_g_per_100g_lab": 14.7,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Samosa Vegetable Retail, Vegetable Pakora Retail, Vegetable Pakora Takeaway"
+      "sfa_pct_of_fat_lab": 38.0,
+      "lab_match": "lab_match:Samosa Vegetable Retail, Vegetable Pakora Retail, Vegetable Pakora Takeaway",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
-      "total_sfa_g": 11.9583434,
+      "total_sfa_g": 11.3835734,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 11.4954,
+      "oil_sfa_g": 10.92063,
       "other_sfa_g": 0.46294340000000034,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 96.12869956552677,
+      "oil_sfa_pct": 95.93323305667796,
       "total_fat_g": 31.032671000000004,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 28.7385,
@@ -74858,7 +75026,11 @@
       "absorbed_sfa_g": 19.180349999999997,
       "fat_g_per_100g_lab": 25.0,
       "sfa_pct_of_fat_lab": 42.0,
-      "lab_match": "category_default:crisp namkeen"
+      "lab_match": "category_default:crisp namkeen",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 21.3266743,
@@ -75084,7 +75256,11 @@
       "absorbed_sfa_g": 11.860199999999999,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 16.3645243,
@@ -75310,7 +75486,11 @@
       "absorbed_sfa_g": 13.075199999999999,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 16.013844175,
@@ -75342,7 +75522,7 @@
       "energy_kj": 2699.194372,
       "energy_kcal": 719.0135783938815,
       "fat_g": 56.713,
-      "sfa_g": 23.640660000000004,
+      "sfa_g": 33.03015305,
       "mufa_g": 101.45012,
       "pufa_g": 304.51655,
       "tfa_g": NaN,
@@ -75360,7 +75540,7 @@
       "energy_kj": 2699.194372,
       "energy_kcal": 719.0135783938815,
       "fat_g": 56.713,
-      "sfa_g": 23.640660000000004,
+      "sfa_g": 33.03015305,
       "mufa_g": 101.45012,
       "pufa_g": 304.51655,
       "tfa_g": NaN,
@@ -75399,11 +75579,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 23.640660000000004,
+          "amount": 33.03015305,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 94.98479464285717,
-          "pct_energy": 9.498479464285715,
+          "pct_of_limit": 132.71043636160715,
+          "pct_energy": 13.271043636160718,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -75533,18 +75713,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 46.0495,
-      "absorbed_sfa_g": 18.419800000000002,
+      "absorbed_sfa_g": 27.80929305,
       "fat_g_per_100g_lab": 22.3,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora"
+      "sfa_pct_of_fat_lab": 60.39,
+      "lab_match": "lab_match:Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
-      "total_sfa_g": 23.640660000000004,
+      "total_sfa_g": 33.03015305,
       "dairy_sfa_g": 4.4255,
-      "oil_sfa_g": 18.419800000000002,
+      "oil_sfa_g": 27.80929305,
       "other_sfa_g": 0.7953600000000023,
-      "dairy_sfa_pct": 18.719866535029052,
-      "oil_sfa_pct": 77.91576038909234,
+      "dairy_sfa_pct": 13.398363590083335,
+      "oil_sfa_pct": 84.19365483382161,
       "total_fat_g": 56.713,
       "dairy_fat_g": 7.39,
       "oil_fat_g": 46.0495,
@@ -75977,7 +76161,11 @@
       "absorbed_sfa_g": 6.0,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 9.960135000000001,
@@ -76009,7 +76197,7 @@
       "energy_kj": 7090.992515999999,
       "energy_kcal": 1771.0036845124278,
       "fat_g": 123.15924999999993,
-      "sfa_g": 36.539680999999995,
+      "sfa_g": 34.92121099999999,
       "mufa_g": 117.9679965,
       "pufa_g": 316.31409699999995,
       "tfa_g": NaN,
@@ -76027,7 +76215,7 @@
       "energy_kj": 3545.4962579999997,
       "energy_kcal": 885.5018422562139,
       "fat_g": 61.579624999999965,
-      "sfa_g": 18.269840499999997,
+      "sfa_g": 17.460605499999996,
       "mufa_g": 58.98399825,
       "pufa_g": 158.15704849999997,
       "tfa_g": NaN,
@@ -76066,11 +76254,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 18.269840499999997,
+          "amount": 17.460605499999996,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 73.4056091517857,
-          "pct_energy": 7.340560915178569,
+          "pct_of_limit": 70.1542185267857,
+          "pct_energy": 7.0154218526785685,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -76200,18 +76388,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 80.92349999999999,
-      "absorbed_sfa_g": 32.3694,
+      "absorbed_sfa_g": 30.750929999999997,
       "fat_g_per_100g_lab": 14.7,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Samosa Vegetable Retail, Vegetable Pakora Retail, Vegetable Pakora Takeaway"
+      "sfa_pct_of_fat_lab": 38.0,
+      "lab_match": "lab_match:Samosa Vegetable Retail, Vegetable Pakora Retail, Vegetable Pakora Takeaway",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
-      "total_sfa_g": 36.539680999999995,
+      "total_sfa_g": 34.92121099999999,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 32.3694,
+      "oil_sfa_g": 30.750929999999997,
       "other_sfa_g": 4.170280999999996,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 88.58698027495096,
+      "oil_sfa_pct": 88.05802868634768,
       "total_fat_g": 123.15924999999993,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 80.92349999999999,
@@ -76450,7 +76642,7 @@
       "energy_kj": 1640.4182305599998,
       "energy_kcal": 465.92787537284875,
       "fat_g": 31.796885999999997,
-      "sfa_g": 13.214259700000005,
+      "sfa_g": 12.690704500000004,
       "mufa_g": 99.80368546,
       "pufa_g": 304.22210789999997,
       "tfa_g": NaN,
@@ -76468,7 +76660,7 @@
       "energy_kj": 820.2091152799999,
       "energy_kcal": 232.96393768642437,
       "fat_g": 15.898442999999999,
-      "sfa_g": 6.607129850000002,
+      "sfa_g": 6.345352250000002,
       "mufa_g": 49.90184273,
       "pufa_g": 152.11105394999998,
       "tfa_g": NaN,
@@ -76507,11 +76699,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 6.607129850000002,
+          "amount": 6.345352250000002,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 26.54650386160715,
-          "pct_energy": 2.654650386160715,
+          "pct_of_limit": 25.49471886160715,
+          "pct_energy": 2.5494718861607155,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -76641,18 +76833,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 26.177760000000003,
-      "absorbed_sfa_g": 10.471104000000002,
+      "absorbed_sfa_g": 9.947548800000002,
       "fat_g_per_100g_lab": 14.7,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Samosa Vegetable Retail, Vegetable Pakora Retail, Vegetable Pakora Takeaway"
+      "sfa_pct_of_fat_lab": 38.0,
+      "lab_match": "lab_match:Samosa Vegetable Retail, Vegetable Pakora Retail, Vegetable Pakora Takeaway",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
-      "total_sfa_g": 13.214259700000005,
+      "total_sfa_g": 12.690704500000004,
       "dairy_sfa_g": 2.6553,
-      "oil_sfa_g": 10.471104000000002,
+      "oil_sfa_g": 9.947548800000002,
       "other_sfa_g": 0.0878557000000022,
-      "dairy_sfa_pct": 20.094201720585218,
-      "oil_sfa_pct": 79.24094302460242,
+      "dairy_sfa_pct": 20.923188306843006,
+      "oil_sfa_pct": 78.38452782507069,
       "total_fat_g": 31.796885999999997,
       "dairy_fat_g": 4.433999999999999,
       "oil_fat_g": 26.177760000000003,
@@ -76870,7 +77066,11 @@
       "absorbed_sfa_g": 1.6195305,
       "fat_g_per_100g_lab": 6.33,
       "sfa_pct_of_fat_lab": 43.0,
-      "lab_match": "lab_match:Batata Vada, Medu Vada"
+      "lab_match": "lab_match:Batata Vada, Medu Vada",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 2
     },
     "drivers": {
       "total_sfa_g": 1.7877698999999974,
@@ -77096,7 +77296,11 @@
       "absorbed_sfa_g": 3.57031623,
       "fat_g_per_100g_lab": 6.33,
       "sfa_pct_of_fat_lab": 43.0,
-      "lab_match": "lab_match:Batata Vada, Medu Vada"
+      "lab_match": "lab_match:Batata Vada, Medu Vada",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 2
     },
     "drivers": {
       "total_sfa_g": 5.280800529999997,
@@ -77322,7 +77526,11 @@
       "absorbed_sfa_g": 11.2902,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 13.180606550000002,
@@ -77978,7 +78186,11 @@
       "absorbed_sfa_g": 16.392599999999998,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 17.783791769,
@@ -81997,7 +82209,11 @@
       "absorbed_sfa_g": 13.785,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 34.64904,
@@ -90884,7 +91100,11 @@
       "absorbed_sfa_g": 3.4098,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 4.350845699999997,
@@ -91110,7 +91330,11 @@
       "absorbed_sfa_g": 30.209040674999997,
       "fat_g_per_100g_lab": 27.41,
       "sfa_pct_of_fat_lab": 60.39,
-      "lab_match": "lab_match:Aloo Tikki"
+      "lab_match": "lab_match:Aloo Tikki",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
       "total_sfa_g": 31.835620674999994,
@@ -91336,7 +91560,11 @@
       "absorbed_sfa_g": 4.035,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 5.686715000000003,
@@ -91583,7 +91811,7 @@
       "energy_kj": 2477.277852,
       "energy_kcal": 668.6941328871891,
       "fat_g": 50.66549999999998,
-      "sfa_g": 16.141775000000003,
+      "sfa_g": 15.465785000000004,
       "mufa_g": 103.2740425,
       "pufa_g": 312.34039999999993,
       "tfa_g": NaN,
@@ -91601,7 +91829,7 @@
       "energy_kj": 1238.638926,
       "energy_kcal": 334.34706644359454,
       "fat_g": 25.33274999999999,
-      "sfa_g": 8.070887500000001,
+      "sfa_g": 7.732892500000002,
       "mufa_g": 51.63702125,
       "pufa_g": 156.17019999999997,
       "tfa_g": NaN,
@@ -91640,11 +91868,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 8.070887500000001,
+          "amount": 7.732892500000002,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 32.42767299107143,
-          "pct_energy": 3.2427672991071432,
+          "pct_of_limit": 31.069657366071436,
+          "pct_energy": 3.106965736607144,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -91774,18 +92002,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 33.799499999999995,
-      "absorbed_sfa_g": 13.519799999999998,
+      "absorbed_sfa_g": 12.843809999999998,
       "fat_g_per_100g_lab": 22.2,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Spinach Pakora"
+      "sfa_pct_of_fat_lab": 38.0,
+      "lab_match": "lab_match:Spinach Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 16.141775000000003,
+      "total_sfa_g": 15.465785000000004,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 14.7198,
-      "other_sfa_g": 1.4219750000000033,
+      "oil_sfa_g": 14.043809999999997,
+      "other_sfa_g": 1.4219750000000069,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 91.19071477579138,
+      "oil_sfa_pct": 90.80567200436313,
       "total_fat_g": 50.66549999999998,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 43.7895,
@@ -92003,7 +92235,11 @@
       "absorbed_sfa_g": 16.837769,
       "fat_g_per_100g_lab": 22.1,
       "sfa_pct_of_fat_lab": 62.45,
-      "lab_match": "lab_match:Besan Ladoo, Puri"
+      "lab_match": "lab_match:Besan Ladoo, Puri",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 17.160117,
@@ -92659,7 +92895,11 @@
       "absorbed_sfa_g": 4.918576000000001,
       "fat_g_per_100g_lab": 17.12,
       "sfa_pct_of_fat_lab": 22.1,
-      "lab_match": "lab_match:Poori"
+      "lab_match": "lab_match:Poori",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 5.821190999999998,
@@ -94411,7 +94651,7 @@
       "energy_kj": 2148.296151999998,
       "energy_kcal": 588.0899024856599,
       "fat_g": 41.521999999999984,
-      "sfa_g": 16.95209,
+      "sfa_g": 18.1166,
       "mufa_g": 98.99717499999998,
       "pufa_g": 304.2055,
       "tfa_g": NaN,
@@ -94429,7 +94669,7 @@
       "energy_kj": 1074.148075999999,
       "energy_kcal": 294.04495124282994,
       "fat_g": 20.760999999999992,
-      "sfa_g": 8.476045,
+      "sfa_g": 9.0583,
       "mufa_g": 49.49858749999999,
       "pufa_g": 152.10275,
       "tfa_g": NaN,
@@ -94468,11 +94708,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 8.476045,
+          "amount": 9.0583,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 34.055537946428565,
-          "pct_energy": 3.405553794642857,
+          "pct_of_limit": 36.394955357142855,
+          "pct_energy": 3.6394955357142855,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -94602,18 +94842,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 38.817,
-      "absorbed_sfa_g": 15.526800000000001,
+      "absorbed_sfa_g": 16.69131,
       "fat_g_per_100g_lab": 22.7,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Potato Carrot Pea Pakora"
+      "sfa_pct_of_fat_lab": 43.0,
+      "lab_match": "lab_match:Potato Carrot Pea Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 16.95209,
+      "total_sfa_g": 18.1166,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 15.526800000000001,
+      "oil_sfa_g": 16.69131,
       "other_sfa_g": 1.4252899999999968,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 91.59224614782015,
+      "oil_sfa_pct": 92.13268494088295,
       "total_fat_g": 41.521999999999984,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 38.817,
@@ -107515,7 +107759,11 @@
       "absorbed_sfa_g": 6.3941488,
       "fat_g_per_100g_lab": 17.12,
       "sfa_pct_of_fat_lab": 22.1,
-      "lab_match": "lab_match:Poori"
+      "lab_match": "lab_match:Poori",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 7.1601687999999974,
@@ -107741,7 +107989,11 @@
       "absorbed_sfa_g": 3.7456848000000007,
       "fat_g_per_100g_lab": 17.12,
       "sfa_pct_of_fat_lab": 22.1,
-      "lab_match": "lab_match:Poori"
+      "lab_match": "lab_match:Poori",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 4.5342848,
@@ -107967,7 +108219,11 @@
       "absorbed_sfa_g": 8.444816639999999,
       "fat_g_per_100g_lab": 17.12,
       "sfa_pct_of_fat_lab": 22.1,
-      "lab_match": "lab_match:Poori"
+      "lab_match": "lab_match:Poori",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 9.158629139999999,
@@ -108193,7 +108449,11 @@
       "absorbed_sfa_g": 6.7725008,
       "fat_g_per_100g_lab": 17.12,
       "sfa_pct_of_fat_lab": 22.1,
-      "lab_match": "lab_match:Poori"
+      "lab_match": "lab_match:Poori",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 7.4899268,
@@ -108419,7 +108679,11 @@
       "absorbed_sfa_g": 49.60516901129999,
       "fat_g_per_100g_lab": 39.3,
       "sfa_pct_of_fat_lab": 65.565,
-      "lab_match": "lab_match:Kachori"
+      "lab_match": "lab_match:Kachori",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 2
     },
     "drivers": {
       "total_sfa_g": 50.67213831129999,
@@ -118608,7 +118872,11 @@
       "absorbed_sfa_g": 13.2954,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 14.9708437,
@@ -119285,7 +119553,7 @@
       "energy_kj": 2413.1271756799993,
       "energy_kcal": 613.657845047801,
       "fat_g": 60.576730000000005,
-      "sfa_g": 22.550752000000003,
+      "sfa_g": 21.5695564,
       "mufa_g": 54.8897875,
       "pufa_g": 153.879495,
       "tfa_g": NaN,
@@ -119303,7 +119571,7 @@
       "energy_kj": 2413.1271756799993,
       "energy_kcal": 613.657845047801,
       "fat_g": 60.576730000000005,
-      "sfa_g": 22.550752000000003,
+      "sfa_g": 21.5695564,
       "mufa_g": 54.8897875,
       "pufa_g": 153.879495,
       "tfa_g": NaN,
@@ -119342,11 +119610,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 22.550752000000003,
+          "amount": 21.5695564,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 90.60570000000001,
-          "pct_energy": 9.060570000000002,
+          "pct_of_limit": 86.66339625,
+          "pct_energy": 8.666339625,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -119476,18 +119744,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "absorbed_fat_g": 49.059779999999996,
-      "absorbed_sfa_g": 19.623912,
+      "absorbed_sfa_g": 18.642716399999998,
       "fat_g_per_100g_lab": 14.7,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Samosa Vegetable Retail, Vegetable Pakora Retail, Vegetable Pakora Takeaway"
+      "sfa_pct_of_fat_lab": 38.0,
+      "lab_match": "lab_match:Samosa Vegetable Retail, Vegetable Pakora Retail, Vegetable Pakora Takeaway",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
-      "total_sfa_g": 22.550752000000003,
+      "total_sfa_g": 21.5695564,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 20.551912,
+      "oil_sfa_g": 19.5707164,
       "other_sfa_g": 1.9988400000000013,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 91.13626011230134,
+      "oil_sfa_pct": 90.73305003157134,
       "total_fat_g": 60.576730000000005,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 57.059779999999996,
@@ -121425,7 +121697,11 @@
       "absorbed_sfa_g": 6.206172455999999,
       "fat_g_per_100g_lab": 10.32,
       "sfa_pct_of_fat_lab": 18.7,
-      "lab_match": "lab_match:Chicken Pakora"
+      "lab_match": "lab_match:Chicken Pakora",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
       "total_sfa_g": 8.760816155999999,
@@ -122081,7 +122357,11 @@
       "absorbed_sfa_g": 12.2154,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 15.669184999999997,
@@ -127037,7 +127317,11 @@
       "absorbed_sfa_g": 6.165000000000001,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 6.3633710000000026,
@@ -127693,7 +127977,11 @@
       "absorbed_sfa_g": 14.6052,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 15.924213575,
@@ -127725,7 +128013,7 @@
       "energy_kj": 3643.0111087999994,
       "energy_kcal": 909.7800642447419,
       "fat_g": 87.27267599999998,
-      "sfa_g": 31.995897574999994,
+      "sfa_g": 31.612511074999993,
       "mufa_g": 51.309717334999995,
       "pufa_g": 158.49433365,
       "tfa_g": NaN,
@@ -127743,7 +128031,7 @@
       "energy_kj": 3643.0111087999994,
       "energy_kcal": 909.7800642447419,
       "fat_g": 87.27267599999998,
-      "sfa_g": 31.995897574999994,
+      "sfa_g": 31.612511074999993,
       "mufa_g": 51.309717334999995,
       "pufa_g": 158.49433365,
       "tfa_g": NaN,
@@ -127782,11 +128070,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 31.995897574999994,
+          "amount": 31.612511074999993,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 128.55494561383927,
-          "pct_energy": 12.855494561383926,
+          "pct_of_limit": 127.01455342633925,
+          "pct_energy": 12.701455342633924,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -127916,18 +128204,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "absorbed_fat_g": 76.67729999999999,
-      "absorbed_sfa_g": 30.670919999999995,
+      "absorbed_sfa_g": 30.287533499999995,
       "fat_g_per_100g_lab": 31.5,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Samosa Lamb Deep Fried"
+      "sfa_pct_of_fat_lab": 39.5,
+      "lab_match": "lab_match:Samosa Lamb Deep Fried",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 31.995897574999994,
+      "total_sfa_g": 31.612511074999993,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 31.870919999999995,
+      "oil_sfa_g": 31.487533499999994,
       "other_sfa_g": 0.12497757499999906,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 99.60939500225912,
+      "oil_sfa_pct": 99.60465786883081,
       "total_fat_g": 87.27267599999998,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 86.66729999999998,
@@ -130531,7 +130823,7 @@
       "energy_kj": 4219.360959999998,
       "energy_kcal": 1048.405258126195,
       "fat_g": 101.66770000000001,
-      "sfa_g": 43.289832000000004,
+      "sfa_g": 41.713632000000004,
       "mufa_g": 54.750105999999995,
       "pufa_g": 155.68797999999998,
       "tfa_g": NaN,
@@ -130549,7 +130841,7 @@
       "energy_kj": 4219.360959999998,
       "energy_kcal": 1048.405258126195,
       "fat_g": 101.66770000000001,
-      "sfa_g": 43.289832000000004,
+      "sfa_g": 41.713632000000004,
       "mufa_g": 54.750105999999995,
       "pufa_g": 155.68797999999998,
       "tfa_g": NaN,
@@ -130588,11 +130880,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 43.289832000000004,
+          "amount": 41.713632000000004,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 173.93236071428572,
-          "pct_energy": 17.39323607142857,
+          "pct_of_limit": 167.5994142857143,
+          "pct_energy": 16.75994142857143,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -130722,18 +131014,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "absorbed_fat_g": 78.80999999999999,
-      "absorbed_sfa_g": 31.523999999999997,
+      "absorbed_sfa_g": 29.947799999999997,
       "fat_g_per_100g_lab": 22.2,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Spinach Pakora"
+      "sfa_pct_of_fat_lab": 38.0,
+      "lab_match": "lab_match:Spinach Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 43.289832000000004,
+      "total_sfa_g": 41.713632000000004,
       "dairy_sfa_g": 8.789000000000001,
-      "oil_sfa_g": 32.004,
+      "oil_sfa_g": 30.427799999999998,
       "other_sfa_g": 2.496832000000005,
-      "dairy_sfa_pct": 20.30268909336493,
-      "oil_sfa_pct": 73.92960083559575,
+      "dairy_sfa_pct": 21.069850738482806,
+      "oil_sfa_pct": 72.94449929461906,
       "total_fat_g": 101.66770000000001,
       "dairy_fat_g": 13.97,
       "oil_fat_g": 82.80599999999998,
@@ -143469,7 +143765,11 @@
       "absorbed_sfa_g": 26.713800000000006,
       "fat_g_per_100g_lab": 19.200000000000003,
       "sfa_pct_of_fat_lab": 38.25,
-      "lab_match": "lab_match:Pantoa / Gulab Jamun"
+      "lab_match": "lab_match:Pantoa / Gulab Jamun",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 2
     },
     "drivers": {
       "total_sfa_g": 28.309455000000007,
@@ -146726,7 +147026,7 @@
       "energy_kj": 1600.4824221599993,
       "energy_kcal": 418.84777298279164,
       "fat_g": 30.915817000000008,
-      "sfa_g": 11.274887068999998,
+      "sfa_g": 5.3255427589999975,
       "mufa_g": 49.970584839999994,
       "pufa_g": 154.18598196599999,
       "tfa_g": NaN,
@@ -146744,7 +147044,7 @@
       "energy_kj": 1600.4824221599993,
       "energy_kcal": 418.84777298279164,
       "fat_g": 30.915817000000008,
-      "sfa_g": 11.274887068999998,
+      "sfa_g": 5.3255427589999975,
       "mufa_g": 49.970584839999994,
       "pufa_g": 154.18598196599999,
       "tfa_g": NaN,
@@ -146783,11 +147083,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 11.274887068999998,
+          "amount": 5.3255427589999975,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 45.30088554508927,
-          "pct_energy": 4.530088554508928,
+          "pct_of_limit": 21.397270013839275,
+          "pct_energy": 2.139727001383928,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -146917,18 +147217,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "absorbed_fat_g": 26.920109999999998,
-      "absorbed_sfa_g": 10.768044,
+      "absorbed_sfa_g": 4.818699689999999,
       "fat_g_per_100g_lab": 14.7,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Onion Pakora / Bhaji"
+      "sfa_pct_of_fat_lab": 17.9,
+      "lab_match": "lab_match:Onion Pakora / Bhaji",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 11.274887068999998,
+      "total_sfa_g": 5.3255427589999975,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 11.008044,
+      "oil_sfa_g": 5.058699689999999,
       "other_sfa_g": 0.2668430689999983,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 97.63329719076587,
+      "oil_sfa_pct": 94.98937327000066,
       "total_fat_g": 30.915817000000008,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 28.91811,
@@ -146952,7 +147256,7 @@
       "energy_kj": 1286.98772568,
       "energy_kcal": 343.9207422753349,
       "fat_g": 26.893093,
-      "sfa_g": 9.669219269,
+      "sfa_g": 6.438628303999999,
       "mufa_g": 49.9376584,
       "pufa_g": 154.161499366,
       "tfa_g": NaN,
@@ -146970,7 +147274,7 @@
       "energy_kj": 1286.98772568,
       "energy_kcal": 343.9207422753349,
       "fat_g": 26.893093,
-      "sfa_g": 9.669219269,
+      "sfa_g": 6.438628303999999,
       "mufa_g": 49.9376584,
       "pufa_g": 154.161499366,
       "tfa_g": NaN,
@@ -147009,11 +147313,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 9.669219269,
+          "amount": 6.438628303999999,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 38.84954170580357,
-          "pct_energy": 3.884954170580357,
+          "pct_of_limit": 25.869488721428567,
+          "pct_energy": 2.5869488721428566,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -147143,18 +147447,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "absorbed_fat_g": 22.99353,
-      "absorbed_sfa_g": 9.197412,
+      "absorbed_sfa_g": 5.966821035,
       "fat_g_per_100g_lab": 22.3,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Aubergine Pakora, Cauliflower Pakora, Onion Pakora / Bhaji, Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora, Spinach Pakora"
+      "sfa_pct_of_fat_lab": 25.95,
+      "lab_match": "lab_match:Aubergine Pakora, Cauliflower Pakora, Onion Pakora / Bhaji, Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora, Spinach Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 7
     },
     "drivers": {
-      "total_sfa_g": 9.669219269,
+      "total_sfa_g": 6.438628303999999,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 9.437412,
+      "oil_sfa_g": 6.206821035,
       "other_sfa_g": 0.23180726899999904,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 97.60262682486491,
+      "oil_sfa_pct": 96.39974140367772,
       "total_fat_g": 26.893093,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 24.99153,
@@ -147372,7 +147680,11 @@
       "absorbed_sfa_g": 3.302535192,
       "fat_g_per_100g_lab": 10.32,
       "sfa_pct_of_fat_lab": 18.7,
-      "lab_match": "lab_match:Chicken Pakora"
+      "lab_match": "lab_match:Chicken Pakora",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
       "total_sfa_g": 4.402576136000004,
@@ -147404,7 +147716,7 @@
       "energy_kj": 2183.401135440001,
       "energy_kcal": 558.1832589483747,
       "fat_g": 43.11444700000001,
-      "sfa_g": 16.195236944,
+      "sfa_g": 10.833477349000002,
       "mufa_g": 50.091542714999996,
       "pufa_g": 154.434754716,
       "tfa_g": NaN,
@@ -147422,7 +147734,7 @@
       "energy_kj": 2183.401135440001,
       "energy_kcal": 558.1832589483747,
       "fat_g": 43.11444700000001,
-      "sfa_g": 16.195236944,
+      "sfa_g": 10.833477349000002,
       "mufa_g": 50.091542714999996,
       "pufa_g": 154.434754716,
       "tfa_g": NaN,
@@ -147461,11 +147773,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 16.195236944,
+          "amount": 10.833477349000002,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 65.07014843571429,
-          "pct_energy": 6.507014843571428,
+          "pct_of_limit": 43.527364348660726,
+          "pct_energy": 4.352736434866072,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -147595,18 +147907,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "absorbed_fat_g": 38.16199,
-      "absorbed_sfa_g": 15.264796000000002,
+      "absorbed_sfa_g": 9.903036405000002,
       "fat_g_per_100g_lab": 22.3,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Aubergine Pakora, Cauliflower Pakora, Onion Pakora / Bhaji, Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora, Spinach Pakora"
+      "sfa_pct_of_fat_lab": 25.95,
+      "lab_match": "lab_match:Aubergine Pakora, Cauliflower Pakora, Onion Pakora / Bhaji, Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora, Spinach Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 7
     },
     "drivers": {
-      "total_sfa_g": 16.195236944,
+      "total_sfa_g": 10.833477349000002,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 15.504796000000002,
-      "other_sfa_g": 0.6904409439999988,
+      "oil_sfa_g": 10.143036405000002,
+      "other_sfa_g": 0.6904409440000006,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 95.73676540585723,
+      "oil_sfa_pct": 93.6267837024302,
       "total_fat_g": 43.11444700000001,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 40.15999,
@@ -147824,7 +148140,11 @@
       "absorbed_sfa_g": 7.300200000000001,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 13.512865700000003,
@@ -148050,7 +148370,11 @@
       "absorbed_sfa_g": 11.735882,
       "fat_g_per_100g_lab": 17.0,
       "sfa_pct_of_fat_lab": 38.0,
-      "lab_match": "category_default:battered fritter"
+      "lab_match": "category_default:battered fritter",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 11.8264077,
@@ -148276,7 +148600,11 @@
       "absorbed_sfa_g": 14.500200000000001,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 15.482075700000001,
@@ -148502,7 +148830,11 @@
       "absorbed_sfa_g": 10.0002,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 11.531013699999999,
@@ -148534,7 +148866,7 @@
       "energy_kj": 2681.40749496,
       "energy_kcal": 677.3397221223709,
       "fat_g": 53.63467600000001,
-      "sfa_g": 21.902529700000002,
+      "sfa_g": 22.6868079,
       "mufa_g": 54.52589045999999,
       "pufa_g": 152.57077539999997,
       "tfa_g": NaN,
@@ -148552,7 +148884,7 @@
       "energy_kj": 2681.40749496,
       "energy_kcal": 677.3397221223709,
       "fat_g": 53.63467600000001,
-      "sfa_g": 21.902529700000002,
+      "sfa_g": 22.6868079,
       "mufa_g": 54.52589045999999,
       "pufa_g": 152.57077539999997,
       "tfa_g": NaN,
@@ -148591,11 +148923,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 21.902529700000002,
+          "amount": 22.6868079,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 88.00123540178572,
-          "pct_energy": 8.800123540178573,
+          "pct_of_limit": 91.15235316964286,
+          "pct_energy": 9.115235316964286,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -148725,18 +149057,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "absorbed_fat_g": 39.21391,
-      "absorbed_sfa_g": 15.685564,
+      "absorbed_sfa_g": 16.4698422,
       "fat_g_per_100g_lab": 17.3,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Samosa Meat Takeaway"
+      "sfa_pct_of_fat_lab": 42.0,
+      "lab_match": "lab_match:Samosa Meat Takeaway",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 21.902529700000002,
+      "total_sfa_g": 22.6868079,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 15.685564,
+      "oil_sfa_g": 16.4698422,
       "other_sfa_g": 6.216965700000003,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 71.61530752313053,
+      "oil_sfa_pct": 72.59656040019627,
       "total_fat_g": 53.63467600000001,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 39.21391,
@@ -148954,7 +149290,11 @@
       "absorbed_sfa_g": 22.285171871999996,
       "fat_g_per_100g_lab": 12.4,
       "sfa_pct_of_fat_lab": 49.16,
-      "lab_match": "lab_match:Samosa"
+      "lab_match": "lab_match:Samosa",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 5
     },
     "drivers": {
       "total_sfa_g": 28.912360321999994,
@@ -149180,7 +149520,11 @@
       "absorbed_sfa_g": 1.9652951999999997,
       "fat_g_per_100g_lab": 6.38,
       "sfa_pct_of_fat_lab": 40.8,
-      "lab_match": "lab_match:Medu Vada"
+      "lab_match": "lab_match:Medu Vada",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
       "total_sfa_g": 2.130895200000001,
@@ -149406,7 +149750,11 @@
       "absorbed_sfa_g": 5.313708445,
       "fat_g_per_100g_lab": 12.094999999999999,
       "sfa_pct_of_fat_lab": 43.0,
-      "lab_match": "lab_match:Batata Vada, Medu Vada, Moong Dal Fried"
+      "lab_match": "lab_match:Batata Vada, Medu Vada, Moong Dal Fried",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 4
     },
     "drivers": {
       "total_sfa_g": 8.316424744999999,
@@ -164058,7 +164406,7 @@
       "energy_kj": 3972.405294000001,
       "energy_kcal": 990.6143150095598,
       "fat_g": 86.92694999999998,
-      "sfa_g": 40.074462249999996,
+      "sfa_g": 38.929357249999995,
       "mufa_g": 57.24309699999999,
       "pufa_g": 153.55640499999998,
       "tfa_g": NaN,
@@ -164076,7 +164424,7 @@
       "energy_kj": 1986.2026470000005,
       "energy_kcal": 495.3071575047799,
       "fat_g": 43.46347499999999,
-      "sfa_g": 20.037231124999998,
+      "sfa_g": 19.464678624999998,
       "mufa_g": 28.621548499999996,
       "pufa_g": 76.77820249999999,
       "tfa_g": NaN,
@@ -164115,11 +164463,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 20.037231124999998,
+          "amount": 19.464678624999998,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 80.5067321986607,
-          "pct_energy": 8.050673219866072,
+          "pct_of_limit": 78.20629804687499,
+          "pct_energy": 7.8206298046875,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -164249,18 +164597,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "absorbed_fat_g": 57.25525,
-      "absorbed_sfa_g": 22.9021,
+      "absorbed_sfa_g": 21.756995,
       "fat_g_per_100g_lab": 22.3,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora"
+      "sfa_pct_of_fat_lab": 38.0,
+      "lab_match": "lab_match:Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
-      "total_sfa_g": 40.074462249999996,
+      "total_sfa_g": 38.929357249999995,
       "dairy_sfa_g": 15.627,
-      "oil_sfa_g": 22.9021,
+      "oil_sfa_g": 21.756995,
       "other_sfa_g": 1.545362249999993,
-      "dairy_sfa_pct": 38.99490878383528,
-      "oil_sfa_pct": 57.148864174715165,
+      "dairy_sfa_pct": 40.14194197876206,
+      "oil_sfa_pct": 55.88840026378807,
       "total_fat_g": 86.92694999999998,
       "dairy_fat_g": 24.66,
       "oil_fat_g": 57.25525,
@@ -168778,7 +169130,11 @@
       "absorbed_sfa_g": 5.5230271250000005,
       "fat_g_per_100g_lab": 38.5,
       "sfa_pct_of_fat_lab": 23.81,
-      "lab_match": "lab_match:Mathri"
+      "lab_match": "lab_match:Mathri",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 10.488577125,
@@ -169219,7 +169575,11 @@
       "absorbed_sfa_g": 6.2670242499999995,
       "fat_g_per_100g_lab": 12.094999999999999,
       "sfa_pct_of_fat_lab": 43.0,
-      "lab_match": "lab_match:Batata Vada, Medu Vada, Moong Dal Fried"
+      "lab_match": "lab_match:Batata Vada, Medu Vada, Moong Dal Fried",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 4
     },
     "drivers": {
       "total_sfa_g": 6.588105249999999,
@@ -169445,7 +169805,11 @@
       "absorbed_sfa_g": 16.56,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 38.0993,
@@ -189224,7 +189588,11 @@
       "absorbed_sfa_g": 104.4696,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 107.42946462500001,
@@ -189450,7 +189818,11 @@
       "absorbed_sfa_g": 74.1048,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 77.31074559999999,
@@ -195957,7 +196329,11 @@
       "absorbed_sfa_g": 71.4543,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 75.64641491,
@@ -196183,7 +196559,11 @@
       "absorbed_sfa_g": 40.89000000000001,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 49.81307,
@@ -196409,7 +196789,11 @@
       "absorbed_sfa_g": 17.9874,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 18.18716825,
@@ -196871,7 +197255,7 @@
       "energy_kj": 17738.566517679996,
       "energy_kcal": 4383.780605755257,
       "fat_g": 303.155486,
-      "sfa_g": 108.06089009,
+      "sfa_g": 93.28237235,
       "mufa_g": 208.86049610999999,
       "pufa_g": 632.4742816099999,
       "tfa_g": NaN,
@@ -196889,7 +197273,7 @@
       "energy_kj": 5912.855505893332,
       "energy_kcal": 1461.260201918419,
       "fat_g": 101.05182866666667,
-      "sfa_g": 36.02029669666667,
+      "sfa_g": 31.094124116666666,
       "mufa_g": 69.62016537,
       "pufa_g": 210.82476053666664,
       "tfa_g": NaN,
@@ -196928,11 +197312,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 36.02029669666667,
+          "amount": 31.094124116666666,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 144.72440637053572,
-          "pct_energy": 14.472440637053571,
+          "pct_of_limit": 124.93174868303572,
+          "pct_energy": 12.493174868303573,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -197062,18 +197446,22 @@
       "frying_bath_lines_count": 2,
       "oil_mass_removed_g": 960.0,
       "absorbed_fat_g": 254.80202999999997,
-      "absorbed_sfa_g": 101.920812,
+      "absorbed_sfa_g": 87.14229426,
       "fat_g_per_100g_lab": 22.3,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Puri"
+      "sfa_pct_of_fat_lab": 34.2,
+      "lab_match": "lab_match:Puri",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
-      "total_sfa_g": 108.06089009,
+      "total_sfa_g": 93.28237235,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 104.830812,
+      "oil_sfa_g": 90.05229426,
       "other_sfa_g": 3.2300780900000063,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 97.01087221536878,
+      "oil_sfa_pct": 96.53731138196122,
       "total_fat_g": 303.155486,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 279.02778,
@@ -197506,7 +197894,11 @@
       "absorbed_sfa_g": 37.70700000000001,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 50.507987400000005,
@@ -197538,7 +197930,7 @@
       "energy_kj": 8920.217459999998,
       "energy_kcal": 2207.281955066922,
       "fat_g": 132.55480000000003,
-      "sfa_g": 56.93291170000001,
+      "sfa_g": 42.59875045000001,
       "mufa_g": 104.12309189999999,
       "pufa_g": 305.88042049999996,
       "tfa_g": NaN,
@@ -197556,7 +197948,7 @@
       "energy_kj": 254.86335599999995,
       "energy_kcal": 63.06519871619777,
       "fat_g": 3.787280000000001,
-      "sfa_g": 1.6266546200000003,
+      "sfa_g": 1.217107155714286,
       "mufa_g": 2.9749454828571427,
       "pufa_g": 8.739440585714284,
       "tfa_g": NaN,
@@ -197595,11 +197987,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 1.6266546200000003,
+          "amount": 1.217107155714286,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 6.535665883928572,
-          "pct_energy": 0.6535665883928572,
+          "pct_of_limit": 4.890162679209185,
+          "pct_energy": 0.48901626792091857,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -197729,18 +198121,22 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "absorbed_fat_g": 102.02250000000001,
-      "absorbed_sfa_g": 40.809000000000005,
+      "absorbed_sfa_g": 26.474838750000004,
       "fat_g_per_100g_lab": 22.3,
-      "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "lab_match:Aubergine Pakora, Cauliflower Pakora, Onion Pakora / Bhaji, Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora, Spinach Pakora"
+      "sfa_pct_of_fat_lab": 25.95,
+      "lab_match": "lab_match:Aubergine Pakora, Cauliflower Pakora, Onion Pakora / Bhaji, Potato Carrot Pea Pakora, Potato Cauliflower Pakora, Potato Pakora, Spinach Pakora",
+      "setting_requested": "auto",
+      "setting_used": "home",
+      "fallback_used": false,
+      "matched_rows_count": 7
     },
     "drivers": {
-      "total_sfa_g": 56.93291170000001,
+      "total_sfa_g": 42.59875045000001,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 40.809000000000005,
+      "oil_sfa_g": 26.474838750000004,
       "other_sfa_g": 16.123911700000008,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 71.67910226520172,
+      "oil_sfa_pct": 62.149331776937125,
       "total_fat_g": 132.55480000000003,
       "dairy_fat_g": 0.0,
       "oil_fat_g": 102.02250000000001,
@@ -197958,7 +198354,11 @@
       "absorbed_sfa_g": 12.090000000000002,
       "fat_g_per_100g_lab": 15.0,
       "sfa_pct_of_fat_lab": 40.0,
-      "lab_match": "category_default:default"
+      "lab_match": "category_default:default",
+      "setting_requested": "auto",
+      "setting_used": "category_default",
+      "fallback_used": false,
+      "matched_rows_count": 0
     },
     "drivers": {
       "total_sfa_g": 12.31,
@@ -203774,7 +204174,11 @@
       "absorbed_sfa_g": 16.764143699999998,
       "fat_g_per_100g_lab": 13.82,
       "sfa_pct_of_fat_lab": 35.5,
-      "lab_match": "lab_match:Sev"
+      "lab_match": "lab_match:Sev",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 1
     },
     "drivers": {
       "total_sfa_g": 18.4060817,
@@ -204000,7 +204404,11 @@
       "absorbed_sfa_g": 35.8353325,
       "fat_g_per_100g_lab": 29.6,
       "sfa_pct_of_fat_lab": 56.375,
-      "lab_match": "lab_match:Soan Papdi"
+      "lab_match": "lab_match:Soan Papdi",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 2
     },
     "drivers": {
       "total_sfa_g": 38.3959725,
@@ -204441,7 +204849,11 @@
       "absorbed_sfa_g": 52.92453672,
       "fat_g_per_100g_lab": 26.4,
       "sfa_pct_of_fat_lab": 27.46,
-      "lab_match": "lab_match:Bread Pakora"
+      "lab_match": "lab_match:Bread Pakora",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "matched_rows_count": 3
     },
     "drivers": {
       "total_sfa_g": 53.129476045,

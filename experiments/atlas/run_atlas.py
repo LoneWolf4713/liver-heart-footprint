@@ -13,6 +13,7 @@ import os
 import sys
 import json
 import math
+import shutil
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -586,64 +587,83 @@ def compute_textbook_vs_web(indb_recipes, web_recipes):
     """Direct paired comparison for shared dishes between INDB and Web corpus."""
     benchmarks = {
         "paneer butter masala": {
-            "indb_codes": ["ASC225", "OSR074", "ASC042"],
+            # INDB lacks exact Paneer Butter Masala; use nearest rich paneer gravies (excl. toast sandwich ASC042 & 502g-fat ASC225)
+            "indb_codes": ["ASC221", "ASC195"],
             "web_dish": "paneer butter masala",
+            "web_frying_unquantified": False,
         },
         "dal makhani": {
             "indb_codes": ["OSR139"],
             "web_dish": "dal makhani",
+            "web_frying_unquantified": False,
         },
         "chole": {
-            "indb_codes": ["ASC161", "BFP187"],
+            # Exact Safed Channa (white chickpea) curry in INDB
+            "indb_codes": ["ASC162"],
             "web_dish": "chole",
+            "web_frying_unquantified": False,
         },
         "gajar ka halwa": {
-            "indb_codes": ["ASC329"],
+            # Exact Carrot halwa (ASC295) instead of Date & nut pie (ASC329)
+            "indb_codes": ["ASC295"],
             "web_dish": "gajar ka halwa",
+            "web_frying_unquantified": False,
         },
         "gulab jamun": {
             "indb_codes": ["ASC348", "BFP386"],
             "web_dish": "gulab jamun",
+            "web_frying_unquantified": True,
         },
         "samosa": {
             "indb_codes": ["ASC361", "ASC362"],
             "web_dish": "samosa",
+            "web_frying_unquantified": True,
         },
         "chicken biryani": {
-            "indb_codes": ["ASC122", "ASC123", "BFP138"],
+            # INDB lacks Chicken Biryani; nearest meat/veg biryani baselines (excl. channa pulao BFP138)
+            "indb_codes": ["ASC122", "ASC123"],
             "web_dish": "chicken biryani",
+            "web_frying_unquantified": False,
         },
         "sambar": {
             "indb_codes": ["ASC167"],
             "web_dish": "sambar",
+            "web_frying_unquantified": False,
         },
         "poha": {
             "indb_codes": ["ASC469"],  # Standard Sprouted Moong Poha
             "web_dish": "poha",
+            "web_frying_unquantified": False,
         },
         "butter chicken": {
             "indb_codes": ["ASC242"],
             "web_dish": "butter chicken",
+            "web_frying_unquantified": False,
         },
         "methi aloo": {
             "indb_codes": ["ASC175"],
             "web_dish": "methi aloo",
+            "web_frying_unquantified": False,
         },
         "bhindi sabzi": {
             "indb_codes": ["BFP269", "ASC184"],
             "web_dish": "bhindi sabzi",
+            "web_frying_unquantified": False,
         },
         "onion pakora": {
             "indb_codes": ["ASC352"],
             "web_dish": "onion pakora",
+            "web_frying_unquantified": True,
         },
         "sarson ka saag": {
             "indb_codes": ["ASC217"],
             "web_dish": "saag",
+            "web_frying_unquantified": False,
         },
         "vegetable pulao": {
             "indb_codes": ["ASC114", "ASC115"],
             "web_dish": "vegetable pilau",
+            "web_frying_unquantified": False,
         },
     }
 
@@ -662,7 +682,18 @@ def compute_textbook_vs_web(indb_recipes, web_recipes):
         if not w_list:
             continue
 
-        w_valid = [w for w in w_list if w.get("per_serving") is not None]
+        # Deduplicate duplicate portal URLs (e.g., D1-18 and V2-R08)
+        w_valid = []
+        seen_urls = set()
+        for w in w_list:
+            if w.get("per_serving") is None:
+                continue
+            url = (w.get("url") or "").strip().rstrip("/")
+            if url and url in seen_urls:
+                continue
+            if url:
+                seen_urls.add(url)
+            w_valid.append(w)
         if not w_valid:
             continue
 
@@ -690,6 +721,7 @@ def compute_textbook_vs_web(indb_recipes, web_recipes):
             "dish": label,
             "indb_recipes_count": len(i_valid),
             "web_recipes_count": len(w_valid),
+            "web_frying_unquantified": bool(config.get("web_frying_unquantified", False)),
             # Fat
             "indb_fat_g": round(i_fat, 2),
             "web_fat_g": round(w_fat, 2),
@@ -720,24 +752,47 @@ def generate_atlas_figures(summary_df, drivers_df, comp_df):
     print("Generating Publication-Quality Visual Figures...")
     plt.style.use("seaborn-v0_8-whitegrid" if "seaborn-v0_8-whitegrid" in plt.style.available else "default")
 
-    # FIGURE 1: Cardiometabolic Budget Consumption across Dish Categories
-    fig, ax = plt.subplots(figsize=(12, 7))
+    # FIGURE 1: Cardiometabolic Budget Consumption across Dish Categories (clipped x-axis for Soups artifact)
+    fig, ax = plt.subplots(figsize=(12.5, 7.6))
     df_sorted = summary_df.sort_values("sfa_pct_gen_limit_median", ascending=True).copy()
     y_pos = np.arange(len(df_sorted))
 
     bar_width = 0.25
-    r1 = ax.barh(y_pos + bar_width, df_sorted["sfa_pct_gen_limit_median"], bar_width, label="Saturated Fat (% of 17.4g Limit)", color="#D9534F")
-    r2 = ax.barh(y_pos, df_sorted["sugar_pct_limit_median"], bar_width, label="Added Sugar (% of 25.0g Limit)", color="#F0AD4E")
-    r3 = ax.barh(y_pos - bar_width, df_sorted["sodium_pct_limit_median"], bar_width, label="Sodium (% of 2000mg Limit)", color="#0275D8")
+    cap_x = 108.0
+    sfa_vals = df_sorted["sfa_pct_gen_limit_median"].values
+    sug_vals = df_sorted["sugar_pct_limit_median"].values
+    na_vals = df_sorted["sodium_pct_limit_median"].values
+    na_clipped = np.minimum(na_vals, cap_x)
 
-    ax.axvline(100, color="#C9302C", linestyle="--", linewidth=1.5, alpha=0.8, label="100% Daily Budget Threshold")
-    ax.axvline(50, color="#888888", linestyle=":", linewidth=1.0, alpha=0.7, label="50% Single-Meal Threshold")
+    ax.barh(y_pos + bar_width, sfa_vals, bar_width, label="Saturated Fat (% of 24.9g <10%E Limit)", color="#D9534F")
+    ax.barh(y_pos, sug_vals, bar_width, label="Added Sugar (% of 25.0g WHO Limit)", color="#F0AD4E")
+    ax.barh(y_pos - bar_width, na_clipped, bar_width, label="Sodium (% of 1,967mg Salt Limit)", color="#0275D8")
 
+    # Value labels + broken-bar annotation for off-scale Soups & Stews sodium
+    for idx, (sfa_v, sug_v, na_v) in enumerate(zip(sfa_vals, sug_vals, na_vals)):
+        if sfa_v >= 10:
+            ax.text(sfa_v + 1.2, idx + bar_width, f"{sfa_v:.1f}%", va="center", fontsize=8.5, color="#9E2A2B", fontweight="bold")
+        if sug_v >= 10:
+            ax.text(sug_v + 1.2, idx, f"{sug_v:.1f}%", va="center", fontsize=8.5, color="#9C6500", fontweight="bold")
+        if na_v > cap_x:
+            # Visual diagonal break lines near the clipped bar tip
+            bx = cap_x - 2.2
+            by = idx - bar_width
+            ax.plot([bx - 1.2, bx + 1.2], [by - 0.11, by + 0.11], color="white", linewidth=3.2, zorder=5)
+            ax.plot([bx + 0.6, bx + 3.0], [by - 0.11, by + 0.11], color="white", linewidth=3.2, zorder=5)
+            ax.text(cap_x + 1.4, by, f"{na_v:,.1f}% (off-scale: 26/47 INDB K506/K507 stock-cube coding)", va="center", fontsize=8.5, color="#014C8C", fontweight="bold")
+        elif na_v >= 10:
+            ax.text(na_v + 1.2, idx - bar_width, f"{na_v:.1f}%", va="center", fontsize=8.5, color="#014C8C")
+
+    ax.axvline(33.3, color="#6C757D", linestyle=":", linewidth=1.3, alpha=0.85, label="33% One-Meal Target")
+    ax.axvline(100, color="#C9302C", linestyle="--", linewidth=1.5, alpha=0.85, label="100% Daily Limit")
+
+    ax.set_xlim(0, 192)
     ax.set_yticks(y_pos)
     ax.set_yticklabels(df_sorted["category"], fontsize=11, fontweight="medium")
-    ax.set_xlabel("Median Percentage of Daily Budget per Serving (%)", fontsize=12, fontweight="bold")
-    ax.set_title("Cardiometabolic Budget Consumption Across Indian Culinary Categories\n(Based on 1,014 INDB Standardized Recipes; ICMR-NIN 2024 / WHO Thresholds)", fontsize=13, fontweight="bold", pad=15)
-    ax.legend(loc="lower right", frameon=True, fontsize=10)
+    ax.set_xlabel("Median Percentage of Daily Budget per Serving (%, X-axis broken above 108%)", fontsize=11.5, fontweight="bold")
+    ax.set_title("Cardiometabolic Budget Consumption Across 11 Indian Culinary Categories\n(932 INDB Recipes with Verified Servings · ICMR-NIN 2024 / WHO Thresholds)", fontsize=13, fontweight="bold", pad=54)
+    ax.legend(loc="lower center", bbox_to_anchor=(0.5, 1.015), ncol=3, frameon=True, fontsize=9.5)
     plt.tight_layout()
     fig1_path_png = os.path.join(ATLAS_DIR, "fig1_category_footprint_bars.png")
     fig1_path_svg = os.path.join(ATLAS_DIR, "fig1_category_footprint_bars.svg")
@@ -747,18 +802,31 @@ def generate_atlas_figures(summary_df, drivers_df, comp_df):
     print(f"  Saved Figure 1 to {fig1_path_png}")
 
     # FIGURE 2: Culprit Decomposition (Dairy Fat vs Cooking Oil vs Other)
-    fig, ax = plt.subplots(figsize=(12, 7))
+    fig, ax = plt.subplots(figsize=(12.5, 7.6))
     drv_sorted = drivers_df.set_index("category").loc[df_sorted["category"]].reset_index()
 
-    p1 = ax.barh(y_pos, drv_sorted["sfa_from_dairy_pct_mean"], color="#F7B731", label="Dairy Fat (Ghee, Butter, Cream, Paneer)")
-    p2 = ax.barh(y_pos, drv_sorted["sfa_from_oil_pct_mean"], left=drv_sorted["sfa_from_dairy_pct_mean"], color="#E17055", label="Cooking Oil (Mustard, Groundnut, Coconut, Refined)")
-    p3 = ax.barh(y_pos, drv_sorted["sfa_from_other_pct_mean"], left=drv_sorted["sfa_from_dairy_pct_mean"] + drv_sorted["sfa_from_oil_pct_mean"], color="#74B9FF", label="Inherent Dietary SFA (Pulses, Grains, Vegetables, Meats)")
+    d_sfa = drv_sorted["sfa_from_dairy_pct_mean"].values
+    o_sfa = drv_sorted["sfa_from_oil_pct_mean"].values
+    r_sfa = drv_sorted["sfa_from_other_pct_mean"].values
 
+    ax.barh(y_pos, d_sfa, color="#F7B731", label="Dairy Fat (Ghee, Butter, Cream, Paneer)")
+    ax.barh(y_pos, o_sfa, left=d_sfa, color="#E17055", label="Cooking Oil (Oil + Frying Absorption)")
+    ax.barh(y_pos, r_sfa, left=d_sfa + o_sfa, color="#74B9FF", label="Inherent Food SFA (Pulses, Grains, Veg, Meat, Coconut)")
+
+    for idx, (dv, ov, rv) in enumerate(zip(d_sfa, o_sfa, r_sfa)):
+        if dv >= 11:
+            ax.text(dv / 2, idx, f"{dv:.1f}%", ha="center", va="center", fontsize=8.5, fontweight="bold", color="#222")
+        if ov >= 11:
+            ax.text(dv + ov / 2, idx, f"{ov:.1f}%", ha="center", va="center", fontsize=8.5, fontweight="bold", color="white")
+        if rv >= 11:
+            ax.text(dv + ov + rv / 2, idx, f"{rv:.1f}%", ha="center", va="center", fontsize=8.5, fontweight="bold", color="#112233")
+
+    ax.set_xlim(0, 100)
     ax.set_yticks(y_pos)
     ax.set_yticklabels(drv_sorted["category"], fontsize=11, fontweight="medium")
-    ax.set_xlabel("Mean Share of Total Recipe SFA (%)", fontsize=12, fontweight="bold")
-    ax.set_title("Culprit Decomposition: What Drives the Saturated Fat Load in Indian Cuisine?\n(Dairy Fat vs Cooking Oil vs Inherent Lipids)", fontsize=13, fontweight="bold", pad=15)
-    ax.legend(loc="lower right", frameon=True, fontsize=10)
+    ax.set_xlabel("Mean Share of Total Recipe Saturated Fat (%)", fontsize=11.5, fontweight="bold")
+    ax.set_title("Culprit Decomposition: What Drives Saturated Fat Across Indian Cuisine?\n(Dairy Fat vs. Cooking Oil vs. Inherent Ingredient SFA)", fontsize=13, fontweight="bold", pad=34)
+    ax.legend(loc="lower center", bbox_to_anchor=(0.5, 1.01), ncol=3, frameon=True, fontsize=9.5)
     plt.tight_layout()
     fig2_path_png = os.path.join(ATLAS_DIR, "fig2_culprit_decomposition.png")
     fig2_path_svg = os.path.join(ATLAS_DIR, "fig2_culprit_decomposition.svg")
@@ -768,23 +836,32 @@ def generate_atlas_figures(summary_df, drivers_df, comp_df):
     print(f"  Saved Figure 2 to {fig2_path_png}")
 
     # FIGURE 3: Textbook vs Web Recipe Inflation Factor
-    fig, ax = plt.subplots(figsize=(12, 8))
+    fig, ax = plt.subplots(figsize=(12.5, 8.2))
     comp_sorted = comp_df.sort_values("fat_inflation_ratio", ascending=True).copy()
     y_pos_c = np.arange(len(comp_sorted))
 
-    ax.scatter(comp_sorted["indb_fat_g"], y_pos_c, color="#2E86AB", s=100, label="Textbook Formulation (INDB)", zorder=3)
-    ax.scatter(comp_sorted["web_fat_g"], y_pos_c, color="#E63946", s=100, label="Popular Web Recipe (Median)", zorder=3)
+    ax.scatter(comp_sorted["indb_fat_g"], y_pos_c, color="#2E86AB", s=105, label="Textbook Formulation (INDB)", zorder=4)
+    ax.scatter(comp_sorted["web_fat_g"], y_pos_c, color="#E63946", s=105, label="Popular Web Recipe (Median)", zorder=4)
 
+    y_labels = []
+    max_x = max(comp_sorted["indb_fat_g"].max(), comp_sorted["web_fat_g"].max())
     for idx, row in enumerate(comp_sorted.itertuples()):
-        ax.plot([row.indb_fat_g, row.web_fat_g], [idx, idx], color="#888888", linestyle="-", linewidth=2, zorder=2)
-        ratio_str = f"{row.fat_inflation_ratio:.2f}x"
-        ax.text(max(row.indb_fat_g, row.web_fat_g) + 1.2, idx - 0.1, ratio_str, fontsize=10, fontweight="bold", color="#A8201A")
+        is_unq = bool(getattr(row, "web_frying_unquantified", False))
+        lbl = f"{row.dish} *" if is_unq else row.dish
+        y_labels.append(lbl)
+        if is_unq:
+            ax.axhspan(idx - 0.38, idx + 0.38, color="#FFF3CD", alpha=0.45, zorder=1)
+        ax.plot([row.indb_fat_g, row.web_fat_g], [idx, idx], color="#888888", linestyle="--" if is_unq else "-", linewidth=2, zorder=2)
+        ratio_str = f"{row.fat_inflation_ratio:.2f}x" + (" (unquantified web fry oil)" if is_unq else "")
+        txt_col = "#8A5A00" if is_unq else ("#A8201A" if row.fat_inflation_ratio > 1.25 else ("#1E7E34" if row.fat_inflation_ratio < 0.8 else "#495057"))
+        ax.text(max(row.indb_fat_g, row.web_fat_g) + 1.0, idx, ratio_str, va="center", fontsize=9.5, fontweight="bold", color=txt_col)
 
+    ax.set_xlim(0, max_x * 1.36)
     ax.set_yticks(y_pos_c)
-    ax.set_yticklabels(comp_sorted["dish"], fontsize=11, fontweight="medium")
-    ax.set_xlabel("Fat Content per Serving (g)", fontsize=12, fontweight="bold")
-    ax.set_title("The 'Restaurant & Web Inflation Factor': Fat per Serving in Indian Dishes\nStandardized Institutional Textbooks (INDB) vs Popular Online Cooking Portals", fontsize=13, fontweight="bold", pad=15)
-    ax.legend(loc="lower right", frameon=True, fontsize=11)
+    ax.set_yticklabels(y_labels, fontsize=11, fontweight="medium")
+    ax.set_xlabel("Fat Content per Serving (g)", fontsize=11.5, fontweight="bold")
+    ax.set_title("Textbook (INDB) vs. Web Recipe Fat per Serving Across 15 Benchmark Dishes\n(* Shaded rows: Web recipes list 'oil for deep frying' unquantified, so Soxhlet fry-oil injection is omitted)", fontsize=12.5, fontweight="bold", pad=34)
+    ax.legend(loc="lower center", bbox_to_anchor=(0.5, 1.01), ncol=2, frameon=True, fontsize=10.5)
     plt.tight_layout()
     fig3_path_png = os.path.join(ATLAS_DIR, "fig3_textbook_vs_web_inflation.png")
     fig3_path_svg = os.path.join(ATLAS_DIR, "fig3_textbook_vs_web_inflation.svg")
@@ -794,17 +871,47 @@ def generate_atlas_figures(summary_df, drivers_df, comp_df):
     print(f"  Saved Figure 3 to {fig3_path_png}")
 
     # FIGURE 4: Cardiometabolic Risk Matrix (Liver Axes: SFA vs Added Sugar)
-    fig, ax = plt.subplots(figsize=(10, 7))
-    for idx, row in summary_df.iterrows():
-        ax.scatter(row["sugar_pct_limit_median"], row["sfa_pct_gen_limit_median"], s=row["recipes_total"]*2, alpha=0.7, edgecolors="black", linewidth=1.5)
-        ax.text(row["sugar_pct_limit_median"] + 1.0, row["sfa_pct_gen_limit_median"] + 0.8, row["category"], fontsize=9, fontweight="medium")
+    fig, ax = plt.subplots(figsize=(11, 7.6))
+    # Custom label offsets so clustered zero-sugar categories never overlap
+    label_offsets = {
+        "Snacks & Street Food": (1.6, 0.8, "left"),
+        "Sweets & Desserts": (-1.5, -2.5, "right"),
+        "Curries & Gravies": (1.6, 0.8, "left"),
+        "Rice & Grains": (1.5, 0.5, "left"),
+        "Vegetables & Sabzis": (2.2, 1.2, "left"),
+        "Breakfast & Tiffin": (2.2, -1.6, "left"),
+        "Breads & Flatbreads": (1.8, 0.5, "left"),
+        "Soups & Stews": (2.2, 0.9, "left"),
+        "Condiments & Chutneys": (1.8, -1.6, "left"),
+        "Beverages": (-1.5, 0.9, "right"),
+        "Dals & Legumes": (1.6, -1.2, "left"),
+    }
+    for _, row in summary_df.iterrows():
+        cat = row["category"]
+        x_val = row["sugar_pct_limit_median"]
+        y_val = row["sfa_pct_gen_limit_median"]
+        ax.scatter(x_val, y_val, s=row["recipes_total"] * 2.2, alpha=0.72, edgecolors="black", linewidth=1.3, zorder=3)
+        dx, dy, ha = label_offsets.get(cat, (1.5, 0.5, "left"))
+        ax.annotate(
+            cat,
+            xy=(x_val, y_val),
+            xytext=(x_val + dx, y_val + dy),
+            ha=ha,
+            va="center",
+            fontsize=9.5,
+            fontweight="medium",
+            arrowprops=dict(arrowstyle="-", color="#999999", lw=0.7, alpha=0.7) if abs(dx) > 1.7 or abs(dy) > 1.1 else None,
+            zorder=5,
+        )
 
-    ax.axhline(50, color="#E63946", linestyle="--", linewidth=1.2, alpha=0.7, label="50% SFA Daily Limit (Meal Warning)")
-    ax.axvline(50, color="#F77F00", linestyle="--", linewidth=1.2, alpha=0.7, label="50% Added Sugar Limit (Meal Warning)")
+    ax.axhline(33.3, color="#E63946", linestyle="--", linewidth=1.2, alpha=0.75, label="33% Single-Meal SFA Ceiling")
+    ax.axvline(33.3, color="#F77F00", linestyle="--", linewidth=1.2, alpha=0.75, label="33% Single-Meal Added Sugar Ceiling")
 
-    ax.set_xlabel("Added Sugar Load (% of WHO/ICMR-NIN 25g Daily Limit)", fontsize=11, fontweight="bold")
-    ax.set_ylabel("Saturated Fat Load (% of ICMR-NIN 17.4g Daily Limit)", fontsize=11, fontweight="bold")
-    ax.set_title("The Cardiometabolic Liver Matrix: Saturated Fat vs. Added Sugar Burden\n(Marker area proportional to total recipes in category)", fontsize=12, fontweight="bold", pad=15)
+    ax.set_xlim(-6, 74)
+    ax.set_ylim(-2, 41)
+    ax.set_xlabel("Added Sugar Load (% of 25.0g WHO Daily Limit)", fontsize=11.5, fontweight="bold")
+    ax.set_ylabel("Saturated Fat Load (% of 24.9g ICMR-NIN <10%E Limit)", fontsize=11.5, fontweight="bold")
+    ax.set_title("The Dual-Organ Risk Matrix: Saturated Fat vs. Added Sugar Burden\n(Bubble area proportional to recipe count; dashed lines mark 1-meal 33% share)", fontsize=12.5, fontweight="bold", pad=15)
     ax.legend(loc="upper right", frameon=True, fontsize=10)
     plt.tight_layout()
     fig4_path_png = os.path.join(ATLAS_DIR, "fig4_liver_risk_matrix.png")
@@ -854,6 +961,7 @@ def run_atlas():
 
     # 6. Overall Metrics Snapshot
     frying_count = sum(1 for r in indb_recipes if r.get("frying_correction") and r["frying_correction"].get("applied"))
+    comp_clean = comp_df[~comp_df["web_frying_unquantified"]]
     overall_metrics = {
         "indb_recipes_total": len(indb_recipes),
         "indb_recipes_with_servings": sum(1 for r in indb_recipes if r.get("servings") is not None),
@@ -866,14 +974,46 @@ def run_atlas():
         "highest_sugar_median_pct": float(summary_df["sugar_pct_limit_median"].max()),
         "highest_sodium_category": summary_df.loc[summary_df["sodium_pct_limit_median"].idxmax()]["category"],
         "highest_sodium_median_pct": float(summary_df["sodium_pct_limit_median"].max()),
-        "overall_median_fat_inflation": float(comp_df["fat_inflation_ratio"].median()),
-        "overall_median_sfa_inflation": float(comp_df["sfa_inflation_ratio"].median()),
-        "overall_median_energy_inflation": float(comp_df["energy_inflation_ratio"].median()),
+        "overall_median_fat_inflation": round(float(comp_clean["fat_inflation_ratio"].median()), 2),
+        "overall_median_sfa_inflation": round(float(comp_clean["sfa_inflation_ratio"].median()), 2),
+        "overall_median_energy_inflation": round(float(comp_clean["energy_inflation_ratio"].median()), 2),
+        "overall_median_fat_inflation_all15": round(float(comp_df["fat_inflation_ratio"].median()), 2),
+        "overall_median_sfa_inflation_all15": round(float(comp_df["sfa_inflation_ratio"].median()), 2),
+        "overall_median_energy_inflation_all15": round(float(comp_df["energy_inflation_ratio"].median()), 2),
     }
     metrics_json = os.path.join(ATLAS_DIR, "atlas_metrics.json")
     with open(metrics_json, "w", encoding="utf-8") as f:
         json.dump(overall_metrics, f, indent=2)
     print(f"Saved Atlas Metrics to {metrics_json}")
+
+    # 7. Sync static figures and atlas_data.js into app/static/
+    app_fig_dir = os.path.join(BASE_DIR, "app", "static", "figures")
+    if os.path.isdir(app_fig_dir):
+        for fn in (
+            "fig1_category_footprint_bars.png",
+            "fig2_culprit_decomposition.png",
+            "fig3_textbook_vs_web_inflation.png",
+            "fig4_liver_risk_matrix.png",
+        ):
+            src_png = os.path.join(ATLAS_DIR, fn)
+            if os.path.exists(src_png):
+                shutil.copy2(src_png, os.path.join(app_fig_dir, fn))
+        print(f"Synced 4 PNG figures to {app_fig_dir}")
+
+    atlas_js_path = os.path.join(BASE_DIR, "app", "static", "js", "atlas_data.js")
+    if os.path.isdir(os.path.dirname(atlas_js_path)):
+        def _stringify_records(df_in):
+            return [{k: str(v) for k, v in rec.items()} for rec in df_in.to_dict(orient="records")]
+
+        atlas_payload = {
+            "metrics": overall_metrics,
+            "categories": _stringify_records(summary_df),
+            "textbook_vs_web": _stringify_records(comp_df),
+            "drivers": _stringify_records(drivers_df),
+        }
+        with open(atlas_js_path, "w", encoding="utf-8") as f:
+            f.write("window.ATLAS_DATA = " + json.dumps(atlas_payload, indent=2) + ";\n")
+        print(f"Synced Atlas JS payload to {atlas_js_path}")
 
     print("\nAtlas Generation Complete!")
     print(f"Key Findings:")
