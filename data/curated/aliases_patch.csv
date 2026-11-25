@@ -1,0 +1,114 @@
+# ── PATCH 2026-11-24: Top UNMAPPED fixes from full 1,014-recipe INDB audit ──
+# Chillies — red (whole/dried) → G022 Chillies, red
+red chilli,G022,Red chilli singular form
+red chillies whole,G022,Whole red chillies
+whole red chilli,G022,Whole red chilli (prep variant)
+dry red chilli,G022,Dry red chilli
+red chilli whole,G022,Red chilli whole (inverted form)
+dried red chillies,G022,Dried red chillies
+# Black pepper variants → G031 Pepper, black
+pepper powder,G031,Black pepper ground
+pepper corns,G031,Black peppercorns (spelling variant)
+peppercorns,G031,Black peppercorns
+pepper corn,G031,Black peppercorn singular
+white pepper powder,G031,White pepper ground (mapped to black pepper as closest)
+# Turmeric powder variant → G033
+haldi powder,G033,Turmeric powder in Hindi (haldi)
+turmeric,G033,Turmeric whole/generic
+# Nutmeg → G028
+nutmeg powder,G028,Nutmeg ground
+jaiphal,G028,Nutmeg in Hindi
+# Ginger powder → G554 Ginger ground
+ginger powder,G554,Ginger powder / dry ginger
+sonth,G554,Dry ginger powder in Hindi
+saunth,G554,Dry ginger powder variant
+# Amchur / dry mango powder → G535
+amchur,G535,Dry mango powder
+mango powder,G535,Mango powder / amchur
+dry mango powder,G535,Dry mango powder
+aamchur,G535,Amchur spelling variant
+# Kalonji / nigella seeds → A512
+kalonji,A512,Nigella seeds in Hindi
+nigella seeds,A512,Black seeds / kalonji
+nigella,A512,Nigella / kalonji
+onion seeds,A512,Kalonji often called onion seeds
+black seeds,A512,Nigella / kalonji seeds
+# Roasted cumin powder variants → G025 Cumin seeds
+roasted cumin seed powder,G025,Roasted cumin powder (spice)
+roasted cumin powder,G025,Roasted cumin
+cumin powder,G025,Cumin ground
+jeera powder,G025,Cumin powder in Hindi
+roasted jeera powder,G025,Roasted jeera powder
+# Mushrooms → J001 Button mushroom
+mushroom,J001,Generic mushroom
+mushrooms,J001,Mushrooms plural
+button mushroom,J001,Button mushroom
+# Bread variants → U511 Bread white average
+bread,U511,Generic bread (white default)
+bread slice,U511,Bread slice
+bread slices,U511,Bread slices
+white bread,U511,White bread
+bread crumbs,U511,Bread crumbs
+bread crumb,U511,Bread crumb
+double roti,U511,Bread in Hindi
+brown bread,U501,Brown bread → U501 Bread brown
+# Flour variants
+flour,A018,Generic flour → refined wheat flour (maida)
+plain flour,A018,Plain flour / maida
+cornflour,A503,Corn flour / cornflour → Flour corn
+corn flour,A503,Corn flour
+maize flour,A006,Maize flour → Maize dry
+makki ka atta,A006,Maize flour in Hindi
+# Vermicelli / seviyan → A023 Wheat vermicelli
+vermicelli,A023,Wheat vermicelli
+seviyan,A023,Vermicelli in Hindi
+sewaiyan,A023,Vermicelli Hindi variant
+# Lentils generic → B013 Lentil dal
+lentils,B013,Generic lentils → masoor dal
+lentil,B013,Generic lentil
+split peas,B017,Split peas → dry peas
+# Chana dal spelling variants → B001 Bengal gram dal
+channa dal,B001,Chana dal spelling variant
+# Urad dal variants → B003
+washed urad dal,B003,Washed urad dal
+black gram dehusked,B003,Black gram dehusked / urad dal
+# Beetroot → F001
+beetroot,F001,Beetroot
+beet root,F001,Beetroot (two words)
+beet,F001,Beetroot
+# Radish → F010 Radish elongate white skin (mooli)
+radish,F010,Generic radish
+mooli,F010,White radish in Hindi
+white radish,F010,White mooli
+# Keema / minced meat → O502 Lamb mince raw
+keema,O502,Minced meat in Hindi (lamb default)
+mince,O502,Generic mince (lamb default)
+minced meat,O502,Minced meat
+kheema,O502,Keema spelling variant
+lamb mince,O502,Lamb mince
+# Chicken mince → N500
+chicken mince,N500,Chicken mince → whole chicken as proxy
+minced chicken,N500,Minced chicken
+chicken keema,N500,Chicken keema
+# Fat / generic fat → T508 (sunflower oil as generic cooking fat)
+fat,T508,Generic fat → cooking oil (sunflower default)
+melted fat,T508,Melted fat → cooking oil
+shortening,T508,Shortening → generic fat
+cooking fat,T508,Cooking fat
+# Kewra / screwpine essence — not in composition table, map to water proxy or skip
+# kewra is a flavouring used in tiny amounts (< 1 tsp), nutritionally negligible → NON_FOOD is misleading
+# Map to rose water (K505) as a flavouring proxy or exclude by marking NON_FOOD
+kewra essence,K505,Kewra essence → rose water (flavouring, negligible calories)
+kewra water,K505,Kewra water
+screwpine essence,K505,Screwpine / kewra
+# Bengal gram flour → A504 (besan)
+bengal gram flour,A504,Bengal gram flour = besan
+# Tomato sauce → G517 Chilli sauce (closest available condiment)
+tomato sauce,G517,Tomato sauce → chilli sauce proxy
+# Processed cheese → L505
+processed cheese,L505,Processed cheese
+# Sprouted moong → B011 Green gram whole
+sprouted moong,B011,Sprouted moong → green gram whole
+sprouted green gram,B011,Sprouted green gram
+# Misc vegetables with real IFCT entries we were missing
+turnip,F501,Turnip flesh raw

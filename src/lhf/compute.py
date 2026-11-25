@@ -19,17 +19,30 @@ def sum_nutrients(items: list) -> dict:
     unknown_tfa_items = []
     unknown_water_items = []
 
-    if items:
+    if items is not None:
         for idx, item in enumerate(items):
+            if not isinstance(item, dict):
+                skipped.append(idx)
+                continue
+
             code = item.get("code")
             code_str = str(code) if code is not None else ""
             grams = item.get("grams")
 
-            if grams is None or (isinstance(grams, float) and math.isnan(grams)) or code is None or code_str not in table_index:
+            if grams is None or isinstance(grams, bool):
                 skipped.append(idx)
                 continue
 
-            grams_val = float(grams)
+            try:
+                grams_val = float(grams)
+            except (ValueError, TypeError):
+                skipped.append(idx)
+                continue
+
+            if math.isnan(grams_val) or not math.isfinite(grams_val) or grams_val <= 0 or code is None or code_str not in table_index:
+                skipped.append(idx)
+                continue
+
             total_g += grams_val
             nuts = composition.nutrients_for(code_str, grams_val)
 

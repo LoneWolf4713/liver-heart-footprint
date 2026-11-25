@@ -1,0 +1,1086 @@
+recipe_code,recipe_name,raw_line,parsed_name
+ASC002,Instant coffee,1.5 tsp Instant coffee powder,instant coffee powder
+ASC003,Espreso coffee,1 tsp Instant coffee powder,instant coffee powder
+ASC003,Espreso coffee,0.25 tsp Drinking chocolate,drinking chocolate
+ASC006,Fruit Punch (with fresh juices),11.67 g Lemon slices,lemon slices
+ASC006,Fruit Punch (with fresh juices),0.5 C Pineapple juice,pineapple juice
+ASC006,Fruit Punch (with fresh juices),0.5 C Orange juice,orange juice
+ASC006,Fruit Punch (with fresh juices),250 ml Soda,soda
+ASC007,Fruit Punch (with squashes),30 g Pineapple slice,pineapple slice
+ASC007,Fruit Punch (with squashes),11.67 g Lemon slices,lemon slices
+ASC007,Fruit Punch (with squashes),2 tbsp Orange squash,orange squash
+ASC007,Fruit Punch (with squashes),250 ml Soda,soda
+ASC007,Fruit Punch (with squashes),2 tbsp Lemon squash,lemon squash
+ASC010,Cumin infused water (Jeere/Zeere ka pani),10 g Tamarind (without seeds,tamarind (without seeds
+ASC010,Cumin infused water (Jeere/Zeere ka pani),1.5 tsp Zeera (roasted and powdered),zeera
+ASC011,Coco pine cooler,5 g Canned cherries,canned cherries
+ASC011,Coco pine cooler,3.7 g Pineapple slice,pineapple slice
+ASC011,Coco pine cooler,50 ml Vanilla ice cream,vanilla ice cream
+ASC011,Coco pine cooler,60 ml Pineapple juice,pineapple juice
+ASC011,Coco pine cooler,1 tsp Castor sugar,castor sugar
+ASC012,Summer cooler,12.66 g Ginger juice,ginger juice
+ASC012,Summer cooler,200 ml Orange juice,orange juice
+ASC014,Hot cocoa,1.5 tsp Cocoa,cocoa
+ASC015,Cold coffee with ice cream,1 tbsp Ice cream,ice cream
+ASC015,Cold coffee with ice cream,1.5 tsp Coffee powder,coffee powder
+ASC016,Banana milkshake (Kele milkshake),0.5 tsp Vanilla essence,vanilla essence
+ASC017,Mango milkshake (Aam milkshake),0.5 tsp Vanilla essence,vanilla essence
+ASC018,Pineapple milkshake (Ananas milkshake),0.5 tsp Pineapple Essesnce,pineapple essesnce
+ASC018,Pineapple milkshake (Ananas milkshake),0.25 C Pineapple juice,pineapple juice
+ASC019,Orange milkshake (Narangi milkshake),0.5 tsp Orange Essesnce,orange essesnce
+ASC019,Orange milkshake (Narangi milkshake),1 tbsp Orange squash (or juice of 0.5 orange),orange squash
+ASC020,Egg nog,0.5 tsp Vanilla essence,vanilla essence
+ASC026,Cheese and pineapple sandwich (Cheese aur ananas ka sandwich),20 g Pineapple slice,pineapple slice
+ASC030,Rainbow sandwich,0.5 tbsp Mint chutney,mint chutney
+ASC031,Club sandwich,1 tbsp Mayonnaise,mayonnaise
+ASC032,Vegetarian club sandwich,1 tbsp Mayonnaise,mayonnaise
+ASC033,Pin wheel sandwich,2 tbsp Mayonnaise,mayonnaise
+ASC034,Carrot apple sandwich (Gajar aur seb ka sandwich),24 g Lettuce leaf,lettuce leaf
+ASC034,Carrot apple sandwich (Gajar aur seb ka sandwich),25 g Red apple,red apple
+ASC034,Carrot apple sandwich (Gajar aur seb ka sandwich),2 tsp Cheese spread,cheese spread
+ASC036,Vegetable and mayonnaise sandwich,1 tbsp Mayonnaise,mayonnaise
+ASC038,Sweet open sandwich,1 tsp Castor sugar,castor sugar
+ASC045,Classic club sandwich,24 g Lettuce leaf,lettuce leaf
+ASC045,Classic club sandwich,20 g Potato wafers,potato wafers
+ASC045,Classic club sandwich,12 g Canned cherries olives,canned cherries olives
+ASC045,Classic club sandwich,1 tbsp Mayonnaise,mayonnaise
+ASC046,Sesame toast,0.25 tsp White pepper,white pepper
+ASC046,Sesame toast,0.25 tsp Ajinomoto,ajinomoto
+ASC050,Oatmeal Porridge,20 g Oatmeal,oatmeal
+ASC051,Cornflakes with milk,30 g Cornflakes,cornflakes
+ASC053,Wheat flakes,30 g Wheat flakes,wheat flakes
+ASC054,Murmura (Puffed rice),30 g Puffed rice,puffed rice
+ASC055,Puffed wheat (Murmure/Moori),30 g Puffed wheat,puffed wheat
+ASC066,Jam and fruit pancake,60 g Pineapple slice,pineapple slice
+ASC066,Jam and fruit pancake,1 tbsp Pineapple juice,pineapple juice
+ASC066,Jam and fruit pancake,20 g Pineapple jam,pineapple jam
+ASC067,Khoa and coconut pancake,30 g Dessicated coconut,dessicated coconut
+ASC067,Khoa and coconut pancake,30 g Castor sugar,castor sugar
+ASC067,Khoa and coconut pancake,5 g Nuts,nuts
+ASC068,Brown stock,100 g Bones and mutton knuckles,bones and mutton knuckles
+ASC069,Vegetable stock,20 g Shelled green peas,shelled green peas
+ASC074,Cheese sauce,0.25 g Chilli flakes,chilli flakes
+ASC075,Egg sauce,0.25 g Chilli flakes,chilli flakes
+ASC078,Brown sauce,1 C Stock,stock
+ASC081,Chicken consomme (Clear chicken soup),0.5 C Stock,stock
+ASC086,Cream of mushroom soup,30 g Onion rings,onion rings
+ASC087,Chicken sweet corn soup,50 g Sweet corn,sweet corn
+ASC087,Chicken sweet corn soup,1.5 C Chicken stock,chicken stock
+ASC088,Minestrone soup,20 g Shelled peas,shelled peas
+ASC088,Minestrone soup,10 g Noodles,noodles
+ASC088,Minestrone soup,1 C Brown stock,brown stock
+ASC089,Egg drop soup,1 C Chicken stock,chicken stock
+ASC090,Chinese cabbage and meat ball soup,1 C Chicken stock,chicken stock
+ASC091,French onion soup,1 C Chicken stock,chicken stock
+ASC092,Hot and sour soup,10 g Bean sprouts,bean sprouts
+ASC092,Hot and sour soup,0.25 tsp Ajino motto,ajino motto
+ASC093,Talaumein soup,10 g Noodles,noodles
+ASC093,Talaumein soup,10 g Bean sprouts,bean sprouts
+ASC093,Talaumein soup,1 C Stock,stock
+ASC093,Talaumein soup,0.125 tsp Ajino motto,ajino motto
+ASC095,Cold summer garden soup,0.75 C Stock,stock
+ASC102,Sprouted moong parantha/paratha,30 g Sprouted moong dal,sprouted moong dal
+ASC110,Dal stuffed poori,0.25 tsp Soda,soda
+ASC117,Sprouted moong pulao,50 g Sprouted moong dal,sprouted moong dal
+ASC120,Navratan pulao,0.5 tsp Orange and green colour,orange and green colour
+ASC121,Green chickpeas pulao (Choliya pulao/Hare chane ka pulao),50 g Cholia,cholia
+ASC122,Mutton biryani/biriyani,0.5 tsp Zeera,zeera
+ASC122,Mutton biryani/biriyani,0.25 tsp Khuskhas,khuskhas
+ASC122,Mutton biryani/biriyani,100 g Boneless mutton,boneless mutton
+ASC123,Vegetable biryani/biriyani,0.5 tsp Zeera,zeera
+ASC128,Spanish rice,17 g Celery,celery
+ASC130,Classic italian pasta,0.5 tsp Basil,basil
+ASC130,Classic italian pasta,0.5 tsp Oregano,oregano
+ASC132,Pasta cheese sauce,0.25 tsp Oregano,oregano
+ASC133,Macroni cheese pie,50 g Macaroni,macaroni
+ASC134,Vegetable chowmein,50 g Noodles,noodles
+ASC135,Chicken chowmein,50 g Noodles,noodles
+ASC136,Cheese noodle ring,50 g Noodles,noodles
+ASC137,Spaghetti and cheese balls in tomato sauce,50 g Spaghetti,spaghetti
+ASC138,Penne platter,50 g Penne,penne
+ASC138,Penne platter,0.25 tsp Oregano,oregano
+ASC138,Penne platter,2 tbsp Maggi hot and sweet sauce,maggi hot and sweet sauce
+ASC139,Pasta hot pot,17 g Celery,celery
+ASC139,Pasta hot pot,50 g Cut macaroni,cut macaroni
+ASC140,Chicken lasagne,60 g Lasagne sheet,lasagne sheet
+ASC140,Chicken lasagne,0.25 tsp Oregano,oregano
+ASC141,Fettuccine with spinach sauce,50 g Fettuccine,fettuccine
+ASC142,Naan,0.25 tsp Khuskhus,khuskhus
+ASC142,Naan,0.25 tsp Aniseeds,aniseeds
+ASC142,Naan,1 tsp Castor sugar,castor sugar
+ASC149,Paneer kaathi roll,20 g Onion rings,onion rings
+ASC149,Paneer kaathi roll,25 g Beaten egg,beaten egg
+ASC151,Washed moong dal (Dhuli moong ki dal),30 g Washed moong,washed moong
+ASC154,Dry washed urad,40 g Urad washed,urad washed
+ASC155,Mixed dal,10 g Urad chilka,urad chilka
+ASC155,Mixed dal,10 g Moong chilka,moong chilka
+ASC158,Whole moth (Moth ki dal),30 g Moth,moth
+ASC159,Whole urad (Urad ki dal),30 g Urad,urad
+ASC160,Moti mahal dal (Urad rajmah mix dal),30 g Urad whole,urad whole
+ASC161,Black channa curry/Bengal gram curry (Kale chane ki curry),30 g Black channa,black channa
+ASC162,Chickpeas curry (Safed channa curry),30 g White channa,white channa
+ASC164,Soyabean curry,30 g Soyabean,soyabean
+ASC167,Sambar,30 g Lady's finger,lady's finger
+ASC169,Khatta channa,0.5 tsp Anardana,anardana
+ASC169,Khatta channa,0.25 tsp Soda,soda
+ASC169,Khatta channa,40 g White channa,white channa
+ASC170,Sprouted moong dal chat,0.5 tsp Chat masala,chat masala
+ASC194,Pea vadi curry,10 g Vadi,vadi
+ASC196,Lotus stem curry (Kamal kakdi curry),75 g Kamal kakri,kamal kakri
+ASC201,Lotus stem kofta curry (Kamal kakdi kofta curry),75 g Kamal kakri,kamal kakri
+ASC208,Baked vegetables,0.25 tsp White pepper,white pepper
+ASC214,Dum aloo,1 tsp Dessicated coconut,dessicated coconut
+ASC216,Methi chaman,0.25 tsp Tartaric acid,tartaric acid
+ASC217,Sarson ka saag,10 g Maize atta,maize atta
+ASC217,Sarson ka saag,20 g Bathua,bathua
+ASC219,Avial,25 g Yam,yam
+ASC220,Al yakhani,0.25 tsp Saunf powder,saunf powder
+ASC224,Chilli paneer,0.25 tsp Ajinomoto,ajinomoto
+ASC225,Paneer makhana korma,0.75 tsp Khuskhus,khuskhus
+ASC225,Paneer makhana korma,20 g Makhana,makhana
+ASC226,Kadhai Paneer,0.5 tsp Chilli garlic sauce,chilli garlic sauce
+ASC226,Kadhai Paneer,0.5 tsp Chilli garlic sauce,chilli garlic sauce
+ASC227,Roghan josh,3.33 g Kashmiri mirch,kashmiri mirch
+ASC227,Roghan josh,0.25 tsp Khuskhus seeds,khuskhus seeds
+ASC228,Spinach mutton (Palak mutton),3.33 g Kashmiri mirch,kashmiri mirch
+ASC228,Spinach mutton (Palak mutton),0.25 tsp Khuskhus seeds,khuskhus seeds
+ASC229,Pea keema curry (Matar keema ki sabzi),1 sprig Green corinder leaves,green corinder leaves
+ASC231,Kashmiri mutton koftas (Gushtaba),0.125 tsp Saunf powder,saunf powder
+ASC231,Kashmiri mutton koftas (Gushtaba),0.5 tsp Saunf powder,saunf powder
+ASC236,Mutton chops,15 g Onion rings,onion rings
+ASC236,Mutton chops,120 g Mutton chops,mutton chops
+ASC236,Mutton chops,17.5 g Lemon slice,lemon slice
+ASC237,Shammi kebab,20 g Onion rings,onion rings
+ASC238,Scotch egg,15 g Onion rings,onion rings
+ASC238,Scotch egg,50 g Hard boiled egg,hard boiled egg
+ASC241,Tandoori chicken,0.5 tsp Red color,red color
+ASC241,Tandoori chicken,20 g Onion rings,onion rings
+ASC241,Tandoori chicken,0.25 tsp Cumin seed powder,cumin seed powder
+ASC241,Tandoori chicken,0.125 tsp Ajwain powder,ajwain powder
+ASC243,Chicken kebab,20 g Onion rings,onion rings
+ASC245,Fried chicken with tomato sauce (Fried chicken tamatar ki chutney kay saath),1 tsp Dessicated coconut,dessicated coconut
+ASC247,Fried fish (Indian style) (Tali hui machli),20 g Onion rings,onion rings
+ASC247,Fried fish (Indian style) (Tali hui machli),100 g Singhara fish,singhara fish
+ASC247,Fried fish (Indian style) (Tali hui machli),2 tsp Mint chutney,mint chutney
+ASC248,Fried fish and Chips (English Style) (Tali hui machli aur chips),20 g Tomato slices,tomato slices
+ASC248,Fried fish and Chips (English Style) (Tali hui machli aur chips),8.75 g Lemon slices,lemon slices
+ASC249,Tomato fish,60 g Button onions,button onions
+ASC251,Fish tikka,0.25 tsp Red color,red color
+ASC251,Fish tikka,20 g Onion rings,onion rings
+ASC251,Fish tikka,100 g Singhara fish,singhara fish
+ASC252,Tandoori fish,50 g Onion rings,onion rings
+ASC253,"Paneer, apple and pineapple salad",48 g Salad leaves,salad leaves
+ASC253,"Paneer, apple and pineapple salad",30 g Pineapple slices,pineapple slices
+ASC253,"Paneer, apple and pineapple salad",0.5 tsp Castor sugar,castor sugar
+ASC254,Russian salad,48 g Salad leaves,salad leaves
+ASC254,Russian salad,30 g Pineapple slices,pineapple slices
+ASC254,Russian salad,1.5 tbsp Mayonnaise,mayonnaise
+ASC255,Pasta salad,24 g Lettuce leaf,lettuce leaf
+ASC255,Pasta salad,0.25 tsp Chilli garlic sauce,chilli garlic sauce
+ASC255,Pasta salad,25 g Cut macroni,cut macroni
+ASC255,Pasta salad,0.125 tsp White pepper,white pepper
+ASC255,Pasta salad,2 tbsp Mayonnaise,mayonnaise
+ASC255,Pasta salad,0.25 tsp Chilli garlic sauce,chilli garlic sauce
+ASC256,Deviled egg,48 g Salad leaves,salad leaves
+ASC256,Deviled egg,2 tsp Mayonnaise,mayonnaise
+ASC257,Hawain salad,48 g Salad leaves,salad leaves
+ASC257,Hawain salad,60 g Pineapple slices,pineapple slices
+ASC257,Hawain salad,25 g Noodles or spaghetti,noodles or spaghetti
+ASC257,Hawain salad,10 g Glaced cherries,glaced cherries
+ASC257,Hawain salad,1 tsp Castor sugar,castor sugar
+ASC258,Mixed pulse and vegetable salad,48 g Salad leaves,salad leaves
+ASC258,Mixed pulse and vegetable salad,15 g Kabuli channas,kabuli channas
+ASC259,Sprouted moong salad,48 g Salad leaves,salad leaves
+ASC260,Tossed salad,48 g Salad leaves,salad leaves
+ASC260,Tossed salad,150 g Red radish,red radish
+ASC260,Tossed salad,0.25 tsp Castor sugar,castor sugar
+ASC261,Mixed vegetable salad with curd sauce,36 g Salad leaves,salad leaves
+ASC262,Potato salad (Aloo ka salaad),3 tbsp Thousand Island dressing,thousand island dressing
+ASC263,Waldroff salad,24 g Lettuce leaf,lettuce leaf
+ASC263,Waldroff salad,125 g Red apple,red apple
+ASC263,Waldroff salad,1 tbsp Mayonnaise,mayonnaise
+ASC264,Coleslaw,1.5 tsp Mayonnaise,mayonnaise
+ASC265,Fruit salad (Phalon ka salaad),60 g Salad leaves,salad leaves
+ASC265,Fruit salad (Phalon ka salaad),2 tsp Pineapple juice,pineapple juice
+ASC265,Fruit salad (Phalon ka salaad),10 g Glaced cherries,glaced cherries
+ASC265,Fruit salad (Phalon ka salaad),2 tsp Orange juice,orange juice
+ASC266,Mayonnaise,0.5 tsp Castor sugar,castor sugar
+ASC267,Low calorie quick mayonnaise,0.5 tsp Castor sugar,castor sugar
+ASC268,Thousand island dressing,3 tsp Mayonnaise,mayonnaise
+ASC278,Sweet raita (Meetha raita),1 tbsp Castor sugar,castor sugar
+ASC283,Makhana kheer,5 g Makhana,makhana
+ASC291,Moong dal kheer,15 g Washed moong dal,washed moong dal
+ASC296,Egg halwa (Ande ka halwa),35 g Castor sugar,castor sugar
+ASC296,Egg halwa (Ande ka halwa),5 g Nuts,nuts
+ASC298,Pumpkin halwa (Kaddu ka halwa),10 g Coconut powder,coconut powder
+ASC300,Caramel custard (steamed),0.5 tsp Vanilla essence,vanilla essence
+ASC301,Baked custard,0.5 tsp Vanilla essence,vanilla essence
+ASC302,Soft Custard (stirred),0.5 tsp Vanilla essence,vanilla essence
+ASC304,Chocolate ice cream,0.5 tsp Vanilla essence,vanilla essence
+ASC305,Mango ice cream,0.5 tsp Vanilla essence,vanilla essence
+ASC307,Fruit Ice cream (Phalon ka Ice cream),0.25 tsp Red color,red color
+ASC307,Fruit Ice cream (Phalon ka Ice cream),5 g Candied peel,candied peel
+ASC307,Fruit Ice cream (Phalon ka Ice cream),15 g Dry fruits,dry fruits
+ASC309,Lemon souffle,0.5 tsp Lemon yellow color,lemon yellow color
+ASC309,Lemon souffle,5 g Glaced cherry,glaced cherry
+ASC309,Lemon souffle,2 tbsp Castor sugar,castor sugar
+ASC309,Lemon souffle,0.25 tsp Vanilla essence,vanilla essence
+ASC310,Orange souffle,0.5 tsp Orange colour,orange colour
+ASC310,Orange souffle,0.25 tsp Orange essence,orange essence
+ASC310,Orange souffle,5 g Glaced cherry,glaced cherry
+ASC310,Orange souffle,2 tbsp Castor sugar,castor sugar
+ASC311,Vanilla souffle,5 g Glaced cherry,glaced cherry
+ASC311,Vanilla souffle,2 tbsp Castor sugar,castor sugar
+ASC312,Chocolate souffle,5 g Glaced cherry,glaced cherry
+ASC312,Chocolate souffle,2 tbsp Castor sugar,castor sugar
+ASC312,Chocolate souffle,0.25 tsp Vanilla essence,vanilla essence
+ASC313,Pineapple souffle,1 tbsp Pineapple syrup,pineapple syrup
+ASC313,Pineapple souffle,0.5 tsp Lemon yellow color,lemon yellow color
+ASC313,Pineapple souffle,5 g Glaced cherry,glaced cherry
+ASC313,Pineapple souffle,2 tbsp Castor sugar,castor sugar
+ASC313,Pineapple souffle,0.25 tsp Vanilla essence,vanilla essence
+ASC315,Rich chocolate mousse,1.5 tbsp Castor sugar,castor sugar
+ASC315,Rich chocolate mousse,1 tsp Brandy/Contreau,brandy/contreau
+ASC315,Rich chocolate mousse,0.5 tsp Grated chocolate,grated chocolate
+ASC315,Rich chocolate mousse,0.5 tsp Vanilla essence,vanilla essence
+ASC316,Mango mousse,0.25 tsp Mango essence,mango essence
+ASC316,Mango mousse,100 g Mango pulp,mango pulp
+ASC316,Mango mousse,1 tbsp Castor sugar,castor sugar
+ASC317,Orange and pineapple cream,30 g Pineapple slices with syrup,pineapple slices with syrup
+ASC317,Orange and pineapple cream,25 g Orange jelly,orange jelly
+ASC317,Orange and pineapple cream,1 tsp Orange squash,orange squash
+ASC317,Orange and pineapple cream,2 tsp Castor sugar,castor sugar
+ASC317,Orange and pineapple cream,0.125 tsp Orange rind,orange rind
+ASC318,Charlotte rousse,25 g Red jelly,red jelly
+ASC318,Charlotte rousse,25 g Castor sugar,castor sugar
+ASC318,Charlotte rousse,30 g Castor sugar,castor sugar
+ASC318,Charlotte rousse,100 ml Syrup,syrup
+ASC318,Charlotte rousse,0.5 tsp Vanilla essence,vanilla essence
+ASC319,Triffle pudding,250 ml Fruit cocktail,fruit cocktail
+ASC319,Triffle pudding,1 tsp Castor sugar,castor sugar
+ASC319,Triffle pudding,25 g Castor sugar,castor sugar
+ASC319,Triffle pudding,0.5 tsp Vanilla essence,vanilla essence
+ASC320,Snow flakes pudding,0.5 tsp Vanilla essence,vanilla essence
+ASC322,Steamed orange pudding,2 tsp Orange juice,orange juice
+ASC322,Steamed orange pudding,75 ml Orange juice,orange juice
+ASC322,Steamed orange pudding,30 g Castor sugar,castor sugar
+ASC322,Steamed orange pudding,20 g Orange marmalade,orange marmalade
+ASC322,Steamed orange pudding,0.25 tsp Grated rind of orange,grated rind of orange
+ASC323,Meringue and rice pudding,1 tbsp Castor sugar,castor sugar
+ASC323,Meringue and rice pudding,1 tbsp Castor sugar,castor sugar
+ASC324,Cheese pudding,0.5 tsp Vanilla essence,vanilla essence
+ASC325,Chocolate pudding,30 g Castor sugar,castor sugar
+ASC325,Chocolate pudding,0.5 tsp Vanilla essence,vanilla essence
+ASC325,Chocolate pudding,0.5 tsp Vanilla essence,vanilla essence
+ASC326,Bread and butter pudding,5 g Glaced cherry,glaced cherry
+ASC327,Queen of pudding,15 g Lemon rind,lemon rind
+ASC327,Queen of pudding,1 tbsp Castor sugar,castor sugar
+ASC328,Pineapple upside down pudding,30 g Pineapple slice,pineapple slice
+ASC328,Pineapple upside down pudding,75 ml Pineapple juice,pineapple juice
+ASC328,Pineapple upside down pudding,5 g Glace cherry,glace cherry
+ASC328,Pineapple upside down pudding,30 g Castor sugar,castor sugar
+ASC329,Date and nut pie,25 g Castor sugar,castor sugar
+ASC330,Stewed apple with custard,100 g Firm apple,firm apple
+ASC331,Apple snowballs,250 g Cooking apples,cooking apples
+ASC331,Apple snowballs,10 g Glace cherry,glace cherry
+ASC331,Apple snowballs,10 g Castor sugar,castor sugar
+ASC332,Hot orange souffle,30 g Castor sugar,castor sugar
+ASC333,Hot chocolate souffle,40 g Castor sugar,castor sugar
+ASC333,Hot chocolate souffle,30 g Unsweetened chocolate,unsweetened chocolate
+ASC334,Hot vanilla souffle,40 g Castor sugar,castor sugar
+ASC334,Hot vanilla souffle,0.5 tsp Vanilla essence,vanilla essence
+ASC335,Plain burfi (Burfi),35 g Castor sugar,castor sugar
+ASC336,Coconut burfi (Nariyal ki burfi),0.25 tsp Color,color
+ASC336,Coconut burfi (Nariyal ki burfi),50 g Coconut powder,coconut powder
+ASC336,Coconut burfi (Nariyal ki burfi),50 g Castor sugar,castor sugar
+ASC337,Bottle gourd burfi (Ghiya/Lauki burfi),0.25 tsp Color (green),color
+ASC338,Chocolate burfi,1.5 tsp Cocoa,cocoa
+ASC338,Chocolate burfi,25 g Castor sugar,castor sugar
+ASC341,Semolina ladoo with khoya (Suji/Rava aur khoye ke ladoo ),50 g Castor sugar,castor sugar
+ASC342,Semolina ladoo with coconut (Suji/Rava aur nariyal ke ladoo ),35 g Castor sugar,castor sugar
+ASC343,Gram flour ladoo (Besan ladoo),50 g Castor sugar,castor sugar
+ASC344,Sesame ladoo (Til ke ladoo),50 g Til seeds,til seeds
+ASC346,Milk cake,5 g Nuts,nuts
+ASC347,Ghujia/Lavang latika,10 g Dessicated coconut,dessicated coconut
+ASC347,Ghujia/Lavang latika,30 g Castor sugar,castor sugar
+ASC348,Gulab Jamun with khoya,100 g Soft khoya,soft khoya
+ASC348,Gulab Jamun with khoya,0.06 tsp Soda-bi-carb,soda-bi-carb
+ASC350,Shahi tukre,1 sheet Silver foil,sheet silver foil
+ASC360,Potato bonda (Aloo bonda),0.25 tsp Soda,soda
+ASC365,Khasta kachori,0.25 tsp Aniseeds,aniseeds
+ASC367,Flattened rice cutlet (Chirwa cutlet/Chivda cutlet/Poha cutlet),30 g Chirwa,chirwa
+ASC375,Vegetable burger,25 g Tomato slices,tomato slices
+ASC375,Vegetable burger,25 g Onion slices,onion slices
+ASC375,Vegetable burger,25 g Wafer,wafer
+ASC375,Vegetable burger,2.5 tbsp Mayonnaise,mayonnaise
+ASC375,Vegetable burger,180 g Burger buns,burger buns
+ASC376,Cheese pizza,250 g Pizza base,pizza base
+ASC376,Cheese pizza,40 g Grated pizza cheese,grated pizza cheese
+ASC376,Cheese pizza,0.5 tsp Crushed oregano,crushed oregano
+ASC380,Vegeterian scotch egg,0.125 tsp Red pepper,red pepper
+ASC381,Paneer shaslik/tikka,1 tbsp White vinegar,white vinegar
+ASC381,Paneer shaslik/tikka,1 tsp Ginger juice,ginger juice
+ASC383,Spring roll,5 g Celery,celery
+ASC383,Spring roll,20 g Tender beans,tender beans
+ASC383,Spring roll,0.125 tsp Ajinomoto,ajinomoto
+ASC386,Coconut chutney (Nariyal ki chutney),0.75 tbsp Roasted channas,roasted channas
+ASC394,Short crust pastry,0.5 tsp Castor sugar,castor sugar
+ASC395,Custard tart,0.5 tsp Castor sugar,castor sugar
+ASC396,Lemon tart,0.25 tsp Yellow color,yellow color
+ASC396,Lemon tart,0.5 tsp Castor sugar,castor sugar
+ASC397,Jam tart,0.5 tsp Castor sugar,castor sugar
+ASC398,Orange cream tart,0.5 tsp Orange color,orange color
+ASC398,Orange cream tart,1 tbsp Orange segments,orange segments
+ASC398,Orange cream tart,150 ml Orange juice,orange juice
+ASC398,Orange cream tart,0.5 tsp Castor sugar,castor sugar
+ASC399,Pineapple tart,0.5 tsp Pineapple essence,pineapple essence
+ASC399,Pineapple tart,30 g Pineapple slice,pineapple slice
+ASC399,Pineapple tart,150 ml Pineapple juice,pineapple juice
+ASC399,Pineapple tart,5 g Glaced cherry,glaced cherry
+ASC399,Pineapple tart,0.5 tsp Castor sugar,castor sugar
+ASC400,Cheese and mushroom tart,0.5 tsp Castor sugar,castor sugar
+ASC403,Apple cinnamon pie,125 g Cooking apples,cooking apples
+ASC403,Apple cinnamon pie,0.5 tsp Castor sugar,castor sugar
+ASC404,Lemon meringue pie,15 g Lemon rind,lemon rind
+ASC404,Lemon meringue pie,5 g Glaced cherry,glaced cherry
+ASC404,Lemon meringue pie,0.5 tsp Castor sugar,castor sugar
+ASC404,Lemon meringue pie,10 g Castor sugar,castor sugar
+ASC405,Chocolate meringue pie,1.5 tbsp Cocoa,cocoa
+ASC405,Chocolate meringue pie,0.5 tbsp Castor sugar,castor sugar
+ASC405,Chocolate meringue pie,10 g Castor sugar,castor sugar
+ASC405,Chocolate meringue pie,0.5 tsp Vanilla essence,vanilla essence
+ASC406,Choux pastry,0.5 tsp Castor sugar,castor sugar
+ASC407,Cream puffs,0.5 tsp Castor sugar,castor sugar
+ASC407,Cream puffs,1 tbsp Castor sugar,castor sugar
+ASC408,Chocolate eclairs,2 tsp Cocoa,cocoa
+ASC408,Chocolate eclairs,0.5 tsp Castor sugar,castor sugar
+ASC409,Cheese balls,0.5 tsp Castor sugar,castor sugar
+ASC417,Plain cream cake,55 g Castor sugar,castor sugar
+ASC417,Plain cream cake,0.25 tsp Vanilla essence,vanilla essence
+ASC418,Apple cake (Seb ka cake),50 g Cooking apples,cooking apples
+ASC418,Apple cake (Seb ka cake),0.25 tsp Clove powder,clove powder
+ASC418,Apple cake (Seb ka cake),55 g Castor sugar,castor sugar
+ASC418,Apple cake (Seb ka cake),0.25 tsp Vanilla essence,vanilla essence
+ASC419,Marble cake,110 g Castor sugar,castor sugar
+ASC419,Marble cake,0.5 tsp Vanilla essence,vanilla essence
+ASC420,Chocolate cake,60 g Castor sugar,castor sugar
+ASC420,Chocolate cake,0.25 tsp Soda,soda
+ASC421,Orange cake,0.25 tsp Orange color,orange color
+ASC421,Orange cake,0.25 tsp Orange essence,orange essence
+ASC421,Orange cake,2 tsp Orange juice,orange juice
+ASC421,Orange cake,55 g Castor sugar,castor sugar
+ASC421,Orange cake,1 tsp Orange rind (grated),orange rind
+ASC422,Fruit Loaf,10 g Crystallised ginger,crystallised ginger
+ASC422,Fruit Loaf,10 g Glaced cherries,glaced cherries
+ASC422,Fruit Loaf,60 g Castor sugar,castor sugar
+ASC422,Fruit Loaf,50 g Candied peel,candied peel
+ASC423,Banana cake (Kele ka cake),0.5 tsp Banana flavour,banana flavour
+ASC424,Chocolate chiffon cake,0.5 tsp Vanilla essence,vanilla essence
+ASC425,Christmas cake,0.5 tsp Black cardamon,black cardamon
+ASC425,Christmas cake,"50 g Fruits (sultana, cherry, orange peel, cashewnuts, tutifruity)",fruits
+ASC425,Christmas cake,"50 g Fruits (sultana, cherry, orange peel, cashewnuts, tutifruity)",fruits
+ASC425,Christmas cake,"50 g Fruits (sultana, cherry, orange peel, cashewnuts, tutifruity)",fruits
+ASC425,Christmas cake,125 g Castor sugar,castor sugar
+ASC425,Christmas cake,25 ml Rum,rum
+ASC425,Christmas cake,"50 g Fruits (sultana, cherry, orange peel, cashewnuts, tutifruity)",fruits
+ASC425,Christmas cake,0.25 tsp Vanilla essence,vanilla essence
+ASC425,Christmas cake,"50 g Fruits (sultana, cherry, orange peel, cashewnuts, tutifruity)",fruits
+ASC426,Strawberry and vanilla cake with butter icing,0.25 tsp Red color,red color
+ASC426,Strawberry and vanilla cake with butter icing,0.25 tsp Strawberry flavour,strawberry flavour
+ASC426,Strawberry and vanilla cake with butter icing,110 g Castor sugar,castor sugar
+ASC426,Strawberry and vanilla cake with butter icing,2 tsp Vanilla essence,vanilla essence
+ASC427,Eggless cake,90 g Castor sugar,castor sugar
+ASC427,Eggless cake,0.25 tsp Soda-bi-carbonate,soda-bi-carbonate
+ASC427,Eggless cake,0.5 tsp Vanilla essence,vanilla essence
+ASC428,Sponge cake,50 g Castor sugar,castor sugar
+ASC428,Sponge cake,0.5 tsp Vanilla essence,vanilla essence
+ASC429,Swiss roll,1 tbsp Castor sugar,castor sugar
+ASC429,Swiss roll,50 g Castor sugar,castor sugar
+ASC429,Swiss roll,0.5 tsp Vanilla essence,vanilla essence
+ASC430,Pineapple pastry,30 g Pineapple slice,pineapple slice
+ASC430,Pineapple pastry,2 tbsp Pineapple juice,pineapple juice
+ASC430,Pineapple pastry,50 g Castor sugar,castor sugar
+ASC430,Pineapple pastry,0.5 tsp Vanilla essence,vanilla essence
+ASC431,Black forest pastry,50 g Castor sugar,castor sugar
+ASC431,Black forest pastry,2 tbsp Syrup,syrup
+ASC431,Black forest pastry,0.5 tsp Vanilla essence,vanilla essence
+ASC432,Coconut finger,25 g Dessicated coconut,dessicated coconut
+ASC432,Coconut finger,50 g Castor sugar,castor sugar
+ASC432,Coconut finger,0.5 tsp Vanilla essence,vanilla essence
+ASC432,Coconut finger,60 g Red color jam,red color jam
+ASC433,Pineapple cake,60 g Pineapple slice,pineapple slice
+ASC433,Pineapple cake,2 tbsp Pineapple juice,pineapple juice
+ASC433,Pineapple cake,50 g Castor sugar,castor sugar
+ASC433,Pineapple cake,0.5 tsp Vanilla essence,vanilla essence
+ASC436,Royal icing,0.5 tsp Vanilla essence,vanilla essence
+ASC439,Chocolate walnut cookies (Chocolate aur akhrot ke cookies),0.5 tsp Vanilla essence,vanilla essence
+ASC440,Chocolate chip cookies,1 tbsp Chocolate chips,chocolate chips
+ASC440,Chocolate chip cookies,0.25 tsp Vanilla essence,vanilla essence
+ASC441,Sweet plain biscuit,25 g Castor sugar,castor sugar
+ASC442,Chocolate biscuit,30 g Castor sugar,castor sugar
+ASC443,Coconut biscuit (Nariyal ke biscuit),30 g Coconut powder,coconut powder
+ASC443,Coconut biscuit (Nariyal ke biscuit),30 g Castor sugar,castor sugar
+ASC444,Sweet and salty biscuit (Meethay aur namkeen biscuit),0.25 tsp Ammonium bicarbonate,ammonium bicarbonate
+ASC444,Sweet and salty biscuit (Meethay aur namkeen biscuit),5 g Castor sugar,castor sugar
+ASC445,Peanut biscuit,30 g Castor sugar,castor sugar
+ASC446,Pin wheel biscuit,25 g Castor sugar,castor sugar
+ASC447,Saffron biscuit (Kesar biscuit),20 g Castor sugar,castor sugar
+ASC449,Ice box cookies,30 g Castor sugar,castor sugar
+ASC449,Ice box cookies,0.25 tsp Sodium bicarbonate,sodium bicarbonate
+ASC449,Ice box cookies,0.25 tsp Vanilla essence,vanilla essence
+ASC450,Ginger bread man,0.125 tsp Clove powder,clove powder
+ASC450,Ginger bread man,20 g Castor sugar,castor sugar
+ASC450,Ginger bread man,0.125 tsp Lemon rind,lemon rind
+ASC452,Short bread cookies,30 g Castor sugar,castor sugar
+ASC453,Coffee biscuit,30 g Castor sugar,castor sugar
+ASC453,Coffee biscuit,0.5 tsp Coffee powder,coffee powder
+ASC454,Melting moments,20 g Cornflakes,cornflakes
+ASC454,Melting moments,30 g Castor sugar,castor sugar
+ASC454,Melting moments,0.5 tsp Vanilla essence,vanilla essence
+ASC455,Ginger biscuit (Adarak ke biscuit),30 g Castor sugar,castor sugar
+ASC456,Soyabean muthias,30 g Soyabean,soyabean
+ASC457,Soyabean tikki,50 g Soyabean,soyabean
+ASC458,Soyabean namak paras,30 g Soyabean,soyabean
+ASC462,Rice moong dal cheela (Chawal aur moong dal ka cheela),50 g Split moong dal,split moong dal
+ASC465,Wheat flour and moong dal burfi (Atta aur moong dal ki burfi),20 g Moong dal washed,moong dal washed
+ASC466,Spinach burfi (Palak burfi),10 g Dessicated coconut,dessicated coconut
+ASC468,Sprouted moong daliya,50 g Broken wheat,broken wheat
+ASC470,Pearl millet ladoo (Bajra ladoo),20 g Washed moong dal,washed moong dal
+ASC471,Paushtik ladoo,50 g Castor sugar,castor sugar
+ASC474,Dhokla,0.5 tsp Soda,soda
+ASC475,Channa murmura premix,70 g Murmura,murmura
+ASC475,Channa murmura premix,30 g Roasted channa,roasted channa
+ASC476,Cracked wheat and green gram dal premix (Dalia moong dal premix),20 g Moong dal washed,moong dal washed
+ASC477,Rice flakes and roasted channa,30 g Roasted channa,roasted channa
+ASC487,Vegetable khichdi/khichri,10 g Washed moong dal,washed moong dal
+ASC489,Moong dal mixture,10 g Washed moong dal,washed moong dal
+ASC489,Moong dal mixture,20 g Castor sugar,castor sugar
+ASC493,Lemon squash (Nimbu ka squash),0.5 tsp KMS,kms
+ASC494,Orange squash (Santre ka squash),25 g Citric acid,citric acid
+ASC494,Orange squash (Santre ka squash),1 tsp Essence,essence
+ASC494,Orange squash (Santre ka squash),1 tbsp Color,color
+ASC494,Orange squash (Santre ka squash),0.5 tsp KMS,kms
+ASC495,Lichi squash,25 g Citric acid,citric acid
+ASC495,Lichi squash,0.5 tsp KMS,kms
+ASC496,Mango squash (Aam ka squash),30 g Citric acid,citric acid
+ASC496,Mango squash (Aam ka squash),0.5 tsp KMS,kms
+ASC497,Pineapple squash (Ananas ka squash),25 g Citric acid,citric acid
+ASC497,Pineapple squash (Ananas ka squash),1 tsp Essence,essence
+ASC497,Pineapple squash (Ananas ka squash),0.5 tbsp Color,color
+ASC497,Pineapple squash (Ananas ka squash),0.5 tsp KMS,kms
+ASC498,Lemon and ginger squash (Nimbu aur adrak ka squash),0.75 tsp KMS,kms
+ASC499,Apple jam (Seb ka murabba),5 g Citric acid,citric acid
+ASC501,Pineapple jam,5 g Citric acid,citric acid
+ASC502,Guava jelly (Amrood ki jelly),0.5 tsp Citric acid,citric acid
+ASC502,Guava jelly (Amrood ki jelly),500 g Guava,guava
+ASC503,Orange marmalade (Santray ka murabba),0.5 tsp Citric acid,citric acid
+ASC503,Orange marmalade (Santray ka murabba),100 g Guava,guava
+ASC503,Orange marmalade (Santray ka murabba),42.5 g Orange peel,orange peel
+ASC504,Carrot murabba (Gajar ka murabba),4 g Citric acid,citric acid
+ASC505,Gooseberry marmalade (Amla murabba),1000 ml Alum solution (2%),alum solution
+ASC506,Ginger candy (Adrak ki candy),4 g Citric acid,citric acid
+ASC507,Mango pickle (Aam ka achaar),25 g Aniseeds,aniseeds
+ASC509,Mixed vegetable pickle (Sabziyoon ka achaar),166.67 g Lotus stem,lotus stem
+ASC509,Mixed vegetable pickle (Sabziyoon ka achaar),1 g Sodium benzoate,sodium benzoate
+ASC509,Mixed vegetable pickle (Sabziyoon ka achaar),7 ml Glacial acetic acid,glacial acetic acid
+ASC513,Raw mango chutney (Kachhe aam/Kairi ki chutney),1000 g Raw mango pulp,raw mango pulp
+ASC513,Raw mango chutney (Kachhe aam/Kairi ki chutney),1 tsp Glacial acetic acid,glacial acetic acid
+ASC514,Tomato sauce,0.25 tsp Sodium benzoate,sodium benzoate
+ASC514,Tomato sauce,0.5 tsp Glacial acetic acid,glacial acetic acid
+ASC515,Tomato puree,5 g Sodium benzoate,sodium benzoate
+BFP002,Chat masala,25 g Black salt powder,black salt powder
+BFP003,Kashmiri masala,25 g Cloves powder,cloves powder
+BFP003,Kashmiri masala,15 g Black cumin seeds powder,black cumin seeds powder
+BFP003,Kashmiri masala,30 g White cumin seeds powder,white cumin seeds powder
+BFP007,Kashmiri tea (Kehwa),3 g Green tea leaves,green tea leaves
+BFP008,Steeped hot coffee,4 g Coffee powder,coffee powder
+BFP011,Hot chocolate,0.25 tsp Grated chocolate,grated chocolate
+BFP011,Hot chocolate,20 g Drinking chocolate,drinking chocolate
+BFP013,Cold coffee (with cream),6 g Coffee powder,coffee powder
+BFP015,Banana milkshake with ice cream (Kele ka milkshake ice cream ke saath),0.5 tsp Banana essence,banana essence
+BFP015,Banana milkshake with ice cream (Kele ka milkshake ice cream ke saath),0.25 tsp Green color,green color
+BFP015,Banana milkshake with ice cream (Kele ka milkshake ice cream ke saath),30 g Ice cream,ice cream
+BFP019,Flavoured milkshake,0.5 tsp Essence,essence
+BFP019,Flavoured milkshake,0.25 tsp Color,color
+BFP024,Jal jeera,"0.8 tsp Ground spices (cinnamon, clove, cardamom)",ground spices
+BFP024,Jal jeera,"0.8 tsp Ground spices (cinnamon, clove, cardamom)",ground spices
+BFP024,Jal jeera,"0.8 tsp Ground spices (cinnamon, clove, cardamom)",ground spices
+BFP024,Jal jeera,2 tsp Common salt,common salt
+BFP026,Gingo,200 ml Aerated soda,aerated soda
+BFP027,Mintade,5 g Lemon slice,lemon slice
+BFP027,Mintade,500 ml Aerated soda,aerated soda
+BFP029,Canjee,50 g Black carrots,black carrots
+BFP030,Cauliflower canjee (Phoolgobhi ki canjee),100 g Blanced cauliflower,blanced cauliflower
+BFP039,Semolina upma (Suji/Rava upma),40 g Coarse semolina,coarse semolina
+BFP043,Vegetable upma,5 g Blackgram,blackgram
+BFP044,Poha,40 g Flaked rice,flaked rice
+BFP045,Vegetable poha,40 g Flaked rice,flaked rice
+BFP045,Vegetable poha,5 g Blackgram,blackgram
+BFP056,Orange omelette/omlet,15 g Orange juice,orange juice
+BFP058,Spanish omelette/omlet,0.5 tsp Tabasco sauce,tabasco sauce
+BFP059,Mixed stock,150 g Bones and Meat trimmings,bones and meat trimmings
+BFP060,Meat stock,150 g Bones and Meat trimmings,bones and meat trimmings
+BFP065,Meat consomme (with mutton),80 g Lean meat,lean meat
+BFP065,Meat consomme (with mutton),480 ml Meat stock (fat free),meat stock
+BFP066,Consomme au julienne,480 ml Chicken stock,chicken stock
+BFP067,Consomme au vermicelli,480 ml Chicken stock,chicken stock
+BFP072,Green pea soup (Matar ka soup),360 ml Vegetable stock,vegetable stock
+BFP072,Green pea soup (Matar ka soup),20 g Bacon,bacon
+BFP073,Spinach soup (Palak ka soup),360 ml Vegetable chicken stock,vegetable chicken stock
+BFP074,Mixed vegetable soup,17 g Celery,celery
+BFP074,Mixed vegetable soup,10 g Onion slice,onion slice
+BFP074,Mixed vegetable soup,240 ml Vegetable stock,vegetable stock
+BFP075,Cheese soup,360 ml Vegetable stock,vegetable stock
+BFP076,Mulligatawny soup,15 g Cooked rice,cooked rice
+BFP076,Mulligatawny soup,20 g Cooking apple,cooking apple
+BFP076,Mulligatawny soup,240 ml Vegetable stock water,vegetable stock water
+BFP079,Cream of carrot soup,240 ml Vegetable/chicken stock,vegetable/chicken stock
+BFP080,Cream of broccoli soup,80 g Broccoli,broccoli
+BFP080,Cream of broccoli soup,240 ml Vegetable/chicken stock,vegetable/chicken stock
+BFP082,Cream of potato soup,240 ml Vegetable/chicken stock,vegetable/chicken stock
+BFP087,Almond soup (Badam ka soup),7.5 g Celery,celery
+BFP087,Almond soup (Badam ka soup),240 ml Chicken stock,chicken stock
+BFP095,Tartare sauce,150 g Mayonnaise,mayonnaise
+BFP095,Tartare sauce,10 g Caper,caper
+BFP114,Bathua poori,50 g Bathua,bathua
+BFP122,Pizza,50 g Pizza cheese,pizza cheese
+BFP122,Pizza,3 g Dry or fresh yeast,dry or fresh yeast
+BFP122,Pizza,50 g Sausages,sausages
+BFP124,Bacon and mushroom pancake,80 g Bacon,bacon
+BFP127,Minced meat pancake (with chicken),120 ml Meat stock,meat stock
+BFP136,Peas pulao (Matar pulao),0.25 tsp Black cardamon,black cardamon
+BFP137,Split bengal gram dal and vegetable pulao (Channa dal and vegetable pulao),0.25 tsp Black cardamon,black cardamon
+BFP138,Black channa pulao/ Bengal gram pulao (Kale chane ka pulao),0.25 tsp Black cardamon,black cardamon
+BFP141,Mutton pulao,0.5 tsp Kewra,kewra
+BFP141,Mutton pulao,120 ml Stock,stock
+BFP142,Chicken pulao,0.5 tsp Kewra,kewra
+BFP142,Chicken pulao,120 ml Stock,stock
+BFP144,Plain khitchdi (Plain khichri/khichdi),20 g Dehusked green gram,dehusked green gram
+BFP147,Instant idli (with semolina),1 tsp Eno's powder,eno's powder
+BFP148,Plain dosa,50 g Rice paraboiled sela,rice paraboiled sela
+BFP150,Masala dosa mixed vegetable fillings,50 g Rice paraboiled sela,rice paraboiled sela
+BFP151,Masala dosa paneer fillings,50 g Rice paraboiled sela,rice paraboiled sela
+BFP152,Uttapam,50 g Rice paraboiled sela,rice paraboiled sela
+BFP153,Appam,0.5 tsp Yeast,yeast
+BFP154,Beans and macaroni,40 g Macaroni,macaroni
+BFP155,Spaghetti bolognese,40 g Spaghetti,spaghetti
+BFP155,Spaghetti bolognese,0.5 C Meat stock,meat stock
+BFP157,Meat and macaroni casserole,40 g Macaroni,macaroni
+BFP157,Meat and macaroni casserole,0.25 C Meat stock,meat stock
+BFP158,Spaghetti with meat balls and tomato sauce,0.125 tsp Cinnamon clove powder,cinnamon clove powder
+BFP158,Spaghetti with meat balls and tomato sauce,40 g Spaghetti,spaghetti
+BFP158,Spaghetti with meat balls and tomato sauce,0.125 tsp Cinnamon clove powder,cinnamon clove powder
+BFP159,Spaghetti with paneer balls and tomato sauce,0.125 tsp Cinnamon clove powder,cinnamon clove powder
+BFP159,Spaghetti with paneer balls and tomato sauce,40 g Spaghetti,spaghetti
+BFP159,Spaghetti with paneer balls and tomato sauce,0.125 tsp Cinnamon clove powder,cinnamon clove powder
+BFP161,Lasagne with meat sauce,25 g Celery stick,celery stick
+BFP161,Lasagne with meat sauce,80 g Dry lasagne sheets,dry lasagne sheets
+BFP161,Lasagne with meat sauce,15 g Mozzarella cheese,mozzarella cheese
+BFP161,Lasagne with meat sauce,0.5 tsp Oregano/Basil,oregano/basil
+BFP161,Lasagne with meat sauce,1 sprig Thyme,thyme
+BFP162,Lasagne with vegetables,80 g Dry lasagne sheets,dry lasagne sheets
+BFP162,Lasagne with vegetables,30 g Mazzarella cheese or gruyere cheese,mazzarella cheese or gruyere cheese
+BFP162,Lasagne with vegetables,2 g Basil leaf,basil leaf
+BFP162,Lasagne with vegetables,1 sprig Thyme,thyme
+BFP169,Mustard seeds baghar (Mustard seed tadka),0.25 tsp Asafoetida powder,asafoetida powder
+BFP171,Urad special dehusked,37.5 g Radish with tender leaves,radish with tender leaves
+BFP174,Moong dal with vadi,8 g Vadi,vadi
+BFP178,Green gram whole with baghar (Sabut moong dal with tadka),30 g Whole pulses,whole pulses
+BFP179,Urad sabut special,1 sprig Green coriander leaves,green coriander leaves
+BFP185,Kabuli channa curry,40 g Kabuli channa,kabuli channa
+BFP187,Besan gatte curry,0.25 tsp Black cumin seeds,black cumin seeds
+BFP187,Besan gatte curry,0.25 tsp Mace powder,mace powder
+BFP187,Besan gatte curry,3.75 g Basil,basil
+BFP190,Dry masala chops,120 g Mutton chops,mutton chops
+BFP196,Shahi keema kofta curry,1 g Blade of mace,blade of mace
+BFP197,Minced meat ball curry,1 g Blade of mace,blade of mace
+BFP198,Boti kebab,0.25 tsp Tomato color,tomato color
+BFP198,Boti kebab,0.25 tsp Cumin seeds powder,cumin seeds powder
+BFP198,Boti kebab,120 g Mutton boneless boti,mutton boneless boti
+BFP199,Mutton seekh kebab,0.25 tsp Tomato color,tomato color
+BFP199,Mutton seekh kebab,30 g Onion slice,onion slice
+BFP199,Mutton seekh kebab,100 g Mutton mince,mutton mince
+BFP203,Soya chunks sweet and sour (Nutrinugget sweet and sour),17 g Celery,celery
+BFP203,Soya chunks sweet and sour (Nutrinugget sweet and sour),25 g Pineapple slice,pineapple slice
+BFP203,Soya chunks sweet and sour (Nutrinugget sweet and sour),20 g Nutrinugget chunks,nutrinugget chunks
+BFP203,Soya chunks sweet and sour (Nutrinugget sweet and sour),60 ml Chicken stock,chicken stock
+BFP204,Soya chunks korma (Nutrinugget korma),1 g Blade of mace,blade of mace
+BFP204,Soya chunks korma (Nutrinugget korma),20 g Nutrinugget chunks,nutrinugget chunks
+BFP205,Mushroom matar,50 g Peas shelled,peas shelled
+BFP206,Soya chunks and peas (Nutrinugget matar),50 g Peas shelled,peas shelled
+BFP206,Soya chunks and peas (Nutrinugget matar),20 g Nutrinugget chunks,nutrinugget chunks
+BFP210,Vegetarian nargisi kofta curry,0.25 tsp Yellow colour,yellow colour
+BFP218,Broccoli chicken ala king,100 g Broccoli,broccoli
+BFP218,Broccoli chicken ala king,0.25 tsp Oregano,oregano
+BFP218,Broccoli chicken ala king,80 ml White sauce,white sauce
+BFP221,Chicken sweet and sour,17 g Celery,celery
+BFP221,Chicken sweet and sour,25 g Pineapple slice,pineapple slice
+BFP221,Chicken sweet and sour,60 ml Chicken stock,chicken stock
+BFP222,Chicken korma,1 g Blade of mace,blade of mace
+BFP226,Fish finger,100 g Fish fillet,fish fillet
+BFP229,Fish in coconut milk (Nariyal ke doodh ke saath machli),120 g Fish steak (singhara),fish steak
+BFP231,Baked stuffed fish,1 tbsp Celery,celery
+BFP231,Baked stuffed fish,20 g Soft crumbs,soft crumbs
+BFP233,Crispy baked fish,125 g Pomfret fillet,pomfret fillet
+BFP249,Yam kofta curry (Zimikand/Suran kofta curry),120 g Yam,yam
+BFP250,Jackfruit kofta curry (Kathal ka kofta curry),120 g Jack fruit,jack fruit
+BFP261,Cabbage rolls (dry) ((Pattagobhi rolls) (dry)),60 g Whole cabbage leaves,whole cabbage leaves
+BFP262,Cabbage rolls (curry) ((Pattagobhi rolls)(curry)),60 g Whole cabbage leaves,whole cabbage leaves
+BFP269,Okra/Lady's fingers fry (Bhindi sabzi/sabji/subji),120 g Lady's finger,lady's finger
+BFP270,Crispy okra/Crispy lady's fingers (Karare bhindi),80 g Lady's finger,lady's finger
+BFP270,Crispy okra/Crispy lady's fingers (Karare bhindi),0.25 tsp Cumin seeds powder,cumin seeds powder
+BFP275,Yam fried (Zimikand/Suran fried),120 g Yam,yam
+BFP278,Vegetables stir fry,20 g Baby corn cobs,baby corn cobs
+BFP278,Vegetables stir fry,20 g Snow peas,snow peas
+BFP278,Vegetables stir fry,20 g Baby carrot,baby carrot
+BFP278,Vegetables stir fry,20 g Baby onion,baby onion
+BFP278,Vegetables stir fry,20 g Broccoli,broccoli
+BFP278,Vegetables stir fry,20 g Cherry tomato,cherry tomato
+BFP279,Broccoli delight,200 g Broccoli,broccoli
+BFP279,Broccoli delight,0.25 tsp Kashmiri masala,kashmiri masala
+BFP280,Dhansak (vegetarian),5 g Split green gram,split green gram
+BFP280,Dhansak (vegetarian),15 g Split red gram,split red gram
+BFP299,Beetroot and egg salad (Chukandar aur ande ka salad),30 g French dressing,french dressing
+BFP300,Sour cream potato salad,2 tsp Sour cream,sour cream
+BFP300,Sour cream potato salad,1 tbsp Mayonnaise,mayonnaise
+BFP301,Tossed green salad,48 g Lettuce leaves,lettuce leaves
+BFP301,Tossed green salad,1 tbsp French dressing,french dressing
+BFP302,Spring basket salad,30 g Green cabbage,green cabbage
+BFP302,Spring basket salad,40 g Baby corn cobs,baby corn cobs
+BFP302,Spring basket salad,20 g Macaroni,macaroni
+BFP302,Spring basket salad,60 g Broccoli,broccoli
+BFP302,Spring basket salad,2 tbsp Mayonnaise,mayonnaise
+BFP305,Chicken and tomato towers,24 g Lettuce leaves,lettuce leaves
+BFP305,Chicken and tomato towers,17 g Celery,celery
+BFP305,Chicken and tomato towers,1 tbsp Mayonnaise,mayonnaise
+BFP306,Jellied sunshine fruit salad,48 g Lettuce leaves,lettuce leaves
+BFP306,Jellied sunshine fruit salad,2 tbsp Pineapple syrup,pineapple syrup
+BFP307,Tomato aspic,48 g Lettuce leaves,lettuce leaves
+BFP307,Tomato aspic,7.5 g Celery,celery
+BFP307,Tomato aspic,17 g Celery,celery
+BFP308,Frozen frosty fruit salad (Phalon ka salaad),100 g Fruit cocktail,fruit cocktail
+BFP320,Mint and peanut raita (Pudinay aur moongfali ka raita),20 g Mint leaves with stems,mint leaves with stems
+BFP322,Bathua raita,100 g Bathua,bathua
+BFP328,Guava raita (Amarood ka raita),50 g Guava,guava
+BFP329,Grapes raita (Angoor ka raita),25 g Black grapes,black grapes
+BFP329,Grapes raita (Angoor ka raita),25 g Green grapes,green grapes
+BFP345,Caramel custard (baked),0.25 tsp Vanilla essence,vanilla essence
+BFP346,Vanilla ice cream without egg,0.5 tsp Vanilla essence,vanilla essence
+BFP347,Vanilla ice cream with egg,0.5 tsp Vanilla essence,vanilla essence
+BFP348,Strawberry ice cream,0.25 tsp Strawberry colour,strawberry colour
+BFP348,Strawberry ice cream,0.5 tsp Strawberry essence,strawberry essence
+BFP350,Chocochip ice cream,25 g Chocolate,chocolate
+BFP350,Chocochip ice cream,10 g Chocolate chip,chocolate chip
+BFP351,Choconut ice cream,25 g Chocolate,chocolate
+BFP352,Pear chocholate sunday,5 g Cocoa,cocoa
+BFP352,Pear chocholate sunday,80 g Canned or stewed pears,canned or stewed pears
+BFP352,Pear chocholate sunday,0.5 tsp Vanilla essence,vanilla essence
+BFP353,Chocolate sauce,5 g Cocoa,cocoa
+BFP354,Coffee ice cream,1 tsp Instand coffee powder,instand coffee powder
+BFP354,Coffee ice cream,0.5 tsp Vanilla essence,vanilla essence
+BFP355,Coffee pear alaska,20 g Marie biscuits,marie biscuits
+BFP355,Coffee pear alaska,80 g Canned or stewed pears,canned or stewed pears
+BFP355,Coffee pear alaska,30 g Castor sugar,castor sugar
+BFP355,Coffee pear alaska,1 tsp Instand coffee powder,instand coffee powder
+BFP355,Coffee pear alaska,0.5 tsp Vanilla essence,vanilla essence
+BFP356,Crunchy butterscotch,10 g Cornflakes,cornflakes
+BFP356,Crunchy butterscotch,0.5 tsp Vanilla essence,vanilla essence
+BFP358,Peach melba ice cream,50 g Peaches (canned/stewed_,peaches (canned/stewed_
+BFP358,Peach melba ice cream,0.5 tsp Vanilla essence,vanilla essence
+BFP359,Vanilla ice cream with apples in hot cherry sauce,0.25 tsp Red color,red color
+BFP359,Vanilla ice cream with apples in hot cherry sauce,50 g Cooking apple,cooking apple
+BFP359,Vanilla ice cream with apples in hot cherry sauce,16.65 g Glaced cherries,glaced cherries
+BFP359,Vanilla ice cream with apples in hot cherry sauce,4 tbsp Fruit syrup,fruit syrup
+BFP359,Vanilla ice cream with apples in hot cherry sauce,0.5 tsp Vanilla essence,vanilla essence
+BFP360,Hot cherry sauce,0.25 tsp Red color,red color
+BFP360,Hot cherry sauce,16.65 g Glaced cherries,glaced cherries
+BFP360,Hot cherry sauce,4 tbsp Fruit syrup,fruit syrup
+BFP361,Grape and orange whip,30 g Orange flavoured jelly crystals,orange flavoured jelly crystals
+BFP362,Honey banana cream,8 g Black grapes,black grapes
+BFP363,Raspberry bavarian cream,80 g Raspberry,raspberry
+BFP364,Fruit delight,50 g Lemon jelly crystals,lemon jelly crystals
+BFP364,Fruit delight,80 g Peaches (canned/stewed_,peaches (canned/stewed_
+BFP365,Creamy chocolate mousse,1 tbsp Cocoa,cocoa
+BFP365,Creamy chocolate mousse,15 g Castor sugar,castor sugar
+BFP365,Creamy chocolate mousse,0.75 tsp Brandy,brandy
+BFP365,Creamy chocolate mousse,0.25 tsp Chocolate,chocolate
+BFP366,Cold lemon souffle,0.5 tsp Lemon essence,lemon essence
+BFP366,Cold lemon souffle,0.25 tsp Lemon yellow colour,lemon yellow colour
+BFP366,Cold lemon souffle,5 g Glaced cherries,glaced cherries
+BFP366,Cold lemon souffle,30 g Castor sugar,castor sugar
+BFP367,Cold orange souffle,0.25 tsp Orange colour,orange colour
+BFP367,Cold orange souffle,0.5 tsp Orange essence,orange essence
+BFP367,Cold orange souffle,5 g Glaced cherries,glaced cherries
+BFP367,Cold orange souffle,30 g Castor sugar,castor sugar
+BFP368,Cold pineapple souffle,0.5 tsp Pineapple essence,pineapple essence
+BFP368,Cold pineapple souffle,0.25 tsp Yellow color,yellow color
+BFP368,Cold pineapple souffle,1 tbsp Pineapple juice,pineapple juice
+BFP368,Cold pineapple souffle,5 g Glaced cherries,glaced cherries
+BFP368,Cold pineapple souffle,30 g Castor sugar,castor sugar
+BFP369,Cold vanilla souffle,5 g Glaced cherries,glaced cherries
+BFP369,Cold vanilla souffle,30 g Castor sugar,castor sugar
+BFP369,Cold vanilla souffle,0.5 tsp Vanilla essence,vanilla essence
+BFP370,Cold chocolate souffle,5 g Glaced cherries,glaced cherries
+BFP370,Cold chocolate souffle,30 g Castor sugar,castor sugar
+BFP370,Cold chocolate souffle,5 g Chocolate,chocolate
+BFP372,Apricot fool,60 g Dried apricots,dried apricots
+BFP373,Pavlova,150 g Fruit cocktail,fruit cocktail
+BFP373,Pavlova,50 g Castor sugar,castor sugar
+BFP373,Pavlova,0.5 tsp Vanilla essence,vanilla essence
+BFP379,Apple crumb pudding,50 g Cooking apple,cooking apple
+BFP379,Apple crumb pudding,0.25 tsp Mixed spice,mixed spice
+BFP380,Steamed cake with chocolate sauce,1 tbsp Cocoa,cocoa
+BFP380,Steamed cake with chocolate sauce,25 g Castor sugar,castor sugar
+BFP380,Steamed cake with chocolate sauce,0.5 tsp Vanilla essence,vanilla essence
+BFP382,Hot lemon souffle,0.5 tsp Lemon essence,lemon essence
+BFP382,Hot lemon souffle,0.25 tsp Orange colour,orange colour
+BFP382,Hot lemon souffle,2 tbsp Castor sugar,castor sugar
+BFP386,Gulab jamun with milk powder,0.25 tsp Soda bi-carb,soda bi-carb
+BFP388,Chum chum,0.5 tsp Kewra/Rose water essence,kewra/rose water essence
+BFP388,Chum chum,0.08 nos Reetha,reetha
+BFP388,Chum chum,0.25 C Whey water,whey water
+BFP389,Dil bahar,0.5 tsp Food colour,food colour
+BFP389,Dil bahar,0.08 nos Reetha,reetha
+BFP389,Dil bahar,0.25 C Whey water,whey water
+BFP390,Rasbhari,0.5 tsp Food colour,food colour
+BFP390,Rasbhari,0.08 nos Reetha,reetha
+BFP390,Rasbhari,0.25 C Whey water,whey water
+BFP391,Rajbogh,0.5 tsp Food colour,food colour
+BFP391,Rajbogh,0.08 nos Reetha,reetha
+BFP391,Rajbogh,0.25 C Whey water,whey water
+BFP392,Rasgulla,0.5 tsp Kewra/Rose water essence,kewra/rose water essence
+BFP392,Rasgulla,0.08 nos Reetha,reetha
+BFP392,Rasgulla,0.25 C Whey water,whey water
+BFP393,Rasmalai,0.08 nos Reetha,reetha
+BFP393,Rasmalai,0.25 C Whey water,whey water
+BFP396,Khoa coconut burfi,0.25 tsp Color (desired),color
+BFP396,Khoa coconut burfi,0.5 tsp Kewra,kewra
+BFP396,Khoa coconut burfi,25 g Castor sugar,castor sugar
+BFP404,Khoa ladoo,20 g Castor sugar,castor sugar
+BFP406,Wheat and gram flour ladoo (Atta besan ladoo),20 g Castor sugar,castor sugar
+BFP407,Semolina ladoo with nuts (Suji/Rava ladoo with nuts),20 g Castor sugar,castor sugar
+BFP412,Sesame chickpeas brittle (Til aur channe ki chikki),40 g Channal dal,channal dal
+BFP412,Sesame chickpeas brittle (Til aur channe ki chikki),10 g Gingerlly/Till seeds,gingerlly/till seeds
+BFP413,Murmura chikki,15 g Puffed rice/murmura,puffed rice/murmura
+BFP421,Fish pakora/pakoda,80 g Fish fillets,fish fillets
+BFP439,Khaman (dhokla),0.25 tsp Eno's salt,eno's salt
+BFP440,Instant dhokla,1 tsp Eno's salt,eno's salt
+BFP448,Gun powder chutney,20 g Bengal gram dehusked,bengal gram dehusked
+BFP448,Gun powder chutney,0.25 tsp Asafoetida powder,asafoetida powder
+BFP450,Dessicated coconut chutney (Sookhe kase nariyal ki chutney),0.25 tsp Asafoetida powder,asafoetida powder
+BFP453,Mayonnaise vegetable dip,4 tbsp Mayonnaise,mayonnaise
+BFP458,Peanut butter cucumber sandwich,20 g Peanut butter,peanut butter
+BFP461,Chicken walnut sandwich (Chicken aur akhrot ke sandwich),20 g Mayonnaise,mayonnaise
+BFP468,Submarine sandwich,4 tbsp Mayonnaise,mayonnaise
+BFP471,Sunset and sunrise open sandwich,1.5 tbsp Mayonnaise,mayonnaise
+BFP476,Chocolate sponge cake,10 g Cocoa,cocoa
+BFP476,Chocolate sponge cake,50 g Castor sugar,castor sugar
+BFP476,Chocolate sponge cake,0.5 tsp Vanilla essence,vanilla essence
+BFP478,Chocolate swiss roll,10 g Cocoa,cocoa
+BFP478,Chocolate swiss roll,2 tsp Castor sugar,castor sugar
+BFP478,Chocolate swiss roll,50 g Castor sugar,castor sugar
+BFP478,Chocolate swiss roll,10 g Chocolate,chocolate
+BFP478,Chocolate swiss roll,0.5 tsp Vanilla essence,vanilla essence
+BFP479,Lemon curd filling,0.25 tsp Lemon color,lemon color
+BFP479,Lemon curd filling,0.5 tsp Lemon essence,lemon essence
+BFP479,Lemon curd filling,50 g Castor sugar,castor sugar
+BFP482,Chocolate pastry,10 g Cocoa,cocoa
+BFP482,Chocolate pastry,1 tbsp Cocoa,cocoa
+BFP482,Chocolate pastry,3.33 g Glaced cherries,glaced cherries
+BFP482,Chocolate pastry,2 tsp Castor sugar,castor sugar
+BFP482,Chocolate pastry,2 tsp Castor sugar,castor sugar
+BFP482,Chocolate pastry,50 g Castor sugar,castor sugar
+BFP482,Chocolate pastry,10 g Chocolate,chocolate
+BFP482,Chocolate pastry,0.5 tsp Vanilla essence,vanilla essence
+BFP483,Assorted pastry,0.5 tsp Vanilla essence,vanilla essence
+BFP483,Assorted pastry,0.5 tsp Yellow color,yellow color
+BFP483,Assorted pastry,3.33 g Glaced cherry,glaced cherry
+BFP483,Assorted pastry,50 g Castor sugar,castor sugar
+BFP483,Assorted pastry,2 tsp Castor sugar,castor sugar
+BFP483,Assorted pastry,0.5 tsp Strawberry essence,strawberry essence
+BFP484,Orange gateau,85 g Orange juice,orange juice
+BFP484,Orange gateau,1 tbsp Castor sugar,castor sugar
+BFP484,Orange gateau,60 g Castor sugar,castor sugar
+BFP484,Orange gateau,0.5 tbsp Warmed water,warmed water
+BFP485,Black forest gateau,50 g Canned cherries,canned cherries
+BFP485,Black forest gateau,1 tbsp Castor sugar,castor sugar
+BFP485,Black forest gateau,60 g Castor sugar,castor sugar
+BFP485,Black forest gateau,10 g Plain chocolate,plain chocolate
+BFP489,Lemon cake,2 drops Lemon color,drops lemon color
+BFP489,Lemon cake,0.25 tsp Lemon essence,lemon essence
+BFP489,Lemon cake,7.5 g Lemon peel,lemon peel
+BFP489,Lemon cake,1 tsp Castor sugar,castor sugar
+BFP489,Lemon cake,55 g Castor sugar,castor sugar
+BFP491,Dundee cake,40 g Castor sugar,castor sugar
+BFP491,Dundee cake,10 g Candied peel,candied peel
+BFP491,Dundee cake,0.25 tsp Vanilla essence,vanilla essence
+BFP491,Dundee cake,25 g Mixed dried fruit,mixed dried fruit
+BFP492,Victorian sandwich cake,1 tsp Castor sugar,castor sugar
+BFP492,Victorian sandwich cake,55 g Castor sugar,castor sugar
+BFP495,Chocolate eggless cake,50 g Cola drink,cola drink
+BFP495,Chocolate eggless cake,0.25 tsp Soda bi-carb,soda bi-carb
+BFP495,Chocolate eggless cake,0.5 tsp Vanilla essence/Lemon essence,vanilla essence/lemon essence
+BFP496,Orange eggless cake,50 ml Orange drink,orange drink
+BFP496,Orange eggless cake,0.5 tsp Orange essence,orange essence
+BFP496,Orange eggless cake,1 tsp Orange juice,orange juice
+BFP496,Orange eggless cake,0.25 tsp Soda bi-carb,soda bi-carb
+BFP498,Chocolate glace icing,0.5 tsp Vanilla essence,vanilla essence
+BFP499,Butter icing,0.5 tsp Vanilla essence,vanilla essence
+BFP500,Chocolate butter icing,0.5 tsp Vanilla essence,vanilla essence
+BFP502,Almond biscuit (Badam ke biscuit),0.125 tsp Almond essence,almond essence
+BFP502,Almond biscuit (Badam ke biscuit),15 g Castor sugar,castor sugar
+BFP505,Orange biscuit,0.25 tsp Orange color,orange color
+BFP505,Orange biscuit,0.25 tsp Orange juice,orange juice
+BFP505,Orange biscuit,5.1 g Orange rind,orange rind
+BFP505,Orange biscuit,15 g Orange castor sugar,orange castor sugar
+BFP506,Gingerman biscuit,0.17 tsp Clove powder,clove powder
+BFP506,Gingerman biscuit,1.5 g Glaced cherries,glaced cherries
+BFP506,Gingerman biscuit,0.25 tsp Castor sugar,castor sugar
+BFP506,Gingerman biscuit,10 g Castor sugar,castor sugar
+BFP506,Gingerman biscuit,0.25 tsp Soda bi-carb,soda bi-carb
+BFP507,Coffee drops,15 g Castor sugar,castor sugar
+BFP507,Coffee drops,0.5 tsp Instant coffee powder,instant coffee powder
+BFP508,Christmas biscuit,20 g Castor sugar,castor sugar
+BFP509,Christmas wreath biscuit,20 g Castor sugar,castor sugar
+BFP510,Christmas bell biscuit,20 g Castor sugar,castor sugar
+BFP511,Christmas star biscuit,0.5 tsp Almonds Essence,almonds essence
+BFP511,Christmas star biscuit,0.5 tsp Green color,green color
+BFP511,Christmas star biscuit,3 g Glaced cherries,glaced cherries
+BFP511,Christmas star biscuit,20 g Castor sugar,castor sugar
+BFP511,Christmas star biscuit,0.5 tsp Vanilla essence,vanilla essence
+BFP512,Christmas tree biscuit,20 g Castor sugar,castor sugar
+BFP512,Christmas tree biscuit,5 g Lemon Peel,lemon peel
+BFP513,Chocolate cream shells,1.5 g Cocoa,cocoa
+BFP513,Chocolate cream shells,20 g Castor sugar,castor sugar
+BFP513,Chocolate cream shells,0.5 tsp Vanilla essence,vanilla essence
+BFP516,Jelly biscuit,15 g Quick rolled oats,quick rolled oats
+BFP516,Jelly biscuit,1 tsp Jelly,jelly
+BFP516,Jelly biscuit,15 g Castor sugar,castor sugar
+BFP516,Jelly biscuit,0.5 tsp Vanilla essence,vanilla essence
+BFP517,Cherry and walnut cookies,10 g Glaced cherries,glaced cherries
+BFP517,Cherry and walnut cookies,0.5 tsp Vanilla essence,vanilla essence
+BFP522,Fruit flan,100 g Canned peaches,canned peaches
+BFP522,Fruit flan,60 ml Peach syrup,peach syrup
+BFP523,Orange cream flan,42.5 g Orange juice,orange juice
+BFP523,Orange cream flan,45 g Castor sugar,castor sugar
+BFP527,Fruit puree tart,8.3 g Apricot,apricot
+BFP527,Fruit puree tart,8.3 g Raspberries,raspberries
+BFP532,Orange chiffon pie,60 g Orange juice,orange juice
+BFP534,Cream buns,1 tbsp Castor sugar,castor sugar
+BFP534,Cream buns,2.5 g Castor sugar,castor sugar
+BFP535,Savoury puffs,1 tbsp Castor sugar,castor sugar
+BFP535,Savoury puffs,2.5 g Castor sugar,castor sugar
+BFP535,Savoury puffs,75 ml Chicken stock,chicken stock
+BFP536,Choux swans,3.33 g Glaced cherries,glaced cherries
+BFP536,Choux swans,10 g Castor sugar,castor sugar
+BFP545,Vegetable patties,1.67 g Green chill,green chill
+BFP549,Pulse mix,2 g Spinach Powder,spinach powder
+BFP550,Shishu ahar,40 g Puffed rice,puffed rice
+BFP552,Cereal pulse mix with amylase rice flour,15 g ARF,arf
+BFP558,Lentils and wheat porridge (Dal wheat porridge/daliya ),20 g Broken wheat,broken wheat
+BFP564,Pearl millet mathri (Bajra mathri),25 g Pearl millet flour,pearl millet flour
+BFP569,Soya chikki,20 g Puffed rice,puffed rice
+BFP569,Soya chikki,10 g Soyabean flour,soyabean flour
+BFP575,Soya roti,10 g Soya flour,soya flour
+BFP576,Poshtik khichdi/khichri,50 g Amaranthus leaves,amaranthus leaves
+BFP577,Namkeen daliya,90 g Broken wheat,broken wheat
+BFP578,Sprouts upma,30 g Green gram sprouts,green gram sprouts
+BFP580,Poshtik chilla/cheela,30 g Green gram sprouts,green gram sprouts
+BFP583,Apple jelly (Seb ki jelly),2 g Citric Acid,citric acid
+BFP585,Marmalade (Murabba),2 g Citric Acid,citric acid
+BFP589,Plum squash (Aloo bukhara squash),25 g Citric Acid,citric acid
+BFP589,Plum squash (Aloo bukhara squash),1 tsp Essence,essence
+BFP589,Plum squash (Aloo bukhara squash),0.5 tsp Sodium benzoate,sodium benzoate
+BFP597,Brinjal pickle (Baingan ka achaar),50 g Mustard Seeds powder,mustard seeds powder
+BFP599,Jhatpat achar with carrot (Jhatpat achaar gajar ke saath),50 g Mustard Seeds powder,mustard seeds powder
+BFP601,Tomato chutney (Tamatar ki chutney),1 g Sodium benzoate,sodium benzoate
+BFP601,Tomato chutney (Tamatar ki chutney),6 g Glacial acetic acid,glacial acetic acid
+BFP602,Tomato ketchup,1 g Sodium benzoate,sodium benzoate
+BFP607,Mango milkshake with ice cream (Aam milkshake ice cream ke saath),30 g Ice cream,ice cream
+BFP607,Mango milkshake with ice cream (Aam milkshake ice cream ke saath),0.25 tsp Yellow color,yellow color
+BFP607,Mango milkshake with ice cream (Aam milkshake ice cream ke saath),0.5 tsp Mango essence,mango essence
+BFP608,Pineapple milkshake with ice cream (Ananas milkshake ice cream ke saath),30 g Ice cream,ice cream
+BFP608,Pineapple milkshake with ice cream (Ananas milkshake ice cream ke saath),0.25 tsp Yellow color,yellow color
+BFP608,Pineapple milkshake with ice cream (Ananas milkshake ice cream ke saath),0.5 tsp Pineapple essence,pineapple essence
+BFP609,Orange milkshake with ice cream (Narangi milkshake ice cream ke saath),30 g Ice cream,ice cream
+BFP609,Orange milkshake with ice cream (Narangi milkshake ice cream ke saath),0.25 tsp Green color,green color
+BFP609,Orange milkshake with ice cream (Narangi milkshake ice cream ke saath),0.5 tsp Banana essence,banana essence
+OSR002,Sattu drink,6 tbsp Chana sattu,chana sattu
+OSR005,Thandai,1.5 tsp Gulkand,gulkand
+OSR005,Thandai,20 nos Rose petals,rose petals
+OSR005,Thandai,2 tbsp Sliced nuts,sliced nuts
+OSR007,Apple oats chia seed smoothie,58.5 g Rolled oats,rolled oats
+OSR007,Apple oats chia seed smoothie,15 tbsp Icecubes (optional),icecubes
+OSR008,Nannari sharbat,50 g Nannari root/ Indian sarsaparilla,nannari root/ indian sarsaparilla
+OSR011,Black rice kheer (Chak-hao kheer),25 g Dry nuts,dry nuts
+OSR012,Coconut kheer (Nariyal ki kheer),0.5 tsp Powdered green cardamam,powdered green cardamam
+OSR012,Coconut kheer (Nariyal ki kheer),35.75 g Flaked almonds,flaked almonds
+OSR012,Coconut kheer (Nariyal ki kheer),40 g Coconut chunk,coconut chunk
+OSR012,Coconut kheer (Nariyal ki kheer),244 g Coconut cream,coconut cream
+OSR012,Coconut kheer (Nariyal ki kheer),36 g Mixed dry fruit,mixed dry fruit
+OSR013,Apple sago payasam (Seb aur sabudana ki kheer),1 tsp Green cardamom powder,green cardamom powder
+OSR016,Mango malpua,4 tbsp Mango pulp,mango pulp
+OSR016,Mango malpua,2 tbsp Coconut flakes,coconut flakes
+OSR017,Mango vanilla custard,82.5 g Mango pulp,mango pulp
+OSR017,Mango vanilla custard,2 tbsp Dark chocolates,dark chocolates
+OSR018,Kiwi granola pudding,351 g Granola,granola
+OSR018,Kiwi granola pudding,180 g Kiwi,kiwi
+OSR018,Kiwi granola pudding,1 tsp Vanilla essence,vanilla essence
+OSR018,Kiwi granola pudding,72 g Mixed dry fruits,mixed dry fruits
+OSR019,Oats burfi,50 g Oats powder,oats powder
+OSR020,Lotus seed halwa (Kamal gattay ka halwa),1000 g Lotus seed,lotus seed
+OSR021,Amaranth ladoo (Rajgira ladoo),231.6 g Amaranth flour,amaranth flour
+OSR023,Sweet couscous dessert,87 g Pomegranate seeds,pomegranate seeds
+OSR023,Sweet couscous dessert,160 g Couscous,couscous
+OSR023,Sweet couscous dessert,2 C Apple juice,apple juice
+OSR027,Prawn sandwich,2 tbsp Virgin olive oil,virgin olive oil
+OSR027,Prawn sandwich,1 tbsp Mayonnaise,mayonnaise
+OSR027,Prawn sandwich,1 tbsp Lime zest,lime zest
+OSR028,Watercress sandwich,8.5 g Watercress,watercress
+OSR029,Fish sandwich,149 g Fish filets,fish filets
+OSR029,Fish sandwich,3 tbsp Virgin olive oil,virgin olive oil
+OSR029,Fish sandwich,3 tbsp Mayonnaise,mayonnaise
+OSR030,Kidney bean sandwich with cottage cheese,1 tbsp Virgin olive oil,virgin olive oil
+OSR031,Finger millet biscuit (Ragi biscuit),800 g Ragi flour,ragi flour
+OSR033,Lemon cookies,210 g Ricotta cheese,ricotta cheese
+OSR033,Lemon cookies,1 tbsp Grated lemon peel,grated lemon peel
+OSR035,Raspberry shortbread cookies,0.5 tsp Almond extract,almond extract
+OSR035,Raspberry shortbread cookies,1.5 tsp Almond extract,almond extract
+OSR035,Raspberry shortbread cookies,112 g Raspberry jam,raspberry jam
+OSR036,Pumpkin cookies,1 tsp Vanilla essence,vanilla essence
+OSR037,Greenpea cookies,73.5 g Pitted dates,pitted dates
+OSR037,Greenpea cookies,63 g Mashed silken tofu,mashed silken tofu
+OSR039,Cardamom cookies (Elaichi cookies),4 tsp Powdered green cardamom,powdered green cardamom
+OSR040,Hazelnut cookies,135 g Blanched hazelnuts,blanched hazelnuts
+OSR040,Hazelnut cookies,0.5 tsp Coarse sea salt,coarse sea salt
+OSR041,Milk cookies,4 tbsp Castor sugar,castor sugar
+OSR042,Cranberry cookies,10 g Orange rind,orange rind
+OSR043,Olive biscuit,0.5 tbsp Extra virgin olive oil,extra virgin olive oil
+OSR045,Tutti fruitti biscuit,1 tsp Vanilla essence,vanilla essence
+OSR045,Tutti fruitti biscuit,120 g Tutti-frutti,tutti-frutti
+OSR049,Gooseberry pickle (Amla ka achaar),0.5 tsp Powdered turmeric,powdered turmeric
+OSR049,Gooseberry pickle (Amla ka achaar),2 tbsp Mustard seeds powder,mustard seeds powder
+OSR049,Gooseberry pickle (Amla ka achaar),250 g Cape gooseberry,cape gooseberry
+OSR050,Lotus stem pickle (Kamal kakdi ka achar),400 g Lotus stem,lotus stem
+OSR050,Lotus stem pickle (Kamal kakdi ka achar),1 tbsp Virgin olive oil,virgin olive oil
+OSR051,Date pickle (Khajoor ka achaar),500 g Black date,black date
+OSR053,Fermented bamboo shoot pickle (Mesu pickle),500 g Bamboo shoots/Mesu,bamboo shoots/mesu
+OSR055,Pickled mustard greens,1.5 tsp Sichuan peppers,sichuan peppers
+OSR057,Green tomato pickle (Haray tamatar ka achaar),250 g Green tomatoes,green tomatoes
+OSR058,Pickled cabbage,0.25 tsp Powdered turmeric,powdered turmeric
+OSR058,Pickled cabbage,1 tsp Chili flakes,chili flakes
+OSR059,Coconut pickle (Nariyal ka aachar),0.25 tsp Fenugreek (roasted and powdered),fenugreek
+OSR059,Coconut pickle (Nariyal ka aachar),40 g Coconut shavings,coconut shavings
+OSR061,Mango murabba candy,2 tsp Powdered green cardamom,powdered green cardamom
+OSR061,Mango murabba candy,0.5 tsp Caster sugar (for garnishing),caster sugar
+OSR062,Afghani chicken,2 tbsp Kasuri Methi Leaves (Dried Fenugreek Leaves),kasuri methi leaves
+OSR062,Afghani chicken,1 tsp Chat Masala Powder,chat masala powder
+OSR063,Fish orly,250 g Filet Fish (preferably white),filet fish
+OSR063,Fish orly,1.5 tbsp White vinegar,white vinegar
+OSR064,Hariyali Fish Tikka,0.5 tbsp Ginger & garlic paste,ginger & garlic paste
+OSR064,Hariyali Fish Tikka,0.5 tbsp Ginger & garlic paste,ginger & garlic paste
+OSR064,Hariyali Fish Tikka,500 g Boneless fish cubes,boneless fish cubes
+OSR064,Hariyali Fish Tikka,1 tsp Amchoor powder,amchoor powder
+OSR065,Chicken manchurian,1 tsp Green chilli sauce,green chilli sauce
+OSR065,Chicken manchurian,2 tbsp Schezwan sauce,schezwan sauce
+OSR065,Chicken manchurian,1 tbsp Light soya sauce,light soya sauce
+OSR065,Chicken manchurian,0.5 C Chicken stock,chicken stock
+OSR066,Handi chicken,1 tsp Red chili,red chili
+OSR067,Lemon chicken,0.5 tsp Rosemary,rosemary
+OSR067,Lemon chicken,1 tsp Thyme,thyme
+OSR067,Lemon chicken,10 g Lemon slices,lemon slices
+OSR067,Lemon chicken,1 tsp Kosher Salt,kosher salt
+OSR067,Lemon chicken,4 tsp Lemon zest,lemon zest
+OSR068,Lemon butter fish,680 g White fish filets,white fish filets
+OSR068,Lemon butter fish,10 g Lemon slices,lemon slices
+OSR068,Lemon butter fish,1.5 tsp Kosher Salt,kosher salt
+OSR068,Lemon butter fish,2 tbsp Lemon zest,lemon zest
+OSR068,Lemon butter fish,1 tsp Onion powder,onion powder
+OSR069,Baked eggs in tomato sauce,840 g Kale,kale
+OSR069,Baked eggs in tomato sauce,1 tbsp Extra-virgin olive oil,extra-virgin olive oil
+OSR071,Spinach mushroom scrambled egg (Palak mushroom bhurji),2 tbsp Provolone cheese,provolone cheese
+OSR072,Corn omelette/omlet,66 g Cheddar cheese,cheddar cheese
+OSR073,Cajun chicken,132 g Cheddar cheese,cheddar cheese
+OSR073,Cajun chicken,2 tbsp Extra-virgin olive oil,extra-virgin olive oil
+OSR073,Cajun chicken,0.5 tsp Kosher salt,kosher salt
+OSR073,Cajun chicken,2 tbsp Cajun seasoning,cajun seasoning
+OSR078,Roasted cauliflower steak,2 tbsp Extra-virgin olive oil,extra-virgin olive oil
+OSR081,Schezwan chutney,50 g Kashmiri red chilli,kashmiri red chilli
+OSR086,Chicken salad,17 g Celery,celery
+OSR086,Chicken salad,"71.5 g Blanched,slivered almonds","blanched,slivered almonds"
+OSR086,Chicken salad,110 g Mayonnaise,mayonnaise
+OSR087,Macaroni salad,25.5 g Celery,celery
+OSR087,Macaroni salad,33 g Red onion,red onion
+OSR087,Macaroni salad,"0.125 tsp Red pepper, crushed","red pepper, crushed"
+OSR087,Macaroni salad,100 g Hard boiled eggs,hard boiled eggs
+OSR087,Macaroni salad,227 g Macaroni noodles,macaroni noodles
+OSR087,Macaroni salad,77.5 g Sweet gherkins,sweet gherkins
+OSR087,Macaroni salad,1 tbsp Red wine vinegar,red wine vinegar
+OSR087,Macaroni salad,165 g Mayonnaise,mayonnaise
+OSR087,Macaroni salad,2 tbsp Sweet pickle juice,sweet pickle juice
+OSR087,Macaroni salad,180 g Sour cream,sour cream
+OSR087,Macaroni salad,2 tsp Dijon mustard,dijon mustard
+OSR088,Cabbage raita (Pattagobhi raita),100 g Sour cream,sour cream
+OSR089,Pomegranate raita (Anaar ka raita),43.5 g Pomegranate,pomegranate
+OSR092,Kale salad,37.5 g Feta cheese,feta cheese
+OSR092,Kale salad,206 g Kale,kale
+OSR093,Spinach and paneer souffle,30 g Spinach leaves,spinach leaves
+OSR093,Spinach and paneer souffle,1 tsp Basil Leaves,basil leaves
+OSR093,Spinach and paneer souffle,1 tsp Chilli Flakes,chilli flakes
+OSR093,Spinach and paneer souffle,1 tsp Oregano,oregano
+OSR094,Masala souffle,60 g Red Onion,red onion
+OSR094,Masala souffle,2 tbsp Breadcrumbs,breadcrumbs
+OSR094,Masala souffle,132 g Cheddar cheese,cheddar cheese
+OSR094,Masala souffle,225 g Jalapeno Peppers,jalapeno peppers
+OSR096,Tamarind chutney (Chintapandu pachadi/Puli chutney),0.5 tsp Roaasted saunf powder (roasted fennel powder),roaasted saunf powder
+OSR099,Sago khitchdi/khichri (Sabudana khitchdi/khichri),152 g Sago ( sabudana,sago ( sabudana
+OSR101,Vegetable namkeen jave,352 g Vermicelii(jave),vermicelii
+OSR104,Methi thepla,40 g Pearl millet flour,pearl millet flour
+OSR104,Methi thepla,40 g Sorghum flour,sorghum flour
+OSR105,Rice puttu (Ari puttu),120 g Puttu flour,puttu flour
+OSR106,Buckwheat pancake (Khura),170 g Buckwheat flour,buckwheat flour
+OSR108,Khakhra chaat,4.5 tbsp Pomegranate seeds,pomegranate seeds
+OSR108,Khakhra chaat,0.1 tsp Roaasted saunf powder (roasted fennel powder),roaasted saunf powder
+OSR111,Veg manchurian,14.8 g Breadcrumbs,breadcrumbs
+OSR112,Pav bhaji,516 g Pav buns/Dinner rolls,pav buns/dinner rolls
+OSR113,Rice murukku,150 g Roasted Gram dal,roasted gram dal
+OSR113,Rice murukku,2 tbsp Black sesame seeds,black sesame seeds
+OSR114,Bhel puri,60 g Puffed rice,puffed rice
+OSR114,Bhel puri,1 tbsp Roasted gram,roasted gram
+OSR116,Spicy corn chaat,217.5 g Boiled sweet corn,boiled sweet corn
+OSR118,Jackfruit fritters (Ponsa mulik/Kathal ka pakora),2 tbsp Coconut chunks,coconut chunks
+OSR118,Jackfruit fritters (Ponsa mulik/Kathal ka pakora),120 g Rice rava,rice rava
+OSR121,Mango cheesecake,116 g Marie biscuit,marie biscuit
+OSR121,Mango cheesecake,3.25 tsp Agar Agar powder,agar agar powder
+OSR124,Finger millet cake (Ragi cake),150 g Ragi flour,ragi flour
+OSR126,Almond cardamom cake (Badam elaichi cake),0.5 tsp Powder sugar,powder sugar
+OSR127,Tutti frutti cake,60 g Tutti frutti,tutti frutti
+OSR128,Ham and Bean soup,50.5 g Celery,celery
+OSR129,Whey soup,738 g Whey,whey
+OSR130,Bottle gourd soup (Ghiya/Lauki soup),0.75 tsp Dried herbs,dried herbs
+OSR131,Baked potato soup,480 g Bacon,bacon
+OSR131,Baked potato soup,240 g Sour cream,sour cream
+OSR133,Sweet corn soup,25 g French bean,french bean
+OSR133,Sweet corn soup,72.5 g Sweet corn,sweet corn
+OSR133,Sweet corn soup,217.5 g Sweet corn kernel,sweet corn kernel
+OSR135,Curried Cauliflower soup,1 tsp Coconut flakes,coconut flakes
+OSR135,Curried Cauliflower soup,2 tsp Yellow Curry powder,yellow curry powder
+OSR135,Curried Cauliflower soup,2.5 C Veggie broth,veggie broth
+OSR136,Millet soup,5 C Vegetable stock,vegetable stock
+OSR137,Lemon coriander soup,4 g Coriander stem,coriander stem
+OSR137,Lemon coriander soup,2 tbsp Lemon grass,lemon grass
+OSR138,Garlic soup,1 tsp Chili flakes,chili flakes
+OSR138,Garlic soup,1 tsp Oregano,oregano
+OSR138,Garlic soup,2 tbsp Virgin olive oil,virgin olive oil
+OSR141,Dalma,0.2 tbsp Fenugreek,fenugreek
+OSR141,Dalma,0.2 tbsp Brown mustard,brown mustard
+OSR141,Dalma,250 g Split chick peas,split chick peas
+OSR143,Horsegram dal (Kulthi dal),175 g Horsegram lentils,horsegram lentils
+OSR146,Gujarati handvo,1 tsp Eno,eno
+OSR153,Soya seekh kebab,189 g Soya chunks,soya chunks
+OSR154,Classic seasoned black beans,2 C Vegetable broth,vegetable broth
+OSR154,Classic seasoned black beans,21 g Jalapenos,jalapenos
+OSR155,Maa chaane ki dal,87.5 g Split black gram,split black gram
+OSR156,Garlic chickpea soup (Lahasun aur chane ka shoraba),0.25 tsp Chilli flakes,chilli flakes
+OSR156,Garlic chickpea soup (Lahasun aur chane ka shoraba),0.5 tbsp Kosher Salt,kosher salt
+OSR156,Garlic chickpea soup (Lahasun aur chane ka shoraba),400 g Cooked chickpea,cooked chickpea

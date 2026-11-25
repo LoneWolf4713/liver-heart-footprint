@@ -8,6 +8,9 @@ from lhf.paths import DATA_CURATED
 
 _BASELINES = None
 
+ALLOWED_SETTINGS = {"urban", "rural"}
+ALLOWED_RISKS = {"general", "cardiometabolic"}
+
 
 def _load_baselines():
     global _BASELINES
@@ -38,15 +41,21 @@ def footprint(per_serving: dict, setting: str = "urban", risk: str = "general") 
     setting: 'urban' or 'rural'.
     risk: 'general' or 'cardiometabolic'.
     """
+    if not isinstance(setting, str) or setting.strip().lower() not in ALLOWED_SETTINGS:
+        raise ValueError(f"Invalid setting {setting!r}. Must be one of {ALLOWED_SETTINGS}")
+    setting_norm = setting.strip().lower()
+
+    if not isinstance(risk, str) or risk.strip().lower() not in ALLOWED_RISKS:
+        raise ValueError(f"Invalid risk {risk!r}. Must be one of {ALLOWED_RISKS}")
+    risk_norm = risk.strip().lower()
+
     if per_serving is None:
         return None
 
-    setting_norm = str(setting).lower() if setting else "urban"
     is_rural = setting_norm == "rural"
     ekey = "NSO_CALORIES_RURAL" if is_rural else "NSO_CALORIES_URBAN"
     fat_context_key = "NSO_FAT_RURAL" if is_rural else "NSO_FAT_URBAN"
 
-    risk_norm = str(risk).lower() if risk else "general"
     is_cardiometabolic = risk_norm == "cardiometabolic"
     skey = "LIMIT_SFA_CARDIOMETABOLIC" if is_cardiometabolic else "LIMIT_SFA_GENERAL"
 
@@ -92,25 +101,37 @@ def footprint(per_serving: dict, setting: str = "urban", risk: str = "general") 
 
     axes = {}
     for k in axes_keys:
-        raw_val = per_serving.get(k, 0.0)
-        if raw_val is None or (isinstance(raw_val, float) and math.isnan(raw_val)):
-            amount = 0.0
+        raw_val = per_serving.get(k)
+        if raw_val is None:
+            amount = None
         else:
-            amount = float(raw_val)
+            try:
+                val = float(raw_val)
+                if math.isnan(val):
+                    amount = None
+                else:
+                    amount = val
+            except (ValueError, TypeError):
+                amount = None
 
         lim = limits[k]
-        if lim is not None and lim > 0:
-            pct_of_limit = amount / lim * 100
-        else:
-            pct_of_limit = None
 
-        if k in ("fat_g", "sfa_g"):
-            if e_energy > 0:
-                pct_energy = amount * fat_kcal_factor / e_energy * 100
+        if amount is None:
+            pct_of_limit = None
+            pct_energy = None
+        else:
+            if lim is not None and lim > 0:
+                pct_of_limit = amount / lim * 100
+            else:
+                pct_of_limit = None
+
+            if k in ("fat_g", "sfa_g"):
+                if e_energy > 0:
+                    pct_energy = amount * fat_kcal_factor / e_energy * 100
+                else:
+                    pct_energy = None
             else:
                 pct_energy = None
-        else:
-            pct_energy = None
 
         axes[k] = {
             "amount": amount,
@@ -122,8 +143,8 @@ def footprint(per_serving: dict, setting: str = "urban", risk: str = "general") 
         }
 
     reference = {
-        "setting": setting,
-        "risk": risk,
+        "setting": setting_norm,
+        "risk": risk_norm,
         "energy_kcal": e_energy,
         "energy_metric": ekey,
     }

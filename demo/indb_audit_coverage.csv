@@ -1,0 +1,1015 @@
+recipe_code,recipe_name,lines_total,lines_included,lines_unmapped,lines_unquantified,included_mass_g,mass_implausible
+ASC001,Hot tea (Garam Chai),4,3,0,0,61.4,True
+ASC002,Instant coffee,4,2,1,0,87.6,True
+ASC003,Espreso coffee,5,2,2,0,81.3,True
+ASC004,Iced tea,5,3,0,0,27.9,True
+ASC005,Raw mango drink (Aam panna),8,6,0,0,143.35,True
+ASC006,Fruit Punch (with fresh juices),12,5,4,0,79.4,True
+ASC007,Fruit Punch (with squashes),12,4,5,0,39.2,True
+ASC008,Lemonade,6,4,0,0,71.3,True
+ASC009,Lem-o-gin,7,5,0,0,86.3,True
+ASC010,Cumin infused water (Jeere/Zeere ka pani),12,8,2,0,41.975,True
+ASC011,Coco pine cooler,8,2,5,0,62.0,True
+ASC012,Summer cooler,6,3,2,0,37.5,True
+ASC014,Hot cocoa,3,2,1,0,188.4,True
+ASC015,Cold coffee with ice cream,6,2,2,0,145.2,True
+ASC016,Banana milkshake (Kele milkshake),5,3,1,0,232.6,False
+ASC017,Mango milkshake (Aam milkshake),5,3,1,0,242.6,False
+ASC018,Pineapple milkshake (Ananas milkshake),5,2,2,0,192.6,True
+ASC019,Orange milkshake (Narangi milkshake),5,2,2,0,192.6,True
+ASC020,Egg nog,5,4,1,0,303.15,False
+ASC021,Sweet Lassi (Meethi lassi),4,2,0,0,120.0,True
+ASC022,Lassi (salted),5,3,0,0,101.7625,True
+ASC023,Cheese and chilli sandwich,7,7,0,0,112.575,True
+ASC024,Egg sandwich (Ande ka sandwich),6,6,0,0,102.575,True
+ASC025,Cucumber sandwich (Kheere ka sandwich),6,6,0,0,122.575,True
+ASC026,Cheese and pineapple sandwich (Cheese aur ananas ka sandwich),7,6,1,0,92.575,True
+ASC027,Cheese and tomato sandwich (Cheese aur tamatar ke sandwich),7,7,0,0,117.575,True
+ASC028,Chicken sandwich,6,6,0,0,117.575,True
+ASC029,Peanut and tomato sandwich (Moongfali aur tamatar ka sandwich),7,7,0,0,122.575,True
+ASC030,Rainbow sandwich,13,12,1,0,183.375,True
+ASC031,Club sandwich,11,10,1,0,337.575,False
+ASC032,Vegetarian club sandwich,11,10,1,0,317.575,False
+ASC033,Pin wheel sandwich,6,5,1,0,82.575,True
+ASC034,Carrot apple sandwich (Gajar aur seb ka sandwich),10,7,3,0,136.0375,True
+ASC035,Salami sandwich,8,8,0,0,149.575,True
+ASC036,Vegetable and mayonnaise sandwich,9,8,1,0,122.675,True
+ASC037,Egg and tomato sandwich (Ande aur tamatar ka sandwich),8,8,0,0,113.575,True
+ASC038,Sweet open sandwich,5,4,1,0,114.0,True
+ASC039,Mushroom and cheese sandwich (toasted),7,7,0,0,152.575,True
+ASC040,Cheese and tomato sandwich (toasted) (Cheese aur tamatar ke sandwich (toasted)),7,7,0,0,152.575,True
+ASC041,Pea potato sandwich (toasted) (Matar aloo ka sandwich),10,10,0,0,180.8625,True
+ASC042,Paneer pea sandwich (toasted) (Paneer matar ka sandwich),10,10,0,0,180.8625,True
+ASC043,Chicken sandwich (toasted),7,7,0,0,172.075,True
+ASC044,Pea keema sandwich (toasted) (Matar aur keema ka sandwich),9,9,0,0,170.3925,True
+ASC045,Classic club sandwich,15,11,4,0,372.5,False
+ASC046,Sesame toast,14,12,2,0,482.8,False
+ASC047,Cracked wheat porridge (Meetha daliya),5,4,0,0,283.4,False
+ASC048,Semolina porridge (Suji/Rava daliya),3,3,0,0,278.4,False
+ASC050,Oatmeal Porridge,4,2,1,0,258.4,False
+ASC051,Cornflakes with milk,3,2,1,0,248.4,False
+ASC052,Rice flakes (Chiwda/Aval),3,3,0,0,278.4,False
+ASC053,Wheat flakes,3,2,1,0,248.4,False
+ASC054,Murmura (Puffed rice),3,2,1,0,248.4,False
+ASC055,Puffed wheat (Murmure/Moori),3,2,1,0,248.4,False
+ASC056,Boiled egg (Ubla anda),4,3,0,0,52.075,True
+ASC057,Fried Egg,4,4,0,0,59.175,True
+ASC058,Poached egg,5,5,0,0,59.075,True
+ASC059,Scrambled egg (Ande ki bhurji),5,5,0,0,71.805,True
+ASC060,Baked egg,6,6,0,0,102.075,True
+ASC061,Plain omelette/omlet,5,5,0,0,145.475,True
+ASC062,Stuffed egg omelette/omlet,11,11,0,0,265.205,False
+ASC063,Pancake,5,5,0,0,173.1,True
+ASC064,Keema pancake,13,13,0,0,447.305,False
+ASC065,Vegetable pancake,14,14,0,0,467.975,False
+ASC066,Jam and fruit pancake,10,7,3,0,179.6,True
+ASC067,Khoa and coconut pancake,10,7,3,0,223.6,False
+ASC068,Brown stock,8,6,1,0,34.2625,True
+ASC069,Vegetable stock,9,7,1,0,93.6625,True
+ASC070,Chicken stock,6,5,0,0,307.95,False
+ASC071,White sauce (thin),3,3,0,0,261.7,False
+ASC072,White sauce (medium),3,3,0,0,283.4,False
+ASC073,White sauce (thick),3,3,0,0,326.8,False
+ASC074,Cheese sauce,5,4,1,0,403.4,False
+ASC075,Egg sauce,5,4,1,0,383.4,False
+ASC076,Mushroom sauce,4,4,0,0,318.4,False
+ASC077,Mustard sauce,4,4,0,0,290.4,False
+ASC078,Brown sauce,4,3,1,0,55.7,True
+ASC079,Clear tomato soup (Tamatar ka soup),11,10,0,0,279.3375,False
+ASC080,Lentil soup,12,11,0,0,151.11,True
+ASC081,Chicken consomme (Clear chicken soup),9,8,1,0,106.275,True
+ASC082,Cream of tomato soup,13,12,0,0,346.21,False
+ASC083,Cream of green peas soup,14,13,0,0,291.31,False
+ASC084,Cream of spinach soup,14,13,0,0,345.49,False
+ASC085,Cream of mixed vegetable soup,14,13,0,0,245.01,False
+ASC086,Cream of mushroom soup,14,12,1,0,227.84,False
+ASC087,Chicken sweet corn soup,9,7,2,0,74.5375,True
+ASC088,Minestrone soup,12,9,3,0,193.0175,True
+ASC089,Egg drop soup,10,9,1,0,75.5175,True
+ASC090,Chinese cabbage and meat ball soup,12,11,1,0,655.2875,False
+ASC091,French onion soup,8,7,1,0,114.675,True
+ASC092,Hot and sour soup,18,15,2,0,143.575,True
+ASC093,Talaumein soup,19,15,4,0,110.875,True
+ASC094,Cold cucumber soup (Thanda kheere ka soup),10,9,0,0,276.385,False
+ASC095,Cold summer garden soup,11,10,1,0,128.075,True
+ASC096,Chapati/Roti,3,2,0,0,85.0,True
+ASC097,Plain parantha/paratha,4,3,0,0,107.98,True
+ASC098,Potato parantha/paratha (Aloo ka parantha/paratha),12,11,0,0,222.185,False
+ASC099,Radish parantha/paratha (Mooli ka parantha/paratha),12,11,0,0,242.185,False
+ASC100,Cauliflower parantha/paratha (Phoolgobhi ka parantha/paratha),13,12,0,0,248.685,False
+ASC101,Dal parantha/paratha,12,11,0,0,172.185,True
+ASC102,Sprouted moong parantha/paratha,12,10,1,0,142.185,True
+ASC103,Pea parantha/paratha (Matar ka parantha/paratha),12,11,0,0,267.185,False
+ASC104,Keema parantha/paratha,12,11,0,0,242.185,False
+ASC105,Paneer parantha/paratha,12,11,0,0,197.185,True
+ASC106,Besan and spinach parantha/paratha (Besan aur palak ka parantha/paratha),9,8,0,0,189.205,True
+ASC107,Poori,5,4,0,0,528.1,False
+ASC108,Spinach poori (Palak poori),7,6,0,0,578.775,False
+ASC109,Methi poori,7,6,0,0,553.775,False
+ASC110,Dal stuffed poori,10,9,1,0,557.445,False
+ASC111,Potato stuffed poori (Aloo ki poori),7,7,0,0,560.775,False
+ASC112,Tandoori parantha/paratha,3,2,0,0,106.76,True
+ASC113,Boiled rice (Uble chawal),2,1,0,0,100.0,True
+ASC114,Plain pulao,10,9,0,0,151.35,True
+ASC115,Mixed vegetable pulao,13,12,0,0,282.85,False
+ASC116,Mushroom pulao,11,10,0,0,202.85,False
+ASC117,Sprouted moong pulao,12,10,1,0,201.35,False
+ASC118,Paneer pulao,12,11,0,0,637.35,False
+ASC119,Peanut pulao,11,10,0,0,201.35,False
+ASC120,Navratan pulao,14,13,1,0,372.825,False
+ASC121,Green chickpeas pulao (Choliya pulao/Hare chane ka pulao),11,9,1,0,151.35,True
+ASC122,Mutton biryani/biriyani,20,17,3,0,324.0425,False
+ASC123,Vegetable biryani/biriyani,23,22,1,0,608.4425,False
+ASC124,"Lemon rice (Pulihora, Elumichai sadam, Chitranna)",9,8,0,0,162.51,True
+ASC125,Sweet rice (Meethe chawal),11,10,0,0,187.915,True
+ASC126,Curd rice (Dahi bhaat/Dahi chawal/ Perugu annam/Daddojanam/Thayir saadam),12,12,0,0,219.16,False
+ASC127,Tamarind rice (Chintapandu pulihora/Puliyodharai/Puli sadam/Huli anna),16,16,0,0,137.3675,True
+ASC128,Spanish rice,9,8,1,0,202.65,False
+ASC129,Chinese fried rice,13,13,0,0,354.43,False
+ASC130,Classic italian pasta,18,15,2,0,263.98,False
+ASC131,Pasta spinach sauce,11,10,0,0,182.085,True
+ASC132,Pasta cheese sauce,8,7,1,0,278.775,False
+ASC133,Macroni cheese pie,9,8,1,0,192.035,True
+ASC134,Vegetable chowmein,16,15,1,0,252.755,False
+ASC135,Chicken chowmein,19,18,1,0,299.5125,False
+ASC136,Cheese noodle ring,17,16,1,0,352.035,False
+ASC137,Spaghetti and cheese balls in tomato sauce,20,18,1,0,823.82,False
+ASC138,Penne platter,11,8,3,0,134.175,True
+ASC139,Pasta hot pot,21,17,2,0,588.555,False
+ASC140,Chicken lasagne,15,13,2,0,460.58,False
+ASC141,Fettuccine with spinach sauce,15,13,1,0,188.89,True
+ASC142,Naan,11,8,3,0,156.655,True
+ASC143,Bhatura,5,5,0,0,543.8000000000001,False
+ASC144,Idli,4,3,0,0,81.5,True
+ASC146,Masala dosa,16,15,0,0,311.205,False
+ASC147,Semolina dosa (Suji/Rava dosa),11,11,0,0,149.23,True
+ASC148,Onion tomato uttapam,11,10,0,0,426.055,False
+ASC149,Paneer kaathi roll,16,14,2,0,245.27,False
+ASC150,Makki ki roti,6,5,0,0,112.2,True
+ASC151,Washed moong dal (Dhuli moong ki dal),8,6,1,0,10.45,True
+ASC152,Washed urad dal (Dhuli urad ki dal),10,9,0,0,60.45,True
+ASC153,Split bengal gram with bottle gourd (Channa dal with ghiya/lauki),13,12,0,0,163.1925,True
+ASC154,Dry washed urad,11,9,1,0,27.65,True
+ASC155,Mixed dal,12,9,2,0,42.305,True
+ASC156,Whole moong (Moong ki dal),11,10,0,0,106.78,True
+ASC157,Whole masoor (Masoor ki dal),11,10,0,0,106.78,True
+ASC158,Whole moth (Moth ki dal),11,9,1,0,76.78,True
+ASC159,Whole urad (Urad ki dal),11,9,1,0,73.78,True
+ASC160,Moti mahal dal (Urad rajmah mix dal),13,11,1,0,139.025,True
+ASC161,Black channa curry/Bengal gram curry (Kale chane ki curry),11,10,1,0,94.045,True
+ASC162,Chickpeas curry (Safed channa curry),11,10,1,0,94.045,True
+ASC163,Lobia curry,11,11,0,0,124.045,True
+ASC164,Soyabean curry,11,10,1,0,94.045,True
+ASC165,Kidney bean curry (Rajmah curry),11,11,0,0,124.045,True
+ASC167,Sambar,20,18,1,0,256.975,False
+ASC168,Besan kadhi with pakodies,20,19,0,0,659.6825,False
+ASC169,Khatta channa,19,16,3,0,115.985,True
+ASC170,Sprouted moong dal chat,8,7,1,0,256.5,False
+ASC171,Potato cauliflower (Aloo gobhi),10,10,0,0,178.35,True
+ASC172,Potato capsicum (Shimla mirch aloo),10,10,0,0,153.35,True
+ASC173,Cabbage and peas (Pattagobhi aur matar),10,10,0,0,169.7875,True
+ASC174,Carrot and fenugreek leaves (Gajar methi),8,8,0,0,194.425,True
+ASC175,Potato fenugreek (Aloo methi),9,9,0,0,208.025,False
+ASC177,Brinjal bhartha (Baingan ka bhartha),10,10,0,0,328.305,False
+ASC178,Dry potato (Sookhe aloo),7,7,0,0,107.825,True
+ASC179,Beans with coconut (Nariyal aur sem/phali; Beans thoran),12,12,0,0,153.69,True
+ASC180,Cauliflower with coconut (Nariyal ke saath phoolgobhi),12,12,0,0,153.69,True
+ASC181,Carrot and cabbage with coconut (Nariyal ke saath pattagobhi aur gajar),13,13,0,0,203.69,False
+ASC182,Raw turnip with coconut,12,12,0,0,153.69,True
+ASC183,Raw papaya with coconut (Papaya thoran),12,12,0,0,153.69,True
+ASC184,Stuffed okra (Bharwa bhindi),8,8,0,0,113.75,True
+ASC185,Stuffed round gourd (Bharwa tinde),11,11,0,0,250.8,False
+ASC186,Stuffed capsicum (Bharwa shimla mirch),9,9,0,0,253.275,False
+ASC187,Stuffed brinjal (Bharwa baingan),8,8,0,0,114.0,True
+ASC189,Stuffed tomatoes (Bharwa tamatar),12,12,0,0,276.375,False
+ASC190,Pea potato curry (Aloo matar),13,13,0,0,279.93,False
+ASC191,Pea paneer curry (Matar paneer),13,13,0,0,279.93,False
+ASC192,Pea mushroom curry (Matar mushroom),13,13,0,0,279.93,False
+ASC193,Pea curry (Matar ki sabzi),12,12,0,0,279.93,False
+ASC194,Pea vadi curry,13,12,1,0,279.93,False
+ASC195,Paneer curry,12,12,0,0,204.93,False
+ASC196,Lotus stem curry (Kamal kakdi curry),12,11,1,0,129.93,True
+ASC197,Gravy for kofta,11,11,0,0,141.975,True
+ASC198,Pea kofta curry (Matar kofta curry),17,17,0,0,740.3125,False
+ASC199,Spinach kofta curry (Palak kofta curry),19,19,0,0,771.5825,False
+ASC200,Paneer kofta curry,17,17,0,0,667.4125,False
+ASC201,Lotus stem kofta curry (Kamal kakdi kofta curry),19,18,1,0,621.5825,False
+ASC202,Raw banana kofta curry (Kela kofta curry),18,18,0,0,691.4225,False
+ASC203,Cauliflower kofta curry (Phoolgobhi kofta curry),18,18,0,0,674.0825,False
+ASC204,Cabbage kofta curry (Pattagobhi kofta curry),19,19,0,0,676.0825,False
+ASC205,Ghiya/Lauki Kofta Curry,19,19,0,0,676.0825,False
+ASC206,Spinach paneer kofta curry (Palak paneer kofta curry),19,19,0,0,727.9125,False
+ASC207,Vegetarian egg kofta curry,19,19,0,0,706.6625,False
+ASC208,Baked vegetables,12,11,1,0,607.2,False
+ASC209,Cauliflower musallam (Phoolgobhi musallam),12,12,0,0,434.55,False
+ASC210,Baked vegetables with spinach,21,21,0,0,851.8575,False
+ASC211,Baked potato with skin,7,7,0,0,158.825,True
+ASC212,Shepherd's pie (vegetarian),13,13,0,0,546.8175,False
+ASC213,Baked brinjal in tomato sauce,10,10,0,0,866.925,False
+ASC214,Dum aloo,21,20,1,0,637.3050000000001,False
+ASC215,Spinach paneer (Palak paneer),12,11,0,0,282.75,False
+ASC216,Methi chaman,13,12,1,0,965.575,False
+ASC217,Sarson ka saag,13,11,2,0,255.34,False
+ASC218,Jackfruit sabzi (Kathal ki sabzi),14,14,0,0,688.38,False
+ASC219,Avial,17,16,1,0,312.375,False
+ASC220,Al yakhani,11,10,1,0,233.775,False
+ASC221,Shahi paneer,16,16,0,0,254.185,False
+ASC222,Paneer in butter sauce,19,19,0,0,318.645,False
+ASC223,Methi malai paneer,14,14,0,0,191.5875,True
+ASC224,Chilli paneer,18,17,1,0,545.6975,False
+ASC225,Paneer makhana korma,13,11,2,0,550.205,False
+ASC226,Kadhai Paneer,14,12,2,0,318.4425,False
+ASC227,Roghan josh,19,17,2,0,236.355,False
+ASC228,Spinach mutton (Palak mutton),20,18,2,0,486.355,False
+ASC229,Pea keema curry (Matar keema ki sabzi),17,16,1,0,344.3925,False
+ASC230,Keema kofta curry,24,24,0,0,336.4075,False
+ASC231,Kashmiri mutton koftas (Gushtaba),20,17,2,0,186.2375,True
+ASC232,Mutton yakhni,13,12,0,0,114.125,True
+ASC233,Chicken yakhni,13,12,0,0,134.125,True
+ASC234,Mutton do piaza,15,15,0,0,330.01,False
+ASC236,Mutton chops,12,9,3,0,509.545,False
+ASC237,Shammi kebab,14,13,1,0,622.0175,False
+ASC238,Scotch egg,17,15,2,0,582.825,False
+ASC239,Shepherd's pie (with minced meat),10,10,0,0,379.9875,False
+ASC240,Chicken curry,20,20,0,0,498.9,False
+ASC241,Tandoori chicken,15,11,4,0,342.925,False
+ASC242,Butter chicken,15,15,0,0,550.63,False
+ASC243,Chicken kebab,9,8,1,0,557.5375,False
+ASC244,Chilli chicken,21,20,0,0,360.245,False
+ASC245,Fried chicken with tomato sauce (Fried chicken tamatar ki chutney kay saath),12,11,1,0,495.75,False
+ASC246,Fish curry (Machli curry),18,18,0,0,256.895,False
+ASC247,Fried fish (Indian style) (Tali hui machli),20,17,3,0,542.95,False
+ASC248,Fried fish and Chips (English Style) (Tali hui machli aur chips),12,10,2,0,632.85,False
+ASC249,Tomato fish,19,18,1,0,869.335,False
+ASC250,Baked fish with cheese sauce,9,9,0,0,356.92,False
+ASC251,Fish tikka,13,10,3,0,26.3,True
+ASC252,Tandoori fish,15,14,1,0,889.2,False
+ASC253,"Paneer, apple and pineapple salad",13,10,3,0,177.75,True
+ASC254,Russian salad,11,8,3,0,217.075,False
+ASC255,Pasta salad,13,7,6,0,123.5,True
+ASC256,Deviled egg,7,5,2,0,102.325,True
+ASC257,Hawain salad,17,12,5,0,245.6125,False
+ASC258,Mixed pulse and vegetable salad,11,9,2,0,108.1575,True
+ASC259,Sprouted moong salad,8,7,1,0,156.7875,True
+ASC260,Tossed salad,13,10,3,0,143.175,True
+ASC261,Mixed vegetable salad with curd sauce,10,9,1,0,180.4575,True
+ASC262,Potato salad (Aloo ka salaad),6,5,1,0,170.0,True
+ASC263,Waldroff salad,8,5,3,0,82.5,True
+ASC264,Coleslaw,7,6,1,0,145.0,True
+ASC265,Fruit salad (Phalon ka salaad),14,9,4,0,210.0,False
+ASC266,Mayonnaise,7,6,1,0,136.075,True
+ASC267,Low calorie quick mayonnaise,9,7,1,0,103.275,True
+ASC268,Thousand island dressing,6,5,1,0,9.0,True
+ASC269,Tomato onion raita (Tamatar aur pyaaz ka raita),7,7,0,0,178.77,True
+ASC270,Peanut raita (Mungfali ka raita),6,6,0,0,123.77,True
+ASC271,Sprouted moong raita,6,6,0,0,153.77,True
+ASC272,Bottle gourd raita (Ghiya/Lauki ka raita),6,6,0,0,153.77,True
+ASC273,Cucumber raita (Kheere ka raita),6,6,0,0,153.77,True
+ASC274,Carrot and spinach raita (Gajar aur palak ka raita),7,7,0,0,178.77,True
+ASC275,Mint raita (Pudinay ka raita),6,6,0,0,105.77,True
+ASC276,Potato raita (Aloo ka raita),6,6,0,0,158.77,True
+ASC277,Boondi raita,8,8,0,0,622.225,False
+ASC278,Sweet raita (Meetha raita),4,3,1,0,180.0,True
+ASC279,Dahi vadas/Dahi bhalla,8,8,0,0,653.0,False
+ASC280,Gunjia,8,8,0,0,662.8000000000001,False
+ASC281,Saunth/Sonth chutney with tamarind/imli,6,5,0,0,79.2,True
+ASC282,Rice kheer (Chawal ki kheer),7,6,0,0,282.01,False
+ASC283,Makhana kheer,7,6,1,0,274.51,False
+ASC285,Vermicelli kheer (Semiya/Seviyan ki kheer),6,6,0,0,233.83,False
+ASC286,Semolina kheer (Suji/Rava kheer),5,5,0,0,231.33,False
+ASC287,Paneer kheer,6,5,0,0,290.03,False
+ASC288,Cabbage kheer (Pattagobhi ki kheer),5,5,0,0,255.03,False
+ASC289,Carrot kheer (Gajar ki kheer),5,5,0,0,255.03,False
+ASC290,Cauliflower kheer (Phoolgobhi ki kheer),5,5,0,0,305.03,False
+ASC291,Moong dal kheer,6,4,1,0,352.43,False
+ASC292,Phirni,5,4,0,0,291.12,False
+ASC293,Semolina halwa (Suji ka halwa),7,6,0,0,69.62,True
+ASC294,Shahi suji halwa,6,5,0,0,73.3,True
+ASC295,Carrot halwa (Gajar ka halwa),9,9,0,0,335.62,False
+ASC296,Egg halwa (Ande ka halwa),5,3,2,0,58.0,True
+ASC297,Potato halwa (Aloo ka halwa),6,6,0,0,159.04,True
+ASC298,Pumpkin halwa (Kaddu ka halwa),7,6,1,0,146.54,True
+ASC299,Moong dal halwa,10,9,0,0,150.54,True
+ASC300,Caramel custard (steamed),6,4,1,0,227.3,False
+ASC301,Baked custard,4,3,1,0,212.6,False
+ASC302,Soft Custard (stirred),5,4,1,0,250.4,False
+ASC304,Chocolate ice cream,7,6,1,0,370.0,False
+ASC305,Mango ice cream,6,5,1,0,455.0,False
+ASC307,Fruit Ice cream (Phalon ka Ice cream),9,5,3,0,286.25,False
+ASC308,Caramel ice cream,10,9,0,0,535.4,False
+ASC309,Lemon souffle,10,5,4,0,192.5,True
+ASC310,Orange souffle,10,5,4,0,200.0,False
+ASC311,Vanilla souffle,9,6,2,0,173.5,True
+ASC312,Chocolate souffle,10,6,3,0,175.5,True
+ASC313,Pineapple souffle,10,4,5,0,157.5,True
+ASC314,Apple mousse,6,6,0,0,365.0,False
+ASC315,Rich chocolate mousse,12,6,4,0,140.23,True
+ASC316,Mango mousse,8,4,3,0,152.0,True
+ASC317,Orange and pineapple cream,7,2,5,0,110.0,True
+ASC318,Charlotte rousse,12,7,5,0,325.0,False
+ASC319,Triffle pudding,10,6,4,0,305.1,False
+ASC320,Snow flakes pudding,5,4,1,0,317.6,False
+ASC321,Kulfi,6,5,0,0,270.12,False
+ASC322,Steamed orange pudding,12,7,5,0,79.7025,True
+ASC323,Meringue and rice pudding,7,5,2,0,424.0,False
+ASC324,Cheese pudding,7,6,1,0,241.5,False
+ASC325,Chocolate pudding,15,11,3,0,226.055,False
+ASC326,Bread and butter pudding,9,8,1,0,365.75,False
+ASC327,Queen of pudding,9,7,2,0,299.5,False
+ASC328,Pineapple upside down pudding,13,9,4,0,127.95,True
+ASC329,Date and nut pie,10,8,1,0,192.5,True
+ASC330,Stewed apple with custard,7,5,1,0,134.05,True
+ASC331,Apple snowballs,7,3,3,0,124.0,True
+ASC332,Hot orange souffle,6,5,1,0,214.0,False
+ASC333,Hot chocolate souffle,7,5,2,0,214.0,False
+ASC334,Hot vanilla souffle,7,5,2,0,214.0,False
+ASC335,Plain burfi (Burfi),5,4,1,0,139.42,True
+ASC336,Coconut burfi (Nariyal ki burfi),6,2,3,0,127.2,True
+ASC337,Bottle gourd burfi (Ghiya/Lauki burfi),8,5,1,0,282.2,False
+ASC338,Chocolate burfi,4,2,2,0,102.5,True
+ASC339,Cashewnut burfi (Kaju burfi/Kaju katli),5,3,0,0,127.2,True
+ASC340,Gram flour burfi (Besan burfi),6,5,0,0,145.75,True
+ASC341,Semolina ladoo with khoya (Suji/Rava aur khoye ke ladoo ),9,8,1,0,126.5075,True
+ASC342,Semolina ladoo with coconut (Suji/Rava aur nariyal ke ladoo ),6,5,1,0,110.5,True
+ASC343,Gram flour ladoo (Besan ladoo),6,5,1,0,91.25,True
+ASC344,Sesame ladoo (Til ke ladoo),3,1,1,0,50.0,True
+ASC345,Chenna murki,5,3,0,0,150.625,True
+ASC346,Milk cake,5,4,1,0,569.7,False
+ASC347,Ghujia/Lavang latika,8,5,2,0,545.4,False
+ASC348,Gulab Jamun with khoya,8,4,2,0,671.6,False
+ASC349,Mal pua,9,7,0,0,809.4,False
+ASC350,Shahi tukre,8,6,1,0,357.62,False
+ASC351,Potato pakora/pakoda (Aloo pakoda),11,10,0,0,578.8625000000001,False
+ASC352,Onion pakora/pakoda (Pyaaz ke pakode),11,10,0,0,578.8625000000001,False
+ASC353,Cauliflower pakora/pakoda (Phoolgobhi ke pakode),11,10,0,0,578.8625000000001,False
+ASC354,Mixed vegetable pakora/pakoda,14,13,0,0,578.8625000000001,False
+ASC355,Spinach pakora/pakoda (Palak pakoda),11,10,0,0,538.8625000000001,False
+ASC356,Methi pakora/pakoda (Methi ke pakode),11,10,0,0,538.8625000000001,False
+ASC357,Egg pakora/pakoda (Ande ke pakode),11,10,0,0,548.8625000000001,False
+ASC358,Bread pakora/pakoda,11,10,0,0,558.8625000000001,False
+ASC359,Paneer pakora/pakoda,15,14,0,0,553.2,False
+ASC360,Potato bonda (Aloo bonda),21,19,1,0,619.8425,False
+ASC361,Potato samosa (Aloo ka samosa),16,15,0,0,767.63,False
+ASC362,Minced meat samosa (Keema ka samosa),12,11,0,0,730.975,False
+ASC363,Paneer and pea samosa (Paneer matar ka samosa),12,11,0,0,730.975,False
+ASC364,Mathri,6,6,0,0,574.3000000000001,False
+ASC365,Khasta kachori,13,11,1,0,626.375,False
+ASC366,Vegetable cutlet,14,14,0,0,639.275,False
+ASC367,Flattened rice cutlet (Chirwa cutlet/Chivda cutlet/Poha cutlet),12,11,1,0,596.645,False
+ASC368,Peanut cutlet (Mungfali ke cutlet),12,12,0,0,641.645,False
+ASC369,Fish cutlet (Machli ka cutlet),15,15,0,0,662.845,False
+ASC370,Paneer potato cutlet (Paneer aloo cutlet),10,10,0,0,650.275,False
+ASC371,Spinach chickpeas cutlet (Palak channa dal cutlet),11,11,0,0,619.445,False
+ASC372,Cheese toast,8,8,0,0,542.6375,False
+ASC375,Vegetable burger,17,12,5,0,649.6875,False
+ASC376,Cheese pizza,15,12,3,0,209.735,False
+ASC377,Vegetable seekh kebab,11,11,0,0,622.0175,False
+ASC378,Masala vada,8,8,0,0,503.1,False
+ASC379,Peanut sago vada (Sabudana mungfali vada),10,10,0,0,575.145,False
+ASC380,Vegeterian scotch egg,12,11,1,0,631.52,False
+ASC381,Paneer shaslik/tikka,14,12,2,0,423.045,False
+ASC382,Peanut brittle (Moongfali ki chikki),4,3,0,0,152.5,True
+ASC383,Spring roll,18,14,3,0,648.5600000000001,False
+ASC384,Dry mango chutney (Sookhe aam ki chutney),9,9,0,0,56.575,True
+ASC385,Peanut chutney (Mungfali ki chutney),5,5,0,0,43.0,True
+ASC386,Coconut chutney (Nariyal ki chutney),10,9,1,0,102.08,True
+ASC387,Mint and coriander chutney (Pudinay aur dhaniye ki chutney),9,9,0,0,53.7025,True
+ASC388,Curd dip,5,5,0,0,110.7875,True
+ASC394,Short crust pastry,5,3,1,0,90.75,True
+ASC395,Custard tart,10,8,1,0,273.35,False
+ASC396,Lemon tart,11,8,2,0,204.65,False
+ASC397,Jam tart,6,4,1,0,130.75,True
+ASC398,Orange cream tart,10,5,4,0,111.35,True
+ASC399,Pineapple tart,11,5,5,0,111.35,True
+ASC400,Cheese and mushroom tart,14,12,1,0,257.535,False
+ASC401,Cottage cheese pie,12,11,0,0,468.175,False
+ASC402,Minced meat pie,14,13,0,0,488.925,False
+ASC403,Apple cinnamon pie,9,6,2,0,183.4,True
+ASC404,Lemon meringue pie,13,7,4,0,195.25,True
+ASC405,Chocolate meringue pie,12,7,4,0,297.5,False
+ASC406,Choux pastry,6,4,1,0,121.5,True
+ASC407,Cream puffs,8,5,2,0,201.5,False
+ASC408,Chocolate eclairs,11,7,2,0,249.5,False
+ASC409,Cheese balls,12,10,1,0,596.325,False
+ASC410,Flaky pastry,5,4,0,0,86.5,True
+ASC411,Minced meat patties,15,13,0,0,184.745,True
+ASC412,Cheese patties,15,14,0,0,187.0825,True
+ASC413,Hot cheese souffle,7,7,0,0,300.7075,False
+ASC414,Hot potato souffle,7,7,0,0,370.7075,False
+ASC415,Hot fish souffle,7,7,0,0,370.7075,False
+ASC416,Hot spinach souffle,7,7,0,0,400.7075,False
+ASC417,Plain cream cake,7,5,2,0,157.3,True
+ASC418,Apple cake (Seb ka cake),12,8,4,0,166.0,True
+ASC419,Marble cake,8,6,2,0,317.45,False
+ASC420,Chocolate cake,8,6,2,0,174.15,True
+ASC421,Orange cake,9,4,5,0,141.15,True
+ASC422,Fruit Loaf,12,8,4,0,317.1,False
+ASC423,Banana cake (Kele ka cake),9,8,1,0,531.3,False
+ASC424,Chocolate chiffon cake,17,15,1,0,490.0,False
+ASC425,Christmas cake,18,9,9,0,432.248,False
+ASC426,Strawberry and vanilla cake with butter icing,12,8,4,0,584.6,False
+ASC427,Eggless cake,9,6,3,0,396.1,False
+ASC428,Sponge cake,4,2,2,0,150.0,True
+ASC429,Swiss roll,6,3,3,0,190.0,True
+ASC430,Pineapple pastry,9,5,4,0,266.0,False
+ASC431,Black forest pastry,9,6,3,0,296.0,False
+ASC432,Coconut finger,6,2,4,0,150.0,True
+ASC433,Pineapple cake,9,5,4,0,382.0,False
+ASC434,Glace icing,3,2,0,0,152.5,True
+ASC436,Royal icing,4,3,1,0,211.5,False
+ASC437,American frosting,4,3,0,0,520.5,False
+ASC438,Gum icing,3,2,0,0,29.0,True
+ASC439,Chocolate walnut cookies (Chocolate aur akhrot ke cookies),12,11,1,0,154.475,True
+ASC440,Chocolate chip cookies,8,6,2,0,118.65,True
+ASC441,Sweet plain biscuit,6,5,1,0,103.65,True
+ASC442,Chocolate biscuit,7,6,1,0,106.15,True
+ASC443,Coconut biscuit (Nariyal ke biscuit),7,5,2,0,108.65,True
+ASC444,Sweet and salty biscuit (Meethay aur namkeen biscuit),7,5,2,0,93.5,True
+ASC445,Peanut biscuit,7,6,1,0,129.8,True
+ASC446,Pin wheel biscuit,6,5,1,0,94.15,True
+ASC447,Saffron biscuit (Kesar biscuit),9,8,1,0,79.17,True
+ASC448,Masala biscuit,11,10,0,0,93.0,True
+ASC449,Ice box cookies,8,5,3,0,94.0,True
+ASC450,Ginger bread man,11,8,3,0,100.0,True
+ASC451,Danish cookies,4,4,0,0,101.5,True
+ASC452,Short bread cookies,4,3,1,0,111.5,True
+ASC453,Coffee biscuit,8,6,2,0,123.65,True
+ASC454,Melting moments,7,4,3,0,98.65,True
+ASC455,Ginger biscuit (Adarak ke biscuit),6,5,1,0,90.775,True
+ASC456,Soyabean muthias,8,7,1,0,464.9175,False
+ASC457,Soyabean tikki,8,7,1,0,570.675,False
+ASC458,Soyabean namak paras,6,5,1,0,476.75,False
+ASC459,Peanut burfi (Moongfali ki burfi),3,3,0,0,127.2,True
+ASC460,Spinach peanut namak paras (Palak moongfali namak paras),9,9,0,0,590.425,False
+ASC461,Gram flour and semolina chilla/cheela/savory pancake (Besan suji chilla/cheela),7,7,0,0,560.175,False
+ASC462,Rice moong dal cheela (Chawal aur moong dal ka cheela),5,4,1,0,493.35,False
+ASC463,Split bengal gram sweet rice (Channa dal sweet rice),4,3,0,0,120.0,True
+ASC464,Sweet poori (Meethi poori),5,5,0,0,566.0,False
+ASC465,Wheat flour and moong dal burfi (Atta aur moong dal ki burfi),5,4,1,0,85.0,True
+ASC466,Spinach burfi (Palak burfi),6,5,1,0,340.5,False
+ASC467,Sweet split chickpea roti (Sweet channa dal roti/Puranpoli),4,4,0,0,213.6,False
+ASC468,Sprouted moong daliya,8,6,1,0,169.15,True
+ASC469,Sprouted moong poha,14,14,0,0,194.955,True
+ASC470,Pearl millet ladoo (Bajra ladoo),6,4,1,0,140.0,True
+ASC471,Paushtik ladoo,5,4,1,0,90.0,True
+ASC472,Paushtik roti,6,6,0,0,129.83,True
+ASC473,Semolina carrot vada (Suji gajar vada),5,5,0,0,609.0,False
+ASC474,Dhokla,9,8,1,0,320.36,False
+ASC475,Channa murmura premix,2,0,2,0,0.0,True
+ASC476,Cracked wheat and green gram dal premix (Dalia moong dal premix),3,2,1,0,80.0,True
+ASC477,Rice flakes and roasted channa,2,1,1,0,70.0,True
+ASC479,Spinach soup in milk,2,2,0,0,150.0,True
+ASC480,Vegetable soup,6,6,0,0,128.865,True
+ASC481,Mashed banana with milk,3,3,0,0,155.0,True
+ASC484,Poha with curd (Poha aur dahi),5,5,0,0,74.615,True
+ASC485,Potato with curd,3,3,0,0,126.5,True
+ASC486,Sweet wheat porridge (Sweet dalia),5,5,0,0,180.0,True
+ASC487,Vegetable khichdi/khichri,7,6,1,0,126.5,True
+ASC489,Moong dal mixture,6,4,2,0,62.5,True
+ASC490,Cracked wheat khichri/khichdi (Dalia khichri/khichdi),6,6,0,0,111.5,True
+ASC492,Stewed apple,3,2,0,0,125.0,True
+ASC493,Lemon squash (Nimbu ka squash),4,2,1,0,2500.0,False
+ASC494,Orange squash (Santre ka squash),7,2,4,0,2500.0,False
+ASC495,Lichi squash,5,2,2,0,2500.0,False
+ASC496,Mango squash (Aam ka squash),5,2,2,0,2500.0,False
+ASC497,Pineapple squash (Ananas ka squash),7,2,4,0,2500.0,False
+ASC498,Lemon and ginger squash (Nimbu aur adrak ka squash),5,3,1,0,4000.0,False
+ASC499,Apple jam (Seb ka murabba),4,2,1,0,2250.0,False
+ASC500,Plum jam (Aloo bukhara jam),3,2,0,0,2250.0,False
+ASC501,Pineapple jam,5,3,1,0,2550.0,False
+ASC502,Guava jelly (Amrood ki jelly),3,1,2,0,150.0,True
+ASC503,Orange marmalade (Santray ka murabba),5,2,3,0,650.0,False
+ASC504,Carrot murabba (Gajar ka murabba),4,2,1,0,2250.0,False
+ASC505,Gooseberry marmalade (Amla murabba),6,3,1,0,2020.0,False
+ASC506,Ginger candy (Adrak ki candy),4,2,1,0,2450.0,False
+ASC507,Mango pickle (Aam ka achaar),8,7,1,0,1450.0,False
+ASC509,Mixed vegetable pickle (Sabziyoon ka achaar),17,14,3,0,1434.35,False
+ASC511,Sweet lemon pickle (Neembu ka meetha achaar),8,8,0,0,1532.05,False
+ASC512,Plum chutney (Aloo bukhara ki chutney),9,9,0,0,2030.0,False
+ASC513,Raw mango chutney (Kachhe aam/Kairi ki chutney),9,7,2,0,795.0,False
+ASC514,Tomato sauce,13,11,2,0,1114.05,False
+ASC515,Tomato puree,4,3,1,0,5050.0,True
+BFP001,Garam masala,6,6,0,0,112.6,True
+BFP002,Chat masala,6,5,1,0,75.0,True
+BFP003,Kashmiri masala,14,10,3,0,848.0,False
+BFP004,Rasam powder (Rasam masala),6,6,0,0,97.0,True
+BFP005,Sambar powder (Sambar masala),7,7,0,0,102.0,True
+BFP007,Kashmiri tea (Kehwa),5,3,1,0,30.4,True
+BFP008,Steeped hot coffee,4,2,1,0,40.0,True
+BFP011,Hot chocolate,3,1,2,0,360.0,False
+BFP013,Cold coffee (with cream),5,3,1,0,315.0,False
+BFP015,Banana milkshake with ice cream (Kele ka milkshake ice cream ke saath),7,3,3,0,470.0,False
+BFP019,Flavoured milkshake,5,2,2,0,390.0,False
+BFP024,Jal jeera,15,10,4,0,112.505,True
+BFP026,Gingo,8,4,1,0,92.0,True
+BFP027,Mintade,7,3,2,0,95.0,True
+BFP029,Canjee,5,3,1,0,13.675,True
+BFP030,Cauliflower canjee (Phoolgobhi ki canjee),5,3,1,0,13.675,True
+BFP031,Potato canjee (Aloo canjee),5,4,0,0,213.675,False
+BFP036,Vermicelli porridge (Semiya/Seviyan porridge),6,5,0,0,277.75,False
+BFP039,Semolina upma (Suji/Rava upma),16,14,1,0,73.829,True
+BFP040,Vermicelli upma (Semiya/Seviyan upma),16,15,0,0,113.829,True
+BFP041,Rice upma,16,15,0,0,113.829,True
+BFP042,Bread upma,16,15,0,0,113.829,True
+BFP043,Vegetable upma,17,15,1,0,130.835,True
+BFP044,Poha,13,12,1,0,71.749,True
+BFP045,Vegetable poha,17,14,2,0,90.835,True
+BFP046,Moong dal stuffed cheela/chilla (Moong dal ka cheela/chilla),19,18,0,0,200.33,False
+BFP047,Paneer stuffed cheela/chilla,19,18,0,0,185.33,True
+BFP052,Indian style egg bhujia (Anda bhujia (Indian style)),11,11,0,0,128.285,True
+BFP054,French omelette/omlet,6,5,0,0,64.275,True
+BFP055,Puffy omelette/omlet,5,4,0,0,62.75,True
+BFP056,Orange omelette/omlet,5,4,1,0,62.75,True
+BFP057,Cheese and mushroom omelette/omlet,9,8,0,0,124.275,True
+BFP058,Spanish omelette/omlet,10,9,1,0,152.075,True
+BFP059,Mixed stock,4,2,1,0,40.0,True
+BFP060,Meat stock,2,0,1,0,0.0,True
+BFP062,White stock,4,3,0,0,45.0,True
+BFP065,Meat consomme (with mutton),10,8,2,0,61.275,True
+BFP066,Consomme au julienne,11,10,1,0,291.275,False
+BFP067,Consomme au vermicelli,11,10,1,0,148.275,True
+BFP072,Green pea soup (Matar ka soup),13,11,2,0,177.125,True
+BFP073,Spinach soup (Palak ka soup),11,10,1,0,143.935,True
+BFP074,Mixed vegetable soup,14,11,3,0,174.825,True
+BFP075,Cheese soup,9,8,1,0,85.595,True
+BFP076,Mulligatawny soup,12,9,3,0,74.595,True
+BFP079,Cream of carrot soup,13,12,1,0,226.3,False
+BFP080,Cream of broccoli soup,13,11,2,0,141.3,True
+BFP082,Cream of potato soup,12,11,1,0,236.3,False
+BFP087,Almond soup (Badam ka soup),12,10,2,0,229.575,False
+BFP088,Cold cucumber cream soup,7,6,0,0,142.575,True
+BFP089,Cold tomato soup,7,6,0,0,34.575,True
+BFP090,Chicken stew,21,21,0,0,297.99,False
+BFP091,Veg paneer stew,22,22,0,0,237.99,False
+BFP095,Tartare sauce,3,1,2,0,10.0,True
+BFP096,Barbeque sauce,10,9,0,0,87.575,True
+BFP097,Bread sauce,7,7,0,0,377.645,False
+BFP108,Onion-green chilli parantha/paratha (Pyaaz aur hari mirch ka parantha/paratha),13,12,0,0,187.27,True
+BFP110,Methi parantha/paratha,8,7,0,0,229.11,False
+BFP114,Bathua poori,7,5,1,0,303.55,False
+BFP115,Gram flour poori (Besan poori),6,5,0,0,283.55,False
+BFP116,Beetroot poori (Chukandar ki poori),8,6,0,0,328.55,False
+BFP117,Peas poori (Matar ki poori),7,6,0,0,363.55,False
+BFP118,Peas kachori (Matar kachori),12,11,0,0,401.402,False
+BFP122,Pizza,20,16,3,0,465.395,False
+BFP124,Bacon and mushroom pancake,13,11,1,0,272.509,False
+BFP125,Cheese and tomato pancake,13,12,0,0,318.785,False
+BFP127,Minced meat pancake (with chicken),17,14,1,0,256.125,False
+BFP132,Eggplant/Brinjal rice (Vangi bhat),17,16,0,0,243.385,False
+BFP133,Kashmiri 'tahar',7,6,0,0,87.923,True
+BFP134,Cumin pulao (Jeera/Zeera pulao),6,5,0,0,115.55,True
+BFP136,Peas pulao (Matar pulao),12,10,1,0,315.75,False
+BFP137,Split bengal gram dal and vegetable pulao (Channa dal and vegetable pulao),14,12,1,0,285.75,False
+BFP138,Black channa pulao/ Bengal gram pulao (Kale chane ka pulao),13,11,1,0,240.75,False
+BFP141,Mutton pulao,32,28,2,0,305.466,False
+BFP142,Chicken pulao,32,28,2,0,311.866,False
+BFP143,Mexican rice,12,11,0,0,399.976,False
+BFP144,Plain khitchdi (Plain khichri/khichdi),10,8,1,0,75.3375,True
+BFP147,Instant idli (with semolina),10,9,1,0,102.33,True
+BFP148,Plain dosa,6,5,1,0,96.025,True
+BFP150,Masala dosa mixed vegetable fillings,21,20,1,0,515.445,False
+BFP151,Masala dosa paneer fillings,18,17,1,0,355.445,False
+BFP152,Uttapam,14,13,1,0,228.695,False
+BFP153,Appam,10,6,1,0,661.02,False
+BFP154,Beans and macaroni,9,7,1,0,200.9875,False
+BFP155,Spaghetti bolognese,14,12,2,0,217.5775,False
+BFP157,Meat and macaroni casserole,16,14,2,0,303.3675,False
+BFP158,Spaghetti with meat balls and tomato sauce,21,17,3,0,399.28,False
+BFP159,Spaghetti with paneer balls and tomato sauce,21,17,3,0,339.28,False
+BFP161,Lasagne with meat sauce,22,16,5,0,693.605,False
+BFP162,Lasagne with vegetables,23,18,4,0,687.635,False
+BFP163,Green chilli sauce,5,5,0,0,28.05,True
+BFP164,Home made plain noodles,4,3,0,0,139.8,True
+BFP165,Home made egg noodles,5,4,0,0,147.8,True
+BFP166,Dal moong,11,10,0,0,49.1075,True
+BFP167,Cumin seeds baghar (Jeera baghar/tadka),4,4,0,0,6.6375,True
+BFP168,Onion tomato baghar (Pyaaz tamatar ka tadka),6,6,0,0,42.2575,True
+BFP169,Mustard seeds baghar (Mustard seed tadka),5,4,1,0,8.92,True
+BFP170,Sour lentils (Khatti dal),10,9,0,0,65.065,True
+BFP171,Urad special dehusked,13,11,1,0,110.2425,True
+BFP172,Arhar with spinach (Arhar dal aur palak),16,15,0,0,105.745,True
+BFP174,Moong dal with vadi,14,12,1,0,57.2275,True
+BFP176,Rasam with tamarind (Puli rasam/ Chintapandu rasam/ Charu/Saaru),18,17,0,0,92.5325,True
+BFP177,Rasam with lemon (Nimmakaya rasam/Nimmakaya charu/Elumichai rasam/Nimbe hannina saaru),18,17,0,0,97.0325,True
+BFP178,Green gram whole with baghar (Sabut moong dal with tadka),14,12,1,0,18.1275,True
+BFP179,Urad sabut special,21,19,1,0,201.3125,False
+BFP185,Kabuli channa curry,17,15,1,0,120.1675,True
+BFP187,Besan gatte curry,30,26,3,0,233.117,False
+BFP190,Dry masala chops,16,14,1,0,116.79,True
+BFP194,Mutton korma,14,13,0,0,246.345,False
+BFP196,Shahi keema kofta curry,28,26,1,0,502.495,False
+BFP197,Minced meat ball curry,26,24,1,0,278.9575,False
+BFP198,Boti kebab,16,12,3,0,150.7275,True
+BFP199,Mutton seekh kebab,17,14,3,0,51.2575,True
+BFP201,Indian lamb and egg curry (Nargisi kofta),27,24,0,0,534.3975,False
+BFP203,Soya chunks sweet and sour (Nutrinugget sweet and sour),19,15,4,0,317.195,False
+BFP204,Soya chunks korma (Nutrinugget korma),29,26,2,0,215.1535,False
+BFP205,Mushroom matar,18,15,1,0,179.3025,True
+BFP206,Soya chunks and peas (Nutrinugget matar),18,14,2,0,119.3025,True
+BFP207,Vegetable yakhni,15,14,0,0,437.6325,False
+BFP208,Spinach mushroom (Palak mushroom),11,10,0,0,282.525,False
+BFP210,Vegetarian nargisi kofta curry,28,24,1,0,611.8025,False
+BFP212,Roast chicken,5,5,0,0,534.575,False
+BFP214,Shahi chicken masala,19,18,0,0,291.675,False
+BFP216,Tomato chicken,12,12,0,0,178.0436,True
+BFP217,Creamy chicken,11,11,0,0,220.2,False
+BFP218,Broccoli chicken ala king,7,4,3,0,56.3075,True
+BFP220,Ginger chicken,25,24,0,0,358.215,False
+BFP221,Chicken sweet and sour,19,16,3,0,434.395,False
+BFP222,Chicken korma,29,27,1,0,333.4835,False
+BFP223,Bengal fish curry (Bengali machli curry),20,19,0,0,251.6625,False
+BFP226,Fish finger,10,9,1,0,326.1575,False
+BFP229,Fish in coconut milk (Nariyal ke doodh ke saath machli),12,10,1,0,107.6,True
+BFP230,Prawn curry (with coconut) (Jhinga curry),13,12,0,0,230.5575,False
+BFP231,Baked stuffed fish,12,10,2,0,583.655,False
+BFP232,Fish pie,11,11,0,0,309.245,False
+BFP233,Crispy baked fish,10,9,1,0,159.075,True
+BFP234,Fish souffle,8,8,0,0,296.095,False
+BFP239,Potato curry (Aloo ki sabzi),15,15,0,0,204.6,False
+BFP240,Egg curry (Anda curry),15,15,0,0,154.6,True
+BFP241,Vegetable curry with coconut,18,17,0,0,274.6,False
+BFP242,Curd with potatoes (Dahi aloo),14,13,0,0,262.3775,False
+BFP246,Potato kofta curry (Aloo kofta curry),32,29,0,0,715.5275,False
+BFP249,Yam kofta curry (Zimikand/Suran kofta curry),24,20,1,0,352.795,False
+BFP250,Jackfruit kofta curry (Kathal ka kofta curry),24,20,1,0,352.795,False
+BFP257,Spinach and potato (Palak aloo),10,9,0,0,322.795,False
+BFP258,Mooli bhujia,10,10,0,0,199.5625,True
+BFP259,Bathua bhujia,9,9,0,0,199.5625,True
+BFP261,Cabbage rolls (dry) ((Pattagobhi rolls) (dry)),13,12,1,0,109.6425,True
+BFP262,Cabbage rolls (curry) ((Pattagobhi rolls)(curry)),21,19,1,0,207.3375,False
+BFP263,Dry arbi (Sookhi arbi),12,11,0,0,172.82,True
+BFP264,Masala arbi,8,8,0,0,118.065,True
+BFP266,Peas brinjal bhartha (Matar baingan bhartha),10,10,0,0,262.725,False
+BFP269,Okra/Lady's fingers fry (Bhindi sabzi/sabji/subji),7,6,1,0,47.3325,True
+BFP270,Crispy okra/Crispy lady's fingers (Karare bhindi),10,8,2,0,243.70000000000002,False
+BFP272,Beans foogath,9,8,0,0,166.85,True
+BFP273,Stuffed bittergourd (wet) (Bharwa karele),10,10,0,0,159.4625,True
+BFP274,Jackfruit/Kathal (dry),15,13,0,0,425.52500000000003,False
+BFP275,Yam fried (Zimikand/Suran fried),15,12,1,0,305.52500000000003,False
+BFP276,"Cauliflower, pea and potato bhujia (Phoolgobhi, matar aur aloo bhujia)",14,14,0,0,192.3125,True
+BFP277,Vegetable jalfrezi,16,15,0,0,194.15,True
+BFP278,Vegetables stir fry,13,6,6,0,29.7,True
+BFP279,Broccoli delight,6,3,2,0,21.5,True
+BFP280,Dhansak (vegetarian),32,29,2,0,223.0225,False
+BFP282,Cauliflower basket,10,10,0,0,484.3275,False
+BFP284,Stuffed bottle gourd (Stuffed ghiya/lauki),12,11,0,0,648.33,False
+BFP286,Ducheese potato,5,5,0,0,172.5575,True
+BFP287,Roast potatoes,4,4,0,0,156.0375,True
+BFP288,Stuffed baked potatoes,7,7,0,0,209.355,False
+BFP289,Potato nests,16,16,0,0,386.7925,False
+BFP290,Parsley potato,3,3,0,0,109.96000000000001,True
+BFP291,Creamed spinach and mushroom,12,11,0,0,570.075,False
+BFP292,Fricassee of Mushroom,12,11,0,0,251.595,False
+BFP293,Cauliflower au gratin,11,11,0,0,337.1075,False
+BFP294,Vegetable and cheese pie,17,17,0,0,486.2875,False
+BFP296,Spinach souffle,8,8,0,0,201.095,False
+BFP299,Beetroot and egg salad (Chukandar aur ande ka salad),5,4,1,0,192.5,True
+BFP300,Sour cream potato salad,10,8,2,0,200.595,False
+BFP301,Tossed green salad,7,5,2,0,150.0,True
+BFP302,Spring basket salad,6,1,5,0,30.0,True
+BFP303,Cucumber and yogurt salad (Kheere aur dahi ka salad),6,6,0,0,115.8075,True
+BFP305,Chicken and tomato towers,10,7,3,0,208.77,False
+BFP306,Jellied sunshine fruit salad,11,7,2,0,117.5,True
+BFP307,Tomato aspic,12,8,3,0,133.645,True
+BFP308,Frozen frosty fruit salad (Phalon ka salaad),10,8,1,0,131.4,True
+BFP310,French dressing,7,7,0,0,142.35,True
+BFP312,Mayonnaise without eggs,8,8,0,0,379.175,False
+BFP313,Curd dressing,6,6,0,0,105.745,True
+BFP316,Carrot raita (Gajar ka raita),9,9,0,0,159.65,True
+BFP318,Pumpkin raita (Kaddu ka raita),8,7,0,0,155.99,True
+BFP320,Mint and peanut raita (Pudinay aur moongfali ka raita),7,6,1,0,113.958,True
+BFP321,Spinach raita (Palak ka raita),6,6,0,0,203.958,False
+BFP322,Bathua raita,6,5,1,0,103.958,True
+BFP325,Pineapple raita (Ananas ka raita),6,6,0,0,159.62,True
+BFP326,Banana raita (Kele ka raita),6,6,0,0,159.62,True
+BFP327,Mango raita (Aam ka raita),6,6,0,0,159.62,True
+BFP328,Guava raita (Amarood ka raita),6,5,1,0,109.62,True
+BFP329,Grapes raita (Angoor ka raita),7,5,2,0,109.62,True
+BFP334,Bottle gourd kheer (Ghiya/Lauki kheer),5,5,0,0,267.7,False
+BFP336,Pumpkin kheer (Kaddu ki kheer),5,5,0,0,267.7,False
+BFP338,Apple kheer (Seb ki kheer),7,6,0,0,272.705,False
+BFP345,Caramel custard (baked),5,4,1,0,225.0,False
+BFP346,Vanilla ice cream without egg,7,5,1,0,308.75,False
+BFP347,Vanilla ice cream with egg,7,5,1,0,356.25,False
+BFP348,Strawberry ice cream,9,6,2,0,358.75,False
+BFP350,Chocochip ice cream,9,6,2,0,358.75,False
+BFP351,Choconut ice cream,12,9,1,0,440.95,False
+BFP352,Pear chocholate sunday,13,8,3,0,336.5,False
+BFP353,Chocolate sauce,4,2,1,0,25.0,True
+BFP354,Coffee ice cream,9,6,2,0,323.75,False
+BFP355,Coffee pear alaska,14,8,5,0,362.75,False
+BFP356,Crunchy butterscotch,11,8,2,0,358.75,False
+BFP358,Peach melba ice cream,13,9,2,0,372.2,False
+BFP359,Vanilla ice cream with apples in hot cherry sauce,16,8,5,0,326.25,False
+BFP360,Hot cherry sauce,6,2,3,0,7.5,True
+BFP361,Grape and orange whip,6,4,1,0,212.0,False
+BFP362,Honey banana cream,9,7,1,0,267.5,False
+BFP363,Raspberry bavarian cream,7,4,1,0,97.0,True
+BFP364,Fruit delight,7,4,2,0,247.6,False
+BFP365,Creamy chocolate mousse,9,3,4,0,130.0,True
+BFP366,Cold lemon souffle,9,4,4,0,177.5,True
+BFP367,Cold orange souffle,9,4,4,0,176.25,True
+BFP368,Cold pineapple souffle,9,3,5,0,155.0,True
+BFP369,Cold vanilla souffle,8,4,3,0,170.0,True
+BFP370,Cold chocolate souffle,9,5,3,0,173.0,True
+BFP371,Stewed fruit (with pear),4,3,0,0,90.55,True
+BFP372,Apricot fool,6,4,1,0,93.45,True
+BFP373,Pavlova,8,5,3,0,160.65,True
+BFP379,Apple crumb pudding,13,10,2,0,118.75,True
+BFP380,Steamed cake with chocolate sauce,12,9,3,0,203.88,False
+BFP382,Hot lemon souffle,10,7,3,0,219.0,False
+BFP386,Gulab jamun with milk powder,9,6,1,0,448.3,False
+BFP388,Chum chum,10,4,3,0,418.75,False
+BFP389,Dil bahar,11,4,3,0,418.75,False
+BFP390,Rasbhari,11,4,3,0,418.75,False
+BFP391,Rajbogh,12,5,3,0,424.35,False
+BFP392,Rasgulla,11,4,3,0,418.75,False
+BFP393,Rasmalai,13,7,2,0,430.52,False
+BFP396,Khoa coconut burfi,6,3,3,0,75.5,True
+BFP397,Danedar burfi,6,5,0,0,279.45,False
+BFP401,Semolina burfi (Suji/Rava burfi),8,6,0,0,134.455,True
+BFP403,Pumpkin coconut burfi (Kaddu aur nariyal ki burfi),7,5,0,0,225.5,False
+BFP404,Khoa ladoo,6,4,1,0,70.0,True
+BFP406,Wheat and gram flour ladoo (Atta besan ladoo),8,7,1,0,101.25,True
+BFP407,Semolina ladoo with nuts (Suji/Rava ladoo with nuts),7,6,1,0,105.5,True
+BFP412,Sesame chickpeas brittle (Til aur channe ki chikki),4,1,2,0,60.0,True
+BFP413,Murmura chikki,3,1,1,0,60.0,True
+BFP415,Masala onion pakora/pakoda (Pyaaz ke pakode),13,12,0,0,361.52000000000004,False
+BFP416,Masala green chilli pakora/pakoda (Hari mirch kay pakode),13,12,0,0,281.5,False
+BFP420,Chicken pakora/pakoda,16,15,0,0,349.345,False
+BFP421,Fish pakora/pakoda,16,14,1,0,269.345,False
+BFP424,Paneer cutlet,12,11,0,0,333.72,False
+BFP425,Sago cutlet/vadas (Sabudana cutlet/vadas),12,10,0,0,363.72,False
+BFP427,Poshtik cutlet,15,13,0,0,393.72,False
+BFP428,Egg cutlet (Anda cutlet),12,11,0,0,378.72,False
+BFP430,Minced meat cutlet,13,11,0,0,378.72,False
+BFP431,Vegetable samosa,18,16,0,0,551.08,False
+BFP436,Plain urad dal vada (Uzunne vada/Minapa garelu/Ulundu vadai/Medu vada),4,3,0,0,282.3,False
+BFP437,Masala urad dal vada,7,7,0,0,323.97,False
+BFP439,Khaman (dhokla),13,10,1,0,114.04,True
+BFP440,Instant dhokla,17,15,1,0,194.015,True
+BFP442,Tomato ginger chutney (Tamatar adarak ki chutney),10,9,0,0,122.8025,True
+BFP443,Mint tomato chutney (Pudinay aur tamatar ki chutney),11,10,0,0,142.8025,True
+BFP444,Coriander chutney (Hare dhaniye ki chutney),11,10,0,0,142.8025,True
+BFP445,Gooseberry chutney (Amla chutney),5,5,0,0,64.925,True
+BFP446,Walnut chutney (Akhrot ki chutney),6,6,0,0,99.925,True
+BFP447,Saunth/Sonth chutney with ginger,9,8,0,0,49.5615,True
+BFP448,Gun powder chutney,6,4,2,0,91.83,True
+BFP450,Dessicated coconut chutney (Sookhe kase nariyal ki chutney),12,11,1,0,135.805,True
+BFP451,Curd mint dip,8,8,0,0,133.005,True
+BFP452,Curd vegetable dip,9,9,0,0,167.5575,True
+BFP453,Mayonnaise vegetable dip,11,10,1,0,197.5575,True
+BFP455,Tomato and cucumber sandwich (Tamatar aur kheere ka sandwich),9,9,0,0,158.0375,True
+BFP456,Tomato sandwich (grilled),8,8,0,0,154.575,True
+BFP457,French sandwich (toasted),14,14,0,0,224.3625,False
+BFP458,Peanut butter cucumber sandwich,4,3,1,0,91.5,True
+BFP459,Mint and peanut sandwich,10,10,0,0,99.37,True
+BFP460,Spicy chutney sandwich,10,10,0,0,119.33,True
+BFP461,Chicken walnut sandwich (Chicken aur akhrot ke sandwich),6,5,1,0,113.825,True
+BFP463,Rolled sandwich,5,5,0,0,80.73,True
+BFP466,Ribbon sandwich,8,8,0,0,257.575,False
+BFP467,Checker board sandwich,7,7,0,0,220.825,False
+BFP468,Submarine sandwich,10,9,1,0,329.325,False
+BFP470,Cheese open sandwich,4,4,0,0,110.0,True
+BFP471,Sunset and sunrise open sandwich,8,7,1,0,144.075,True
+BFP472,Danish luncheon sandwich,8,8,0,0,173.325,True
+BFP473,Chicken and corn open sandwich,8,8,0,0,213.325,False
+BFP476,Chocolate sponge cake,6,2,3,0,140.0,True
+BFP478,Chocolate swiss roll,9,3,5,0,290.0,False
+BFP479,Lemon curd filling,7,3,3,0,90.0,True
+BFP480,Jam filling,2,1,0,0,60.0,True
+BFP482,Chocolate pastry,12,3,8,0,240.0,False
+BFP483,Assorted pastry,10,3,6,0,250.0,False
+BFP484,Orange gateau,10,6,4,0,314.225,False
+BFP485,Black forest gateau,11,6,4,0,253.65,False
+BFP489,Lemon cake,10,5,5,0,177.3,True
+BFP491,Dundee cake,12,8,4,0,165.7375,True
+BFP492,Victorian sandwich cake,8,6,2,0,197.3,True
+BFP495,Chocolate eggless cake,8,5,3,0,291.15,False
+BFP496,Orange eggless cake,8,4,4,0,291.15,False
+BFP498,Chocolate glace icing,6,3,1,1,91.0,True
+BFP499,Butter icing,4,2,1,1,80.0,True
+BFP500,Chocolate butter icing,5,3,1,1,96.0,True
+BFP502,Almond biscuit (Badam ke biscuit),8,6,2,0,59.232,True
+BFP505,Orange biscuit,11,7,4,0,100.582,True
+BFP506,Gingerman biscuit,15,10,5,0,59.024,True
+BFP507,Coffee drops,8,6,2,0,78.375,True
+BFP508,Christmas biscuit,7,5,1,0,57.782,True
+BFP509,Christmas wreath biscuit,8,6,1,0,62.782,True
+BFP510,Christmas bell biscuit,8,6,1,0,58.107,True
+BFP511,Christmas star biscuit,14,7,5,0,115.782,True
+BFP512,Christmas tree biscuit,8,5,2,0,57.782,True
+BFP513,Chocolate cream shells,9,6,3,0,69.382,True
+BFP516,Jelly biscuit,9,5,4,0,33.575,True
+BFP517,Cherry and walnut cookies,9,7,2,0,94.382,True
+BFP518,Cheese straws,9,8,0,0,73.187,True
+BFP519,Butterfly biscuit,11,10,0,0,93.187,True
+BFP521,Flan pastry,6,5,0,0,100.5,True
+BFP522,Fruit flan,12,8,2,0,237.25,False
+BFP523,Orange cream flan,11,9,2,0,316.518,False
+BFP527,Fruit puree tart,12,9,2,0,168.95,True
+BFP529,Apple banana pie,12,11,0,0,340.15,False
+BFP531,Lemon chiffon pie,13,11,0,0,433.0,False
+BFP532,Orange chiffon pie,14,11,1,0,535.5,False
+BFP534,Cream buns,10,7,2,0,244.0,False
+BFP535,Savoury puffs,15,12,3,0,466.21,False
+BFP536,Choux swans,11,8,2,0,255.0,False
+BFP539,Potato aigrettes,10,9,0,0,405.125,False
+BFP541,Cream horns,8,7,0,0,211.15,False
+BFP542,Savoury cheese horns,12,11,0,0,202.7875,False
+BFP544,Paneer patties,14,13,0,0,184.045,True
+BFP545,Vegetable patties,16,14,1,0,212.375,False
+BFP546,Pearl millet infant food (Bajra shishu aahaar),5,5,0,0,100.0,True
+BFP547,Sajina,3,3,0,0,100.0,True
+BFP548,Cereal mix,6,6,0,0,250.0,False
+BFP549,Pulse mix,6,5,1,0,400.0,False
+BFP550,Shishu ahar,5,4,1,0,360.0,False
+BFP552,Cereal pulse mix with amylase rice flour,6,4,1,0,90.0,True
+BFP553,Banana groundnut paste/puree,4,4,0,0,100.0,True
+BFP554,Rice dal porridge (Chawal dal ki khichdi/khichri),4,4,0,0,100.0,True
+BFP555,Lentils and semolina porridge (Dal suji porridge/daliya),5,4,0,0,100.0,True
+BFP556,Spinach khichri (Palak khichri/khichdi),6,5,0,0,101.5,True
+BFP557,Vegetable mix,6,6,0,0,100.0,True
+BFP558,Lentils and wheat porridge (Dal wheat porridge/daliya ),5,3,1,0,81.5,True
+BFP559,Maize porridge,6,5,0,0,100.0,True
+BFP560,Spinach peanut burfi (Palak aur mungfali ki burfi),5,3,0,0,150.0,True
+BFP561,Split bengal gram burfi/fudge (Channa dal burfi),5,4,0,0,170.0,True
+BFP563,Chickpea flour cookies (Sweet besan rounds/cookies),5,4,0,0,155.0,True
+BFP564,Pearl millet mathri (Bajra mathri),6,4,1,0,241.55,False
+BFP565,Sesame biscuit (Til ke biscuit),6,6,0,0,87.15,True
+BFP566,Fermented bengal gram vada (Khameerikrit/Ufna hua channa dal ka vada),6,6,0,0,342.3,False
+BFP568,Poshtik namak paras,9,9,0,0,497.8,False
+BFP569,Soya chikki,6,4,2,0,120.5,True
+BFP570,Besan bathua chilla/cheela,5,5,0,0,60.75,True
+BFP571,Wheat flour and nuts ladoos (Atta nuts ladoos),6,5,0,0,130.0,True
+BFP573,Gram flour and semolina dhokla (Besan suji dhokla),13,12,0,0,168.7675,True
+BFP574,Atta dal burfi,6,5,0,0,105.0,True
+BFP575,Soya roti,6,5,1,0,142.175,True
+BFP576,Poshtik khichdi/khichri,11,8,1,0,132.7375,True
+BFP577,Namkeen daliya,6,5,1,0,51.8375,True
+BFP578,Sprouts upma,8,7,1,0,114.0875,True
+BFP579,Semolina idli (Suji/Rava idli),8,8,0,0,237.9875,False
+BFP580,Poshtik chilla/cheela,8,6,1,0,109.0375,True
+BFP583,Apple jelly (Seb ki jelly),4,2,1,0,2000.0,False
+BFP585,Marmalade (Murabba),4,2,1,0,2000.0,False
+BFP589,Plum squash (Aloo bukhara squash),6,2,3,0,3000.0,False
+BFP595,Lemon green chilli pickle (Nimboo aur hari mirch ka achaar),4,4,0,0,1560.0,False
+BFP597,Brinjal pickle (Baingan ka achaar),6,5,1,0,1318.0,False
+BFP598,Sweet and sour tomato pickle (Khatta meetha tamatar ka achaar),9,9,0,0,1234.25,False
+BFP599,Jhatpat achar with carrot (Jhatpat achaar gajar ke saath),6,5,1,0,1155.0,False
+BFP601,Tomato chutney (Tamatar ki chutney),12,10,2,0,1830.0,False
+BFP602,Tomato ketchup,13,12,1,0,1212.375,False
+BFP604,Stuffed bittergourd (dry) (Bharwa karela),9,9,0,0,109.17,True
+BFP605,Cauliflower potato canjee,6,5,0,0,313.675,False
+BFP606,Creamed spinach,9,8,0,0,381.3075,False
+BFP607,Mango milkshake with ice cream (Aam milkshake ice cream ke saath),7,3,3,0,470.0,False
+BFP608,Pineapple milkshake with ice cream (Ananas milkshake ice cream ke saath),7,3,3,0,470.0,False
+BFP609,Orange milkshake with ice cream (Narangi milkshake ice cream ke saath),7,3,3,0,470.0,False
+OSR001,Woodapple juice (Bel ka sharbat),8,6,0,0,592.0,False
+OSR002,Sattu drink,4,2,1,0,64.5,True
+OSR004,Apple and honey sorbet (Seb aur shehad ka sharbat),5,4,0,0,942.0,False
+OSR005,Thandai,16,12,3,0,1241.55,False
+OSR006,Cucumber sharbat (Kheere ka sharbat),5,2,0,0,344.1,False
+OSR007,Apple oats chia seed smoothie,7,5,2,0,348.3,False
+OSR008,Nannari sharbat,6,3,1,0,275.0,False
+OSR009,Semolina milk drink (Thari kanji),8,7,0,0,350.18,False
+OSR010,Saffron milk (Kesariya doodh),6,6,0,0,1313.7,False
+OSR011,Black rice kheer (Chak-hao kheer),5,4,1,0,1221.0,False
+OSR012,Coconut kheer (Nariyal ki kheer),11,6,5,0,943.555,False
+OSR013,Apple sago payasam (Seb aur sabudana ki kheer),11,9,1,0,1083.49,False
+OSR014,Kesari bath,6,5,0,0,509.005,False
+OSR015,Putharekulu,4,3,0,0,170.4,True
+OSR016,Mango malpua,9,6,2,0,1103.8799999999999,False
+OSR017,Mango vanilla custard,7,5,2,0,301.2,False
+OSR018,Kiwi granola pudding,7,3,4,0,455.0,False
+OSR019,Oats burfi,6,5,1,0,70.5,True
+OSR020,Lotus seed halwa (Kamal gattay ka halwa),6,4,1,0,675.0,False
+OSR021,Amaranth ladoo (Rajgira ladoo),4,3,1,0,201.49,False
+OSR022,Chhena poda,8,8,0,0,447.0,False
+OSR023,Sweet couscous dessert,9,5,3,0,196.9,True
+OSR024,Sweetened yogurt (Shrikhand),6,6,0,0,1184.485,False
+OSR025,Thickened sweetened milk (Rabri),12,12,0,0,1101.4381,False
+OSR026,Gram flour halwa (Besan halwa),13,13,0,0,886.6681,False
+OSR027,Prawn sandwich,7,4,3,0,401.0,False
+OSR028,Watercress sandwich,5,4,1,0,211.4,False
+OSR029,Fish sandwich,12,8,3,0,330.55,False
+OSR030,Kidney bean sandwich with cottage cheese,10,8,1,0,590.91,False
+OSR031,Finger millet biscuit (Ragi biscuit),6,5,1,0,706.7,False
+OSR032,Buttermilk biscuit,6,6,0,0,513.69,False
+OSR033,Lemon cookies,9,7,2,0,722.8,False
+OSR034,Sweet potato biscuit (Shakarkand ke biscuit),8,8,0,0,909.3,False
+OSR035,Raspberry shortbread cookies,8,5,3,0,773.5,False
+OSR036,Pumpkin cookies,12,10,1,0,1005.55,False
+OSR037,Greenpea cookies,6,4,2,0,167.0,True
+OSR038,Sunflower cookies,11,10,0,0,902.1,False
+OSR039,Cardamom cookies (Elaichi cookies),6,5,1,0,2186.0,False
+OSR040,Hazelnut cookies,6,3,2,0,333.5,False
+OSR041,Milk cookies,6,5,1,0,950.35,False
+OSR042,Cranberry cookies,11,10,1,0,1848.7,False
+OSR043,Olive biscuit,5,4,1,0,213.55,False
+OSR045,Tutti fruitti biscuit,7,4,2,0,377.3,False
+OSR046,Peach blueberry preserves,4,4,0,0,1546.0,False
+OSR047,Pear preserves (Naashpati ka murabba),4,3,0,0,3693.0,False
+OSR048,Starfruit preserves,4,3,0,0,410.0,False
+OSR049,Gooseberry pickle (Amla ka achaar),9,6,3,0,191.64,True
+OSR050,Lotus stem pickle (Kamal kakdi ka achar),8,5,2,0,288.84,False
+OSR051,Date pickle (Khajoor ka achaar),7,5,1,0,133.4,True
+OSR052,Garlic pickle (Lahasun ka achar),9,9,0,0,201.106,False
+OSR053,Fermented bamboo shoot pickle (Mesu pickle),5,4,1,0,51.400000000000006,True
+OSR054,Sweet peach pickle (Aadoo ka achaar),9,8,0,0,1577.4,False
+OSR055,Pickled mustard greens,4,2,1,0,1554.0,False
+OSR056,Small onion pickle,4,4,0,0,340.0,False
+OSR057,Green tomato pickle (Haray tamatar ka achaar),6,5,1,0,65.7,True
+OSR058,Pickled cabbage,11,8,2,0,644.475,False
+OSR059,Coconut pickle (Nariyal ka aachar),14,12,2,0,98.13,True
+OSR060,Potato pickle (Aloo ka achaar),11,11,0,0,192.04999999999998,True
+OSR061,Mango murabba candy,5,3,2,0,1131.4,False
+OSR062,Afghani chicken,14,11,2,0,631.3,False
+OSR063,Fish orly,14,11,2,0,549.275,False
+OSR064,Hariyali Fish Tikka,18,14,4,0,203.59,False
+OSR065,Chicken manchurian,20,15,4,0,493.695,False
+OSR066,Handi chicken,17,15,1,0,690.9,False
+OSR067,Lemon chicken,10,5,5,0,1698.15,False
+OSR068,Lemon butter fish,12,7,5,0,94.75,True
+OSR069,Baked eggs in tomato sauce,6,4,2,0,1138.575,False
+OSR070,Egg in a pepper,4,4,0,0,584.15,False
+OSR071,Spinach mushroom scrambled egg (Palak mushroom bhurji),8,7,1,0,204.1675,False
+OSR072,Corn omelette/omlet,8,6,1,0,684.935,False
+OSR073,Cajun chicken,9,5,4,0,470.15,False
+OSR074,Paaner do pyaza,19,18,0,0,518.535,False
+OSR075,Cabbage manchurian (Pattagobhi manchurian),26,22,0,0,785.01,False
+OSR076,Gobi 65,27,26,0,0,709.68,False
+OSR077,Paneer lababdar,20,18,0,0,545.405,False
+OSR078,Roasted cauliflower steak,5,4,1,0,404.925,False
+OSR079,Sauteed radishes with green beans,6,6,0,0,388.15,False
+OSR080,Garlic chutney/Poondu chutney (Lahasun ki chutney),11,11,0,0,244.85,False
+OSR081,Schezwan chutney,12,10,1,0,422.35,False
+OSR082,Bengal 5 Spice Blend (Panch Phoran),5,5,0,0,36.2,True
+OSR083,Onion chutney (Pyaaz ki chutney/Vengaya chutney),10,10,0,0,171.475,True
+OSR085,Dates chutney (Khajoor ki chutney),6,5,0,0,170.86,True
+OSR086,Chicken salad,6,3,3,0,295.575,False
+OSR087,Macaroni salad,16,5,11,0,126.8125,True
+OSR088,Cabbage raita (Pattagobhi raita),6,5,1,0,366.3,False
+OSR089,Pomegranate raita (Anaar ka raita),6,5,1,0,247.375,False
+OSR090,Onion raita (Pyaaz ka raita),5,5,0,0,309.0,False
+OSR091,Green chilli raita (Hari mirch ka raita),5,5,0,0,515.35,False
+OSR092,Kale salad,8,6,2,0,190.2,True
+OSR093,Spinach and paneer souffle,14,10,4,0,420.7,False
+OSR094,Masala souffle,14,10,4,0,1059.26,False
+OSR095,Chicken and cheese souffle,13,13,0,0,783.65,False
+OSR096,Tamarind chutney (Chintapandu pachadi/Puli chutney),12,10,1,0,246.6,False
+OSR097,Pav bhaji masala,15,15,0,0,122.3,True
+OSR098,Green chutney,9,9,0,0,107.64,True
+OSR099,Sago khitchdi/khichri (Sabudana khitchdi/khichri),15,13,1,0,296.97,False
+OSR100,Gram flour chilla/cheela (Besan chilla/cheela),12,11,0,0,176.79,True
+OSR101,Vegetable namkeen jave,15,13,1,0,265.43,False
+OSR102,Khakhra,8,6,0,0,153.5,True
+OSR103,Moong bean dosa (Pesarattu),11,11,0,0,372.775,False
+OSR104,Methi thepla,15,13,2,0,330.36,False
+OSR105,Rice puttu (Ari puttu),5,2,1,0,43.0,True
+OSR106,Buckwheat pancake (Khura),6,4,1,0,224.8,False
+OSR107,Quinoa khichdi/khichri,15,14,0,0,438.03,False
+OSR108,Khakhra chaat,49,42,2,0,1193.264,False
+OSR110,Banana appam,8,7,0,0,878.5,False
+OSR111,Veg manchurian,13,12,1,0,727.601,False
+OSR112,Pav bhaji,37,34,1,0,1413.75,False
+OSR113,Rice murukku,10,7,2,0,831.75,False
+OSR114,Bhel puri,50,42,2,0,1615.1,False
+OSR115,Semolina dhokla (Suji/Rava dhokla),19,17,0,0,235.46,False
+OSR116,Spicy corn chaat,18,15,1,0,708.79,False
+OSR118,Jackfruit fritters (Ponsa mulik/Kathal ka pakora),11,9,2,0,772.7,False
+OSR119,Banana chips (Kele ke chips),3,3,0,0,640.5,False
+OSR120,Wheat cake,7,6,0,0,416.7,False
+OSR121,Mango cheesecake,10,7,2,0,1160.15,False
+OSR122,Carrot cake (Gajar ka cake),11,11,0,0,994.65,False
+OSR123,Semolina cake (Suji/Rava cake),7,7,0,0,530.44,False
+OSR124,Finger millet cake (Ragi cake),16,15,1,0,1033.2,False
+OSR125,Honey cake,13,12,0,0,1236.7,False
+OSR126,Almond cardamom cake (Badam elaichi cake),14,13,1,0,817.35,False
+OSR127,Tutti frutti cake,9,7,1,0,727.75,False
+OSR128,Ham and Bean soup,11,10,1,0,1157.15,False
+OSR129,Whey soup,7,6,1,0,155.82,True
+OSR130,Bottle gourd soup (Ghiya/Lauki soup),9,7,1,0,406.751,False
+OSR131,Baked potato soup,10,8,2,0,2425.5,False
+OSR132,Pumpkin soup,8,7,0,0,477.6,False
+OSR133,Sweet corn soup,15,11,3,0,84.893,True
+OSR134,Paneer soup,10,9,0,0,267.9,False
+OSR135,Curried Cauliflower soup,16,13,3,0,787.06,False
+OSR136,Millet soup,18,17,1,0,650.48,False
+OSR137,Lemon coriander soup,17,14,2,0,152.42,True
+OSR138,Garlic soup,9,6,3,0,259.05,False
+OSR139,Dal makhani,22,21,0,0,446.069,False
+OSR141,Dalma,23,19,3,0,949.66,False
+OSR142,Split bengal gram dal (Channa dal),19,18,0,0,509.48,False
+OSR143,Horsegram dal (Kulthi dal),13,11,1,0,313.53,False
+OSR144,Panchmel dal,28,27,0,0,477.485,False
+OSR145,Dal dhokli,19,18,0,0,260.03,False
+OSR146,Gujarati handvo,22,21,1,0,705.155,False
+OSR147,Sev (Omapodi/Karapusa),10,8,0,0,631.44,False
+OSR148,Papdi,6,5,0,0,580.0,False
+OSR151,Jowar dosa,7,6,0,0,311.3825,False
+OSR152,Bread roll,13,12,0,0,1037.57,False
+OSR153,Soya seekh kebab,13,12,1,0,325.37,False
+OSR154,Classic seasoned black beans,9,6,2,0,534.5,False
+OSR155,Maa chaane ki dal,14,13,1,0,238.295,False
+OSR156,Garlic chickpea soup (Lahasun aur chane ka shoraba),12,8,3,0,304.515,False

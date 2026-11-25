@@ -3,6 +3,7 @@
 import math
 from lhf import composition, constants
 from lhf.classify import class_totals, classes_for
+from lhf.compute import sum_nutrients
 from lhf.footprint import footprint
 from lhf.grams import grams_for
 from lhf.match import match_name
@@ -29,7 +30,7 @@ def analyse_recipe(recipe: dict, setting: str = "urban", risk: str = "general") 
     table = composition.load_table()
     table_index = table.index
 
-    lines_raw = recipe.get("lines", [])
+    lines_raw = recipe.get("lines") or []
     lines_out = []
     inc_items = []
     unquantified_fat_lines = []
@@ -64,7 +65,7 @@ def analyse_recipe(recipe: dict, setting: str = "urban", risk: str = "general") 
             if any(c in ("COOKING_OIL", "DAIRY_FAT", "HYDROGENATED_FAT") for c in unq_classes):
                 unquantified_fat_lines.append(raw)
 
-            if "SALT" in unq_classes or "salt" in name.lower() or "namak" in name.lower():
+            if "SALT" in unq_classes:
                 has_unquantified_salt = True
 
             lines_out.append({
@@ -114,6 +115,23 @@ def analyse_recipe(recipe: dict, setting: str = "urban", risk: str = "general") 
                     "nutrients": None,
                 })
             else:
+                c_list = classes_for(code)
+                if "WATER" in c_list or code == "K505":
+                    lines_out.append({
+                        "index": idx,
+                        "raw": raw,
+                        "parsed": parsed,
+                        "match": m,
+                        "grams": None,
+                        "grams_basis": None,
+                        "grams_flags": [],
+                        "included": False,
+                        "exclusion_reason": "WATER",
+                        "classes": c_list,
+                        "nutrients": None,
+                    })
+                    continue
+
                 g_res = grams_for(
                     parsed.get("qty"),
                     parsed.get("unit"),
@@ -125,7 +143,6 @@ def analyse_recipe(recipe: dict, setting: str = "urban", risk: str = "general") 
                 g = g_res.get("grams")
                 g_basis = g_res.get("basis")
                 g_flags = g_res.get("flags", [])
-                c_list = classes_for(code)
 
                 if g is None or g <= 0:
                     lines_out.append({
@@ -199,31 +216,8 @@ def analyse_recipe(recipe: dict, setting: str = "urban", risk: str = "general") 
     }
 
     # Totals
-    totals = {}
-    for n in composition.NUTRIENT_COLUMNS:
-        if n == "tfa_g":
-            has_unknown = any(
-                math.isnan(l["nutrients"]["tfa_g"])
-                for l in inc_items
-                if l["nutrients"].get("tfa_g") is not None
-            )
-            if has_unknown or not inc_items:
-                totals[n] = float("nan") if has_unknown else 0.0
-            else:
-                totals[n] = sum(float(l["nutrients"]["tfa_g"]) for l in inc_items)
-        elif n == "water_g":
-            has_unknown = any(
-                math.isnan(l["nutrients"]["water_g"])
-                for l in inc_items
-                if l["nutrients"].get("water_g") is not None
-            )
-            if has_unknown or not inc_items:
-                totals[n] = float("nan") if has_unknown else 0.0
-            else:
-                totals[n] = sum(float(l["nutrients"]["water_g"]) for l in inc_items)
-        else:
-            totals[n] = sum(float(l["nutrients"][n] or 0.0) for l in inc_items)
-
+    compute_res = sum_nutrients([{"code": l["match"]["code"], "grams": l["grams"]} for l in inc_items])
+    totals = compute_res["totals"]
     cls_tot = class_totals(
         [{"code": l["match"]["code"], "grams": l["grams"], "nutrients": l["nutrients"]} for l in inc_items]
     )
@@ -242,13 +236,21 @@ def analyse_recipe(recipe: dict, setting: str = "urban", risk: str = "general") 
     if not (mass_min <= included_mass <= mass_max):
         warnings.append(f"MASS_IMPLAUSIBLE: included mass {included_mass} g outside range {mass_min}-{mass_max} g")
 
-    servings = recipe.get("servings")
-    if not servings:
-        warnings.append("NO_SERVINGS: servings not specified in recipe")
+    servings_raw = recipe.get("servings")
+    servings_val = None
+    if servings_raw is not None and not isinstance(servings_raw, bool):
+        try:
+            s_cand = float(servings_raw)
+            if math.isfinite(s_cand) and s_cand > 0:
+                servings_val = s_cand
+        except (ValueError, TypeError):
+            servings_val = None
+
+    if servings_val is None:
+        warnings.append("NO_SERVINGS: servings not specified or invalid in recipe")
         per_serving = None
         fp = None
     else:
-        servings_val = float(servings)
         per_serving = {
             k: (v / servings_val if v is not None and not math.isnan(v) else None)
             for k, v in totals.items()
@@ -274,5 +276,9 @@ def analyse_recipe(recipe: dict, setting: str = "urban", risk: str = "general") 
         "footprint": fp,
         "warnings": warnings,
     }
+
+    # Frying correction (SPEC addendum: replace stated bath oil with lab-measured absorbed fat)
+    from lhf.frying import correct_frying
+    result = correct_frying(result, setting=setting, risk=risk)
 
     return _clean_nan(result)

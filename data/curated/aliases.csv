@@ -24,7 +24,6 @@ warm milk,L901,Toned milk
 doodh,L901,Milk in Hindi
 full cream milk,L002,Full cream cow milk
 whole milk,L002,Whole cow milk
-full cream/whole milk,L002,Whole cow milk
 buffalo milk,L001,Buffalo milk
 curd,L902,Amul Masti Dahi label
 dahi,L902,Amul Masti Dahi label
@@ -124,12 +123,12 @@ kala chana,B002,Bengal gram whole
 urad dal,B003,Black gram dal / split urad
 split urad dal,B003,Black gram dal
 white urad dal,B003,Black gram dal
-whole urad dal,B004,Black gram whole / sabut urad
-sabut urad dal,B004,Black gram whole
-sabut urad,B004,Black gram whole
-urad dal sabut,B004,Black gram whole
-black urad dal,B004,Black gram whole
-black gram lentils,B004,Black gram whole
+whole urad dal,B003,Black gram whole / sabut urad (resolved via B003 measure)
+sabut urad dal,B003,Black gram whole (resolved via B003 measure)
+sabut urad,B003,Black gram whole (resolved via B003 measure)
+urad dal sabut,B003,Black gram whole (resolved via B003 measure)
+black urad dal,B003,Black gram whole (resolved via B003 measure)
+black gram lentils,B003,Black gram whole (resolved via B003 measure)
 moong dal,B010,Green gram dal / moong dal
 mung dal,B010,Green gram dal
 yellow moong dal,B010,Green gram dal
@@ -331,7 +330,7 @@ tomatoes,D075,Tomato ripe hybrid IFCT
 tamatar,D075,Tomato in Hindi
 fresh tomatoes,D075,Tomato
 medium tomatoes,D075,Tomato
-tomato puree,D075,Tomato puree / ripe hybrid
+tomato puree,X504,Tomato puree INDB_UK
 tomato paste,X504,Tomato puree INDB_UK
 pureed tomatoes,D075,Tomato ripe hybrid
 homemade tomato puree,D075,Tomato ripe hybrid
@@ -714,9 +713,9 @@ ulutham paruppu,B003,"IFCT Tam Black gram, dal"
 minapa pappu,B003,"IFCT Tel Black gram, dal"
 mashkolail,B004,"IFCT B Black gram, whole"
 adad,B004,"IFCT G Black gram, whole"
-chhilke wali urad dal,B004,"IFCT H Black gram, whole"
+chhilke wali urad dal,B003,"IFCT H Black gram, whole"
 uzhunu,B004,"IFCT Mal Black gram, whole"
-sabut maa ki daal,B004,"IFCT P Black gram, whole"
+sabut maa ki daal,B003,"IFCT P Black gram, whole"
 ulundhu,B004,"IFCT Tam Black gram, whole"
 minumulu mapum,B004,"IFCT Tel Black gram, whole"
 barbati,B005,"IFCT B Cowpea, brown"
@@ -804,7 +803,7 @@ sukhi matar,B017,"IFCT H Peas, dry"
 batani,B017,"IFCT Kan Peas, dry"
 pattani,B017,"IFCT Mal Peas, dry"
 sukhe hare matar dal,B017,"IFCT P Peas, dry"
-tel. batani,B017,"IFCT Kan Peas, dry"
+batani,B017,"IFCT Kan Peas, dry"
 barbati beej,B018,"IFCT B Rajmah, black"
 razma,B018,"IFCT E Rajmah, black"
 phansi,B018,"IFCT G Rajmah, black"
@@ -817,7 +816,7 @@ barigalu,B018,"IFCT Tel Rajmah, black"
 bhoore rajmah,B019,"IFCT P Rajmah, brown"
 lal rajmah,B020,"IFCT P Rajmah, red"
 kash,B021,"IFCT B Red gram, dal"
-h. arhar dal,B021,"IFCT B Red gram, dal"
+arhar dal,B021,"IFCT B Red gram, dal"
 pigeon pea,B021,"IFCT E Red gram, dal"
 tuver ni daad,B021,"IFCT G Red gram, dal"
 tuvaru parippu,B021,"IFCT Mal Red gram, dal"
@@ -1019,14 +1018,13 @@ saro da sag,C026,IFCT P Mustard leaves
 kadugu ilai,C026,IFCT Tam Mustard leaves
 ava akulu,C026,IFCT Tel Mustard leaves
 bok choy,C027,IFCT E Pak Choi leaves
-horse`s ear,C027,IFCT E Pak Choi leaves
+horse's ear,C027,IFCT E Pak Choi leaves
 chinese celery cabbage,C027,IFCT E Pak Choi leaves
 white mustard cabbage,C027,IFCT E Pak Choi leaves
 pak choi na pan,C027,IFCT G Pak Choi leaves
 garden parsley,C028,IFCT E Parsley
 leela dhana,C028,IFCT G Parsley
 seema malli,C028,IFCT Mal Parsley
-kothimbir/dhane,C028,IFCT Mar Parsley
 verkosu,C028,IFCT Tam Parsley
 auchumooda,C028,IFCT Kan Parsley
 parsley,C028,IFCT P Parsley
@@ -1067,8 +1065,8 @@ pasalai keerai,C033,IFCT Tam Spinach
 palakoora,C033,IFCT Tel Spinach
 tetul pata,C034,"IFCT B Tamarind leaves, tender"
 amli na pan,C034,"IFCT G Tamarind leaves, tender"
-p. imli patte,C034,"IFCT H Tamarind leaves, tender"
-tam. puliam ilaigal,C034,"IFCT Mal Tamarind leaves, tender"
+imli patte,C034,"IFCT H Tamarind leaves, tender"
+puliam ilaigal,C034,"IFCT Mal Tamarind leaves, tender"
 chinchecha pala,C034,"IFCT Mar Tamarind leaves, tender"
 chinta chiguru,C034,"IFCT Tel Tamarind leaves, tender"
 chalkumra,D001,IFCT B Ash gourd
@@ -1286,9 +1284,9 @@ kovakkai,D060,IFCT Mal Parwar
 parwar,D060,IFCT Mar Parwar
 kommu potla,D060,IFCT Tel Parwar
 motor shuti,D061,"IFCT B Peas, fresh"
-mar. vatana,D061,"IFCT G Peas, fresh"
+vatana,D061,"IFCT G Peas, fresh"
 hare matar,D061,"IFCT P Peas, fresh"
-tam. paccha pattani,D061,"IFCT Mal Peas, fresh"
+paccha pattani,D061,"IFCT Mal Peas, fresh"
 mocha,D062,"IFCT B Plantain, flower"
 banana flower,D062,"IFCT E Plantain, flower"
 kel phool,D062,"IFCT G Plantain, flower"
@@ -1377,10 +1375,9 @@ seemai suraikayi,D077,"IFCT Tam Zucchini, green"
 sev,E001,"IFCT B Apple, big"
 safarjan,E001,"IFCT G Apple, big"
 sebu,E001,"IFCT Kan Apple, big"
-tam. apple pazham,E001,"IFCT Mal Apple, big"
+apple pazham,E001,"IFCT Mal Apple, big"
 safar chand,E001,"IFCT Mar Apple, big"
 seb,E001,"IFCT P Apple, big"
-sepu/sema regu,E001,"IFCT Tel Apple, big"
 lila safarjan,E002,"IFCT G Apple, green"
 apple pazham,E002,"IFCT Mal Apple, green"
 suska khubani,E005,"IFCT B Apricot, dried"
@@ -1390,12 +1387,9 @@ jaldaru hannu,E005,"IFCT Kan Apricot, dried"
 sheema bedhaam pazham,E005,"IFCT Mal Apricot, dried"
 jardaalu,E005,"IFCT Mar Apricot, dried"
 kharamani,E005,"IFCT P Apricot, dried"
-seema badam/ jallaru pandu,E005,"IFCT Tel Apricot, dried"
 sakkarai badhami,E005,"IFCT Tam Apricot, dried"
 kulunashpati,E007,IFCT B Avocado fruit
 makhanphal,E007,IFCT H Avocado fruit
-bennephala/bennehannu,E007,IFCT Kan Avocado fruit
-aathachakka/ venna-pazham,E007,IFCT Mal Avocado fruit
 makhan phal,E007,IFCT Mar Avocado fruit
 vennaipazham,E007,IFCT Tam Avocado fruit
 bel,E008,IFCT B Bael fruit
@@ -1450,7 +1444,7 @@ sugar apple,E016,IFCT E Custard apple
 sweetsop,E016,IFCT E Custard apple
 sitapad,E016,IFCT G Custard apple
 sharifa,E016,IFCT H Custard apple
-mar. sitaphal,E016,IFCT Mal Custard apple
+sitaphal,E016,IFCT Mal Custard apple
 seethapazham,E016,IFCT Tam Custard apple
 sitaphalam,E016,IFCT Tel Custard apple
 kharjura,E017,"IFCT B Dates, dry, pale brown"
@@ -1508,7 +1502,6 @@ karekayi,E032,IFCT Kan Karonda fruit
 karvand,E032,IFCT Mar Karonda fruit
 karakka,E032,IFCT Mal Karonda fruit
 karonda,E032,IFCT P Karonda fruit
-kalakkay/ parungala,E032,IFCT Tam Karonda fruit
 kalive,E032,IFCT Tel Karonda fruit
 nimbhu,E033,"IFCT H Lemon, juice"
 nimapandu,E033,"IFCT Tel Lemon, juice"
@@ -1540,9 +1533,6 @@ mangustan,E043,IFCT H Mangosteen
 kodam puli,E043,IFCT Mal Mangosteen
 sulambali,E043,IFCT Tam Mangosteen
 jilapi,E044,IFCT B Manila tamarind
-bakhai ambli/vilayabi ambli,E044,IFCT G Manila tamarind
-ganga imli/ jangal jalebi,E044,IFCT H Manila tamarind
-seema/ dora hunase,E044,IFCT Kan Manila tamarind
 vilayatichinch,E044,IFCT Mar Manila tamarind
 jangjalebi,E044,IFCT P Manila tamarind
 kodukkapuli,E044,IFCT Tam Manila tamarind
@@ -1628,15 +1618,11 @@ sapodilla,E060,IFCT E Sapota
 chiku,E060,IFCT H Sapota
 sapota,E060,IFCT Kan Sapota
 shul-ram fal,E061,IFCT H Soursop
-lakshmanaphala/mulluramphala,E061,IFCT Kan Soursop
 mullatha,E061,IFCT Mal Soursop
-malai seethapalam/ paanghi pazham,E061,IFCT Tam Soursop
 lakshamana phalamu,E061,IFCT Tel Soursop
 carambola,E062,IFCT E Star fruit
 starfruit,E062,IFCT E Star fruit
 amrakh,E062,IFCT G Star fruit
-kazmal/kamrakh,E062,IFCT H Star fruit
-kamaraka/ kapazakshi hannu,E062,IFCT Kan Star fruit
 caturappuli,E062,IFCT Mal Star fruit
 karambal,E062,IFCT Mar Star fruit
 tamarattai,E062,IFCT Tam Star fruit
@@ -1713,7 +1699,7 @@ urula kizhangu,F006,"IFCT Mal Potato, brown skin, big"
 batata,F006,"IFCT Mar Potato, brown skin, big"
 urulai kizhangu,F006,"IFCT Tam Potato, brown skin, big"
 bangala dumpa,F006,"IFCT Tel Potato, brown skin, big"
-u. alu,F007,"IFCT P Potato, brown skin, small"
+alu,F007,"IFCT P Potato, brown skin, small"
 urulaikizhangu,F007,"IFCT Tam Potato, brown skin, small"
 mula,F009,"IFCT B Radish, elongate, red skin"
 muda,F009,"IFCT G Radish, elongate, red skin"
@@ -1738,7 +1724,7 @@ maravalli kizhangu,F015,IFCT Tam Tapioca
 krrapendalamu,F015,IFCT Tel Tapioca
 pani phal,F016,IFCT B Water Chestnut
 shingoda,F016,IFCT G Water Chestnut
-mar. shingara,F016,IFCT H Water Chestnut
+shingara,F016,IFCT H Water Chestnut
 karimpolam,F016,IFCT Mal Water Chestnut
 shingada,F016,IFCT P Water Chestnut
 singhara,F016,IFCT Tam Water Chestnut
@@ -1827,7 +1813,6 @@ ulli,G017,"IFCT Mal Onion, big"
 kanda,G017,"IFCT Mar Onion, big"
 gandhe,G017,"IFCT P Onion, big"
 vengayam,G017,"IFCT Tam Onion, big"
-neerulli/ullipaya,G017,"IFCT Tel Onion, big"
 gundhun,G018,"IFCT B Onion, small"
 dungri,G018,"IFCT G Onion, small"
 pyaaz kali,G018,"IFCT H Onion, small"
@@ -1917,7 +1902,7 @@ joan,G029,IFCT B Omum
 ajowan,G029,IFCT E Omum
 ajowan caraway,G029,IFCT E Omum
 ajman,G029,IFCT E Omum
-bishop`s weed,G029,IFCT E Omum
+bishop's weed,G029,IFCT E Omum
 carom,G029,IFCT E Omum
 ajmo,G029,IFCT G Omum
 ajwan,G029,IFCT H Omum
@@ -2074,7 +2059,6 @@ banger chata,J001,"IFCT B Button mushroom, fresh"
 common mushroom,J001,"IFCT E Button mushroom, fresh"
 portobello mushroom,J001,"IFCT E Button mushroom, fresh"
 biladi no top,J001,"IFCT G Button mushroom, fresh"
-aanabay/aanabe,J001,"IFCT Kan Button mushroom, fresh"
 kun koon,J001,"IFCT Mal Button mushroom, fresh"
 bhoochhtra,J001,"IFCT Mar Button mushroom, fresh"
 khoomba,J001,"IFCT P Button mushroom, fresh"
@@ -2086,10 +2070,10 @@ palm wine,K001,IFCT E Toddy
 henda,K001,IFCT Kan Toddy
 tadi,K001,IFCT G Toddy
 tarai,K001,IFCT H Toddy
-o. tadi,K001,IFCT Mar Toddy
+tadi,K001,IFCT Mar Toddy
 todhi,K001,IFCT P Toddy
 tam,K001,IFCT Mal Toddy
-tel. kallu,K001,IFCT Mal Toddy
+kallu,K001,IFCT Mal Toddy
 daberjal,K002,IFCT B Coconut water
 nariyad nu pani,K002,IFCT G Coconut water
 nariyal ka pani,K002,IFCT H Coconut water
@@ -2106,7 +2090,6 @@ uemma halu,L001,"IFCT Kan Milk, whole, Buffalo"
 kerbau paal,L001,"IFCT Mal Milk, whole, Buffalo"
 maz da doodh,L001,"IFCT P Milk, whole, Buffalo"
 erumaipal,L001,"IFCT Tam Milk, whole, Buffalo"
-gedha/barre palu,L001,"IFCT Tel Milk, whole, Buffalo"
 gai nu dhudh,L002,"IFCT G Milk, whole, Cow"
 gai ka doodh,L002,"IFCT H Milk, whole, Cow"
 hasuvina halu,L002,"IFCT Kan Milk, whole, Cow"
@@ -2122,7 +2105,7 @@ h,L004,IFCT B Khoa
 kan,L004,IFCT B Khoa
 mal,L004,IFCT B Khoa
 p,L004,IFCT B Khoa
-tel. khoa,L004,IFCT B Khoa
+khoa,L004,IFCT B Khoa
 mavo,L004,IFCT G Khoa
 thirattupal,L004,IFCT Tam Khoa
 dim,M001,"IFCT B Egg, poultry, whole, raw"
@@ -2220,62 +2203,47 @@ baathu guddu,M012,"IFCT Tel Egg, duck, whole, raw"
 batakh aamlet,M013,"IFCT H Egg, duck, whole, omlet"
 vaathu muttai dosai,M013,"IFCT Tam Egg, duck, whole, omlet"
 bater dim,M014,"IFCT B Egg, quial, whole, raw"
-?. indu,M014,"IFCT G Egg, quial, whole, raw"
 bater ka anda,M014,"IFCT H Egg, quial, whole, raw"
-?. motte,M014,"IFCT Kan Egg, quial, whole, raw"
 kaada mutta,M014,"IFCT Mal Egg, quial, whole, raw"
 lavari ande,M014,"IFCT Mar Egg, quial, whole, raw"
 bater da anda,M014,"IFCT P Egg, quial, whole, raw"
 kaadai muttai,M014,"IFCT Tam Egg, quial, whole, raw"
 burusu pitta guddu,M014,"IFCT Tel Egg, quial, whole, raw"
 sheddho bater dim,M015,"IFCT B Egg, quial, whole, boiled"
-bafelu ?. indu,M015,"IFCT G Egg, quial, whole, boiled"
 ubla bater ka anda,M015,"IFCT H Egg, quial, whole, boiled"
-beyisida ?. motte,M015,"IFCT Kan Egg, quial, whole, boiled"
 puzhungiya kaada mutta,M015,"IFCT Mal Egg, quial, whole, boiled"
 ukadlele lavari ande,M015,"IFCT Mar Egg, quial, whole, boiled"
 ublia bater da anda,M015,"IFCT P Egg, quial, whole, boiled"
 avitha kaadai muttai,M015,"IFCT Tam Egg, quial, whole, boiled"
 udikinchina burusu pitta guddu,M015,"IFCT Tel Egg, quial, whole, boiled"
-murgir thyang/ran,N001,"IFCT B Chicken, poultry, leg, skinless"
 marghi ni tang,N001,"IFCT G Chicken, poultry, leg, skinless"
-murga tang/murgi ki raan,N001,"IFCT H Chicken, poultry, leg, skinless"
 koli kaalu,N001,"IFCT Kan Chicken, poultry, leg, skinless"
 kozhi kaal,N001,"IFCT Mal Chicken, poultry, leg, skinless"
-kombdi tangdi/mandi,N001,"IFCT Mar Chicken, poultry, leg, skinless"
-murge di latt/raan,N001,"IFCT P Chicken, poultry, leg, skinless"
 kodi kaallu,N001,"IFCT Tel Chicken, poultry, leg, skinless"
 murgir ran,N002,"IFCT B Chicken, poultry, thigh, skinless"
 marghi ni saathal,N002,"IFCT G Chicken, poultry, thigh, skinless"
-murge ki raan/jangh,N002,"IFCT H Chicken, poultry, thigh, skinless"
 koli thode,N002,"IFCT Kan Chicken, poultry, thigh, skinless"
 kozhi thuda,N002,"IFCT Mal Chicken, poultry, thigh, skinless"
 kombdichi mandi,N002,"IFCT Mar Chicken, poultry, thigh, skinless"
-murge di patt/raan,N002,"IFCT P Chicken, poultry, thigh, skinless"
 kozhi thodai,N002,"IFCT Tam Chicken, poultry, thigh, skinless"
 kodi thodala mamsam,N002,"IFCT Tel Chicken, poultry, thigh, skinless"
 murgir book,N003,"IFCT B Chicken, poultry, breast, skinless"
 marghi ni chhaati,N003,"IFCT G Chicken, poultry, breast, skinless"
 murge ka seena,N003,"IFCT H Chicken, poultry, breast, skinless"
 koli ede mamsa,N003,"IFCT Kan Chicken, poultry, breast, skinless"
-kozhi maaridam/nenju,N003,"IFCT Mal Chicken, poultry, breast, skinless"
 kombdichi chhaati,N003,"IFCT Mar Chicken, poultry, breast, skinless"
 murge da seena,N003,"IFCT P Chicken, poultry, breast, skinless"
 kozhi maarbu kari,N003,"IFCT Tam Chicken, poultry, breast, skinless"
 kodi chaati mamsam,N003,"IFCT Tel Chicken, poultry, breast, skinless"
-murgir dana/pakha,N004,"IFCT B Chicken, poultry, wing, skinless"
 marghi ni pankh,N004,"IFCT G Chicken, poultry, wing, skinless"
-murge ka par/pankh,N004,"IFCT H Chicken, poultry, wing, skinless"
 koli rekke,N004,"IFCT Kan Chicken, poultry, wing, skinless"
 kozhi chiraku,N004,"IFCT Mal Chicken, poultry, wing, skinless"
 kombdiche pankh,N004,"IFCT Mar Chicken, poultry, wing, skinless"
 murge da par,N004,"IFCT P Chicken, poultry, wing, skinless"
 kozhi irakkai,N004,"IFCT Tam Chicken, poultry, wing, skinless"
 kodi rekka,N004,"IFCT Tel Chicken, poultry, wing, skinless"
-murgir mete/kolija,N005,"IFCT B Poultry, chicken, liver"
 marghi nu kaleju,N005,"IFCT G Poultry, chicken, liver"
 murge ki kaleji,N005,"IFCT H Poultry, chicken, liver"
-koli yakrit/pittakosha,N005,"IFCT Kan Poultry, chicken, liver"
 kozhi karal,N005,"IFCT Mal Poultry, chicken, liver"
 kombdiche kaleji,N005,"IFCT Mar Poultry, chicken, liver"
 murge di kaleji,N005,"IFCT P Poultry, chicken, liver"
@@ -2283,43 +2251,33 @@ kozhi eeral,N005,"IFCT Tam Poultry, chicken, liver"
 kodi kaleyam,N005,"IFCT Tel Poultry, chicken, liver"
 murgir gila,N006,"IFCT B Poultry, chicken, gizzard"
 marghi ni pathri,N006,"IFCT G Poultry, chicken, gizzard"
-murge ki pathri/sangdana,N006,"IFCT H Poultry, chicken, gizzard"
 koli gijjarda,N006,"IFCT Kan Poultry, chicken, gizzard"
 kozhi avanakkaaya,N006,"IFCT Mal Poultry, chicken, gizzard"
-kombdiche pot/vajri,N006,"IFCT Mar Poultry, chicken, gizzard"
 murge di pathri,N006,"IFCT P Poultry, chicken, gizzard"
 kozhi gundaikkai,N006,"IFCT Tam Poultry, chicken, gizzard"
 kodi gizzardu,N006,"IFCT Tel Poultry, chicken, gizzard"
-deshi murgir thyang/ran,N007,"IFCT B Country hen, leg, with skin"
 desi marghi ni tang,N007,"IFCT G Country hen, leg, with skin"
-desi murge ki tang/raan,N007,"IFCT H Country hen, leg, with skin"
 naati koli kaalu,N007,"IFCT Kan Country hen, leg, with skin"
 naadan kozhi kaal,N007,"IFCT Mal Country hen, leg, with skin"
 gavran kombdichi tangdi,N007,"IFCT Mar Country hen, leg, with skin"
-desi murge di latt/raan,N007,"IFCT P Country hen, leg, with skin"
 naattu kozhi kaal,N007,"IFCT Tam Country hen, leg, with skin"
 naatu kodi kaallu,N007,"IFCT Tel Country hen, leg, with skin"
 deshi murgir ran,N008,"IFCT B Country hen, thigh, with skin"
 desi marghi ni saathal,N008,"IFCT G Country hen, thigh, with skin"
-desi murge ki raan/jangh,N008,"IFCT H Country hen, thigh, with skin"
 naati koli thode,N008,"IFCT Kan Country hen, thigh, with skin"
 naadan kozhi thuda,N008,"IFCT Mal Country hen, thigh, with skin"
 gavran kombdichi mandi,N008,"IFCT Mar Country hen, thigh, with skin"
-desi murge di patt/raan,N008,"IFCT P Country hen, thigh, with skin"
 naattu kozhi thodai,N008,"IFCT Tam Country hen, thigh, with skin"
 naatu kodi thodala mamsam,N008,"IFCT Tel Country hen, thigh, with skin"
 deshi murgir book,N009,"IFCT B Country hen, breast, with skin"
 desi marghi ni chhaati,N009,"IFCT G Country hen, breast, with skin"
 desi murge ka seena,N009,"IFCT H Country hen, breast, with skin"
 naati koli ede mamsa,N009,"IFCT Kan Country hen, breast, with skin"
-naadan kozhi maaridam/nenju,N009,"IFCT Mal Country hen, breast, with skin"
 gavran kombdichi chhaati,N009,"IFCT Mar Country hen, breast, with skin"
 desi murge da seena,N009,"IFCT P Country hen, breast, with skin"
 naattu kozhi maarbu kari,N009,"IFCT Tam Country hen, breast, with skin"
 naatu kodi chaati mamsam,N009,"IFCT Tel Country hen, breast, with skin"
-deshi murgir dana/pakha,N010,"IFCT B Country hen, wing, with skin"
 desi marghi ni pankh,N010,"IFCT G Country hen, wing, with skin"
-desi murge ka par/pankh,N010,"IFCT H Country hen, wing, with skin"
 naati koli rekke,N010,"IFCT Kan Country hen, wing, with skin"
 naadan kozhi chiraku,N010,"IFCT Mal Country hen, wing, with skin"
 gavran kombdiche pankh,N010,"IFCT Mar Country hen, wing, with skin"
@@ -2337,10 +2295,10 @@ vaathu irachi,N011,"IFCT Tam Duck, meat, with skin"
 baathu mamsam,N011,"IFCT Tel Duck, meat, with skin"
 emu gosht,N012,"IFCT H Emu, meat, skinless"
 emu kari,N012,"IFCT Tam Emu, meat, skinless"
-emu mamsam. ,N012,"IFCT Tel Emu, meat, skinless"
+emu mamsam,N012,"IFCT Tel Emu, meat, skinless"
 guinea murga gosht,N013,"IFCT H Guinea fowl, meat, with skin"
 guinea kozhi kari,N013,"IFCT Tam Guinea fowl, meat, with skin"
-guinea kodi mamsam. ,N013,"IFCT Tel Guinea fowl, meat, with skin"
+guinea kodi mamsam,N013,"IFCT Tel Guinea fowl, meat, with skin"
 payra mangsho,N014,"IFCT B Pigeon, meat, with skin"
 kabutar nu mas,N014,"IFCT G Pigeon, meat, with skin"
 kabutar ka gosht,N014,"IFCT H Pigeon, meat, with skin"
@@ -2351,30 +2309,23 @@ kabutar da gosht,N014,"IFCT P Pigeon, meat, with skin"
 puraa irachi,N014,"IFCT Tam Pigeon, meat, with skin"
 paavuramu mamsam,N014,"IFCT Tel Pigeon, meat, with skin"
 bater mangsho,N015,"IFCT B Quail, meat, skinless"
-?. mas,N015,"IFCT G Quail, meat, skinless"
 bater ka gosht,N015,"IFCT H Quail, meat, skinless"
-?. mamsa,N015,"IFCT Kan Quail, meat, skinless"
 kaada irachi,N015,"IFCT Mal Quail, meat, skinless"
 lavari mas,N015,"IFCT Mar Quail, meat, skinless"
 bater da gosht,N015,"IFCT P Quail, meat, skinless"
 kaadai irachi,N015,"IFCT Tam Quail, meat, skinless"
 burusu pitta mamsam,N015,"IFCT Tel Quail, meat, skinless"
-turkey ki tang/raan,N016,"IFCT H Turkey, leg, with skin"
 turkey kaal,N016,"IFCT Tam Turkey, leg, with skin"
-turkey kaallu. ,N016,"IFCT Tel Turkey, leg, with skin"
-turkey ki raan/jangh,N017,"IFCT H Turkey, thigh, with skin"
+turkey kaallu,N016,"IFCT Tel Turkey, leg, with skin"
 turkey thodai,N017,"IFCT Tam Turkey, thigh, with skin"
 turkey thodalu,N017,"IFCT Tel Turkey, thigh, with skin"
 turkey ka seena,N018,"IFCT H Turkey, breast, with skin"
 turkey maarbu kari,N018,"IFCT Tam Turkey, breast, with skin"
 turkey chaati mamsam,N018,"IFCT Tel Turkey, breast, with skin"
-turkey ka par/pankh,N019,"IFCT H Turkey, wing, with skin"
 turkey irakkai,N019,"IFCT Tam Turkey, wing, with skin"
 turkey rekka,N019,"IFCT Tel Turkey, wing, with skin"
 pathar kandh,O001,"IFCT B Goat, shoulder, meat"
 bakri no khabho,O001,"IFCT G Goat, shoulder, meat"
-bakre ka kandha/dast,O001,"IFCT H Goat, shoulder, meat"
-aadina/meke bhujada mamsa,O001,"IFCT Kan Goat, shoulder, meat"
 aattin chumal irachi,O001,"IFCT Mal Goat, shoulder, meat"
 bakriche khande,O001,"IFCT Mar Goat, shoulder, meat"
 bakre da modha,O001,"IFCT P Goat, shoulder, meat"
@@ -2386,7 +2337,6 @@ bakre di champ,O002,"IFCT P Goat, chops"
 pathar thyang,O003,"IFCT B Goat, legs"
 bakri na tang,O003,"IFCT G Goat, legs"
 bakre ki tangein,O003,"IFCT H Goat, legs"
-aadina/meke kaalugalu,O003,"IFCT Kan Goat, legs"
 aattin kaalukal,O003,"IFCT Mal Goat, legs"
 bakriche paay,O003,"IFCT Mar Goat, legs"
 bakre di lattein,O003,"IFCT P Goat, legs"
@@ -2394,8 +2344,6 @@ aattu kaalgal,O003,"IFCT Tam Goat, legs"
 meka kaallu,O003,"IFCT Tel Goat, legs"
 pathar magaj,O004,"IFCT B Goat, brain"
 bakri nu bheju,O004,"IFCT G Goat, brain"
-bakre ka bheja/maghaz,O004,"IFCT H Goat, brain"
-aadina/meke medulu,O004,"IFCT Kan Goat, brain"
 aattin thalacchoru,O004,"IFCT Mal Goat, brain"
 bakricha mendu,O004,"IFCT Mar Goat, brain"
 bakre da bheja,O004,"IFCT P Goat, brain"
@@ -2403,8 +2351,6 @@ aattu moolai,O004,"IFCT Tam Goat, brain"
 meka medadu,O004,"IFCT Tel Goat, brain"
 pathar jibh,O005,"IFCT B Goat, tongue"
 bakri ni jeebh,O005,"IFCT G Goat, tongue"
-bakre ki zabaan/jeebh,O005,"IFCT H Goat, tongue"
-aadina/meke naalige,O005,"IFCT Kan Goat, tongue"
 aattin naavu,O005,"IFCT Mal Goat, tongue"
 bakrichi jeebh,O005,"IFCT Mar Goat, tongue"
 bakre di jeebh,O005,"IFCT P Goat, tongue"
@@ -2413,32 +2359,24 @@ meka naluka,O005,"IFCT Tel Goat, tongue"
 pathar phusphus,O006,"IFCT B Goat, lungs"
 bakri na fefsa,O006,"IFCT G Goat, lungs"
 bakre ke phephde,O006,"IFCT H Goat, lungs"
-aadina/meke shwasakosha,O006,"IFCT Kan Goat, lungs"
 aattin shwasakosham,O006,"IFCT Mal Goat, lungs"
 bakriche phupphus,O006,"IFCT Mar Goat, lungs"
 bakre de phephde,O006,"IFCT P Goat, lungs"
 aattu nuraiyeeral,O006,"IFCT Tam Goat, lungs"
 meka oopirithitthulu,O006,"IFCT Tel Goat, lungs"
 pathar hritpinda,O007,"IFCT B Goat, heart"
-bakri nu haiyu/dil,O007,"IFCT G Goat, heart"
 bakre ka dil,O007,"IFCT H Goat, heart"
-aadina/meke hrudaya,O007,"IFCT Kan Goat, heart"
 aattin hrudayam,O007,"IFCT Mal Goat, heart"
-bakriche kallij/rudhaya,O007,"IFCT Mar Goat, heart"
 bakre da dil,O007,"IFCT P Goat, heart"
 aattu idhayam,O007,"IFCT Tam Goat, heart"
 meka gunde,O007,"IFCT Tel Goat, heart"
-pathar mete/kolija,O008,"IFCT B Goat, liver"
 bakri nu kaleju,O008,"IFCT G Goat, liver"
 bakre ki kaleji,O008,"IFCT H Goat, liver"
-aadina/meke yakrit,O008,"IFCT Kan Goat, liver"
 aattin karal,O008,"IFCT Mal Goat, liver"
 bakriche kaleji,O008,"IFCT Mar Goat, liver"
 bakre di kaleji,O008,"IFCT P Goat, liver"
 aattu eeral,O008,"IFCT Tam Goat, liver"
 meka kaleyam,O008,"IFCT Tel Goat, liver"
-pathar bhuri/butt,O009,"IFCT B Goat, tripe"
-bakre ki ojri/boti,O009,"IFCT H Goat, tripe"
 aattin kudal,O009,"IFCT Mal Goat, tripe"
 bakrichi vajri,O009,"IFCT Mar Goat, tripe"
 bakre di ojri,O009,"IFCT P Goat, tripe"
@@ -2447,18 +2385,14 @@ meka pottikadupu,O009,"IFCT Tel Goat, tripe"
 pathar pliha,O010,"IFCT B Goat, spleen"
 bakri ni barol,O010,"IFCT G Goat, spleen"
 bakre ki tilli,O010,"IFCT H Goat, spleen"
-aadina/meke pliha,O010,"IFCT Kan Goat, spleen"
 aattin pliha,O010,"IFCT Mal Goat, spleen"
 bakrichi panthari,O010,"IFCT Mar Goat, spleen"
 bakre di tilli,O010,"IFCT P Goat, spleen"
-aattu manneral/suvarotti,O010,"IFCT Tam Goat, spleen"
 meka plihamu,O010,"IFCT Tel Goat, spleen"
 pathar brikko,O011,"IFCT B Goat, kidneys"
 bakri na gurda,O011,"IFCT G Goat, kidneys"
 bakre ke gurde,O011,"IFCT H Goat, kidneys"
-aadina/meke mutrapinda,O011,"IFCT Kan Goat, kidneys"
 aattin vrikka,O011,"IFCT Mal Goat, kidneys"
-bakriche gurde/mutrapind,O011,"IFCT Mar Goat, kidneys"
 bakre de gurde,O011,"IFCT P Goat, kidneys"
 aattu siruneeragam,O011,"IFCT Tam Goat, kidneys"
 meka mutrapindalu,O011,"IFCT Tel Goat, kidneys"
@@ -2476,7 +2410,6 @@ aattu virai,O013,"IFCT Tam Goat, testis"
 meka vushanam,O013,"IFCT Tel Goat, testis"
 bherar kandh,O014,"IFCT B Sheep, shoulder"
 gheta no khabho,O014,"IFCT G Sheep, shoulder"
-bhed ka kandha/dast,O014,"IFCT H Sheep, shoulder"
 kuri bhujada mamsa,O014,"IFCT Kan Sheep, shoulder"
 chemmariyattin chumal irachi,O014,"IFCT Mal Sheep, shoulder"
 mendhiche khande,O014,"IFCT Mar Sheep, shoulder"
@@ -2497,7 +2430,6 @@ semmari aattu kaalgal,O016,"IFCT Tam Sheep, leg"
 gorre kaallu,O016,"IFCT Tel Sheep, leg"
 bherar magaj,O017,"IFCT B Sheep, brain"
 gheta nu bheju,O017,"IFCT G Sheep, brain"
-bhed ka bheja/maghaz,O017,"IFCT H Sheep, brain"
 kuri medulu,O017,"IFCT Kan Sheep, brain"
 chemmariyattin thalacchoru,O017,"IFCT Mal Sheep, brain"
 mendhicha mendu,O017,"IFCT Mar Sheep, brain"
@@ -2506,7 +2438,6 @@ semmari aattu moolai,O017,"IFCT Tam Sheep, brain"
 gorre medadu,O017,"IFCT Tel Sheep, brain"
 bherar jibh,O018,"IFCT B Sheep, tongue"
 gheta ni jeebh,O018,"IFCT G Sheep, tongue"
-bhed ki zabaan/jeebh,O018,"IFCT H Sheep, tongue"
 kuri naalige,O018,"IFCT Kan Sheep, tongue"
 chemmariyattin naavu,O018,"IFCT Mal Sheep, tongue"
 mendhichi jeebh,O018,"IFCT Mar Sheep, tongue"
@@ -2523,15 +2454,12 @@ bhed de phephde,O019,"IFCT P Sheep, lungs"
 semmari aattu nuraiyeeral,O019,"IFCT Tam Sheep, lungs"
 gorre oopirithitthulu,O019,"IFCT Tel Sheep, lungs"
 bherar hritpinda,O020,"IFCT B Sheep, heart"
-gheta nu haiyu/dil,O020,"IFCT G Sheep, heart"
 bhed ka dil,O020,"IFCT H Sheep, heart"
 kuri hrudaya,O020,"IFCT Kan Sheep, heart"
 chemmariyattin hrudayam,O020,"IFCT Mal Sheep, heart"
-mendhiche kallij/rudhaya,O020,"IFCT Mar Sheep, heart"
 bhed da dil,O020,"IFCT P Sheep, heart"
 semmari aattu idhayam,O020,"IFCT Tam Sheep, heart"
 gorre gunde,O020,"IFCT Tel Sheep, heart"
-bherar mete/kolija,O021,"IFCT B Sheep, liver"
 gheta nu kaleju,O021,"IFCT G Sheep, liver"
 bhed ki kaleji,O021,"IFCT H Sheep, liver"
 kuri yakrit,O021,"IFCT Kan Sheep, liver"
@@ -2540,8 +2468,6 @@ mendhiche kaleji,O021,"IFCT Mar Sheep, liver"
 bhed di kaleji,O021,"IFCT P Sheep, liver"
 semmari aattu eeral,O021,"IFCT Tam Sheep, liver"
 gorre kaleyam,O021,"IFCT Tel Sheep, liver"
-bherar bhuri/butt,O022,"IFCT B Sheep, tripe"
-bhed ki ojri/boti,O022,"IFCT H Sheep, tripe"
 chemmariyattin kudal,O022,"IFCT Mal Sheep, tripe"
 mendhichi vajri,O022,"IFCT Mar Sheep, tripe"
 bhed di ojri,O022,"IFCT P Sheep, tripe"
@@ -2554,19 +2480,16 @@ kuri pliha,O023,"IFCT Kan Sheep, spleen"
 chemmariyattin pliha,O023,"IFCT Mal Sheep, spleen"
 mendhichi panthari,O023,"IFCT Mar Sheep, spleen"
 bhed di tilli,O023,"IFCT P Sheep, spleen"
-semmari aattu manneral/suvarotti,O023,"IFCT Tam Sheep, spleen"
 gorre plihamu,O023,"IFCT Tel Sheep, spleen"
 bherar brikko,O024,"IFCT B Sheep, kidneys"
 gheta na gurda,O024,"IFCT G Sheep, kidneys"
 bhed ke gurde,O024,"IFCT H Sheep, kidneys"
 kuri mutrapinda,O024,"IFCT Kan Sheep, kidneys"
 chemmariyattin vrikka,O024,"IFCT Mal Sheep, kidneys"
-mendhiche gurde/mutrapind,O024,"IFCT Mar Sheep, kidneys"
 bhed de gurde,O024,"IFCT P Sheep, kidneys"
 semmari aattu siruneeragam,O024,"IFCT Tam Sheep, kidneys"
 gorre mutrapindalu,O024,"IFCT Tel Sheep, kidneys"
 goru kandh,O025,"IFCT B Beef, shoulder"
-gaay ka kandha/dast,O025,"IFCT H Beef, shoulder"
 dana bhujada mamsa,O025,"IFCT Kan Beef, shoulder"
 pothirachi chumal,O025,"IFCT Mal Beef, shoulder"
 gaiche khande,O025,"IFCT Mar Beef, shoulder"
@@ -2585,7 +2508,6 @@ gaaye di raan,O027,"IFCT P Beef, round (leg)"
 maattu thodai kari,O027,"IFCT Tam Beef, round (leg)"
 aavu thodala mamsam,O027,"IFCT Tel Beef, round (leg)"
 gorur magaj,O028,"IFCT B Beef, brain"
-gaay ka bheja/maghaz,O028,"IFCT H Beef, brain"
 dana medulu,O028,"IFCT Kan Beef, brain"
 pothirachi thalacchoru,O028,"IFCT Mal Beef, brain"
 gaicha mendu,O028,"IFCT Mar Beef, brain"
@@ -2593,7 +2515,6 @@ gaaye da bheja,O028,"IFCT P Beef, brain"
 maattu moolai,O028,"IFCT Tam Beef, brain"
 aavu medadu,O028,"IFCT Tel Beef, brain"
 gorur jibh,O029,"IFCT B Beef, tongue"
-gaay ki zabaan/jeebh,O029,"IFCT H Beef, tongue"
 dana naalige,O029,"IFCT Kan Beef, tongue"
 pothirachi naavu,O029,"IFCT Mal Beef, tongue"
 gaichi jeebh,O029,"IFCT Mar Beef, tongue"
@@ -2612,11 +2533,9 @@ gorur hritpinda,O031,"IFCT B Beef, heart"
 gaay ka dil,O031,"IFCT H Beef, heart"
 dana hrudaya,O031,"IFCT Kan Beef, heart"
 pothirachi hrudayam,O031,"IFCT Mal Beef, heart"
-gaiche kallij/rudhaya,O031,"IFCT Mar Beef, heart"
 gaaye da dil,O031,"IFCT P Beef, heart"
 maattu idhayam,O031,"IFCT Tam Beef, heart"
 aavu gunde,O031,"IFCT Tel Beef, heart"
-gorur mete/kolija,O032,"IFCT B Beef, liver"
 gaay ki kaleji,O032,"IFCT H Beef, liver"
 dana yakrit,O032,"IFCT Kan Beef, liver"
 pothirachi karal,O032,"IFCT Mal Beef, liver"
@@ -2624,8 +2543,6 @@ gaiche kaleji,O032,"IFCT Mar Beef, liver"
 gaaye di kaleji,O032,"IFCT P Beef, liver"
 maattu eeral,O032,"IFCT Tam Beef, liver"
 aavu kaleyam,O032,"IFCT Tel Beef, liver"
-gorur bhuri/butt,O033,"IFCT B Beef, tripe"
-gaay ki ojri/boti,O033,"IFCT H Beef, tripe"
 pothirachi kudal,O033,"IFCT Mal Beef, tripe"
 gaichi vajri,O033,"IFCT Mar Beef, tripe"
 gaaye di ojri,O033,"IFCT P Beef, tripe"
@@ -2637,18 +2554,15 @@ dana pliha,O034,"IFCT Kan Beef, spleen"
 pothirachi pliha,O034,"IFCT Mal Beef, spleen"
 gaichi panthari,O034,"IFCT Mar Beef, spleen"
 gaaye di tilli,O034,"IFCT P Beef, spleen"
-maattu manneral/suvarotti,O034,"IFCT Tam Beef, spleen"
 aavu plihamu,O034,"IFCT Tel Beef, spleen"
 gorur brikko,O035,"IFCT B Beef, kidneys"
 gaay ke gurde,O035,"IFCT H Beef, kidneys"
 dana mutrapinda,O035,"IFCT Kan Beef, kidneys"
 pothirachi vrikka,O035,"IFCT Mal Beef, kidneys"
-gaiche gurde/mutrapind,O035,"IFCT Mar Beef, kidneys"
 gaaye de gurde,O035,"IFCT P Beef, kidneys"
 maattu siruneeragam,O035,"IFCT Tam Beef, kidneys"
 aavu mutrapindalu,O035,"IFCT Tel Beef, kidneys"
 bachhurer kandh,O036,"IFCT B Calf, shoulder"
-bachhde ka kandha/dast,O036,"IFCT H Calf, shoulder"
 karu bhujada mamsa,O036,"IFCT Kan Calf, shoulder"
 kuttyirachi chumal,O036,"IFCT Mal Calf, shoulder"
 vasrache khande,O036,"IFCT Mar Calf, shoulder"
@@ -2667,7 +2581,6 @@ vachhe di raan,O038,"IFCT P Calf, round (leg)"
 kannukutti thodai kari,O038,"IFCT Tam Calf, round (leg)"
 dooda thodala mamsam,O038,"IFCT Tel Calf, round (leg)"
 bachhurer magaj,O039,"IFCT B Calf, brain"
-bachhde ka bheja/maghaz,O039,"IFCT H Calf, brain"
 karu medulu,O039,"IFCT Kan Calf, brain"
 kuttyirachi thalacchoru,O039,"IFCT Mal Calf, brain"
 vasracha mendu,O039,"IFCT Mar Calf, brain"
@@ -2675,7 +2588,6 @@ vachhe da bheja,O039,"IFCT P Calf, brain"
 kannukutti moolai,O039,"IFCT Tam Calf, brain"
 dooda medadu,O039,"IFCT Tel Calf, brain"
 bachhurer jibh,O040,"IFCT B Calf, tongue"
-bachhde ki zabaan/jeebh,O040,"IFCT H Calf, tongue"
 karu naalige,O040,"IFCT Kan Calf, tongue"
 kuttyirachi naavu,O040,"IFCT Mal Calf, tongue"
 vasrachi jeebh,O040,"IFCT Mar Calf, tongue"
@@ -2686,11 +2598,9 @@ bachhurer hritpinda,O041,"IFCT B Calf, heart"
 bachhde ka dil,O041,"IFCT H Calf, heart"
 karu hrudaya,O041,"IFCT Kan Calf, heart"
 kuttyirachi hrudayam,O041,"IFCT Mal Calf, heart"
-vasrache kallij/rudhaya,O041,"IFCT Mar Calf, heart"
 vachhe da dil,O041,"IFCT P Calf, heart"
 kannukutti idhayam,O041,"IFCT Tam Calf, heart"
 dooda gunde,O041,"IFCT Tel Calf, heart"
-bachhurer mete/kolija,O042,"IFCT B Calf, liver"
 bachhde ki kaleji,O042,"IFCT H Calf, liver"
 karu yakrit,O042,"IFCT Kan Calf, liver"
 kuttyirachi karal,O042,"IFCT Mal Calf, liver"
@@ -2704,13 +2614,11 @@ karu pliha,O043,"IFCT Kan Calf, spleen"
 kuttyirachi pliha,O043,"IFCT Mal Calf, spleen"
 vasrachi panthari,O043,"IFCT Mar Calf, spleen"
 vachhe di tilli,O043,"IFCT P Calf, spleen"
-kannukutti manneral/suvarotti,O043,"IFCT Tam Calf, spleen"
 dooda plihamu,O043,"IFCT Tel Calf, spleen"
 bachhurer brikko,O044,"IFCT B Calf, kidneys"
 bachhde ke gurde,O044,"IFCT H Calf, kidneys"
 karu mutrapinda,O044,"IFCT Kan Calf, kidneys"
 kuttyirachi vrikka,O044,"IFCT Mal Calf, kidneys"
-vasrache gurde/mutrapind,O044,"IFCT Mar Calf, kidneys"
 vachhe de gurde,O044,"IFCT P Calf, kidneys"
 kannukutti siruneeragam,O044,"IFCT Tam Calf, kidneys"
 dooda mutrapindalu,O044,"IFCT Tel Calf, kidneys"
@@ -2743,15 +2651,12 @@ suar de phephde,O051,"IFCT P Pork, lungs"
 panri nuraiyeeral,O051,"IFCT Tam Pork, lungs"
 pandi oopirithitthulu,O051,"IFCT Tel Pork, lungs"
 shukorer hritpinda,O052,"IFCT B Pork, heart"
-suar nu haiyu/dil,O052,"IFCT G Pork, heart"
 suar ka dil,O052,"IFCT H Pork, heart"
 handi hrudaya,O052,"IFCT Kan Pork, heart"
 panni irachi hrudayam,O052,"IFCT Mal Pork, heart"
-dukkarache kallij/rudhaya,O052,"IFCT Mar Pork, heart"
 suar da dil,O052,"IFCT P Pork, heart"
 panri idhayam,O052,"IFCT Tam Pork, heart"
 pandi gunde,O052,"IFCT Tel Pork, heart"
-shukorer mete/kolija,O053,"IFCT B Pork, liver"
 suar nu kaleju,O053,"IFCT G Pork, liver"
 suar ki kaleji,O053,"IFCT H Pork, liver"
 handi yakrit,O053,"IFCT Kan Pork, liver"
@@ -2783,7 +2688,6 @@ suar na gurda,O056,"IFCT G Pork, kidneys"
 suar ke gurde,O056,"IFCT H Pork, kidneys"
 handi mutrapinda,O056,"IFCT Kan Pork, kidneys"
 panni irachi vrikka,O056,"IFCT Mal Pork, kidneys"
-dukkarache gurde/mutrapind,O056,"IFCT Mar Pork, kidneys"
 suar de gurde,O056,"IFCT P Pork, kidneys"
 panri siruneeragam,O056,"IFCT Tam Pork, kidneys"
 pandi mutrapindalu,O056,"IFCT Tel Pork, kidneys"
@@ -2846,7 +2750,7 @@ nallachanduva,P002,IFCT Tel Aluva
 chanduva,P002,IFCT Tel Aluva
 thellachanduva,P002,IFCT Tel Aluva
 indian anchovy,P003,IFCT E Anchovy
-hardenberg`s anchovy,P003,IFCT E Anchovy
+hardenberg's anchovy,P003,IFCT E Anchovy
 conetholi,P003,IFCT Mal Anchovy
 dindus,P003,IFCT Mar Anchovy
 tamil nethilli,P003,IFCT Tam Anchovy
@@ -3278,7 +3182,7 @@ malabar rockcod,P042,IFCT E Nalla bontha
 brown-spotted grouper,P042,IFCT E Nalla bontha
 estuary rock cod,P042,IFCT E Nalla bontha
 malabar grouper,P042,IFCT E Nalla bontha
-morgan`s cod,P042,IFCT E Nalla bontha
+morgan's cod,P042,IFCT E Nalla bontha
 blackspot cod,P042,IFCT E Nalla bontha
 malabar reef cod,P042,IFCT E Nalla bontha
 speckled grouper,P042,IFCT E Nalla bontha
@@ -3519,7 +3423,7 @@ red big eye,P066,"IFCT E Red snapper, small"
 crescent tail bigeye,P066,"IFCT E Red snapper, small"
 lunar tailed bigeye,P066,"IFCT E Red snapper, small"
 dusky-finned bullseye,P066,"IFCT E Red snapper, small"
-spot-finned bull`s eye,P066,"IFCT E Red snapper, small"
+spot-finned bull's eye,P066,"IFCT E Red snapper, small"
 bigeye snapper,P066,"IFCT E Red snapper, small"
 black-spot big-eye,P066,"IFCT E Red snapper, small"
 lunar-tailed glasseye,P066,"IFCT E Red snapper, small"
@@ -4063,3 +3967,232 @@ neyyi,T013,IFCT Tel Ghee
 bonospoti,T014,IFCT B Vanaspati
 dalda,T014,IFCT B Vanaspati
 banaspati,T014,IFCT P Vanaspati
+full cream,L002,Whole cow milk
+sepu,E001,"IFCT Tel Apple, big"
+sema regu,E001,"IFCT Tel Apple, big"
+seema badam,E005,"IFCT Tel Apricot, dried"
+jallaru pandu,E005,"IFCT Tel Apricot, dried"
+bennephala,E007,IFCT Kan Avocado fruit
+bennehannu,E007,IFCT Kan Avocado fruit
+aathachakka,E007,IFCT Mal Avocado fruit
+venna-pazham,E007,IFCT Mal Avocado fruit
+kalakkay,E032,IFCT Tam Karonda fruit
+parungala,E032,IFCT Tam Karonda fruit
+bakhai ambli,E044,IFCT G Manila tamarind
+vilayabi ambli,E044,IFCT G Manila tamarind
+ganga imli,E044,IFCT H Manila tamarind
+jangal jalebi,E044,IFCT H Manila tamarind
+seema,E044,IFCT Kan Manila tamarind
+dora hunase,E044,IFCT Kan Manila tamarind
+lakshmanaphala,E061,IFCT Kan Soursop
+mulluramphala,E061,IFCT Kan Soursop
+malai seethapalam,E061,IFCT Tam Soursop
+paanghi pazham,E061,IFCT Tam Soursop
+kazmal,E062,IFCT H Star fruit
+kamrakh,E062,IFCT H Star fruit
+kamaraka,E062,IFCT Kan Star fruit
+kapazakshi hannu,E062,IFCT Kan Star fruit
+neerulli,G017,"IFCT Tel Onion, big"
+ullipaya,G017,"IFCT Tel Onion, big"
+aanabay,J001,"IFCT Kan Button mushroom, fresh"
+aanabe,J001,"IFCT Kan Button mushroom, fresh"
+gedha,L001,"IFCT Tel Milk, whole, Buffalo"
+barre palu,L001,"IFCT Tel Milk, whole, Buffalo"
+murgir thyang,N001,"IFCT B Chicken, poultry, leg, skinless"
+ran,N001,"IFCT B Chicken, poultry, leg, skinless"
+murga tang,N001,"IFCT H Chicken, poultry, leg, skinless"
+murgi ki raan,N001,"IFCT H Chicken, poultry, leg, skinless"
+kombdi tangdi,N001,"IFCT Mar Chicken, poultry, leg, skinless"
+mandi,N001,"IFCT Mar Chicken, poultry, leg, skinless"
+murge di latt,N001,"IFCT P Chicken, poultry, leg, skinless"
+raan,N001,"IFCT P Chicken, poultry, leg, skinless"
+murge ki raan,N002,"IFCT H Chicken, poultry, thigh, skinless"
+jangh,N002,"IFCT H Chicken, poultry, thigh, skinless"
+murge di patt,N002,"IFCT P Chicken, poultry, thigh, skinless"
+kozhi maaridam,N003,"IFCT Mal Chicken, poultry, breast, skinless"
+nenju,N003,"IFCT Mal Chicken, poultry, breast, skinless"
+murgir dana,N004,"IFCT B Chicken, poultry, wing, skinless"
+pakha,N004,"IFCT B Chicken, poultry, wing, skinless"
+murge ka par,N004,"IFCT H Chicken, poultry, wing, skinless"
+pankh,N004,"IFCT H Chicken, poultry, wing, skinless"
+murgir mete,N005,"IFCT B Poultry, chicken, liver"
+kolija,N005,"IFCT B Poultry, chicken, liver"
+koli yakrit,N005,"IFCT Kan Poultry, chicken, liver"
+pittakosha,N005,"IFCT Kan Poultry, chicken, liver"
+murge ki pathri,N006,"IFCT H Poultry, chicken, gizzard"
+sangdana,N006,"IFCT H Poultry, chicken, gizzard"
+kombdiche pot,N006,"IFCT Mar Poultry, chicken, gizzard"
+vajri,N006,"IFCT Mar Poultry, chicken, gizzard"
+deshi murgir thyang,N007,"IFCT B Country hen, leg, with skin"
+desi murge ki tang,N007,"IFCT H Country hen, leg, with skin"
+desi murge di latt,N007,"IFCT P Country hen, leg, with skin"
+desi murge ki raan,N008,"IFCT H Country hen, thigh, with skin"
+desi murge di patt,N008,"IFCT P Country hen, thigh, with skin"
+naadan kozhi maaridam,N009,"IFCT Mal Country hen, breast, with skin"
+deshi murgir dana,N010,"IFCT B Country hen, wing, with skin"
+desi murge ka par,N010,"IFCT H Country hen, wing, with skin"
+turkey ki tang,N016,"IFCT H Turkey, leg, with skin"
+turkey ki raan,N017,"IFCT H Turkey, thigh, with skin"
+turkey ka par,N019,"IFCT H Turkey, wing, with skin"
+bakre ka kandha,O001,"IFCT H Goat, shoulder, meat"
+dast,O001,"IFCT H Goat, shoulder, meat"
+aadina,O001,"IFCT Kan Goat, shoulder, meat"
+meke bhujada mamsa,O001,"IFCT Kan Goat, shoulder, meat"
+meke kaalugalu,O003,"IFCT Kan Goat, legs"
+bakre ka bheja,O004,"IFCT H Goat, brain"
+maghaz,O004,"IFCT H Goat, brain"
+meke medulu,O004,"IFCT Kan Goat, brain"
+bakre ki zabaan,O005,"IFCT H Goat, tongue"
+jeebh,O005,"IFCT H Goat, tongue"
+meke naalige,O005,"IFCT Kan Goat, tongue"
+meke shwasakosha,O006,"IFCT Kan Goat, lungs"
+bakri nu haiyu,O007,"IFCT G Goat, heart"
+dil,O007,"IFCT G Goat, heart"
+meke hrudaya,O007,"IFCT Kan Goat, heart"
+bakriche kallij,O007,"IFCT Mar Goat, heart"
+rudhaya,O007,"IFCT Mar Goat, heart"
+pathar mete,O008,"IFCT B Goat, liver"
+meke yakrit,O008,"IFCT Kan Goat, liver"
+pathar bhuri,O009,"IFCT B Goat, tripe"
+butt,O009,"IFCT B Goat, tripe"
+bakre ki ojri,O009,"IFCT H Goat, tripe"
+boti,O009,"IFCT H Goat, tripe"
+meke pliha,O010,"IFCT Kan Goat, spleen"
+aattu manneral,O010,"IFCT Tam Goat, spleen"
+suvarotti,O010,"IFCT Tam Goat, spleen"
+meke mutrapinda,O011,"IFCT Kan Goat, kidneys"
+bakriche gurde,O011,"IFCT Mar Goat, kidneys"
+mutrapind,O011,"IFCT Mar Goat, kidneys"
+bhed ka kandha,O014,"IFCT H Sheep, shoulder"
+bhed ka bheja,O017,"IFCT H Sheep, brain"
+bhed ki zabaan,O018,"IFCT H Sheep, tongue"
+gheta nu haiyu,O020,"IFCT G Sheep, heart"
+mendhiche kallij,O020,"IFCT Mar Sheep, heart"
+bherar mete,O021,"IFCT B Sheep, liver"
+bherar bhuri,O022,"IFCT B Sheep, tripe"
+bhed ki ojri,O022,"IFCT H Sheep, tripe"
+semmari aattu manneral,O023,"IFCT Tam Sheep, spleen"
+mendhiche gurde,O024,"IFCT Mar Sheep, kidneys"
+gaay ka kandha,O025,"IFCT H Beef, shoulder"
+gaay ka bheja,O028,"IFCT H Beef, brain"
+gaay ki zabaan,O029,"IFCT H Beef, tongue"
+gaiche kallij,O031,"IFCT Mar Beef, heart"
+gorur mete,O032,"IFCT B Beef, liver"
+gorur bhuri,O033,"IFCT B Beef, tripe"
+gaay ki ojri,O033,"IFCT H Beef, tripe"
+maattu manneral,O034,"IFCT Tam Beef, spleen"
+gaiche gurde,O035,"IFCT Mar Beef, kidneys"
+bachhde ka kandha,O036,"IFCT H Calf, shoulder"
+bachhde ka bheja,O039,"IFCT H Calf, brain"
+bachhde ki zabaan,O040,"IFCT H Calf, tongue"
+vasrache kallij,O041,"IFCT Mar Calf, heart"
+bachhurer mete,O042,"IFCT B Calf, liver"
+kannukutti manneral,O043,"IFCT Tam Calf, spleen"
+vasrache gurde,O044,"IFCT Mar Calf, kidneys"
+suar nu haiyu,O052,"IFCT G Pork, heart"
+dukkarache kallij,O052,"IFCT Mar Pork, heart"
+shukorer mete,O053,"IFCT B Pork, liver"
+dukkarache gurde,O056,"IFCT Mar Pork, kidneys"
+apple,E001,Apple staple
+banana,E503,Banana staple
+mango,E039,Mango staple
+orange,E047,Orange staple
+grapes,E029,Grapes staple
+grape,E029,Grape staple
+dates,E020,Dates staple
+date,E020,Date staple
+cow milk,L002,Cow milk staple
+bengal gram,B001,Bengal gram staple
+black gram,B011,Black gram staple
+yoghurt,L902,Yoghurt staple
+chillies,G516,Chilli powder
+curry leaf,G010,Curry leaves
+mint leaf,G016,Mint leaves
+refined wheat flour,A018,Wheat flour refined
+safflower oil,T009,Safflower oil
+cottonseed oil,T003,Cotton seed oil
+red chilli,G022,Red chilli singular form
+red chillies whole,G022,Whole red chillies
+whole red chilli,G022,Whole red chilli (prep variant)
+dry red chilli,G022,Dry red chilli
+red chilli whole,G022,Red chilli whole (inverted form)
+dried red chillies,G022,Dried red chillies
+pepper powder,G031,Black pepper ground
+pepper corns,G031,Black peppercorns (spelling variant)
+peppercorns,G031,Black peppercorns
+pepper corn,G031,Black peppercorn singular
+white pepper powder,G031,White pepper ground (mapped to black pepper as closest)
+haldi powder,G033,Turmeric powder in Hindi (haldi)
+turmeric,G033,Turmeric whole/generic
+nutmeg powder,G028,Nutmeg ground
+jaiphal,G028,Nutmeg in Hindi
+ginger powder,G554,Ginger powder / dry ginger
+sonth,G554,Dry ginger powder in Hindi
+saunth,G554,Dry ginger powder variant
+amchur,G535,Dry mango powder
+mango powder,G535,Mango powder / amchur
+dry mango powder,G535,Dry mango powder
+aamchur,G535,Amchur spelling variant
+kalonji,A512,Nigella seeds in Hindi
+nigella seeds,A512,Black seeds / kalonji
+nigella,A512,Nigella / kalonji
+onion seeds,A512,Kalonji often called onion seeds
+black seeds,A512,Nigella / kalonji seeds
+roasted cumin seed powder,G025,Roasted cumin powder (spice)
+roasted cumin powder,G025,Roasted cumin
+cumin powder,G025,Cumin ground
+jeera powder,G025,Cumin powder in Hindi
+roasted jeera powder,G025,Roasted jeera powder
+mushroom,J001,Generic mushroom
+mushrooms,J001,Mushrooms plural
+button mushroom,J001,Button mushroom
+bread,U511,Generic bread (white default)
+bread slice,U511,Bread slice
+bread slices,U511,Bread slices
+white bread,U511,White bread
+bread crumbs,U511,Bread crumbs
+bread crumb,U511,Bread crumb
+double roti,U511,Bread in Hindi
+brown bread,U501,Brown bread → U501 Bread brown
+flour,A018,Generic flour → refined wheat flour (maida)
+plain flour,A018,Plain flour / maida
+cornflour,A503,Corn flour / cornflour → Flour corn
+corn flour,A503,Corn flour
+maize flour,A006,Maize flour → Maize dry
+makki ka atta,A006,Maize flour in Hindi
+vermicelli,A023,Wheat vermicelli
+seviyan,A023,Vermicelli in Hindi
+sewaiyan,A023,Vermicelli Hindi variant
+lentils,B013,Generic lentils → masoor dal
+lentil,B013,Generic lentil
+split peas,B017,Split peas → dry peas
+channa dal,B001,Chana dal spelling variant
+washed urad dal,B003,Washed urad dal
+black gram dehusked,B003,Black gram dehusked / urad dal
+beetroot,F001,Beetroot
+beet root,F001,Beetroot (two words)
+beet,F001,Beetroot
+radish,F010,Generic radish
+mooli,F010,White radish in Hindi
+white radish,F010,White mooli
+keema,O502,Minced meat in Hindi (lamb default)
+mince,O502,Generic mince (lamb default)
+minced meat,O502,Minced meat
+kheema,O502,Keema spelling variant
+lamb mince,O502,Lamb mince
+chicken mince,N500,Chicken mince → whole chicken as proxy
+minced chicken,N500,Minced chicken
+chicken keema,N500,Chicken keema
+fat,T508,Generic fat → cooking oil (sunflower default)
+melted fat,T508,Melted fat → cooking oil
+shortening,T508,Shortening → generic fat
+cooking fat,T508,Cooking fat
+kewra essence,K505,Kewra essence → rose water (flavouring, negligible calories)
+kewra water,K505,Kewra water
+screwpine essence,K505,Screwpine / kewra
+bengal gram flour,A504,Bengal gram flour = besan
+tomato sauce,G517,Tomato sauce → chilli sauce proxy
+processed cheese,L505,Processed cheese
+sprouted moong,B011,Sprouted moong → green gram whole
+sprouted green gram,B011,Sprouted green gram
+turnip,F501,Turnip flesh raw

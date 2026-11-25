@@ -1,4 +1,5 @@
 """Unit tests for T6: Food classes (lhf.classify)."""
+import math
 import unittest
 
 from lhf import composition
@@ -90,6 +91,96 @@ class TestT6Classify(unittest.TestCase):
         self.assertEqual(res["refined_carb_g"], 0.0)
         self.assertEqual(res["salt_g"], 0.0)
         self.assertEqual(res["fat_by_class_g"]["COOKING_OIL"], 0.0)
+
+    def test_class_totals_nutrients_none(self):
+        # Deserialized JSON can have None values in nutrients dict (DEF-C3)
+        items = [
+            {
+                "code": "I502",
+                "grams": 20.0,
+                "nutrients": {"freesugar_g": None, "carb_g": None, "fat_g": None},
+            },
+            {
+                "code": "A018",
+                "grams": 100.0,
+                "nutrients": {"freesugar_g": None, "carb_g": None, "fat_g": None},
+            },
+            {
+                "code": "T508",
+                "grams": 15.0,
+                "nutrients": {"freesugar_g": None, "carb_g": None, "fat_g": None},
+            },
+            {
+                "code": "UNKNOWN_CODE",
+                "grams": 10.0,
+                "nutrients": {"freesugar_g": None, "carb_g": None, "fat_g": None},
+            },
+        ]
+        res = class_totals(items)
+        # I502 falls back to table: 20 * min(105, 100) / 100 = 20.0
+        self.assertAlmostEqual(res["added_sugar_g"], 20.0)
+        # A018 falls back to table
+        exp_carb = float(self.table.loc["A018", "carb_g"])
+        self.assertAlmostEqual(res["refined_carb_g"], exp_carb)
+        # T508 falls back to table
+        exp_oil_fat = 15.0 * float(self.table.loc["T508", "fat_g"]) / 100.0
+        self.assertAlmostEqual(res["fat_by_class_g"]["COOKING_OIL"], exp_oil_fat)
+        # UNKNOWN_CODE contributes 0.0 without crashing
+        self.assertFalse(math.isnan(res["added_sugar_g"]))
+        self.assertFalse(math.isnan(res["refined_carb_g"]))
+
+    def test_class_totals_nutrients_nan(self):
+        # Guard against NaN poisoning (DEF-D9)
+        items = [
+            {"code": "I001", "grams": 10.0, "nutrients": {"freesugar_g": float("nan")}},
+            {"code": "A018", "grams": 50.0, "nutrients": {"carb_g": float("nan")}},
+            {"code": "T508", "grams": 20.0, "nutrients": {"fat_g": float("nan")}},
+            {"code": "G528", "grams": float("nan"), "nutrients": {}},
+        ]
+        res = class_totals(items)
+        self.assertEqual(res["added_sugar_g"], 0.0)
+        self.assertEqual(res["refined_carb_g"], 0.0)
+        self.assertEqual(res["salt_g"], 0.0)
+        self.assertEqual(res["fat_by_class_g"]["COOKING_OIL"], 0.0)
+
+    def test_class_totals_multi_class_items(self):
+        # G528 and G540 are both SALT and SPICE
+        items = [
+            {"code": "G528", "grams": 4.0, "nutrients": composition.nutrients_for("G528", 4.0)},
+            {"code": "G540", "grams": 6.0, "nutrients": composition.nutrients_for("G540", 6.0)},
+        ]
+        res = class_totals(items)
+        self.assertAlmostEqual(res["salt_g"], 10.0)
+        # Neither is COOKING_OIL/DAIRY_FAT/HYDROGENATED_FAT -> fat goes to OTHER
+        exp_fat = (
+            float(self.table.loc["G528", "fat_g"]) * 4.0 / 100.0
+            + float(self.table.loc["G540", "fat_g"]) * 6.0 / 100.0
+        )
+        self.assertAlmostEqual(res["fat_by_class_g"]["OTHER"], exp_fat)
+
+    def test_class_totals_fat_mass_conservation(self):
+        # Verify that total fat across all 4 categories exactly equals total fat of all items
+        items = [
+            {"code": "T508", "grams": 20.0, "nutrients": composition.nutrients_for("T508", 20.0)},
+            {"code": "T506", "grams": 15.0, "nutrients": composition.nutrients_for("T506", 15.0)},
+            {"code": "T014", "grams": 10.0, "nutrients": composition.nutrients_for("T014", 10.0)},
+            {"code": "A019", "grams": 100.0, "nutrients": composition.nutrients_for("A019", 100.0)},
+            {"code": "A018", "grams": 50.0, "nutrients": composition.nutrients_for("A018", 50.0)},
+            {"code": "I001", "grams": 10.0, "nutrients": composition.nutrients_for("I001", 10.0)},
+        ]
+        res = class_totals(items)
+        total_input_fat = sum(
+            float(i["nutrients"]["fat_g"])
+            for i in items
+            if i["nutrients"].get("fat_g") is not None and not math.isnan(float(i["nutrients"]["fat_g"]))
+        )
+        total_partitioned_fat = sum(res["fat_by_class_g"].values())
+        self.assertAlmostEqual(total_partitioned_fat, total_input_fat, places=6)
+        # Ensure all partitions received their share
+        self.assertGreater(res["fat_by_class_g"]["COOKING_OIL"], 0.0)
+        self.assertGreater(res["fat_by_class_g"]["DAIRY_FAT"], 0.0)
+        self.assertGreater(res["fat_by_class_g"]["HYDROGENATED_FAT"], 0.0)
+        self.assertGreater(res["fat_by_class_g"]["OTHER"], 0.0)
 
 
 if __name__ == "__main__":

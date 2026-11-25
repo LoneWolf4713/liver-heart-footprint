@@ -1,0 +1,617 @@
+{
+  "recipe": {
+    "id": "DEMO-03",
+    "url": null,
+    "dish": "chicken biryani",
+    "servings": 4
+  },
+  "lines": [
+    {
+      "index": 0,
+      "raw": "500 g chicken, curry cut",
+      "parsed": {
+        "raw": "500 g chicken, curry cut",
+        "status": "QUANTIFIED",
+        "qty": 500.0,
+        "qty_min": 500.0,
+        "qty_max": 500.0,
+        "unit": "g",
+        "size": null,
+        "stated_g": 500.0,
+        "stated_ml": null,
+        "optional": false,
+        "name": "chicken, curry cut"
+      },
+      "match": {
+        "code": "N500",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 500.0,
+      "grams_basis": "STATED_MASS",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [],
+      "nutrients": {
+        "energy_kj": 2945.0,
+        "energy_kcal": 710.0,
+        "fat_g": 51.5,
+        "sfa_g": 15.0,
+        "mufa_g": 22.5,
+        "pufa_g": 10.5,
+        "tfa_g": null,
+        "carb_g": 0.0,
+        "freesugar_g": 0.0,
+        "fibre_g": 0.0,
+        "protein_g": 61.0,
+        "sodium_mg": 250.0,
+        "water_g": null
+      }
+    },
+    {
+      "index": 1,
+      "raw": "2 cups basmati rice",
+      "parsed": {
+        "raw": "2 cups basmati rice",
+        "status": "QUANTIFIED",
+        "qty": 2.0,
+        "qty_min": 2.0,
+        "qty_max": 2.0,
+        "unit": "cup",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "basmati rice"
+      },
+      "match": {
+        "code": "A014",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 320.0,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [
+        "REFINED_GRAIN"
+      ],
+      "nutrients": {
+        "energy_kj": 4707.2,
+        "energy_kcal": 1125.0478011472276,
+        "fat_g": 1.7600000000000002,
+        "sfa_g": 0.48,
+        "mufa_g": 0.277312,
+        "pufa_g": 0.6912,
+        "tfa_g": 0.0,
+        "carb_g": 246.912,
+        "freesugar_g": 2.144,
+        "fibre_g": 11.968000000000002,
+        "protein_g": 24.992,
+        "sodium_mg": 10.112000000000002,
+        "water_g": 32.288000000000004
+      }
+    },
+    {
+      "index": 2,
+      "raw": "2 tbsp ghee",
+      "parsed": {
+        "raw": "2 tbsp ghee",
+        "status": "QUANTIFIED",
+        "qty": 2.0,
+        "qty_min": 2.0,
+        "qty_max": 2.0,
+        "unit": "tbsp",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "ghee"
+      },
+      "match": {
+        "code": "T013",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 26.76,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [
+        "DAIRY_FAT"
+      ],
+      "nutrients": {
+        "energy_kj": 990.12,
+        "energy_kcal": 240.84,
+        "fat_g": 26.76,
+        "sfa_g": 19.004952,
+        "mufa_g": 7.075344,
+        "pufa_g": 0.679704,
+        "tfa_g": 0.117744,
+        "carb_g": 0.0,
+        "freesugar_g": 0.0,
+        "fibre_g": 0.0,
+        "protein_g": 0.0,
+        "sodium_mg": 0.0,
+        "water_g": 0.0
+      }
+    },
+    {
+      "index": 3,
+      "raw": "2 tbsp cooking oil",
+      "parsed": {
+        "raw": "2 tbsp cooking oil",
+        "status": "QUANTIFIED",
+        "qty": 2.0,
+        "qty_min": 2.0,
+        "qty_max": 2.0,
+        "unit": "tbsp",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "cooking oil"
+      },
+      "match": {
+        "code": "T508",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 27.2,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [
+        "COOKING_OIL"
+      ],
+      "nutrients": {
+        "energy_kj": 1005.3120000000001,
+        "energy_kcal": 244.52800000000002,
+        "fat_g": 27.172800000000002,
+        "sfa_g": 3.2640000000000002,
+        "mufa_g": 5.5760000000000005,
+        "pufa_g": 17.2176,
+        "tfa_g": null,
+        "carb_g": 0.0,
+        "freesugar_g": 0.0,
+        "fibre_g": 0.0,
+        "protein_g": 0.0,
+        "sodium_mg": 0.0,
+        "water_g": null
+      }
+    },
+    {
+      "index": 4,
+      "raw": "1/2 cup dahi",
+      "parsed": {
+        "raw": "1/2 cup dahi",
+        "status": "QUANTIFIED",
+        "qty": 0.5,
+        "qty_min": 0.5,
+        "qty_max": 0.5,
+        "unit": "cup",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "dahi"
+      },
+      "match": {
+        "code": "L902",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 122.5,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [],
+      "nutrients": {
+        "energy_kj": 333.151,
+        "energy_kcal": 79.625,
+        "fat_g": 3.7975000000000003,
+        "sfa_g": 2.45,
+        "mufa_g": 0.0,
+        "pufa_g": 0.0,
+        "tfa_g": 0.0,
+        "carb_g": 5.635,
+        "freesugar_g": 5.635,
+        "fibre_g": 0.0,
+        "protein_g": 4.9,
+        "sodium_mg": 61.25000000000001,
+        "water_g": null
+      }
+    },
+    {
+      "index": 5,
+      "raw": "2 large onions, thinly sliced",
+      "parsed": {
+        "raw": "2 large onions, thinly sliced",
+        "status": "QUANTIFIED",
+        "qty": 2.0,
+        "qty_min": 2.0,
+        "qty_max": 2.0,
+        "unit": "piece",
+        "size": "large",
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "onions, thinly sliced"
+      },
+      "match": {
+        "code": "G017",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 120.0,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [
+        "SIZE_SUBSTITUTED"
+      ],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [],
+      "nutrients": {
+        "energy_kj": 241.2,
+        "energy_kcal": 57.64818355640535,
+        "fat_g": 0.288,
+        "sfa_g": 0.072972,
+        "mufa_g": 0.047231999999999996,
+        "pufa_g": 0.1284,
+        "tfa_g": 0.0,
+        "carb_g": 11.472,
+        "freesugar_g": 7.056,
+        "fibre_g": 2.94,
+        "protein_g": 1.7999999999999998,
+        "sodium_mg": 6.6,
+        "water_g": 102.912
+      }
+    },
+    {
+      "index": 6,
+      "raw": "1 tbsp ginger garlic paste",
+      "parsed": {
+        "raw": "1 tbsp ginger garlic paste",
+        "status": "QUANTIFIED",
+        "qty": 1.0,
+        "qty_min": 1.0,
+        "qty_max": 1.0,
+        "unit": "tbsp",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "ginger garlic paste"
+      },
+      "match": {
+        "code": "G014",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 6.0,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [],
+      "nutrients": {
+        "energy_kj": 13.799999999999999,
+        "energy_kcal": 3.2982791586998084,
+        "fat_g": 0.051,
+        "sfa_g": 0.01386,
+        "mufa_g": 0.0040782,
+        "pufa_g": 0.02286,
+        "tfa_g": 0.0,
+        "carb_g": 0.5382,
+        "freesugar_g": 0.0786,
+        "fibre_g": 0.3216,
+        "protein_g": 0.1332,
+        "sodium_mg": 0.6018,
+        "water_g": 4.8762
+      }
+    },
+    {
+      "index": 7,
+      "raw": "1 tsp red chilli powder",
+      "parsed": {
+        "raw": "1 tsp red chilli powder",
+        "status": "QUANTIFIED",
+        "qty": 1.0,
+        "qty_min": 1.0,
+        "qty_max": 1.0,
+        "unit": "tsp",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "red chilli powder"
+      },
+      "match": {
+        "code": "G516",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 2.7,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [
+        "SPICE"
+      ],
+      "nutrients": {
+        "energy_kj": 0.0,
+        "energy_kcal": 0.0,
+        "fat_g": 0.38610000000000005,
+        "sfa_g": 0.06642,
+        "mufa_g": 0.08667000000000001,
+        "pufa_g": 0.21627000000000002,
+        "tfa_g": null,
+        "carb_g": 0.0,
+        "freesugar_g": 0.19440000000000002,
+        "fibre_g": 0.9396,
+        "protein_g": 0.36450000000000005,
+        "sodium_mg": 108.00000000000001,
+        "water_g": null
+      }
+    },
+    {
+      "index": 8,
+      "raw": "1/2 tsp turmeric powder",
+      "parsed": {
+        "raw": "1/2 tsp turmeric powder",
+        "status": "QUANTIFIED",
+        "qty": 0.5,
+        "qty_min": 0.5,
+        "qty_max": 0.5,
+        "unit": "tsp",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "turmeric powder"
+      },
+      "match": {
+        "code": "G033",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 1.5,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [
+        "SPICE"
+      ],
+      "nutrients": {
+        "energy_kj": 17.61,
+        "energy_kcal": 4.208891013384322,
+        "fat_g": 0.07545,
+        "sfa_g": 0.024509999999999997,
+        "mufa_g": 0.00672,
+        "pufa_g": 0.029099999999999997,
+        "tfa_g": 0.0,
+        "carb_g": 0.7383,
+        "freesugar_g": 0.018449999999999998,
+        "fibre_g": 0.3207,
+        "protein_g": 0.1149,
+        "sodium_mg": 0.36615,
+        "water_g": 0.1587
+      }
+    },
+    {
+      "index": 9,
+      "raw": "1 tsp biryani masala",
+      "parsed": {
+        "raw": "1 tsp biryani masala",
+        "status": "QUANTIFIED",
+        "qty": 1.0,
+        "qty_min": 1.0,
+        "qty_max": 1.0,
+        "unit": "tsp",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "biryani masala"
+      },
+      "match": {
+        "code": "UNMAPPED",
+        "method": "none",
+        "score": 0.0
+      },
+      "grams": null,
+      "grams_basis": null,
+      "grams_flags": [],
+      "included": false,
+      "exclusion_reason": "UNMAPPED",
+      "classes": [],
+      "nutrients": null
+    },
+    {
+      "index": 10,
+      "raw": "few mint leaves",
+      "parsed": {
+        "raw": "few mint leaves",
+        "status": "UNQUANTIFIED",
+        "qty": null,
+        "qty_min": null,
+        "qty_max": null,
+        "unit": null,
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "few mint leaves"
+      },
+      "match": null,
+      "grams": null,
+      "grams_basis": null,
+      "grams_flags": [],
+      "included": false,
+      "exclusion_reason": "UNQUANTIFIED",
+      "classes": [],
+      "nutrients": null
+    },
+    {
+      "index": 11,
+      "raw": "salt to taste",
+      "parsed": {
+        "raw": "salt to taste",
+        "status": "UNQUANTIFIED",
+        "qty": null,
+        "qty_min": null,
+        "qty_max": null,
+        "unit": null,
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "salt to taste"
+      },
+      "match": null,
+      "grams": null,
+      "grams_basis": null,
+      "grams_flags": [],
+      "included": false,
+      "exclusion_reason": "UNQUANTIFIED",
+      "classes": [],
+      "nutrients": null
+    }
+  ],
+  "coverage": {
+    "lines_total": 12,
+    "lines_included": 9,
+    "excluded_by_reason": {
+      "WATER": 0,
+      "UNQUANTIFIED": 2,
+      "UNMAPPED": 1,
+      "NON_FOOD": 0,
+      "UNQUANTIFIABLE": 0
+    },
+    "included_mass_g": 1126.66,
+    "unquantified_fat_lines": []
+  },
+  "totals": {
+    "energy_kj": 10253.393,
+    "energy_kcal": 2465.1961548757167,
+    "fat_g": 111.79085,
+    "sfa_g": 40.37671400000001,
+    "mufa_g": 35.573356200000006,
+    "pufa_g": 29.485134000000002,
+    "tfa_g": null,
+    "carb_g": 265.2955,
+    "freesugar_g": 15.12645,
+    "fibre_g": 16.4899,
+    "protein_g": 93.30460000000002,
+    "sodium_mg": 436.9299500000001,
+    "water_g": null,
+    "added_sugar_g": 0.0,
+    "refined_carb_g": 246.912,
+    "salt_g": 0.0
+  },
+  "per_serving": {
+    "energy_kj": 2563.34825,
+    "energy_kcal": 616.2990387189292,
+    "fat_g": 27.9477125,
+    "sfa_g": 10.094178500000002,
+    "mufa_g": 8.893339050000002,
+    "pufa_g": 7.3712835000000005,
+    "tfa_g": null,
+    "carb_g": 66.323875,
+    "freesugar_g": 3.7816125,
+    "fibre_g": 4.122475,
+    "protein_g": 23.326150000000005,
+    "sodium_mg": 109.23248750000002,
+    "water_g": null,
+    "added_sugar_g": 0.0,
+    "refined_carb_g": 61.728,
+    "salt_g": 0.0
+  },
+  "footprint": {
+    "axes": {
+      "energy_kcal": {
+        "amount": 616.2990387189292,
+        "unit": "kcal",
+        "limit": 2240.0,
+        "pct_of_limit": 27.51334994280934,
+        "pct_energy": null,
+        "limit_sources": [
+          "NSO_CALORIES_URBAN"
+        ]
+      },
+      "fat_g": {
+        "amount": 27.9477125,
+        "unit": "g",
+        "limit": 74.66666666666667,
+        "pct_of_limit": 37.429972098214286,
+        "pct_energy": 11.228991629464286,
+        "limit_sources": [
+          "LIMIT_TOTAL_FAT_PCT",
+          "NSO_CALORIES_URBAN",
+          "FAT_KCAL_PER_G"
+        ]
+      },
+      "sfa_g": {
+        "amount": 10.094178500000002,
+        "unit": "g",
+        "limit": 24.88888888888889,
+        "pct_of_limit": 40.55696718750001,
+        "pct_energy": 4.055696718750001,
+        "limit_sources": [
+          "LIMIT_SFA_GENERAL",
+          "NSO_CALORIES_URBAN",
+          "FAT_KCAL_PER_G"
+        ]
+      },
+      "added_sugar_g": {
+        "amount": 0.0,
+        "unit": "g",
+        "limit": 25.0,
+        "pct_of_limit": 0.0,
+        "pct_energy": null,
+        "limit_sources": [
+          "LIMIT_ADDED_SUGAR_GRAMS"
+        ]
+      },
+      "sodium_mg": {
+        "amount": 109.23248750000002,
+        "unit": "mg",
+        "limit": 1967.0,
+        "pct_of_limit": 5.553253050330453,
+        "pct_energy": null,
+        "limit_sources": [
+          "LIMIT_SALT_GRAMS",
+          "SODIUM_MG_PER_G_SALT"
+        ]
+      },
+      "refined_carb_g": {
+        "amount": 61.728,
+        "unit": "g",
+        "limit": null,
+        "pct_of_limit": null,
+        "pct_energy": null,
+        "limit_sources": []
+      }
+    },
+    "reference": {
+      "setting": "urban",
+      "risk": "general",
+      "energy_kcal": 2240.0,
+      "energy_metric": "NSO_CALORIES_URBAN"
+    },
+    "context": {
+      "NSO_FAT_URBAN": 70.0,
+      "INDIAB_SFA_NATIONAL": 8.9
+    }
+  },
+  "warnings": [
+    "SALT_UNQUANTIFIED: recipe contains unquantified salt line (sodium is a lower bound)"
+  ]
+}

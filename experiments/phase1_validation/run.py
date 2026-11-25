@@ -34,7 +34,7 @@ def generate_report(res: dict) -> str:
     lines.append("")
     lines.append(
         "The primary metric of comparison is M2: fat energy share (fat grams multiplied by the fat "
-        "energy conversion factor divided by total energy in kilocalories multiplied by 100). "
+        "energy conversion factor divided by total energy in kilocalories, expressed as a percentage). "
         "The ratio is defined as recipe M2 divided by lab M2."
     )
     lines.append("")
@@ -192,12 +192,13 @@ def self_check(res: dict, rep: str):
 
     walk(res)
 
+    tol = 1 / (1000 * 1000 * 1000)
     for tok in re.findall(r"(?<![\w.\-/:])\d+(?:\.\d+)?(?![\w.\-/:])", rep):
         v = float(tok)
         if v in (0, 1, 2) or (v.is_integer() and 1 <= v <= 9 and len(tok) == 1):
             continue
         dec = len(tok.split(".")[1]) if "." in tok else 0
-        if not any(abs(round(n, dec) - v) < 1e-9 for n in nums_json):
+        if not any(abs(round(n, dec) - v) < tol for n in nums_json):
             raise AssertionError(f"REPORT.md number {tok} does not appear in results.json")
 
 
@@ -251,7 +252,11 @@ def run_validation():
         # Match against ground truth by dish
         matching_gt = gt[gt["dish"] == dish]
         for g in matching_gt.itertuples():
+            if not g.energy_kcal or g.fat is None:
+                continue
             lab_M2 = g.fat * fat_kcal_per_g / g.energy_kcal * 100
+            if lab_M2 == 0:
+                continue
             ratio = recipe_M2 / lab_M2
             pairs.append({
                 "dish": dish,
@@ -313,10 +318,6 @@ def run_validation():
 
     # Generate REPORT.md
     report_text = generate_report(results)
-
-    # Collect all numbers appearing in REPORT.md to guarantee 100% test integrity
-    report_numbers = [float(x) for x in re.findall(r"(?<![\w.\-/:])\d+(?:\.\d+)?(?![\w.\-/:])", report_text)]
-    results["report_numbers"] = sorted(list(set(report_numbers)))
 
     # Write files
     out_dir = os.path.join(REPO, "experiments", "phase1_validation")

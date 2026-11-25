@@ -1,4 +1,5 @@
 """Unified food composition table combining IFCT 2017, INDB UK/US, and Indian products."""
+import math
 import os
 import numpy as np
 import pandas as pd
@@ -6,6 +7,9 @@ from lhf.paths import DATA_RAW, DATA_CURATED
 from lhf import constants
 
 _TABLE = None
+
+# SPEC §2: 14 fats and oils (codes T001-T014) have energy derived from fat
+OIL_CODES = {f"T{i:03d}" for i in range(1, 12 + 3)}
 
 COLUMNS = [
     "name",
@@ -59,7 +63,7 @@ def _build_table() -> pd.DataFrame:
     # 1. IFCT 2017 transcription
     ifct_path = os.path.join(DATA_RAW, "ifct2017_transcription", "ifct2017_compositions.csv")
     ifct_raw = pd.read_csv(ifct_path)
-    oil = ifct_raw["code"].astype(str).str.startswith("T0")
+    oil = ifct_raw["code"].astype(str).isin(OIL_CODES)
     fat = _to_num(ifct_raw["fatce"])
     enerc = _to_num(ifct_raw["enerc"])
 
@@ -145,15 +149,19 @@ def _build_table() -> pd.DataFrame:
     return combined[COLUMNS]
 
 
-def load_table() -> pd.DataFrame:
+def _get_table() -> pd.DataFrame:
     global _TABLE
     if _TABLE is None:
         _TABLE = _build_table()
     return _TABLE
 
 
+def load_table() -> pd.DataFrame:
+    return _get_table().copy()
+
+
 def get(code: str) -> dict:
-    table = load_table()
+    table = _get_table()
     code_str = str(code)
     if code_str not in table.index:
         raise KeyError(code)
@@ -163,10 +171,18 @@ def get(code: str) -> dict:
 
 
 def nutrients_for(code: str, grams: float) -> dict:
-    table = load_table()
+    table = _get_table()
     code_str = str(code)
     if code_str not in table.index:
         raise KeyError(code)
+    if grams is None or isinstance(grams, bool):
+        raise ValueError("grams cannot be None or boolean")
+    try:
+        g = float(grams)
+    except (TypeError, ValueError) as err:
+        raise ValueError(f"grams must be numeric, got {grams!r}") from err
+    if math.isnan(g) or not math.isfinite(g) or g < 0:
+        raise ValueError(f"grams must be non-negative finite number, got {grams!r}")
     row = table.loc[code_str]
-    factor = float(grams) / 100 if grams is not None else float("nan")
+    factor = g / 100
     return {col: float(row[col]) * factor for col in NUTRIENT_COLUMNS}

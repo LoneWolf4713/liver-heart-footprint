@@ -1,0 +1,577 @@
+{
+  "recipe": {
+    "id": "SAMOSA-TEST-01",
+    "url": null,
+    "dish": "samosa",
+    "servings": 8
+  },
+  "lines": [
+    {
+      "index": 0,
+      "raw": "2 cups maida",
+      "parsed": {
+        "raw": "2 cups maida",
+        "status": "QUANTIFIED",
+        "qty": 2.0,
+        "qty_min": 2.0,
+        "qty_max": 2.0,
+        "unit": "cup",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "maida"
+      },
+      "match": {
+        "code": "A018",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 240.0,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [
+        "REFINED_GRAIN"
+      ],
+      "nutrients": {
+        "energy_kj": 3532.7999999999997,
+        "energy_kcal": 844.359464627151,
+        "fat_g": 1.8239999999999998,
+        "sfa_g": 0.23651999999999998,
+        "mufa_g": 0.12153599999999999,
+        "pufa_g": 0.8232,
+        "tfa_g": 0.0,
+        "carb_g": 178.248,
+        "freesugar_g": 4.296,
+        "fibre_g": 6.624,
+        "protein_g": 24.863999999999997,
+        "sodium_mg": 3.6959999999999993,
+        "water_g": 27.215999999999998
+      }
+    },
+    {
+      "index": 1,
+      "raw": "2 tbsp oil",
+      "parsed": {
+        "raw": "2 tbsp oil",
+        "status": "QUANTIFIED",
+        "qty": 2.0,
+        "qty_min": 2.0,
+        "qty_max": 2.0,
+        "unit": "tbsp",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "oil"
+      },
+      "match": {
+        "code": "T508",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 27.2,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [
+        "COOKING_OIL"
+      ],
+      "nutrients": {
+        "energy_kj": 1005.3120000000001,
+        "energy_kcal": 244.52800000000002,
+        "fat_g": 27.172800000000002,
+        "sfa_g": 3.2640000000000002,
+        "mufa_g": 5.5760000000000005,
+        "pufa_g": 17.2176,
+        "tfa_g": null,
+        "carb_g": 0.0,
+        "freesugar_g": 0.0,
+        "fibre_g": 0.0,
+        "protein_g": 0.0,
+        "sodium_mg": 0.0,
+        "water_g": null
+      }
+    },
+    {
+      "index": 2,
+      "raw": "0.5 tsp ajwain",
+      "parsed": {
+        "raw": "0.5 tsp ajwain",
+        "status": "QUANTIFIED",
+        "qty": 0.5,
+        "qty_min": 0.5,
+        "qty_max": 0.5,
+        "unit": "tsp",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "ajwain"
+      },
+      "match": {
+        "code": "G536",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 1.0,
+      "grams_basis": "GROUP_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [
+        "SPICE"
+      ],
+      "nutrients": {
+        "energy_kj": 9.95792,
+        "energy_kcal": 2.38,
+        "fat_g": 0.0,
+        "sfa_g": 0.0062,
+        "mufa_g": 0.0,
+        "pufa_g": 0.0,
+        "tfa_g": null,
+        "carb_g": 0.47619999999999996,
+        "freesugar_g": 0.0,
+        "fibre_g": 0.47600000000000003,
+        "protein_g": 0.23809999999999998,
+        "sodium_mg": 0.0,
+        "water_g": null
+      }
+    },
+    {
+      "index": 3,
+      "raw": "salt to taste",
+      "parsed": {
+        "raw": "salt to taste",
+        "status": "UNQUANTIFIED",
+        "qty": null,
+        "qty_min": null,
+        "qty_max": null,
+        "unit": null,
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "salt to taste"
+      },
+      "match": null,
+      "grams": null,
+      "grams_basis": null,
+      "grams_flags": [],
+      "included": false,
+      "exclusion_reason": "UNQUANTIFIED",
+      "classes": [],
+      "nutrients": null
+    },
+    {
+      "index": 4,
+      "raw": "3 medium potatoes, boiled and mashed",
+      "parsed": {
+        "raw": "3 medium potatoes, boiled and mashed",
+        "status": "QUANTIFIED",
+        "qty": 3.0,
+        "qty_min": 3.0,
+        "qty_max": 3.0,
+        "unit": "piece",
+        "size": "medium",
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "potatoes, boiled and mashed"
+      },
+      "match": {
+        "code": "F006",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 210.0,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [],
+      "nutrients": {
+        "energy_kj": 613.2,
+        "energy_kcal": 146.5583173996176,
+        "fat_g": 0.48300000000000004,
+        "sfa_g": 0.091476,
+        "mufa_g": 0.029022000000000003,
+        "pufa_g": 0.27090000000000003,
+        "tfa_g": 0.0,
+        "carb_g": 31.269000000000002,
+        "freesugar_g": 0.672,
+        "fibre_g": 3.591,
+        "protein_g": 3.2340000000000004,
+        "sodium_mg": 8.631,
+        "water_g": 169.512
+      }
+    },
+    {
+      "index": 5,
+      "raw": "1 tsp cumin seeds",
+      "parsed": {
+        "raw": "1 tsp cumin seeds",
+        "status": "QUANTIFIED",
+        "qty": 1.0,
+        "qty_min": 1.0,
+        "qty_max": 1.0,
+        "unit": "tsp",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "cumin seeds"
+      },
+      "match": {
+        "code": "G025",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 2.1,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [
+        "SPICE"
+      ],
+      "nutrients": {
+        "energy_kj": 26.754,
+        "energy_kcal": 6.3943594646271515,
+        "fat_g": 0.34944000000000003,
+        "sfa_g": 0.012999,
+        "mufa_g": 0.175959,
+        "pufa_g": 0.090573,
+        "tfa_g": 0.0,
+        "carb_g": 0.47502000000000005,
+        "freesugar_g": 0.02898,
+        "fibre_g": 0.6373500000000001,
+        "protein_g": 0.29211000000000004,
+        "sodium_mg": 2.625,
+        "water_g": 0.22239
+      }
+    },
+    {
+      "index": 6,
+      "raw": "0.5 tsp garam masala",
+      "parsed": {
+        "raw": "0.5 tsp garam masala",
+        "status": "QUANTIFIED",
+        "qty": 0.5,
+        "qty_min": 0.5,
+        "qty_max": 0.5,
+        "unit": "tsp",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "garam masala"
+      },
+      "match": {
+        "code": "G523",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 1.0,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [
+        "SPICE"
+      ],
+      "nutrients": {
+        "energy_kj": 15.92,
+        "energy_kcal": 3.79,
+        "fat_g": 0.151,
+        "sfa_g": 0.0,
+        "mufa_g": 0.0,
+        "pufa_g": 0.0,
+        "tfa_g": null,
+        "carb_g": 0.452,
+        "freesugar_g": 0.0,
+        "fibre_g": 0.0,
+        "protein_g": 0.156,
+        "sodium_mg": 0.97,
+        "water_g": null
+      }
+    },
+    {
+      "index": 7,
+      "raw": "1 tsp red chilli powder",
+      "parsed": {
+        "raw": "1 tsp red chilli powder",
+        "status": "QUANTIFIED",
+        "qty": 1.0,
+        "qty_min": 1.0,
+        "qty_max": 1.0,
+        "unit": "tsp",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "red chilli powder"
+      },
+      "match": {
+        "code": "G516",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 2.7,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [
+        "SPICE"
+      ],
+      "nutrients": {
+        "energy_kj": 0.0,
+        "energy_kcal": 0.0,
+        "fat_g": 0.38610000000000005,
+        "sfa_g": 0.06642,
+        "mufa_g": 0.08667000000000001,
+        "pufa_g": 0.21627000000000002,
+        "tfa_g": null,
+        "carb_g": 0.0,
+        "freesugar_g": 0.19440000000000002,
+        "fibre_g": 0.9396,
+        "protein_g": 0.36450000000000005,
+        "sodium_mg": 108.00000000000001,
+        "water_g": null
+      }
+    },
+    {
+      "index": 8,
+      "raw": "2 tbsp fresh coriander leaves, chopped",
+      "parsed": {
+        "raw": "2 tbsp fresh coriander leaves, chopped",
+        "status": "QUANTIFIED",
+        "qty": 2.0,
+        "qty_min": 2.0,
+        "qty_max": 2.0,
+        "unit": "tbsp",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": null,
+        "optional": false,
+        "name": "fresh coriander leaves, chopped"
+      },
+      "match": {
+        "code": "G009",
+        "method": "exact",
+        "score": 1.0
+      },
+      "grams": 2.0,
+      "grams_basis": "CODE_MEASURE",
+      "grams_flags": [],
+      "included": true,
+      "exclusion_reason": null,
+      "classes": [],
+      "nutrients": {
+        "energy_kj": 2.6,
+        "energy_kcal": 0.6214149139579349,
+        "fat_g": 0.013999999999999999,
+        "sfa_g": 0.004560000000000001,
+        "mufa_g": 0.0001812,
+        "pufa_g": 0.0064,
+        "tfa_g": 0.0,
+        "carb_g": 0.0386,
+        "freesugar_g": 0.0034000000000000002,
+        "fibre_g": 0.0932,
+        "protein_g": 0.0704,
+        "sodium_mg": 0.74,
+        "water_g": 1.7398
+      }
+    },
+    {
+      "index": 9,
+      "raw": "500 ml oil for deep frying",
+      "parsed": {
+        "raw": "500 ml oil for deep frying",
+        "status": "QUANTIFIED",
+        "qty": 500.0,
+        "qty_min": 500.0,
+        "qty_max": 500.0,
+        "unit": "ml",
+        "size": null,
+        "stated_g": null,
+        "stated_ml": 500.0,
+        "optional": false,
+        "name": "oil for deep frying"
+      },
+      "match": {
+        "code": "T508",
+        "method": "alias",
+        "score": 1.0
+      },
+      "grams": 460.0,
+      "grams_basis": "STATED_VOLUME",
+      "grams_flags": [],
+      "included": false,
+      "exclusion_reason": "FRYING_BATH",
+      "classes": [
+        "COOKING_OIL"
+      ],
+      "nutrients": {
+        "energy_kj": 17001.6,
+        "energy_kcal": 4135.4,
+        "fat_g": 459.53999999999996,
+        "sfa_g": 55.199999999999996,
+        "mufa_g": 94.3,
+        "pufa_g": 291.17999999999995,
+        "tfa_g": null,
+        "carb_g": 0.0,
+        "freesugar_g": 0.0,
+        "fibre_g": 0.0,
+        "protein_g": 0.0,
+        "sodium_mg": 0.0,
+        "water_g": null
+      }
+    }
+  ],
+  "coverage": {
+    "lines_total": 10,
+    "lines_included": 8,
+    "excluded_by_reason": {
+      "WATER": 0,
+      "UNQUANTIFIED": 1,
+      "UNMAPPED": 0,
+      "NON_FOOD": 0,
+      "UNQUANTIFIABLE": 0,
+      "FRYING_BATH": 1
+    },
+    "included_mass_g": 486.0,
+    "unquantified_fat_lines": []
+  },
+  "totals": {
+    "energy_kj": 7174.931504,
+    "energy_kcal": 1791.0075564053539,
+    "fat_g": 90.64434,
+    "sfa_g": 33.30795740000001,
+    "mufa_g": 100.2893682,
+    "pufa_g": 309.804943,
+    "tfa_g": null,
+    "carb_g": 210.95882,
+    "freesugar_g": 5.19478,
+    "fibre_g": 12.361149999999999,
+    "protein_g": 29.219109999999997,
+    "sodium_mg": 124.662,
+    "water_g": null,
+    "added_sugar_g": 0.0,
+    "refined_carb_g": 178.248,
+    "salt_g": 0.0
+  },
+  "per_serving": {
+    "energy_kj": 896.866438,
+    "energy_kcal": 223.87594455066923,
+    "fat_g": 11.3305425,
+    "sfa_g": 4.163494675000001,
+    "mufa_g": 12.536171025,
+    "pufa_g": 38.725617875,
+    "tfa_g": null,
+    "carb_g": 26.3698525,
+    "freesugar_g": 0.6493475,
+    "fibre_g": 1.5451437499999998,
+    "protein_g": 3.6523887499999996,
+    "sodium_mg": 15.58275,
+    "water_g": null,
+    "added_sugar_g": 0.0,
+    "refined_carb_g": 22.281,
+    "salt_g": 0.0
+  },
+  "footprint": {
+    "axes": {
+      "energy_kcal": {
+        "amount": 223.87594455066923,
+        "unit": "kcal",
+        "limit": 2240.0,
+        "pct_of_limit": 9.994461810297734,
+        "pct_energy": null,
+        "limit_sources": [
+          "NSO_CALORIES_URBAN"
+        ]
+      },
+      "fat_g": {
+        "amount": 11.3305425,
+        "unit": "g",
+        "limit": 74.66666666666667,
+        "pct_of_limit": 15.174833705357141,
+        "pct_energy": 4.552450111607143,
+        "limit_sources": [
+          "LIMIT_TOTAL_FAT_PCT",
+          "NSO_CALORIES_URBAN",
+          "FAT_KCAL_PER_G"
+        ]
+      },
+      "sfa_g": {
+        "amount": 4.163494675000001,
+        "unit": "g",
+        "limit": 24.88888888888889,
+        "pct_of_limit": 16.728326819196432,
+        "pct_energy": 1.672832681919643,
+        "limit_sources": [
+          "LIMIT_SFA_GENERAL",
+          "NSO_CALORIES_URBAN",
+          "FAT_KCAL_PER_G"
+        ]
+      },
+      "added_sugar_g": {
+        "amount": 0.0,
+        "unit": "g",
+        "limit": 25.0,
+        "pct_of_limit": 0.0,
+        "pct_energy": null,
+        "limit_sources": [
+          "LIMIT_ADDED_SUGAR_GRAMS"
+        ]
+      },
+      "sodium_mg": {
+        "amount": 15.58275,
+        "unit": "mg",
+        "limit": 1967.0,
+        "pct_of_limit": 0.7922089476359939,
+        "pct_energy": null,
+        "limit_sources": [
+          "LIMIT_SALT_GRAMS",
+          "SODIUM_MG_PER_G_SALT"
+        ]
+      },
+      "refined_carb_g": {
+        "amount": 22.281,
+        "unit": "g",
+        "limit": null,
+        "pct_of_limit": null,
+        "pct_energy": null,
+        "limit_sources": []
+      }
+    },
+    "reference": {
+      "setting": "urban",
+      "risk": "general",
+      "energy_kcal": 2240.0,
+      "energy_metric": "NSO_CALORIES_URBAN"
+    },
+    "context": {
+      "NSO_FAT_URBAN": 70.0,
+      "INDIAB_SFA_NATIONAL": 8.9
+    }
+  },
+  "warnings": [
+    "SALT_UNQUANTIFIED: recipe contains unquantified salt line (sodium is a lower bound)",
+    "FRYING_CORRECTED: detected 1 frying bath line(s) (460g oil excluded). Absorbed fat estimated at 60.3g using lab data (12.4g/100g, match=lab_match:Samosa). Original stated-oil fat: 459.5g."
+  ],
+  "frying_correction": {
+    "applied": true,
+    "frying_bath_lines_count": 1,
+    "oil_mass_removed_g": 460.0,
+    "absorbed_fat_g": 60.264,
+    "absorbed_sfa_g": 29.625782400000002,
+    "fat_g_per_100g_lab": 12.4,
+    "sfa_pct_of_fat_lab": 49.16,
+    "lab_match": "lab_match:Samosa"
+  }
+}

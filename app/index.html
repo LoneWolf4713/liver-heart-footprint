@@ -1813,7 +1813,7 @@
       </h1>
       
       <p class="hero-subhead">
-        Quantitative cardiometabolic and hepatic dietary risk modeling against ICMR-NIN 2024 and WHO daily limits, calibrated with empirical laboratory frying data.
+        How much of your daily fat, sugar, and sodium budget does one serving of a dish actually use? We built a pipeline to find out — for 1,014 Indian recipes, backed by lab data.
       </p>
 
       <!-- Prominent Authors Attribution Block -->
@@ -1972,9 +1972,9 @@
             
             <!-- CLINICAL REPORT HEADER & DUAL-ORGAN EXECUTIVE VERDICT SUMMARY -->
             <div class="report-header-block">
-              <h1 class="report-main-title" x-text="`${formatDishName(activeResult.recipe.dish)}: Clinical Risk Report`"></h1>
+              <h1 class="report-main-title" x-text="`${formatDishName(activeResult.recipe.dish)}: Nutritional Footprint`"></h1>
               <p class="report-sub-title">
-                Standardized per-portion dietary risk modeling evaluated against <strong>ICMR-NIN 2024</strong> (2,240 kcal adult reference) and <strong>WHO metabolic guidelines</strong>.
+                Each serving analyzed against <strong>ICMR-NIN 2024</strong> daily limits (2,240 kcal adult baseline) and <strong>WHO dietary guidelines</strong>.
               </p>
 
               <!-- Immediate Dual-Organ Executive Verdict (Answers: Is it bad for Liver? Is it bad for Heart?) -->
@@ -1984,14 +1984,14 @@
                 <div class="exec-summary-card">
                   <div class="exec-organ-badge">
                     <span>🩺</span>
-                    <span>Hepatic Load Index (HLI)</span>
+                    <span>Liver Load Score (HLI)</span>
                   </div>
                   <div>
                     <span class="exec-verdict-pill" :class="hli.pillClass" x-text="hli.status"></span>
                   </div>
                   <div class="score-circle-widget" :class="hli.circleClass">
                     <span class="circle-score-val" x-text="hli.score"></span>
-                    <span class="circle-score-denom">/ 100</span>
+                    <span class="circle-score-denom">/ 100 pts</span>
                   </div>
                   <div class="exec-card-primary-line" x-text="`Primary: ${hli.primaryDriver}`"></div>
                 </div>
@@ -2007,7 +2007,7 @@
                   </div>
                   <div class="score-circle-widget" :class="cbi.circleClass">
                     <span class="circle-score-val" x-text="cbi.score"></span>
-                    <span class="circle-score-denom">/ 100</span>
+                    <span class="circle-score-denom">/ 100 pts</span>
                   </div>
                   <div class="exec-card-primary-line" x-text="`Primary: ${cbi.primaryDriver}`"></div>
                 </div>
@@ -2018,27 +2018,27 @@
               <div class="methodology-toggle-container">
                 <button class="methodology-toggle-btn" @click="showMethodology = !showMethodology">
                   <span>📐</span>
-                  <span x-text="showMethodology ? 'Hide Mathematical Scoring Methodology ▲' : 'Show Mathematical Scoring Methodology & References ▼'"></span>
+                  <span x-text="showMethodology ? 'Hide score calculation ▲' : 'Show how the scores are calculated ▼'"></span>
                 </button>
                 
                 <div x-show="showMethodology" x-transition.opacity.duration.200ms class="methodology-drawer">
                   <div class="methodology-grid">
                     <div>
-                      <div class="methodology-title">Hepatic Load Index (HLI) Formulation:</div>
+                      <div class="methodology-title">Liver Score (HLI) — how it is calculated:</div>
                       <div class="methodology-code">HLI = min(100, max(%SFA, %Sugar) + 0.15 × %Calories + 0.35 × min(RefinedCarb_g, 50))</div>
                       <div class="methodology-notes">
-                        • <strong>SFA Limit:</strong> 24.9g / day (ICMR-NIN &le;10% kcal ceiling)<br>
-                        • <strong>Sugar Limit:</strong> 25.0g / day (WHO &le;5% energy recommendation)<br>
-                        • <strong>Refined Starch:</strong> High-glycemic glucose substrate fueling hepatic de novo lipogenesis (DNL).
+                        • <strong>Saturated Fat limit:</strong> 24.9g / day (ICMR-NIN — max 10% of daily calories from SFA)<br>
+                        • <strong>Added Sugar limit:</strong> 25.0g / day (WHO — max 5% of daily calories from free sugars)<br>
+                        • <strong>Refined Starch:</strong> Maida, polished rice, and semolina — counted for glycemic load. Capped at 50g in the formula.
                       </div>
                     </div>
                     <div>
-                      <div class="methodology-title">Cardiovascular Burden Index (CBI) Formulation:</div>
+                      <div class="methodology-title">Heart Score (CBI) — how it is calculated:</div>
                       <div class="methodology-code">CBI = min(100, max(%SFA, %Sodium) + 0.20 × %Fat + 0.10 × %Calories)</div>
                       <div class="methodology-notes">
-                        • <strong>SFA Limit:</strong> 24.9g / day (Suppresses hepatic LDL receptor clearance)<br>
-                        • <strong>Sodium Limit:</strong> 1,967 mg / day (WHO 5.0g NaCl ceiling)<br>
-                        • <strong>Total Fat:</strong> 74.7g / day (ICMR-NIN 30% kcal dietary target).
+                        • <strong>Saturated Fat limit:</strong> 24.9g / day — high SFA raises LDL cholesterol<br>
+                        • <strong>Sodium limit:</strong> 1,967 mg / day (WHO 5g salt recommendation)<br>
+                        • <strong>Total Fat limit:</strong> 74.7g / day (ICMR-NIN — max 30% of daily calories from fat).
                       </div>
                     </div>
                   </div>
@@ -2061,14 +2061,33 @@
               </div>
             </div>
 
-            <!-- SECTION 1: VERTICAL PHYSIOLOGICAL STORYFLOW (LIVER -> BRIDGE -> HEART) -->
+            <!-- HERO SENTENCE: The single most important number -->
+            <div x-data="{ get heroText() {
+              const axes = activeResult.footprint.axes;
+              const axisNames = { sfa_g: 'saturated fat', fat_g: 'total fat', added_sugar_g: 'added sugar', sodium_mg: 'sodium', energy_kcal: 'energy' };
+              let maxAxis = 'sfa_g', maxPct = -1;
+              for (const k in axes) { if (axes[k].pct_of_limit !== null && axes[k].pct_of_limit > maxPct) { maxPct = axes[k].pct_of_limit; maxAxis = k; } }
+              const pct = Math.round(maxPct);
+              const name = axisNames[maxAxis] || maxAxis;
+              if (pct >= 60) return `One serving uses ${pct}% of your daily ${name} limit.`;
+              if (pct >= 30) return `One serving accounts for ${pct}% of your daily ${name} budget.`;
+              return `This is a relatively light recipe. The highest load is ${name} at ${pct}%.`;
+            }}"
+              style="text-align:center; margin-bottom:36px; padding:24px 20px; background:#f8fafd; border:1px solid #d0e2ff; border-radius:12px;">
+              <div style="font-size:22px; font-weight:700; color:#1d1d1f; letter-spacing:-0.015em; line-height:1.3;" x-text="heroText"></div>
+              <div style="font-size:13px; color:#636366; margin-top:8px;">
+                Based on <span x-text="activeResult.recipe.servings"></span> servings · ICMR-NIN 2024 &amp; WHO daily limits
+              </div>
+            </div>
+
+            <!-- SECTION 1: ORGAN-BY-ORGAN BREAKDOWN -->
             <div class="organ-architecture-section">
               <div class="dashboard-section-header">
                 <div class="section-title">
-                  <span>🫀</span> Section 1 · Biological Organ Impact Architecture
+                  <span>🫀</span> Section 1 · Organ-by-Organ Breakdown
                 </div>
                 <div class="section-desc">
-                  Differential clinical evaluation of hepatic (MASLD) and cardiovascular (CVD) metabolic pathways, unified by shared lipid drivers.
+                  How does one serving affect your liver and heart? Each organ tracks different nutrients — here's where this dish lands.
                 </div>
               </div>
 
@@ -2084,7 +2103,7 @@
 
                   <div class="score-circle-widget" :class="hli.circleClass">
                     <span class="circle-score-val" x-text="hli.score"></span>
-                    <span class="circle-score-denom">/ 100</span>
+                    <span class="circle-score-denom">/ 100 pts</span>
                   </div>
 
                   <div style="margin-top: 2px; margin-bottom: 6px;">
@@ -2094,7 +2113,7 @@
                   <div class="exec-card-primary-line" x-text="`Primary: ${hli.primaryDriver}`"></div>
 
                   <p class="organ-scope-text">
-                    Evaluates steatotic triglyceride storage, hepatocyte ER stress, and carbohydrate-induced de novo lipogenesis.
+                    Tracks saturated fat, added sugars, and refined carbs — the main dietary drivers of fatty liver disease.
                   </p>
                 </div>
 
@@ -2105,7 +2124,7 @@
                     <div class="gauge-header-row">
                       <span class="gauge-title">
                         Saturated Fatty Acids (SFA)
-                        <span class="shared-cross-badge">Shared Cross-Organ Driver</span>
+                        <span class="shared-cross-badge">Affects Both Organs</span>
                       </span>
                       <span class="gauge-amount" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g`"></span>
                     </div>
@@ -2117,7 +2136,7 @@
                       <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}% daily limit`"></span>
                     </div>
                     <div class="gauge-clinical-tag">
-                      Pathology: Hepatocyte lipotoxicity, ER stress &amp; intrahepatic steatotic lipid droplet storage.
+                      High saturated fat intake is the primary driver of fat accumulation in the liver.
                     </div>
                   </div>
 
@@ -2126,7 +2145,7 @@
                     <div class="gauge-header-row">
                       <span class="gauge-title">
                         Added Free Sugars
-                        <span class="badge badge-blue" style="font-size: 10px; margin-left: 4px;">Direct Hepatic DNL</span>
+                        <span class="badge badge-blue" style="font-size: 10px; margin-left: 4px;">Liver Fat Driver</span>
                       </span>
                       <span class="gauge-amount" x-text="`${activeResult.per_serving.added_sugar_g.toFixed(1)}g`"></span>
                     </div>
@@ -2138,7 +2157,7 @@
                       <span style="font-weight: 600;" x-text="`${Math.round(activeResult.footprint.axes.added_sugar_g.pct_of_limit)}% limit`"></span>
                     </div>
                     <div class="gauge-clinical-tag">
-                      Pathology: Bypasses phosphofructokinase control to fuel hepatic de novo lipogenesis (DNL).
+                      The liver converts excess sugar directly into fat (called de novo lipogenesis).
                     </div>
                   </div>
 
@@ -2159,7 +2178,7 @@
                       <span style="font-weight: 600;" x-text="`${activeResult.per_serving.refined_carb_g.toFixed(1)}g per portion`"></span>
                     </div>
                     <div class="gauge-clinical-tag">
-                      Pathology: Acute postprandial glucose flux converted to liver triglycerides.
+                      Refined carbs (maida, polished rice) spike blood sugar quickly and are converted to liver fat.
                     </div>
                   </div>
 
@@ -2168,7 +2187,7 @@
                     <div class="gauge-header-row">
                       <span class="gauge-title">
                         Dietary Calories (Energy)
-                        <span class="shared-cross-badge">Shared Cross-Organ Driver</span>
+                        <span class="shared-cross-badge">Affects Both Organs</span>
                       </span>
                       <span class="gauge-amount" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal`"></span>
                     </div>
@@ -2180,7 +2199,7 @@
                       <span style="font-weight: 600;" x-text="`${Math.round(activeResult.footprint.axes.energy_kcal.pct_of_limit)}% daily budget`"></span>
                     </div>
                     <div class="gauge-clinical-tag">
-                      Pathology: Caloric surplus saturates peripheral storage, spilling ectopic fat into hepatic tissue.
+                      A caloric surplus from one dish adds up quickly — excess energy is stored as fat in the liver.
                     </div>
                   </div>
                 </div>
@@ -2196,7 +2215,7 @@
                     <strong>Shared Cross-Organ Biological Bridge:</strong> 
                     Dietary lipids absorbed from this meal do not isolate in one organ. 
                     Saturated Fatty Acids (<span style="font-weight: 700;" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g · ${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}% limit`"></span>) 
-                    and Calories (<span style="font-weight: 700;" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal`"></span>) circulate simultaneously, promoting hepatocyte steatosis in the liver above and endothelial plaque deposition in the heart below.
+                    and Calories (<span style="font-weight: 700;" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal`"></span>) circulate simultaneously, raising liver fat levels and increasing the risk of arterial plaque buildup in the heart.
                   </div>
                 </div>
                 <div class="connector-line-vert"></div>
@@ -2214,7 +2233,7 @@
 
                   <div class="score-circle-widget" :class="cbi.circleClass">
                     <span class="circle-score-val" x-text="cbi.score"></span>
-                    <span class="circle-score-denom">/ 100</span>
+                    <span class="circle-score-denom">/ 100 pts</span>
                   </div>
 
                   <div style="margin-top: 2px; margin-bottom: 6px;">
@@ -2224,7 +2243,7 @@
                   <div class="exec-card-primary-line" x-text="`Primary: ${cbi.primaryDriver}`"></div>
 
                   <p class="organ-scope-text">
-                    Evaluates atherogenic circulating lipids, endothelial receptor clearance, and vascular shear stress.
+                    Tracks saturated fat, sodium, and total fat — the main dietary drivers of heart disease and high blood pressure.
                   </p>
                 </div>
 
@@ -2235,7 +2254,7 @@
                     <div class="gauge-header-row">
                       <span class="gauge-title">
                         Saturated Fatty Acids (SFA)
-                        <span class="shared-cross-badge">Shared Cross-Organ Driver</span>
+                        <span class="shared-cross-badge">Affects Both Organs</span>
                       </span>
                       <span class="gauge-amount" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g`"></span>
                     </div>
@@ -2243,11 +2262,11 @@
                       <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.sfa_g.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.sfa_g.pct_of_limit, 100)}%`"></div>
                     </div>
                     <div class="gauge-limit-legend">
-                      <span>Ceiling: 24.9g / day (Atherogenic threshold)</span>
+                      <span>Ceiling: 24.9g / day — ICMR-NIN general limit</span>
                       <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}% daily limit`"></span>
                     </div>
                     <div class="gauge-clinical-tag">
-                      Pathology: Suppresses hepatic LDL receptors, elevating circulating atherogenic ApoB &amp; LDL-C.
+                      Saturated fat raises LDL ("bad") cholesterol by reducing the liver's ability to clear it from the blood.
                     </div>
                   </div>
 
@@ -2268,7 +2287,7 @@
                       <span style="font-weight: 600;" x-text="`${Math.round(activeResult.footprint.axes.sodium_mg.pct_of_limit)}% limit`"></span>
                     </div>
                     <div class="gauge-clinical-tag">
-                      Pathology: Expands vascular plasma volume, increases endothelial shear stress &amp; drives hypertension.
+                      High sodium intake causes the body to retain water, raising blood pressure and straining the heart.
                     </div>
                   </div>
 
@@ -2286,7 +2305,7 @@
                       <span style="font-weight: 600;" x-text="`${Math.round(activeResult.footprint.axes.fat_g.pct_of_limit)}% limit`"></span>
                     </div>
                     <div class="gauge-clinical-tag">
-                      Pathology: Induces prolonged postprandial hyperlipidemia and endothelial vasodilation impairment.
+                      A high-fat meal keeps blood fat levels elevated for hours after eating, stressing the cardiovascular system.
                     </div>
                   </div>
 
@@ -2295,7 +2314,7 @@
                     <div class="gauge-header-row">
                       <span class="gauge-title">
                         Dietary Calories (Energy)
-                        <span class="shared-cross-badge">Shared Cross-Organ Driver</span>
+                        <span class="shared-cross-badge">Affects Both Organs</span>
                       </span>
                       <span class="gauge-amount" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal`"></span>
                     </div>
@@ -2307,7 +2326,7 @@
                       <span style="font-weight: 600;" x-text="`${Math.round(activeResult.footprint.axes.energy_kcal.pct_of_limit)}% daily budget`"></span>
                     </div>
                     <div class="gauge-clinical-tag">
-                      Pathology: Excess caloric density contributes to systemic insulin resistance &amp; dyslipidemia.
+                      Excess calories build up over time, contributing to weight gain and cardiovascular strain.
                     </div>
                   </div>
                 </div>
@@ -2421,7 +2440,7 @@
             <div class="ingredient-audit-section" style="margin-bottom: 56px;">
               <div class="dashboard-section-header">
                 <div class="section-title">
-                  <span>📋</span> Section 3 · Full Ingredient Audit &amp; IFCT Mapping
+                  <span>📋</span> Section 3 · Full Ingredient Breakdown
                 </div>
                 <div class="section-desc">
                   Granular parsing, mass resolution, and nutrient extraction across all recipe lines matched to the <strong>IFCT 2017</strong> database (<span x-text="`${activeResult.coverage.lines_included} of ${activeResult.coverage.lines_total} lines mapped`"></span>).
@@ -2482,7 +2501,7 @@
         <div style="margin-bottom: 32px;">
           <h2 style="font-size: 26px; font-weight: 700; margin: 0 0 8px 0; letter-spacing: -0.02em;">Curated Fried Foods Laboratory Dataset (D1)</h2>
           <p style="font-size: 14.5px; color: var(--text-muted); margin: 0; line-height: 1.5; max-width: 920px;">
-            A peer-reviewed benchmark of <strong>69 empirical lipid measurements</strong> compiled from 10 laboratory studies across South Asian culinary settings. This dataset calibrates deep-frying bath oil absorption in D2 and D4.
+            Real lab measurements of fat content in fried Indian foods — from published studies using Soxhlet extraction, gas chromatography, and proximate analysis. This is what powers the frying correction in D4.
           </p>
         </div>
 
@@ -2541,7 +2560,7 @@
             <div>
               <div class="bridge-item-title">Simmered Curries &amp; Gravies (e.g. Paneer Butter Masala)</div>
               <div class="bridge-item-desc">
-                <strong>Direct IFCT 2017 Aggregation:</strong> 100% of the butter (50g), cream (30g), and paneer are simmered into the sauce and consumed in full. There is no discarded oil bath; hence, the frying correction is <em>not applied</em>.
+                <strong>Direct Scoring (No Correction Needed):</strong> 100% of the butter (50g), cream (30g), and paneer are simmered into the sauce and consumed in full. There is no discarded oil bath; hence, the frying correction is <em>not applied</em>.
               </div>
             </div>
           </div>
@@ -2550,7 +2569,7 @@
             <div>
               <div class="bridge-item-title">Deep-Fried Immersion Foods (e.g. Samosa, Kachori)</div>
               <div class="bridge-item-desc">
-                <strong>D1 Bath Oil Exclusion &amp; Lab Substitution:</strong> The recipe calls for 500ml oil for deep frying. The engine strips the 460g pan bath and substitutes empirical matrix retention (12.4g/100g) from this laboratory dataset.
+                <strong>Frying Bath Corrected:</strong> The recipe calls for 500ml oil for deep frying. The engine strips the 460g pan bath and substitutes empirical matrix retention (12.4g/100g) from this laboratory dataset.
               </div>
             </div>
           </div>
@@ -2560,10 +2579,10 @@
         <div class="setting-spectrum-card">
           <div style="margin-bottom: 22px;">
             <div style="font-size: 16px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">
-              Commercial Setting Lipid Disparity (Why Setting Matters)
+              Why Where You Fry Matters: Fat Content by Setting
             </div>
             <div style="font-size: 13px; color: var(--text-muted); line-height: 1.45;">
-              The same culinary dish exhibits up to a 4× lipid spread depending on oil thermal degradation, reuse cycles, and fryer temperature control:
+              The same dish — measured at different cooking settings — shows up to a 4× spread in fat content. Oil reuse, temperature control, and batter thickness all change the final number:
             </div>
           </div>
 
@@ -2576,7 +2595,7 @@
               <div class="spectrum-fill fill-danger" style="width: 58%;"></div>
             </div>
             <div class="spectrum-val" style="color: #c62828;">29.2 g</div>
-            <div class="spectrum-note">Repeated frying cycles in unbranded palm/vanaspati; thermal oxidation increases oil viscosity and surface cling.</div>
+            <div class="spectrum-note">Oil is reused many times. Degraded oil clings more to food.</div>
           </div>
 
           <!-- Retail Packaged -->
@@ -2588,7 +2607,7 @@
               <div class="spectrum-fill fill-warning" style="width: 55%;"></div>
             </div>
             <div class="spectrum-val" style="color: #b25e00;">27.8 g</div>
-            <div class="spectrum-note">Continuous industrial conveyor fryers engineered for low moisture, high crispness, and long retail shelf-life.</div>
+            <div class="spectrum-note">Industrial conveyor fryers designed for consistent high crispness — but lots of oil uptake.</div>
           </div>
 
           <!-- Home Cooking -->
@@ -2600,7 +2619,7 @@
               <div class="spectrum-fill fill-warning" style="width: 45%;"></div>
             </div>
             <div class="spectrum-val" style="color: #b25e00;">22.4 g</div>
-            <div class="spectrum-note">Small-batch kadai frying; oil temperature abruptly drops when cold food enters, extending frying time.</div>
+            <div class="spectrum-note">Small kadai frying — temperature drops when cold food goes in, extending cooking time and oil absorption.</div>
           </div>
 
           <!-- Restaurant / Takeaway -->
@@ -2612,7 +2631,7 @@
               <div class="spectrum-fill" style="width: 33%; background: #0071e3;"></div>
             </div>
             <div class="spectrum-val" style="color: #0071e3;">16.5 g</div>
-            <div class="spectrum-note">Thermostat-regulated commercial deep fryers (175–185°C); rapid surface crust flash-seal prevents inner oil soaking.</div>
+            <div class="spectrum-note">Regulated temperature fryers (175–185°C). The crust seals fast, limiting inner oil absorption.</div>
           </div>
 
           <!-- Lab-Controlled -->
@@ -2624,7 +2643,7 @@
               <div class="spectrum-fill fill-safe" style="width: 31%;"></div>
             </div>
             <div class="spectrum-val" style="color: #2e7d32;">15.6 g</div>
-            <div class="spectrum-note">Calibrated single-use oil, strict submersion timing, and standardized 60-second wire-mesh drainage.</div>
+            <div class="spectrum-note">Fresh oil every time, strict timing, and standardized draining. The "gold standard" measurement.</div>
           </div>
         </div>
 
@@ -2745,13 +2764,13 @@
       <div x-show="currentTab === 'd2'" x-transition.opacity.duration.150ms>
         <div style="margin-bottom: 38px;">
           <div style="font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0071e3; margin-bottom: 6px;">
-            Deliverable 2 (D2) &middot; Pipeline Architecture &amp; Methodology
+            Deliverable 2 (D2) &middot; How the Pipeline Works
           </div>
           <h2 style="font-size: 28px; font-weight: 800; letter-spacing: -0.025em; margin: 0 0 10px 0; color: var(--text-main);">
-            The 5-Stage Footprint Engine &amp; Clinical Grounding
+            The 5-Stage Engine
           </h2>
           <p style="font-size: 14.5px; color: var(--text-muted); max-width: 860px; line-height: 1.55; margin: 0;">
-            A deterministic, multi-tiered computational pipeline that standardizes vernacular Indian recipe inputs, resolves physical gram densities, maps ingredients to empirical IFCT 2017 nutrient profiles, corrects for deep-frying oil absorption artifacts, and calculates clinical metabolic load indices.
+            A five-stage rule-based pipeline — no ML, no black boxes. Each stage has a clear job: read the ingredient, convert to grams, look it up in the IFCT database, correct for frying, and score against daily limits.
           </p>
         </div>
 
@@ -2767,9 +2786,9 @@
               </div>
               <span style="font-size: 12px; font-weight: 600; color: #86868b;">Input Standardization</span>
             </div>
-            <h3 class="stage-title">Multi-Dialect Ingredient &amp; Unit Parser</h3>
+            <h3 class="stage-title">Ingredient Parser</h3>
             <div class="stage-subtitle">
-              Isolates quantities, standardizes 50+ vernacular culinary units, extracts parenthetical metrics, and strips non-nutritive culinary adjectives.
+              Reads a raw ingredient line and pulls out the quantity, unit, and ingredient name — handling Indian units like katori, pao, and mutthi.
             </div>
             <div class="stage-grid-content">
               <div class="stage-explanation">
@@ -2823,9 +2842,9 @@
               </div>
               <span style="font-size: 12px; font-weight: 600; color: #86868b;">Mass Standardization</span>
             </div>
-            <h3 class="stage-title">Deterministic Density &amp; Mass Resolution</h3>
+            <h3 class="stage-title">Convert to Grams</h3>
             <div class="stage-subtitle">
-              Converts culinary volumes, piece counts, and vernacular household measures into precise physical gram weights (g).
+              Converts everything to grams. 1 cup of maida weighs differently from 1 cup of rice — this stage handles that.
             </div>
             <div class="stage-grid-content">
               <div class="stage-explanation">
@@ -2872,11 +2891,11 @@ status: EXACT_MATCH_RESOLVED
                 <span class="stage-pill stage-pill-indigo">Stage 03</span>
                 <span class="stage-file-badge">src/lhf/match.py</span>
               </div>
-              <span style="font-size: 12px; font-weight: 600; color: #86868b;">Nutritional Ontology</span>
+              <span style="font-size: 12px; font-weight: 600; color: #86868b;">Database Lookup</span>
             </div>
-            <h3 class="stage-title">High-Confidence IFCT 2017 Matching</h3>
+            <h3 class="stage-title">IFCT 2017 Ingredient Lookup</h3>
             <div class="stage-subtitle">
-              Maps cleaned culinary names to verified clinical nutrient profiles in the Indian Food Composition Tables (1,003 food components).
+              Looks up each ingredient in the Indian Food Composition Tables (IFCT 2017) — a government database of 1,003 foods with full nutrient profiles per 100g.
             </div>
             <div class="stage-grid-content">
               <div class="stage-explanation">
@@ -2929,9 +2948,9 @@ status: EXACT_MATCH_RESOLVED
               </div>
               <span style="font-size: 12px; font-weight: 600; color: #b25e00;">Empirical Lab Correction</span>
             </div>
-            <h3 class="stage-title">Deep-Frying Immersion Bath Correction</h3>
+            <h3 class="stage-title">Frying Bath Correction</h3>
             <div class="stage-subtitle">
-              Eliminates the massive recipe inflation artifact caused by pan immersion oil baths using Soxhlet laboratory uptake assays.
+              Standard nutrition tools count the entire oil bath as eaten fat — which is wildly wrong. This stage strips the bath and injects only the fat actually absorbed by the food, using lab data.
             </div>
             <div class="stage-grid-content">
               <div class="stage-explanation">
@@ -2939,9 +2958,9 @@ status: EXACT_MATCH_RESOLVED
                   When a home cook fries <em>Samosas</em>, the recipe routinely lists <em>"500 ml oil for deep frying"</em> (460g). Standard nutrition tools naively calculate 460g of fat, yielding an impossible 4,000+ kcal per serving! In reality, diners consume only the fraction absorbed into the crust:
                 </p>
                 <ul style="margin: 0 0 12px 18px; padding: 0; line-height: 1.6;">
-                  <li><strong>Automated Bath Detection:</strong> Scans for lines classified as <code>COOKING_OIL</code> or <code>HYDROGENATED_FAT</code> exceeding 50g accompanied by frying triggers (<code>"for deep frying"</code>, <code>"to fry"</code>).</li>
-                  <li><strong>Bath Stripping:</strong> Completely excludes the entire 460g immersion volume and its lipid load from the raw recipe sum.</li>
-                  <li><strong>Empirical Uptake Injection:</strong> Looks up the food matrix in <code>fried_foods_lab.csv</code> (Gupta et al. 2016 Soxhlet lab extractions) and injects actual absorbed fat based on finished solid mass: <em>Absorbed Fat = (non-oil mass / 100) &times; lab_fat_g_100g</em>.</li>
+                  <li><strong>Frying Detection:</strong> Scans for lines classified as <code>COOKING_OIL</code> or <code>HYDROGENATED_FAT</code> exceeding 50g accompanied by frying triggers (<code>"for deep frying"</code>, <code>"to fry"</code>).</li>
+                  <li><strong>Bath Oil Removed:</strong> Completely excludes the entire 460g immersion volume and its lipid load from the raw recipe sum.</li>
+                  <li><strong>Lab Fat Re-injection:</strong> Looks up the food matrix in <code>fried_foods_lab.csv</code> (Gupta et al. 2016 Soxhlet lab extractions) and injects actual absorbed fat based on finished solid mass: <em>Absorbed Fat = (non-oil mass / 100) &times; lab_fat_g_100g</em>.</li>
                 </ul>
                 <div class="stage-badges-row">
                   <span class="badge badge-amber">Excludes 100% of Pan Immersion Oil</span>
@@ -2981,9 +3000,9 @@ result: Corrected from 4,140 kcal &rarr; 510 kcal / serving
               </div>
               <span style="font-size: 12px; font-weight: 600; color: #86868b;">Clinical Risk Translation</span>
             </div>
-            <h3 class="stage-title">Dual-Organ Metabolic Scoring (HLI &amp; CBI)</h3>
+            <h3 class="stage-title">Scoring Against Daily Limits (Liver &amp; Heart)</h3>
             <div class="stage-subtitle">
-              Translates per-serving nutrient intakes into concrete organ strain indices against ICMR-NIN 2024 and WHO daily physiological ceilings.
+              Takes the per-serving nutrient totals and expresses each one as a percentage of the ICMR-NIN 2024 and WHO daily limits.
             </div>
             <div class="stage-grid-content">
               <div class="stage-explanation">
@@ -2991,14 +3010,14 @@ result: Corrected from 4,140 kcal &rarr; 510 kcal / serving
                   Standard nutritional reports list raw grams without clinical context. The footprint engine standardizes nutrient intake per portion (&divide; servings) against daily metabolic ceilings for an urban Indian adult (2,240 kcal/day baseline):
                 </p>
                 <ul style="margin: 0 0 12px 18px; padding: 0; line-height: 1.6;">
-                  <li><strong>Hepatic Load Index (HLI):</strong> Quantifies liver steatosis and <em>de novo</em> lipogenesis risk driven by Saturated Fatty Acids (ICMR ceiling: 24.9 g/day) and Free Added Sugars (WHO ceiling: 25.0 g/day).</li>
-                  <li><strong>Cardiovascular Burden Index (CBI):</strong> Quantifies atherogenic and arterial vascular strain driven by Saturated Fat (24.9 g), Total Dietary Fat (74.7 g / 30% energy), and Sodium (1,967 mg / 5g salt).</li>
-                  <li><strong>Crossroads Metabolic Bottleneck:</strong> Identifies whether Saturated Fat, Sugar, or Sodium represents the critical biological driver forcing clinical lifestyle adaptation.</li>
+                  <li><strong>Liver Score (HLI):</strong> Measures how much saturated fat and added sugar a serving contributes toward the liver's daily tolerance — the main dietary drivers of fatty liver disease.</li>
+                  <li><strong>Heart Score (CBI):</strong> Measures how much saturated fat, total fat, and sodium a serving contributes toward the heart's daily tolerance — the main dietary drivers of cardiovascular disease.</li>
+                  <li><strong>Primary Bottleneck:</strong> Finds which nutrient axis (saturated fat, sugar, or sodium) is closest to its daily limit for this recipe — this becomes the headline number on the D4 screen.</li>
                 </ul>
                 <div class="stage-badges-row">
                   <span class="badge badge-gray">ICMR-NIN 2024 Baselines</span>
                   <span class="badge badge-gray">WHO Sodium &amp; Free Sugar Norms</span>
-                  <span class="badge badge-gray">Normalized Organ Strain %</span>
+                  <span class="badge badge-gray">% of daily limit</span>
                 </div>
               </div>
               <div class="stage-example-box">
@@ -3022,8 +3041,8 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
         <!-- Daily Limits Reference Table -->
         <div style="margin-bottom: 54px;">
           <div class="dashboard-section-header">
-            <div class="section-title">Daily Reference Limits &amp; Clinical Etiology</div>
-            <div class="section-desc">ICMR-NIN 2024 &amp; WHO Reference</div>
+            <div class="section-title">Daily Limits &amp; Where They Come From</div>
+            <div class="section-desc">The reference values behind all the percentages in D4.</div>
           </div>
 
           <div class="data-table-container">
@@ -3032,7 +3051,7 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
                 <tr>
                   <th>Nutrient Axis</th>
                   <th>Daily Reference Limit</th>
-                  <th>Standard Derivation</th>
+                  <th>Source</th>
                   <th>Associated Footprint</th>
                 </tr>
               </thead>
@@ -3083,10 +3102,10 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
 
           <div style="margin-bottom: 24px;">
             <div style="font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0071e3; margin-bottom: 6px;">
-              Provenance, Ground Truth &amp; Model Boundaries
+              Sources &amp; Transparency
             </div>
             <h2 style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 8px 0; color: var(--text-main);">
-              Empirical Datasets, Clinical Baselines &amp; Transparent Limitations
+              Data Sources, Methodology &amp; Known Limitations
             </h2>
             <p style="font-size: 14px; color: var(--text-muted); margin: 0;">
               Full academic bibliography, analytical lab methods, acknowledged computational boundaries, and course team credits.
@@ -3265,7 +3284,7 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
                 <line x1="12" y1="16" x2="12" y2="12"></line>
                 <line x1="12" y1="8" x2="12.01" y2="8"></line>
               </svg>
-              Key Clinical &amp; Gastronomic Finding
+              What this shows
             </div>
             <div style="font-size: 13.5px; line-height: 1.6; color: #2c2c2e;" x-text="figures[activeFigureIndex].insight"></div>
           </div>
@@ -3414,7 +3433,7 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
             src: '/static/figures/fig1_category_footprint_bars.png',
             chipLabel: 'Fig 1 · Category Budgets',
             badge: 'Category Budgets',
-            insight: 'Snacks & Street Food (32.5% of SFA budget) and Sweets & Desserts (31.6% SFA budget) impose the heaviest vascular loads. Sweets (61.9%) and Beverages (60.0%) dominate the liver de novo lipogenesis pathway, together exhausting 121.9% of the WHO added sugar ceiling. In contrast, traditional Dals & Legumes are metabolically benign by default (4.8% SFA budget).'
+            insight: 'Snacks & Street Food (32.5% of SFA budget) and Sweets & Desserts (31.6% SFA budget) have the highest saturated fat per serving. Sweets (61.9%) and Beverages (60.0%) are the heaviest liver burden from added sugar, together exhausting 121.9% of the WHO added sugar ceiling. Dals & Legumes are the safest category across all axes — only 4.8% of the SFA budget.'
           },
           {
             id: 2,
@@ -3441,7 +3460,7 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
             src: '/static/figures/fig4_liver_risk_matrix.png',
             chipLabel: 'Fig 4 · Risk Matrix',
             badge: 'Dual-Organ Matrix',
-            insight: 'Illustrates the bifurcated nature of Indian dietary pathology: Festive Sweets and Beverages occupy the high-hepatic/high-sugar quadrant driving fatty liver (MASLD) progression, while Fried Snacks and Rich Curries populate the high-cardiovascular quadrant driving atherogenic dyslipidemia and vascular stiffness.'
+            insight: 'Two distinct risk zones emerge: Sweets and Beverages sit in the high-liver-load corner (high added sugar driving fatty liver), while Fried Snacks and Rich Curries cluster in the high-heart-load corner (saturated fat and sodium driving cardiovascular risk).' 
           }
         ],
         nextFigure() {
@@ -3652,12 +3671,12 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
           let score = Math.max(sfaPct, sugarPct) + (0.15 * calPct) + (0.35 * Math.min(refinedCarbG, 50));
           score = Math.min(100, Math.round(score));
 
-          let status = 'LOW BURDEN';
+          let status = 'LOW LOAD';
           let pillClass = 'pill-safe';
           let bgClass = 'card-safe-bg';
           let circleClass = 'circle-safe';
           if (score >= 75) { 
-            status = 'HIGH STEATOSIS RISK'; 
+            status = 'HIGH LOAD'; 
             pillClass = 'pill-danger'; 
             bgClass = 'card-danger-bg'; 
             circleClass = 'circle-danger';
@@ -3667,7 +3686,7 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
             bgClass = 'card-warning-bg'; 
             circleClass = 'circle-warning';
           } else if (score >= 25) { 
-            status = 'MILD HEPATIC LOAD'; 
+            status = 'MILD LOAD'; 
             pillClass = 'pill-warning'; 
             bgClass = 'card-warning-bg'; 
             circleClass = 'circle-warning';
@@ -3708,7 +3727,7 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
             bgClass = 'card-warning-bg'; 
             circleClass = 'circle-warning';
           } else if (score >= 25) { 
-            status = 'MILD VASCULAR LOAD'; 
+            status = 'MILD LOAD'; 
             pillClass = 'pill-warning'; 
             bgClass = 'card-warning-bg'; 
             circleClass = 'circle-warning';

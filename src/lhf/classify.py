@@ -1,5 +1,6 @@
 """Food classes: added sugar, refined carbohydrate, salt, and fat sources (SPEC §7)."""
 import csv
+import math
 import os
 
 from lhf import composition
@@ -31,7 +32,7 @@ def _load_classes():
 
 def classes_for(code: str) -> list[str]:
     """Return the list of food classes for a given food code."""
-    if not code:
+    if code is None or code == "":
         return []
     classes_map = _load_classes()
     return list(classes_map.get(str(code).strip(), []))
@@ -69,47 +70,77 @@ def class_totals(items: list) -> dict:
     table = composition.load_table()
 
     for item in items:
+        if not isinstance(item, dict):
+            continue
         code = item.get("code")
         code_str = str(code).strip() if code is not None else ""
 
         grams = item.get("grams")
-        if grams is None:
+        if grams is None or isinstance(grams, bool):
             continue
-        grams_val = float(grams)
-        if grams_val <= 0 or grams_val != grams_val:
+        try:
+            grams_val = float(grams)
+        except (ValueError, TypeError):
+            continue
+        if grams_val <= 0 or not math.isfinite(grams_val):
             continue
 
         item_classes = classes_for(code_str)
         nutrients = item.get("nutrients") or {}
 
-        # 1. Added sugar: grams × min(freesugar_g per 100 g, 100) / 100
+        # 1. Added sugar:
         if "ADDED_SUGAR" in item_classes:
-            if code_str in table.index:
-                fs_100 = float(table.loc[code_str, "freesugar_g"])
-                added_sugar_g += grams_val * min(fs_100, 100) / 100
-            elif "freesugar_g" in nutrients:
-                added_sugar_g += min(float(nutrients["freesugar_g"]), grams_val)
-
-        # 2. Refined carbohydrate: Σ carb_g of REFINED_GRAIN items
-        if "REFINED_GRAIN" in item_classes:
-            if "carb_g" in nutrients:
-                refined_carb_g += float(nutrients["carb_g"])
+            if nutrients.get("freesugar_g") is not None:
+                try:
+                    fs_val = float(nutrients["freesugar_g"])
+                    if not math.isnan(fs_val):
+                        added_sugar_g += min(fs_val, grams_val)
+                except (ValueError, TypeError):
+                    pass
             elif code_str in table.index:
-                refined_carb_g += float(table.loc[code_str, "carb_g"]) * grams_val / 100
+                try:
+                    fs_100 = float(table.loc[code_str, "freesugar_g"])
+                    if not math.isnan(fs_100):
+                        added_sugar_g += grams_val * min(fs_100, 100) / 100
+                except (ValueError, TypeError):
+                    pass
+
+        # 2. Refined carbohydrate:
+        if "REFINED_GRAIN" in item_classes:
+            if nutrients.get("carb_g") is not None:
+                try:
+                    carb_val = float(nutrients["carb_g"])
+                    if not math.isnan(carb_val):
+                        refined_carb_g += carb_val
+                except (ValueError, TypeError):
+                    pass
+            elif code_str in table.index:
+                try:
+                    carb_100 = float(table.loc[code_str, "carb_g"])
+                    if not math.isnan(carb_100):
+                        refined_carb_g += carb_100 * grams_val / 100
+                except (ValueError, TypeError):
+                    pass
 
         # 3. Salt: Σ grams of SALT items
         if "SALT" in item_classes:
             salt_g += grams_val
 
         # 4. Fat by class: COOKING_OIL, HYDROGENATED_FAT, DAIRY_FAT, and OTHER
-        if "fat_g" in nutrients:
-            fat_val = float(nutrients["fat_g"])
+        if nutrients.get("fat_g") is not None:
+            try:
+                fat_val = float(nutrients["fat_g"])
+            except (ValueError, TypeError):
+                fat_val = 0.0
         elif code_str in table.index:
-            fat_val = float(table.loc[code_str, "fat_g"]) * grams_val / 100
+            try:
+                fat_val = float(table.loc[code_str, "fat_g"]) * grams_val / 100
+            except (ValueError, TypeError):
+                fat_val = 0.0
         else:
             fat_val = 0.0
 
-        if fat_val != fat_val:
+        if math.isnan(fat_val):
             fat_val = 0.0
 
         if "COOKING_OIL" in item_classes:

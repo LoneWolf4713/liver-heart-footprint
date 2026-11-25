@@ -74,27 +74,96 @@ class TestT8Pipeline(unittest.TestCase):
         self.assertAlmostEqual(res["per_serving"]["fat_g"], res["totals"]["fat_g"] / 2.0)
         self.assertIsNotNone(res["footprint"])
 
-    def test_no_servings(self):
+    def test_servings_edge_cases(self):
+        invalid_servings = [0, "0", -2, "-2", "four", None, True, False, float("nan"), float("inf"), float("-inf")]
+        for s in invalid_servings:
+            recipe = {
+                "id": "SERV-INV",
+                "dish": "invalid servings dish",
+                "servings": s,
+                "lines": ["2 tbsp oil"],
+            }
+            res = analyse_recipe(recipe)
+            self.assertIsNone(res["per_serving"], f"servings={s!r} should produce per_serving=None")
+            self.assertIsNone(res["footprint"], f"servings={s!r} should produce footprint=None")
+            self.assertTrue(
+                any(w.startswith("NO_SERVINGS") for w in res["warnings"]),
+                f"servings={s!r} must emit NO_SERVINGS warning",
+            )
+
+        valid_servings = [1, 2, "2", 3.5, "4.0"]
+        for s in valid_servings:
+            recipe = {
+                "id": "SERV-VAL",
+                "dish": "valid servings dish",
+                "servings": s,
+                "lines": ["2 tbsp oil"],
+            }
+            res = analyse_recipe(recipe)
+            self.assertIsNotNone(res["per_serving"], f"servings={s!r} should produce per_serving dict")
+            self.assertIsNotNone(res["footprint"], f"servings={s!r} should produce footprint dict")
+            self.assertFalse(
+                any(w.startswith("NO_SERVINGS") for w in res["warnings"]),
+                f"servings={s!r} should not emit NO_SERVINGS warning",
+            )
+            s_val = float(s)
+            self.assertAlmostEqual(res["per_serving"]["fat_g"], res["totals"]["fat_g"] / s_val)
+
+    def test_lines_null_and_empty(self):
+        for lines_val in [None, []]:
+            recipe = {
+                "id": "NULL-LINES",
+                "dish": "empty lines dish",
+                "servings": 2,
+                "lines": lines_val,
+            }
+            res = analyse_recipe(recipe)
+            self.assertEqual(len(res["lines"]), 0)
+            self.assertEqual(res["coverage"]["lines_total"], 0)
+            self.assertEqual(res["coverage"]["lines_included"], 0)
+            self.assertEqual(res["coverage"]["included_mass_g"], 0.0)
+
+    def test_water_exclusion(self):
         recipe = {
-            "id": "TEST-02",
-            "dish": "no servings dish",
-            "servings": None,
-            "lines": ["2 tbsp oil"],
+            "id": "WATER-TEST",
+            "dish": "water test dish",
+            "servings": 2,
+            "lines": ["1 cup water", "1 cup pani"],
         }
         res = analyse_recipe(recipe)
-        self.assertIsNone(res["per_serving"])
-        self.assertIsNone(res["footprint"])
-        self.assertTrue(any(w.startswith("NO_SERVINGS") for w in res["warnings"]))
+        lines = res["lines"]
+        self.assertEqual(len(lines), 2)
+        for l in lines:
+            self.assertFalse(l["included"], f"Water line {l['raw']} must not be included")
+            self.assertEqual(l["exclusion_reason"], "WATER", f"Line {l['raw']} exclusion reason must be WATER")
+            self.assertIsNone(l["nutrients"], f"Water line {l['raw']} must have null nutrients")
+            self.assertIsNone(l["grams"], f"Water line {l['raw']} must have null grams")
 
-    def test_salt_unquantified_warning(self):
-        recipe = {
-            "id": "TEST-03",
+        self.assertEqual(res["coverage"]["excluded_by_reason"]["WATER"], 2)
+        self.assertEqual(res["coverage"]["included_mass_g"], 0.0)
+
+    def test_salt_warning(self):
+        # salt to taste should emit SALT_UNQUANTIFIED
+        recipe_salt = {
+            "id": "SALT-TEST",
             "dish": "salty dish",
             "servings": 1,
             "lines": ["salt to taste"],
         }
-        res = analyse_recipe(recipe)
-        self.assertTrue(any(w.startswith("SALT_UNQUANTIFIED") for w in res["warnings"]))
+        res_salt = analyse_recipe(recipe_salt)
+        self.assertTrue(any(w.startswith("SALT_UNQUANTIFIED") for w in res_salt["warnings"]))
+
+        # salted butter to grease should NOT emit SALT_UNQUANTIFIED
+        recipe_butter = {
+            "id": "BUTTER-TEST",
+            "dish": "buttery dish",
+            "servings": 1,
+            "lines": ["salted butter to grease"],
+        }
+        res_butter = analyse_recipe(recipe_butter)
+        self.assertFalse(any(w.startswith("SALT_UNQUANTIFIED") for w in res_butter["warnings"]))
+        # But should be captured in unquantified_fat_lines
+        self.assertIn("salted butter to grease", res_butter["coverage"]["unquantified_fat_lines"])
 
     def test_cli(self):
         recipe = {
