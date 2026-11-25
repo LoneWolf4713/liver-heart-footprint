@@ -1,0 +1,814 @@
+{
+  "rows_total": 69,
+  "samples_total": 233,
+  "sources_count": 10,
+  "missing_provenance_count": 0,
+  "categories": [
+    {
+      "category": "crisp namkeen",
+      "rows": 21,
+      "n_samples": 51,
+      "sources_count": 5,
+      "min": 6.1,
+      "p25": 13.0,
+      "median": 21.8,
+      "p75": 35.0,
+      "max": 57.18,
+      "mean": 24.03,
+      "sfa_pct_rows": 15,
+      "sfa_pct_median": 41.2
+    },
+    {
+      "category": "battered fritter",
+      "rows": 20,
+      "n_samples": 99,
+      "sources_count": 5,
+      "min": 6.28,
+      "p25": 9.77,
+      "median": 18.85,
+      "p75": 22.55,
+      "max": 47.6,
+      "mean": 18.53,
+      "sfa_pct_rows": 10,
+      "sfa_pct_median": 37.45
+    },
+    {
+      "category": "stuffed pastry",
+      "rows": 10,
+      "n_samples": 29,
+      "sources_count": 4,
+      "min": 7.71,
+      "p25": 10.08,
+      "median": 23.25,
+      "p75": 31.03,
+      "max": 46.61,
+      "mean": 22.46,
+      "sfa_pct_rows": 5,
+      "sfa_pct_median": 49.16
+    },
+    {
+      "category": "flat dough",
+      "rows": 10,
+      "n_samples": 42,
+      "sources_count": 6,
+      "min": 5.2,
+      "p25": 11.4,
+      "median": 17.0,
+      "p75": 20.95,
+      "max": 22.3,
+      "mean": 15.96,
+      "sfa_pct_rows": 5,
+      "sfa_pct_median": 39.5
+    },
+    {
+      "category": "syrup-soaked sweet",
+      "rows": 7,
+      "n_samples": 11,
+      "sources_count": 3,
+      "min": 4.8,
+      "p25": 14.7,
+      "median": 20.2,
+      "p75": 23.7,
+      "max": 39.0,
+      "mean": 20.11,
+      "sfa_pct_rows": 7,
+      "sfa_pct_median": 55.68
+    },
+    {
+      "category": "other",
+      "rows": 1,
+      "n_samples": 1,
+      "sources_count": 1,
+      "min": 27.41,
+      "p25": 27.41,
+      "median": 27.41,
+      "p75": 27.41,
+      "max": 27.41,
+      "mean": 27.41,
+      "sfa_pct_rows": 1,
+      "sfa_pct_median": 60.39
+    }
+  ],
+  "loso": {
+    "evaluable_rows": 68,
+    "untestable_singleton_rows": 1,
+    "in_range_count": 49,
+    "in_range_pct": 72.1,
+    "within_2g_margin_count": 60,
+    "within_2g_margin_pct": 88.2,
+    "by_source": [
+      {
+        "source": "Chen 2009",
+        "held_rows": 2,
+        "evaluable_rows": 2,
+        "in_range": 2,
+        "in_range_pct": 100.0,
+        "within_2g_margin": 2,
+        "details": [
+          {
+            "item": "Puri (White flour)",
+            "category": "flat dough",
+            "setting": "lab-controlled",
+            "val": 22.1,
+            "ref_min": 5.2,
+            "ref_max": 22.3,
+            "in_range": true
+          },
+          {
+            "item": "Puri (Wholemeal flour)",
+            "category": "flat dough",
+            "setting": "lab-controlled",
+            "val": 15.6,
+            "ref_min": 5.2,
+            "ref_max": 22.3,
+            "in_range": true
+          }
+        ]
+      },
+      {
+        "source": "Gaikwad 2022",
+        "held_rows": 2,
+        "evaluable_rows": 2,
+        "in_range": 2,
+        "in_range_pct": 100.0,
+        "within_2g_margin": 2,
+        "details": [
+          {
+            "item": "Fried Papad (Control sun-dried)",
+            "category": "crisp namkeen",
+            "setting": "lab-controlled",
+            "val": 11.4,
+            "ref_min": 6.1,
+            "ref_max": 57.18,
+            "in_range": true
+          },
+          {
+            "item": "Fried Papad (MAHD dried)",
+            "category": "crisp namkeen",
+            "setting": "lab-controlled",
+            "val": 7.9,
+            "ref_min": 6.1,
+            "ref_max": 57.18,
+            "in_range": true
+          }
+        ]
+      },
+      {
+        "source": "Gupta 2016",
+        "held_rows": 21,
+        "evaluable_rows": 20,
+        "in_range": 11,
+        "in_range_pct": 55.0,
+        "within_2g_margin": 14,
+        "details": [
+          {
+            "item": "Samosa",
+            "category": "stuffed pastry",
+            "setting": "street",
+            "val": 29.62,
+            "ref_min": 7.71,
+            "ref_max": 31.5,
+            "in_range": true
+          },
+          {
+            "item": "Samosa",
+            "category": "stuffed pastry",
+            "setting": "street",
+            "val": 29.19,
+            "ref_min": 7.71,
+            "ref_max": 31.5,
+            "in_range": true
+          },
+          {
+            "item": "Kachori",
+            "category": "stuffed pastry",
+            "setting": "street",
+            "val": 31.99,
+            "ref_min": 7.71,
+            "ref_max": 31.5,
+            "in_range": false
+          },
+          {
+            "item": "Kachori",
+            "category": "stuffed pastry",
+            "setting": "street",
+            "val": 46.61,
+            "ref_min": 7.71,
+            "ref_max": 31.5,
+            "in_range": false
+          },
+          {
+            "item": "Bread Pakora",
+            "category": "battered fritter",
+            "setting": "street",
+            "val": 47.6,
+            "ref_min": 6.28,
+            "ref_max": 23.9,
+            "in_range": false
+          },
+          {
+            "item": "Bread Pakora",
+            "category": "battered fritter",
+            "setting": "street",
+            "val": 26.4,
+            "ref_min": 6.28,
+            "ref_max": 23.9,
+            "in_range": false
+          },
+          {
+            "item": "Pakoras",
+            "category": "battered fritter",
+            "setting": "street",
+            "val": 30.59,
+            "ref_min": 6.28,
+            "ref_max": 23.9,
+            "in_range": false
+          },
+          {
+            "item": "Bhatura",
+            "category": "flat dough",
+            "setting": "street",
+            "val": 10.0,
+            "ref_min": 5.2,
+            "ref_max": 22.3,
+            "in_range": true
+          },
+          {
+            "item": "Bhatura",
+            "category": "flat dough",
+            "setting": "street",
+            "val": 19.6,
+            "ref_min": 5.2,
+            "ref_max": 22.3,
+            "in_range": true
+          },
+          {
+            "item": "Mathri",
+            "category": "crisp namkeen",
+            "setting": "street",
+            "val": 57.18,
+            "ref_min": 6.1,
+            "ref_max": 38.8,
+            "in_range": false
+          },
+          {
+            "item": "Mathri",
+            "category": "crisp namkeen",
+            "setting": "street",
+            "val": 38.5,
+            "ref_min": 6.1,
+            "ref_max": 38.8,
+            "in_range": true
+          },
+          {
+            "item": "Namakpara",
+            "category": "crisp namkeen",
+            "setting": "street",
+            "val": 35.0,
+            "ref_min": 6.1,
+            "ref_max": 38.8,
+            "in_range": true
+          },
+          {
+            "item": "Chakri",
+            "category": "crisp namkeen",
+            "setting": "street",
+            "val": 36.79,
+            "ref_min": 6.1,
+            "ref_max": 38.8,
+            "in_range": true
+          },
+          {
+            "item": "Bhujia",
+            "category": "crisp namkeen",
+            "setting": "street",
+            "val": 39.61,
+            "ref_min": 6.1,
+            "ref_max": 38.8,
+            "in_range": false
+          },
+          {
+            "item": "Moong Dal Fried",
+            "category": "crisp namkeen",
+            "setting": "street",
+            "val": 17.81,
+            "ref_min": 6.1,
+            "ref_max": 38.8,
+            "in_range": true
+          },
+          {
+            "item": "Moong Dal Fried",
+            "category": "crisp namkeen",
+            "setting": "street",
+            "val": 27.39,
+            "ref_min": 6.1,
+            "ref_max": 38.8,
+            "in_range": true
+          },
+          {
+            "item": "Boondi Ladoo",
+            "category": "syrup-soaked sweet",
+            "setting": "street",
+            "val": 14.59,
+            "ref_min": 4.8,
+            "ref_max": 23.6,
+            "in_range": true
+          },
+          {
+            "item": "Besan Ladoo",
+            "category": "syrup-soaked sweet",
+            "setting": "street",
+            "val": 23.79,
+            "ref_min": 4.8,
+            "ref_max": 23.6,
+            "in_range": false
+          },
+          {
+            "item": "Soan Papdi",
+            "category": "syrup-soaked sweet",
+            "setting": "street",
+            "val": 39.0,
+            "ref_min": 4.8,
+            "ref_max": 23.6,
+            "in_range": false
+          },
+          {
+            "item": "Soan Papdi",
+            "category": "syrup-soaked sweet",
+            "setting": "street",
+            "val": 20.2,
+            "ref_min": 4.8,
+            "ref_max": 23.6,
+            "in_range": true
+          }
+        ]
+      },
+      {
+        "source": "Jain 2024",
+        "held_rows": 3,
+        "evaluable_rows": 3,
+        "in_range": 3,
+        "in_range_pct": 100.0,
+        "within_2g_margin": 3,
+        "details": [
+          {
+            "item": "Bread Pakora",
+            "category": "battered fritter",
+            "setting": "street",
+            "val": 18.1,
+            "ref_min": 6.28,
+            "ref_max": 47.6,
+            "in_range": true
+          },
+          {
+            "item": "Mathri",
+            "category": "crisp namkeen",
+            "setting": "street",
+            "val": 21.8,
+            "ref_min": 6.1,
+            "ref_max": 57.18,
+            "in_range": true
+          },
+          {
+            "item": "Poori",
+            "category": "flat dough",
+            "setting": "lab-controlled",
+            "val": 16.88,
+            "ref_min": 5.2,
+            "ref_max": 22.3,
+            "in_range": true
+          }
+        ]
+      },
+      {
+        "source": "Joshee 2019",
+        "held_rows": 15,
+        "evaluable_rows": 15,
+        "in_range": 6,
+        "in_range_pct": 40.0,
+        "within_2g_margin": 13,
+        "details": [
+          {
+            "item": "Samosa",
+            "category": "stuffed pastry",
+            "setting": "restaurant-takeaway",
+            "val": 7.71,
+            "ref_min": 8.97,
+            "ref_max": 46.61,
+            "in_range": false
+          },
+          {
+            "item": "Bhaji",
+            "category": "battered fritter",
+            "setting": "street",
+            "val": 7.15,
+            "ref_min": 8.1,
+            "ref_max": 47.6,
+            "in_range": false
+          },
+          {
+            "item": "Batata Vada",
+            "category": "battered fritter",
+            "setting": "street",
+            "val": 6.28,
+            "ref_min": 8.1,
+            "ref_max": 47.6,
+            "in_range": false
+          },
+          {
+            "item": "Medu Vada",
+            "category": "battered fritter",
+            "setting": "restaurant-takeaway",
+            "val": 6.38,
+            "ref_min": 8.1,
+            "ref_max": 47.6,
+            "in_range": false
+          },
+          {
+            "item": "Pav Pattice",
+            "category": "battered fritter",
+            "setting": "street",
+            "val": 8.08,
+            "ref_min": 8.1,
+            "ref_max": 47.6,
+            "in_range": false
+          },
+          {
+            "item": "Puri",
+            "category": "flat dough",
+            "setting": "restaurant-takeaway",
+            "val": 9.45,
+            "ref_min": 10.0,
+            "ref_max": 22.3,
+            "in_range": false
+          },
+          {
+            "item": "Jalebi",
+            "category": "syrup-soaked sweet",
+            "setting": "street",
+            "val": 4.8,
+            "ref_min": 14.59,
+            "ref_max": 39.0,
+            "in_range": false
+          },
+          {
+            "item": "Paratha (Fried)",
+            "category": "flat dough",
+            "setting": "restaurant-takeaway",
+            "val": 5.2,
+            "ref_min": 10.0,
+            "ref_max": 22.3,
+            "in_range": false
+          },
+          {
+            "item": "Gathiya",
+            "category": "crisp namkeen",
+            "setting": "retail-packaged",
+            "val": 17.77,
+            "ref_min": 7.9,
+            "ref_max": 57.18,
+            "in_range": true
+          },
+          {
+            "item": "Chakali",
+            "category": "crisp namkeen",
+            "setting": "retail-packaged",
+            "val": 13.0,
+            "ref_min": 7.9,
+            "ref_max": 57.18,
+            "in_range": true
+          },
+          {
+            "item": "Sev",
+            "category": "crisp namkeen",
+            "setting": "retail-packaged",
+            "val": 13.82,
+            "ref_min": 7.9,
+            "ref_max": 57.18,
+            "in_range": true
+          },
+          {
+            "item": "Farsan",
+            "category": "crisp namkeen",
+            "setting": "retail-packaged",
+            "val": 13.3,
+            "ref_min": 7.9,
+            "ref_max": 57.18,
+            "in_range": true
+          },
+          {
+            "item": "Fafda",
+            "category": "crisp namkeen",
+            "setting": "street",
+            "val": 6.1,
+            "ref_min": 7.9,
+            "ref_max": 57.18,
+            "in_range": false
+          },
+          {
+            "item": "Chiwda",
+            "category": "crisp namkeen",
+            "setting": "retail-packaged",
+            "val": 8.2,
+            "ref_min": 7.9,
+            "ref_max": 57.18,
+            "in_range": true
+          },
+          {
+            "item": "Murukku",
+            "category": "crisp namkeen",
+            "setting": "retail-packaged",
+            "val": 10.5,
+            "ref_min": 7.9,
+            "ref_max": 57.18,
+            "in_range": true
+          }
+        ]
+      },
+      {
+        "source": "Neethu 2025",
+        "held_rows": 2,
+        "evaluable_rows": 2,
+        "in_range": 2,
+        "in_range_pct": 100.0,
+        "within_2g_margin": 2,
+        "details": [
+          {
+            "item": "Pantoa / Gulab Jamun (Ghee)",
+            "category": "syrup-soaked sweet",
+            "setting": "lab-controlled",
+            "val": 14.8,
+            "ref_min": 4.8,
+            "ref_max": 39.0,
+            "in_range": true
+          },
+          {
+            "item": "Pantoa / Gulab Jamun (Sunflower oil)",
+            "category": "syrup-soaked sweet",
+            "setting": "lab-controlled",
+            "val": 23.6,
+            "ref_min": 4.8,
+            "ref_max": 39.0,
+            "in_range": true
+          }
+        ]
+      },
+      {
+        "source": "Sakhale 2011",
+        "held_rows": 2,
+        "evaluable_rows": 2,
+        "in_range": 2,
+        "in_range_pct": 100.0,
+        "within_2g_margin": 2,
+        "details": [
+          {
+            "item": "Samosa (Control)",
+            "category": "stuffed pastry",
+            "setting": "lab-controlled",
+            "val": 12.4,
+            "ref_min": 7.71,
+            "ref_max": 46.61,
+            "in_range": true
+          },
+          {
+            "item": "Samosa (Modified casing)",
+            "category": "stuffed pastry",
+            "setting": "lab-controlled",
+            "val": 8.97,
+            "ref_min": 7.71,
+            "ref_max": 46.61,
+            "in_range": true
+          }
+        ]
+      },
+      {
+        "source": "UK CoFID 2021",
+        "held_rows": 18,
+        "evaluable_rows": 18,
+        "in_range": 17,
+        "in_range_pct": 94.4,
+        "within_2g_margin": 18,
+        "details": [
+          {
+            "item": "Onion Pakora / Bhaji",
+            "category": "battered fritter",
+            "setting": "home",
+            "val": 14.7,
+            "ref_min": 6.28,
+            "ref_max": 47.6,
+            "in_range": true
+          },
+          {
+            "item": "Aubergine Pakora",
+            "category": "battered fritter",
+            "setting": "home",
+            "val": 22.5,
+            "ref_min": 6.28,
+            "ref_max": 47.6,
+            "in_range": true
+          },
+          {
+            "item": "Cauliflower Pakora",
+            "category": "battered fritter",
+            "setting": "home",
+            "val": 23.9,
+            "ref_min": 6.28,
+            "ref_max": 47.6,
+            "in_range": true
+          },
+          {
+            "item": "Potato Cauliflower Pakora",
+            "category": "battered fritter",
+            "setting": "home",
+            "val": 22.3,
+            "ref_min": 6.28,
+            "ref_max": 47.6,
+            "in_range": true
+          },
+          {
+            "item": "Potato Carrot Pea Pakora",
+            "category": "battered fritter",
+            "setting": "home",
+            "val": 22.7,
+            "ref_min": 6.28,
+            "ref_max": 47.6,
+            "in_range": true
+          },
+          {
+            "item": "Potato Pakora",
+            "category": "battered fritter",
+            "setting": "home",
+            "val": 19.6,
+            "ref_min": 6.28,
+            "ref_max": 47.6,
+            "in_range": true
+          },
+          {
+            "item": "Spinach Pakora",
+            "category": "battered fritter",
+            "setting": "home",
+            "val": 22.2,
+            "ref_min": 6.28,
+            "ref_max": 47.6,
+            "in_range": true
+          },
+          {
+            "item": "Vegetable Pakora Takeaway",
+            "category": "battered fritter",
+            "setting": "restaurant-takeaway",
+            "val": 22.0,
+            "ref_min": 6.28,
+            "ref_max": 47.6,
+            "in_range": true
+          },
+          {
+            "item": "Vegetable Pakora Retail",
+            "category": "battered fritter",
+            "setting": "retail-packaged",
+            "val": 14.7,
+            "ref_min": 6.28,
+            "ref_max": 47.6,
+            "in_range": true
+          },
+          {
+            "item": "Pakoras Homemade",
+            "category": "battered fritter",
+            "setting": "home",
+            "val": 8.1,
+            "ref_min": 6.28,
+            "ref_max": 47.6,
+            "in_range": true
+          },
+          {
+            "item": "Samosa Meat Takeaway",
+            "category": "stuffed pastry",
+            "setting": "restaurant-takeaway",
+            "val": 17.3,
+            "ref_min": 7.71,
+            "ref_max": 46.61,
+            "in_range": true
+          },
+          {
+            "item": "Samosa Lamb Deep Fried",
+            "category": "stuffed pastry",
+            "setting": "home",
+            "val": 31.5,
+            "ref_min": 7.71,
+            "ref_max": 46.61,
+            "in_range": true
+          },
+          {
+            "item": "Samosa Vegetable Retail",
+            "category": "stuffed pastry",
+            "setting": "retail-packaged",
+            "val": 9.3,
+            "ref_min": 7.71,
+            "ref_max": 46.61,
+            "in_range": true
+          },
+          {
+            "item": "Puri",
+            "category": "flat dough",
+            "setting": "home",
+            "val": 22.3,
+            "ref_min": 5.2,
+            "ref_max": 22.1,
+            "in_range": false
+          },
+          {
+            "item": "Papadums Takeaway",
+            "category": "crisp namkeen",
+            "setting": "restaurant-takeaway",
+            "val": 38.8,
+            "ref_min": 6.1,
+            "ref_max": 57.18,
+            "in_range": true
+          },
+          {
+            "item": "Sev / Ganthia",
+            "category": "crisp namkeen",
+            "setting": "home",
+            "val": 25.1,
+            "ref_min": 6.1,
+            "ref_max": 57.18,
+            "in_range": true
+          },
+          {
+            "item": "Chevda",
+            "category": "crisp namkeen",
+            "setting": "home",
+            "val": 31.8,
+            "ref_min": 6.1,
+            "ref_max": 57.18,
+            "in_range": true
+          },
+          {
+            "item": "Bombay Mix",
+            "category": "crisp namkeen",
+            "setting": "retail-packaged",
+            "val": 32.9,
+            "ref_min": 6.1,
+            "ref_max": 57.18,
+            "in_range": true
+          }
+        ]
+      },
+      {
+        "source": "Yadav 2012",
+        "held_rows": 2,
+        "evaluable_rows": 2,
+        "in_range": 2,
+        "in_range_pct": 100.0,
+        "within_2g_margin": 2,
+        "details": [
+          {
+            "item": "Poori (Control)",
+            "category": "flat dough",
+            "setting": "lab-controlled",
+            "val": 21.4,
+            "ref_min": 5.2,
+            "ref_max": 22.3,
+            "in_range": true
+          },
+          {
+            "item": "Poori (Fibre added)",
+            "category": "flat dough",
+            "setting": "lab-controlled",
+            "val": 17.12,
+            "ref_min": 5.2,
+            "ref_max": 22.3,
+            "in_range": true
+          }
+        ]
+      },
+      {
+        "source": "safefood 2015",
+        "held_rows": 2,
+        "evaluable_rows": 2,
+        "in_range": 2,
+        "in_range_pct": 100.0,
+        "within_2g_margin": 2,
+        "details": [
+          {
+            "item": "Onion Pakora / Bhaji",
+            "category": "battered fritter",
+            "setting": "restaurant-takeaway",
+            "val": 16.98,
+            "ref_min": 6.28,
+            "ref_max": 47.6,
+            "in_range": true
+          },
+          {
+            "item": "Chicken Pakora",
+            "category": "battered fritter",
+            "setting": "restaurant-takeaway",
+            "val": 10.32,
+            "ref_min": 6.28,
+            "ref_max": 47.6,
+            "in_range": true
+          }
+        ]
+      }
+    ]
+  }
+}

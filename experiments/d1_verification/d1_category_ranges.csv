@@ -1,0 +1,7 @@
+category,rows,n_samples,sources_count,min,p25,median,p75,max,mean,sfa_pct_rows,sfa_pct_median
+crisp namkeen,21,51,5,6.1,13.0,21.8,35.0,57.18,24.03,15,41.2
+battered fritter,20,99,5,6.28,9.77,18.85,22.55,47.6,18.53,10,37.45
+stuffed pastry,10,29,4,7.71,10.08,23.25,31.03,46.61,22.46,5,49.16
+flat dough,10,42,6,5.2,11.4,17.0,20.95,22.3,15.96,5,39.5
+syrup-soaked sweet,7,11,3,4.8,14.7,20.2,23.7,39.0,20.11,7,55.68
+other,1,1,1,27.41,27.41,27.41,27.41,27.41,27.41,1,60.39

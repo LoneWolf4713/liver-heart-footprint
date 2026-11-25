@@ -371,7 +371,10 @@ def process_indb_corpus():
             "source": str(source),
             "category": category,
             "servings": servings,
+            "lines_total": len(lines),
+            "lines_included": len(inc_items),
             "total_mass_g": corrected_gen["coverage"]["included_mass_g"],
+            "raw_pre_frying_mass_g": compute_res["total_g"],
             "totals": final_totals,
             "per_serving": final_per_serving,
             "footprint_general": final_fp_gen,
@@ -959,14 +962,36 @@ def run_atlas():
     # 5. Generate Figures
     generate_atlas_figures(summary_df, drivers_df, comp_df)
 
-    # 6. Overall Metrics Snapshot
+    # 6. Overall Metrics Snapshot (including recipe, line, and ingredient-mass coverage)
     frying_count = sum(1 for r in indb_recipes if r.get("frying_correction") and r["frying_correction"].get("applied"))
+    indb_lines_total = sum(r.get("lines_total", 0) for r in indb_recipes)
+    indb_lines_included = sum(r.get("lines_included", 0) for r in indb_recipes)
+    indb_included_mass_g = round(sum(r.get("total_mass_g") or 0.0 for r in indb_recipes), 1)
+    indb_raw_mass_g = round(sum(r.get("raw_pre_frying_mass_g") or 0.0 for r in indb_recipes), 1)
+    web_lines_total = sum(
+        r["coverage"].get("lines_included", 0) + sum(r["coverage"].get("excluded_by_reason", {}).values())
+        for r in web_recipes
+    )
+    web_lines_included = sum(r["coverage"].get("lines_included", 0) for r in web_recipes)
+    web_included_mass_g = round(sum(r["coverage"].get("included_mass_g", 0.0) for r in web_recipes), 1)
     comp_clean = comp_df[~comp_df["web_frying_unquantified"]]
     overall_metrics = {
         "indb_recipes_total": len(indb_recipes),
         "indb_recipes_with_servings": sum(1 for r in indb_recipes if r.get("servings") is not None),
+        "indb_recipes_with_servings_pct": round(
+            sum(1 for r in indb_recipes if r.get("servings") is not None) / len(indb_recipes) * 100, 1
+        ),
         "indb_recipes_corrected_for_frying": frying_count,
+        "indb_lines_total": indb_lines_total,
+        "indb_lines_included": indb_lines_included,
+        "indb_line_inclusion_pct": round(indb_lines_included / indb_lines_total * 100, 1) if indb_lines_total else 0.0,
+        "indb_included_mass_g": indb_included_mass_g,
+        "indb_raw_pre_frying_mass_g": indb_raw_mass_g,
         "web_recipes_total": len(web_recipes),
+        "web_lines_total": web_lines_total,
+        "web_lines_included": web_lines_included,
+        "web_line_inclusion_pct": round(web_lines_included / web_lines_total * 100, 1) if web_lines_total else 0.0,
+        "web_included_mass_g": web_included_mass_g,
         "categories_count": len(CATEGORIES),
         "highest_sfa_category": summary_df.loc[summary_df["sfa_pct_gen_limit_median"].idxmax()]["category"],
         "highest_sfa_median_pct": float(summary_df["sfa_pct_gen_limit_median"].max()),

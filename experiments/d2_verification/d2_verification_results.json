@@ -1,0 +1,591 @@
+{
+  "annotated_lines": [
+    {
+      "split": "Public Gold (acceptance)",
+      "lines_total": 120,
+      "quantified_lines": 109,
+      "parse": {
+        "status_pct": 100.0,
+        "status_cnt": "120/120",
+        "name_pct": 100.0,
+        "name_cnt": "120/120",
+        "qty_pct": 100.0,
+        "qty_cnt": "109/109",
+        "range_pct": 100.0,
+        "range_cnt": "109/109",
+        "unit_pct": 99.1,
+        "unit_cnt": "108/109",
+        "size_pct": 99.1,
+        "size_cnt": "108/109",
+        "stated_pct": 100.0,
+        "stated_cnt": "109/109"
+      },
+      "match": {
+        "pct": 100.0,
+        "cnt": "112/112"
+      },
+      "grams_gold_code": {
+        "pct": 100.0,
+        "cnt": "106/106"
+      },
+      "grams_e2e_from_raw": {
+        "pct": 100.0,
+        "cnt": "106/106"
+      }
+    },
+    {
+      "split": "Hidden Holdout (lhf_holdout)",
+      "lines_total": 40,
+      "quantified_lines": 36,
+      "parse": {
+        "status_pct": 100.0,
+        "status_cnt": "40/40",
+        "name_pct": 100.0,
+        "name_cnt": "40/40",
+        "qty_pct": 100.0,
+        "qty_cnt": "36/36",
+        "range_pct": 100.0,
+        "range_cnt": "36/36",
+        "unit_pct": 100.0,
+        "unit_cnt": "36/36",
+        "size_pct": 100.0,
+        "size_cnt": "36/36",
+        "stated_pct": 100.0,
+        "stated_cnt": "36/36"
+      },
+      "match": {
+        "pct": 100.0,
+        "cnt": "37/37"
+      },
+      "grams_gold_code": {
+        "pct": 100.0,
+        "cnt": "36/36"
+      },
+      "grams_e2e_from_raw": {
+        "pct": 100.0,
+        "cnt": "36/36"
+      }
+    },
+    {
+      "split": "Combined Annotated Corpus",
+      "lines_total": 160,
+      "quantified_lines": 145,
+      "parse": {
+        "status_pct": 100.0,
+        "status_cnt": "160/160",
+        "name_pct": 100.0,
+        "name_cnt": "160/160",
+        "qty_pct": 100.0,
+        "qty_cnt": "145/145",
+        "range_pct": 100.0,
+        "range_cnt": "145/145",
+        "unit_pct": 99.3,
+        "unit_cnt": "144/145",
+        "size_pct": 99.3,
+        "size_cnt": "144/145",
+        "stated_pct": 100.0,
+        "stated_cnt": "145/145"
+      },
+      "match": {
+        "pct": 100.0,
+        "cnt": "149/149"
+      },
+      "grams_gold_code": {
+        "pct": 100.0,
+        "cnt": "142/142"
+      },
+      "grams_e2e_from_raw": {
+        "pct": 100.0,
+        "cnt": "142/142"
+      }
+    }
+  ],
+  "ifct_check": {
+    "inputs": {
+      "recipe_lines_total": 10271,
+      "lines_with_food_code": 10148,
+      "lines_without_grams": 0,
+      "recipes": 1014,
+      "recipes_with_missing_codes": 19,
+      "codes_in_more_than_one_fct": [],
+      "transcription_commit": "b65621ddcf07115e7adba50809d4977402a9fd29"
+    },
+    "agreement_within_2pct_or_abs_tol": {
+      "control_UK_US_only": {
+        "energy_kj": {
+          "agree": 13,
+          "of": 13
+        },
+        "fat_g": {
+          "agree": 13,
+          "of": 13
+        },
+        "protein_g": {
+          "agree": 13,
+          "of": 13
+        },
+        "carb_g": {
+          "agree": 13,
+          "of": 13
+        },
+        "fibre_g": {
+          "agree": 13,
+          "of": 13
+        },
+        "sfa_mg": {
+          "agree": 13,
+          "of": 13
+        },
+        "sodium_mg": {
+          "agree": 13,
+          "of": 13
+        },
+        "freesugar_g": {
+          "agree": 13,
+          "of": 13
+        }
+      },
+      "test_uses_IFCT": {
+        "energy_kj": {
+          "agree": 982,
+          "of": 982
+        },
+        "fat_g": {
+          "agree": 982,
+          "of": 982
+        },
+        "protein_g": {
+          "agree": 982,
+          "of": 982
+        },
+        "carb_g": {
+          "agree": 957,
+          "of": 982
+        },
+        "fibre_g": {
+          "agree": 982,
+          "of": 982
+        },
+        "sfa_mg": {
+          "agree": 982,
+          "of": 982
+        },
+        "sodium_mg": {
+          "agree": 982,
+          "of": 982
+        },
+        "freesugar_g": {
+          "agree": 982,
+          "of": 982
+        }
+      }
+    },
+    "tolerance_abs": {
+      "energy_kj": 1,
+      "fat_g": 0.05,
+      "protein_g": 0.05,
+      "carb_g": 0.05,
+      "fibre_g": 0.05,
+      "sfa_mg": 50,
+      "sodium_mg": 2,
+      "freesugar_g": 0.05
+    }
+  },
+  "phase1_validation": {
+    "pairs": [
+      {
+        "dish": "saag",
+        "recipe_id": "V2-R01",
+        "lab_code": "15-629",
+        "setting": "home",
+        "recipe_M2": 71.39201694512587,
+        "lab_M2": 71.35135135135135,
+        "ratio": 1.0005699344582035,
+        "lines_included": 16,
+        "lines_total": 17
+      },
+      {
+        "dish": "saag",
+        "recipe_id": "V2-R02",
+        "lab_code": "15-629",
+        "setting": "home",
+        "recipe_M2": 60.65279075583645,
+        "lab_M2": 71.35135135135135,
+        "ratio": 0.850058052259829,
+        "lines_included": 12,
+        "lines_total": 14
+      },
+      {
+        "dish": "methi aloo",
+        "recipe_id": "V2-R03",
+        "lab_code": "15-628",
+        "setting": "home",
+        "recipe_M2": 56.00310362785407,
+        "lab_M2": 65.91549295774648,
+        "ratio": 0.8496197345251365,
+        "lines_included": 14,
+        "lines_total": 16
+      },
+      {
+        "dish": "methi aloo",
+        "recipe_id": "V2-R04",
+        "lab_code": "15-628",
+        "setting": "home",
+        "recipe_M2": 57.634964840115586,
+        "lab_M2": 65.91549295774648,
+        "ratio": 0.8743766033436339,
+        "lines_included": 10,
+        "lines_total": 10
+      },
+      {
+        "dish": "bhindi sabzi",
+        "recipe_id": "V2-R05",
+        "lab_code": "15-627",
+        "setting": "home",
+        "recipe_M2": 11.068043552318413,
+        "lab_M2": 58.309859154929576,
+        "ratio": 0.1898142734817892,
+        "lines_included": 6,
+        "lines_total": 7
+      },
+      {
+        "dish": "bhindi sabzi",
+        "recipe_id": "V2-R06",
+        "lab_code": "15-627",
+        "setting": "home",
+        "recipe_M2": 68.6705704673249,
+        "lab_M2": 58.309859154929576,
+        "ratio": 1.1776836964203061,
+        "lines_included": 14,
+        "lines_total": 15
+      },
+      {
+        "dish": "bhindi sabzi",
+        "recipe_id": "V2-R07",
+        "lab_code": "15-627",
+        "setting": "home",
+        "recipe_M2": 61.66672269092538,
+        "lab_M2": 58.309859154929576,
+        "ratio": 1.057569398805725,
+        "lines_included": 12,
+        "lines_total": 13
+      },
+      {
+        "dish": "chicken biryani",
+        "recipe_id": "V2-R08",
+        "lab_code": "19-454",
+        "setting": "takeaway",
+        "recipe_M2": 34.48007892920184,
+        "lab_M2": 40.858895705521476,
+        "ratio": 0.8438818116306155,
+        "lines_included": 25,
+        "lines_total": 27
+      },
+      {
+        "dish": "chicken tikka masala",
+        "recipe_id": "V2-R09",
+        "lab_code": "19-296",
+        "setting": "retail",
+        "recipe_M2": 73.42719165798466,
+        "lab_M2": 56.53846153846154,
+        "ratio": 1.2987122334065315,
+        "lines_included": 27,
+        "lines_total": 28
+      },
+      {
+        "dish": "chicken tikka masala",
+        "recipe_id": "V2-R09",
+        "lab_code": "p.14 Table 5",
+        "setting": "takeaway",
+        "recipe_M2": 73.42719165798466,
+        "lab_M2": 65.42713567839196,
+        "ratio": 1.1222742811013016,
+        "lines_included": 27,
+        "lines_total": 28
+      },
+      {
+        "dish": "chicken korma",
+        "recipe_id": "V2-R10",
+        "lab_code": "p.14 Table 5",
+        "setting": "takeaway",
+        "recipe_M2": 69.83290533823838,
+        "lab_M2": 65.90286425902863,
+        "ratio": 1.059633843284305,
+        "lines_included": 23,
+        "lines_total": 24
+      },
+      {
+        "dish": "chicken jalfrezi",
+        "recipe_id": "V2-R11",
+        "lab_code": "p.14 Table 5",
+        "setting": "takeaway",
+        "recipe_M2": 62.46538975979139,
+        "lab_M2": 46.68161434977578,
+        "ratio": 1.3381154578706516,
+        "lines_included": 26,
+        "lines_total": 27
+      },
+      {
+        "dish": "sambar",
+        "recipe_id": "V2-R12",
+        "lab_code": "12-467",
+        "setting": "home",
+        "recipe_M2": 19.8315973707275,
+        "lab_M2": 16.53061224489796,
+        "ratio": 1.1996892236612933,
+        "lines_included": 26,
+        "lines_total": 27
+      },
+      {
+        "dish": "sambar",
+        "recipe_id": "V2-R13",
+        "lab_code": "12-467",
+        "setting": "home",
+        "recipe_M2": 32.11108088890543,
+        "lab_M2": 16.53061224489796,
+        "ratio": 1.9425221772300814,
+        "lines_included": 13,
+        "lines_total": 21
+      },
+      {
+        "dish": "sambar",
+        "recipe_id": "V2-R14",
+        "lab_code": "12-467",
+        "setting": "home",
+        "recipe_M2": 22.59944111303312,
+        "lab_M2": 16.53061224489796,
+        "ratio": 1.3671266846155838,
+        "lines_included": 18,
+        "lines_total": 25
+      },
+      {
+        "dish": "sambar",
+        "recipe_id": "V2-R15",
+        "lab_code": "12-467",
+        "setting": "home",
+        "recipe_M2": 25.51259180593441,
+        "lab_M2": 16.53061224489796,
+        "ratio": 1.5433543191244272,
+        "lines_included": 23,
+        "lines_total": 27
+      },
+      {
+        "dish": "vegetable pilau",
+        "recipe_id": "V2-R16",
+        "lab_code": "12-472",
+        "setting": "home",
+        "recipe_M2": 23.563858494041398,
+        "lab_M2": 12.053571428571429,
+        "ratio": 1.9549275195056566,
+        "lines_included": 23,
+        "lines_total": 31
+      },
+      {
+        "dish": "vegetable pilau",
+        "recipe_id": "V2-R17",
+        "lab_code": "12-472",
+        "setting": "home",
+        "recipe_M2": 30.231840047510794,
+        "lab_M2": 12.053571428571429,
+        "ratio": 2.5081230261638585,
+        "lines_included": 11,
+        "lines_total": 13
+      },
+      {
+        "dish": "chicken korma",
+        "recipe_id": "V2-R18",
+        "lab_code": "p.14 Table 5",
+        "setting": "takeaway",
+        "recipe_M2": 63.07929820883166,
+        "lab_M2": 65.90286425902863,
+        "ratio": 0.9571556398656809,
+        "lines_included": 16,
+        "lines_total": 18
+      },
+      {
+        "dish": "chicken korma",
+        "recipe_id": "V2-R19",
+        "lab_code": "p.14 Table 5",
+        "setting": "takeaway",
+        "recipe_M2": 66.61168176933195,
+        "lab_M2": 65.90286425902863,
+        "ratio": 1.0107554886767491,
+        "lines_included": 18,
+        "lines_total": 20
+      },
+      {
+        "dish": "chicken biryani",
+        "recipe_id": "V2-R20",
+        "lab_code": "19-454",
+        "setting": "takeaway",
+        "recipe_M2": 68.0944384168709,
+        "lab_M2": 40.858895705521476,
+        "ratio": 1.6665755948873808,
+        "lines_included": 25,
+        "lines_total": 28
+      },
+      {
+        "dish": "chicken tikka masala",
+        "recipe_id": "V2-R21",
+        "lab_code": "19-296",
+        "setting": "retail",
+        "recipe_M2": 60.08223706810085,
+        "lab_M2": 56.53846153846154,
+        "ratio": 1.0626790229732124,
+        "lines_included": 21,
+        "lines_total": 25
+      },
+      {
+        "dish": "chicken tikka masala",
+        "recipe_id": "V2-R21",
+        "lab_code": "p.14 Table 5",
+        "setting": "takeaway",
+        "recipe_M2": 60.08223706810085,
+        "lab_M2": 65.42713567839196,
+        "ratio": 0.9183076172467027,
+        "lines_included": 21,
+        "lines_total": 25
+      },
+      {
+        "dish": "chicken tikka masala",
+        "recipe_id": "V2-R22",
+        "lab_code": "19-296",
+        "setting": "retail",
+        "recipe_M2": 73.20559373448744,
+        "lab_M2": 56.53846153846154,
+        "ratio": 1.2947928143514784,
+        "lines_included": 19,
+        "lines_total": 22
+      },
+      {
+        "dish": "chicken tikka masala",
+        "recipe_id": "V2-R22",
+        "lab_code": "p.14 Table 5",
+        "setting": "takeaway",
+        "recipe_M2": 73.20559373448744,
+        "lab_M2": 65.42713567839196,
+        "ratio": 1.1188873389526113,
+        "lines_included": 19,
+        "lines_total": 22
+      },
+      {
+        "dish": "chicken jalfrezi",
+        "recipe_id": "V2-R23",
+        "lab_code": "p.14 Table 5",
+        "setting": "takeaway",
+        "recipe_M2": 56.256314168392244,
+        "lab_M2": 46.68161434977578,
+        "ratio": 1.2051064418397188,
+        "lines_included": 14,
+        "lines_total": 17
+      },
+      {
+        "dish": "methi aloo",
+        "recipe_id": "V2-R24",
+        "lab_code": "15-628",
+        "setting": "home",
+        "recipe_M2": 59.92952915240828,
+        "lab_M2": 65.91549295774648,
+        "ratio": 0.9091873012438008,
+        "lines_included": 4,
+        "lines_total": 6
+      },
+      {
+        "dish": "prawn bhuna",
+        "recipe_id": "V2-R25",
+        "lab_code": "16-365",
+        "setting": "takeaway",
+        "recipe_M2": 49.07855468495456,
+        "lab_M2": 65.25,
+        "ratio": 0.7521617576238246,
+        "lines_included": 14,
+        "lines_total": 16
+      },
+      {
+        "dish": "prawn bhuna",
+        "recipe_id": "V2-R26",
+        "lab_code": "16-365",
+        "setting": "takeaway",
+        "recipe_M2": 44.61686234218992,
+        "lab_M2": 65.25,
+        "ratio": 0.683783330914788,
+        "lines_included": 21,
+        "lines_total": 23
+      },
+      {
+        "dish": "prawn bhuna",
+        "recipe_id": "V2-R27",
+        "lab_code": "16-365",
+        "setting": "takeaway",
+        "recipe_M2": 21.465533997498028,
+        "lab_M2": 65.25,
+        "ratio": 0.3289737011110809,
+        "lines_included": 9,
+        "lines_total": 15
+      },
+      {
+        "dish": "prawn bhuna",
+        "recipe_id": "V2-R28",
+        "lab_code": "16-365",
+        "setting": "takeaway",
+        "recipe_M2": 49.70201872269905,
+        "lab_M2": 65.25,
+        "ratio": 0.761716762033702,
+        "lines_included": 14,
+        "lines_total": 17
+      }
+    ],
+    "summary": {
+      "n_pairs": 31,
+      "n_recipes": 28,
+      "n_dishes": 10,
+      "median_ratio": 1.059633843284305,
+      "mean_ratio": 1.124133389761602,
+      "min_ratio": 0.1898142734817892,
+      "max_ratio": 2.5081230261638585,
+      "median_ratio_by_setting": {
+        "home": 1.1176265476130156,
+        "retail": 1.2947928143514784,
+        "takeaway": 0.983955564271215
+      }
+    },
+    "by_setting": {
+      "home": {
+        "n_pairs": 14,
+        "median_ratio": 1.1176265476130156,
+        "mean_ratio": 1.2446158532028089,
+        "min_ratio": 0.1898142734817892,
+        "max_ratio": 2.5081230261638585
+      },
+      "retail": {
+        "n_pairs": 3,
+        "median_ratio": 1.2947928143514784,
+        "mean_ratio": 1.218728023577074,
+        "min_ratio": 1.0626790229732124,
+        "max_ratio": 1.2987122334065315
+      },
+      "takeaway": {
+        "n_pairs": 14,
+        "median_ratio": 0.983955564271215,
+        "mean_ratio": 0.9833806476456509,
+        "min_ratio": 0.3289737011110809,
+        "max_ratio": 1.6665755948873808
+      }
+    },
+    "coverage": {
+      "total_recipes": 28,
+      "lines_total": 549,
+      "lines_included": 474,
+      "lines_excluded": 75,
+      "line_inclusion_pct": 86.33879781420765,
+      "included_mass_g": 21521.92833333333,
+      "excluded_by_reason": {
+        "WATER": 25,
+        "UNQUANTIFIED": 23,
+        "UNMAPPED": 11,
+        "NON_FOOD": 0,
+        "UNQUANTIFIABLE": 16
+      }
+    }
+  }
+}
