@@ -1501,7 +1501,7 @@
     }
 
     .lab-search-input {
-      height: 38px;
+      height: 40px;
       padding: 0 14px;
       font-size: 14px;
       font-family: inherit;
@@ -1509,11 +1509,95 @@
       border-radius: 8px;
       background: #ffffff;
       outline: none;
-      min-width: 260px;
+      flex: 1;
+      min-width: 220px;
     }
 
     .lab-search-input:focus {
       border-color: var(--color-accent);
+    }
+
+    .lab-toolbar-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: nowrap;
+      margin-bottom: 18px;
+      padding: 14px 18px;
+      background: #fbfbfd;
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+    }
+
+    .lab-select-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+
+    .lab-select-label {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #48484a;
+    }
+
+    .lab-select {
+      height: 40px;
+      padding: 0 12px;
+      font-size: 14px;
+      font-family: inherit;
+      font-weight: 500;
+      color: var(--text-main);
+      background: #ffffff;
+      border: 1px solid #d2d2d7;
+      border-radius: 8px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .lab-select:focus {
+      border-color: var(--color-accent);
+    }
+
+    .d1-step-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--color-accent);
+      margin-bottom: 6px;
+    }
+
+    .d1-step-heading {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin: 0 0 6px 0;
+      letter-spacing: -0.015em;
+    }
+
+    .d1-step-desc {
+      font-size: 15.5px;
+      color: var(--text-body);
+      margin: 0 0 18px 0;
+      line-height: 1.5;
+    }
+
+    .d1-findings-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 24px;
+      align-items: start;
+      margin-bottom: 36px;
+    }
+
+    .d1-engine-rule-card {
+      background: #f4f8fe;
+      border: 1px solid #d0e2ff;
+      border-top: 4px solid #0071e3;
+      border-radius: 14px;
+      padding: 24px 26px;
     }
 
     .lab-sort-th {
@@ -2693,239 +2777,286 @@
       </div>
 
       <!-- ========================================== -->
-      <!-- TAB 1: D1 · LAB DATASET                    -->
+      <!-- TAB 1: D1 · LAB DATASET (4-STEP STORY)     -->
       <!-- ========================================== -->
       <div x-show="currentTab === 'd1'" x-transition.opacity.duration.150ms>
         
         <!-- Header -->
-        <div style="margin-bottom: 26px;">
+        <div style="margin-bottom: 30px;">
           <h2 style="font-size: 30px; font-weight: 700; margin: 0 0 8px 0; letter-spacing: -0.02em;">Curated Fried Foods Laboratory Dataset (D1)</h2>
-          <p style="font-size: 16px; color: var(--text-body); margin: 0; line-height: 1.5; max-width: 980px;">
-            Published laboratory measurements of actual fat retained in fried Indian snacks (<code>data/curated/fried_foods_lab.csv</code>). This dataset powers the frying bath correction in D4 and D3.
+          <p style="font-size: 16px; color: var(--text-body); margin: 0; line-height: 1.55; max-width: 980px;">
+            Published laboratory measurements of how many grams of fat actually remain inside <strong>100g of cooked fried Indian food</strong> (<code>data/curated/fried_foods_lab.csv</code>).
           </p>
         </div>
 
-        <!-- Top Executive Metrics 3-Card Grid (Fact-Checked, Clean Horizontal Cards) -->
-        <div class="lab-metrics-grid">
-          <!-- Card 1: Corpus -->
-          <div class="lab-metric-card">
-            <div>
-              <div class="lab-card-header">
-                <span class="lab-card-title"><span>📚</span> Lab Reference Corpus</span>
-                <span class="badge badge-blue" style="font-size: 12px;">10 Studies</span>
-              </div>
-              <div class="lab-kpi-big" x-text="`${labRows.length} entries · ${labTotalSamples} samples`"></div>
-            </div>
-            <div class="lab-kpi-sub">
-              6 food categories across Gupta 2016, UK CoFID 2021, safefood 2015, Joshee 2019, Neethu 2025, and 5 frying trials.
-            </div>
-          </div>
+        <!-- STEP 1: THE PROBLEM STATEMENT -->
+        <div style="margin-bottom: 40px;">
+          <div class="d1-step-label">Step 1 · Why We Built This Dataset</div>
+          <h3 class="d1-step-heading">Recipes list frying oil baths — not what you actually eat</h3>
+          <p class="d1-step-desc">
+            A samosa recipe writes <em>"500 ml oil for deep frying"</em> (460g). If a nutrition calculator counts the whole pan of oil, it exaggerates fat by nearly 8&times;. We separate simmered dishes from deep-fried ones and replace the discarded oil bath with lab-measured fat absorption.
+          </p>
 
-          <!-- Card 2: Same-Dish Setting Spread -->
-          <div class="lab-metric-card card-amber">
-            <div>
-              <div class="lab-card-header">
-                <span class="lab-card-title"><span>⚡️</span> Same-Dish Spread (Samosa)</span>
-                <span class="badge badge-amber" style="font-size: 12px;">3.84&times; Range</span>
-              </div>
-              <div class="lab-kpi-big">7.7g &rarr; 29.6g / 100g</div>
-            </div>
-            <div class="lab-kpi-sub">
-              Restaurant GC (7.71g, Joshee 2019) vs. village street Soxhlet (29.62g, Gupta 2016) — plus 31.5g for home lamb samosa.
-            </div>
-          </div>
-
-          <!-- Card 3: Engine Resolution -->
-          <div class="lab-metric-card card-green">
-            <div>
-              <div class="lab-card-header">
-                <span class="lab-card-title"><span>🎯</span> Engine Samosa Match</span>
-                <span class="badge badge-green" style="font-size: 12px;">frying.py</span>
-              </div>
-              <div class="lab-kpi-big">12.4 g/100g <span style="font-size: 18px; font-weight: 600; color: var(--text-muted);">(49.2% SFA)</span></div>
-            </div>
-            <div class="lab-kpi-sub">
-              Exact median of the 5 base-matched <code>Samosa</code> rows (7.71, 8.97, 12.4, 29.19, 29.62 g/100g).
-            </div>
-          </div>
-        </div>
-
-        <!-- Pipeline Bridge Banner: Curries vs Deep-Fried Foods (Synced with D4 Demo Payloads) -->
-        <div class="lab-bridge-banner">
-          <div class="bridge-item">
-            <span class="bridge-icon">🍲</span>
-            <div>
-              <div class="bridge-item-title">Simmered Curries (e.g. Paneer Butter Masala)</div>
-              <div class="bridge-item-desc">
-                <strong>No Frying Correction Needed:</strong> All 200g paneer, 28.4g butter, 15g cream, and 13.6g oil stay in the gravy and are eaten in full. No bath oil is discarded.
+          <div class="lab-bridge-banner" style="margin-bottom: 0;">
+            <div class="bridge-item">
+              <span class="bridge-icon">🍲</span>
+              <div>
+                <div class="bridge-item-title">Simmered Curries (e.g. Paneer Butter Masala)</div>
+                <div class="bridge-item-desc">
+                  <strong>No Lab Lookup Needed:</strong> All 200g paneer, 28.4g butter, 15g cream, and 13.6g oil stay in the gravy and are eaten in full.
+                </div>
               </div>
             </div>
-          </div>
-          <div class="bridge-item">
-            <span class="bridge-icon">🥟</span>
-            <div>
-              <div class="bridge-item-title">Deep-Fried Foods (e.g. Samosa, Pakora)</div>
-              <div class="bridge-item-desc">
-                <strong>Frying Bath Corrected:</strong> The recipe lists a 500 ml (460g) oil bath. The engine excludes the bath and injects <code>486g &times; 12.4 g/100g = 60.3g</code> absorbed fat (29.6g SFA) from this dataset.
+            <div class="bridge-item">
+              <span class="bridge-icon">🥟</span>
+              <div>
+                <div class="bridge-item-title">Deep-Fried Immersion Foods (e.g. Samosa, Pakora)</div>
+                <div class="bridge-item-desc">
+                  <strong>Lab Absorption Substituted:</strong> The engine discards the 460g pan bath and estimates retained fat from this dataset: <code>486g mass &times; 12.4 g/100g = 60.3g fat</code>.
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Commercial Setting Disparity Visual Spectrum (Computed Dynamically from labRows) -->
-        <div class="setting-spectrum-card">
-          <div style="margin-bottom: 22px;">
-            <div style="font-size: 20px; font-weight: 700; color: var(--text-main); margin-bottom: 6px;">
-              Why Cooking Setting &amp; Oil Reuse Matter: Median Fat by Setting
+        <!-- STEP 2: WHAT WE COMPILED & LAB METHODS -->
+        <div style="margin-bottom: 40px;">
+          <div class="d1-step-label">Step 2 · What We Compiled</div>
+          <h3 class="d1-step-heading">69 empirical measurements across 10 peer-reviewed studies</h3>
+          <p class="d1-step-desc">
+            Every number in the table below traces to a published chemical extraction study using one of three laboratory protocols.
+          </p>
+
+          <div class="lab-metrics-grid" style="margin-bottom: 24px;">
+            <div class="lab-metric-card">
+              <div>
+                <div class="lab-card-header">
+                  <span class="lab-card-title"><span>📚</span> Empirical Corpus</span>
+                  <span class="badge badge-blue" style="font-size: 12px;">CSV Verified</span>
+                </div>
+                <div class="lab-kpi-big" x-text="`${labRows.length} rows · ${labTotalSamples} samples`"></div>
+              </div>
+              <div class="lab-kpi-sub">
+                Each row records dish, oil medium, fat retained per 100g food, SFA%, sample count (n), and source page.
+              </div>
             </div>
-            <div style="font-size: 15px; color: var(--text-muted); line-height: 1.5;">
-              Computed directly from the 69 lab entries below. Street snacks absorb more than double the median fat of restaurant takeaway items because reused oil increases viscosity and clings to the crust:
+
+            <div class="lab-metric-card card-amber">
+              <div>
+                <div class="lab-card-header">
+                  <span class="lab-card-title"><span>🏛️</span> 10 Published Sources</span>
+                  <span class="badge badge-amber" style="font-size: 12px;">2009–2025</span>
+                </div>
+                <div class="lab-kpi-big">India + UK Agencies</div>
+              </div>
+              <div class="lab-kpi-sub">
+                Gupta 2016, UK CoFID 2021, safefood 2015, Joshee 2019, Neethu 2025, plus 5 controlled frying trials.
+              </div>
+            </div>
+
+            <div class="lab-metric-card card-green">
+              <div>
+                <div class="lab-card-header">
+                  <span class="lab-card-title"><span>🗂️</span> Coverage Scope</span>
+                  <span class="badge badge-green" style="font-size: 12px;">Full Taxonomy</span>
+                </div>
+                <div class="lab-kpi-big">6 Categories · 5 Settings</div>
+              </div>
+              <div class="lab-kpi-sub">
+                From street vendors and retail packets to home cooking, restaurant takeaways, and lab trials.
+              </div>
             </div>
           </div>
 
-          <template x-for="st in labSettingStats" :key="st.setting">
-            <div class="spectrum-row">
-              <div class="spectrum-label">
-                <span x-text="st.icon"></span>
-                <span x-text="st.label"></span>
-              </div>
-              <div class="spectrum-track">
-                <div class="spectrum-fill" :style="`width: ${Math.min((st.median / 30) * 100, 100)}%; background-color: ${st.color};`"></div>
-              </div>
-              <div class="spectrum-val" :style="`color: ${st.textColor};`" x-text="`${st.median.toFixed(1)} g (n=${st.count})`"></div>
-              <div class="spectrum-note" x-text="`Range: ${st.min.toFixed(1)}–${st.max.toFixed(1)} g/100g · ${st.note}`"></div>
-            </div>
-          </template>
-        </div>
-
-        <!-- Analytical Methods Comparison (3 Cards) -->
-        <div style="margin-bottom: 36px;">
-          <div style="margin-bottom: 16px;">
-            <div style="font-size: 20px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">
-              Why Extraction Method Changes the Number
-            </div>
-            <div style="font-size: 15px; color: var(--text-muted);">
-              Comparing the three analytical lab protocols used across our 10 literature sources:
-            </div>
-          </div>
-
-          <div class="methods-grid">
+          <div class="methods-grid" style="margin-bottom: 0;">
             <div class="method-card">
               <div class="method-name"><span>🧪</span> Soxhlet Extraction</div>
-              <div class="method-tag">Gupta 2016 · 21 street samples</div>
+              <div class="method-tag">Gupta 2016 · 21 street rows</div>
               <div class="method-body">
-                Continuous solvent extraction (petroleum ether / hexane). Captures all extractable neutral lipids, tending toward higher totals (e.g., 29.6g street samosa). Reports total fat + SFA%, but not food-code standardization.
+                Continuous solvent extraction (ether / hexane). Captures all extractable neutral lipids, yielding higher fat readings (e.g. 29.6g street samosa) plus SFA%.
               </div>
             </div>
 
             <div class="method-card">
               <div class="method-name"><span>🔬</span> Proximate Analysis</div>
-              <div class="method-tag">UK CoFID · safefood · Controlled trials (33 rows)</div>
+              <div class="method-tag">UK CoFID · safefood · Trials (33 rows)</div>
               <div class="method-body">
-                Acid hydrolysis + ether extraction used by national food agencies (AOAC standard). Gives reliable total fat, though UK CoFID and controlled trials often omit SFA breakdown.
+                AOAC acid hydrolysis + ether extraction used by national food agencies. Reliable total fat, though UK CoFID and some controlled trials omit SFA%.
               </div>
             </div>
 
             <div class="method-card">
               <div class="method-name"><span>🧬</span> FAME-Sum Chromatography</div>
-              <div class="method-tag">Joshee 2019 · 15 GC-FID samples</div>
+              <div class="method-tag">Joshee 2019 · 15 GC-FID rows</div>
               <div class="method-body">
-                Converts lipids into Fatty Acid Methyl Esters and sums identified GC peaks. Gives exact SFA%, MUFA, and PUFA, but runs systematically lower on total fat (e.g., 7.7g samosa) because non-fatty-acid lipids are excluded.
+                Sums identified fatty-acid methyl ester peaks. Gives exact SFA%, but runs systematically lower on total fat (e.g. 7.7g samosa) because non-fatty-acid lipids aren't counted.
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Filter Controls & Header -->
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 14px;">
-          <div style="font-size: 20px; font-weight: 700; color: var(--text-main);">
-            Browse All Empirical Lab Records (<span x-text="filteredLabRows.length"></span> of <span x-text="labRows.length"></span>)
-          </div>
-          <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+        <!-- STEP 3: EXPLORE THE DATASET (CLEAN 1-ROW TOOLBAR + 69-ROW TABLE) -->
+        <div id="d1-table-anchor" style="margin-bottom: 44px;">
+          <div class="d1-step-label">Step 3 · Inspect the Raw Measurements</div>
+          <h3 class="d1-step-heading">
+            All <span x-text="labRows.length"></span> Lab Records (<span x-text="filteredLabRows.length"></span> shown)
+          </h3>
+          <p class="d1-step-desc">
+            Filter by food category or cooking setting, sort by fat or SFA%, or isolate the 5 Samosa rows our engine matches.
+          </p>
+
+          <!-- Clean Single-Row Filter Toolbar -->
+          <div class="lab-toolbar-row">
+            <div class="lab-select-group">
+              <label class="lab-select-label" for="lab-cat-select">Category:</label>
+              <select id="lab-cat-select" class="lab-select" x-model="selectedLabCategory">
+                <template x-for="cat in labCategories" :key="cat">
+                  <option :value="cat" x-text="cat === 'All' ? 'All Categories (6)' : cat"></option>
+                </template>
+              </select>
+            </div>
+
+            <div class="lab-select-group">
+              <label class="lab-select-label" for="lab-set-select">Setting:</label>
+              <select id="lab-set-select" class="lab-select" x-model="selectedLabSetting">
+                <template x-for="set in labSettings" :key="set">
+                  <option :value="set" x-text="set === 'All' ? 'All Settings (5)' : set"></option>
+                </template>
+              </select>
+            </div>
+
+            <input type="text" class="lab-search-input" placeholder="Search dish, oil, source, or notes..." x-model="labSearchQuery">
+
             <button class="bench-chip"
-                    style="font-size: 13.5px; padding: 7px 14px;"
+                    style="font-size: 13.5px; height: 40px; padding: 0 14px; white-space: nowrap;"
                     :style="labOnlySamosaMatch ? 'background: #0071e3; color: #fff; border-color: #0071e3; font-weight: 600;' : ''"
                     @click="labOnlySamosaMatch = !labOnlySamosaMatch">
-              🎯 Highlight Samosa Engine Match (5 rows = 12.4g median)
+              🎯 Samosa's 5 Engine Rows
             </button>
-            <input type="text" class="lab-search-input" placeholder="Search dish, source, oil, notes..." x-model="labSearchQuery">
           </div>
-        </div>
 
-        <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-bottom: 20px; padding: 14px 0; border-top: 1px solid var(--border-divider); border-bottom: 1px solid var(--border-divider);">
-          <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap;">
-            <span style="font-size: 13.5px; font-weight: 700; color: #48484a;">Category:</span>
-            <template x-for="cat in labCategories" :key="cat">
-              <button class="bench-chip" style="font-size: 13px; padding: 6px 12px;" :style="selectedLabCategory === cat ? 'background: #0071e3; color: #fff; border-color: #0071e3;' : ''" @click="selectedLabCategory = cat" x-text="cat"></button>
-            </template>
-          </div>
-          <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap;">
-            <span style="font-size: 13.5px; font-weight: 700; color: #48484a;">Setting:</span>
-            <template x-for="set in labSettings" :key="set">
-              <button class="bench-chip" style="font-size: 13px; padding: 6px 12px;" :style="selectedLabSetting === set ? 'background: #0071e3; color: #fff; border-color: #0071e3;' : ''" @click="selectedLabSetting = set" x-text="set"></button>
-            </template>
-          </div>
-        </div>
-
-        <!-- 69-Row Sortable Table with Source Ref & Notes -->
-        <div class="data-table-container">
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th style="width: 44px; text-align: center;">#</th>
-                <th>Item</th>
-                <th>Category</th>
-                <th>Setting</th>
-                <th>Frying Oil</th>
-                <th class="lab-sort-th" @click="toggleLabSort('fat_g_100g')">
-                  Fat (g/100g) <span x-text="labSortBy === 'fat_g_100g' ? (labSortDir === 'desc' ? '▼' : '▲') : '↕'"></span>
-                </th>
-                <th class="lab-sort-th" @click="toggleLabSort('SFA_pct_of_fat')">
-                  SFA (% Fat) <span x-text="labSortBy === 'SFA_pct_of_fat' ? (labSortDir === 'desc' ? '▼' : '▲') : '↕'"></span>
-                </th>
-                <th>Method</th>
-                <th class="lab-sort-th" @click="toggleLabSort('n_samples')">
-                  n <span x-text="labSortBy === 'n_samples' ? (labSortDir === 'desc' ? '▼' : '▲') : '↕'"></span>
-                </th>
-                <th>Source &amp; Notes</th>
-              </tr>
-            </thead>
-            <tbody>
-              <template x-for="(row, idx) in filteredLabRows" :key="row.item + row.source + row.table_page + idx">
-                <tr :class="{ 'row-samosa-match': isSamosaEngineMatch(row) }">
-                  <td class="mono-cell" style="text-align: center; color: var(--text-muted); font-weight: 600;" x-text="idx + 1"></td>
-                  <td style="font-weight: 700;">
-                    <span x-text="row.item"></span>
-                    <span x-show="isSamosaEngineMatch(row)" class="badge badge-blue" style="font-size: 10.5px; margin-left: 4px;">Samosa Match</span>
-                  </td>
-                  <td><span class="badge badge-gray" style="font-size: 12px;" x-text="row.category"></span></td>
-                  <td>
-                    <span class="badge" style="font-size: 12px;"
-                          :class="{
-                            'badge-amber': row.setting === 'street',
-                            'badge-blue': row.setting === 'restaurant-takeaway',
-                            'badge-green': row.setting === 'home',
-                            'badge-gray': row.setting === 'lab-controlled',
-                            'badge-purple': row.setting === 'retail-packaged'
-                          }" 
-                          x-text="row.setting">
-                    </span>
-                  </td>
-                  <td x-text="row.oil || 'Unspecified'"></td>
-                  <td class="mono-cell" style="font-weight: 700;" x-text="row.fat_g_100g"></td>
-                  <td class="mono-cell" x-text="row.SFA_pct_of_fat ? `${row.SFA_pct_of_fat}%` : '—'"></td>
-                  <td>
-                    <span class="badge badge-gray" style="font-size: 12px;" x-text="row.method"></span>
-                  </td>
-                  <td class="mono-cell" x-text="row.n_samples"></td>
-                  <td style="font-size: 13px; color: #3a3a3c; line-height: 1.4;">
-                    <div><strong x-text="row.source"></strong> · <span style="color: var(--text-muted);" x-text="row.table_page"></span></div>
-                    <div style="font-size: 12.5px; color: var(--text-muted);" x-text="row.notes"></div>
-                  </td>
+          <!-- 69-Row Sortable Table -->
+          <div class="data-table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th style="width: 44px; text-align: center;">#</th>
+                  <th>Item</th>
+                  <th>Category</th>
+                  <th>Setting</th>
+                  <th>Frying Oil</th>
+                  <th class="lab-sort-th" @click="toggleLabSort('fat_g_100g')">
+                    Fat (g/100g) <span x-text="labSortBy === 'fat_g_100g' ? (labSortDir === 'desc' ? '▼' : '▲') : '↕'"></span>
+                  </th>
+                  <th class="lab-sort-th" @click="toggleLabSort('SFA_pct_of_fat')">
+                    SFA (% Fat) <span x-text="labSortBy === 'SFA_pct_of_fat' ? (labSortDir === 'desc' ? '▼' : '▲') : '↕'"></span>
+                  </th>
+                  <th>Method</th>
+                  <th class="lab-sort-th" @click="toggleLabSort('n_samples')">
+                    n <span x-text="labSortBy === 'n_samples' ? (labSortDir === 'desc' ? '▼' : '▲') : '↕'"></span>
+                  </th>
+                  <th>Source &amp; Notes</th>
                 </tr>
+              </thead>
+              <tbody>
+                <template x-for="(row, idx) in filteredLabRows" :key="row.item + row.source + row.table_page + idx">
+                  <tr :class="{ 'row-samosa-match': isSamosaEngineMatch(row) }">
+                    <td class="mono-cell" style="text-align: center; color: var(--text-muted); font-weight: 600;" x-text="idx + 1"></td>
+                    <td style="font-weight: 700;">
+                      <span x-text="row.item"></span>
+                      <span x-show="isSamosaEngineMatch(row)" class="badge badge-blue" style="font-size: 10.5px; margin-left: 4px;">Samosa Match</span>
+                    </td>
+                    <td><span class="badge badge-gray" style="font-size: 12px;" x-text="row.category"></span></td>
+                    <td>
+                      <span class="badge" style="font-size: 12px;"
+                            :class="{
+                              'badge-amber': row.setting === 'street',
+                              'badge-blue': row.setting === 'restaurant-takeaway',
+                              'badge-green': row.setting === 'home',
+                              'badge-gray': row.setting === 'lab-controlled',
+                              'badge-purple': row.setting === 'retail-packaged'
+                            }" 
+                            x-text="row.setting">
+                      </span>
+                    </td>
+                    <td x-text="row.oil || 'Unspecified'"></td>
+                    <td class="mono-cell" style="font-weight: 700;" x-text="row.fat_g_100g"></td>
+                    <td class="mono-cell" x-text="row.SFA_pct_of_fat ? `${row.SFA_pct_of_fat}%` : '—'"></td>
+                    <td>
+                      <span class="badge badge-gray" style="font-size: 12px;" x-text="row.method"></span>
+                    </td>
+                    <td class="mono-cell" x-text="row.n_samples"></td>
+                    <td style="font-size: 13px; color: #3a3a3c; line-height: 1.4;">
+                      <div><strong x-text="row.source"></strong> · <span style="color: var(--text-muted);" x-text="row.table_page"></span></div>
+                      <div style="font-size: 12.5px; color: var(--text-muted);" x-text="row.notes"></div>
+                    </td>
+                  </tr>
+                </template>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- STEP 4: KEY FINDINGS & HOW THE ENGINE RESOLVES IT -->
+        <div style="margin-bottom: 24px;">
+          <div class="d1-step-label">Step 4 · What We Found &amp; How the Engine Uses It</div>
+          <h3 class="d1-step-heading">Why the same dish varies 4&times; across studies — and how <code>frying.py</code> picks one number</h3>
+          <p class="d1-step-desc">
+            Looking across the 69 records above reveals two clear takeaways that justify using a lab-anchored median instead of raw oil volume.
+          </p>
+
+          <div class="d1-findings-grid">
+            <!-- Left: Setting Disparity Spectrum -->
+            <div class="setting-spectrum-card" style="margin-bottom: 0;">
+              <div style="margin-bottom: 18px;">
+                <div style="font-size: 18px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">
+                  1. Median Fat Retained per 100g by Cooking Setting
+                </div>
+                <div style="font-size: 14px; color: var(--text-muted); line-height: 1.45;">
+                  Even for the exact same dish (Samosa), retained fat ranges <strong>3.84&times;</strong> — from <strong>7.7g</strong> (restaurant GC) to <strong>29.6g</strong> (street Soxhlet). Across all 69 entries, street food carries over double the median fat of restaurant takeaway:
+                </div>
+              </div>
+
+              <template x-for="st in labSettingStats" :key="st.setting">
+                <div class="spectrum-row">
+                  <div class="spectrum-label">
+                    <span x-text="st.icon"></span>
+                    <span x-text="st.label"></span>
+                  </div>
+                  <div class="spectrum-track">
+                    <div class="spectrum-fill" :style="`width: ${Math.min((st.median / 30) * 100, 100)}%; background-color: ${st.color};`"></div>
+                  </div>
+                  <div class="spectrum-val" :style="`color: ${st.textColor};`" x-text="`${st.median.toFixed(1)} g (n=${st.count})`"></div>
+                  <div class="spectrum-note" x-text="`Range: ${st.min.toFixed(1)}–${st.max.toFixed(1)} g/100g · ${st.note}`"></div>
+                </div>
               </template>
-            </tbody>
-          </table>
+            </div>
+
+            <!-- Right: How frying.py Resolves Samosa -->
+            <div class="d1-engine-rule-card">
+              <div style="font-size: 18px; font-weight: 700; color: var(--text-main); margin-bottom: 10px;">
+                2. How <code>frying.py</code> Picks One Value
+              </div>
+              <div style="font-size: 14.5px; line-height: 1.55; color: #2c2c2e;">
+                <p style="margin: 0 0 12px 0;">
+                  When D4 analyzes <strong>Samosa</strong>, the engine cannot guess whether the user means street or restaurant, so it follows a deterministic rule:
+                </p>
+                <ol style="margin: 0 0 14px 18px; padding: 0; line-height: 1.6;">
+                  <li>Matches base dish name → finds <strong>5 <code>Samosa</code> rows</strong> in the table (<code>7.71, 8.97, 12.4, 29.19, 29.62 g/100g</code>).</li>
+                  <li>Prefers <code>home</code> rows if present; otherwise takes the <strong>median</strong> across matched rows.</li>
+                  <li>Result used in D4: <strong>12.4 g fat / 100g food</strong> (and median <strong>49.2% SFA</strong> from the 3 rows with SFA assays).</li>
+                </ol>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                  <button class="bench-chip" style="font-size: 13px; padding: 7px 12px; border-color: #0071e3; color: #0071e3; font-weight: 600;" @click="labOnlySamosaMatch = true; document.getElementById('d1-table-anchor')?.scrollIntoView({ behavior: 'smooth' });">
+                    Inspect Samosa's 5 rows above &uarr;
+                  </button>
+                  <button class="bench-chip" style="font-size: 13px; padding: 7px 12px; background: #0071e3; color: #ffffff; border-color: #0071e3; font-weight: 600;" @click="launchWithDemo('samosa_test')">
+                    See this in D4 Live &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
