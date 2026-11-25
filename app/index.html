@@ -1668,18 +1668,49 @@
     /* ======================================================== */
     /* D2 HOW IT WORKS: 5-STAGE CONNECTED PIPELINE & MERGED DOCS*/
     /* ======================================================== */
+    .d2-overview-strip {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .d2-overview-pill {
+      background: #fbfbfd;
+      border: 1px solid var(--border-subtle);
+      border-top: 3px solid var(--color-accent);
+      border-radius: 10px;
+      padding: 12px 14px;
+    }
+
+    .d2-overview-num {
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-accent);
+      margin-bottom: 3px;
+    }
+
+    .d2-overview-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .d2-overview-file {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
     .engine-stage-card {
       background: #ffffff;
       border: 1px solid var(--border-subtle);
       border-radius: 14px;
-      padding: 30px 36px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
-      transition: all 0.2s ease;
-    }
-
-    .engine-stage-card:hover {
-      border-color: #d2d2d7;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+      padding: 28px 32px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
     }
 
     .stage-top-bar {
@@ -1690,11 +1721,11 @@
     }
 
     .stage-pill {
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      padding: 4px 10px;
+      padding: 4px 11px;
       border-radius: 6px;
     }
 
@@ -1706,41 +1737,41 @@
 
     .stage-file-badge {
       font-family: var(--font-mono);
-      font-size: 11.5px;
+      font-size: 12.5px;
       font-weight: 600;
-      color: #636366;
+      color: #48484a;
       background: #f2f2f7;
-      padding: 3px 9px;
-      border-radius: 4px;
+      padding: 4px 10px;
+      border-radius: 5px;
       border: 1px solid #e5e5ea;
     }
 
     .stage-title {
-      font-size: 21px;
+      font-size: 22px;
       font-weight: 700;
       color: var(--text-main);
       letter-spacing: -0.02em;
-      margin: 0 0 4px 0;
+      margin: 0 0 6px 0;
     }
 
     .stage-subtitle {
-      font-size: 14px;
+      font-size: 15.5px;
       color: var(--text-muted);
-      margin-bottom: 22px;
-      line-height: 1.45;
+      margin-bottom: 20px;
+      line-height: 1.5;
     }
 
     .stage-grid-content {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 36px;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 32px;
       align-items: start;
     }
 
     .stage-explanation {
-      font-size: 13.5px;
-      line-height: 1.65;
-      color: #3a3a3c;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #2c2c2e;
     }
 
     .stage-explanation p {
@@ -1755,12 +1786,12 @@
       background: #fbfbfd;
       border: 1px solid var(--border-subtle);
       border-radius: 10px;
-      padding: 18px 22px;
-      font-size: 12.5px;
+      padding: 18px 20px;
+      font-size: 13.5px;
     }
 
     .stage-example-label {
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -1770,47 +1801,78 @@
 
     .stage-code-block {
       font-family: var(--font-mono);
-      font-size: 12px;
+      font-size: 13px;
       line-height: 1.55;
       background: #ffffff;
       border: 1px solid #e5e5ea;
       border-radius: 6px;
-      padding: 10px 14px;
+      padding: 11px 14px;
       color: #0071e3;
       margin-bottom: 10px;
       overflow-x: auto;
+      white-space: pre-wrap;
     }
 
     .stage-badges-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 7px;
-      margin-top: 16px;
+      gap: 8px;
+      margin-top: 14px;
     }
 
     .engine-flow-connector {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 18px 0;
+      margin: 14px 0;
     }
 
     .engine-connector-line {
       width: 2px;
-      height: 28px;
+      height: 22px;
       background: #d2e4fc;
     }
 
     .engine-connector-arrow {
       color: #0071e3;
-      font-size: 14px;
-      margin-top: -6px;
+      font-size: 16px;
+      margin-top: -5px;
       line-height: 1;
+    }
+
+    /* D2 Clinical Context & Class Taxonomy Grid */
+    .d2-epi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 38px;
+    }
+
+    .d2-epi-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-left: 4px solid #0071e3;
+      border-radius: 10px;
+      padding: 18px 20px;
+    }
+
+    .d2-epi-val {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .d2-epi-desc {
+      font-size: 14px;
+      color: #3a3a3c;
+      line-height: 1.5;
     }
 
     /* Merged About & Sources Cards in D2 */
     .d2-meta-section {
-      margin-top: 64px;
+      margin-top: 48px;
       margin-bottom: 48px;
     }
 
@@ -1818,17 +1880,17 @@
       background: #ffffff;
       border: 1px solid var(--border-subtle);
       border-radius: 12px;
-      padding: 28px 32px;
-      margin-bottom: 28px;
+      padding: 26px 30px;
+      margin-bottom: 24px;
     }
 
     .limitations-card {
       background: #fffdfa;
       border: 1px solid #ffe8cc;
-      border-left: 4px solid var(--color-warning);
+      border-left: 5px solid var(--color-warning);
       border-radius: 10px;
       padding: 24px 28px;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }
 
     /* ======================================================== */
@@ -3176,287 +3238,280 @@
       <!-- TAB 2: D2 · HOW IT WORKS                   -->
       <!-- ========================================== -->
       <div x-show="currentTab === 'd2'" x-transition.opacity.duration.150ms>
-        <div style="margin-bottom: 38px;">
-          <div style="font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0071e3; margin-bottom: 6px;">
-            Deliverable 2 (D2) &middot; How the Pipeline Works
+        <div style="margin-bottom: 26px;">
+          <div style="font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0071e3; margin-bottom: 6px;">
+            Deliverable 2 (D2) &middot; Deterministic Pipeline Architecture
           </div>
-          <h2 style="font-size: 28px; font-weight: 800; letter-spacing: -0.025em; margin: 0 0 10px 0; color: var(--text-main);">
-            The 5-Stage Engine
+          <h2 style="font-size: 30px; font-weight: 800; letter-spacing: -0.025em; margin: 0 0 8px 0; color: var(--text-main);">
+            How the 5-Stage Engine Works (Samosa Walkthrough)
           </h2>
-          <p style="font-size: 14.5px; color: var(--text-muted); max-width: 860px; line-height: 1.55; margin: 0;">
-            A five-stage rule-based pipeline — no ML, no black boxes. Each stage has a clear job: read the ingredient, convert to grams, look it up in the IFCT database, correct for frying, and score against daily limits.
+          <p style="font-size: 16px; color: var(--text-body); max-width: 960px; line-height: 1.55; margin: 0;">
+            Zero ML black boxes. Every number traces to a deterministic rule, a calibrated household measure, a composition table row, or a published lab measurement — demonstrated below on our <strong>Samosa</strong> recipe (<code>demo/samosa_test.json</code>).
           </p>
         </div>
 
-        <!-- Connected 5-Stage Storyflow Container -->
-        <div class="engine-storyflow-wrapper" style="max-width: 1080px; margin: 0 auto 54px auto;">
+        <!-- 5-Stage Visual Map -->
+        <div class="d2-overview-strip">
+          <div class="d2-overview-pill">
+            <div class="d2-overview-num">Stage 01</div>
+            <div class="d2-overview-name">Parse Line</div>
+            <div class="d2-overview-file">parse.py</div>
+          </div>
+          <div class="d2-overview-pill" style="border-top-color: #512da8;">
+            <div class="d2-overview-num" style="color: #512da8;">Stage 02</div>
+            <div class="d2-overview-name">Match Food</div>
+            <div class="d2-overview-file">match.py</div>
+          </div>
+          <div class="d2-overview-pill" style="border-top-color: #7b1fa2;">
+            <div class="d2-overview-num" style="color: #7b1fa2;">Stage 03</div>
+            <div class="d2-overview-name">Grams &amp; Sum</div>
+            <div class="d2-overview-file">grams.py · compute.py</div>
+          </div>
+          <div class="d2-overview-pill" style="border-top-color: var(--color-warning);">
+            <div class="d2-overview-num" style="color: #b25e00;">Stage 04</div>
+            <div class="d2-overview-name">Frying Fix</div>
+            <div class="d2-overview-file">frying.py</div>
+          </div>
+          <div class="d2-overview-pill" style="border-top-color: var(--color-danger);">
+            <div class="d2-overview-num" style="color: #c62828;">Stage 05</div>
+            <div class="d2-overview-name">Daily Limits</div>
+            <div class="d2-overview-file">footprint.py</div>
+          </div>
+        </div>
 
-          <!-- STAGE 01 -->
+        <!-- Connected 5-Stage Storyflow Container -->
+        <div class="engine-storyflow-wrapper" style="margin: 0 auto 48px auto;">
+
+          <!-- STAGE 01: PARSE -->
           <div class="engine-stage-card">
             <div class="stage-top-bar">
               <div style="display: flex; align-items: center; gap: 10px;">
                 <span class="stage-pill stage-pill-blue">Stage 01</span>
                 <span class="stage-file-badge">src/lhf/parse.py</span>
               </div>
-              <span style="font-size: 12px; font-weight: 600; color: #86868b;">Input Standardization</span>
+              <span style="font-size: 13.5px; font-weight: 600; color: var(--text-muted);">Text Standardization</span>
             </div>
-            <h3 class="stage-title">Ingredient Parser</h3>
+            <h3 class="stage-title">Ingredient Line Parser</h3>
             <div class="stage-subtitle">
-              Reads a raw ingredient line and pulls out the quantity, unit, and ingredient name — handling Indian units like katori, pao, and mutthi.
+              Extracts structured quantity, canonical unit, size, embedded weights, and clean food name across 27 canonical units (English + Hindi/Devanagari).
             </div>
             <div class="stage-grid-content">
               <div class="stage-explanation">
-                <p>
-                  Online and regional Indian recipes use non-standardized units (<em>katori</em>, <em>chammach</em>, <em>pinch</em>, <em>clove</em>, <em>bunch</em>, <em>cup</em>, <em>tsp</em>) and heterogeneous phrasing. The parser applies deterministic normalization:
-                </p>
-                <ul style="margin: 0 0 12px 18px; padding: 0; line-height: 1.6;">
-                  <li><strong>Unicode Fractions &amp; Ranges:</strong> Evaluates fraction characters (<code>&frac12;</code> &rarr; <code>0.5</code>, <code>&frac14;</code> &rarr; <code>0.25</code>) and written words (<code>"one"</code>, <code>"two"</code>), collapsing ranges (<code>"1-2 tsp"</code> &rarr; <code>1.5</code>).</li>
-                  <li><strong>Parenthetical Metric Priority:</strong> Detects explicit masses embedded in descriptors (e.g. <code>"chicken (500g, bone-in)"</code> overrides volumetric assumptions with <code>500g</code>).</li>
-                  <li><strong>Culinary Noise Stripping:</strong> Removes cutting and preparation modifiers (<code>"finely chopped"</code>, <code>"roasted"</code>, <code>"for tempering"</code>, <code>"to taste"</code>) via compiled regex before food token extraction.</li>
+                <ul style="margin: 0 0 12px 20px; padding: 0; line-height: 1.65;">
+                  <li><strong>Fractions &amp; Ranges:</strong> Evaluates Unicode fractions (<code>&frac12;</code> &rarr; <code>0.5</code>), English number words (<code>"one"</code>–<code>"ten"</code>), and midpoint ranges (<code>"1-2 tsp"</code> &rarr; <code>1.5</code>).</li>
+                  <li><strong>Embedded Metric Priority:</strong> Captures explicit parenthetical weights/volumes (<code>stated_g</code>, <code>stated_ml</code>) first so metric values override imprecise cup guesses.</li>
+                  <li><strong>Explicit Status Tagging:</strong> Labels every line as <code>QUANTIFIED</code>, <code>UNQUANTIFIED</code> (e.g. <code>"salt to taste"</code>), or <code>WATER</code> (always excluded).</li>
                 </ul>
                 <div class="stage-badges-row">
-                  <span class="badge badge-gray">50+ Indian Units</span>
-                  <span class="badge badge-gray">Unicode Normalization</span>
-                  <span class="badge badge-gray">Midpoint Range Resolver</span>
-                  <span class="badge badge-gray">Zero External NLP Latency</span>
+                  <span class="badge badge-gray" style="font-size: 12px;">27 Canonical Units</span>
+                  <span class="badge badge-gray" style="font-size: 12px;">English + Devanagari</span>
+                  <span class="badge badge-gray" style="font-size: 12px;">Zero ML</span>
                 </div>
               </div>
               <div class="stage-example-box">
-                <div class="stage-example-label">Execution Trace</div>
-                <div style="font-size: 11px; font-weight: 700; color: #86868b; margin-bottom: 4px;">RAW RECIPE LINE:</div>
-                <div class="stage-code-block" style="color: #1d1d1f; background: #f2f2f7;">
-"1&frac12; cup paneer (cubed, fresh), for frying"
-                </div>
-                <div style="font-size: 11px; font-weight: 700; color: #0071e3; margin: 10px 0 4px 0;">PARSED STRUCTURAL TOKEN:</div>
-                <div class="stage-code-block">
-{
-  "qty": 1.5,
-  "unit": "cup",
-  "clean_name": "paneer",
-  "prep_tokens": ["cubed", "fresh"],
-  "purpose": "for frying"
-}
-                </div>
+                <div class="stage-example-label">Real Samosa Trace (<code>demo/samosa_test.out.json</code>)</div>
+                <div class="stage-code-block" style="color: #1d1d1f; background: #f2f2f7;">"2 cups maida"
+"500 ml oil for deep frying"
+"salt to taste"</div>
+                <div class="stage-code-block">{ "status": "QUANTIFIED", "qty": 2.0, "unit": "cup", "name": "maida" }
+{ "status": "QUANTIFIED", "qty": 500.0, "unit": "ml", "stated_ml": 500.0, "name": "oil for deep frying" }
+{ "status": "UNQUANTIFIED", "qty": null, "name": "salt to taste" }</div>
               </div>
             </div>
           </div>
 
-          <!-- CONNECTOR 1 -> 2 -->
           <div class="engine-flow-connector">
             <div class="engine-connector-line"></div>
             <div class="engine-connector-arrow">&darr;</div>
           </div>
 
-          <!-- STAGE 02 -->
+          <!-- STAGE 02: MATCH (RUNS BEFORE GRAMS IN PIPELINE.PY) -->
           <div class="engine-stage-card">
             <div class="stage-top-bar">
               <div style="display: flex; align-items: center; gap: 10px;">
-                <span class="stage-pill stage-pill-purple">Stage 02</span>
-                <span class="stage-file-badge">src/lhf/grams.py</span>
-              </div>
-              <span style="font-size: 12px; font-weight: 600; color: #86868b;">Mass Standardization</span>
-            </div>
-            <h3 class="stage-title">Convert to Grams</h3>
-            <div class="stage-subtitle">
-              Converts everything to grams. 1 cup of maida weighs differently from 1 cup of rice — this stage handles that.
-            </div>
-            <div class="stage-grid-content">
-              <div class="stage-explanation">
-                <p>
-                  Nutrient tables operate exclusively on mass per 100 grams, but human home cooks measure in cups, spoons, and counts. This stage maps volumetric inputs to grams using calibrated bulk density factors:
-                </p>
-                <ul style="margin: 0 0 12px 18px; padding: 0; line-height: 1.6;">
-                  <li><strong>Calibrated Physical Densities:</strong> Liquid cooking oil has a specific density of 0.92 g/ml; 1 cup maida settles at 120g, while 1 cup tur dal weighs 175g and 1 cup diced paneer weighs 150g.</li>
-                  <li><strong>Multi-Tiered Measure Resolution:</strong> Checks <code>measures.csv</code> via a 3-tier cascade: <code>(Code, Unit)</code> exact match &rarr; <code>(Food Group, Unit)</code> group fallback &rarr; <code>(Global, Unit)</code> fallback.</li>
-                  <li><strong>Unit Size Granularity:</strong> Distinguishes piece counts by qualifier (e.g. <code>"1 medium onion"</code> &rarr; 60g, <code>"1 large onion"</code> &rarr; 110g, <code>"1 clove garlic"</code> &rarr; 3g).</li>
-                </ul>
-                <div class="stage-badges-row">
-                  <span class="badge badge-gray">data/curated/measures.csv</span>
-                  <span class="badge badge-gray">Class-Specific Bulk Density</span>
-                  <span class="badge badge-gray">Vernacular Katori &asymp; 150g</span>
-                </div>
-              </div>
-              <div class="stage-example-box">
-                <div class="stage-example-label">Execution Trace</div>
-                <div style="font-size: 11px; font-weight: 700; color: #86868b; margin-bottom: 4px;">VOLUMETRIC MEASURE INPUT:</div>
-                <div class="stage-code-block" style="color: #1d1d1f; background: #f2f2f7;">
-qty: 1.5, unit: "cup", item: "paneer"
-                </div>
-                <div style="font-size: 11px; font-weight: 700; color: #7b1fa2; margin: 10px 0 4px 0;">DENSITY RESOLUTION LOOKUP:</div>
-                <div class="stage-code-block" style="color: #7b1fa2;">
-// measures.csv: E018 + cup = 150.0g
-mass_grams = 1.5 &times; 150.0g = 225.0g
-status: EXACT_MATCH_RESOLVED
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- CONNECTOR 2 -> 3 -->
-          <div class="engine-flow-connector">
-            <div class="engine-connector-line"></div>
-            <div class="engine-connector-arrow">&darr;</div>
-          </div>
-
-          <!-- STAGE 03 -->
-          <div class="engine-stage-card">
-            <div class="stage-top-bar">
-              <div style="display: flex; align-items: center; gap: 10px;">
-                <span class="stage-pill stage-pill-indigo">Stage 03</span>
+                <span class="stage-pill stage-pill-indigo">Stage 02</span>
                 <span class="stage-file-badge">src/lhf/match.py</span>
               </div>
-              <span style="font-size: 12px; font-weight: 600; color: #86868b;">Database Lookup</span>
+              <span style="font-size: 13.5px; font-weight: 600; color: var(--text-muted);">Database Lookup (Runs Before Weighing)</span>
             </div>
-            <h3 class="stage-title">IFCT 2017 Ingredient Lookup</h3>
+            <h3 class="stage-title">Composition Database Matching</h3>
             <div class="stage-subtitle">
-              Looks up each ingredient in the Indian Food Composition Tables (IFCT 2017) — a government database of 1,003 foods with full nutrient profiles per 100g.
+              Matches the food name first — against 746 unified nutrition entries — so Stage 03 knows the exact food-specific cup/piece weight.
             </div>
             <div class="stage-grid-content">
               <div class="stage-explanation">
-                <p>
-                  Raw vernacular names rarely match clinical chemistry nomenclature (e.g. <em>"paneer"</em> is cataloged as <em>"Cottage cheese"</em> under code <code>E018</code>). The matching engine uses an authoritative 3-tier cascade:
-                </p>
-                <ul style="margin: 0 0 12px 18px; padding: 0; line-height: 1.6;">
-                  <li><strong>Tier 1 &middot; Curated Aliases (Confidence 1.0):</strong> Instant lookup across 800+ expert-verified mappings in <code>aliases.csv</code> resolving colloquial terms (<em>jeera</em> &rarr; cumin, <em>methi</em> &rarr; fenugreek, <em>dalda</em> &rarr; vanaspati).</li>
-                  <li><strong>Tier 2 &middot; Tokenized Normalized Substring (Confidence 0.95):</strong> Strips remaining noise words and matches against indexed IFCT common names and scientific taxonomy.</li>
-                  <li><strong>Tier 3 &middot; Conservative Levenshtein Matching (Confidence &ge; 0.85):</strong> Fuzzy string similarity with strict threshold cutoff (0.85) to prevent spurious lipid cross-assignment.</li>
+                <ul style="margin: 0 0 12px 20px; padding: 0; line-height: 1.65;">
+                  <li><strong>746 Unified Food Rows:</strong> Combines <strong>542 IFCT 2017</strong> Indian foods with <strong>144 INDB UK</strong>, <strong>54 INDB US</strong>, and <strong>6 Indian retail product labels</strong> (<code>L901–L906</code>: Amul milk, dahi, paneer, butter, cream, malai).</li>
+                  <li><strong>Culinary Priority Rules + 4,179 Aliases:</strong> Resolves Indian terms deterministically (<code>paneer</code> &rarr; <code>L903</code>, <code>ghee</code> &rarr; <code>T013</code>, generic <code>oil</code> &rarr; <code>T508</code> sunflower oil, <code>chicken</code> &rarr; <code>N500</code>).</li>
+                  <li><strong>Strict Fuzzy Cutoff (0.85):</strong> Uses <code>difflib.SequenceMatcher</code> with <code>FUZZY_MATCH_CUTOFF = 0.85</code>; anything below stays <code>UNMAPPED</code> instead of guessing wrong.</li>
                 </ul>
                 <div class="stage-badges-row">
-                  <span class="badge badge-gray">1,003 IFCT 2017 Profiles</span>
-                  <span class="badge badge-gray">data/curated/aliases.csv</span>
-                  <span class="badge badge-gray">Levenshtein Cutoff &ge; 0.85</span>
+                  <span class="badge badge-gray" style="font-size: 12px;">746 Unified Foods</span>
+                  <span class="badge badge-gray" style="font-size: 12px;">4,179 Curated Aliases</span>
+                  <span class="badge badge-gray" style="font-size: 12px;">difflib &ge; 0.85</span>
                 </div>
               </div>
               <div class="stage-example-box">
-                <div class="stage-example-label">Execution Trace</div>
-                <div style="font-size: 11px; font-weight: 700; color: #86868b; margin-bottom: 4px;">CLEANED INGREDIENT TOKEN:</div>
-                <div class="stage-code-block" style="color: #1d1d1f; background: #f2f2f7;">
-"paneer" (mass: 225.0g)
-                </div>
-                <div style="font-size: 11px; font-weight: 700; color: #512da8; margin: 10px 0 4px 0;">IFCT 2017 COMPOSITION LINK:</div>
-                <div class="stage-code-block" style="color: #512da8;">
-{
-  "code": "E018",
-  "name": "Cottage cheese (Paneer)",
-  "confidence": 1.0,
-  "match_tier": "CURATED_ALIAS",
-  "per_100g": { "fat": 20.8g, "sfa": 12.7g, "na": 19.0mg }
-}
-                </div>
+                <div class="stage-example-label">Real Samosa Trace</div>
+                <div class="stage-code-block" style="color: #512da8;">"maida" &rarr; code: "A018" (Wheat flour, refined) · alias · score 1.0
+"oil for deep frying" &rarr; code: "T508" (Sunflower oil) · alias · score 1.0
+"3 medium potatoes..." &rarr; code: "F006" · alias · score 1.0
+"fresh coriander leaves" &rarr; code: "G009" · exact · score 1.0</div>
               </div>
             </div>
           </div>
 
-          <!-- CONNECTOR 3 -> 4 -->
           <div class="engine-flow-connector">
             <div class="engine-connector-line"></div>
             <div class="engine-connector-arrow">&darr;</div>
           </div>
 
-          <!-- STAGE 04 -->
-          <div class="engine-stage-card" style="border-left: 4px solid var(--color-warning);">
+          <!-- STAGE 03: GRAMS & COMPUTE & CLASSIFY -->
+          <div class="engine-stage-card">
             <div class="stage-top-bar">
               <div style="display: flex; align-items: center; gap: 10px;">
-                <span class="stage-pill stage-pill-amber">Stage 04 &middot; Critical Innovation</span>
-                <span class="stage-file-badge">src/lhf/frying.py</span>
+                <span class="stage-pill stage-pill-purple">Stage 03</span>
+                <span class="stage-file-badge">grams.py · compute.py · classify.py</span>
               </div>
-              <span style="font-size: 12px; font-weight: 600; color: #b25e00;">Empirical Lab Correction</span>
+              <span style="font-size: 13.5px; font-weight: 600; color: var(--text-muted);">Weighing, Nutrient Sum &amp; Class Tagging</span>
             </div>
-            <h3 class="stage-title">Frying Bath Correction</h3>
+            <h3 class="stage-title">Unit-to-Grams Conversion &amp; Nutrient Arithmetic</h3>
             <div class="stage-subtitle">
-              Standard nutrition tools count the entire oil bath as eaten fat — which is wildly wrong. This stage strips the bath and injects only the fat actually absorbed by the food, using lab data.
+              1 cup of maida (120g) weighs half as much as 1 cup of cubed paneer (246g). Resolves grams via 243 curated measure rules, sums 12 nutrients, and tags risk classes.
             </div>
             <div class="stage-grid-content">
               <div class="stage-explanation">
-                <p>
-                  When a home cook fries <em>Samosas</em>, the recipe routinely lists <em>"500 ml oil for deep frying"</em> (460g). Standard nutrition tools naively calculate 460g of fat, yielding an impossible 4,000+ kcal per serving! In reality, diners consume only the fraction absorbed into the crust:
-                </p>
-                <ul style="margin: 0 0 12px 18px; padding: 0; line-height: 1.6;">
-                  <li><strong>Frying Detection:</strong> Scans for lines classified as <code>COOKING_OIL</code> or <code>HYDROGENATED_FAT</code> exceeding 50g accompanied by frying triggers (<code>"for deep frying"</code>, <code>"to fry"</code>).</li>
-                  <li><strong>Bath Oil Removed:</strong> Completely excludes the entire 460g immersion volume and its lipid load from the raw recipe sum.</li>
-                  <li><strong>Lab Fat Re-injection:</strong> Looks up the food matrix in <code>fried_foods_lab.csv</code> (Gupta et al. 2016 Soxhlet lab extractions) and injects actual absorbed fat based on finished solid mass: <em>Absorbed Fat = (non-oil mass / 100) &times; lab_fat_g_100g</em>.</li>
+                <ul style="margin: 0 0 12px 20px; padding: 0; line-height: 1.65;">
+                  <li><strong>Measure Cascade (<code>measures.csv</code>):</strong> Applies <code>STATED_MASS</code> &rarr; <code>STATED_VOLUME</code> (using specific density, e.g. <code>0.92 g/ml</code> for oil) &rarr; <code>CODE_MEASURE</code> (food + unit + size) &rarr; <code>GROUP_MEASURE</code> &rarr; <code>ANY_MEASURE</code>.</li>
+                  <li><strong>Functional Class Tagging (<code>classes.csv</code>):</strong> Tags lines as <code>DAIRY_FAT</code>, <code>COOKING_OIL</code>, <code>HYDROGENATED_FAT</code>, <code>ADDED_SUGAR</code>, <code>REFINED_GRAIN</code>, <code>SALT</code>, or <code>SPICE</code> (so natural tomato sugar isn't miscounted as added sugar!).</li>
                 </ul>
                 <div class="stage-badges-row">
-                  <span class="badge badge-amber">Excludes 100% of Pan Immersion Oil</span>
-                  <span class="badge badge-amber">Gupta et al. 2016 Soxhlet Assays</span>
-                  <span class="badge badge-amber">Flags FRYING_CORRECTED</span>
+                  <span class="badge badge-gray" style="font-size: 12px;">243 Measure Rules</span>
+                  <span class="badge badge-gray" style="font-size: 12px;">12 Nutrients Summed</span>
+                  <span class="badge badge-gray" style="font-size: 12px;">8 Functional Classes</span>
+                </div>
+              </div>
+              <div class="stage-example-box">
+                <div class="stage-example-label">Real Samosa Trace</div>
+                <div class="stage-code-block" style="color: #7b1fa2;">2 cups maida (A018) &times; 120g/cup = 240.0g [CODE_MEASURE]
+  &rarr; 844 kcal · 178.2g carb [Class: REFINED_GRAIN]
+3 medium potatoes (F006) &times; 70g = 210.0g [CODE_MEASURE]
+500 ml oil (T508) &times; 0.92 g/ml = 460.0g [STATED_VOLUME]
+  &rarr; 4,135 kcal · 459.5g fat [Class: COOKING_OIL]</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="engine-flow-connector">
+            <div class="engine-connector-line"></div>
+            <div class="engine-connector-arrow">&darr;</div>
+          </div>
+
+          <!-- STAGE 04: FRYING CORRECTION -->
+          <div class="engine-stage-card" style="border-left: 5px solid var(--color-warning);">
+            <div class="stage-top-bar">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span class="stage-pill stage-pill-amber">Stage 04 &middot; Core Correction</span>
+                <span class="stage-file-badge">src/lhf/frying.py</span>
+              </div>
+              <span style="font-size: 13.5px; font-weight: 600; color: #b25e00;">Lab-Anchored Oil Absorption</span>
+            </div>
+            <h3 class="stage-title">Frying Bath Detection &amp; Lab Substitution</h3>
+            <div class="stage-subtitle">
+              Excludes the unconsumed pan oil bath and substitutes empirically measured absorbed fat from <code>fried_foods_lab.csv</code> (with optional cooking setting &amp; fallback).
+            </div>
+            <div class="stage-grid-content">
+              <div class="stage-explanation">
+                <ul style="margin: 0 0 12px 20px; padding: 0; line-height: 1.65;">
+                  <li><strong>Bath Trigger:</strong> Flags any <code>COOKING_OIL</code> or <code>HYDROGENATED_FAT</code> line &ge; 50g containing a frying phrase (<code>"for deep frying"</code>, <code>"to fry"</code>), while ignoring non-fried dishes (biryani, curry).</li>
+                  <li><strong>Exclude Bath, Inject Uptake:</strong> Removes 100% of the bath's fat &amp; calories (<code>FRYING_BATH</code>) and injects <code>(non-oil mass / 100) &times; lab_fat_g_100g</code> using the matched dish (and selected setting, with automatic dish fallback if missing).</li>
+                </ul>
+                <div class="stage-badges-row">
+                  <span class="badge badge-amber" style="font-size: 12px;">Threshold &ge; 50g Oil Bath</span>
+                  <span class="badge badge-amber" style="font-size: 12px;">69-Row Lab Lookup</span>
+                  <span class="badge badge-amber" style="font-size: 12px;">103 INDB Recipes Corrected</span>
                 </div>
               </div>
               <div class="stage-example-box" style="background: #fffdfa; border-color: #ffe8cc;">
-                <div class="stage-example-label" style="color: #b25e00;">Frying Correction Trace (Samosa)</div>
-                <div style="font-size: 11px; font-weight: 700; color: #c62828; margin-bottom: 4px;">RAW RECIPE INFLATION ARTIFACT:</div>
-                <div class="stage-code-block" style="color: #c62828; background: #fff5f5; border-color: #ffcdd2;">
-500 ml oil for deep frying &rarr; 460.0g fat (EXCLUDED)
-                </div>
-                <div style="font-size: 11px; font-weight: 700; color: #2e7d32; margin: 10px 0 4px 0;">LAB SOXHLET RE-INJECTION:</div>
-                <div class="stage-code-block" style="color: #2e7d32; background: #f1f8e9; border-color: #c8e6c9;">
-// fried_foods_lab.csv: Samosa Street median = 22.4g / 100g
-absorbed_fat = (200g dough &amp; potato / 100) &times; 22.4g = 44.8g
-absorbed_sfa = 44.8g &times; 28.5% (SFA profile) = 12.8g
-result: Corrected from 4,140 kcal &rarr; 510 kcal / serving
-                </div>
+                <div class="stage-example-label" style="color: #b25e00;">Real Samosa Trace (Auto vs. Street Setting)</div>
+                <div class="stage-code-block" style="color: #c62828; background: #fff5f5; border-color: #ffcdd2;">REMOVED BATH: 500 ml oil &rarr; 460.0g (459.5g fat, 4,135 kcal)</div>
+                <div class="stage-code-block" style="color: #2e7d32; background: #f1f8e9; border-color: #c8e6c9;">non-oil mass = 486.0g (maida + potato + dough oil + spices)
+Auto (5 rows): 12.4 g/100g &rarr; 60.3g fat (29.6g SFA) injected
+Street (Gupta 2016): 29.4 g/100g &rarr; 142.9g fat (78.1g SFA)
+Recipe total (Auto): corrected to 1,791 kcal (224 kcal / samosa)</div>
               </div>
             </div>
           </div>
 
-          <!-- CONNECTOR 4 -> 5 -->
           <div class="engine-flow-connector">
             <div class="engine-connector-line"></div>
             <div class="engine-connector-arrow">&darr;</div>
           </div>
 
-          <!-- STAGE 05 -->
+          <!-- STAGE 05: FOOTPRINT -->
           <div class="engine-stage-card">
             <div class="stage-top-bar">
               <div style="display: flex; align-items: center; gap: 10px;">
                 <span class="stage-pill stage-pill-red">Stage 05</span>
                 <span class="stage-file-badge">src/lhf/footprint.py</span>
               </div>
-              <span style="font-size: 12px; font-weight: 600; color: #86868b;">Clinical Risk Translation</span>
+              <span style="font-size: 13.5px; font-weight: 600; color: var(--text-muted);">Per-Serving 24h Budget Footprint</span>
             </div>
-            <h3 class="stage-title">Scoring Against Daily Limits (Liver &amp; Heart)</h3>
+            <h3 class="stage-title">Scoring Against ICMR-NIN &amp; WHO Daily Limits</h3>
             <div class="stage-subtitle">
-              Takes the per-serving nutrient totals and expresses each one as a percentage of the ICMR-NIN 2024 and WHO daily limits.
+              Divides totals by servings and maps 6 independent axes against full-day adult limits — with zero arbitrary composite score weights.
             </div>
             <div class="stage-grid-content">
               <div class="stage-explanation">
-                <p>
-                  Standard nutritional reports list raw grams without clinical context. The footprint engine standardizes nutrient intake per portion (&divide; servings) against daily metabolic ceilings for an urban Indian adult (2,240 kcal/day baseline):
-                </p>
-                <ul style="margin: 0 0 12px 18px; padding: 0; line-height: 1.6;">
-                  <li><strong>Liver Score (HLI):</strong> Measures how much saturated fat and added sugar a serving contributes toward the liver's daily tolerance — the main dietary drivers of fatty liver disease.</li>
-                  <li><strong>Heart Score (CBI):</strong> Measures how much saturated fat, total fat, and sodium a serving contributes toward the heart's daily tolerance — the main dietary drivers of cardiovascular disease.</li>
-                  <li><strong>Primary Bottleneck:</strong> Finds which nutrient axis (saturated fat, sugar, or sodium) is closest to its daily limit for this recipe — this becomes the headline number on the D4 screen.</li>
+                <ul style="margin: 0 0 12px 20px; padding: 0; line-height: 1.65;">
+                  <li><strong>Liver Load Axes:</strong> Saturated Fat (<code>&lt;10%E</code>), Added Free Sugar (<code>25g/day</code>), Refined Starches (raw grams + <code>% dish kcal</code>, no official cap), and Calories (<code>2,240 kcal</code> urban).</li>
+                  <li><strong>Heart Load Axes:</strong> Saturated Fat, Sodium (<code>1,967 mg/day</code> from 5g salt), Total Fat (<code>30%E</code>), and Calories.</li>
+                  <li><strong>Honest Guardrails:</strong> Automatically emits warnings for <code>SALT_UNQUANTIFIED</code> (lower bound), <code>SPICE_OVER_LIMIT</code> (&gt;30g), <code>MASS_IMPLAUSIBLE</code>, and <code>NO_SERVINGS</code>.</li>
                 </ul>
                 <div class="stage-badges-row">
-                  <span class="badge badge-gray">ICMR-NIN 2024 Baselines</span>
-                  <span class="badge badge-gray">WHO Sodium &amp; Free Sugar Norms</span>
-                  <span class="badge badge-gray">% of daily limit</span>
+                  <span class="badge badge-gray" style="font-size: 12px;">ICMR-NIN 2024</span>
+                  <span class="badge badge-gray" style="font-size: 12px;">NSO HCES 2022–24</span>
+                  <span class="badge badge-gray" style="font-size: 12px;">WHO Salt &amp; Sugar Limits</span>
                 </div>
               </div>
               <div class="stage-example-box">
-                <div class="stage-example-label">Clinical Output (Paneer Butter Masala)</div>
-                <div style="font-size: 11px; font-weight: 700; color: #86868b; margin-bottom: 4px;">PER-SERVING CLINICAL METRICS:</div>
-                <div class="stage-code-block" style="color: #1d1d1f; background: #f2f2f7;">
-Saturated Fat: 13.7g | Total Fat: 28.5g | Sodium: 918mg
-                </div>
-                <div style="font-size: 11px; font-weight: 700; color: #c62828; margin: 10px 0 4px 0;">DUAL-ORGAN PERCENTAGE CEILINGS:</div>
-                <div class="stage-code-block" style="color: #c62828;">
-HLI (Hepatic): 55.0% of Daily SFA Ceiling &rarr; HIGH STRAIN
-CBI (Cardiovascular): 46.7% of Daily Sodium Ceiling &rarr; MODERATE STRAIN
-Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
-                </div>
+                <div class="stage-example-label">Real Samosa Output (1/8 recipe = 61g, Auto)</div>
+                <div class="stage-code-block" style="color: #1d1d1f; background: #f2f2f7;">SFA: 4.2g (16.7% day)   | Total Fat: 11.3g (15.2% day)
+Added Sugar: 0.0g (0%) | Refined Starch: 22.3g (40% dish kcal)
+Sodium: 16mg (0.8%*)   | Energy: 224 kcal (10.0% day)</div>
               </div>
             </div>
           </div>
 
-        </div> <!-- End engine-storyflow-wrapper -->
+        </div>
 
-        <!-- Daily Limits Reference Table -->
-        <div style="margin-bottom: 54px;">
+        <!-- Epidemiological Motivation Cards -->
+        <div style="margin-bottom: 44px;">
           <div class="dashboard-section-header">
-            <div class="section-title">Daily Limits &amp; Where They Come From</div>
-            <div class="section-desc">The reference values behind all the percentages in D4.</div>
+            <div class="section-title">Why Liver &amp; Heart Separately? (Indian Epidemiological Context)</div>
+            <div class="section-desc">Real national prevalence data motivating these exact dietary axes.</div>
+          </div>
+          <div class="d2-epi-grid">
+            <div class="d2-epi-card">
+              <div class="d2-epi-val" style="color: #0071e3;">38.9%</div>
+              <div class="d2-epi-desc"><strong>Indian adults have MASLD</strong> (fatty liver disease — Phenome India Cohort, <em>Lancet Reg Health SE Asia</em> 2026), driven by caloric surplus, SFA, added sugars, and refined starch.</div>
+            </div>
+            <div class="d2-epi-card" style="border-left-color: #c62828;">
+              <div class="d2-epi-val" style="color: #c62828;">28%</div>
+              <div class="d2-epi-desc"><strong>of total mortality in India is CVD</strong> (GBD / <em>Sci Rep</em> 2023), driven by saturated fat raising LDL cholesterol, excess total fat, and ~8g/day average salt intake vs. a 5g ceiling.</div>
+            </div>
+            <div class="d2-epi-card" style="border-left-color: #ff9500;">
+              <div class="d2-epi-val" style="color: #b25e00;">8.9% / 11.2%</div>
+              <div class="d2-epi-desc"><strong>National &amp; North India SFA energy share</strong> (ICMR-INDIAB-21, <em>Nat Med</em> 2025, <em>n</em>=18,090), alongside 62.3% energy from carbs and &gt;5%E sugar in 21 states.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Daily Limits Reference Table (Synced 100% with data/curated/baselines.csv) -->
+        <div style="margin-bottom: 48px;">
+          <div class="dashboard-section-header">
+            <div class="section-title">Daily Reference Limits (from <code>data/curated/baselines.csv</code>)</div>
+            <div class="section-desc">Every percentage bar in D4 and D3 is computed from these exact constants.</div>
           </div>
 
           <div class="data-table-container">
@@ -3465,46 +3520,52 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
                 <tr>
                   <th>Nutrient Axis</th>
                   <th>Daily Reference Limit</th>
-                  <th>Source</th>
+                  <th>Calculation &amp; Source</th>
                   <th>Associated Footprint</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td style="font-weight: 600;">Saturated Fatty Acids (General)</td>
+                  <td style="font-weight: 700;">Saturated Fatty Acids (General)</td>
                   <td class="mono-cell">24.9 g / day</td>
-                  <td>&lt;10% of 2,240 kcal urban baseline (ICMR-NIN 2024)</td>
+                  <td>&lt;10.0% of 2,240 kcal &divide; 9 kcal/g (ICMR-NIN RDA / WHO 2023)</td>
                   <td><span class="badge badge-blue">Liver + Heart</span></td>
                 </tr>
                 <tr>
-                  <td style="font-weight: 600;">Saturated Fatty Acids (High Risk)</td>
-                  <td class="mono-cell">12.4 g / day</td>
-                  <td>&lt;5% of 2,240 kcal for cardiometabolic risk</td>
+                  <td style="font-weight: 700;">Saturated Fatty Acids (Cardiometabolic Risk)</td>
+                  <td class="mono-cell">17.4 g / day</td>
+                  <td>&lt;7.0% of 2,240 kcal &divide; 9 kcal/g (AHA/ACC 2023 / ICMR-NIN DGI 2024)</td>
                   <td><span class="badge badge-blue">Liver + Heart</span></td>
                 </tr>
                 <tr>
-                  <td style="font-weight: 600;">Total Dietary Fat</td>
+                  <td style="font-weight: 700;">Total Dietary Fat</td>
                   <td class="mono-cell">74.7 g / day</td>
-                  <td>30% of dietary energy (ICMR-NIN 2024)</td>
+                  <td>30.0% of 2,240 kcal &divide; 9 kcal/g (ICMR-NIN DGI 2024 Guideline 6)</td>
                   <td><span class="badge badge-gray">Heart</span></td>
                 </tr>
                 <tr>
-                  <td style="font-weight: 600;">Added Free Sugars</td>
+                  <td style="font-weight: 700;">Added Free Sugars</td>
                   <td class="mono-cell">25.0 g / day</td>
-                  <td>WHO 2015 conditional guideline (&lt;5% energy)</td>
+                  <td>&lt;5% energy conditional cap (ICMR-NIN DGI 2024 Guideline 7 / WHO)</td>
                   <td><span class="badge badge-amber">Liver</span></td>
                 </tr>
                 <tr>
-                  <td style="font-weight: 600;">Sodium</td>
-                  <td class="mono-cell">~1,967 mg / day</td>
-                  <td>5.0 g salt limit &times; 393.4 mg sodium/g (WHO 2012)</td>
+                  <td style="font-weight: 700;">Sodium (Na)</td>
+                  <td class="mono-cell">1,967 mg / day</td>
+                  <td>5.0 g salt/day &times; 393.4 mg Na/g NaCl (ICMR-NIN Guideline 8 / WHO)</td>
                   <td><span class="badge badge-gray">Heart</span></td>
                 </tr>
                 <tr>
-                  <td style="font-weight: 600;">Total Energy</td>
-                  <td class="mono-cell">2,240 kcal / day</td>
-                  <td>NSO 2024 urban adult reference intake</td>
+                  <td style="font-weight: 700;">Total Energy (Urban / Rural)</td>
+                  <td class="mono-cell">2,240 / 2,212 kcal</td>
+                  <td>NSO HCES 2022–24 per-capita daily intake (published July 2025)</td>
                   <td><span class="badge badge-blue">Liver + Heart</span></td>
+                </tr>
+                <tr>
+                  <td style="font-weight: 700;">Refined Starches (Maida / White Rice)</td>
+                  <td class="mono-cell">No standalone cap</td>
+                  <td>Tracked in raw grams + % of dish calories (<code>REFINED_GRAIN</code> class)</td>
+                  <td><span class="badge badge-amber">Liver</span></td>
                 </tr>
               </tbody>
             </table>
@@ -3514,45 +3575,45 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
         <!-- MERGED ABOUT & SOURCES: BIBLIOGRAPHY, LIMITATIONS & CREDITS -->
         <div class="d2-meta-section">
 
-          <div style="margin-bottom: 24px;">
-            <div style="font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0071e3; margin-bottom: 6px;">
+          <div style="margin-bottom: 20px;">
+            <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0071e3; margin-bottom: 6px;">
               Sources &amp; Transparency
             </div>
-            <h2 style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 8px 0; color: var(--text-main);">
-              Data Sources, Methodology &amp; Known Limitations
+            <h2 style="font-size: 26px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 6px 0; color: var(--text-main);">
+              Data Sources, Limitations &amp; Credits
             </h2>
-            <p style="font-size: 14px; color: var(--text-muted); margin: 0;">
-              Full academic bibliography, analytical lab methods, acknowledged computational boundaries, and course team credits.
+            <p style="font-size: 15px; color: var(--text-muted); margin: 0;">
+              Full academic bibliography, acknowledged boundary conditions, and Group 45 attribution.
             </p>
           </div>
 
           <!-- Academic Bibliography Card -->
           <div class="biblio-card">
-            <div style="font-size: 16px; font-weight: 700; color: var(--text-main); margin-bottom: 18px; display: flex; align-items: center; gap: 8px;">
+            <div style="font-size: 18px; font-weight: 700; color: var(--text-main); margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #0071e3;">
                 <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
                 <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
               </svg>
               Empirical Data Sources &amp; Academic Bibliography
             </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 13px; line-height: 1.6; color: #3a3a3c;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 22px; font-size: 14.5px; line-height: 1.6; color: #2c2c2e;">
               <div>
-                <p><strong>1. IFCT 2017 (ICMR-NIN):</strong> Indian Food Composition Tables, National Institute of Nutrition. Contains 1,003 primary food components with proximate and lipid profile assays.</p>
-                <p><strong>2. INDB:</strong> Indian Nutrient Databank. Standardized corpus of 1,014 traditional recipes providing our culinary baseline.</p>
-                <p><strong>3. ICMR-NIN 2024:</strong> Dietary Guidelines for Indians. Establishes SFA ceilings (&lt;10% general, &lt;5% high-risk), total fat ceiling (30% energy), and 2,240 kcal urban adult baseline.</p>
-                <p><strong>4. Gupta et al. (2016):</strong> Soxhlet lipid extraction and fatty acid profiling of cooked foods and street snacks available in Delhi.</p>
+                <p style="margin: 0 0 10px 0;"><strong>1. Unified Composition Table (746 rows):</strong> 542 entries from <strong>IFCT 2017</strong> (ICMR-NIN), plus 144 INDB UK, 54 INDB US, and 6 Indian retail dairy labels (<code>L901–L906</code>).</p>
+                <p style="margin: 0 0 10px 0;"><strong>2. INDB (Indian Nutrient Databank):</strong> Standardized corpus of 1,014 traditional recipes providing our D3 culinary baseline.</p>
+                <p style="margin: 0 0 10px 0;"><strong>3. ICMR-NIN DGI 2024 &amp; NSO HCES 2022–24:</strong> Establishes SFA ceilings (&lt;10% general, &lt;7% high-risk), total fat (30%E), sugar (25g), salt (5g), and 2,240 kcal urban baseline.</p>
+                <p style="margin: 0;"><strong>4. Gupta et al. (2016):</strong> Soxhlet lipid extraction of 21 Delhi street foods across village and urban samples.</p>
               </div>
               <div>
-                <p><strong>5. UK CoFID (2021):</strong> Composition of Foods Integrated Dataset. Proximate lab values for ethnic restaurant and takeaway portions.</p>
-                <p><strong>6. Neethu et al. (2025):</strong> Controlled deep immersion frying trials of traditional milk-solid sweets (Gulab Jamun / Pantoa) in ghee vs vegetable oil.</p>
-                <p><strong>7. ICMR-INDIAB (Nature Medicine 2025):</strong> Cross-sectional epidemiological study (<em>n</em>=18,090) reporting national SFA consumption patterns.</p>
+                <p style="margin: 0 0 10px 0;"><strong>5. UK CoFID (2021) &amp; safefood (2015):</strong> Proximate lab analyses for Indian home, restaurant takeaway, and retail snacks.</p>
+                <p style="margin: 0 0 10px 0;"><strong>6. Joshee (2019), Neethu (2025) &amp; Controlled Trials:</strong> GC-FID fatty acid profiles and controlled frying studies (Chen 2009, Sakhale 2011, Yadav 2012, Gaikwad 2022, Jain 2024).</p>
+                <p style="margin: 0;"><strong>7. ICMR-INDIAB-21 (<em>Nat Med</em> 2025, <em>n</em>=18,090) &amp; Phenome India (2026):</strong> National dietary fat/carb intake and 38.9% Indian adult MASLD prevalence.</p>
               </div>
             </div>
           </div>
 
           <!-- Transparent Limitations Card -->
           <div class="limitations-card">
-            <div style="font-size: 16px; font-weight: 700; color: #b25e00; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
+            <div style="font-size: 18px; font-weight: 700; color: #b25e00; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
                 <line x1="12" y1="9" x2="12" y2="13"></line>
@@ -3560,22 +3621,22 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
               </svg>
               Acknowledged Model Limitations &amp; Boundary Conditions
             </div>
-            <div style="font-size: 13px; line-height: 1.65; color: #3a3a3c; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div style="font-size: 14.5px; line-height: 1.65; color: #2c2c2e; display: grid; grid-template-columns: 1fr 1fr; gap: 22px;">
               <div>
-                <p style="margin: 0 0 12px 0;"><strong>&bull; Confection Frying Mass Distortion:</strong> In syrup-soaked sweets (Gulab Jamun, Jalebi), finished food mass includes heavy sugar syrup, which inflates the mass multiplier used in absorbed fat re-injection. Affects ~5% of corrected confections.</p>
-                <p style="margin: 0;"><strong>&bull; Unquantified Culinary Salt:</strong> Recipes listing <em>"salt to taste"</em> lack explicit gram weights. Sodium values for these dishes represent strict empirical lower bounds derived from inherent ingredient sodium.</p>
+                <p style="margin: 0 0 12px 0;"><strong>&bull; Confection Frying Mass Distortion:</strong> In syrup-soaked sweets (Gulab Jamun, Jalebi), finished food mass includes heavy sugar syrup, inflating the mass multiplier in absorbed fat re-injection (~5% of corrected recipes).</p>
+                <p style="margin: 0;"><strong>&bull; Unquantified Culinary Salt:</strong> Recipes listing <em>"salt to taste"</em> lack gram weights, so reported sodium is an empirical lower bound from intrinsic ingredients only.</p>
               </div>
               <div>
-                <p style="margin: 0 0 12px 0;"><strong>&bull; Pot-Level INDB Soup Coding:</strong> Soups &amp; Stews in INDB are coded at the preparation batch level rather than per-bowl service size, causing anomalous sodium figures in the raw atlas.</p>
-                <p style="margin: 0;"><strong>&bull; Schema.org Web Scraper Coverage:</strong> URL scraping requires structured JSON-LD (<code>schema.org/Recipe</code>). Supported on major recipe portals (~70% compliance across Indian recipe sites).</p>
+                <p style="margin: 0 0 12px 0;"><strong>&bull; Pot-Level INDB Soup Coding:</strong> Row 596 (<code>ASC079</code>) in INDB codes 0.5 cup stock as 120g commercial bouillon cubes, inflating the Soups &amp; Stews atlas median.</p>
+                <p style="margin: 0;"><strong>&bull; Schema.org Scraper Coverage:</strong> Planned URL scraping targets structured JSON-LD (<code>schema.org/Recipe</code>), supported on major Indian portals (~70% coverage).</p>
               </div>
             </div>
           </div>
 
           <!-- Course & Team Credits Callout -->
           <div style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
-            <div style="font-size: 15px; font-weight: 700; color: var(--text-main);">Group 45 &mdash; Computational Gastronomy (BIO544)</div>
-            <div style="font-size: 13px; color: var(--text-muted); margin-top: 6px; line-height: 1.5;">
+            <div style="font-size: 17px; font-weight: 700; color: var(--text-main);">Group 45 &mdash; Computational Gastronomy (BIO544)</div>
+            <div style="font-size: 15px; color: var(--text-muted); margin-top: 6px; line-height: 1.55;">
               <strong>Parth Verma</strong> (Roll No: 2024407) &nbsp;&middot;&nbsp; <strong>Pratyaksh Kumar</strong> (Roll No: 2024431)<br>
               Monsoon Semester 2026 &nbsp;&middot;&nbsp; <strong>Prof. Ganesh Bagler</strong> &nbsp;&middot;&nbsp; Center for Computational Biology, IIIT-Delhi
             </div>
