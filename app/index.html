@@ -1148,6 +1148,90 @@
       font-weight: 600;
     }
 
+    table.data-table tfoot tr.table-totals-row td {
+      background: #f5f5f7;
+      font-weight: 700;
+      border-top: 2px solid #d2d2d7;
+      color: var(--text-main);
+    }
+
+    table.data-table tfoot tr.table-perserving-row td {
+      background: #f0f7ff;
+      font-weight: 700;
+      border-top: 1px solid #d0e2ff;
+      color: #0051ba;
+    }
+
+    .verdict-kpi-tile.tile-neutral {
+      background: #f7f7fa;
+      border-color: #e5e5ea;
+      border-left-color: #5856d6;
+    }
+
+    /* Section 3: Calorie Breakdown Card */
+    .calorie-breakdown-section {
+      margin-bottom: 56px;
+    }
+
+    .calorie-breakdown-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    }
+
+    .calorie-math-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      background: #f8fafd;
+      border: 1px solid #d0e2ff;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 18px;
+      font-size: 16px;
+      color: var(--text-main);
+    }
+
+    .calorie-math-op {
+      font-weight: 700;
+      color: var(--color-accent);
+      font-size: 18px;
+    }
+
+    .calorie-stacked-track {
+      display: flex;
+      height: 22px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #f2f2f7;
+      margin-bottom: 14px;
+      gap: 2px;
+    }
+
+    .calorie-stacked-seg {
+      height: 100%;
+      transition: width 0.5s ease;
+    }
+
+    .calorie-legend-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-bottom: 18px;
+      font-size: 14px;
+      color: var(--text-body);
+    }
+
+    .calorie-legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-weight: 500;
+    }
+
     .mono-cell {
       font-family: var(--font-mono);
       font-weight: 500;
@@ -1998,8 +2082,15 @@
             <div class="report-header-block">
               <h1 class="report-main-title" x-text="`${formatDishName(activeResult.recipe.dish)}: Per-Serving Footprint`"></h1>
               <p class="report-sub-title">
-                One serving (<strong x-text="`1/${activeResult.recipe.servings} of the recipe, ${servingMassG}g`"></strong>) compared against your <strong>full 24-hour adult allowance</strong> (ICMR-NIN 2024 · 2,240 kcal urban baseline &amp; WHO guidelines).
+                One serving (<strong x-text="hasNoServingsWarning ? `whole recipe, ${servingMassG}g` : `1/${servingCount} of the recipe, ${servingMassG}g`"></strong>) compared against your <strong>full 24-hour adult allowance</strong> (ICMR-NIN 2024 · 2,240 kcal urban baseline &amp; WHO guidelines).
               </p>
+
+              <div x-show="hasNoServingsWarning" class="frying-callout-strip" style="margin-bottom: 18px; padding: 12px 18px;">
+                <span style="font-size: 18px;">⚠️</span>
+                <div>
+                  <strong>Servings Not Specified:</strong> This recipe did not list a serving count, so figures below represent the <strong>entire recipe</strong> as 1 serving.
+                </div>
+              </div>
 
               <div class="dish-macro-strip">
                 <span style="font-weight: 700; color: var(--text-muted); text-transform: uppercase; font-size: 12px; letter-spacing: 0.04em;">1 Serving Nutrition:</span>
@@ -2036,10 +2127,10 @@
                       <div class="kpi-tile-sub" x-text="`${activeResult.per_serving.added_sugar_g.toFixed(1)}g / 25.0g daily limit`"></div>
                     </div>
 
-                    <div class="verdict-kpi-tile" :class="activeResult.per_serving.refined_carb_g >= 20 ? 'tile-warning' : 'tile-safe'">
-                      <div class="kpi-tile-label">Refined Starches</div>
+                    <div class="verdict-kpi-tile tile-neutral">
+                      <div class="kpi-tile-label">Refined Starches (No Cap)</div>
                       <div class="kpi-tile-val" x-text="`${activeResult.per_serving.refined_carb_g.toFixed(1)}g`"></div>
-                      <div class="kpi-tile-sub" x-text="activeResult.per_serving.refined_carb_g >= 20 ? 'High maida / white rice' : (activeResult.per_serving.refined_carb_g > 0 ? 'Low refined grain' : 'No maida / white rice')"></div>
+                      <div class="kpi-tile-sub" x-text="activeResult.per_serving.refined_carb_g > 0 ? `${dishQuality.refinedCalPct}% of dish kcal · ${activeResult.per_serving.fibre_g.toFixed(1)}g fibre` : 'No maida or polished rice'"></div>
                     </div>
 
                     <div class="verdict-kpi-tile" :class="getTileClass(activeResult.footprint.axes.energy_kcal.pct_of_limit)">
@@ -2051,8 +2142,7 @@
 
                   <div class="verdict-quality-bar">
                     <strong>Calorie Composition:</strong>
-                    <span x-text="`${dishQuality.liverRiskCalPct}%`"></span> of this serving's calories come from liver-stress substrates
-                    (SFA + added sugar + refined flour), vs. <strong x-text="`${dishQuality.proteinCalPct}%`"></strong> from protein.
+                    <span x-text="dishQualitySummary"></span>
                   </div>
                 </div>
 
@@ -2195,14 +2285,14 @@
                       <span class="gauge-amount" x-text="`${activeResult.per_serving.refined_carb_g.toFixed(1)}g`"></span>
                     </div>
                     <div class="gauge-bar-track" style="margin-top: 18px;">
-                      <div class="gauge-bar-fill" :class="activeResult.per_serving.refined_carb_g >= 35 ? 'fill-danger' : (activeResult.per_serving.refined_carb_g >= 20 ? 'fill-warning' : 'fill-neutral')" :style="`width: ${Math.min(activeResult.per_serving.refined_carb_g * 1.5, 100)}%`"></div>
+                      <div class="gauge-bar-fill" style="background-color: #5856d6;" :style="`width: ${Math.min(dishQuality.refinedCalPct, 100)}%`"></div>
                     </div>
                     <div class="gauge-limit-legend">
                       <span x-text="`${dishQuality.refinedCalPct}% of this serving's calories`"></span>
-                      <span style="font-weight: 700;" x-text="`${activeResult.per_serving.refined_carb_g.toFixed(1)}g per serving`"></span>
+                      <span style="font-weight: 700;" x-text="`Fibre alongside: ${activeResult.per_serving.fibre_g.toFixed(1)}g`"></span>
                     </div>
                     <div class="gauge-clinical-tag">
-                      Reported in raw grams (no ICMR-NIN cap). Fast-digesting starch triggers liver fat synthesis.
+                      No standalone ICMR-NIN daily gram cap. Tracked because low-fibre refined grains (maida, white rice — 62.3% of Indian energy per ICMR-INDIAB 2025) spike insulin and drive liver fat synthesis (de novo lipogenesis).
                     </div>
                   </div>
 
@@ -2427,11 +2517,93 @@
               </div>
             </div>
 
-            <!-- SECTION 3: INGREDIENT AUDIT TABLE -->
+            <!-- SECTION 3: CALORIE BREAKDOWN (WHOLE RECIPE -> 1 SERVING) -->
+            <div class="calorie-breakdown-section">
+              <div class="dashboard-section-header">
+                <div class="section-title">
+                  <span>🔥</span> Section 3 · Calorie Breakdown (Recipe Total &rarr; 1 Serving)
+                </div>
+                <div class="section-desc">
+                  How the whole recipe's calories divide across servings, and what share of your <strong>2,240 kcal daily budget</strong> each ingredient contributes per serving.
+                </div>
+              </div>
+
+              <div class="calorie-breakdown-card">
+                <div class="calorie-math-bar">
+                  <span>Whole Recipe: <strong x-text="`${Math.round(activeResult.totals.energy_kcal).toLocaleString()} kcal`"></strong></span>
+                  <span class="calorie-math-op">&divide;</span>
+                  <span><strong x-text="`${servingCount} serving${servingCount === 1 ? '' : 's'}`"></strong></span>
+                  <span class="calorie-math-op">=</span>
+                  <span>1 Serving: <strong style="color: #0051ba;" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal`"></strong></span>
+                  <span class="badge badge-blue" style="font-size: 13px; padding: 4px 10px;" x-text="`${activeResult.footprint.axes.energy_kcal.pct_of_limit.toFixed(1)}% of 2,240 kcal day`"></span>
+                </div>
+
+                <!-- Stacked Visual Calorie Bar -->
+                <div class="calorie-stacked-track" x-show="calorieBreakdown.items.length > 0">
+                  <template x-for="(item, idx) in calorieBreakdown.items" :key="item.name + idx">
+                    <div class="calorie-stacked-seg"
+                         :title="`${item.name}: ${Math.round(item.perServingKcal)} kcal (${item.pctOfRecipe.toFixed(1)}%)`"
+                         :style="`width: ${item.pctOfRecipe}%; background-color: ${getDriverColor(idx, item.isRest)}`">
+                    </div>
+                  </template>
+                </div>
+
+                <div class="calorie-legend-strip" x-show="calorieBreakdown.items.length > 0">
+                  <template x-for="(item, idx) in calorieBreakdown.items" :key="'leg-' + item.name + idx">
+                    <span class="calorie-legend-item">
+                      <span class="color-swatch-dot" :style="`background-color: ${getDriverColor(idx, item.isRest)}`"></span>
+                      <span x-text="`${item.name}: ${Math.round(item.perServingKcal)} kcal (${item.pctOfDay.toFixed(1)}% day)`"></span>
+                    </span>
+                  </template>
+                </div>
+
+                <!-- Concise Calorie Breakdown Table -->
+                <div class="data-table-container" style="margin-top: 8px;">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>Ingredient (1 Serving Share)</th>
+                        <th>Whole Recipe (kcal)</th>
+                        <th>1 Serving (kcal)</th>
+                        <th>% of Recipe Calories</th>
+                        <th>% of 2,240 kcal Day</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <template x-for="item in calorieBreakdown.items" :key="'calrow-' + item.name">
+                        <tr>
+                          <td style="font-weight: 600;">
+                            <span x-text="item.name"></span>
+                            <span style="font-size: 12.5px; font-weight: 400; color: var(--text-muted);" x-text="item.servingMassText ? `(${item.servingMassText})` : ''"></span>
+                          </td>
+                          <td class="mono-cell" x-text="Math.round(item.potKcal).toLocaleString()"></td>
+                          <td class="mono-cell" style="font-weight: 700;" x-text="`${Math.round(item.perServingKcal)} kcal`"></td>
+                          <td class="mono-cell" x-text="`${item.pctOfRecipe.toFixed(1)}%`"></td>
+                          <td class="mono-cell">
+                            <span class="badge" :class="item.pctOfDay >= 15 ? 'badge-amber' : 'badge-gray'" style="font-size: 12.5px;" x-text="`${item.pctOfDay.toFixed(1)}%`"></span>
+                          </td>
+                        </tr>
+                      </template>
+                    </tbody>
+                    <tfoot>
+                      <tr class="table-totals-row">
+                        <td x-text="`Total (${servingCount} serving${servingCount === 1 ? '' : 's'} → 1 serving)`"></td>
+                        <td class="mono-cell" x-text="Math.round(activeResult.totals.energy_kcal).toLocaleString()"></td>
+                        <td class="mono-cell" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal`"></td>
+                        <td class="mono-cell">100.0%</td>
+                        <td class="mono-cell" x-text="`${activeResult.footprint.axes.energy_kcal.pct_of_limit.toFixed(1)}%`"></td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 4: INGREDIENT AUDIT TABLE -->
             <div class="ingredient-audit-section" style="margin-bottom: 56px;">
               <div class="dashboard-section-header">
                 <div class="section-title">
-                  <span>📋</span> Section 3 · Full Ingredient Audit Table
+                  <span>📋</span> Section 4 · Full Ingredient Audit Table
                 </div>
                 <div class="section-desc">
                   Every recipe line parsed, weighed, and matched to <strong>IFCT 2017 / INDB</strong> (<span x-text="`${activeResult.coverage.lines_included} of ${activeResult.coverage.lines_total} lines included · ${Math.round(activeResult.coverage.included_mass_g)}g total mass`"></span>).
@@ -2446,14 +2618,15 @@
                   <thead>
                     <tr>
                       <th>Raw Line</th>
-                      <th>Qty</th>
                       <th>Mass</th>
                       <th>Fat (g)</th>
                       <th>SFA (g)</th>
                       <th>Carbs (g)</th>
                       <th>Protein (g)</th>
                       <th>Sodium (mg)</th>
-                      <th>Energy</th>
+                      <th>Pot Energy</th>
+                      <th>1 Serving (÷<span x-text="servingCount"></span>)</th>
+                      <th>% Day kcal</th>
                       <th>IFCT Match &amp; Basis</th>
                       <th>Status</th>
                     </tr>
@@ -2462,14 +2635,15 @@
                     <template x-for="line in activeResult.lines" :key="line.index">
                       <tr :class="{ 'row-excluded': !line.included }">
                         <td style="font-weight: 600;" x-text="line.raw"></td>
-                        <td class="mono-cell" x-text="line.parsed.qty ? `${line.parsed.qty} ${line.parsed.unit || ''}` : '—'"></td>
                         <td class="mono-cell" x-text="line.grams ? `${line.grams.toFixed(0)}g` : '—'"></td>
                         <td class="mono-cell" x-text="line.nutrients && line.nutrients.fat_g !== null ? line.nutrients.fat_g.toFixed(1) : '—'"></td>
                         <td class="mono-cell" style="font-weight: 700;" x-text="line.nutrients && line.nutrients.sfa_g !== null ? line.nutrients.sfa_g.toFixed(1) : '—'"></td>
                         <td class="mono-cell" x-text="line.nutrients && line.nutrients.carb_g !== null ? line.nutrients.carb_g.toFixed(1) : '—'"></td>
                         <td class="mono-cell" x-text="line.nutrients && line.nutrients.protein_g !== null ? line.nutrients.protein_g.toFixed(1) : '—'"></td>
                         <td class="mono-cell" x-text="line.nutrients && line.nutrients.sodium_mg !== null ? Math.round(line.nutrients.sodium_mg) : '—'"></td>
-                        <td class="mono-cell" x-text="line.nutrients && line.nutrients.energy_kcal !== null ? `${Math.round(line.nutrients.energy_kcal)} kcal` : '—'"></td>
+                        <td class="mono-cell" x-text="line.included && line.nutrients && line.nutrients.energy_kcal !== null ? `${Math.round(line.nutrients.energy_kcal)} kcal` : (line.nutrients && line.nutrients.energy_kcal ? `${Math.round(line.nutrients.energy_kcal)} (excl.)` : '—')"></td>
+                        <td class="mono-cell" style="font-weight: 700;" x-text="line.included && line.nutrients && line.nutrients.energy_kcal !== null ? `${Math.round(line.nutrients.energy_kcal / servingCount)} kcal` : '—'"></td>
+                        <td class="mono-cell" x-text="line.included && line.nutrients && line.nutrients.energy_kcal !== null ? `${((line.nutrients.energy_kcal / servingCount) / dailyEnergyLimit * 100).toFixed(1)}%` : '—'"></td>
                         <td class="mono-cell" style="font-size: 12.5px;">
                           <span x-text="line.match ? `${line.match.code} (${line.match.method} ${line.match.score.toFixed(2)})` : '—'"></span>
                           <div style="font-size: 11px; color: var(--text-muted);" x-text="line.grams_basis || ''"></div>
@@ -2482,14 +2656,15 @@
                     <!-- Synthetic Absorbed Frying Fat Row when Frying Bath Correction ran -->
                     <tr x-show="activeResult.frying_correction && activeResult.frying_correction.applied" class="row-frying-injected">
                       <td>⚡ Absorbed Frying Oil (<span x-text="activeResult.frying_correction ? activeResult.frying_correction.lab_match : ''"></span>)</td>
-                      <td class="mono-cell">Lab rate</td>
                       <td class="mono-cell" x-text="activeResult.frying_correction ? `${activeResult.frying_correction.absorbed_fat_g.toFixed(1)}g oil` : ''"></td>
                       <td class="mono-cell" x-text="activeResult.frying_correction ? activeResult.frying_correction.absorbed_fat_g.toFixed(1) : ''"></td>
                       <td class="mono-cell" x-text="activeResult.frying_correction ? activeResult.frying_correction.absorbed_sfa_g.toFixed(1) : ''"></td>
                       <td class="mono-cell">0.0</td>
                       <td class="mono-cell">0.0</td>
                       <td class="mono-cell">0</td>
-                      <td class="mono-cell" x-text="activeResult.frying_correction ? `${Math.round(activeResult.frying_correction.absorbed_fat_g * 9)} kcal` : ''"></td>
+                      <td class="mono-cell" x-text="`${Math.round(calorieBreakdown.fryingInjectedKcal)} kcal`"></td>
+                      <td class="mono-cell" x-text="`${Math.round(calorieBreakdown.fryingInjectedKcal / servingCount)} kcal`"></td>
+                      <td class="mono-cell" x-text="`${((calorieBreakdown.fryingInjectedKcal / servingCount) / dailyEnergyLimit * 100).toFixed(1)}%`"></td>
                       <td class="mono-cell" style="font-size: 12.5px;">
                         <span x-text="activeResult.frying_correction ? `${activeResult.frying_correction.fat_g_per_100g_lab}g/100g` : ''"></span>
                         <div style="font-size: 11px; color: #944000;">LAB_SOXHLET_INJECTED</div>
@@ -2499,6 +2674,34 @@
                       </td>
                     </tr>
                   </tbody>
+                  <tfoot>
+                    <tr class="table-totals-row">
+                      <td>Whole Recipe Total</td>
+                      <td class="mono-cell" x-text="`${Math.round(activeResult.coverage.included_mass_g)}g`"></td>
+                      <td class="mono-cell" x-text="activeResult.totals.fat_g.toFixed(1)"></td>
+                      <td class="mono-cell" x-text="activeResult.totals.sfa_g.toFixed(1)"></td>
+                      <td class="mono-cell" x-text="activeResult.totals.carb_g.toFixed(1)"></td>
+                      <td class="mono-cell" x-text="activeResult.totals.protein_g.toFixed(1)"></td>
+                      <td class="mono-cell" x-text="Math.round(activeResult.totals.sodium_mg)"></td>
+                      <td class="mono-cell" x-text="`${Math.round(activeResult.totals.energy_kcal)} kcal`"></td>
+                      <td class="mono-cell">—</td>
+                      <td class="mono-cell">—</td>
+                      <td colspan="2" style="font-size: 12.5px; color: var(--text-muted);" x-text="`Sum across ${activeResult.coverage.lines_included} included lines`"></td>
+                    </tr>
+                    <tr class="table-perserving-row">
+                      <td x-text="`Per Serving (÷ ${servingCount})`"></td>
+                      <td class="mono-cell" x-text="`${servingMassG}g`"></td>
+                      <td class="mono-cell" x-text="activeResult.per_serving.fat_g.toFixed(1)"></td>
+                      <td class="mono-cell" x-text="activeResult.per_serving.sfa_g.toFixed(1)"></td>
+                      <td class="mono-cell" x-text="activeResult.per_serving.carb_g.toFixed(1)"></td>
+                      <td class="mono-cell" x-text="activeResult.per_serving.protein_g.toFixed(1)"></td>
+                      <td class="mono-cell" x-text="Math.round(activeResult.per_serving.sodium_mg)"></td>
+                      <td class="mono-cell">—</td>
+                      <td class="mono-cell" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal`"></td>
+                      <td class="mono-cell" x-text="`${activeResult.footprint.axes.energy_kcal.pct_of_limit.toFixed(1)}%`"></td>
+                      <td colspan="2" style="font-size: 12.5px;">Compared against 24h limits in Section 1</td>
+                    </tr>
+                  </tfoot>
                 </table>
               </div>
             </div>
@@ -3593,16 +3796,24 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
           return map[this.currentAxis] || 'Daily Limit';
         },
 
+        get servingCount() {
+          const s = this.activeResult?.recipe?.servings;
+          return (s && s > 0) ? s : 1;
+        },
+
+        get dailyEnergyLimit() {
+          return this.activeResult?.footprint?.axes?.energy_kcal?.limit || 2240;
+        },
+
         get servingMassG() {
           if (!this.activeResult) return 0;
           const mass = this.activeResult.coverage?.included_mass_g || 0;
-          const srv = this.activeResult.recipe?.servings || 1;
-          return Math.round(mass / srv);
+          return Math.round(mass / this.servingCount);
         },
 
         get dishQuality() {
           if (!this.activeResult) {
-            return { liverRiskCalPct: 0, proteinCalPct: 0, refinedCalPct: 0, sfaShareOfFatPct: 0 };
+            return { liverRiskCalPct: 0, proteinCalPct: '0.0', refinedCalPct: 0, sfaShareOfFatPct: 0 };
           }
           const ps = this.activeResult.per_serving;
           const kcal = Math.max(ps.energy_kcal || 0, 1);
@@ -3620,10 +3831,27 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
           };
         },
 
+        get dishQualitySummary() {
+          if (!this.activeResult) return '';
+          const ps = this.activeResult.per_serving;
+          const kcal = ps.energy_kcal || 0;
+          if (kcal < 20) {
+            return `Negligible caloric load (${Math.round(kcal)} kcal per serving).`;
+          }
+          const riskPct = this.dishQuality.liverRiskCalPct;
+          const protPct = parseFloat(this.dishQuality.proteinCalPct);
+          if (riskPct >= 50) {
+            return `Dense risk substrate share: ${riskPct}% of this serving's calories come from SFA, added sugar, or refined flour, vs. ${protPct}% from protein.`;
+          }
+          if (riskPct < 20 && protPct >= 15) {
+            return `Protein-rich balance: ${protPct}% of this serving's calories come from protein, with only ${riskPct}% from liver-stress substrates.`;
+          }
+          return `${riskPct}% of this serving's calories come from liver-stress substrates (SFA + added sugar + refined flour), vs. ${protPct}% from protein.`;
+        },
+
         get liverSummary() {
           if (!this.activeResult) return { verdictText: '—', pillClass: 'pill-safe' };
           const axes = this.activeResult.footprint.axes;
-          const refinedG = this.activeResult.per_serving?.refined_carb_g || 0;
           const elevated = [];
           const high = [];
 
@@ -3636,8 +3864,6 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
             if (pct >= 60) high.push(label);
             else if (pct >= 30) elevated.push(label);
           });
-          if (refinedG >= 35) high.push('Refined Starch');
-          else if (refinedG >= 20) elevated.push('Refined Starch');
 
           if (high.length > 0) {
             const all = [...high, ...elevated];
@@ -3680,10 +3906,18 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
           if (!this.activeResult) return '';
           const axes = this.activeResult.footprint.axes;
           const calPct = axes.energy_kcal?.pct_of_limit || 0;
-          const sfaPct = axes.sfa_g?.pct_of_limit || 0;
-          if (calPct > 0 && sfaPct / calPct >= 2.0) {
-            const ratio = (sfaPct / calPct).toFixed(1);
-            return `Saturated fat density is ${ratio}× higher than calorie share (${Math.round(sfaPct)}% SFA vs ${Math.round(calPct)}% calories).`;
+          if (calPct <= 0) return 'NSO 2024 urban adult baseline (2,240 kcal/day).';
+
+          const candidates = [
+            { name: 'Saturated fat', short: 'SFA', pct: axes.sfa_g?.pct_of_limit || 0 },
+            { name: 'Added sugar', short: 'sugar', pct: axes.added_sugar_g?.pct_of_limit || 0 },
+            { name: 'Sodium', short: 'sodium', pct: axes.sodium_mg?.pct_of_limit || 0 }
+          ].sort((a, b) => b.pct - a.pct);
+
+          const top = candidates[0];
+          if (top.pct >= 15 && top.pct / calPct >= 2.0) {
+            const ratio = (top.pct / calPct).toFixed(1);
+            return `${top.name} density is ${ratio}× higher than calorie share (${Math.round(top.pct)}% ${top.short} vs ${Math.round(calPct)}% calories).`;
           }
           return 'NSO 2024 urban adult baseline (2,240 kcal/day).';
         },
@@ -3786,11 +4020,99 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
           if (!drivers.length) {
             return `None of the included ingredients contribute measurable ${axisName} in this dish.`;
           }
-          if (drivers.length === 1) {
-            return `${drivers[0].name} alone supplies ${drivers[0].pct.toFixed(1)}% of all ${axisName} in this recipe.`;
+
+          // Guard against dramatizing tiny trace amounts (< 5% daily limit or < 5g refined carb)
+          const ax = this.activeResult.footprint.axes[this.currentAxis];
+          const isTrace = this.currentAxis === 'refined_carb_g'
+            ? (this.activeResult.per_serving?.refined_carb_g || 0) < 5
+            : (ax?.pct_of_limit !== null && ax?.pct_of_limit < 5);
+
+          const prefix = isTrace ? 'Minimal load (<5% of daily limit): ' : '';
+
+          if (drivers.length === 1 || drivers[0].pct >= 60) {
+            return `${prefix}${drivers[0].name} alone supplies ${drivers[0].pct.toFixed(1)}% of this dish's ${axisName}.`;
           }
-          const combined = (drivers[0].pct + drivers[1].pct).toFixed(1);
-          return `Just 2 items — ${drivers[0].name} (${drivers[0].pct.toFixed(1)}%) and ${drivers[1].name} (${drivers[1].pct.toFixed(1)}%) — drive ${combined}% of this dish's ${axisName}.`;
+          const top2Sum = drivers[0].pct + drivers[1].pct;
+          if (top2Sum >= 65) {
+            return `${prefix}Just 2 items — ${drivers[0].name} (${drivers[0].pct.toFixed(1)}%) and ${drivers[1].name} (${drivers[1].pct.toFixed(1)}%) — drive ${top2Sum.toFixed(1)}% of this dish's ${axisName}.`;
+          }
+          if (drivers.length >= 3) {
+            const top3Sum = top2Sum + drivers[2].pct;
+            if (top3Sum >= 75) {
+              return `${prefix}The top 3 ingredients (${drivers[0].name}, ${drivers[1].name}, ${drivers[2].name}) account for ${top3Sum.toFixed(1)}% of ${axisName}.`;
+            }
+          }
+          const totalIncluded = this.activeResult.lines.filter(l => l.included).length;
+          return `${prefix}${this.inspectedAxisTitle} is distributed across ${totalIncluded} ingredients, led by ${drivers[0].name} (${drivers[0].pct.toFixed(1)}%) and ${drivers[1].name} (${drivers[1].pct.toFixed(1)}%).`;
+        },
+
+        get calorieBreakdown() {
+          if (!this.activeResult) return { items: [], fryingInjectedKcal: 0 };
+          const srv = this.servingCount;
+          const dayLimit = this.dailyEnergyLimit;
+          const included = this.activeResult.lines.filter(l => l.included);
+          const potTotal = this.activeResult.totals?.energy_kcal || 0;
+
+          let sumIncludedKcal = 0;
+          const rawItems = [];
+          for (const l of included) {
+            const k = l.nutrients?.energy_kcal || 0;
+            sumIncludedKcal += k;
+            if (k > 0) {
+              rawItems.push({
+                name: l.parsed.name,
+                servingMassText: l.grams ? `${Math.round(l.grams / srv)}g` : '',
+                potKcal: k,
+                perServingKcal: k / srv,
+                isRest: false
+              });
+            }
+          }
+
+          let fryingInjectedKcal = 0;
+          const fc = this.activeResult.frying_correction;
+          if (fc && fc.applied) {
+            fryingInjectedKcal = Math.max(potTotal - sumIncludedKcal, 0);
+            if (fryingInjectedKcal > 0.5) {
+              rawItems.push({
+                name: `Absorbed frying oil (${fc.lab_match || 'Lab'})`,
+                servingMassText: `${(fc.absorbed_fat_g / srv).toFixed(1)}g`,
+                potKcal: fryingInjectedKcal,
+                perServingKcal: fryingInjectedKcal / srv,
+                isRest: false
+              });
+            }
+          }
+
+          const denom = potTotal > 0 ? potTotal : rawItems.reduce((s, r) => s + r.potKcal, 0);
+          if (denom <= 0) return { items: [], fryingInjectedKcal: 0 };
+
+          rawItems.forEach(item => {
+            item.pctOfRecipe = (item.potKcal / denom) * 100;
+            item.pctOfDay = (item.perServingKcal / dayLimit) * 100;
+          });
+          rawItems.sort((a, b) => b.potKcal - a.potKcal);
+
+          if (rawItems.length <= 5) {
+            return { items: rawItems, fryingInjectedKcal };
+          }
+
+          const top5 = rawItems.slice(0, 5);
+          const rest = rawItems.slice(5);
+          const restPot = rest.reduce((s, r) => s + r.potKcal, 0);
+          const restSrv = restPot / srv;
+          if (restPot > 0.5) {
+            top5.push({
+              name: `Remaining ${rest.length} ingredients`,
+              servingMassText: '',
+              potKcal: restPot,
+              perServingKcal: restSrv,
+              pctOfRecipe: (restPot / denom) * 100,
+              pctOfDay: (restSrv / dayLimit) * 100,
+              isRest: true
+            });
+          }
+          return { items: top5, fryingInjectedKcal };
         },
 
         get donutCenterText() {
@@ -3838,6 +4160,11 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
         get hasSaltWarning() {
           if (!this.activeResult || !this.activeResult.warnings) return false;
           return this.activeResult.warnings.some(w => w.includes('SALT_UNQUANTIFIED'));
+        },
+
+        get hasNoServingsWarning() {
+          if (!this.activeResult || !this.activeResult.warnings) return false;
+          return this.activeResult.warnings.some(w => w.includes('NO_SERVINGS'));
         },
 
         getFillClass(pct) {
