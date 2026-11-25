@@ -1134,11 +1134,77 @@ window.DEMO_RECIPES = {
       "applied": true,
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 460.0,
+      "non_oil_mass_g": 486.0,
       "absorbed_fat_g": 60.264,
       "absorbed_sfa_g": 29.625782400000002,
+      "absorbed_fat_per_serving_g": 7.533,
+      "absorbed_sfa_per_serving_g": 3.7032228000000003,
       "fat_g_per_100g_lab": 12.4,
       "sfa_pct_of_fat_lab": 49.16,
-      "lab_match": "lab_match:Samosa"
+      "calculation_formula": "absorbed_fat_g = (486.0g non-oil mass / 100) * 12.40g/100g = 60.26g",
+      "lab_match": "lab_match:Samosa",
+      "setting_requested": "auto",
+      "setting_used": "all_matched",
+      "fallback_used": false,
+      "fallback_reason": null,
+      "matched_rows_count": 5,
+      "matched_sources": [
+        {
+          "source": "Gupta 2016",
+          "item": "Samosa",
+          "setting": "street",
+          "category": "stuffed pastry",
+          "oil": "Vanaspati/Palm",
+          "fat_g_100g": 29.62,
+          "sfa_pct_of_fat": 60.21,
+          "method": "Soxhlet",
+          "n_samples": "1"
+        },
+        {
+          "source": "Gupta 2016",
+          "item": "Samosa",
+          "setting": "street",
+          "category": "stuffed pastry",
+          "oil": "Vanaspati/Palm",
+          "fat_g_100g": 29.19,
+          "sfa_pct_of_fat": 49.16,
+          "method": "Soxhlet",
+          "n_samples": "1"
+        },
+        {
+          "source": "Sakhale 2011",
+          "item": "Samosa (Control)",
+          "setting": "lab-controlled",
+          "category": "stuffed pastry",
+          "oil": "Groundnut oil",
+          "fat_g_100g": 12.4,
+          "sfa_pct_of_fat": null,
+          "method": "proximate",
+          "n_samples": "3"
+        },
+        {
+          "source": "Sakhale 2011",
+          "item": "Samosa (Modified casing)",
+          "setting": "lab-controlled",
+          "category": "stuffed pastry",
+          "oil": "Groundnut oil",
+          "fat_g_100g": 8.97,
+          "sfa_pct_of_fat": null,
+          "method": "proximate",
+          "n_samples": "3"
+        },
+        {
+          "source": "Joshee 2019",
+          "item": "Samosa",
+          "setting": "restaurant-takeaway",
+          "category": "stuffed pastry",
+          "oil": "Mixed/Unknown",
+          "fat_g_100g": 7.71,
+          "sfa_pct_of_fat": 42.1,
+          "method": "FAME-sum",
+          "n_samples": "3"
+        }
+      ]
     }
   },
   "chicken_biryani": {

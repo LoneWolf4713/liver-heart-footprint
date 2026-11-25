@@ -11,6 +11,12 @@ def main(argv=None):
     parser.add_argument("recipe", help="Path to recipe JSON file")
     parser.add_argument("--setting", default="urban", choices=["urban", "rural"], help="Setting (urban or rural)")
     parser.add_argument("--risk", default="general", choices=["general", "cardiometabolic"], help="Risk level (general or cardiometabolic)")
+    parser.add_argument(
+        "--frying-setting",
+        default="auto",
+        choices=["auto", "all", "street", "home", "restaurant-takeaway", "retail-packaged", "lab-controlled"],
+        help="Cooking setting for lab frying-fat lookup",
+    )
 
     args = parser.parse_args(argv)
 
@@ -22,7 +28,12 @@ def main(argv=None):
         sys.exit(2)
 
     try:
-        out = analyse_recipe(recipe_data, setting=args.setting, risk=args.risk)
+        out = analyse_recipe(
+            recipe_data,
+            setting=args.setting,
+            risk=args.risk,
+            frying_setting=args.frying_setting,
+        )
     except Exception as e:
         sys.stderr.write(f"Error analysing recipe: {e}\n")
         sys.exit(1)

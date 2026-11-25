@@ -238,7 +238,9 @@ def _lookup_lab_fat_details(dish_name: str, frying_setting: str = "auto") -> dic
             "setting_requested": norm_setting,
             "setting_used": "category_default",
             "fallback_used": norm_setting != "auto",
+            "fallback_reason": f"No dish-specific lab rows for {dish_name!r}; used '{category}' category default.",
             "matched_rows_count": 0,
+            "matched_sources": [],
             "category": category,
         }
 
@@ -246,6 +248,7 @@ def _lookup_lab_fat_details(dish_name: str, frying_setting: str = "auto") -> dic
     all_matched = matched_rows
     setting_used = "all_matched"
     fallback_used = False
+    fallback_reason = None
 
     if norm_setting == "auto":
         home_matches = [r for r in all_matched if r.get("setting") == "home"]
@@ -267,6 +270,10 @@ def _lookup_lab_fat_details(dish_name: str, frying_setting: str = "auto") -> dic
             matched_rows = all_matched
             setting_used = "all_matched_fallback"
             fallback_used = True
+            fallback_reason = (
+                f"No direct lab measurements found for {dish_name!r} under '{norm_setting}' setting; "
+                f"fell back to pooled median across {len(all_matched)} matched row(s)."
+            )
 
     # Step 7: Derive median fat and SFA from matched rows
     fat_vals = [r["fat_g_100g"] for r in matched_rows if r.get("fat_g_100g") is not None]
@@ -287,6 +294,21 @@ def _lookup_lab_fat_details(dish_name: str, frying_setting: str = "auto") -> dic
     matched_items_joined = ", ".join(item_names)
     match_desc = f"lab_match:{matched_items_joined}"
 
+    matched_sources = [
+        {
+            "source": r.get("source", ""),
+            "item": r.get("item", ""),
+            "setting": r.get("setting", ""),
+            "category": r.get("category", ""),
+            "oil": r.get("oil", ""),
+            "fat_g_100g": r.get("fat_g_100g"),
+            "sfa_pct_of_fat": r.get("SFA_pct_of_fat"),
+            "method": r.get("method", ""),
+            "n_samples": r.get("n_samples", ""),
+        }
+        for r in matched_rows
+    ]
+
     return {
         "fat_g_100g": fat_g_100g,
         "sfa_pct_of_fat": sfa_pct_of_fat,
@@ -294,7 +316,9 @@ def _lookup_lab_fat_details(dish_name: str, frying_setting: str = "auto") -> dic
         "setting_requested": norm_setting,
         "setting_used": setting_used,
         "fallback_used": fallback_used,
+        "fallback_reason": fallback_reason,
         "matched_rows_count": len(matched_rows),
+        "matched_sources": matched_sources,
     }
 
 
@@ -434,15 +458,24 @@ def correct_frying(
         "applied": True,
         "frying_bath_lines_count": len(frying_bath_lines),
         "oil_mass_removed_g": oil_mass_g,
+        "non_oil_mass_g": non_oil_mass_g,
         "absorbed_fat_g": absorbed_fat_g,
         "absorbed_sfa_g": absorbed_sfa_g,
+        "absorbed_fat_per_serving_g": (absorbed_fat_g / servings_val) if servings_val else None,
+        "absorbed_sfa_per_serving_g": (absorbed_sfa_g / servings_val) if servings_val else None,
         "fat_g_per_100g_lab": fat_g_100g,
         "sfa_pct_of_fat_lab": sfa_pct_of_fat,
+        "calculation_formula": (
+            f"absorbed_fat_g = ({non_oil_mass_g:.1f}g non-oil mass / 100) * "
+            f"{fat_g_100g:.2f}g/100g = {absorbed_fat_g:.2f}g"
+        ),
         "lab_match": match_desc,
         "setting_requested": lab_info["setting_requested"],
         "setting_used": lab_info["setting_used"],
         "fallback_used": lab_info["fallback_used"],
+        "fallback_reason": lab_info["fallback_reason"],
         "matched_rows_count": lab_info["matched_rows_count"],
+        "matched_sources": lab_info["matched_sources"],
     }
 
     return corrected_result

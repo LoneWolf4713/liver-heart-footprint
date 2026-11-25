@@ -1665,6 +1665,91 @@
       border-top: 1px solid #ffe2b8;
     }
 
+    .hero-error-banner {
+      margin-top: 12px;
+      background: #fff1f0;
+      border: 1px solid #ffa39e;
+      border-radius: 10px;
+      padding: 12px 16px;
+      color: #a8071a;
+      font-size: 13.5px;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    .d4-view-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: #f8f9fb;
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 10px 16px;
+      margin-top: 14px;
+    }
+
+    .view-control-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .view-control-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+    }
+
+    .view-pill-btn {
+      border: 1px solid #d2d2d7;
+      background: #ffffff;
+      color: #3a3a3c;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .view-pill-btn:hover {
+      border-color: #0071e3;
+      color: #0071e3;
+    }
+
+    .view-pill-btn.active {
+      background: #0071e3;
+      border-color: #0071e3;
+      color: #ffffff;
+    }
+
+    .frying-calc-drawer {
+      margin-top: 12px;
+      background: #ffffff;
+      border: 1px solid #f7d99c;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 13.5px;
+      color: #2c2c2e;
+    }
+
+    .frying-formula-box {
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      background: #fffaf0;
+      border: 1px solid #fde3a7;
+      border-radius: 8px;
+      padding: 9px 12px;
+      margin: 8px 0 12px 0;
+      color: #5c3b00;
+      overflow-x: auto;
+    }
+
     /* ======================================================== */
     /* D2 HOW IT WORKS: 5-STAGE CONNECTED PIPELINE & MERGED DOCS*/
     /* ======================================================== */
@@ -2200,8 +2285,8 @@
         <!-- URL Input -->
         <div x-show="inputMode === 'url'" class="search-bar-unified">
           <input type="text" class="search-input" placeholder="Paste an Indian recipe URL (e.g. Hebbars Kitchen, Swasthi's, VegRecipesOfIndia)..." x-model="recipeUrl" @keydown.enter="launchWithCurrent()">
-          <button class="search-btn" @click="launchWithCurrent()">
-            Analyze Recipe &rarr;
+          <button class="search-btn" :disabled="isLoading" @click="launchWithCurrent()">
+            <span x-text="isLoading ? 'Scraping &amp; Analyzing...' : 'Analyze Recipe &rarr;'"></span>
           </button>
         </div>
 
@@ -2209,15 +2294,19 @@
         <div x-show="inputMode === 'paste'" class="paste-area-unified">
           <div class="paste-meta-row">
             <input type="text" class="sub-input" placeholder="Dish Name (e.g. Samosa)" x-model="pasteDish">
-            <input type="number" class="sub-input" style="max-width: 140px;" placeholder="Servings (4)" x-model.number="pasteServings">
+            <input type="number" class="sub-input" style="max-width: 150px;" placeholder="Servings (4)" min="1" step="0.5" x-model.number="pasteServings">
           </div>
-          <textarea class="paste-textarea" placeholder="Paste ingredient lines (one per line)..." x-model="pasteLines"></textarea>
-          <div style="text-align: right; margin-top: 4px;">
-            <button class="search-btn" style="height: 42px;" @click="launchWithCurrent()">
-              Analyze Custom Recipe &rarr;
+          <textarea class="paste-textarea" placeholder="Paste ingredient lines (one per line), e.g.:&#10;2 cups maida&#10;2 tbsp oil&#10;500 ml oil for deep frying" x-model="pasteLines"></textarea>
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 6px;">
+            <button type="button" class="bench-chip" @click="loadSamplePaste()">Fill Sample Samosa Recipe</button>
+            <button class="search-btn" style="height: 42px;" :disabled="isLoading" @click="launchWithCurrent()">
+              <span x-text="isLoading ? 'Analyzing...' : 'Analyze Custom Recipe &rarr;'"></span>
             </button>
           </div>
         </div>
+
+        <!-- Inline Error / Scrape Feedback Banner -->
+        <div x-show="errorMessage" x-text="errorMessage" class="hero-error-banner"></div>
 
         <!-- Single-Line Compact Benchmark Chips -->
         <div class="benchmarks-strip">
@@ -2304,7 +2393,7 @@
           <div class="toolbar-left">
             <span class="toolbar-label">Active Recipe</span>
             <span class="toolbar-dish" x-text="formatDishName(activeResult ? activeResult.recipe.dish : '—')"></span>
-            <span class="toolbar-pill" x-text="activeResult ? `1 Serving = 1/${activeResult.recipe.servings} of recipe (${servingMassG}g)` : ''"></span>
+            <span class="toolbar-pill" x-text="portionSummaryLabel"></span>
           </div>
 
           <div class="toolbar-right">
@@ -2318,6 +2407,9 @@
             <button class="demo-chip" :class="{ 'active': selectedDemo === 'chicken_biryani' }" @click="loadDemo('chicken_biryani')">
               Chicken Biryani
             </button>
+            <button class="change-recipe-btn" @click="openPasteEditor()">
+              Edit Ingredients
+            </button>
             <button class="change-recipe-btn" @click="view = 'hero'">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
               Analyze New Recipe
@@ -2330,25 +2422,53 @@
             
             <!-- REPORT HEADER & MACRO CONTEXT STRIP -->
             <div class="report-header-block">
-              <h1 class="report-main-title" x-text="`${formatDishName(activeResult.recipe.dish)}: Per-Serving Footprint`"></h1>
+              <h1 class="report-main-title" x-text="`${formatDishName(activeResult.recipe.dish)}: ${viewMode === 'per100g' ? 'Per-100g Nutrient Density' : (viewMode === '2x' ? 'Double Portion (2×) Footprint' : 'Per-Serving Footprint')}`"></h1>
               <p class="report-sub-title">
-                One serving (<strong x-text="hasNoServingsWarning ? `whole recipe, ${servingMassG}g` : `1/${servingCount} of the recipe, ${servingMassG}g`"></strong>) compared against your <strong>full 24-hour adult allowance</strong> (ICMR-NIN 2024 · 2,240 kcal urban baseline &amp; WHO guidelines).
+                <span x-text="viewMode === 'per100g' ? `Standardized per 100g finished food (out of ${Math.round(activeResult.coverage.included_mass_g)}g recipe)` : (hasNoServingsWarning ? `Whole recipe (${servingMassG}g)` : `${viewMode === '2x' ? '2 servings' : '1 serving'} (${viewMode === '2x' ? servingMassG * 2 : servingMassG}g out of ${activeResult.recipe.servings} servings)`)"></span>
+                compared against your <strong>full 24-hour adult allowance</strong> (ICMR-NIN 2024 · 2,240 kcal urban baseline &amp; WHO guidelines).
+                <span x-show="scrapeNotice" style="display: inline-block; margin-left: 8px; color: #0058b8; font-weight: 600;" x-text="scrapeNotice"></span>
               </p>
 
               <div x-show="hasNoServingsWarning" class="frying-callout-strip" style="margin-bottom: 18px; padding: 12px 18px;">
                 <span style="font-size: 18px;">⚠️</span>
                 <div>
-                  <strong>Servings Not Specified:</strong> This recipe did not list a serving count, so figures below represent the <strong>entire recipe</strong> as 1 serving.
+                  <strong>Servings Not Specified:</strong> This recipe did not list a numeric serving count, so figures below represent the <strong>entire recipe</strong> as 1 serving. Click <em>Edit Ingredients</em> above to enter servings if known.
                 </div>
               </div>
 
               <div class="dish-macro-strip">
-                <span style="font-weight: 700; color: var(--text-muted); text-transform: uppercase; font-size: 12px; letter-spacing: 0.04em;">1 Serving Nutrition:</span>
+                <span style="font-weight: 700; color: var(--text-muted); text-transform: uppercase; font-size: 12px; letter-spacing: 0.04em;" x-text="`${viewMode === 'per100g' ? 'Per 100g' : (viewMode === '2x' ? '2× Serving' : '1 Serving')} Nutrition:`"></span>
                 <span class="macro-pill-item"><span class="macro-lbl">Calories</span> <span x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal (${Math.round(activeResult.footprint.axes.energy_kcal.pct_of_limit)}% day)`"></span></span>
                 <span class="macro-pill-item"><span class="macro-lbl">Protein</span> <span x-text="`${activeResult.per_serving.protein_g.toFixed(1)}g (${dishQuality.proteinCalPct}% kcal)`"></span></span>
                 <span class="macro-pill-item"><span class="macro-lbl">Total Fat</span> <span x-text="`${activeResult.per_serving.fat_g.toFixed(1)}g`"></span></span>
                 <span class="macro-pill-item"><span class="macro-lbl">Carbs</span> <span x-text="`${activeResult.per_serving.carb_g.toFixed(1)}g`"></span></span>
                 <span class="macro-pill-item"><span class="macro-lbl">Fibre</span> <span x-text="`${activeResult.per_serving.fibre_g.toFixed(1)}g`"></span></span>
+              </div>
+
+              <!-- Portion Scaling + Per-100g Density + Risk Ceiling Controls -->
+              <div class="d4-view-controls">
+                <div class="view-control-group">
+                  <span class="view-control-label">Portion / Basis:</span>
+                  <button type="button" class="view-pill-btn" :class="{ 'active': viewMode === '1x' }" @click="setViewMode('1x')">
+                    1 Serving (<span x-text="`${servingMassG}g`"></span>)
+                  </button>
+                  <button type="button" class="view-pill-btn" :class="{ 'active': viewMode === '2x' }" @click="setViewMode('2x')">
+                    2&times; Portion (<span x-text="`${servingMassG * 2}g`"></span>)
+                  </button>
+                  <button type="button" class="view-pill-btn" :class="{ 'active': viewMode === 'per100g' }" @click="setViewMode('per100g')">
+                    Per 100g Density
+                  </button>
+                </div>
+
+                <div class="view-control-group">
+                  <span class="view-control-label">SFA Ceiling:</span>
+                  <button type="button" class="view-pill-btn" :class="{ 'active': selectedRisk === 'general' }" @click="setRiskMode('general')">
+                    General (&lt;10%E · 24.9g)
+                  </button>
+                  <button type="button" class="view-pill-btn" :class="{ 'active': selectedRisk === 'cardiometabolic' }" @click="setRiskMode('cardiometabolic')">
+                    High-Risk (&lt;7%E · 17.4g)
+                  </button>
+                </div>
               </div>
 
               <!-- DUAL-ORGAN EXECUTIVE VERDICT PANELS (100% Engine-Backed, Zero Arbitrary Weights) -->
@@ -2368,7 +2488,7 @@
                     <div class="verdict-kpi-tile" :class="getTileClass(activeResult.footprint.axes.sfa_g.pct_of_limit)">
                       <div class="kpi-tile-label">Saturated Fat (SFA)</div>
                       <div class="kpi-tile-val" x-text="`${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}%`"></div>
-                      <div class="kpi-tile-sub" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / 24.9g daily limit`"></div>
+                      <div class="kpi-tile-sub" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / ${sfaDailyLimit.toFixed(1)}g daily limit`"></div>
                     </div>
 
                     <div class="verdict-kpi-tile" :class="getTileClass(activeResult.footprint.axes.added_sugar_g.pct_of_limit)">
@@ -2410,7 +2530,7 @@
                     <div class="verdict-kpi-tile" :class="getTileClass(activeResult.footprint.axes.sfa_g.pct_of_limit)">
                       <div class="kpi-tile-label">Saturated Fat (SFA)</div>
                       <div class="kpi-tile-val" x-text="`${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}%`"></div>
-                      <div class="kpi-tile-sub" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / 24.9g daily limit`"></div>
+                      <div class="kpi-tile-sub" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / ${sfaDailyLimit.toFixed(1)}g daily limit`"></div>
                     </div>
 
                     <div class="verdict-kpi-tile" :class="getTileClass(activeResult.footprint.axes.sodium_mg.pct_of_limit)">
@@ -2477,6 +2597,50 @@
                         style="font-size: 12px;"
                         x-text="fryingSettingStatusText">
                   </span>
+                  <button type="button" class="view-pill-btn" style="margin-left: auto;" @click="showFryingCalc = !showFryingCalc" x-text="showFryingCalc ? 'Hide Calculation &amp; Citations ▴' : 'How Was This Calculated? ▾'"></button>
+                </div>
+
+                <!-- Granular Provenance & Math Disclosure (GOALS.md §2) -->
+                <div x-show="showFryingCalc && activeResult.frying_correction" class="frying-calc-drawer">
+                  <div style="font-weight: 700; color: #1d1d1f; margin-bottom: 4px;">
+                    Step-by-Step Mass &amp; Lab Absorption Math
+                  </div>
+                  <div class="frying-formula-box" x-text="activeResult.frying_correction ? (activeResult.frying_correction.calculation_formula || `absorbed_fat_g = (${Math.round(activeResult.coverage.included_mass_g)}g non-oil mass / 100) * ${activeResult.frying_correction.fat_g_per_100g_lab}g/100g = ${activeResult.frying_correction.absorbed_fat_g.toFixed(2)}g`) : ''"></div>
+                  <div style="font-size: 13px; color: #48484a; margin-bottom: 10px;">
+                    Per serving uptake (÷<span x-text="servingCount"></span>):
+                    <strong x-text="`${(activeResult.frying_correction.absorbed_fat_g / servingCount).toFixed(2)}g absorbed fat`"></strong> and
+                    <strong x-text="`${(activeResult.frying_correction.absorbed_sfa_g / servingCount).toFixed(2)}g absorbed SFA`"></strong>.
+                    <span x-show="activeResult.frying_correction.fallback_reason" style="display: block; margin-top: 4px; color: #944000; font-weight: 600;" x-text="activeResult.frying_correction.fallback_reason"></span>
+                  </div>
+
+                  <template x-if="activeResult.frying_correction.matched_sources && activeResult.frying_correction.matched_sources.length">
+                    <div class="data-table-container" style="margin-top: 6px;">
+                      <table class="data-table" style="font-size: 12.5px;">
+                        <thead>
+                          <tr>
+                            <th>Published Study</th>
+                            <th>Matched Item</th>
+                            <th>Setting</th>
+                            <th>Fat g/100g</th>
+                            <th>SFA % of Fat</th>
+                            <th>Method</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <template x-for="(src, sIdx) in activeResult.frying_correction.matched_sources" :key="sIdx">
+                            <tr>
+                              <td style="font-weight: 700;" x-text="src.source"></td>
+                              <td x-text="src.item"></td>
+                              <td><span class="badge badge-gray" x-text="src.setting"></span></td>
+                              <td class="mono-cell" x-text="Number(src.fat_g_100g).toFixed(2)"></td>
+                              <td class="mono-cell" x-text="src.sfa_pct_of_fat !== null && src.sfa_pct_of_fat !== undefined ? `${Number(src.sfa_pct_of_fat).toFixed(1)}%` : '—'"></td>
+                              <td x-text="src.method"></td>
+                            </tr>
+                          </template>
+                        </tbody>
+                      </table>
+                    </div>
+                  </template>
                 </div>
               </div>
             </div>
@@ -2510,7 +2674,7 @@
                         Saturated Fat (SFA)
                         <span class="shared-cross-badge">Both Organs</span>
                       </span>
-                      <span class="gauge-amount" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / 24.9g`"></span>
+                      <span class="gauge-amount" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / ${sfaDailyLimit.toFixed(1)}g`"></span>
                     </div>
                     <div class="gauge-bar-track" style="margin-top: 18px;">
                       <span class="meal-share-marker-label">1-Meal (33%)</span>
@@ -2521,9 +2685,7 @@
                       <span x-text="remainingText('sfa_g', 'g', 1)"></span>
                       <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}% of 24h limit`"></span>
                     </div>
-                    <div class="gauge-clinical-tag">
-                      ICMR-NIN 2024 ceiling (&lt;10% of 2,240 kcal). Primary driver of liver fat buildup.
-                    </div>
+                    <div class="gauge-clinical-tag" x-text="selectedRisk === 'cardiometabolic' ? 'ICMR-NIN high-risk ceiling (<7% of 2,240 kcal = 17.4g/day). Primary driver of liver fat buildup.' : 'ICMR-NIN 2024 ceiling (<10% of 2,240 kcal = 24.9g/day). Primary driver of liver fat buildup.'"></div>
                   </div>
 
                   <!-- Added Free Sugar -->
@@ -2622,7 +2784,7 @@
                         Saturated Fat (SFA)
                         <span class="shared-cross-badge">Both Organs</span>
                       </span>
-                      <span class="gauge-amount" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / 24.9g`"></span>
+                      <span class="gauge-amount" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / ${sfaDailyLimit.toFixed(1)}g`"></span>
                     </div>
                     <div class="gauge-bar-track" style="margin-top: 18px;">
                       <span class="meal-share-marker-label">1-Meal (33%)</span>
@@ -2859,7 +3021,7 @@
                     </tbody>
                     <tfoot>
                       <tr class="table-totals-row">
-                        <td x-text="`Total (${servingCount} serving${servingCount === 1 ? '' : 's'} → 1 serving)`"></td>
+                        <td x-text="viewMode === 'per100g' ? 'Total (Recipe → per 100g)' : (viewMode === '2x' ? `Total (${servingCount} servings → 2× portion)` : `Total (${servingCount} serving${servingCount === 1 ? '' : 's'} → 1 serving)`)"></td>
                         <td class="mono-cell" x-text="Math.round(activeResult.totals.energy_kcal).toLocaleString()"></td>
                         <td class="mono-cell" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal`"></td>
                         <td class="mono-cell">100.0%</td>
@@ -2897,7 +3059,7 @@
                       <th>Protein (g)</th>
                       <th>Sodium (mg)</th>
                       <th>Pot Energy</th>
-                      <th>1 Serving (÷<span x-text="servingCount"></span>)</th>
+                      <th x-text="viewMode === 'per100g' ? 'Per 100g Dish' : (viewMode === '2x' ? '2× Serving' : `1 Serving (÷${servingCount})`)"></th>
                       <th>% Day kcal</th>
                       <th>IFCT Match &amp; Basis</th>
                       <th>Status</th>
@@ -2914,8 +3076,8 @@
                         <td class="mono-cell" x-text="line.nutrients && line.nutrients.protein_g !== null ? line.nutrients.protein_g.toFixed(1) : '—'"></td>
                         <td class="mono-cell" x-text="line.nutrients && line.nutrients.sodium_mg !== null ? Math.round(line.nutrients.sodium_mg) : '—'"></td>
                         <td class="mono-cell" x-text="line.included && line.nutrients && line.nutrients.energy_kcal !== null ? `${Math.round(line.nutrients.energy_kcal)} kcal` : (line.nutrients && line.nutrients.energy_kcal ? `${Math.round(line.nutrients.energy_kcal)} (excl.)` : '—')"></td>
-                        <td class="mono-cell" style="font-weight: 700;" x-text="line.included && line.nutrients && line.nutrients.energy_kcal !== null ? `${Math.round(line.nutrients.energy_kcal / servingCount)} kcal` : '—'"></td>
-                        <td class="mono-cell" x-text="line.included && line.nutrients && line.nutrients.energy_kcal !== null ? `${((line.nutrients.energy_kcal / servingCount) / dailyEnergyLimit * 100).toFixed(1)}%` : '—'"></td>
+                        <td class="mono-cell" style="font-weight: 700;" x-text="line.included && line.nutrients && line.nutrients.energy_kcal !== null ? `${Math.round(line.nutrients.energy_kcal / effectiveDivisor)} kcal` : '—'"></td>
+                        <td class="mono-cell" x-text="line.included && line.nutrients && line.nutrients.energy_kcal !== null ? `${((line.nutrients.energy_kcal / effectiveDivisor) / dailyEnergyLimit * 100).toFixed(1)}%` : '—'"></td>
                         <td class="mono-cell" style="font-size: 12.5px;">
                           <span x-text="line.match ? `${line.match.code} (${line.match.method} ${line.match.score.toFixed(2)})` : '—'"></span>
                           <div style="font-size: 11px; color: var(--text-muted);" x-text="line.grams_basis || ''"></div>
@@ -2935,8 +3097,8 @@
                       <td class="mono-cell">0.0</td>
                       <td class="mono-cell">0</td>
                       <td class="mono-cell" x-text="`${Math.round(calorieBreakdown.fryingInjectedKcal)} kcal`"></td>
-                      <td class="mono-cell" x-text="`${Math.round(calorieBreakdown.fryingInjectedKcal / servingCount)} kcal`"></td>
-                      <td class="mono-cell" x-text="`${((calorieBreakdown.fryingInjectedKcal / servingCount) / dailyEnergyLimit * 100).toFixed(1)}%`"></td>
+                      <td class="mono-cell" x-text="`${Math.round(calorieBreakdown.fryingInjectedKcal / effectiveDivisor)} kcal`"></td>
+                      <td class="mono-cell" x-text="`${((calorieBreakdown.fryingInjectedKcal / effectiveDivisor) / dailyEnergyLimit * 100).toFixed(1)}%`"></td>
                       <td class="mono-cell" style="font-size: 12.5px;">
                         <span x-text="activeResult.frying_correction ? `${activeResult.frying_correction.fat_g_per_100g_lab}g/100g` : ''"></span>
                         <div style="font-size: 11px; color: #944000;">LAB_SOXHLET_INJECTED</div>
@@ -2961,8 +3123,8 @@
                       <td colspan="2" style="font-size: 12.5px; color: var(--text-muted);" x-text="`Sum across ${activeResult.coverage.lines_included} included lines`"></td>
                     </tr>
                     <tr class="table-perserving-row">
-                      <td x-text="`Per Serving (÷ ${servingCount})`"></td>
-                      <td class="mono-cell" x-text="`${servingMassG}g`"></td>
+                      <td x-text="viewMode === 'per100g' ? 'Per 100g Dish' : (viewMode === '2x' ? `Double Portion (÷ ${(servingCount / 2).toFixed(1)})` : `Per Serving (÷ ${servingCount})`)"></td>
+                      <td class="mono-cell" x-text="`${displayedMassG}g`"></td>
                       <td class="mono-cell" x-text="activeResult.per_serving.fat_g.toFixed(1)"></td>
                       <td class="mono-cell" x-text="activeResult.per_serving.sfa_g.toFixed(1)"></td>
                       <td class="mono-cell" x-text="activeResult.per_serving.carb_g.toFixed(1)"></td>
@@ -4034,6 +4196,12 @@ Sodium: 16mg (0.8%*)   | Energy: 224 kcal (10.0% day)</div>
         baseActiveResult: null,
         selectedAxis: null,
         selectedFryingSetting: 'auto',
+        selectedRisk: 'general',
+        viewMode: '1x', // '1x' | '2x' | 'per100g'
+        showFryingCalc: false,
+        isLoading: false,
+        errorMessage: '',
+        scrapeNotice: '',
 
         formatDishName(dish) {
           if (!dish) return '';
@@ -4062,29 +4230,143 @@ Sodium: 16mg (0.8%*)   | Energy: 224 kcal (10.0% day)</div>
           this.loadDemo('paneer_butter_masala');
         },
 
+        loadSamplePaste() {
+          this.errorMessage = '';
+          this.pasteDish = 'Samosa';
+          this.pasteServings = 8;
+          this.pasteLines = [
+            '2 cups maida',
+            '2 tbsp oil',
+            '0.5 tsp ajwain',
+            'salt to taste',
+            '3 medium potatoes, boiled and mashed',
+            '1 tsp cumin seeds',
+            '0.5 tsp garam masala',
+            '1 tsp red chilli powder',
+            '2 tbsp fresh coriander leaves, chopped',
+            '500 ml oil for deep frying'
+          ].join('\n');
+        },
+
+        openPasteEditor() {
+          if (this.activeResult) {
+            this.pasteDish = this.activeResult.recipe?.dish || '';
+            this.pasteServings = this.activeResult.recipe?.servings || 1;
+            this.pasteLines = (this.activeResult.lines || []).map(l => l.raw).join('\n');
+          }
+          this.inputMode = 'paste';
+          this.errorMessage = '';
+          this.view = 'hero';
+        },
+
         launchWithDemo(key) {
+          this.errorMessage = '';
+          this.scrapeNotice = '';
           this.loadDemo(key);
           this.currentTab = 'd4';
           this.view = 'app';
           window.scrollTo({ top: 0, behavior: 'smooth' });
         },
 
-        launchWithCurrent() {
-          if (this.inputMode === 'url') {
-            const url = this.recipeUrl.toLowerCase();
-            if (url.includes('samosa')) {
-              this.loadDemo('samosa_test');
-            } else if (url.includes('biryani')) {
-              this.loadDemo('chicken_biryani');
-            } else {
-              this.loadDemo('paneer_butter_masala');
+        async launchWithCurrent() {
+          this.errorMessage = '';
+          this.scrapeNotice = '';
+
+          // Fallback cleanly if opened over file:// without backend
+          if (window.location.protocol === 'file:') {
+            if (this.inputMode === 'url') {
+              const url = (this.recipeUrl || '').toLowerCase();
+              if (url.includes('samosa')) this.loadDemo('samosa_test');
+              else if (url.includes('biryani')) this.loadDemo('chicken_biryani');
+              else this.loadDemo('paneer_butter_masala');
+              this.currentTab = 'd4';
+              this.view = 'app';
+              return;
             }
-          } else {
-            this.loadDemo('samosa_test');
+            this.errorMessage = 'Start the FastAPI backend (uvicorn app.main:app) to analyze custom recipes live.';
+            return;
           }
-          this.currentTab = 'd4';
-          this.view = 'app';
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+
+          this.isLoading = true;
+          try {
+            let payload;
+            if (this.inputMode === 'url') {
+              const urlClean = (this.recipeUrl || '').trim();
+              if (!urlClean) {
+                this.errorMessage = 'Please paste an Indian recipe URL first.';
+                return;
+              }
+              const scrapeResp = await fetch('/api/scrape', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ url: urlClean })
+              });
+              const scrapeData = await scrapeResp.json();
+              if (!scrapeResp.ok) {
+                const detail = scrapeData.detail || {};
+                this.errorMessage = detail.message || 'Could not auto-read this URL. Please paste the ingredient list below.';
+                this.inputMode = 'paste';
+                return;
+              }
+              this.pasteDish = scrapeData.dish || '';
+              this.pasteServings = scrapeData.servings || 1;
+              this.pasteLines = (scrapeData.lines || []).join('\n');
+              const srcTag = scrapeData.scrape_meta?.source || 'json-ld';
+              const siteTag = scrapeData.scrape_meta?.site || '';
+              this.scrapeNotice = `Scraped ${scrapeData.lines.length} ingredients${siteTag ? ' from ' + siteTag : ''} (${srcTag})`;
+              payload = {
+                id: scrapeData.id || 'web-live',
+                url: scrapeData.url || urlClean,
+                dish: scrapeData.dish || 'Scraped Recipe',
+                servings: scrapeData.servings,
+                lines: scrapeData.lines,
+                setting: 'urban',
+                risk: this.selectedRisk,
+                frying_setting: this.selectedFryingSetting
+              };
+            } else {
+              const lines = (this.pasteLines || '').split('\n').map(s => s.trim()).filter(Boolean);
+              if (!lines.length) {
+                this.errorMessage = 'Please enter at least one ingredient line (e.g. "200 g paneer").';
+                return;
+              }
+              payload = {
+                id: 'custom-paste',
+                dish: (this.pasteDish || '').trim() || 'Custom Recipe',
+                servings: (this.pasteServings && this.pasteServings > 0) ? Number(this.pasteServings) : null,
+                lines,
+                setting: 'urban',
+                risk: this.selectedRisk,
+                frying_setting: this.selectedFryingSetting
+              };
+            }
+
+            const analyzeResp = await fetch('/api/analyze', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload)
+            });
+            const analyzed = await analyzeResp.json();
+            if (!analyzeResp.ok) {
+              const detail = analyzed.detail;
+              this.errorMessage = typeof detail === 'string' ? detail : (detail?.message || 'Recipe analysis failed.');
+              return;
+            }
+
+            this.selectedDemo = null;
+            this.selectedAxis = null;
+            this.viewMode = '1x';
+            this.showFryingCalc = false;
+            this.baseActiveResult = JSON.parse(JSON.stringify(analyzed));
+            this.rebuildActiveDisplay();
+            this.currentTab = 'd4';
+            this.view = 'app';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } catch (err) {
+            this.errorMessage = 'Unable to reach backend API. Run "uvicorn app.main:app --reload" or click a quick benchmark chip below.';
+          } finally {
+            this.isLoading = false;
+          }
         },
 
         openTabDirect(tabName) {
@@ -4097,13 +4379,22 @@ Sodium: 16mg (0.8%*)   | Energy: 224 kcal (10.0% day)</div>
           this.selectedDemo = key;
           this.selectedAxis = null;
           this.selectedFryingSetting = 'auto';
+          this.viewMode = '1x';
+          this.showFryingCalc = false;
           if (this.demos[key]) {
             this.baseActiveResult = JSON.parse(JSON.stringify(this.demos[key]));
-            this.activeResult = JSON.parse(JSON.stringify(this.demos[key]));
-            if (this.activeResult.frying_correction?.applied) {
-              this.applyFryingSetting('auto');
-            }
+            this.rebuildActiveDisplay();
           }
+        },
+
+        setViewMode(mode) {
+          this.viewMode = mode;
+          this.rebuildActiveDisplay();
+        },
+
+        setRiskMode(risk) {
+          this.selectedRisk = risk;
+          this.rebuildActiveDisplay();
         },
 
         _median(nums) {
@@ -4114,69 +4405,114 @@ Sodium: 16mg (0.8%*)   | Energy: 224 kcal (10.0% day)</div>
         },
 
         applyFryingSetting(settingChoice) {
-          if (!this.baseActiveResult || !this.baseActiveResult.frying_correction?.applied) return;
+          this.selectedFryingSetting = settingChoice;
+          this.rebuildActiveDisplay();
+        },
+
+        rebuildActiveDisplay() {
+          if (!this.baseActiveResult) return;
           const base = JSON.parse(JSON.stringify(this.baseActiveResult));
-          const fcBase = base.frying_correction;
-          const dishNorm = (base.recipe?.dish || '').toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
 
-          // Mirror src/lhf/frying.py _lookup_lab_fat_details()
-          const norm = s => (s || '').toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
-          let allMatched = this.labRows.filter(r => norm((r.item || '').split('(')[0]) === dishNorm);
-          if (!allMatched.length) {
-            allMatched = this.labRows.filter(r => {
-              const b = norm((r.item || '').split('(')[0]);
-              const f = norm(r.item || '');
-              return (b && (b.includes(dishNorm) || dishNorm.includes(b))) ||
-                     (f && (f.includes(dishNorm) || dishNorm.includes(f)));
-            });
-          }
+          // 1. Apply frying setting adjustment (mirrors src/lhf/frying.py)
+          if (base.frying_correction?.applied) {
+            const fcBase = base.frying_correction;
+            const settingChoice = this.selectedFryingSetting || 'auto';
+            const norm = s => (s || '').toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
+            const dishNorm = norm(base.recipe?.dish || '');
 
-          let chosenRows = allMatched;
-          let settingUsed = 'all_matched';
-          let fallbackUsed = false;
-
-          if (settingChoice === 'auto') {
-            const homeRows = allMatched.filter(r => r.setting === 'home');
-            if (homeRows.length) {
-              chosenRows = homeRows;
-              settingUsed = 'home';
+            let allMatched = this.labRows.filter(r => norm((r.item || '').split('(')[0]) === dishNorm);
+            if (!allMatched.length) {
+              allMatched = this.labRows.filter(r => {
+                const b = norm((r.item || '').split('(')[0]);
+                const f = norm(r.item || '');
+                return (b && (b.includes(dishNorm) || dishNorm.includes(b))) ||
+                       (f && (f.includes(dishNorm) || dishNorm.includes(f)));
+              });
             }
-          } else if (settingChoice !== 'all') {
-            const settingRows = allMatched.filter(r => r.setting === settingChoice);
-            if (settingRows.length) {
-              chosenRows = settingRows;
-              settingUsed = settingChoice;
-            } else {
-              chosenRows = allMatched;
-              settingUsed = 'all_matched_fallback';
-              fallbackUsed = true;
+
+            let chosenRows = allMatched;
+            let settingUsed = 'all_matched';
+            let fallbackUsed = false;
+            let fallbackReason = null;
+
+            if (settingChoice === 'auto') {
+              const homeRows = allMatched.filter(r => r.setting === 'home');
+              if (homeRows.length) {
+                chosenRows = homeRows;
+                settingUsed = 'home';
+              }
+            } else if (settingChoice !== 'all') {
+              const settingRows = allMatched.filter(r => r.setting === settingChoice);
+              if (settingRows.length) {
+                chosenRows = settingRows;
+                settingUsed = settingChoice;
+              } else {
+                chosenRows = allMatched;
+                settingUsed = 'all_matched_fallback';
+                fallbackUsed = true;
+                fallbackReason = `No direct lab measurements found for '${base.recipe?.dish}' under '${settingChoice}'; fell back to pooled median across ${allMatched.length} matched row(s).`;
+              }
             }
+
+            const fatVals = chosenRows.map(r => parseFloat(r.fat_g_100g)).filter(v => !Number.isNaN(v));
+            const fatPer100g = fatVals.length ? this._median(fatVals) : fcBase.fat_g_per_100g_lab;
+
+            let sfaVals = chosenRows.map(r => parseFloat(r.SFA_pct_of_fat)).filter(v => !Number.isNaN(v));
+            if (!sfaVals.length) {
+              sfaVals = allMatched.map(r => parseFloat(r.SFA_pct_of_fat)).filter(v => !Number.isNaN(v));
+            }
+            const sfaPct = sfaVals.length ? this._median(sfaVals) : fcBase.sfa_pct_of_fat_lab;
+
+            const nonOilMass = base.coverage?.included_mass_g || 0;
+            const newAbsFat = (nonOilMass / 100) * fatPer100g;
+            const newAbsSfa = newAbsFat * (sfaPct / 100);
+            const oldAbsFat = fcBase.absorbed_fat_g || 0;
+            const oldAbsSfa = fcBase.absorbed_sfa_g || 0;
+
+            base.totals.fat_g = Math.max(0, (base.totals.fat_g || 0) - oldAbsFat + newAbsFat);
+            base.totals.sfa_g = Math.max(0, (base.totals.sfa_g || 0) - oldAbsSfa + newAbsSfa);
+            base.totals.energy_kcal = Math.max(0, (base.totals.energy_kcal || 0) - (oldAbsFat * 9) + (newAbsFat * 9));
+
+            base.frying_correction = {
+              ...fcBase,
+              non_oil_mass_g: nonOilMass,
+              absorbed_fat_g: newAbsFat,
+              absorbed_sfa_g: newAbsSfa,
+              fat_g_per_100g_lab: fatPer100g,
+              sfa_pct_of_fat_lab: sfaPct,
+              calculation_formula: `absorbed_fat_g = (${nonOilMass.toFixed(1)}g non-oil mass / 100) * ${Number(fatPer100g).toFixed(2)}g/100g = ${newAbsFat.toFixed(2)}g`,
+              setting_requested: settingChoice,
+              setting_used: settingUsed,
+              fallback_used: fallbackUsed,
+              fallback_reason: fallbackReason,
+              matched_rows_count: chosenRows.length,
+              matched_sources: chosenRows.map(r => ({
+                source: r.source,
+                item: r.item,
+                setting: r.setting,
+                fat_g_100g: r.fat_g_100g,
+                sfa_pct_of_fat: r.SFA_pct_of_fat,
+                method: r.method
+              }))
+            };
           }
 
-          const fatVals = chosenRows.map(r => parseFloat(r.fat_g_100g)).filter(v => !Number.isNaN(v));
-          const fatPer100g = fatVals.length ? this._median(fatVals) : fcBase.fat_g_per_100g_lab;
+          // 2. Apply portion scaling (1x | 2x | per100g) & risk ceiling (general 24.9g | cardiometabolic 17.4g)
+          const rawSrv = (base.recipe?.servings && base.recipe.servings > 0) ? base.recipe.servings : 1;
+          const totalMass = base.coverage?.included_mass_g || 0;
+          let divisor = rawSrv;
+          if (this.viewMode === '2x') divisor = rawSrv / 2;
+          else if (this.viewMode === 'per100g' && totalMass > 0) divisor = totalMass / 100;
 
-          let sfaVals = chosenRows.map(r => parseFloat(r.SFA_pct_of_fat)).filter(v => !Number.isNaN(v));
-          if (!sfaVals.length) {
-            sfaVals = allMatched.map(r => parseFloat(r.SFA_pct_of_fat)).filter(v => !Number.isNaN(v));
-          }
-          const sfaPct = sfaVals.length ? this._median(sfaVals) : fcBase.sfa_pct_of_fat_lab;
-
-          const nonOilMass = base.coverage?.included_mass_g || 0;
-          const newAbsFat = (nonOilMass / 100) * fatPer100g;
-          const newAbsSfa = newAbsFat * (sfaPct / 100);
-          const oldAbsFat = fcBase.absorbed_fat_g || 0;
-          const oldAbsSfa = fcBase.absorbed_sfa_g || 0;
-
-          base.totals.fat_g = Math.max(0, (base.totals.fat_g || 0) - oldAbsFat + newAbsFat);
-          base.totals.sfa_g = Math.max(0, (base.totals.sfa_g || 0) - oldAbsSfa + newAbsSfa);
-          base.totals.energy_kcal = Math.max(0, (base.totals.energy_kcal || 0) - (oldAbsFat * 9) + (newAbsFat * 9));
-
-          const srv = base.recipe?.servings || 1;
           for (const k of Object.keys(base.per_serving)) {
             if (base.totals[k] !== null && base.totals[k] !== undefined) {
-              base.per_serving[k] = base.totals[k] / srv;
+              base.per_serving[k] = base.totals[k] / divisor;
             }
+          }
+
+          const sfaLimit = this.selectedRisk === 'cardiometabolic' ? (0.07 * 2240 / 9) : (0.10 * 2240 / 9);
+          if (base.footprint?.axes?.sfa_g) {
+            base.footprint.axes.sfa_g.limit = sfaLimit;
           }
           for (const axKey of Object.keys(base.footprint.axes)) {
             const ax = base.footprint.axes[axKey];
@@ -4188,19 +4524,33 @@ Sodium: 16mg (0.8%*)   | Energy: 224 kcal (10.0% day)</div>
             }
           }
 
-          base.frying_correction = {
-            ...fcBase,
-            absorbed_fat_g: newAbsFat,
-            absorbed_sfa_g: newAbsSfa,
-            fat_g_per_100g_lab: fatPer100g,
-            sfa_pct_of_fat_lab: sfaPct,
-            setting_requested: settingChoice,
-            setting_used: settingUsed,
-            fallback_used: fallbackUsed,
-            matched_rows_count: chosenRows.length
-          };
-
           this.activeResult = base;
+        },
+
+        get sfaDailyLimit() {
+          return this.activeResult?.footprint?.axes?.sfa_g?.limit || (this.selectedRisk === 'cardiometabolic' ? 17.4 : 24.9);
+        },
+
+        get effectiveDivisor() {
+          const srv = this.servingCount;
+          const totalMass = this.activeResult?.coverage?.included_mass_g || 0;
+          if (this.viewMode === '2x') return srv / 2;
+          if (this.viewMode === 'per100g' && totalMass > 0) return totalMass / 100;
+          return srv;
+        },
+
+        get displayedMassG() {
+          if (!this.activeResult) return 0;
+          if (this.viewMode === 'per100g') return 100;
+          const mass = this.activeResult.coverage?.included_mass_g || 0;
+          return Math.round(mass / this.effectiveDivisor);
+        },
+
+        get portionSummaryLabel() {
+          if (!this.activeResult) return '';
+          if (this.viewMode === 'per100g') return `Per 100g density (${Math.round(this.activeResult.coverage?.included_mass_g || 0)}g total)`;
+          if (this.viewMode === '2x') return `2× Serving = ${this.displayedMassG}g (of ${this.servingCount} servings)`;
+          return `1 Serving = 1/${this.servingCount} of recipe (${this.servingMassG}g)`;
         },
 
         get fryingSettingStatusText() {
@@ -4509,7 +4859,7 @@ Sodium: 16mg (0.8%*)   | Energy: 224 kcal (10.0% day)</div>
 
         get calorieBreakdown() {
           if (!this.activeResult) return { items: [], fryingInjectedKcal: 0 };
-          const srv = this.servingCount;
+          const srv = this.effectiveDivisor;
           const dayLimit = this.dailyEnergyLimit;
           const included = this.activeResult.lines.filter(l => l.included);
           const potTotal = this.activeResult.totals?.energy_kcal || 0;
