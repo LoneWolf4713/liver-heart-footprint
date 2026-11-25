@@ -1,7 +1,3 @@
-"""Recipe URL scraper extracting schema.org/Recipe JSON-LD (with recipe-scrapers fallback)."""
-
-from __future__ import annotations
-
 import html
 import ipaddress
 import json
@@ -23,17 +19,15 @@ DEFAULT_HEADERS = {
 
 
 class RecipeScrapeError(Exception):
-    """Structured error raised when a URL cannot be scraped into recipe lines."""
-
-    def __init__(self, message: str, status_code: int = 422, reason: str = "SCRAPE_FAILED"):
+    def __init__(self, message, status_code=422, reason="SCRAPE_FAILED"):
         super().__init__(message)
         self.message = message
         self.status_code = status_code
         self.reason = reason
 
 
-def validate_public_http_url(url: str) -> str:
-    """Validate that url is a public http/https URL (rejects local/private targets)."""
+# reject local/private urls before fetching
+def validate_public_http_url(url):
     cleaned = (url or "").strip()
     if not cleaned:
         raise RecipeScrapeError("Please enter a recipe URL.", status_code=422, reason="INVALID_URL")
@@ -55,7 +49,6 @@ def validate_public_http_url(url: str) -> str:
         if ip.is_private or ip.is_loopback or ip.is_link_local or ip.is_reserved or ip.is_multicast:
             raise RecipeScrapeError("Private IP URLs are not permitted.", status_code=422, reason="INVALID_URL")
     except ValueError:
-        # Hostname, resolve safely to reject loopback/private DNS targets
         try:
             resolved = socket.getaddrinfo(host, None)
             for _, _, _, _, sockaddr in resolved:
@@ -67,19 +60,16 @@ def validate_public_http_url(url: str) -> str:
                         reason="INVALID_URL",
                     )
         except socket.gaierror:
-            # Let downstream HTTP request produce a clear DNS/fetch message if needed
             pass
 
     return cleaned
 
 
-def _clean_text(value: str) -> str:
-    """Decode HTML entities and collapse internal whitespace."""
+def _clean_text(value):
     return " ".join(html.unescape(str(value or "")).split())
 
 
-def parse_servings(raw_yield) -> tuple[float | None, str]:
-    """Parse schema.org recipeYield (int, str, or list) into (float_servings, raw_text)."""
+def parse_servings(raw_yield):
     if raw_yield is None or isinstance(raw_yield, bool):
         return None, ""
 
@@ -109,8 +99,7 @@ def parse_servings(raw_yield) -> tuple[float | None, str]:
         return None, text
 
 
-def _is_recipe_type(type_val) -> bool:
-    """Return True if JSON-LD @type represents schema.org Recipe."""
+def _is_recipe_type(type_val):
     if isinstance(type_val, str):
         return type_val.strip().lower().endswith("recipe")
     if isinstance(type_val, list):
@@ -118,9 +107,9 @@ def _is_recipe_type(type_val) -> bool:
     return False
 
 
-def _extract_jsonld_recipes(soup: BeautifulSoup) -> list[dict]:
-    """Collect all schema.org Recipe dicts across ld+json blocks and @graph trees."""
-    found: list[dict] = []
+# collect schema.org recipe dicts including inside @graph lists (indian blogs embed them there a lot)
+def _extract_jsonld_recipes(soup):
+    found = []
     for script in soup.find_all("script", type="application/ld+json"):
         raw_json = script.string or script.get_text() or ""
         if not raw_json.strip():
@@ -146,13 +135,12 @@ def _extract_jsonld_recipes(soup: BeautifulSoup) -> list[dict]:
     return found
 
 
-def _extract_instructions_text(inst_obj) -> str:
-    """Flatten schema.org recipeInstructions (str, list of strings, HowToStep, or HowToSection)."""
+def _extract_instructions_text(inst_obj):
     if not inst_obj:
         return ""
     if isinstance(inst_obj, str):
         return _clean_text(inst_obj)
-    chunks: list[str] = []
+    chunks = []
     if isinstance(inst_obj, list):
         for item in inst_obj:
             chunks.append(_extract_instructions_text(item))
@@ -166,8 +154,8 @@ def _extract_instructions_text(inst_obj) -> str:
     return " ".join(c for c in chunks if c)
 
 
-def _detect_deep_frying_hint(instructions_text: str, lines: list[str], dish_name: str) -> tuple[bool, str | None]:
-    """Infer whether recipe involves deep-frying from instructions text or unquantified lines."""
+# scan instructions and oil lines for deep-frying even when blogs don't quantify the frying oil
+def _detect_deep_frying_hint(instructions_text, lines, dish_name):
     title_l = (dish_name or "").lower()
     if any(b in title_l for b in ("baked", "air fry", "air-fry", "air fryer", "steamed", "roasted")):
         return False, None
@@ -187,8 +175,8 @@ def _detect_deep_frying_hint(instructions_text: str, lines: list[str], dish_name
     return False, None
 
 
-def extract_recipe_from_html(html_text: str, url: str = "") -> dict:
-    """Parse HTML into an LHF-ready recipe dict from JSON-LD or recipe-scrapers."""
+# parse html via json-ld first, then fall back to recipe-scrapers
+def extract_recipe_from_html(html_text, url=""):
     if not html_text or not html_text.strip():
         raise RecipeScrapeError("Empty HTML document returned by target page.", reason="EMPTY_PAGE")
 
@@ -196,7 +184,6 @@ def extract_recipe_from_html(html_text: str, url: str = "") -> dict:
     page_title = _clean_text(soup.title.get_text()) if soup.title else ""
     netloc = urlparse(url).netloc if url else ""
 
-    # Tier 1: schema.org/Recipe JSON-LD
     for node in _extract_jsonld_recipes(soup):
         raw_ings = node.get("recipeIngredient") or node.get("ingredients") or []
         if isinstance(raw_ings, str):
@@ -225,7 +212,6 @@ def extract_recipe_from_html(html_text: str, url: str = "") -> dict:
                 },
             }
 
-    # Tier 2: recipe-scrapers HTML extraction fallback
     try:
         from recipe_scrapers import scrape_html
 
@@ -265,8 +251,7 @@ def extract_recipe_from_html(html_text: str, url: str = "") -> dict:
     )
 
 
-def scrape_recipe_url(url: str, timeout: int = 15) -> dict:
-    """Fetch a public recipe URL and extract its structured recipe dict."""
+def scrape_recipe_url(url, timeout=15):
     target = validate_public_http_url(url)
 
     try:
@@ -284,6 +269,7 @@ def scrape_recipe_url(url: str, timeout: int = 15) -> dict:
             reason="NETWORK_ERROR",
         ) from exc
 
+    # stop cleanly if cloudflare or anti-bot protection blocks the request
     body_lower = (resp.text or "")[:8000].lower()
     if resp.status_code in (403, 429, 503) or "challenges.cloudflare.com" in body_lower or "just a moment" in body_lower:
         raise RecipeScrapeError(

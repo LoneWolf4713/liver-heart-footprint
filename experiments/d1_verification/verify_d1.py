@@ -1,12 +1,4 @@
-"""Deliverable 1 (D1) Verification Script.
-
-1. Audits provenance completeness across data/curated/fried_foods_lab.csv.
-2. Recomputes category-level fat ranges (min, Q1, median, Q3, max, mean).
-3. Runs leave-one-source-out (LOSO) holdout validation across the 10 published sources.
-4. Writes CSV, JSON, and Markdown verification artifacts.
-"""
-
-from __future__ import annotations
+# checks fried_foods_lab.csv citations, category ranges, and leave-one-source-out holdout
 
 import csv
 import json
@@ -19,7 +11,7 @@ LAB_CSV = BASE_DIR / "data" / "curated" / "fried_foods_lab.csv"
 OUT_DIR = Path(__file__).resolve().parent
 
 
-def _percentile(sorted_vals: list[float], p: float) -> float:
+def _percentile(sorted_vals, p):
     if not sorted_vals:
         return 0.0
     if len(sorted_vals) == 1:
@@ -30,7 +22,7 @@ def _percentile(sorted_vals: list[float], p: float) -> float:
     return sorted_vals[f] + (k - f) * (sorted_vals[c] - sorted_vals[f])
 
 
-def _summarise(vals: list[float]) -> dict:
+def _summarise(vals):
     s = sorted(vals)
     return {
         "min": round(s[0], 2),
@@ -42,7 +34,7 @@ def _summarise(vals: list[float]) -> dict:
     }
 
 
-def main() -> None:
+def main():
     rows = list(csv.DictReader(LAB_CSV.open(encoding="utf-8")))
     assert len(rows) >= 60, f"Expected >=60 rows, got {len(rows)}"
 

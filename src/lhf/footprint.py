@@ -1,4 +1,3 @@
-"""Daily-budget footprint (SPEC §8)."""
 import csv
 import math
 import os
@@ -12,8 +11,8 @@ ALLOWED_SETTINGS = {"urban", "rural"}
 ALLOWED_RISKS = {"general", "cardiometabolic"}
 
 
+# load daily limits and baseline stats from csv once
 def _load_baselines():
-    """Load and cache clinical thresholds and survey baselines from baselines.csv."""
     global _BASELINES
     if _BASELINES is None:
         path = os.path.join(DATA_CURATED, "baselines.csv")
@@ -27,21 +26,15 @@ def _load_baselines():
     return _BASELINES
 
 
-def get_baseline(metric_id: str) -> float:
-    """Return the baseline value for a given metric id from baselines.csv."""
+def get_baseline(metric_id):
     table = _load_baselines()
     if metric_id not in table:
         raise KeyError(metric_id)
     return table[metric_id]
 
 
-def footprint(per_serving: dict, setting: str = "urban", risk: str = "general") -> dict:
-    """Convert per-serving amounts into daily-budget bars using baselines and constants.
-
-    per_serving: dict with keys energy_kcal, fat_g, sfa_g, added_sugar_g, sodium_mg, refined_carb_g.
-    setting: 'urban' or 'rural'.
-    risk: 'general' or 'cardiometabolic'.
-    """
+# turn per-serving amounts into daily budget percentages
+def footprint(per_serving, setting="urban", risk="general"):
     if not isinstance(setting, str) or setting.strip().lower() not in ALLOWED_SETTINGS:
         raise ValueError(f"Invalid setting {setting!r}. Must be one of {ALLOWED_SETTINGS}")
     setting_norm = setting.strip().lower()

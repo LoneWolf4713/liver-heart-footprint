@@ -1,13 +1,4 @@
-"""Deliverable 2 (D2) Verification Script.
-
-Aggregates all three D2 submission verification gates from FORM_FIELDS.md:
-1. INDB reproduction check (>=95% of ~1,000 dishes) from experiments/ifct_check/results.json.
-2. Parse, match, and grams accuracy across all 160 hand-annotated ingredient lines
-   (120 public gold + 40 holdout gold).
-3. Lab-analysed cooked dish comparison (>=10 dishes) from experiments/phase1_validation/results.json.
-"""
-
-from __future__ import annotations
+# checks indb reproduction, 160 annotated lines, and 10 cooked lab dishes
 
 import json
 import math
@@ -25,7 +16,7 @@ VAL_RES = BASE_DIR / "experiments" / "phase1_validation" / "results.json"
 OUT_DIR = Path(__file__).resolve().parent
 
 
-def _close(a, b, rel: float = 0.01) -> bool:
+def _close(a, b, rel=0.01):
     if a is None or b is None:
         return a is None and b is None
     if b == 0:
@@ -33,7 +24,7 @@ def _close(a, b, rel: float = 0.01) -> bool:
     return math.isclose(float(a), float(b), rel_tol=rel, abs_tol=1e-6)
 
 
-def eval_gold_split(items: list[dict], label: str) -> dict:
+def eval_gold_split(items, label):
     ok_status = ok_optional = ok_name = 0
     ok_qty = ok_range = ok_unit = ok_size = ok_stated = nq = 0
     ok_match = n_match = 0
@@ -107,7 +98,7 @@ def eval_gold_split(items: list[dict], label: str) -> dict:
     }
 
 
-def main() -> None:
+def main():
     pub = json.loads(PUBLIC_GOLD.read_text(encoding="utf-8"))
     hold = json.loads(HOLDOUT_GOLD.read_text(encoding="utf-8")) if HOLDOUT_GOLD.exists() else []
     combined = pub + hold

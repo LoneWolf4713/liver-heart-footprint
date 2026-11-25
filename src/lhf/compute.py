@@ -1,15 +1,11 @@
-"""Nutrient summing and per-100g computation."""
 import math
 from lhf import composition
 
 NUTRIENTS = composition.NUTRIENT_COLUMNS
 
 
-def sum_nutrients(items: list) -> dict:
-    """Sum nutrients for a list of items and compute per-100g amounts.
-
-    items: list of dicts with keys "code" and "grams".
-    """
+# sum nutrients across ingredient items and also compute per 100g values
+def sum_nutrients(items):
     table = composition.load_table()
     table_index = table.index
 
@@ -48,8 +44,7 @@ def sum_nutrients(items: list) -> dict:
 
             for k in NUTRIENTS:
                 v = nuts[k]
-                # Propagate NaN honestly when any ingredient lacks trans-fat or moisture data
-                # rather than treating missing analytical cells as zero.
+                # keep tfa and water as nan if any item has missing data instead of pretending it's 0
                 if k == "tfa_g":
                     if math.isnan(v):
                         unknown_tfa_items.append(idx)

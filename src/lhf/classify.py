@@ -1,4 +1,3 @@
-"""Food classes: added sugar, refined carbohydrate, salt, and fat sources (SPEC §7)."""
 import csv
 import math
 import os
@@ -9,6 +8,7 @@ from lhf.paths import DATA_CURATED
 _CLASSES_BY_CODE = None
 
 
+# load food tags like ADDED_SUGAR, DAIRY_FAT, SALT etc
 def _load_classes():
     global _CLASSES_BY_CODE
     if _CLASSES_BY_CODE is not None:
@@ -30,25 +30,15 @@ def _load_classes():
     return _CLASSES_BY_CODE
 
 
-def classes_for(code: str) -> list[str]:
-    """Return the list of food classes for a given food code."""
+def classes_for(code):
     if code is None or code == "":
         return []
     classes_map = _load_classes()
     return list(classes_map.get(str(code).strip(), []))
 
 
-def class_totals(items: list) -> dict:
-    """Compute food class totals for a list of ingredient items.
-
-    Items are dicts with code, grams and nutrients (from composition.nutrients_for).
-
-    Returns:
-      added_sugar_g: Σ over ADDED_SUGAR items of grams × min(freesugar_g per 100 g, 100) / 100
-      refined_carb_g: Σ carb_g of REFINED_GRAIN items
-      salt_g: Σ grams of SALT items
-      fat_by_class_g: {class: Σ fat_g} for COOKING_OIL, HYDROGENATED_FAT, DAIRY_FAT, and OTHER
-    """
+# sum sugar, refined carbs, salt and split fat by ingredient source
+def class_totals(items):
     added_sugar_g = 0.0
     refined_carb_g = 0.0
     salt_g = 0.0
@@ -88,7 +78,7 @@ def class_totals(items: list) -> dict:
         item_classes = classes_for(code_str)
         nutrients = item.get("nutrients") or {}
 
-        # 1. Added sugar:
+        # added sugar (capped at item weight)
         if "ADDED_SUGAR" in item_classes:
             if nutrients.get("freesugar_g") is not None:
                 try:
@@ -105,7 +95,7 @@ def class_totals(items: list) -> dict:
                 except (ValueError, TypeError):
                     pass
 
-        # 2. Refined carbohydrate:
+        # refined grains
         if "REFINED_GRAIN" in item_classes:
             if nutrients.get("carb_g") is not None:
                 try:
@@ -122,11 +112,11 @@ def class_totals(items: list) -> dict:
                 except (ValueError, TypeError):
                     pass
 
-        # 3. Salt: Σ grams of SALT items
+        # plain salt mass
         if "SALT" in item_classes:
             salt_g += grams_val
 
-        # 4. Fat by class: COOKING_OIL, HYDROGENATED_FAT, DAIRY_FAT, and OTHER
+        # fat split by source type
         if nutrients.get("fat_g") is not None:
             try:
                 fat_val = float(nutrients["fat_g"])

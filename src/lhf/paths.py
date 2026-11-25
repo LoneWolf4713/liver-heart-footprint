@@ -1,4 +1,3 @@
-"""Filesystem paths for lhf."""
 import os
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))

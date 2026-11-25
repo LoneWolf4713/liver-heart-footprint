@@ -1,11 +1,4 @@
-"""Deliverable 4 (D4) Live 10+ URL Verification Script.
-
-Sends real Indian recipe URLs across multiple portals to the running FastAPI endpoints
-POST /api/scrape and POST /api/scrape-and-analyze, compares per-serving outputs against
-a direct Python call to lhf.pipeline.analyse_recipe, and writes JSON + Markdown reports.
-"""
-
-from __future__ import annotations
+# checks live scraping + fastapi parity against python pipeline across 13 indian blog urls
 
 import json
 import math
@@ -34,7 +27,7 @@ TEST_URLS = [
 ]
 
 
-def _post_json(path: str, payload: dict, timeout: int = 30) -> dict:
+def _post_json(path, payload, timeout=30):
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(
         f"{BASE_API}{path}",
@@ -46,13 +39,13 @@ def _post_json(path: str, payload: dict, timeout: int = 30) -> dict:
         return json.loads(resp.read().decode("utf-8"))
 
 
-def _same_num(a, b) -> bool:
+def _same_num(a, b):
     if a is None or b is None:
         return a is None and b is None
     return math.isclose(float(a), float(b), rel_tol=1e-6, abs_tol=1e-6)
 
 
-def main() -> None:
+def main():
     results = []
     passed = 0
     sites_passed = set()

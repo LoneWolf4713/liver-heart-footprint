@@ -1,12 +1,7 @@
-"""FastAPI backend serving the Liver & Heart Footprint Web Application (Deliverable 4)."""
-
-from __future__ import annotations
-
 import csv
 import os
 import sys
 from pathlib import Path
-from typing import Any
 
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
@@ -19,24 +14,24 @@ SRC_DIR = REPO_DIR / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-from lhf import footprint as footprint_mod  # noqa: E402
-from lhf import pipeline  # noqa: E402
-from lhf.frying import ALLOWED_FRYING_SETTINGS  # noqa: E402
-from lhf.paths import DATA_CURATED  # noqa: E402
+from lhf import footprint as footprint_mod
+from lhf import pipeline
+from lhf.frying import ALLOWED_FRYING_SETTINGS
+from lhf.paths import DATA_CURATED
 
-from app.scraper import RecipeScrapeError, scrape_recipe_url  # noqa: E402
+from app.scraper import RecipeScrapeError, scrape_recipe_url
 
 
 class ScrapeRequest(BaseModel):
-    url: str = Field(..., description="Public recipe URL containing schema.org Recipe data")
+    url: str = Field(...)
 
 
 class AnalyzeRequest(BaseModel):
     id: str = "live-recipe"
     url: str | None = None
-    dish: str = Field(..., min_length=1, description="Dish name used for display and fried-food matching")
-    servings: float | None = Field(default=None, description="Number of servings; null defaults to 1 with warning")
-    lines: list[str] | str = Field(..., description="Ingredient lines as list or newline-delimited string")
+    dish: str = Field(..., min_length=1)
+    servings: float | None = None
+    lines: list[str] | str
     deep_fried_hint: bool = False
     deep_fry_evidence: str | None = None
     setting: str = "urban"
@@ -51,31 +46,20 @@ class ScrapeAndAnalyzeRequest(BaseModel):
     frying_setting: str = "auto"
 
 
-app = FastAPI(
-    title="Liver & Heart Footprint of Indian Recipes",
-    description="BIO544 Computational Gastronomy API (Deliverable 4)",
-    version="1.0.0",
-)
+app = FastAPI(title="Liver & Heart Footprint of Indian Recipes", version="1.0.0")
 
 STATIC_DIR = APP_DIR / "static"
 if STATIC_DIR.is_dir():
     app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
 
 
-def _normalize_lines(raw_lines: list[str] | str) -> list[str]:
-    """Normalize either newline-delimited recipe text or a string list into non-empty ingredient lines."""
+def _normalize_lines(raw_lines):
     if isinstance(raw_lines, str):
         return [ln.strip() for ln in raw_lines.splitlines() if ln.strip()]
     return [str(ln).strip() for ln in raw_lines if str(ln).strip()]
 
 
-def _run_safe_analysis(
-    recipe_dict: dict[str, Any],
-    setting: str = "urban",
-    risk: str = "general",
-    frying_setting: str = "auto",
-) -> dict[str, Any]:
-    """Run pipeline.analyse_recipe and guarantee non-null UI-safe per_serving/footprint fallback."""
+def _run_safe_analysis(recipe_dict, setting="urban", risk="general", frying_setting="auto"):
     if setting not in footprint_mod.ALLOWED_SETTINGS:
         raise HTTPException(status_code=422, detail=f"Invalid demographic setting {setting!r}")
     if risk not in footprint_mod.ALLOWED_RISKS:
@@ -116,7 +100,7 @@ def _run_safe_analysis(
         frying_setting=frying_setting,
     )
 
-    # Guard UI against null per_serving / footprint when recipeYield is missing (preserving NO_SERVINGS warning)
+    # if servings missing, fall back to 1 serving so the frontend doesn't get nulls
     if res.get("per_serving") is None or res.get("footprint") is None:
         fallback_recipe = dict(normalized, servings=1.0)
         recomputed = pipeline.analyse_recipe(
@@ -144,7 +128,6 @@ def _run_safe_analysis(
 
 @app.get("/")
 def serve_home():
-    """Serve the single-page web application frontend."""
     index_path = APP_DIR / "index.html"
     if not index_path.is_file():
         raise HTTPException(status_code=404, detail="Frontend app/index.html not found.")
@@ -153,7 +136,6 @@ def serve_home():
 
 @app.get("/api/health")
 def api_health():
-    """Return service health status and current row count of fried_foods_lab.csv."""
     lab_path = os.path.join(DATA_CURATED, "fried_foods_lab.csv")
     lab_count = 0
     if os.path.exists(lab_path):
@@ -168,7 +150,6 @@ def api_health():
 
 @app.get("/api/lab-data")
 def api_lab_data():
-    """Serve the curated empirical fried-food fat dataset for the Deliverable 1 explorer."""
     lab_path = os.path.join(DATA_CURATED, "fried_foods_lab.csv")
     if not os.path.exists(lab_path):
         raise HTTPException(status_code=404, detail="Lab dataset fried_foods_lab.csv not found.")
@@ -179,7 +160,6 @@ def api_lab_data():
 
 @app.post("/api/scrape")
 def api_scrape(req: ScrapeRequest):
-    """Scrape structured recipe ingredients, servings, and frying instructions from a public URL."""
     try:
         return scrape_recipe_url(req.url)
     except RecipeScrapeError as exc:
@@ -191,7 +171,6 @@ def api_scrape(req: ScrapeRequest):
 
 @app.post("/api/analyze")
 def api_analyze(req: AnalyzeRequest):
-    """Analyze pasted or custom recipe ingredients through the Python engine."""
     return _run_safe_analysis(
         req.model_dump(),
         setting=req.setting,
@@ -202,7 +181,6 @@ def api_analyze(req: AnalyzeRequest):
 
 @app.post("/api/scrape-and-analyze")
 def api_scrape_and_analyze(req: ScrapeAndAnalyzeRequest):
-    """Scrape a live recipe URL and immediately run deterministic Liver & Heart analysis."""
     try:
         scraped = scrape_recipe_url(req.url)
     except RecipeScrapeError as exc:

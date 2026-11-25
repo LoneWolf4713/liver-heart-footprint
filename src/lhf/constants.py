@@ -1,4 +1,3 @@
-"""Constants reader from data/curated/constants.csv."""
 import os
 import pandas as pd
 from lhf.paths import DATA_CURATED
@@ -6,8 +5,8 @@ from lhf.paths import DATA_CURATED
 _CONSTANTS = None
 
 
+# load constants once from csv
 def _load_constants():
-    """Load and cache scalar conversion constants from data/curated/constants.csv."""
     global _CONSTANTS
     if _CONSTANTS is None:
         path = os.path.join(DATA_CURATED, "constants.csv")
@@ -17,7 +16,6 @@ def _load_constants():
 
 
 def get(id_):
-    """Return the float constant value for the given constant ID."""
     table = _load_constants()
     if id_ not in table:
         raise KeyError(id_)

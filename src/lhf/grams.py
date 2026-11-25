@@ -1,4 +1,3 @@
-"""Household measures to grams conversion for Phase 1 core engine (SPEC §6)."""
 import csv
 import math
 import os
@@ -9,6 +8,7 @@ from lhf.paths import DATA_CURATED
 _MEASURES = None
 
 
+# load density and cup/spoon measure rules once
 def _load_measures():
     global _MEASURES
     if _MEASURES is not None:
@@ -44,6 +44,7 @@ def _load_measures():
     return _MEASURES
 
 
+# look up g/ml density for code or food group, otherwise default to water (1 g/ml)
 def _get_density(code):
     if not isinstance(code, str):
         code = None
@@ -95,9 +96,8 @@ def _resolve_code_measure(code, unit, size):
     return chosen, flag
 
 
+# convert household units like cups, spoons and pieces to grams using food-specific rules
 def grams_for(qty, unit, size, stated_g, stated_ml, code):
-    """Convert household measure to grams applying rules 1-9 in order."""
-    # Defensive normalization of code (DEF-C7)
     if isinstance(code, str):
         code = code.strip().upper()
         if not code:
@@ -105,7 +105,7 @@ def grams_for(qty, unit, size, stated_g, stated_ml, code):
     else:
         code = None
 
-    # 1. stated_g is not None -> grams = stated_g, basis STATED_MASS (DEF-D10)
+    # use explicit gram weight if the recipe already gave one
     if stated_g is not None:
         if isinstance(stated_g, bool):
             return {"grams": None, "basis": "UNQUANTIFIABLE", "flags": []}
@@ -117,7 +117,7 @@ def grams_for(qty, unit, size, stated_g, stated_ml, code):
         except (ValueError, TypeError):
             return {"grams": None, "basis": "UNQUANTIFIABLE", "flags": []}
 
-    # 2. stated_ml is not None -> grams = stated_ml * density, basis STATED_VOLUME (DEF-D10)
+    # use explicit ml multiplied by food density if given
     if stated_ml is not None:
         if isinstance(stated_ml, bool):
             return {"grams": None, "basis": "UNQUANTIFIABLE", "flags": []}
@@ -131,7 +131,6 @@ def grams_for(qty, unit, size, stated_g, stated_ml, code):
         except (ValueError, TypeError):
             return {"grams": None, "basis": "UNQUANTIFIABLE", "flags": []}
 
-    # Normalize unit and size
     if isinstance(unit, list):
         unit = unit[0] if len(unit) > 0 else None
     if isinstance(unit, str):
@@ -150,7 +149,6 @@ def grams_for(qty, unit, size, stated_g, stated_ml, code):
     else:
         size = None
 
-    # 3. qty is None or unit is None -> None, basis UNQUANTIFIABLE (DEF-D10)
     if qty is None or unit is None:
         return {"grams": None, "basis": "UNQUANTIFIABLE", "flags": []}
 
@@ -166,33 +164,33 @@ def grams_for(qty, unit, size, stated_g, stated_ml, code):
 
     any_measures, _, group_measures = _load_measures()
 
-    # 4. unit in g, kg, mg, oz, lb -> qty * any row, basis MASS_UNIT
+    # standard mass units (g, kg, mg, oz, lb)
     if unit in any_measures:
         return {"grams": qty_val * any_measures[unit], "basis": "MASS_UNIT", "flags": []}
 
-    # 5. unit in ml, l -> qty * (1000 if l) * density as in rule 2, basis VOLUME_UNIT
+    # ml or l multiplied by food density
     if unit in ("ml", "l"):
         mult = 1000 if unit == "l" else 1
         density, assumed = _get_density(code)
         flags = ["DENSITY_ASSUMED_1"] if assumed else []
         return {"grams": qty_val * mult * density, "basis": "VOLUME_UNIT", "flags": flags}
 
-    # When code is None or UNMAPPED/NON_FOOD, only rules 1-5 can apply
+    # cup/piece conversions need a real food code first
     if not code or code in ("UNMAPPED", "NON_FOOD"):
         return {"grams": None, "basis": "UNQUANTIFIABLE", "flags": []}
 
-    # 6. Code rows for (code, unit), basis CODE_MEASURE
+    # check exact food code measure first
     chosen, flag = _resolve_code_measure(code, unit, size)
     if chosen is not None:
         flags = [flag] if flag else []
         return {"grams": qty_val * chosen["grams"], "basis": "CODE_MEASURE", "flags": flags}
 
-    # 7. Group row for (first letter of code, unit), basis GROUP_MEASURE
+    # otherwise fall back to food group default (first letter of code)
     grp = code[0]
     if (grp, unit) in group_measures:
         return {"grams": qty_val * group_measures[(grp, unit)], "basis": "GROUP_MEASURE", "flags": []}
 
-    # 8. unit pinch or dash with no row found in rules 6-7 -> qty * PINCH_FRACTION_OF_TSP * (tsp weight found by rules 6-7)
+    # pinch or dash = fraction of 1 tsp for that food
     if unit in ("pinch", "dash"):
         tsp_chosen, _ = _resolve_code_measure(code, "tsp", None)
         tsp_grams = None
@@ -212,5 +210,4 @@ def grams_for(qty, unit, size, stated_g, stated_ml, code):
                 "flags": ["PINCH_AS_QUARTER_TSP"],
             }
 
-    # 9. Otherwise -> None, basis UNQUANTIFIABLE
     return {"grams": None, "basis": "UNQUANTIFIABLE", "flags": []}

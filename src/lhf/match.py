@@ -1,4 +1,3 @@
-"""Ingredient name matcher for Phase 1 core engine (SPEC §5)."""
 import csv
 import difflib
 import os
@@ -10,6 +9,7 @@ from lhf.paths import DATA_CURATED
 _ALIASES = None
 _COMP_LOOKUP = None
 
+# common cutting/prep words to strip before fuzzy or exact matching
 PREP_PATTERNS = [
     r"\b(?:finely|roughly|thinly|thickly|coarsely)?\s*(?:chopped|diced|sliced|grated|minced|crushed|shredded|mashed|pureed|puree|paste|julienne|juliennes|slit|ground|cut)\b",
     r"\b(?:cut into|cut in)\s+(?:pieces|cubes|small pieces|small size pieces)\b",
@@ -65,13 +65,14 @@ def _load_comp_lookup():
     return _COMP_LOOKUP
 
 
-def _clean_prep(text: str) -> str:
+def _clean_prep(text):
     cleaned = PREP_RE.sub(" ", text)
     cleaned = re.sub(r"\s+", " ", cleaned).strip()
     return cleaned
 
 
-def _expand_stems(cand: str, seen: set) -> list[str]:
+# basic singular/plural expansions like tomatoes -> tomato
+def _expand_stems(cand, seen):
     stems = []
     if "leaves" in cand:
         v = re.sub(r"\bleaves\b", "leaf", cand)
@@ -90,11 +91,11 @@ def _expand_stems(cand: str, seen: set) -> list[str]:
                 seen.add(sing)
                 stems.append(sing)
     elif cand.endswith("es") and len(cand) > 3:
-        s1 = cand[:-2]  # tomatoes -> tomato
+        s1 = cand[:-2]
         if s1 not in seen:
             seen.add(s1)
             stems.append(s1)
-        s2 = cand[:-1]  # apples -> apple, grapes -> grape
+        s2 = cand[:-1]
         if s2 not in seen:
             seen.add(s2)
             stems.append(s2)
@@ -106,7 +107,7 @@ def _expand_stems(cand: str, seen: set) -> list[str]:
     return stems
 
 
-def _get_raw_and_prep_variants(text: str) -> tuple[list[str], list[str]]:
+def _get_raw_and_prep_variants(text):
     raw_variants = []
     prep_variants = []
     t = text.lower().strip()
@@ -116,11 +117,10 @@ def _get_raw_and_prep_variants(text: str) -> tuple[list[str], list[str]]:
     t = re.sub(r"\(.*?\)", " ", t)
     t = t.strip("\"' \t\r\n.,;:!*~")
 
-    # Remove leading junk (symbols, fractions, units)
     t = JUNK_LEAD_RE.sub("", t).strip("\"' \t\r\n.,;:!*~")
     t = JUNK_TRAIL_RE.sub("", t).strip("\"' \t\r\n.,;:!*~")
 
-    # Deduplicate repeated adjacent words (e.g. 'cloves cloves', 'potatoes potatoes')
+    # drop consecutive duplicate tokens (sometimes messy scraping doubles words)
     words = t.split()
     dedup = []
     for w in words:
@@ -163,22 +163,20 @@ def _get_raw_and_prep_variants(text: str) -> tuple[list[str], list[str]]:
     return raw_variants, prep_variants
 
 
-def _get_variants(text: str) -> list[str]:
+def _get_variants(text):
     raw_v, prep_v = _get_raw_and_prep_variants(text)
     return raw_v + prep_v
 
 
-def _check_priority_variant(v: str, full_name: str) -> str | None:
-    """Enforce SPEC §5 priority rules for a single variant."""
+# hard rules for staples (ghee, paneer, chicken, curd, butter, milk, oil) so fuzzy lookup doesn't miss them
+def _check_priority_variant(v, full_name):
     vl = v.lower()
     fnl = full_name.lower()
 
-    # Non-food items
     if "charcoal" in vl:
         return "NON_FOOD"
 
-    # Chicken Rule: Any ingredient containing the token 'chicken' or 'murgh'/'murg'
-    # Exclude stock, cube, spices, seasonings, eggs, vegan/plant substitutes (DEF-B2).
+    # chicken unless it's just stock cube / masala spice
     chicken_exclusions = (
         "stock", "cube", "masala", "curry powder", "spice", "powder",
         "seasoning", "egg", "vegan", "plant",
@@ -187,16 +185,13 @@ def _check_priority_variant(v: str, full_name: str) -> str | None:
         if not any(w in fnl for w in chicken_exclusions) and not any(w in vl for w in chicken_exclusions):
             return "N500"
 
-    # Ghee -> T013
     if not any(x in vl for x in ("vanaspati", "dalda")):
         if vl == "ghee" or "clarified butter" in vl or "desi ghee" in vl or "ghee" in vl.split():
             return "T013"
 
-    # Paneer / Cottage Cheese -> L903 (Amul Malai Paneer, fat 23g) (DEF-B3)
     if "paneer" in vl or "cottage cheese" in vl:
         return "L903"
 
-    # Curd / Dahi / Yogurt / Yoghurt -> L902 (or L520 for greek)
     if not ("bean curd" in vl or "tofu" in vl):
         if "greek" in vl and any(k in vl for k in ("yogurt", "yoghurt", "curd", "dahi")):
             return "L520"
@@ -207,8 +202,7 @@ def _check_priority_variant(v: str, full_name: str) -> str | None:
         if any(vl == k or vl.startswith(k + " ") or vl.endswith(" " + k) for k in curd_terms):
             return "L902"
 
-    # Butter -> L904 (or T501 for unsalted)
-    # Exclude non-dairy butter terms: beans, fruit, paper, cookies, etc.
+    # watch out for peanut butter / buttermilk etc
     non_dairy_butter = (
         "buttermilk", "chaas", "peanut butter", "almond butter", "apple butter",
         "butterfish", "butter beans", "butter bean", "butter fruit", "butter paper",
@@ -222,7 +216,6 @@ def _check_priority_variant(v: str, full_name: str) -> str | None:
         if any(vl == k or vl.startswith(k + " ") or vl.endswith(" " + k) for k in butter_terms):
             return "L904"
 
-    # Milk -> L901 (or L002 for whole, L001 for buffalo)
     non_dairy_milk = (
         "coconut milk", "soy milk", "soya milk", "almond milk",
         "oat milk", "condensed milk", "milk powder", "buttermilk",
@@ -236,7 +229,6 @@ def _check_priority_variant(v: str, full_name: str) -> str | None:
                 return "L002"
             return "L901"
 
-    # Cream / Malai -> L905 (or L512 for heavy/whipping, L906 for malai)
     if not any(x in vl for x in ("ice cream", "sour cream", "coconut cream")):
         if any(w in vl for w in ("heavy cream", "whipping cream", "heavy whipping cream", "double cream")):
             return "L512"
@@ -246,9 +238,7 @@ def _check_priority_variant(v: str, full_name: str) -> str | None:
         if any(vl == k or vl.startswith(k + " ") or vl.endswith(" " + k) for k in cream_terms):
             return "L905"
 
-    # Generic Cooking Oil & Deep-Frying:
-    # Cleaned name 'oil', 'cooking oil', 'refined oil', or containing
-    # 'for deep frying', 'to deep fry', 'for frying', 'to fry' WITH oil/fat words maps to T508 (DEF-B4).
+    # generic vegetable/refined cooking oil maps to T508 unless a specific oil is named
     named_oils = (
         "mustard", "sarson", "coconut", "nariyal", "sesame", "til", "gingelly",
         "olive", "groundnut", "peanut", "moongphali", "mungphali", "soybean",
@@ -265,8 +255,8 @@ def _check_priority_variant(v: str, full_name: str) -> str | None:
     return None
 
 
-def match_name(name: str) -> dict:
-    """Map a parsed ingredient name to a composition table code or UNMAPPED/NON_FOOD."""
+# map cleaned ingredient string to IFCT/INDB food code
+def match_name(name):
     if not name or not isinstance(name, str):
         return {"code": "UNMAPPED", "method": "none", "score": 0.0}
 
@@ -275,39 +265,33 @@ def match_name(name: str) -> dict:
 
     raw_variants, prep_variants = _get_raw_and_prep_variants(name)
 
-    # 1. Programmatic Priority Rules on raw variants
     for v in raw_variants:
         priority_code = _check_priority_variant(v, name)
         if priority_code is not None:
             return {"code": priority_code, "method": "alias", "score": 1.0}
 
-    # 2. Alias match on raw/unstripped text
     for v in raw_variants:
         if v in alias_map:
             return {"code": alias_map[v], "method": "alias", "score": 1.0}
 
-    # 3. Exact match against composition names on raw/unstripped text
     for v in raw_variants:
         if v in comp_map:
             return {"code": comp_map[v], "method": "exact", "score": 1.0}
 
-    # 4. Programmatic Priority Rules on prep-stripped variants
     for v in prep_variants:
         priority_code = _check_priority_variant(v, name)
         if priority_code is not None:
             return {"code": priority_code, "method": "alias", "score": 1.0}
 
-    # 5. Exact match against composition names on prep-stripped text
     for v in prep_variants:
         if v in comp_map:
             return {"code": comp_map[v], "method": "exact", "score": 1.0}
 
-    # 6. Alias match on prep-stripped text
     for v in prep_variants:
         if v in alias_map:
             return {"code": alias_map[v], "method": "alias", "score": 1.0}
 
-    # 7. Fuzzy match against composition names
+    # fuzzy string fallback as last resort
     cutoff = constants.get("FUZZY_MATCH_CUTOFF")
     all_variants = raw_variants + prep_variants
     for v in all_variants:
@@ -317,9 +301,7 @@ def match_name(name: str) -> dict:
             score = difflib.SequenceMatcher(None, v, matched_name).ratio()
             return {"code": comp_map[matched_name], "method": "fuzzy", "score": round(score, 4)}
 
-    # 8. Non-food items (charcoal)
     if "charcoal" in name.lower():
         return {"code": "NON_FOOD", "method": "alias", "score": 1.0}
 
-    # 9. UNMAPPED
     return {"code": "UNMAPPED", "method": "none", "score": 0.0}

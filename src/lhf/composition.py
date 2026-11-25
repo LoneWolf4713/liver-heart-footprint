@@ -1,4 +1,3 @@
-"""Unified food composition table combining IFCT 2017, INDB UK/US, and Indian products."""
 import math
 import os
 import numpy as np
@@ -8,7 +7,7 @@ from lhf import constants
 
 _TABLE = None
 
-# SPEC §2: 14 fats and oils (codes T001-T014) have energy derived from fat
+# pure fats and oils in ifct (T001-T014) have energy computed directly from fat content
 OIL_CODES = {f"T{i:03d}" for i in range(1, 12 + 3)}
 
 COLUMNS = [
@@ -48,22 +47,21 @@ NUTRIENT_COLUMNS = (
 
 
 def _to_num(series):
-    """Coerce numeric strings cleanly to float, filling missing cells with 0."""
     return pd.to_numeric(series, errors="coerce").fillna(0)
 
 
+# leave missing values as nan so missing tfa or water doesn't turn into 0
 def _to_nan_or(series):
-    """Coerce numeric strings cleanly to float while preserving NaN for genuinely missing analytes."""
     return pd.to_numeric(series, errors="coerce")
 
 
-def _build_table() -> pd.DataFrame:
-    """Build the normalized unified per-100g composition table from IFCT, INDB UK/US, and IN_LABEL."""
+# merge ifct 2017, indb uk/us tables, and curated indian product rows
+def _build_table():
     kj_per_kcal = constants.get("KJ_PER_KCAL")
     fat_kj_per_g = constants.get("FAT_KJ_PER_G")
     fat_kcal_per_g = constants.get("FAT_KCAL_PER_G")
 
-    # 1. IFCT 2017 transcription
+    # ifct 2017 main table
     ifct_path = os.path.join(DATA_RAW, "ifct2017_transcription", "ifct2017_compositions.csv")
     ifct_raw = pd.read_csv(ifct_path)
     oil = ifct_raw["code"].astype(str).isin(OIL_CODES)
@@ -92,7 +90,7 @@ def _build_table() -> pd.DataFrame:
         }
     )
 
-    # 2. INDB UK & US
+    # indb uk and us tables (fatty acids are stored in mg here, convert to g)
     indb_dfs = []
     indb_sources = [("UK_fct.xlsx", "INDB_UK"), ("US_fct.xlsx", "INDB_US")]
     for filename, source_name in indb_sources:
@@ -122,7 +120,7 @@ def _build_table() -> pd.DataFrame:
         )
         indb_dfs.append(df)
 
-    # 3. Indian Products (IN_LABEL)
+    # indian dairy and packaged rows
     inp_path = os.path.join(DATA_CURATED, "indian_products.csv")
     inp_raw = pd.read_csv(inp_path)
     inp_df = pd.DataFrame(
@@ -152,21 +150,18 @@ def _build_table() -> pd.DataFrame:
     return combined[COLUMNS]
 
 
-def _get_table() -> pd.DataFrame:
-    """Return the cached unified composition table, building it on first access."""
+def _get_table():
     global _TABLE
     if _TABLE is None:
         _TABLE = _build_table()
     return _TABLE
 
 
-def load_table() -> pd.DataFrame:
-    """Return an isolated copy of the unified composition table."""
+def load_table():
     return _get_table().copy()
 
 
-def get(code: str) -> dict:
-    """Look up raw per-100g nutrient metadata for a single food code."""
+def get(code):
     table = _get_table()
     code_str = str(code)
     if code_str not in table.index:
@@ -176,8 +171,7 @@ def get(code: str) -> dict:
     return row
 
 
-def nutrients_for(code: str, grams: float) -> dict:
-    """Scale per-100g nutrient columns for a validated non-negative gram weight."""
+def nutrients_for(code, grams):
     table = _get_table()
     code_str = str(code)
     if code_str not in table.index:

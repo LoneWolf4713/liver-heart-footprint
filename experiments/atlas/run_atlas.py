@@ -1,13 +1,4 @@
-"""Deliverable 3: Liver and Heart Footprint Atlas of Indian Recipes.
-
-Analyzes 1,014 standardized recipes from the Indian Nutrient Databank (INDB)
-and 71 real web recipes across 10 top cooking websites, computing:
-1. Cardiometabolic budget loads (% ICMR-NIN/WHO daily limits) by dish category.
-2. Ingredient-group driver decomposition (Dairy Fat vs Cooking Oil vs Sugar).
-3. Paired Textbook (INDB) vs Web recipes comparison across benchmark dishes.
-4. Frying bath oil correction via src/lhf/frying.py and data/curated/fried_foods_lab.csv.
-5. Publication-grade figures, machine-readable metrics, and verified summary tables.
-"""
+# indian dish footprint atlas across 1,014 indb recipes and 71 scraped web blogs
 
 import os
 import sys
@@ -33,11 +24,8 @@ from lhf.paths import DATA_RAW, DATA_CURATED
 ATLAS_DIR = os.path.join(BASE_DIR, "experiments", "atlas")
 os.makedirs(ATLAS_DIR, exist_ok=True)
 
-# ---------------------------------------------------------------------------
-# 1. INDB Unit Converter (reproducing INDB.do lines 166-210)
-# ---------------------------------------------------------------------------
+# indb unit converter matching INDB.do rules
 def indb_grams(a, u, food_code, food_name):
-    """Convert amount and unit from INDB recipes.xlsx to grams."""
     c = str(food_code)[:1]
     g = np.nan
     rules = [
@@ -101,7 +89,7 @@ CATEGORIES = [
     "Condiments & Chutneys",
 ]
 
-def classify_recipe(recipe_code: str, recipe_name: str, recipe_code_org: str = "") -> str:
+def classify_recipe(recipe_code, recipe_name, recipe_code_org=""):
     code = str(recipe_code).strip()
     name = str(recipe_name).lower().strip()
     org = str(recipe_code_org).strip()
@@ -480,11 +468,8 @@ def process_web_corpus():
     return processed_recipes
 
 
-# ---------------------------------------------------------------------------
-# 5. Statistical Aggregations by Dish Category
-# ---------------------------------------------------------------------------
+# median, IQR and fat driver share per dish category
 def compute_category_statistics(recipes):
-    """Compute median, IQR, and driver shares for each dish category."""
     cat_data = {c: [] for c in CATEGORIES}
 
     for r in recipes:
@@ -583,11 +568,8 @@ def compute_category_statistics(recipes):
     return summary_df, drivers_df
 
 
-# ---------------------------------------------------------------------------
-# 6. Paired Textbook vs Web Recipes Comparison
-# ---------------------------------------------------------------------------
+# paired comparison between indb manuals and scraped web blogs
 def compute_textbook_vs_web(indb_recipes, web_recipes):
-    """Direct paired comparison for shared dishes between INDB and Web corpus."""
     benchmarks = {
         "paneer butter masala": {
             # INDB lacks exact Paneer Butter Masala; use nearest rich paneer gravies (excl. toast sandwich ASC042 & 502g-fat ASC225)

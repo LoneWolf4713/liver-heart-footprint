@@ -1,23 +1,3 @@
-"""
-Frying correction module.
-
-Detects deep-frying bath oil lines and replaces the stated oil mass with
-lab-measured absorbed fat from data/curated/fried_foods_lab.csv.
-
-A "frying bath" line is an ingredient line that:
-  (a) has class COOKING_OIL or HYDROGENATED_FAT, AND
-  (b) its raw_line contains a frying phrase (see FRYING_PHRASES below), AND
-  (c) its grams value exceeds FRYING_BATH_MIN_G (50g)
-
-If frying bath lines are detected in a recipe result, this module:
-  1. Removes their nutrient contribution from totals
-  2. Looks up the dish name in fried_foods_lab.csv to get lab fat_g_100g
-  3. Estimates absorbed fat = (non-oil included mass / 100) * lab_fat_g_100g
-  4. Estimates absorbed SFA = absorbed_fat * (SFA_pct_of_fat / 100)
-  5. Adds the absorbed fat/SFA back to totals
-  6. Re-derives per_serving and footprint
-  7. Returns the corrected result dict with a FRYING_CORRECTED warning added
-"""
 import copy
 import csv
 import os
@@ -33,20 +13,20 @@ FRYING_PHRASES = [
     "deep fry", "deep frying", "for deep-frying", "to deep-fry",
 ]
 
-FRYING_BATH_MIN_G = float("50.0")  # grams — below this, treat as sautéing oil (not a bath)
+# anything under 50g oil is sauteing/tempering, not a deep-frying kadai bath
+FRYING_BATH_MIN_G = float("50.0")
 
-# Default fat per 100g by dish category if no exact match found in lab data
+# fallback absorbed fat per 100g if dish isn't in fried_foods_lab.csv
 CATEGORY_DEFAULTS = {
-    "stuffed pastry": float("15.0"),     # samosa, kachori
-    "battered fritter": float("17.0"),   # pakora, bhaji, vada
-    "flat dough": float("20.0"),         # puri, bhatura, paratha
-    "crisp namkeen": float("25.0"),      # mathri, sev, chakri, namakpara
-    "syrup-soaked sweet": float("15.0"), # gulab jamun, jalebi
-    "other": float("15.0"),              # aloo tikki, etc.
-    "default": float("15.0"),            # fallback
+    "stuffed pastry": float("15.0"),
+    "battered fritter": float("17.0"),
+    "flat dough": float("20.0"),
+    "crisp namkeen": float("25.0"),
+    "syrup-soaked sweet": float("15.0"),
+    "other": float("15.0"),
+    "default": float("15.0"),
 }
 
-# Default SFA % of fat by category (used if SFA_pct_of_fat is missing in lab data)
 CATEGORY_SFA_PCT = {
     "stuffed pastry": float("42.0"),
     "battered fritter": float("38.0"),
@@ -59,6 +39,7 @@ CATEGORY_SFA_PCT = {
 
 STOPWORDS = {"and", "or", "with", "in", "of", "the", "a"}
 
+# skip frying replacement on non-fried staples like biryani or curries
 NON_FRIED_DISHES = {
     "biryani", "pulao", "pilau", "curry", "dal", "sabzi", "korma",
     "masala", "jalfrezi", "saag", "sambar", "halwa", "poha", "khichdi",
@@ -75,8 +56,7 @@ FRIED_KEYWORDS = {
 _LAB_DATA = None
 
 
-def _load_lab_data() -> list[dict]:
-    """Loads and caches data/curated/fried_foods_lab.csv."""
+def _load_lab_data():
     global _LAB_DATA
     if _LAB_DATA is not None:
         return _LAB_DATA
@@ -115,8 +95,7 @@ def _load_lab_data() -> list[dict]:
     return _LAB_DATA
 
 
-def _detect_frying_bath_lines(lines: list) -> list[dict]:
-    """Detects quantified frying bath oil lines from the pipeline lines list."""
+def _detect_frying_bath_lines(lines):
     bath_lines = []
     for line in lines:
         if not line.get("included", False):
@@ -134,20 +113,17 @@ def _detect_frying_bath_lines(lines: list) -> list[dict]:
     return bath_lines
 
 
-def _has_baked_or_airfry_override(dish_name: str) -> bool:
-    """Returns True if dish title explicitly indicates baking/air-frying rather than deep-frying."""
+def _has_baked_or_airfry_override(dish_name):
     norm = _normalize_name(dish_name)
     return any(kw in norm for kw in ("baked", "air fry", "air fried", "airfryer", "air fryer", "steamed", "roasted"))
 
 
-def _normalize_name(name: str) -> str:
-    """Normalizes dish/item name: lowercase and strip punctuation."""
+def _normalize_name(name):
     cleaned = re.sub(r"[^\w\s]", " ", name.lower())
     return " ".join(cleaned.split())
 
 
-def _is_non_fried_dish(dish_name: str) -> bool:
-    """Checks if a dish name refers to an inherently non-fried staple."""
+def _is_non_fried_dish(dish_name):
     norm = _normalize_name(dish_name)
     has_non_fried = any(nf in norm.split() for nf in NON_FRIED_DISHES)
     has_fried = any(fk in norm for fk in FRIED_KEYWORDS)
@@ -165,17 +141,8 @@ ALLOWED_FRYING_SETTINGS = {
 }
 
 
-def _lookup_lab_fat_details(dish_name: str, frying_setting: str = "auto") -> dict:
-    """
-    Looks up lab fat values for a dish name, optionally filtered by cooking setting.
-
-    frying_setting:
-      - 'auto': preserve default behaviour (prefer 'home' if present, else all matched rows)
-      - 'all': median across all matched rows regardless of setting
-      - specific setting ('street', 'home', 'restaurant-takeaway', 'retail-packaged', 'lab-controlled'):
-        filter matched rows to that setting; if none exist, fall back to all matched rows
-        (or category default) and record fallback_used=True.
-    """
+# find lab fat retention rate for a dish and setting (prefer home on auto, else pooled median)
+def _lookup_lab_fat_details(dish_name, frying_setting="auto"):
     norm_setting = (frying_setting or "auto").strip().lower()
     if norm_setting not in ALLOWED_FRYING_SETTINGS:
         raise ValueError(
@@ -185,10 +152,7 @@ def _lookup_lab_fat_details(dish_name: str, frying_setting: str = "auto") -> dic
     norm_dish = _normalize_name(dish_name)
     lab_data = _load_lab_data()
 
-    # Step 3: Exact base / substring match
     matched_rows = []
-
-    # 3a. Exact base match (item before parentheses matches normalized dish)
     exact_base = [
         r for r in lab_data
         if _normalize_name(r["item"].split("(")[0]) == norm_dish
@@ -196,7 +160,6 @@ def _lookup_lab_fat_details(dish_name: str, frying_setting: str = "auto") -> dic
     if exact_base:
         matched_rows = exact_base
     else:
-        # 3b. Substring match
         sub_matches = []
         for r in lab_data:
             item_base = _normalize_name(r["item"].split("(")[0])
@@ -207,7 +170,6 @@ def _lookup_lab_fat_details(dish_name: str, frying_setting: str = "auto") -> dic
         if sub_matches:
             matched_rows = sub_matches
 
-    # Step 5: Word overlap if still no match
     if not matched_rows:
         dish_words = {w for w in norm_dish.split() if w not in STOPWORDS}
         if dish_words:
@@ -221,7 +183,7 @@ def _lookup_lab_fat_details(dish_name: str, frying_setting: str = "auto") -> dic
                 max_score = max(s[0] for s in scored)
                 matched_rows = [r for score, r in scored if score == max_score]
 
-    # Step 6: Category fallback if still no match
+    # fall back to dish category average if nothing matches in the csv
     if not matched_rows:
         category = "default"
         if any(w in norm_dish for w in ("samosa", "kachori")):
@@ -250,7 +212,6 @@ def _lookup_lab_fat_details(dish_name: str, frying_setting: str = "auto") -> dic
             "category": category,
         }
 
-    # Step 4: Cooking setting filter / fallback
     all_matched = matched_rows
     setting_used = "all_matched"
     fallback_used = False
@@ -281,13 +242,12 @@ def _lookup_lab_fat_details(dish_name: str, frying_setting: str = "auto") -> dic
                 f"fell back to pooled median across {len(all_matched)} matched row(s)."
             )
 
-    # Step 7: Derive median fat and SFA from matched rows
     fat_vals = [r["fat_g_100g"] for r in matched_rows if r.get("fat_g_100g") is not None]
     fat_g_100g = statistics.median(fat_vals) if fat_vals else CATEGORY_DEFAULTS["default"]
 
     sfa_vals = [r["SFA_pct_of_fat"] for r in matched_rows if r.get("SFA_pct_of_fat") is not None]
     if not sfa_vals and matched_rows != all_matched:
-        # If setting-specific rows lack SFA% (e.g. UK CoFID), fall back to dish's SFA% rows before category default
+        # some sources like UK CoFID omit SFA%, so grab SFA% from the dish's other rows before defaulting
         sfa_vals = [r["SFA_pct_of_fat"] for r in all_matched if r.get("SFA_pct_of_fat") is not None]
 
     if sfa_vals:
@@ -328,30 +288,17 @@ def _lookup_lab_fat_details(dish_name: str, frying_setting: str = "auto") -> dic
     }
 
 
-def _lookup_lab_fat(dish_name: str, frying_setting: str = "auto") -> tuple[float, float, str]:
-    """
-    Looks up lab fat values for a dish name.
-    Returns (fat_g_100g, sfa_pct_of_fat, match_description).
-    """
+def _lookup_lab_fat(dish_name, frying_setting="auto"):
     info = _lookup_lab_fat_details(dish_name, frying_setting=frying_setting)
     return (info["fat_g_100g"], info["sfa_pct_of_fat"], info["lab_match"])
 
 
-def correct_frying(
-    result: dict,
-    setting: str = "urban",
-    risk: str = "general",
-    frying_setting: str = "auto",
-) -> dict:
-    """
-    Main entry point. Corrects deep-frying bath oil lines (or injects lab-measured absorbed fat
-    when recipe instructions or unquantified frying lines confirm deep frying).
-    """
+# drop kadai frying bath from totals and inject lab-measured absorbed fat instead
+def correct_frying(result, setting="urban", risk="general", frying_setting="auto"):
     lines = result.get("lines") or []
     recipe_info = result.get("recipe") or {}
     dish_name = recipe_info.get("dish") or recipe_info.get("title") or ""
 
-    # If the recipe is a non-fried dish (e.g. biryani, curry) or baked/air-fried variant, skip correction
     if _is_non_fried_dish(dish_name) or _has_baked_or_airfry_override(dish_name):
         return result
 
@@ -375,7 +322,6 @@ def correct_frying(
     sfa_pct_of_fat = lab_info["sfa_pct_of_fat"]
     match_desc = lab_info["lab_match"]
 
-    # Step 6: Non-oil included mass (all included mass excluding explicit bath lines)
     non_oil_mass_g = sum(
         l["grams"]
         for l in lines
@@ -388,7 +334,6 @@ def correct_frying(
     absorbed_fat_g = (non_oil_mass_g / float("100.0")) * fat_g_100g
     absorbed_sfa_g = absorbed_fat_g * (sfa_pct_of_fat / float("100.0"))
 
-    # Step 9: Nutrient contribution of explicit bath oil lines to remove (0 when bath omitted/unquantified)
     fat_to_remove_g = 0.0
     sfa_to_remove_g = 0.0
     energy_to_remove_kcal = 0.0
@@ -404,7 +349,6 @@ def correct_frying(
             fat_to_remove_g += grams * float("0.995")
             energy_to_remove_kcal += grams * float("9")
 
-    # Step 10: Rebuild corrected totals
     corrected_totals = copy.deepcopy(result.get("totals") or {})
     fat_readd_kcal = absorbed_fat_g * float("9")
 
@@ -420,12 +364,10 @@ def correct_frying(
         energy_to_remove_kj = energy_to_remove_kcal * kj_factor
         corrected_totals["energy_kj"] = max(0.0, corrected_totals["energy_kj"] - energy_to_remove_kj + (fat_readd_kcal * kj_factor))
 
-    # Step 11: Mark explicit frying bath lines (if any) in lines list
     for line in frying_bath_lines:
         line["included"] = False
         line["exclusion_reason"] = "FRYING_BATH"
 
-    # Step 12: Recompute coverage
     corrected_coverage = copy.deepcopy(result.get("coverage") or {})
     if frying_bath_lines:
         if "excluded_by_reason" in corrected_coverage:
@@ -433,7 +375,6 @@ def correct_frying(
         corrected_coverage["included_mass_g"] = max(0.0, corrected_coverage.get("included_mass_g", 0.0) - oil_mass_g)
         corrected_coverage["lines_included"] = max(0, corrected_coverage.get("lines_included", 0) - len(frying_bath_lines))
 
-    # Step 13: Recompute per_serving
     servings_raw = recipe_info.get("servings")
     servings_val = None
     if servings_raw is not None and not isinstance(servings_raw, bool):
@@ -454,7 +395,6 @@ def correct_frying(
         corrected_per_serving = None
         corrected_footprint = None
 
-    # Step 15: Build warning string
     if frying_bath_lines:
         warn = (
             f"FRYING_CORRECTED: detected {len(frying_bath_lines)} frying bath line(s) "
@@ -470,7 +410,6 @@ def correct_frying(
             f"({fat_g_100g}g/100g, match={match_desc})."
         )
 
-    # Step 16: Return corrected result dict
     corrected_result = copy.copy(result)
     corrected_result["totals"] = corrected_totals
     corrected_result["per_serving"] = corrected_per_serving

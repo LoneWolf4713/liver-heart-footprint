@@ -1,5 +1,3 @@
-"""End-to-end recipe pipeline for Phase 1 core engine (SPEC §9)."""
-
 import math
 from lhf import composition, constants
 from lhf.classify import class_totals, classes_for
@@ -20,19 +18,8 @@ def _clean_nan(obj):
     return obj
 
 
-def analyse_recipe(
-    recipe: dict,
-    setting: str = "urban",
-    risk: str = "general",
-    frying_setting: str = "auto",
-) -> dict:
-    """Analyse a recipe and return per-serving nutrient totals and daily-budget footprint.
-
-    recipe: dict with id, url, dish, servings, lines.
-    setting: 'urban' or 'rural'.
-    risk: 'general' or 'cardiometabolic'.
-    frying_setting: 'auto', 'all', 'street', 'home', 'restaurant-takeaway', 'retail-packaged', or 'lab-controlled'.
-    """
+# run all 5 stages on a recipe dict (parse -> match -> weigh -> frying fix -> daily % limits)
+def analyse_recipe(recipe, setting="urban", risk="general", frying_setting="auto"):
     table = composition.load_table()
     table_index = table.index
 
@@ -89,6 +76,7 @@ def analyse_recipe(
             })
         elif status == "QUANTIFIED":
             name = parsed.get("name", "")
+            # match food name before weighing cups/spoons because density depends on what the food is
             m = match_name(name)
             code = m.get("code")
 
@@ -197,7 +185,6 @@ def analyse_recipe(
                 "nutrients": None,
             })
 
-    # Coverage
     excluded_by_reason = {
         "WATER": 0,
         "UNQUANTIFIED": 0,
@@ -221,7 +208,6 @@ def analyse_recipe(
         "unquantified_fat_lines": unquantified_fat_lines,
     }
 
-    # Totals
     compute_res = sum_nutrients([{"code": l["match"]["code"], "grams": l["grams"]} for l in inc_items])
     totals = compute_res["totals"]
     cls_tot = class_totals(
@@ -231,7 +217,7 @@ def analyse_recipe(
     totals["refined_carb_g"] = cls_tot["refined_carb_g"]
     totals["salt_g"] = cls_tot["salt_g"]
 
-    # Warnings
+    # sanity warnings for huge spice amounts or weird recipe weights
     spice_max = constants.get("SPICE_LINE_MAX_G")
     for l in inc_items:
         if "SPICE" in l["classes"] and l["grams"] > spice_max:
@@ -263,6 +249,7 @@ def analyse_recipe(
         }
         fp = footprint(per_serving, setting=setting, risk=risk)
 
+    # salt to taste adds 0g so we warn that reported sodium is a lower bound
     if has_unquantified_salt:
         warnings.append("SALT_UNQUANTIFIED: recipe contains unquantified salt line (sodium is a lower bound)")
 
@@ -285,7 +272,7 @@ def analyse_recipe(
         "warnings": warnings,
     }
 
-    # Frying correction (SPEC addendum: replace stated bath oil with lab-measured absorbed fat)
+    # swap out deep frying pan oil bath with lab absorbed oil numbers
     from lhf.frying import correct_frying
     result = correct_frying(result, setting=setting, risk=risk, frying_setting=frying_setting)
 

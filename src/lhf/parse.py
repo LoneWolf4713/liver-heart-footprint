@@ -1,5 +1,3 @@
-"""Ingredient line parser for Phase 1 core engine (SPEC §4)."""
-
 import html
 import re
 import unicodedata
@@ -89,6 +87,7 @@ WATER_ADJ = (
     r"ठंडा|ठंडे|ठंडी|गर्म|गुनगुना|गुनगुने|गुनगुनी|साफ|ताज़ा|ताजा)"
 )
 
+# don't treat pani puri, watermelon, rose water etc as plain water
 COMPOUND_WATER_ICE = re.compile(
     r"\b(?:"
     r"pani\s*p[ou]{1,2}r[iy]|panipuri|पानी\s*पूरी|पानीपूरी|"
@@ -121,7 +120,7 @@ PLAIN_WATER_PAT = re.compile(
 )
 
 
-def _strip_brackets(s: str) -> str:
+def _strip_brackets(s):
     prev = None
     while prev != s:
         prev = s
@@ -129,7 +128,7 @@ def _strip_brackets(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
-def _is_plain_water(s: str) -> bool:
+def _is_plain_water(s):
     if not s:
         return False
     low = s.strip().lower()
@@ -140,7 +139,8 @@ def _is_plain_water(s: str) -> bool:
     return bool(PLAIN_WATER_PAT.search(low))
 
 
-def _parse_num_val(s: str) -> float | None:
+# handles unicode fractions, mixed fractions like 1-1/2, and midpoint ranges
+def _parse_num_val(s):
     s = s.strip()
     if not s:
         return None
@@ -186,8 +186,8 @@ def _parse_num_val(s: str) -> float | None:
         return None
 
 
-def parse_line(text: str) -> dict:
-    """Parse a single recipe ingredient line into structured attributes (SPEC §4)."""
+# split one ingredient string into qty, unit, size, stated g/ml, and clean food name
+def parse_line(text):
     raw = text
     optional = bool(re.search(r"\boptional\b", text, re.I))
 
@@ -196,7 +196,6 @@ def parse_line(text: str) -> dict:
     s = s.replace("\xa0", " ").replace("\u200b", " ").replace("\ufeff", " ")
     s = s.translate(str.maketrans("०१२३४५६७८९", "0123456789"))
 
-    # Stated grams / ml anywhere in the line
     sg = None
     mg = GRAM_PAT.search(s)
     if mg:
@@ -214,15 +213,12 @@ def parse_line(text: str) -> dict:
                 u = mml.group(2).lower()
                 sml = val * 1000 if u in ("l", "litre", "litres", "liter", "liters", "लीटर") else val
 
-    # Working string without bracketed notes for main fields
     s_clean = _strip_brackets(s)
 
-    # Word numbers at start
     m_w = re.match(r"^(one|two|three|four|five|six|seven|eight|nine|ten)\b", s_clean, re.I)
     if m_w:
         s_clean = str(WORD_NUMS[m_w.group(1).lower()]) + s_clean[m_w.end():]
 
-    # Check pinch / dash at start without number
     m_pinch = re.match(rf"^(?:generous\s+pinch|a\s+pinch|pinches|pinch|चुटकी\s*भर|चुटकी|a\s+dash|dashes|dash){BOUNDARY}", s_clean, re.I)
     qty = None
     qty_min = None
@@ -239,12 +235,11 @@ def parse_line(text: str) -> dict:
         unit = "dash" if "dash" in matched_word else "pinch"
         rem = s_clean[m_pinch.end():].strip()
     else:
-        # Check RANGE_PAT first for range expressions (e.g. 1-1/2 to 2)
         m_rng = RANGE_PAT.match(s_clean)
         is_range = False
         if m_rng:
             a1, sep, a2 = m_rng.group(1), m_rng.group(2), m_rng.group(3)
-            # If sep is '-' and a1 is integer and a2 is fraction, this is a mixed number (e.g. 1-1/2), NOT a range!
+            # 1-1/2 is a mixed fraction, not a range 1 to 1/2
             if not (sep == "-" and re.match(r"^\d+$", a1.strip()) and (a2.strip() in UNICODE_FRAC or "/" in a2)):
                 is_range = True
 
@@ -257,7 +252,6 @@ def parse_line(text: str) -> dict:
                 qty = (v1 + v2) / 2
                 rem = s_clean[m_rng.end():].strip()
         else:
-            # Check mixed fraction like 2-1/2, 2 - 1/2, 1 & 1/2, 1 and 1/2
             m_mix = re.match(r"^(\d+)\s*(?:-|&|and)\s*(\d+/\d+|[½⅓⅔¼¾⅛⅜⅝⅞]){NUM_BOUNDARY}", s_clean, re.I)
             if m_mix:
                 w = float(m_mix.group(1))
@@ -283,9 +277,7 @@ def parse_line(text: str) -> dict:
                         qty_max = v
                         rem = s_clean[m_single.end():].strip()
 
-    # Parse size and unit if quantity was found
     if qty is not None and unit is None:
-        # Check size right after quantity
         ms = SIZE_PAT.match(rem)
         if ms:
             sz_str = ms.group(1).lower()
@@ -297,7 +289,6 @@ def parse_line(text: str) -> dict:
                 size = "large"
             rem = rem[ms.end():].strip()
 
-        # Check unit right after quantity or size
         matched_unit = None
         for u_name, u_re in UNIT_DEFS:
             mu = u_re.match(rem)
@@ -320,6 +311,7 @@ def parse_line(text: str) -> dict:
                         size = "large"
                     rem = rem[ms2.end():].strip()
 
+            # plain "cloves" without garlic means the spice, so don't consume it as a unit
             has_garlic = "garlic" in s.lower()
             if u_name == "clove":
                 if has_garlic:
@@ -338,7 +330,6 @@ def parse_line(text: str) -> dict:
             else:
                 unit = u_name
         else:
-            # Check for garlic cloves / garlic pods where garlic precedes the unit word
             mg_pod = re.search(r"\bgarlic\s+(?:pods?|cloves?)\b", rem, re.I)
             if mg_pod:
                 unit = "clove"
@@ -349,13 +340,12 @@ def parse_line(text: str) -> dict:
         if unit in MASS_VOLUME_UNITS:
             size = None
 
-    # Strip leading prepositions and separators from rem
     rem = re.sub(r"^[,\-–—:\.\s/]+", "", rem).strip()
     rem = re.sub(r"^\bof\b\s+", "", rem, flags=re.I).strip()
 
     water_line = _is_plain_water(rem)
 
-    # Inverted lines: if qty was not found at start but stated mass/volume exists
+    # handle lines like "potatoes 200 g" where the number comes at the end
     if qty is None and not water_line:
         if sg is not None and sg > 0:
             qty = sg
@@ -368,7 +358,6 @@ def parse_line(text: str) -> dict:
             qty_max = sml
             unit = "ml"
 
-    # Determine status
     if water_line:
         status = "WATER"
     elif qty is None or qty <= 0:
@@ -390,7 +379,6 @@ def parse_line(text: str) -> dict:
         sg = None
         sml = None
 
-    # Name cleanup
     name_clean = rem
     name_clean = re.sub(
         r"^(?:/\s*|\bor\s+)?\d+[\d\s./½¼¾⅓⅔⅛&to\-]*\s*(?:kg|kilograms?|किलोग्राम|किग्रा|g|gms?|grams?|ग्राम|ml|millilitres?|milliliters?|mls?|मिलीलीटर|मिली|l|litres?|liters?|लीटर)\b",
