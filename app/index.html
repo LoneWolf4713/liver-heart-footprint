@@ -40,16 +40,92 @@
     }
 
     /* ======================================================== */
-    /* 1. HERO LANDING SCREEN (Pure White, Unboxed Editorial)   */
+    /* 1. HERO LANDING SCREEN (Apple Minimal + Organ/Food Craft)*/
     /* ======================================================== */
+    .hero-stage {
+      position: relative;
+      min-height: 100vh;
+      background: linear-gradient(180deg, #f5f8ff 0%, #ffffff 340px);
+      overflow-x: hidden;
+    }
+
+    .hero-ambient-layer {
+      display: none;
+    }
+
+    @media (min-width: 1120px) {
+      .hero-ambient-layer {
+        display: block;
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        overflow: hidden;
+      }
+    }
+
+    .ambient-token {
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      opacity: 0.72;
+      animation: floatGentle 7s ease-in-out infinite;
+    }
+
+    @keyframes floatGentle {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+
     .hero-container {
+      position: relative;
+      z-index: 2;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 48px 24px 40px 24px;
-      max-width: 920px;
+      padding: 36px 24px 32px 24px;
+      max-width: 980px;
       margin: 0 auto;
+    }
+
+    .hero-organ-crest {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 auto 16px auto;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    .crest-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+    .crest-liver {
+      background: #fff3ed;
+      color: #c2410c;
+    }
+
+    .crest-heart {
+      background: #fff1f2;
+      color: #be123c;
     }
 
     .hero-top-wrapper {
@@ -286,29 +362,65 @@
       border-color: #b0b0b5;
     }
 
-    .hero-nav-links {
-      margin-top: 36px;
+    .hero-deliverable-dock {
+      margin-top: 34px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      max-width: 920px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 780px) {
+      .hero-deliverable-dock {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .dock-card-btn {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 16px;
-      font-size: 13px;
-      color: var(--color-accent);
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      gap: 4px;
+      padding: 13px 15px;
+      border-radius: 12px;
+      border: 1px solid var(--border-subtle);
+      background: #ffffff;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
     }
 
-    .hero-nav-links a {
-      color: inherit;
-      text-decoration: none;
-      font-weight: 500;
+    .dock-card-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
     }
 
-    .hero-nav-links a:hover {
-      text-decoration: underline;
+    .dock-card-btn.dock-d4 { background: #f3f8ff; border-color: #d6e6ff; }
+    .dock-card-btn.dock-d1 { background: #fff9f2; border-color: #ffe4c4; }
+    .dock-card-btn.dock-d2 { background: #f5f4ff; border-color: #dedbff; }
+    .dock-card-btn.dock-d3 { background: #f2fbf5; border-color: #cdeed7; }
+
+    .dock-card-tag {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
     }
 
-    .dot-sep {
-      color: #c7c7cc;
+    .dock-card-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.3;
+    }
+
+    .dock-card-desc {
+      font-size: 12px;
+      color: #55555a;
+      line-height: 1.35;
     }
 
     /* ======================================================== */
@@ -411,26 +523,30 @@
     }
 
     /* ======================================================== */
-    /* 3. D4 REDESIGN: FULL-WIDTH UNBOXED CLINICAL DASHBOARD    */
+    /* 3. D4 REDESIGN: FULL-WIDTH SUB-TOOLBAR & CLEAN HIERARCHY */
     /* ======================================================== */
-    .app-main {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 32px 36px 64px 36px;
+    .sub-toolbar-band {
+      background: #f8f9fb;
+      border-bottom: 1px solid var(--border-subtle);
+      width: 100%;
     }
 
-    /* Active Recipe Control Toolbar (Visually Decoupled Top Utility Bar) */
     .recipe-control-toolbar {
+      max-width: 1400px;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #fbfbfd;
-      border: 1px solid var(--border-subtle);
-      border-radius: 12px;
-      padding: 12px 24px;
-      margin: 0 -24px 58px -24px;
-      width: calc(100% + 48px);
+      padding: 10px 36px;
       box-sizing: border-box;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .app-main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 28px 36px 64px 36px;
     }
 
     .toolbar-left {
@@ -448,26 +564,17 @@
     }
 
     .toolbar-dish {
-      font-size: 16px;
+      font-size: 15.5px;
       font-weight: 700;
       color: var(--text-main);
       letter-spacing: -0.01em;
     }
 
-    .toolbar-pill {
-      font-size: 12px;
-      font-weight: 500;
-      color: #636366;
-      background: #ffffff;
-      border: 1px solid #d2d2d7;
-      padding: 2px 7px;
-      border-radius: 4px;
-    }
-
     .toolbar-right {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
+      flex-wrap: wrap;
     }
 
     .chip-label {
@@ -480,7 +587,7 @@
       background: #ffffff;
       border: 1px solid var(--border-subtle);
       border-radius: 6px;
-      padding: 5px 12px;
+      padding: 4px 10px;
       font-size: 12px;
       font-weight: 500;
       color: var(--text-main);
@@ -489,8 +596,8 @@
     }
 
     .demo-chip:hover {
-      background: #f5f5f7;
-      border-color: #d2d2d7;
+      background: #f0f0f5;
+      border-color: #c7c7cc;
     }
 
     .demo-chip.active {
@@ -504,15 +611,15 @@
       background: #ffffff;
       border: 1px solid var(--border-subtle);
       border-radius: 6px;
-      padding: 5px 12px;
+      padding: 4px 11px;
       font-size: 12px;
       font-weight: 600;
       color: var(--color-accent);
       cursor: pointer;
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 5px;
-      margin-left: 6px;
+      gap: 4px;
+      margin-left: 4px;
       transition: all 0.15s ease;
     }
 
@@ -521,102 +628,190 @@
       border-color: #0071e3;
     }
 
-    /* Clinical Assessment Report Header */
+    /* D4 Report Title + Single Highlighted Portion Basis + Segmented Switcher */
     .report-header-block {
-      margin-bottom: 28px;
+      margin-bottom: 24px;
       text-align: left;
+    }
+
+    .d4-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 18px;
     }
 
     .report-main-title {
       font-size: 32px;
       line-height: 1.15;
-      font-weight: 700;
+      font-weight: 750;
       letter-spacing: -0.025em;
       color: var(--text-main);
       margin: 0 0 8px 0;
     }
 
-    .report-sub-title {
-      font-size: 16px;
-      line-height: 1.5;
-      color: var(--text-body);
-      margin: 0 0 18px 0;
-    }
-
-    /* Serving & Macro Context Strip */
-    .dish-macro-strip {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 10px;
-      background: #f5f5f7;
-      border: 1px solid var(--border-subtle);
-      border-radius: 10px;
-      padding: 12px 18px;
-      margin-bottom: 24px;
-      font-size: 14.5px;
-      color: var(--text-main);
-    }
-
-    .macro-pill-item {
+    .portion-basis-pill {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      background: #ffffff;
-      border: 1px solid #d2d2d7;
-      border-radius: 6px;
-      padding: 5px 12px;
-      font-size: 14px;
+      gap: 7px;
+      background: #eaf3ff;
+      color: #004ea8;
+      border: 1px solid #c6defe;
+      border-radius: 999px;
+      padding: 5px 14px;
+      font-size: 13.5px;
+      font-weight: 700;
+    }
+
+    .portion-segmented {
+      display: inline-flex;
+      background: #f2f2f7;
+      padding: 3px;
+      border-radius: 10px;
+      border: 1px solid #e5e5ea;
+      gap: 2px;
+    }
+
+    .portion-seg-btn {
+      border: none;
+      background: transparent;
+      color: #48484a;
+      font-size: 13px;
       font-weight: 600;
+      padding: 6px 13px;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
     }
 
-    .macro-pill-item span.macro-lbl {
-      color: var(--text-muted);
-      font-weight: 500;
+    .portion-seg-btn.active {
+      background: #ffffff;
+      color: #0071e3;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     }
 
-    /* Executive Dual-Organ Verdict Panels (No Ad-Hoc Composite Formulas) */
+    /* Executive Dual-Organ Verdict Panels (Warm Organ Washes + Mini SVG Rings) */
     .verdict-dual-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin-bottom: 28px;
+      gap: 22px;
+      margin-bottom: 36px;
+    }
+
+    @media (max-width: 900px) {
+      .verdict-dual-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     .verdict-panel {
       background: #ffffff;
       border: 1px solid var(--border-subtle);
       border-radius: 14px;
-      padding: 22px 24px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
       display: flex;
       flex-direction: column;
-      gap: 16px;
     }
 
     .verdict-panel-header {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
       gap: 12px;
       flex-wrap: wrap;
+      padding: 15px 22px;
+      border-bottom: 1px solid var(--border-divider);
+    }
+
+    .verdict-panel-liver .verdict-panel-header {
+      background: linear-gradient(90deg, #fff6f0 0%, #ffffff 100%);
+      border-bottom-color: #ffe4d6;
+    }
+
+    .verdict-panel-heart .verdict-panel-header {
+      background: linear-gradient(90deg, #fff3f5 0%, #ffffff 100%);
+      border-bottom-color: #ffdce3;
     }
 
     .exec-organ-badge {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 19px;
+      gap: 9px;
+      font-size: 18px;
       font-weight: 700;
       color: var(--text-main);
     }
 
-    .exec-verdict-pill {
+    .verdict-rings-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 18px 14px;
+      gap: 8px;
+    }
+
+    .ring-stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 4px 8px;
+      border-right: 1px solid #f2f2f7;
+    }
+
+    .ring-stat-item:last-child {
+      border-right: none;
+    }
+
+    .ring-svg-wrap {
+      position: relative;
+      width: 68px;
+      height: 68px;
+      margin-bottom: 8px;
+    }
+
+    .ring-center-val {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .ring-stat-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .ring-stat-sub {
       font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .verdict-footer-line {
+      padding: 12px 22px;
+      background: #fafafa;
+      border-top: 1px solid #f2f2f7;
+      font-size: 13.5px;
+      color: var(--text-body);
+      line-height: 1.45;
+      margin-top: auto;
+    }
+
+    .exec-verdict-pill {
+      font-size: 11.5px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      padding: 5px 11px;
+      padding: 4px 10px;
       border-radius: 6px;
       display: inline-block;
     }
@@ -639,81 +834,18 @@
       border: 1px solid #c8e6c9;
     }
 
-    .verdict-kpi-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-
-    .verdict-kpi-tile {
-      background: #fbfbfd;
-      border: 1px solid var(--border-subtle);
-      border-left: 4px solid #8e8e93;
-      border-radius: 8px;
-      padding: 12px 14px;
-    }
-
-    .verdict-kpi-tile.tile-danger {
-      background: #fff8f8;
-      border-color: #ffd8d8;
-      border-left-color: var(--color-danger);
-    }
-
-    .verdict-kpi-tile.tile-warning {
-      background: #fffbf2;
-      border-color: #ffe8cc;
-      border-left-color: var(--color-warning);
-    }
-
-    .verdict-kpi-tile.tile-safe {
-      background: #f6fcf7;
-      border-color: #d2f4d8;
-      border-left-color: var(--color-safe);
-    }
-
-    .kpi-tile-label {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text-muted);
-      margin-bottom: 4px;
-    }
-
-    .kpi-tile-val {
-      font-size: 26px;
-      font-weight: 800;
-      line-height: 1.1;
-      color: var(--text-main);
-      font-family: var(--font-system);
-    }
-
-    .kpi-tile-sub {
-      font-size: 13px;
-      color: var(--text-body);
-      margin-top: 4px;
-      font-weight: 500;
-    }
-
-    .verdict-quality-bar {
-      background: #f5f5f7;
-      border-radius: 8px;
-      padding: 11px 14px;
-      font-size: 14px;
-      line-height: 1.45;
-      color: var(--text-body);
-    }
-
     /* Inline Alert for Frying Correction */
     .frying-callout-strip {
       display: flex;
       align-items: flex-start;
       gap: 14px;
-      background: #fffdfa;
-      border: 1px solid #ffe8cc;
+      background: #fffaf0;
+      border: 1px solid #fde3a7;
       border-left: 5px solid var(--color-warning);
-      border-radius: 10px;
+      border-radius: 12px;
       padding: 16px 22px;
-      margin-bottom: 32px;
-      font-size: 15px;
+      margin-bottom: 24px;
+      font-size: 14.5px;
       line-height: 1.55;
       color: #5c3b00;
     }
@@ -908,18 +1040,77 @@
     }
 
     /* -------------------------------------------------------- */
-    /* SECTION 1: LAYOUT A — ORGAN CARDS WITH 2x2 GAUGE GRIDS   */
+    /* SECTION 1: MACRO RIBBON + SIDE-BY-SIDE ORGAN MATRIX      */
     /* -------------------------------------------------------- */
     .organ-architecture-section {
-      margin-top: 36px;
-      margin-bottom: 64px;
+      margin-top: 12px;
+      margin-bottom: 56px;
+    }
+
+    .macro-ribbon-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-bottom: 22px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02);
+    }
+
+    .macro-ribbon-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .macro-ribbon-bar {
+      display: flex;
+      height: 14px;
+      border-radius: 7px;
+      overflow: hidden;
+      background: #f2f2f7;
+      margin-bottom: 14px;
+    }
+
+    .macro-legend-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .macro-dot-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-main);
+      padding: 5px 12px;
+      border-radius: 8px;
+      background: #fbfbfd;
+      border: 1px solid #ececf1;
+    }
+
+    .organ-matrix-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    @media (max-width: 960px) {
+      .organ-matrix-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     .organ-panel-card {
       border: 1px solid var(--border-subtle);
       border-radius: 14px;
-      padding: 26px 30px;
       background: #ffffff;
+      overflow: hidden;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
     }
 
@@ -929,74 +1120,53 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 12px;
-      padding-bottom: 16px;
-      margin-bottom: 22px;
+      padding: 16px 24px;
       border-bottom: 1px solid var(--border-divider);
     }
 
+    .organ-card-liver .organ-panel-header {
+      background: linear-gradient(90deg, #fff6f0 0%, #ffffff 100%);
+      border-bottom-color: #ffe4d6;
+    }
+
+    .organ-card-heart .organ-panel-header {
+      background: linear-gradient(90deg, #fff3f5 0%, #ffffff 100%);
+      border-bottom-color: #ffdce3;
+    }
+
     .organ-panel-title {
-      font-size: 21px;
+      font-size: 19px;
       font-weight: 700;
       color: var(--text-main);
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 9px;
       margin: 0;
     }
 
     .organ-panel-sub {
-      font-size: 14.5px;
+      font-size: 13.5px;
       color: var(--text-muted);
+      margin-top: 2px;
     }
 
-    .organ-gauges-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px 36px;
-    }
-
-    /* Vertical Flow Connector & Crossroads Bridge */
-    .crossroads-flow-connector {
+    .organ-gauges-stack {
+      padding: 8px 24px 18px 24px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      margin: 20px 0;
     }
 
-    .connector-line-vert {
-      width: 2px;
-      height: 18px;
-      background: #d2e4fc;
-    }
-
-    .crossroads-flow-banner {
-      width: 100%;
-      box-sizing: border-box;
-      background: #f4f8fe;
-      border: 1px solid #d2e4fc;
-      border-radius: 10px;
-      padding: 14px 22px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      font-size: 14.5px;
-      color: #1a4074;
-      line-height: 1.5;
-    }
-
-    .crossroads-flow-banner strong {
-      color: #0051ba;
-    }
-
-    /* Gauge Meters */
+    /* Clean Borderless Gauge Rows */
     .gauge-block {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      background: #fbfbfd;
-      border: 1px solid var(--border-divider);
-      border-radius: 10px;
-      padding: 16px 20px;
+      padding: 16px 0;
+      border-bottom: 1px solid #f2f2f7;
+    }
+
+    .gauge-block:last-child {
+      border-bottom: none;
+      padding-bottom: 6px;
     }
 
     .gauge-header-row {
@@ -2239,106 +2409,151 @@
   <!-- ======================================================== -->
   <!-- SCREEN 1: HERO INTRODUCTION LANDING VIEW                 -->
   <!-- ======================================================== -->
-  <div x-show="view === 'hero'" x-transition.opacity.duration.200ms class="hero-container">
-    
-    <!-- Centered Course Pill -->
-    <div class="hero-top-wrapper">
-      <div class="hero-top-badge">
-        <div class="dot"></div>
-        BIO544 Computational Gastronomy · Monsoon 2026 · Group 45
-      </div>
+  <div x-show="view === 'hero'" x-transition.opacity.duration.200ms class="hero-stage">
+
+    <!-- Subtle Outer-Margin Ambient Food Motifs (Desktop >= 1120px Only) -->
+    <div class="hero-ambient-layer" aria-hidden="true">
+      <div class="ambient-token" style="top: 13%; left: 5%; animation-delay: 0s;">🥟</div>
+      <div class="ambient-token" style="top: 44%; left: 3.5%; animation-delay: 1.4s;">🍛</div>
+      <div class="ambient-token" style="bottom: 18%; left: 6.5%; animation-delay: 2.6s;">🧈</div>
+      <div class="ambient-token" style="top: 15%; right: 5.5%; animation-delay: 0.9s;">🍲</div>
+      <div class="ambient-token" style="top: 47%; right: 3.5%; animation-delay: 2.1s;">🧁</div>
+      <div class="ambient-token" style="bottom: 18%; right: 6%; animation-delay: 3.1s;">🫖</div>
     </div>
 
-    <!-- Editorial Intro (Solid Black Typography, No Card Wrappers) -->
-    <div class="hero-content">
-      <h1 class="hero-headline">
-        Liver &amp; Heart Footprint<br>of Indian Recipes
-      </h1>
-      
-      <p class="hero-subhead">
-        How much of your daily fat, sugar, and sodium budget does one serving of a dish actually use? We built a pipeline to find out — for 1,014 Indian recipes, backed by lab data.
-      </p>
+    <div class="hero-container">
 
-      <!-- Prominent Authors Attribution Block -->
-      <div class="hero-authors-block">
-        <div class="author-team">
-          <span>Parth Verma <span class="author-roll">(2024407)</span></span>
-          <span style="color: #c7c7cc;">&middot;</span>
-          <span>Pratyaksh Kumar <span class="author-roll">(2024431)</span></span>
+      <!-- Centered Course Pill + Liver & Heart Crest -->
+      <div class="hero-top-wrapper" style="flex-direction: column; align-items: center; gap: 14px; margin-bottom: 16px;">
+        <div class="hero-top-badge">
+          <div class="dot"></div>
+          BIO544 Computational Gastronomy · Monsoon 2026 · Group 45
         </div>
-        <div class="author-supervisor">
-          Supervised by <strong>Prof. Ganesh Bagler</strong> &middot; IIIT-Delhi
+
+        <div class="hero-organ-crest">
+          <span class="crest-pill crest-liver">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 10c0-3.5 3-6 7.5-6 5 0 8.5 2.3 8.5 5.5 0 2.7-2.2 4.5-5.5 5-2 .3-3.5 1.8-4.5 3.3-.8 1.1-2.7 1.2-3.8.2C4.8 16.5 4 13.5 4 10z"/>
+              <path d="M12.5 5.5v7"/>
+            </svg>
+            Liver · Steatosis Risk
+          </span>
+          <span style="color: #d2d2d7; font-size: 13px;">&times;</span>
+          <span class="crest-pill crest-heart">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            Heart · CVD Risk
+          </span>
         </div>
       </div>
 
-      <!-- Direct Unboxed Input Section -->
-      <div class="hero-input-section">
-        
-        <!-- Toggle Bar -->
-        <div style="text-align: center; margin-bottom: 12px;">
-          <div class="mode-toggle-bar">
-            <button class="mode-btn" :class="{ 'active': inputMode === 'url' }" @click="inputMode = 'url'">Recipe URL</button>
-            <button class="mode-btn" :class="{ 'active': inputMode === 'paste' }" @click="inputMode = 'paste'">Paste Ingredients</button>
+      <!-- Editorial Intro -->
+      <div class="hero-content">
+        <h1 class="hero-headline">
+          Liver &amp; Heart Footprint<br>of Indian Recipes
+        </h1>
+
+        <p class="hero-subhead">
+          How much of your daily fat, sugar, and sodium budget does one serving of a dish actually use? Paste any Indian recipe URL or ingredient list — calibrated against <strong>1,014 recipes</strong> and <strong>Soxhlet lab frying data</strong>.
+        </p>
+
+        <!-- Authors Attribution Block -->
+        <div class="hero-authors-block" style="margin-bottom: 30px;">
+          <div class="author-team">
+            <span>Parth Verma <span class="author-roll">(2024407)</span></span>
+            <span style="color: #c7c7cc;">&middot;</span>
+            <span>Pratyaksh Kumar <span class="author-roll">(2024431)</span></span>
+          </div>
+          <div class="author-supervisor">
+            Supervised by <strong>Prof. Ganesh Bagler</strong> &middot; IIIT-Delhi
           </div>
         </div>
 
-        <!-- URL Input -->
-        <div x-show="inputMode === 'url'" class="search-bar-unified">
-          <input type="text" class="search-input" placeholder="Paste an Indian recipe URL (IndianHealthyRecipes, CookWithManali, PipingPotCurry, Archana's Kitchen)..." x-model="recipeUrl" @keydown.enter="launchWithCurrent()">
-          <button class="search-btn" :disabled="isLoading" @click="launchWithCurrent()">
-            <span x-text="isLoading ? 'Scraping &amp; Analyzing...' : 'Analyze Recipe &rarr;'"></span>
-          </button>
-        </div>
+        <!-- Direct Input Section -->
+        <div class="hero-input-section">
 
-        <!-- Paste Mode -->
-        <div x-show="inputMode === 'paste'" class="paste-area-unified">
-          <div class="paste-meta-row">
-            <input type="text" class="sub-input" placeholder="Dish Name (e.g. Samosa)" x-model="pasteDish">
-            <input type="number" class="sub-input" style="max-width: 150px;" placeholder="Servings (4)" min="1" step="0.5" x-model.number="pasteServings">
+          <!-- Toggle Bar -->
+          <div style="text-align: center; margin-bottom: 12px;">
+            <div class="mode-toggle-bar">
+              <button class="mode-btn" :class="{ 'active': inputMode === 'url' }" @click="inputMode = 'url'">Recipe URL</button>
+              <button class="mode-btn" :class="{ 'active': inputMode === 'paste' }" @click="inputMode = 'paste'">Paste Ingredients</button>
+            </div>
           </div>
-          <textarea class="paste-textarea" placeholder="Paste ingredient lines (one per line), e.g.:&#10;2 cups maida&#10;2 tbsp oil&#10;500 ml oil for deep frying" x-model="pasteLines"></textarea>
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 6px;">
-            <button type="button" class="bench-chip" @click="loadSamplePaste()">Fill Sample Samosa Recipe</button>
-            <button class="search-btn" style="height: 42px;" :disabled="isLoading" @click="launchWithCurrent()">
-              <span x-text="isLoading ? 'Analyzing...' : 'Analyze Custom Recipe &rarr;'"></span>
+
+          <!-- URL Input -->
+          <div x-show="inputMode === 'url'" class="search-bar-unified">
+            <input type="text" class="search-input" placeholder="Paste an Indian recipe URL (IndianHealthyRecipes, CookWithManali, PipingPotCurry, Archana's Kitchen)..." x-model="recipeUrl" @keydown.enter="launchWithCurrent()">
+            <button class="search-btn" :disabled="isLoading" @click="launchWithCurrent()">
+              <span x-text="isLoading ? 'Scraping &amp; Analyzing...' : 'Analyze Recipe &rarr;'"></span>
+            </button>
+          </div>
+
+          <!-- Paste Mode -->
+          <div x-show="inputMode === 'paste'" class="paste-area-unified">
+            <div class="paste-meta-row">
+              <input type="text" class="sub-input" placeholder="Dish Name (e.g. Samosa)" x-model="pasteDish">
+              <input type="number" class="sub-input" style="max-width: 150px;" placeholder="Servings (4)" min="1" step="0.5" x-model.number="pasteServings">
+            </div>
+            <textarea class="paste-textarea" placeholder="Paste ingredient lines (one per line), e.g.:&#10;2 cups maida&#10;2 tbsp oil&#10;500 ml oil for deep frying" x-model="pasteLines"></textarea>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 6px;">
+              <button type="button" class="bench-chip" @click="loadSamplePaste()">Fill Sample Samosa Recipe</button>
+              <button class="search-btn" style="height: 42px;" :disabled="isLoading" @click="launchWithCurrent()">
+                <span x-text="isLoading ? 'Analyzing...' : 'Analyze Custom Recipe &rarr;'"></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Inline Error / Scrape Feedback Banner -->
+          <div x-show="errorMessage" x-text="errorMessage" class="hero-error-banner"></div>
+
+          <!-- Quick Benchmark Chips -->
+          <div class="benchmarks-strip">
+            <span class="bench-label">Quick benchmarks:</span>
+            <button type="button" class="bench-chip" @click="launchWithDemo('paneer_butter_masala')">
+              🧀 Paneer Butter Masala
+            </button>
+            <button type="button" class="bench-chip" @click="launchWithDemo('samosa_test')">
+              🥟 Samosa (Fried)
+            </button>
+            <button type="button" class="bench-chip" @click="launchWithDemo('chicken_biryani')">
+              🍛 Chicken Biryani
             </button>
           </div>
         </div>
 
-        <!-- Inline Error / Scrape Feedback Banner -->
-        <div x-show="errorMessage" x-text="errorMessage" class="hero-error-banner"></div>
+        <!-- 4-Card Deliverable Dock (Reliable Button Triggers + Color Hierarchy) -->
+        <div class="hero-deliverable-dock">
+          <button type="button" class="dock-card-btn dock-d4" @click="openTabDirect('d4')">
+            <span class="dock-card-tag">D4 · Live Demo</span>
+            <span class="dock-card-title">Live Recipe Breakdown &rarr;</span>
+            <span class="dock-card-desc">Inspect Liver &amp; Heart footprints and ingredient drivers.</span>
+          </button>
 
-        <!-- Single-Line Compact Benchmark Chips -->
-        <div class="benchmarks-strip">
-          <span class="bench-label">Quick benchmarks:</span>
-          <button class="bench-chip" @click="launchWithDemo('paneer_butter_masala')">
-            Paneer Butter Masala
+          <button type="button" class="dock-card-btn dock-d1" @click="openTabDirect('d1')">
+            <span class="dock-card-tag">D1 · Lab Calibration</span>
+            <span class="dock-card-title">69-Row Lab Dataset &rarr;</span>
+            <span class="dock-card-desc">Soxhlet &amp; FAME frying assays across 5 Indian settings.</span>
           </button>
-          <button class="bench-chip" @click="launchWithDemo('samosa_test')">
-            Samosa (Fried)
-          </button>
-          <button class="bench-chip" @click="launchWithDemo('chicken_biryani')">
-            Chicken Biryani
-          </button>
-        </div>
 
-        <!-- Direct Nav Links -->
-        <div class="hero-nav-links">
-          <a href="#" @click.prevent="openTabDirect('d4')">Active Recipe Breakdown &rarr;</a>
-          <span class="dot-sep">&middot;</span>
-          <a href="#" @click.prevent="openTabDirect('d1')">69-Row Lab Dataset &rarr;</a>
-          <span class="dot-sep">&middot;</span>
-          <a href="#" @click.prevent="openTabDirect('d2')">5-Stage Engine &amp; Methodology &rarr;</a>
-          <span class="dot-sep">&middot;</span>
-          <a href="#" @click.prevent="openTabDirect('d3')">Cuisine Atlas (1,014 Recipes) &rarr;</a>
+          <button type="button" class="dock-card-btn dock-d2" @click="openTabDirect('d2')">
+            <span class="dock-card-tag">D2 · Pipeline</span>
+            <span class="dock-card-title">5-Stage Engine &rarr;</span>
+            <span class="dock-card-desc">Grammar parser, 4,205 IFCT aliases &amp; ICMR-NIN limits.</span>
+          </button>
+
+          <button type="button" class="dock-card-btn dock-d3" @click="openTabDirect('d3')">
+            <span class="dock-card-tag">D3 · Macro Study</span>
+            <span class="dock-card-title">1,014-Recipe Atlas &rarr;</span>
+            <span class="dock-card-desc">11 cuisine categories &amp; textbook vs. web inflation.</span>
+          </button>
         </div>
       </div>
 
-    </div>
-
-    <!-- Bottom Attribution -->
-    <div style="text-align: center; font-size: 12px; color: var(--text-muted);">
-      BIO544 Computational Gastronomy · Deliverable 4 (Interactive Web Application)
+      <!-- Bottom Attribution -->
+      <div style="text-align: center; font-size: 12px; color: var(--text-muted); margin-top: 18px;">
+        BIO544 Computational Gastronomy · Group 45 Deliverable Explorer
+      </div>
     </div>
   </div>
 
@@ -2380,6 +2595,37 @@
       </div>
     </header>
 
+    <!-- Full-Bleed Sub-Toolbar for D4 (Visually Wider Than Dashboard Content) -->
+    <div class="sub-toolbar-band" x-show="currentTab === 'd4'">
+      <div class="recipe-control-toolbar">
+        <div class="toolbar-left">
+          <span class="toolbar-label">Active Dish</span>
+          <span class="toolbar-dish" x-text="formatDishName(activeResult ? activeResult.recipe.dish : '—')"></span>
+          <span x-show="scrapeNotice" style="font-size: 12px; font-weight: 600; color: #0058b8; margin-left: 4px;" x-text="`· ${scrapeNotice}`"></span>
+        </div>
+
+        <div class="toolbar-right">
+          <span class="chip-label">Benchmarks:</span>
+          <button type="button" class="demo-chip" :class="{ 'active': selectedDemo === 'paneer_butter_masala' }" @click="loadDemo('paneer_butter_masala')">
+            Paneer Butter Masala
+          </button>
+          <button type="button" class="demo-chip" :class="{ 'active': selectedDemo === 'samosa_test' }" @click="loadDemo('samosa_test')">
+            Samosa (Fried)
+          </button>
+          <button type="button" class="demo-chip" :class="{ 'active': selectedDemo === 'chicken_biryani' }" @click="loadDemo('chicken_biryani')">
+            Chicken Biryani
+          </button>
+          <button type="button" class="change-recipe-btn" @click="openPasteEditor()">
+            Edit Lines
+          </button>
+          <button type="button" class="change-recipe-btn" @click="view = 'hero'">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+            New URL / Recipe
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- Main Content Viewport -->
     <main class="app-main">
       
@@ -2387,184 +2633,49 @@
       <!-- TAB 4: D4 · LIVE BREAKDOWN (CLINICALLY GROUNDED)       -->
       <!-- ====================================================== -->
       <div x-show="currentTab === 'd4'" x-transition.opacity.duration.150ms>
-        
-        <!-- Active Recipe Control Toolbar (Visually Decoupled Top Utility Bar) -->
-        <div class="recipe-control-toolbar" style="margin-bottom: 34px;">
-          <div class="toolbar-left">
-            <span class="toolbar-label">Active Recipe</span>
-            <span class="toolbar-dish" x-text="formatDishName(activeResult ? activeResult.recipe.dish : '—')"></span>
-            <span class="toolbar-pill" x-text="portionSummaryLabel"></span>
-          </div>
-
-          <div class="toolbar-right">
-            <span class="chip-label">Switch Benchmark:</span>
-            <button class="demo-chip" :class="{ 'active': selectedDemo === 'paneer_butter_masala' }" @click="loadDemo('paneer_butter_masala')">
-              Paneer Butter Masala
-            </button>
-            <button class="demo-chip" :class="{ 'active': selectedDemo === 'samosa_test' }" @click="loadDemo('samosa_test')">
-              Samosa (Fried)
-            </button>
-            <button class="demo-chip" :class="{ 'active': selectedDemo === 'chicken_biryani' }" @click="loadDemo('chicken_biryani')">
-              Chicken Biryani
-            </button>
-            <button class="change-recipe-btn" @click="openPasteEditor()">
-              Edit Ingredients
-            </button>
-            <button class="change-recipe-btn" @click="view = 'hero'">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
-              Analyze New Recipe
-            </button>
-          </div>
-        </div>
 
         <template x-if="activeResult">
           <div>
             
-            <!-- REPORT HEADER & MACRO CONTEXT STRIP -->
+            <!-- STEP 1: DISH TITLE + HIGHLIGHTED PORTION BASIS + SEGMENTED SWITCHER -->
             <div class="report-header-block">
-              <h1 class="report-main-title" x-text="`${formatDishName(activeResult.recipe.dish)}: ${viewMode === 'per100g' ? 'Per-100g Nutrient Density' : (viewMode === '2x' ? 'Double Portion (2×) Footprint' : 'Per-Serving Footprint')}`"></h1>
-              <p class="report-sub-title">
-                <span x-text="viewMode === 'per100g' ? `Standardized per 100g finished food (out of ${Math.round(activeResult.coverage.included_mass_g)}g recipe)` : (hasNoServingsWarning ? `Whole recipe (${servingMassG}g)` : `${viewMode === '2x' ? '2 servings' : '1 serving'} (${viewMode === '2x' ? servingMassG * 2 : servingMassG}g out of ${activeResult.recipe.servings} servings)`)"></span>
-                compared against your <strong>full 24-hour adult allowance</strong> (ICMR-NIN 2024 · 2,240 kcal urban baseline &amp; WHO guidelines).
-                <span x-show="scrapeNotice" style="display: inline-block; margin-left: 8px; color: #0058b8; font-weight: 600;" x-text="scrapeNotice"></span>
-              </p>
+              <div class="d4-title-row">
+                <div>
+                  <h1 class="report-main-title" x-text="formatDishName(activeResult.recipe.dish)"></h1>
+                  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px;">
+                    <span class="portion-basis-pill">
+                      <span>📏</span>
+                      <span x-text="portionSummaryLabel"></span>
+                    </span>
+                    <span style="font-size: 14px; color: var(--text-muted);">
+                      Compared vs. <strong>24h ICMR-NIN 2024 / WHO daily limits</strong> (2,240 kcal baseline)
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Unified Apple Segmented Portion Control -->
+                <div class="portion-segmented" role="group" aria-label="Portion Basis">
+                  <button type="button" class="portion-seg-btn" :class="{ 'active': viewMode === '1x' }" @click="setViewMode('1x')">
+                    1 Serving (<span x-text="`${servingMassG}g`"></span>)
+                  </button>
+                  <button type="button" class="portion-seg-btn" :class="{ 'active': viewMode === '2x' }" @click="setViewMode('2x')">
+                    2&times; Portion (<span x-text="`${servingMassG * 2}g`"></span>)
+                  </button>
+                  <button type="button" class="portion-seg-btn" :class="{ 'active': viewMode === 'per100g' }" @click="setViewMode('per100g')">
+                    Per 100g Density
+                  </button>
+                </div>
+              </div>
 
               <div x-show="hasNoServingsWarning" class="frying-callout-strip" style="margin-bottom: 18px; padding: 12px 18px;">
                 <span style="font-size: 18px;">⚠️</span>
                 <div>
-                  <strong>Servings Not Specified:</strong> This recipe did not list a numeric serving count, so figures below represent the <strong>entire recipe</strong> as 1 serving. Click <em>Edit Ingredients</em> above to enter servings if known.
+                  <strong>Servings Not Specified:</strong> This recipe did not list a numeric serving count, so figures below represent the <strong>entire recipe</strong> as 1 serving. Click <em>Edit Lines</em> above to enter servings if known.
                 </div>
               </div>
-
-              <div class="dish-macro-strip">
-                <span style="font-weight: 700; color: var(--text-muted); text-transform: uppercase; font-size: 12px; letter-spacing: 0.04em;" x-text="`${viewMode === 'per100g' ? 'Per 100g' : (viewMode === '2x' ? '2× Serving' : '1 Serving')} Nutrition:`"></span>
-                <span class="macro-pill-item"><span class="macro-lbl">Calories</span> <span x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal (${Math.round(activeResult.footprint.axes.energy_kcal.pct_of_limit)}% day)`"></span></span>
-                <span class="macro-pill-item"><span class="macro-lbl">Protein</span> <span x-text="`${activeResult.per_serving.protein_g.toFixed(1)}g (${dishQuality.proteinCalPct}% kcal)`"></span></span>
-                <span class="macro-pill-item"><span class="macro-lbl">Total Fat</span> <span x-text="`${activeResult.per_serving.fat_g.toFixed(1)}g`"></span></span>
-                <span class="macro-pill-item"><span class="macro-lbl">Carbs</span> <span x-text="`${activeResult.per_serving.carb_g.toFixed(1)}g`"></span></span>
-                <span class="macro-pill-item"><span class="macro-lbl">Fibre</span> <span x-text="`${activeResult.per_serving.fibre_g.toFixed(1)}g`"></span></span>
-              </div>
-
-              <!-- Portion Scaling + Per-100g Density + Risk Ceiling Controls -->
-              <div class="d4-view-controls">
-                <div class="view-control-group">
-                  <span class="view-control-label">Portion / Basis:</span>
-                  <button type="button" class="view-pill-btn" :class="{ 'active': viewMode === '1x' }" @click="setViewMode('1x')">
-                    1 Serving (<span x-text="`${servingMassG}g`"></span>)
-                  </button>
-                  <button type="button" class="view-pill-btn" :class="{ 'active': viewMode === '2x' }" @click="setViewMode('2x')">
-                    2&times; Portion (<span x-text="`${servingMassG * 2}g`"></span>)
-                  </button>
-                  <button type="button" class="view-pill-btn" :class="{ 'active': viewMode === 'per100g' }" @click="setViewMode('per100g')">
-                    Per 100g Density
-                  </button>
-                </div>
-
-                <div class="view-control-group">
-                  <span class="view-control-label">SFA Ceiling:</span>
-                  <button type="button" class="view-pill-btn" :class="{ 'active': selectedRisk === 'general' }" @click="setRiskMode('general')">
-                    General (&lt;10%E · 24.9g)
-                  </button>
-                  <button type="button" class="view-pill-btn" :class="{ 'active': selectedRisk === 'cardiometabolic' }" @click="setRiskMode('cardiometabolic')">
-                    High-Risk (&lt;7%E · 17.4g)
-                  </button>
-                </div>
-              </div>
-
-              <!-- DUAL-ORGAN EXECUTIVE VERDICT PANELS (100% Engine-Backed, Zero Arbitrary Weights) -->
-              <div class="verdict-dual-grid">
-
-                <!-- LIVER LOAD SUMMARY -->
-                <div class="verdict-panel">
-                  <div class="verdict-panel-header">
-                    <div class="exec-organ-badge">
-                      <span>🩺</span>
-                      <span>Liver Load (24h Budget)</span>
-                    </div>
-                    <span class="exec-verdict-pill" :class="liverSummary.pillClass" x-text="liverSummary.verdictText"></span>
-                  </div>
-
-                  <div class="verdict-kpi-grid">
-                    <div class="verdict-kpi-tile" :class="getTileClass(activeResult.footprint.axes.sfa_g.pct_of_limit)">
-                      <div class="kpi-tile-label">Saturated Fat (SFA)</div>
-                      <div class="kpi-tile-val" x-text="`${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}%`"></div>
-                      <div class="kpi-tile-sub" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / ${sfaDailyLimit.toFixed(1)}g daily limit`"></div>
-                    </div>
-
-                    <div class="verdict-kpi-tile" :class="getTileClass(activeResult.footprint.axes.added_sugar_g.pct_of_limit)">
-                      <div class="kpi-tile-label">Added Free Sugar</div>
-                      <div class="kpi-tile-val" x-text="`${Math.round(activeResult.footprint.axes.added_sugar_g.pct_of_limit)}%`"></div>
-                      <div class="kpi-tile-sub" x-text="`${activeResult.per_serving.added_sugar_g.toFixed(1)}g / 25.0g daily limit`"></div>
-                    </div>
-
-                    <div class="verdict-kpi-tile tile-neutral">
-                      <div class="kpi-tile-label">Refined Starches (No Cap)</div>
-                      <div class="kpi-tile-val" x-text="`${activeResult.per_serving.refined_carb_g.toFixed(1)}g`"></div>
-                      <div class="kpi-tile-sub" x-text="activeResult.per_serving.refined_carb_g > 0 ? `${dishQuality.refinedCalPct}% of dish kcal · ${activeResult.per_serving.fibre_g.toFixed(1)}g fibre` : 'No maida or polished rice'"></div>
-                    </div>
-
-                    <div class="verdict-kpi-tile" :class="getTileClass(activeResult.footprint.axes.energy_kcal.pct_of_limit)">
-                      <div class="kpi-tile-label">Total Energy</div>
-                      <div class="kpi-tile-val" x-text="`${Math.round(activeResult.footprint.axes.energy_kcal.pct_of_limit)}%`"></div>
-                      <div class="kpi-tile-sub" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} / 2,240 kcal day`"></div>
-                    </div>
-                  </div>
-
-                  <div class="verdict-quality-bar">
-                    <strong>Calorie Composition:</strong>
-                    <span x-text="dishQualitySummary"></span>
-                  </div>
-                </div>
-
-                <!-- HEART LOAD SUMMARY -->
-                <div class="verdict-panel">
-                  <div class="verdict-panel-header">
-                    <div class="exec-organ-badge">
-                      <span>❤️</span>
-                      <span>Heart Load (24h Budget)</span>
-                    </div>
-                    <span class="exec-verdict-pill" :class="heartSummary.pillClass" x-text="heartSummary.verdictText"></span>
-                  </div>
-
-                  <div class="verdict-kpi-grid">
-                    <div class="verdict-kpi-tile" :class="getTileClass(activeResult.footprint.axes.sfa_g.pct_of_limit)">
-                      <div class="kpi-tile-label">Saturated Fat (SFA)</div>
-                      <div class="kpi-tile-val" x-text="`${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}%`"></div>
-                      <div class="kpi-tile-sub" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / ${sfaDailyLimit.toFixed(1)}g daily limit`"></div>
-                    </div>
-
-                    <div class="verdict-kpi-tile" :class="getTileClass(activeResult.footprint.axes.sodium_mg.pct_of_limit)">
-                      <div class="kpi-tile-label" x-text="hasSaltWarning ? 'Sodium (Lower Bound*)' : 'Sodium (Na)'"></div>
-                      <div class="kpi-tile-val" x-text="`${Math.round(activeResult.footprint.axes.sodium_mg.pct_of_limit)}%`"></div>
-                      <div class="kpi-tile-sub" x-text="`${Math.round(activeResult.per_serving.sodium_mg)} / 1,967 mg daily limit`"></div>
-                    </div>
-
-                    <div class="verdict-kpi-tile" :class="getTileClass(activeResult.footprint.axes.fat_g.pct_of_limit)">
-                      <div class="kpi-tile-label">Total Dietary Fat</div>
-                      <div class="kpi-tile-val" x-text="`${Math.round(activeResult.footprint.axes.fat_g.pct_of_limit)}%`"></div>
-                      <div class="kpi-tile-sub" x-text="`${activeResult.per_serving.fat_g.toFixed(1)}g / 74.7g daily limit`"></div>
-                    </div>
-
-                    <div class="verdict-kpi-tile" :class="getTileClass(activeResult.footprint.axes.energy_kcal.pct_of_limit)">
-                      <div class="kpi-tile-label">Total Energy</div>
-                      <div class="kpi-tile-val" x-text="`${Math.round(activeResult.footprint.axes.energy_kcal.pct_of_limit)}%`"></div>
-                      <div class="kpi-tile-sub" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} / 2,240 kcal day`"></div>
-                    </div>
-                  </div>
-
-                  <div class="verdict-quality-bar">
-                    <strong>Lipid Profile:</strong>
-                    Saturated fat makes up <strong x-text="`${dishQuality.sfaShareOfFatPct}%`"></strong> of total fat
-                    (<span x-text="`${(activeResult.per_serving.mufa_g + activeResult.per_serving.pufa_g).toFixed(1)}g`"></span> unsaturated MUFA+PUFA).
-                    <span x-show="hasSaltWarning" style="color: #b25e00; font-weight: 600;">*Salt "to taste" not quantified.</span>
-                  </div>
-                </div>
-
-              </div>
-
             </div>
 
-            <!-- Frying Bath Correction Alert Strip (when applicable) -->
+            <!-- STEP 2: FRYING BATH CALIBRATION BANNER FIRST (WHEN APPLICABLE) -->
             <div x-show="activeResult.frying_correction && activeResult.frying_correction.applied" class="frying-callout-strip">
               <span style="font-size: 22px;">🍳</span>
               <div style="flex: 1;">
@@ -2588,7 +2699,7 @@
                   <a href="#" @click.prevent="currentTab = 'd1'" style="color: #0071e3; text-decoration: none; font-weight: 600; margin-left: 6px;">Inspect lab dataset &rarr;</a>
                 </div>
 
-                <!-- Cooking Setting Selector (calls frying.py setting matching & fallback logic) -->
+                <!-- Cooking Setting Selector -->
                 <div class="d4-frying-controls">
                   <label for="d4-frying-setting-select" style="font-size: 13.5px; font-weight: 700; color: #5c3b00;">Cooking Setting:</label>
                   <select id="d4-frying-setting-select" class="lab-select" style="height: 34px; font-size: 13.5px;" x-model="selectedFryingSetting" @change="applyFryingSetting(selectedFryingSetting)">
@@ -2607,14 +2718,14 @@
                   <button type="button" class="view-pill-btn" style="margin-left: auto;" @click="showFryingCalc = !showFryingCalc" x-text="showFryingCalc ? 'Hide Calculation &amp; Citations ▴' : 'How Was This Calculated? ▾'"></button>
                 </div>
 
-                <!-- Granular Provenance & Math Disclosure (GOALS.md §2) -->
+                <!-- Granular Provenance & Math Disclosure -->
                 <div x-show="showFryingCalc && activeResult.frying_correction" class="frying-calc-drawer">
                   <div style="font-weight: 700; color: #1d1d1f; margin-bottom: 4px;">
                     Step-by-Step Mass &amp; Lab Absorption Math
                   </div>
                   <div class="frying-formula-box" x-text="activeResult.frying_correction ? (activeResult.frying_correction.calculation_formula || `absorbed_fat_g = (${Math.round(activeResult.coverage.included_mass_g)}g non-oil mass / 100) * ${activeResult.frying_correction.fat_g_per_100g_lab}g/100g = ${activeResult.frying_correction.absorbed_fat_g.toFixed(2)}g`) : ''"></div>
                   <div style="font-size: 13px; color: #48484a; margin-bottom: 10px;">
-                    Per serving uptake (÷<span x-text="servingCount"></span>):
+                    Per serving uptake (&divide;<span x-text="servingCount"></span>):
                     <strong x-text="`${(activeResult.frying_correction.absorbed_fat_g / servingCount).toFixed(2)}g absorbed fat`"></strong> and
                     <strong x-text="`${(activeResult.frying_correction.absorbed_sfa_g / servingCount).toFixed(2)}g absorbed SFA`"></strong>.
                     <span x-show="activeResult.frying_correction.fallback_reason" style="display: block; margin-top: 4px; color: #944000; font-weight: 600;" x-text="activeResult.frying_correction.fallback_reason"></span>
@@ -2652,225 +2763,334 @@
               </div>
             </div>
 
-            <!-- SECTION 1: ORGAN-BY-ORGAN BREAKDOWN (LAYOUT A: NO REDUNDANT SIDEBAR, 33% 1-MEAL TICK) -->
-            <div class="organ-architecture-section">
-              <div class="dashboard-section-header">
-                <div class="section-title">
-                  <span>🫀</span> Section 1 · Full-Day Budget Impact by Organ
-                </div>
-                <div class="section-desc">
-                  Each bar shows what share of a <strong>full 24-hour allowance</strong> this single serving consumes. The dashed line at <strong>33%</strong> marks one meal's even share (assuming 3 meals/day).
-                </div>
-              </div>
+            <!-- STEP 3: STREAMLINED DUAL-ORGAN EXECUTIVE VERDICT (SVG PROGRESS RINGS) -->
+            <div class="verdict-dual-grid">
 
-              <!-- 1. LIVER HEALTH PANEL -->
-              <div class="organ-panel-card">
-                <div class="organ-panel-header">
-                  <div>
-                    <h3 class="organ-panel-title"><span>🩺</span> Liver Health — Hepatic Drivers</h3>
-                    <div class="organ-panel-sub">Tracks saturated fat, added free sugars, refined starches, and calories (drivers of fatty liver / MASLD).</div>
+              <!-- LIVER VERDICT CARD -->
+              <div class="verdict-panel verdict-panel-liver">
+                <div class="verdict-panel-header">
+                  <div class="exec-organ-badge">
+                    <span style="display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 8px; background: #ffe4d6; color: #c2410c;">
+                      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 10c0-3.5 3-6 7.5-6 5 0 8.5 2.3 8.5 5.5 0 2.7-2.2 4.5-5.5 5-2 .3-3.5 1.8-4.5 3.3-.8 1.1-2.7 1.2-3.8.2C4.8 16.5 4 13.5 4 10z"/>
+                      </svg>
+                    </span>
+                    <span>Liver Impact</span>
                   </div>
                   <span class="exec-verdict-pill" :class="liverSummary.pillClass" x-text="liverSummary.verdictText"></span>
                 </div>
 
-                <div class="organ-gauges-grid">
-                  <!-- SFA (Shared) -->
-                  <div class="gauge-block">
-                    <div class="gauge-header-row">
-                      <span class="gauge-title">
-                        Saturated Fat (SFA)
-                        <span class="shared-cross-badge">Both Organs</span>
-                      </span>
-                      <span class="gauge-amount" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / ${sfaDailyLimit.toFixed(1)}g`"></span>
+                <div class="verdict-rings-row">
+                  <div class="ring-stat-item">
+                    <div class="ring-svg-wrap">
+                      <svg width="68" height="68" viewBox="0 0 64 64" style="transform: rotate(-90deg);">
+                        <circle cx="32" cy="32" r="24" fill="none" stroke="#f2f2f7" stroke-width="6"></circle>
+                        <circle cx="32" cy="32" r="24" fill="none" :stroke="getRingColor(activeResult.footprint.axes.sfa_g.pct_of_limit)" stroke-width="6" stroke-linecap="round" :stroke-dasharray="ringDash(activeResult.footprint.axes.sfa_g.pct_of_limit)"></circle>
+                      </svg>
+                      <div class="ring-center-val" x-text="`${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}%`"></div>
                     </div>
-                    <div class="gauge-bar-track" style="margin-top: 18px;">
-                      <span class="meal-share-marker-label">1-Meal (33%)</span>
-                      <div class="meal-share-marker"></div>
-                      <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.sfa_g.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.sfa_g.pct_of_limit, 100)}%`"></div>
-                    </div>
-                    <div class="gauge-limit-legend">
-                      <span x-text="remainingText('sfa_g', 'g', 1)"></span>
-                      <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}% of 24h limit`"></span>
-                    </div>
-                    <div class="gauge-clinical-tag" x-text="selectedRisk === 'cardiometabolic' ? 'ICMR-NIN high-risk ceiling (<7% of 2,240 kcal = 17.4g/day). Primary driver of liver fat buildup.' : 'ICMR-NIN 2024 ceiling (<10% of 2,240 kcal = 24.9g/day). Primary driver of liver fat buildup.'"></div>
+                    <div class="ring-stat-label">Saturated Fat</div>
+                    <div class="ring-stat-sub" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / ${sfaDailyLimit.toFixed(1)}g`"></div>
                   </div>
 
-                  <!-- Added Free Sugar -->
-                  <div class="gauge-block">
-                    <div class="gauge-header-row">
-                      <span class="gauge-title">
-                        Added Free Sugars
-                        <span class="badge badge-blue" style="font-size: 11px;">Liver Driver</span>
-                      </span>
-                      <span class="gauge-amount" x-text="`${activeResult.per_serving.added_sugar_g.toFixed(1)}g / 25.0g`"></span>
+                  <div class="ring-stat-item">
+                    <div class="ring-svg-wrap">
+                      <svg width="68" height="68" viewBox="0 0 64 64" style="transform: rotate(-90deg);">
+                        <circle cx="32" cy="32" r="24" fill="none" stroke="#f2f2f7" stroke-width="6"></circle>
+                        <circle cx="32" cy="32" r="24" fill="none" :stroke="getRingColor(activeResult.footprint.axes.added_sugar_g.pct_of_limit)" stroke-width="6" stroke-linecap="round" :stroke-dasharray="ringDash(activeResult.footprint.axes.added_sugar_g.pct_of_limit)"></circle>
+                      </svg>
+                      <div class="ring-center-val" x-text="`${Math.round(activeResult.footprint.axes.added_sugar_g.pct_of_limit)}%`"></div>
                     </div>
-                    <div class="gauge-bar-track" style="margin-top: 18px;">
-                      <span class="meal-share-marker-label">1-Meal (33%)</span>
-                      <div class="meal-share-marker"></div>
-                      <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.added_sugar_g.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.added_sugar_g.pct_of_limit, 100)}%`"></div>
-                    </div>
-                    <div class="gauge-limit-legend">
-                      <span x-text="remainingText('added_sugar_g', 'g', 1)"></span>
-                      <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.added_sugar_g.pct_of_limit)}% of 24h limit`"></span>
-                    </div>
-                    <div class="gauge-clinical-tag" x-text="activeResult.per_serving.freesugar_g > 0 && activeResult.per_serving.added_sugar_g === 0 ? `Includes ${activeResult.per_serving.freesugar_g.toFixed(1)}g natural sugar from vegetables/dairy (0g added sugar).` : 'WHO / ICMR-NIN ceiling (25g/day). Excess free sugar is converted directly into liver fat.'"></div>
+                    <div class="ring-stat-label">Added Sugar</div>
+                    <div class="ring-stat-sub" x-text="`${activeResult.per_serving.added_sugar_g.toFixed(1)}g / 25.0g`"></div>
                   </div>
 
-                  <!-- Refined Starches -->
-                  <div class="gauge-block">
-                    <div class="gauge-header-row">
-                      <span class="gauge-title">
-                        Refined Starches (Maida / White Rice)
-                        <span class="badge badge-gray" style="font-size: 11px;">No Official Daily Cap</span>
-                      </span>
-                      <span class="gauge-amount" x-text="`${activeResult.per_serving.refined_carb_g.toFixed(1)}g`"></span>
+                  <div class="ring-stat-item">
+                    <div class="ring-svg-wrap">
+                      <svg width="68" height="68" viewBox="0 0 64 64" style="transform: rotate(-90deg);">
+                        <circle cx="32" cy="32" r="24" fill="none" stroke="#f2f2f7" stroke-width="6"></circle>
+                        <circle cx="32" cy="32" r="24" fill="none" stroke="#5856d6" stroke-width="6" stroke-linecap="round" :stroke-dasharray="ringDash(dishQuality.refinedCalPct)"></circle>
+                      </svg>
+                      <div class="ring-center-val" style="font-size: 14px;" x-text="`${activeResult.per_serving.refined_carb_g.toFixed(0)}g`"></div>
                     </div>
-                    <div class="gauge-bar-track" style="margin-top: 18px;">
-                      <div class="gauge-bar-fill" style="background-color: #5856d6;" :style="`width: ${Math.min(dishQuality.refinedCalPct, 100)}%`"></div>
-                    </div>
-                    <div class="gauge-limit-legend">
-                      <span x-text="`${dishQuality.refinedCalPct}% of this serving's calories`"></span>
-                      <span style="font-weight: 700;" x-text="`Fibre alongside: ${activeResult.per_serving.fibre_g.toFixed(1)}g`"></span>
-                    </div>
-                    <div class="gauge-clinical-tag">
-                      No standalone ICMR-NIN daily gram cap. Tracked because low-fibre refined grains (maida, white rice — 62.3% of Indian energy per ICMR-INDIAB 2025) spike insulin and drive liver fat synthesis (de novo lipogenesis).
-                    </div>
+                    <div class="ring-stat-label">Refined Starch</div>
+                    <div class="ring-stat-sub" x-text="`${dishQuality.refinedCalPct}% kcal · ${activeResult.per_serving.fibre_g.toFixed(1)}g fibre`"></div>
                   </div>
+                </div>
 
-                  <!-- Calories (Shared) -->
-                  <div class="gauge-block">
-                    <div class="gauge-header-row">
-                      <span class="gauge-title">
-                        Dietary Calories (Energy)
-                        <span class="shared-cross-badge">Both Organs</span>
-                      </span>
-                      <span class="gauge-amount" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} / 2,240 kcal`"></span>
-                    </div>
-                    <div class="gauge-bar-track" style="margin-top: 18px;">
-                      <span class="meal-share-marker-label">1-Meal (33%)</span>
-                      <div class="meal-share-marker"></div>
-                      <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.energy_kcal.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.energy_kcal.pct_of_limit, 100)}%`"></div>
-                    </div>
-                    <div class="gauge-limit-legend">
-                      <span x-text="remainingText('energy_kcal', ' kcal', 0)"></span>
-                      <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.energy_kcal.pct_of_limit)}% of 24h budget`"></span>
-                    </div>
-                    <div class="gauge-clinical-tag" x-text="calorieDensityNote"></div>
-                  </div>
+                <div class="verdict-footer-line">
+                  <strong>Metabolic Note:</strong> <span x-text="dishQualitySummary"></span>
                 </div>
               </div>
 
-              <!-- CROSS-ORGAN BRIDGE -->
-              <div class="crossroads-flow-connector">
-                <div class="connector-line-vert"></div>
-                <div class="crossroads-flow-banner">
-                  <span style="font-size: 22px;">⚡️</span>
-                  <div>
-                    <strong>Shared Cross-Organ Link:</strong>
-                    Saturated fat (<strong x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g · ${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}% of day`"></strong>) and calories (<strong x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal`"></strong>) affect both organs at once — driving fat buildup in the liver and raising LDL cholesterol in the bloodstream.
-                  </div>
-                </div>
-                <div class="connector-line-vert"></div>
-              </div>
-
-              <!-- 2. HEART HEALTH PANEL -->
-              <div class="organ-panel-card">
-                <div class="organ-panel-header">
-                  <div>
-                    <h3 class="organ-panel-title"><span>❤️</span> Heart Health — Cardiovascular Drivers</h3>
-                    <div class="organ-panel-sub">Tracks saturated fat, sodium, total fat, and calories (drivers of LDL cholesterol and hypertension).</div>
+              <!-- HEART VERDICT CARD -->
+              <div class="verdict-panel verdict-panel-heart">
+                <div class="verdict-panel-header">
+                  <div class="exec-organ-badge">
+                    <span style="display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 8px; background: #ffdce3; color: #be123c;">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                      </svg>
+                    </span>
+                    <span>Heart Impact</span>
                   </div>
                   <span class="exec-verdict-pill" :class="heartSummary.pillClass" x-text="heartSummary.verdictText"></span>
                 </div>
 
-                <div class="organ-gauges-grid">
-                  <!-- SFA (Shared) -->
-                  <div class="gauge-block">
-                    <div class="gauge-header-row">
-                      <span class="gauge-title">
-                        Saturated Fat (SFA)
-                        <span class="shared-cross-badge">Both Organs</span>
-                      </span>
-                      <span class="gauge-amount" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / ${sfaDailyLimit.toFixed(1)}g`"></span>
+                <div class="verdict-rings-row">
+                  <div class="ring-stat-item">
+                    <div class="ring-svg-wrap">
+                      <svg width="68" height="68" viewBox="0 0 64 64" style="transform: rotate(-90deg);">
+                        <circle cx="32" cy="32" r="24" fill="none" stroke="#f2f2f7" stroke-width="6"></circle>
+                        <circle cx="32" cy="32" r="24" fill="none" :stroke="getRingColor(activeResult.footprint.axes.sfa_g.pct_of_limit)" stroke-width="6" stroke-linecap="round" :stroke-dasharray="ringDash(activeResult.footprint.axes.sfa_g.pct_of_limit)"></circle>
+                      </svg>
+                      <div class="ring-center-val" x-text="`${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}%`"></div>
                     </div>
-                    <div class="gauge-bar-track" style="margin-top: 18px;">
-                      <span class="meal-share-marker-label">1-Meal (33%)</span>
-                      <div class="meal-share-marker"></div>
-                      <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.sfa_g.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.sfa_g.pct_of_limit, 100)}%`"></div>
-                    </div>
-                    <div class="gauge-limit-legend">
-                      <span x-text="remainingText('sfa_g', 'g', 1)"></span>
-                      <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}% of 24h limit`"></span>
-                    </div>
-                    <div class="gauge-clinical-tag">
-                      Raises LDL ("bad") cholesterol by slowing its clearance from the blood.
-                    </div>
+                    <div class="ring-stat-label">Saturated Fat</div>
+                    <div class="ring-stat-sub" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / ${sfaDailyLimit.toFixed(1)}g`"></div>
                   </div>
 
-                  <!-- Sodium -->
-                  <div class="gauge-block">
-                    <div class="gauge-header-row">
-                      <span class="gauge-title">
-                        Sodium (Na)
-                        <span x-show="hasSaltWarning" class="badge badge-amber" style="font-size: 11px;">Lower bound*</span>
-                      </span>
-                      <span class="gauge-amount" x-text="`${Math.round(activeResult.per_serving.sodium_mg)} / 1,967 mg`"></span>
+                  <div class="ring-stat-item">
+                    <div class="ring-svg-wrap">
+                      <svg width="68" height="68" viewBox="0 0 64 64" style="transform: rotate(-90deg);">
+                        <circle cx="32" cy="32" r="24" fill="none" stroke="#f2f2f7" stroke-width="6"></circle>
+                        <circle cx="32" cy="32" r="24" fill="none" :stroke="getRingColor(activeResult.footprint.axes.sodium_mg.pct_of_limit)" stroke-width="6" stroke-linecap="round" :stroke-dasharray="ringDash(activeResult.footprint.axes.sodium_mg.pct_of_limit)"></circle>
+                      </svg>
+                      <div class="ring-center-val" x-text="`${Math.round(activeResult.footprint.axes.sodium_mg.pct_of_limit)}%`"></div>
                     </div>
-                    <div class="gauge-bar-track" style="margin-top: 18px;">
-                      <span class="meal-share-marker-label">1-Meal (33%)</span>
-                      <div class="meal-share-marker"></div>
-                      <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.sodium_mg.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.sodium_mg.pct_of_limit, 100)}%`"></div>
-                    </div>
-                    <div class="gauge-limit-legend">
-                      <span x-text="remainingText('sodium_mg', ' mg', 0)"></span>
-                      <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.sodium_mg.pct_of_limit)}% of 24h limit`"></span>
-                    </div>
-                    <div class="gauge-clinical-tag" x-text="hasSaltWarning ? 'Recipe lists unquantified salt — reflects intrinsic ingredient sodium only (real dish sodium is higher).' : 'WHO 5g/day salt ceiling. High sodium raises blood pressure and vascular strain.'"></div>
+                    <div class="ring-stat-label" x-text="hasSaltWarning ? 'Sodium*' : 'Sodium (Na)'"></div>
+                    <div class="ring-stat-sub" x-text="`${Math.round(activeResult.per_serving.sodium_mg)} / 1,967 mg`"></div>
                   </div>
 
-                  <!-- Total Dietary Fat -->
-                  <div class="gauge-block">
-                    <div class="gauge-header-row">
-                      <span class="gauge-title">Total Dietary Fat</span>
-                      <span class="gauge-amount" x-text="`${activeResult.per_serving.fat_g.toFixed(1)}g / 74.7g`"></span>
+                  <div class="ring-stat-item">
+                    <div class="ring-svg-wrap">
+                      <svg width="68" height="68" viewBox="0 0 64 64" style="transform: rotate(-90deg);">
+                        <circle cx="32" cy="32" r="24" fill="none" stroke="#f2f2f7" stroke-width="6"></circle>
+                        <circle cx="32" cy="32" r="24" fill="none" :stroke="getRingColor(activeResult.footprint.axes.fat_g.pct_of_limit)" stroke-width="6" stroke-linecap="round" :stroke-dasharray="ringDash(activeResult.footprint.axes.fat_g.pct_of_limit)"></circle>
+                      </svg>
+                      <div class="ring-center-val" x-text="`${Math.round(activeResult.footprint.axes.fat_g.pct_of_limit)}%`"></div>
                     </div>
-                    <div class="gauge-bar-track" style="margin-top: 18px;">
-                      <span class="meal-share-marker-label">1-Meal (33%)</span>
-                      <div class="meal-share-marker"></div>
-                      <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.fat_g.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.fat_g.pct_of_limit, 100)}%`"></div>
-                    </div>
-                    <div class="gauge-limit-legend">
-                      <span x-text="remainingText('fat_g', 'g', 1)"></span>
-                      <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.fat_g.pct_of_limit)}% of 24h limit`"></span>
-                    </div>
-                    <div class="gauge-clinical-tag" x-text="`ICMR-NIN 30% energy ceiling. ${dishQuality.sfaShareOfFatPct}% of this fat is saturated (${(activeResult.per_serving.mufa_g + activeResult.per_serving.pufa_g).toFixed(1)}g unsaturated).`"></div>
+                    <div class="ring-stat-label">Total Fat</div>
+                    <div class="ring-stat-sub" x-text="`${activeResult.per_serving.fat_g.toFixed(1)}g / 74.7g`"></div>
                   </div>
+                </div>
 
-                  <!-- Calories (Shared) -->
-                  <div class="gauge-block">
-                    <div class="gauge-header-row">
-                      <span class="gauge-title">
-                        Dietary Calories (Energy)
-                        <span class="shared-cross-badge">Both Organs</span>
-                      </span>
-                      <span class="gauge-amount" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} / 2,240 kcal`"></span>
-                    </div>
-                    <div class="gauge-bar-track" style="margin-top: 18px;">
-                      <span class="meal-share-marker-label">1-Meal (33%)</span>
-                      <div class="meal-share-marker"></div>
-                      <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.energy_kcal.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.energy_kcal.pct_of_limit, 100)}%`"></div>
-                    </div>
-                    <div class="gauge-limit-legend">
-                      <span x-text="remainingText('energy_kcal', ' kcal', 0)"></span>
-                      <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.energy_kcal.pct_of_limit)}% of 24h budget`"></span>
-                    </div>
-                    <div class="gauge-clinical-tag">
-                      NSO 2024 urban adult reference baseline (2,240 kcal/day).
-                    </div>
-                  </div>
+                <div class="verdict-footer-line">
+                  <strong>Lipid Profile:</strong>
+                  <strong x-text="`${dishQuality.sfaShareOfFatPct}%`"></strong> of total fat is saturated
+                  (<span x-text="`${(activeResult.per_serving.mufa_g + activeResult.per_serving.pufa_g).toFixed(1)}g`"></span> unsaturated MUFA+PUFA).
+                  <span x-show="hasSaltWarning" style="color: #b25e00; font-weight: 600;">*Salt &ldquo;to taste&rdquo; unquantified.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 1: 1-SERVING NUTRITION RIBBON + ORGAN BUDGET MATRIX -->
+            <div class="organ-architecture-section">
+              <div class="dashboard-section-header">
+                <div class="section-title">
+                  <span>🫀</span> Section 1 · Macro Balance &amp; Daily Budget Impact
+                </div>
+                <div class="section-desc">
+                  First see how this serving's calories split across fat, carbs, and protein, then trace each nutrient against your <strong>24-hour ceiling</strong> (dashed line marks a <strong>33%</strong> 1-meal share).
                 </div>
               </div>
 
+              <!-- Relocated 1-Serving Macro Nutrition Ribbon (Styled Like Section 3's Stacked Bar) -->
+              <div class="macro-ribbon-card">
+                <div class="macro-ribbon-header">
+                  <div style="font-size: 16px; font-weight: 700; color: var(--text-main);" x-text="`${viewMode === 'per100g' ? 'Per 100g' : (viewMode === '2x' ? '2× Serving' : '1 Serving')} Macronutrient Split`"></div>
+                  <div style="font-size: 14px; font-weight: 700; color: #0058b8;" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal (${Math.round(activeResult.footprint.axes.energy_kcal.pct_of_limit)}% of 2,240 kcal day)`"></div>
+                </div>
+
+                <div class="macro-ribbon-bar">
+                  <div :style="`width: ${macroEnergySplit.fatPct}%; background: #ff9500;`" :title="`Fat: ${macroEnergySplit.fatPct}% of calories`"></div>
+                  <div :style="`width: ${macroEnergySplit.carbPct}%; background: #0071e3;`" :title="`Carbs: ${macroEnergySplit.carbPct}% of calories`"></div>
+                  <div :style="`width: ${macroEnergySplit.proteinPct}%; background: #28cd41;`" :title="`Protein: ${macroEnergySplit.proteinPct}% of calories`"></div>
+                </div>
+
+                <div class="macro-legend-pills">
+                  <span class="macro-dot-pill">
+                    <span class="color-swatch-dot" style="background: #ff9500; width: 11px; height: 11px;"></span>
+                    <span x-text="`Fat ${activeResult.per_serving.fat_g.toFixed(1)}g (${macroEnergySplit.fatPct}% kcal)`"></span>
+                  </span>
+                  <span class="macro-dot-pill">
+                    <span class="color-swatch-dot" style="background: #0071e3; width: 11px; height: 11px;"></span>
+                    <span x-text="`Carbs ${activeResult.per_serving.carb_g.toFixed(1)}g (${macroEnergySplit.carbPct}% kcal)`"></span>
+                  </span>
+                  <span class="macro-dot-pill">
+                    <span class="color-swatch-dot" style="background: #28cd41; width: 11px; height: 11px;"></span>
+                    <span x-text="`Protein ${activeResult.per_serving.protein_g.toFixed(1)}g (${macroEnergySplit.proteinPct}% kcal)`"></span>
+                  </span>
+                  <span class="macro-dot-pill" style="background: #f5f5f7;">
+                    <span x-text="`Dietary Fibre: ${activeResult.per_serving.fibre_g.toFixed(1)}g`"></span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Side-by-Side 2-Column Organ Budget Matrix -->
+              <div class="organ-matrix-grid">
+
+                <!-- 1. LIVER HEALTH PANEL -->
+                <div class="organ-panel-card organ-card-liver">
+                  <div class="organ-panel-header">
+                    <div>
+                      <h3 class="organ-panel-title">Liver Health — Daily Limits</h3>
+                      <div class="organ-panel-sub">Steatosis drivers (SFA, free sugars, starches, calories)</div>
+                    </div>
+                    <span class="exec-verdict-pill" :class="liverSummary.pillClass" x-text="liverSummary.verdictText"></span>
+                  </div>
+
+                  <div class="organ-gauges-stack">
+                    <!-- SFA -->
+                    <div class="gauge-block">
+                      <div class="gauge-header-row">
+                        <span class="gauge-title">Saturated Fat <span class="shared-cross-badge">Both Organs</span></span>
+                        <span class="gauge-amount" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / ${sfaDailyLimit.toFixed(1)}g`"></span>
+                      </div>
+                      <div class="gauge-bar-track" style="margin-top: 16px;">
+                        <span class="meal-share-marker-label">33%</span>
+                        <div class="meal-share-marker"></div>
+                        <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.sfa_g.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.sfa_g.pct_of_limit, 100)}%`"></div>
+                      </div>
+                      <div class="gauge-limit-legend">
+                        <span x-text="remainingText('sfa_g', 'g', 1)"></span>
+                        <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}%`"></span>
+                      </div>
+                    </div>
+
+                    <!-- Added Sugar -->
+                    <div class="gauge-block">
+                      <div class="gauge-header-row">
+                        <span class="gauge-title">Added Free Sugars</span>
+                        <span class="gauge-amount" x-text="`${activeResult.per_serving.added_sugar_g.toFixed(1)}g / 25.0g`"></span>
+                      </div>
+                      <div class="gauge-bar-track" style="margin-top: 16px;">
+                        <span class="meal-share-marker-label">33%</span>
+                        <div class="meal-share-marker"></div>
+                        <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.added_sugar_g.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.added_sugar_g.pct_of_limit, 100)}%`"></div>
+                      </div>
+                      <div class="gauge-limit-legend">
+                        <span x-text="activeResult.per_serving.freesugar_g > 0 && activeResult.per_serving.added_sugar_g === 0 ? `${activeResult.per_serving.freesugar_g.toFixed(1)}g natural sugar only` : remainingText('added_sugar_g', 'g', 1)"></span>
+                        <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.added_sugar_g.pct_of_limit)}%`"></span>
+                      </div>
+                    </div>
+
+                    <!-- Refined Starches -->
+                    <div class="gauge-block">
+                      <div class="gauge-header-row">
+                        <span class="gauge-title">Refined Starches <span class="badge badge-gray" style="font-size: 11px;">No Official Cap</span></span>
+                        <span class="gauge-amount" x-text="`${activeResult.per_serving.refined_carb_g.toFixed(1)}g`"></span>
+                      </div>
+                      <div class="gauge-bar-track" style="margin-top: 8px;">
+                        <div class="gauge-bar-fill" style="background-color: #5856d6;" :style="`width: ${Math.min(dishQuality.refinedCalPct, 100)}%`"></div>
+                      </div>
+                      <div class="gauge-limit-legend">
+                        <span x-text="`${dishQuality.refinedCalPct}% of dish kcal · low-fibre maida/rice`"></span>
+                        <span style="font-weight: 700;" x-text="`${dishQuality.refinedCalPct}%`"></span>
+                      </div>
+                    </div>
+
+                    <!-- Calories -->
+                    <div class="gauge-block">
+                      <div class="gauge-header-row">
+                        <span class="gauge-title">Dietary Calories <span class="shared-cross-badge">Both Organs</span></span>
+                        <span class="gauge-amount" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} / 2,240 kcal`"></span>
+                      </div>
+                      <div class="gauge-bar-track" style="margin-top: 16px;">
+                        <span class="meal-share-marker-label">33%</span>
+                        <div class="meal-share-marker"></div>
+                        <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.energy_kcal.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.energy_kcal.pct_of_limit, 100)}%`"></div>
+                      </div>
+                      <div class="gauge-limit-legend">
+                        <span x-text="calorieDensityNote"></span>
+                        <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.energy_kcal.pct_of_limit)}%`"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 2. HEART HEALTH PANEL -->
+                <div class="organ-panel-card organ-card-heart">
+                  <div class="organ-panel-header">
+                    <div>
+                      <h3 class="organ-panel-title">Heart Health — Daily Limits</h3>
+                      <div class="organ-panel-sub">CVD drivers (SFA, sodium, total fat, calories)</div>
+                    </div>
+                    <span class="exec-verdict-pill" :class="heartSummary.pillClass" x-text="heartSummary.verdictText"></span>
+                  </div>
+
+                  <div class="organ-gauges-stack">
+                    <!-- SFA -->
+                    <div class="gauge-block">
+                      <div class="gauge-header-row">
+                        <span class="gauge-title">Saturated Fat <span class="shared-cross-badge">Both Organs</span></span>
+                        <span class="gauge-amount" x-text="`${activeResult.per_serving.sfa_g.toFixed(1)}g / ${sfaDailyLimit.toFixed(1)}g`"></span>
+                      </div>
+                      <div class="gauge-bar-track" style="margin-top: 16px;">
+                        <span class="meal-share-marker-label">33%</span>
+                        <div class="meal-share-marker"></div>
+                        <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.sfa_g.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.sfa_g.pct_of_limit, 100)}%`"></div>
+                      </div>
+                      <div class="gauge-limit-legend">
+                        <span x-text="remainingText('sfa_g', 'g', 1)"></span>
+                        <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.sfa_g.pct_of_limit)}%`"></span>
+                      </div>
+                    </div>
+
+                    <!-- Sodium -->
+                    <div class="gauge-block">
+                      <div class="gauge-header-row">
+                        <span class="gauge-title">Sodium (Na) <span x-show="hasSaltWarning" class="badge badge-amber" style="font-size: 11px;">Lower bound*</span></span>
+                        <span class="gauge-amount" x-text="`${Math.round(activeResult.per_serving.sodium_mg)} / 1,967 mg`"></span>
+                      </div>
+                      <div class="gauge-bar-track" style="margin-top: 16px;">
+                        <span class="meal-share-marker-label">33%</span>
+                        <div class="meal-share-marker"></div>
+                        <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.sodium_mg.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.sodium_mg.pct_of_limit, 100)}%`"></div>
+                      </div>
+                      <div class="gauge-limit-legend">
+                        <span x-text="hasSaltWarning ? 'Intrinsic food sodium only (salt unquantified)' : remainingText('sodium_mg', ' mg', 0)"></span>
+                        <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.sodium_mg.pct_of_limit)}%`"></span>
+                      </div>
+                    </div>
+
+                    <!-- Total Fat -->
+                    <div class="gauge-block">
+                      <div class="gauge-header-row">
+                        <span class="gauge-title">Total Dietary Fat</span>
+                        <span class="gauge-amount" x-text="`${activeResult.per_serving.fat_g.toFixed(1)}g / 74.7g`"></span>
+                      </div>
+                      <div class="gauge-bar-track" style="margin-top: 16px;">
+                        <span class="meal-share-marker-label">33%</span>
+                        <div class="meal-share-marker"></div>
+                        <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.fat_g.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.fat_g.pct_of_limit, 100)}%`"></div>
+                      </div>
+                      <div class="gauge-limit-legend">
+                        <span x-text="`${dishQuality.sfaShareOfFatPct}% saturated · ${(activeResult.per_serving.mufa_g + activeResult.per_serving.pufa_g).toFixed(1)}g unsaturated`"></span>
+                        <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.fat_g.pct_of_limit)}%`"></span>
+                      </div>
+                    </div>
+
+                    <!-- Calories -->
+                    <div class="gauge-block">
+                      <div class="gauge-header-row">
+                        <span class="gauge-title">Dietary Calories <span class="shared-cross-badge">Both Organs</span></span>
+                        <span class="gauge-amount" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} / 2,240 kcal`"></span>
+                      </div>
+                      <div class="gauge-bar-track" style="margin-top: 16px;">
+                        <span class="meal-share-marker-label">33%</span>
+                        <div class="meal-share-marker"></div>
+                        <div class="gauge-bar-fill" :class="getFillClass(activeResult.footprint.axes.energy_kcal.pct_of_limit)" :style="`width: ${Math.min(activeResult.footprint.axes.energy_kcal.pct_of_limit, 100)}%`"></div>
+                      </div>
+                      <div class="gauge-limit-legend">
+                        <span x-text="remainingText('energy_kcal', ' kcal', 0)"></span>
+                        <span style="font-weight: 700;" x-text="`${Math.round(activeResult.footprint.axes.energy_kcal.pct_of_limit)}%`"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
 
             <!-- SECTION 2: CULINARY CULPRITS (EXPLICIT INGREDIENT ATTRIBUTION) -->
@@ -4557,9 +4777,35 @@ Sodium: 16mg (0.8%*)   | Energy: 224 kcal (10.0% day)</div>
 
         get portionSummaryLabel() {
           if (!this.activeResult) return '';
-          if (this.viewMode === 'per100g') return `Per 100g density (${Math.round(this.activeResult.coverage?.included_mass_g || 0)}g total)`;
-          if (this.viewMode === '2x') return `2× Serving = ${this.displayedMassG}g (of ${this.servingCount} servings)`;
-          return `1 Serving = 1/${this.servingCount} of recipe (${this.servingMassG}g)`;
+          if (this.viewMode === 'per100g') return `Basis: Per 100g finished dish (${Math.round(this.activeResult.coverage?.included_mass_g || 0)}g recipe)`;
+          if (this.viewMode === '2x') return `Basis: 2× portion = ${this.displayedMassG}g (2 of ${this.servingCount} servings)`;
+          return `Basis: 1 serving = ${this.servingMassG}g (1 of ${this.servingCount} servings)`;
+        },
+
+        ringDash(pct) {
+          const circumference = 2 * Math.PI * 24;
+          const clamped = Math.max(0, Math.min(Number(pct) || 0, 100));
+          const len = (clamped / 100) * circumference;
+          return `${len.toFixed(1)} ${circumference.toFixed(1)}`;
+        },
+
+        getRingColor(pct) {
+          if (pct >= 60) return '#ff3b30';
+          if (pct >= 30) return '#ff9500';
+          return '#28cd41';
+        },
+
+        get macroEnergySplit() {
+          if (!this.activeResult) return { fatPct: 0, carbPct: 0, proteinPct: 0 };
+          const ps = this.activeResult.per_serving;
+          const fatK = (ps.fat_g || 0) * 9;
+          const carbK = (ps.carb_g || 0) * 4;
+          const protK = (ps.protein_g || 0) * 4;
+          const total = Math.max(fatK + carbK + protK, 1);
+          const fatPct = Math.round((fatK / total) * 100);
+          const carbPct = Math.round((carbK / total) * 100);
+          const proteinPct = Math.max(0, 100 - fatPct - carbPct);
+          return { fatPct, carbPct, proteinPct };
         },
 
         get fryingSettingStatusText() {
