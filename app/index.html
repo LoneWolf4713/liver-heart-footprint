@@ -1482,96 +1482,307 @@
     /* ======================================================== */
     /* D1 LAB DATASET VISUAL EXTENSIONS                         */
     /* ======================================================== */
-    .lab-metrics-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-bottom: 32px;
-    }
-
-    .lab-metric-card {
-      background: #ffffff;
-      border: 1px solid var(--border-subtle);
-      border-top: 4px solid #0071e3;
-      border-radius: 12px;
-      padding: 20px 24px;
+    /* ==========================================
+       D1 · LAB DATASET STYLES (UNIFORM 1px BORDERS)
+       ========================================== */
+    .d1-hero-meta {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: left;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
-    }
-
-    .lab-metric-card.card-amber { border-top-color: var(--color-warning); }
-    .lab-metric-card.card-green { border-top-color: var(--color-safe); }
-
-    .lab-card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-wrap: wrap;
       gap: 8px;
-      margin-bottom: 10px;
+      margin-top: 12px;
     }
 
-    .lab-card-title {
-      font-size: 15.5px;
-      font-weight: 700;
-      color: var(--text-main);
-      display: flex;
+    .d1-meta-pill {
+      display: inline-flex;
       align-items: center;
-      gap: 7px;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #3a3a3c;
+      background: #f5f5f7;
+      border: 1px solid var(--border-subtle);
+      border-radius: 999px;
+      padding: 4px 12px;
     }
 
-    .lab-kpi-big {
-      font-size: 32px;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      line-height: 1.1;
-      color: var(--text-main);
-      margin-bottom: 6px;
-    }
-
-    .lab-kpi-sub {
-      font-size: 14px;
-      color: var(--text-body);
-      line-height: 1.45;
-    }
-
-    /* Pipeline Bridge Banner: Curries vs Fried Foods */
-    .lab-bridge-banner {
+    /* Step 1 · Problem Comparison Cards */
+    .d1-problem-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      background: #fbfbfd;
+      gap: 20px;
+    }
+
+    .d1-card {
+      background: #ffffff;
       border: 1px solid var(--border-subtle);
-      border-radius: 12px;
-      padding: 22px 26px;
-      margin-bottom: 32px;
-    }
-
-    .bridge-item {
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
       display: flex;
-      align-items: flex-start;
-      gap: 14px;
+      flex-direction: column;
     }
 
-    .bridge-icon {
-      font-size: 28px;
-      line-height: 1;
-      padding-top: 2px;
+    .d1-card-head {
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid var(--border-divider);
+      background: linear-gradient(90deg, #f7f8fa 0%, #ffffff 100%);
     }
 
-    .bridge-item-title {
+    .d1-card-head.head-green {
+      background: linear-gradient(90deg, #ecfdf3 0%, #ffffff 100%);
+      border-bottom-color: #d1fae5;
+    }
+
+    .d1-card-head.head-amber {
+      background: linear-gradient(90deg, #fff7ed 0%, #ffffff 100%);
+      border-bottom-color: #fed7aa;
+    }
+
+    .d1-card-head.head-blue {
+      background: linear-gradient(90deg, #eff6ff 0%, #ffffff 100%);
+      border-bottom-color: #dbeafe;
+    }
+
+    .d1-card-head.head-purple {
+      background: linear-gradient(90deg, #f5f3ff 0%, #ffffff 100%);
+      border-bottom-color: #e9d5ff;
+    }
+
+    .d1-card-title-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       font-size: 16px;
       font-weight: 700;
       color: var(--text-main);
-      margin-bottom: 6px;
     }
 
-    .bridge-item-desc {
-      font-size: 14.5px;
-      line-height: 1.55;
+    .d1-icon-badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 9px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      flex-shrink: 0;
+    }
+
+    .d1-card-body {
+      padding: 18px 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .d1-compare-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background: #fbfbfd;
+      border: 1px solid var(--border-divider);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+
+    .d1-bar-line-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 5px;
+      font-size: 13.5px;
+    }
+
+    .d1-bar-track {
+      height: 11px;
+      background: #ececef;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .d1-bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Step 2 · Composition Ribbons + 10-Study Roster */
+    .d1-corpus-grid {
+      display: grid;
+      grid-template-columns: 1.02fr 1fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .d1-ribbon-group {
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border-divider);
+    }
+
+    .d1-ribbon-group:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .d1-ribbon-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .d1-stacked-bar {
+      display: flex;
+      height: 13px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: #f2f2f7;
+      gap: 2px;
+      margin-bottom: 8px;
+    }
+
+    .d1-stacked-seg {
+      height: 100%;
+      transition: opacity 0.15s ease;
+    }
+
+    .d1-stacked-seg:hover {
+      opacity: 0.82;
+    }
+
+    .d1-legend-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 12px;
+    }
+
+    .d1-legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12.5px;
       color: #3a3a3c;
+    }
+
+    .d1-legend-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    .d1-study-table-wrap {
+      overflow-x: auto;
+    }
+
+    .d1-study-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .d1-study-table th {
+      text-align: left;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      padding: 7px 10px;
+      border-bottom: 1px solid var(--border-divider);
+      background: #fbfbfd;
+    }
+
+    .d1-study-table td {
+      padding: 7px 10px;
+      border-bottom: 1px solid #f2f2f7;
+      color: var(--text-main);
+      vertical-align: middle;
+    }
+
+    .d1-study-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Step 3 · Interactive 5 Cooking Environments */
+    .setting-defs-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .setting-def-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.14s ease, box-shadow 0.14s ease, border-color 0.14s ease;
+    }
+
+    .setting-def-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    .setting-def-card.is-selected {
+      border-color: #0071e3;
+      box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.14);
+    }
+
+    .setting-def-top {
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      border-bottom: 1px solid var(--border-divider);
+    }
+
+    .setting-def-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .setting-def-body {
+      padding: 12px 14px;
+      font-size: 13px;
+      color: #3a3a3c;
+      line-height: 1.45;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .setting-def-foot {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--color-accent);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     /* Setting Disparity Spectrum Card */
@@ -1579,29 +1790,8 @@
       background: #ffffff;
       border: 1px solid var(--border-subtle);
       border-radius: 14px;
-      padding: 26px 30px;
+      overflow: hidden;
       margin-bottom: 32px;
-    }
-
-    .spectrum-row {
-      display: grid;
-      grid-template-columns: 220px 1fr 170px;
-      gap: 18px;
-      align-items: center;
-      margin-bottom: 22px;
-    }
-
-    .spectrum-row:last-child {
-      margin-bottom: 0;
-    }
-
-    .spectrum-label {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--text-main);
-      display: flex;
-      align-items: center;
-      gap: 8px;
     }
 
     .spectrum-track {
@@ -1618,44 +1808,27 @@
       transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    .spectrum-val {
-      font-family: var(--font-mono);
-      font-size: 15px;
-      font-weight: 700;
-      text-align: right;
-      color: var(--text-main);
-    }
-
-    .spectrum-note {
-      grid-column: 2 / span 2;
-      font-size: 13.5px;
-      color: #48484a;
-      margin-top: -14px;
-      line-height: 1.45;
-    }
-
     /* Methods Grid */
     .methods-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 18px;
       margin-bottom: 36px;
     }
 
     .method-card {
-      background: #fbfbfd;
+      background: #ffffff;
       border: 1px solid var(--border-subtle);
       border-radius: 12px;
-      padding: 20px 22px;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
     }
 
     .method-name {
-      font-size: 16.5px;
+      font-size: 15.5px;
       font-weight: 700;
       color: var(--text-main);
-      margin-bottom: 4px;
       display: flex;
       align-items: center;
       gap: 8px;
@@ -1664,14 +1837,13 @@
     .method-tag {
       font-size: 12px;
       font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: var(--color-accent);
-      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
     }
 
     .method-body {
-      font-size: 14px;
+      font-size: 13.5px;
       color: #3a3a3c;
       line-height: 1.55;
     }
@@ -1686,7 +1858,7 @@
       background: #ffffff;
       outline: none;
       flex: 1;
-      min-width: 220px;
+      min-width: 200px;
     }
 
     .lab-search-input:focus {
@@ -1697,12 +1869,12 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      flex-wrap: nowrap;
-      margin-bottom: 18px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
       padding: 14px 18px;
       background: #fbfbfd;
       border: 1px solid var(--border-subtle);
-      border-radius: 10px;
+      border-radius: 12px;
     }
 
     .lab-select-group {
@@ -1754,26 +1926,26 @@
     }
 
     .d1-step-desc {
-      font-size: 15.5px;
+      font-size: 15px;
       color: var(--text-body);
       margin: 0 0 18px 0;
-      line-height: 1.5;
+      line-height: 1.55;
+      max-width: 960px;
     }
 
     .d1-findings-grid {
       display: grid;
       grid-template-columns: 1.25fr 0.75fr;
-      gap: 24px;
+      gap: 20px;
       align-items: start;
-      margin-bottom: 36px;
+      margin-bottom: 24px;
     }
 
     .d1-engine-rule-card {
-      background: #f4f8fe;
-      border: 1px solid #d0e2ff;
-      border-top: 4px solid #0071e3;
+      background: #ffffff;
+      border: 1px solid #cfe0fa;
       border-radius: 14px;
-      padding: 24px 26px;
+      overflow: hidden;
     }
 
     .lab-sort-th {
@@ -1789,46 +1961,30 @@
       background: #f0f7ff;
     }
 
-    .setting-defs-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 14px;
-      margin-top: 20px;
-    }
-
-    .setting-def-card {
-      background: #fbfbfd;
-      border: 1px solid var(--border-subtle);
-      border-radius: 10px;
-      padding: 16px 16px;
-    }
-
-    .setting-def-title {
-      font-size: 14.5px;
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .setting-def-body {
-      font-size: 13.5px;
-      color: #3a3a3c;
-      line-height: 1.45;
-    }
-
     .paired-dish-block {
-      padding: 16px 18px;
+      padding: 14px 16px;
       background: #fbfbfd;
       border: 1px solid var(--border-divider);
       border-radius: 10px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     .paired-dish-block:last-child {
       margin-bottom: 0;
+    }
+
+    @media (max-width: 1020px) {
+      .d1-problem-grid,
+      .d1-corpus-grid,
+      .d1-findings-grid {
+        grid-template-columns: 1fr;
+      }
+      .setting-defs-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .methods-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     .d4-frying-controls {
@@ -3378,127 +3534,413 @@
       <!-- TAB 1: D1 · LAB DATASET (4-STEP STORY)     -->
       <!-- ========================================== -->
       <div x-show="currentTab === 'd1'" x-transition.opacity.duration.150ms>
-        
+
         <!-- Header -->
-        <div style="margin-bottom: 30px;">
+        <div style="margin-bottom: 28px;">
           <h2 style="font-size: 30px; font-weight: 700; margin: 0 0 8px 0; letter-spacing: -0.02em;">Curated Fried Foods Laboratory Dataset (D1)</h2>
-          <p style="font-size: 16px; color: var(--text-body); margin: 0; line-height: 1.55; max-width: 980px;">
-            Published laboratory measurements of how many grams of fat actually remain inside <strong>100g of cooked fried Indian food</strong> (<code>data/curated/fried_foods_lab.csv</code>).
+          <p style="font-size: 16px; color: var(--text-body); margin: 0; line-height: 1.55; max-width: 960px;">
+            Published laboratory measurements of fat actually retained inside <strong>100 g of cooked fried Indian food</strong> — built so deep-fried recipes are scored by real oil uptake rather than the whole pan of frying oil.
           </p>
+          <div class="d1-hero-meta">
+            <span class="d1-meta-pill">📊 <span x-text="`${labRows.length} curated rows · ${labTotalSamples} samples`"></span></span>
+            <span class="d1-meta-pill">🏛️ <span x-text="`${labSources.length} published studies (2009–2025)`"></span></span>
+            <span class="d1-meta-pill">🍳 5 cooking settings · 6 food categories</span>
+            <span class="d1-meta-pill">📄 <code>data/curated/fried_foods_lab.csv</code></span>
+          </div>
         </div>
 
-        <!-- STEP 1: THE PROBLEM STATEMENT -->
-        <div style="margin-bottom: 40px;">
-          <div class="d1-step-label">Step 1 · Why We Built This Dataset</div>
-          <h3 class="d1-step-heading">Recipes list frying oil baths — not what you actually eat</h3>
+        <!-- STEP 1: VISUAL PROBLEM FRAMING -->
+        <div style="margin-bottom: 36px;">
+          <div class="d1-step-label">Step 1 · Oil Bath Exaggeration vs. Lab Reality</div>
+          <h3 class="d1-step-heading">Recipes list the whole frying bath — not what actually enters the food</h3>
           <p class="d1-step-desc">
-            A samosa recipe writes <em>"500 ml oil for deep frying"</em> (460g). If a nutrition calculator counts the whole pan of oil, it exaggerates fat by nearly 8&times;. We separate simmered dishes from deep-fried ones and replace the discarded oil bath with lab-measured fat absorption.
+            A paneer gravy keeps all its butter and cream inside the sauce, while a samosa recipe prints <em>"500 ml oil for deep frying"</em> (460 g) even though most oil remains in the kadai. The engine handles these two classes differently.
           </p>
 
-          <div class="lab-bridge-banner" style="margin-bottom: 0;">
-            <div class="bridge-item">
-              <span class="bridge-icon">🍲</span>
-              <div>
-                <div class="bridge-item-title">Simmered Curries (e.g. Paneer Butter Masala)</div>
-                <div class="bridge-item-desc">
-                  <strong>No Lab Lookup Needed:</strong> All 200g paneer, 28.4g butter, 15g cream, and 13.6g oil stay in the gravy and are eaten in full.
+          <div class="d1-problem-grid">
+            <!-- Left: Simmered Curries -->
+            <div class="d1-card">
+              <div class="d1-card-head head-green">
+                <div class="d1-card-title-row">
+                  <span class="d1-icon-badge">🍲</span>
+                  <div>
+                    <div>Simmered Dishes</div>
+                    <div style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">e.g., Paneer Butter Masala</div>
+                  </div>
+                </div>
+                <span class="badge badge-green" style="font-size: 12px;">100% Eaten in Gravy</span>
+              </div>
+              <div class="d1-card-body">
+                <div style="font-size: 14.5px; color: #3a3a3c; line-height: 1.55;">
+                  Every spoon of fat poured into a simmered curry emulsifies directly into the sauce you serve. Nothing is drained away, so standard ingredient summation is exact.
+                </div>
+                <div class="d1-compare-bars">
+                  <div>
+                    <div class="d1-bar-line-head">
+                      <span style="font-weight: 600; color: var(--text-main);">Recipe fats (butter + cream + oil)</span>
+                      <span class="mono-cell" style="font-weight: 700; color: #15803d;">56.4 g = 100% eaten</span>
+                    </div>
+                    <div class="d1-bar-track">
+                      <div class="d1-bar-fill" style="width: 100%; background: #22c55e;"></div>
+                    </div>
+                  </div>
+                  <div style="font-size: 12.5px; color: var(--text-muted);">
+                    Engine action: <code>frying_correction = None</code> · sums raw ingredients directly.
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="bridge-item">
-              <span class="bridge-icon">🥟</span>
-              <div>
-                <div class="bridge-item-title">Deep-Fried Immersion Foods (e.g. Samosa, Pakora)</div>
-                <div class="bridge-item-desc">
-                  <strong>Lab Absorption Substituted:</strong> The engine discards the 460g pan bath and estimates retained fat from this dataset: <code>486g mass &times; 12.4 g/100g = 60.3g fat</code>.
+
+            <!-- Right: Deep-Fried Foods -->
+            <div class="d1-card">
+              <div class="d1-card-head head-amber">
+                <div class="d1-card-title-row">
+                  <span class="d1-icon-badge">🥟</span>
+                  <div>
+                    <div>Deep-Fried Immersion Foods</div>
+                    <div style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">e.g., Samosa, Onion Pakora, Gulab Jamun</div>
+                  </div>
+                </div>
+                <span class="badge badge-amber" style="font-size: 12px;">7.6&times; Overcount Avoided</span>
+              </div>
+              <div class="d1-card-body">
+                <div style="font-size: 14.5px; color: #3a3a3c; line-height: 1.55;">
+                  Counting <em>"500 ml oil for deep frying"</em> produces fake calorie bombs. Our pipeline strips the pan bath and substitutes the laboratory-measured fat uptake rate.
+                </div>
+                <div class="d1-compare-bars">
+                  <div>
+                    <div class="d1-bar-line-head">
+                      <span style="font-weight: 600; color: #991b1b;">Naive recipe oil-bath sum (wrong)</span>
+                      <span class="mono-cell" style="font-weight: 700; color: #dc2626; text-decoration: line-through;">460.0 g</span>
+                    </div>
+                    <div class="d1-bar-track">
+                      <div class="d1-bar-fill" style="width: 100%; background: rgba(239, 68, 68, 0.35);"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="d1-bar-line-head">
+                      <span style="font-weight: 600; color: #92400e;">Lab Soxhlet uptake (486 g &times; 12.4 g/100g)</span>
+                      <span class="mono-cell" style="font-weight: 700; color: #d97706;">60.3 g</span>
+                    </div>
+                    <div class="d1-bar-track">
+                      <div class="d1-bar-fill" style="width: 13.1%; background: #f59e0b;"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- STEP 2: WHAT WE COMPILED & WHAT THE 5 COOKING SETTINGS MEAN -->
-        <div style="margin-bottom: 40px;">
-          <div class="d1-step-label">Step 2 · What We Compiled &amp; Cooking Settings</div>
-          <h3 class="d1-step-heading">69 empirical measurements across 10 studies &amp; 5 cooking settings</h3>
+        <!-- STEP 2: CORPUS BREAKDOWN & ALL 10 PUBLISHED STUDIES -->
+        <div style="margin-bottom: 36px;">
+          <div class="d1-step-label">Step 2 · Corpus Breakdown &amp; Primary Sources</div>
+          <h3 class="d1-step-heading">Where the 69 measurements come from across food categories, methods, and studies</h3>
           <p class="d1-step-desc">
-            Every row records how much fat remains inside 100g of cooked food, tagged by the real-world environment where it was fried.
+            Every record in D1 comes verbatim from peer-reviewed Indian frying studies or national UK/Irish food-composition tables — grouped into proportional ribbons on the left and named study-by-study on the right.
           </p>
 
-          <div class="lab-metrics-grid" style="margin-bottom: 0;">
-            <div class="lab-metric-card">
-              <div>
-                <div class="lab-card-header">
-                  <span class="lab-card-title"><span>📚</span> Empirical Corpus</span>
-                  <span class="badge badge-blue" style="font-size: 12px;">CSV Verified</span>
+          <div class="d1-corpus-grid">
+            <!-- Left Card: Stacked Proportional Ribbons -->
+            <div class="d1-card">
+              <div class="d1-card-head head-blue">
+                <div class="d1-card-title-row">
+                  <span class="d1-icon-badge">📚</span>
+                  <span>Dataset Composition (<span x-text="labRows.length"></span> rows)</span>
                 </div>
-                <div class="lab-kpi-big" x-text="`${labRows.length} rows · ${labTotalSamples} samples`"></div>
+                <span class="badge badge-blue" style="font-size: 12px;" x-text="`${labTotalSamples} Lab Samples`"></span>
               </div>
-              <div class="lab-kpi-sub">
-                Records dish, oil medium, retained fat per 100g food, SFA%, sample count (n), and source citation.
+              <div class="d1-card-body">
+                <!-- Ribbon 1: By Setting -->
+                <div class="d1-ribbon-group">
+                  <div class="d1-ribbon-head">
+                    <span>By Cooking Setting</span>
+                    <span style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">5 environments</span>
+                  </div>
+                  <div class="d1-stacked-bar">
+                    <template x-for="seg in labComposition.bySetting" :key="seg.label">
+                      <div class="d1-stacked-seg"
+                           :style="`width: ${seg.pct}%; background-color: ${seg.color};`"
+                           :title="`${seg.label}: ${seg.count} rows (${seg.pct.toFixed(0)}%)`"></div>
+                    </template>
+                  </div>
+                  <div class="d1-legend-row">
+                    <template x-for="seg in labComposition.bySetting" :key="seg.label">
+                      <span class="d1-legend-item">
+                        <span class="d1-legend-dot" :style="`background-color: ${seg.color};`"></span>
+                        <span x-text="seg.label"></span>
+                        <strong x-text="seg.count"></strong>
+                      </span>
+                    </template>
+                  </div>
+                </div>
+
+                <!-- Ribbon 2: By Category -->
+                <div class="d1-ribbon-group">
+                  <div class="d1-ribbon-head">
+                    <span>By Food Category</span>
+                    <span style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">6 snack taxonomies</span>
+                  </div>
+                  <div class="d1-stacked-bar">
+                    <template x-for="seg in labComposition.byCategory" :key="seg.label">
+                      <div class="d1-stacked-seg"
+                           :style="`width: ${seg.pct}%; background-color: ${seg.color};`"
+                           :title="`${seg.label}: ${seg.count} rows (${seg.pct.toFixed(0)}%)`"></div>
+                    </template>
+                  </div>
+                  <div class="d1-legend-row">
+                    <template x-for="seg in labComposition.byCategory" :key="seg.label">
+                      <span class="d1-legend-item">
+                        <span class="d1-legend-dot" :style="`background-color: ${seg.color};`"></span>
+                        <span x-text="seg.label"></span>
+                        <strong x-text="seg.count"></strong>
+                      </span>
+                    </template>
+                  </div>
+                </div>
+
+                <!-- Ribbon 3: By Analytical Method -->
+                <div class="d1-ribbon-group">
+                  <div class="d1-ribbon-head">
+                    <span>By Extraction Method</span>
+                    <span style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">3 assay protocols</span>
+                  </div>
+                  <div class="d1-stacked-bar">
+                    <template x-for="seg in labComposition.byMethod" :key="seg.label">
+                      <div class="d1-stacked-seg"
+                           :style="`width: ${seg.pct}%; background-color: ${seg.color};`"
+                           :title="`${seg.label}: ${seg.count} rows (${seg.pct.toFixed(0)}%)`"></div>
+                    </template>
+                  </div>
+                  <div class="d1-legend-row">
+                    <template x-for="seg in labComposition.byMethod" :key="seg.label">
+                      <span class="d1-legend-item">
+                        <span class="d1-legend-dot" :style="`background-color: ${seg.color};`"></span>
+                        <span x-text="seg.label"></span>
+                        <strong x-text="seg.count"></strong>
+                      </span>
+                    </template>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="lab-metric-card card-amber">
-              <div>
-                <div class="lab-card-header">
-                  <span class="lab-card-title"><span>🏛️</span> 10 Published Sources</span>
-                  <span class="badge badge-amber" style="font-size: 12px;">2009–2025</span>
+            <!-- Right Card: All 10 Published Sources -->
+            <div class="d1-card">
+              <div class="d1-card-head head-purple">
+                <div class="d1-card-title-row">
+                  <span class="d1-icon-badge">🏛️</span>
+                  <span>All 10 Published Sources (2009–2025)</span>
                 </div>
-                <div class="lab-kpi-big">India + UK Agencies</div>
+                <span class="badge badge-purple" style="font-size: 12px;">Click setting in Step 3</span>
               </div>
-              <div class="lab-kpi-sub">
-                Gupta 2016, UK CoFID 2021, safefood 2015, Joshee 2019, Neethu 2025, plus 5 controlled frying trials.
-              </div>
-            </div>
-
-            <div class="lab-metric-card card-green">
-              <div>
-                <div class="lab-card-header">
-                  <span class="lab-card-title"><span>🗂️</span> Coverage Scope</span>
-                  <span class="badge badge-green" style="font-size: 12px;">Full Taxonomy</span>
+              <div class="d1-card-body" style="padding: 10px 14px;">
+                <div class="d1-study-table-wrap">
+                  <table class="d1-study-table">
+                    <thead>
+                      <tr>
+                        <th>Published Study</th>
+                        <th style="text-align: right;">Rows</th>
+                        <th style="text-align: right;">n</th>
+                        <th>Settings Covered</th>
+                        <th>Assay</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <template x-for="st in labSources" :key="st.source">
+                        <tr>
+                          <td style="font-weight: 700;" x-text="st.source"></td>
+                          <td class="mono-cell" style="text-align: right; font-weight: 600;" x-text="st.rows"></td>
+                          <td class="mono-cell" style="text-align: right; color: var(--text-muted);" x-text="st.samples"></td>
+                          <td style="font-size: 12.5px; color: #3a3a3c;" x-text="st.settingsText"></td>
+                          <td>
+                            <span class="badge badge-gray" style="font-size: 11px;" x-text="st.methodsText"></span>
+                          </td>
+                        </tr>
+                      </template>
+                    </tbody>
+                  </table>
                 </div>
-                <div class="lab-kpi-big">6 Categories · 5 Settings</div>
-              </div>
-              <div class="lab-kpi-sub">
-                Stuffed pastries, fritters, flat doughs, crisp namkeens, sweets, and potato patties across 5 environments.
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- 5 Cooking Settings Explained Before the Table -->
+        <!-- STEP 3: 5 REAL-WORLD ENVIRONMENTS + VARIANCE & ENGINE LOGIC -->
+        <div style="margin-bottom: 36px;">
+          <div class="d1-step-label">Step 3 · Real-World Cooking Environments, Variance &amp; Engine Rules</div>
+          <h3 class="d1-step-heading">5 frying environments explain why the same dish varies 2&times; to 4&times;</h3>
+          <p class="d1-step-desc">
+            Every lab row is tagged with where the food was cooked. Click any environment card below to filter Step 4's raw measurements table to that setting.
+          </p>
+
+          <!-- Explicit Sub-Heading & Interactive 5 Setting Filter Cards -->
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; gap: 10px; flex-wrap: wrap;">
+            <strong style="font-size: 15.5px; color: var(--text-main);">5 Real-World Frying Settings (Click a card to filter Step 4)</strong>
+            <button x-show="selectedLabSetting !== 'All'"
+                    class="bench-chip"
+                    style="font-size: 12.5px; padding: 4px 10px;"
+                    @click="selectedLabSetting = 'All'">
+              Clear setting filter (<span x-text="selectedLabSetting"></span>) &times;
+            </button>
+          </div>
+
           <div class="setting-defs-grid">
-            <div class="setting-def-card">
-              <div class="setting-def-title"><span>🏪</span> street</div>
-              <div class="setting-def-body">Roadside &amp; halwai stalls reusing Vanaspati or palm oil across many batches; viscous oil clings heavily.</div>
+            <template x-for="s in labSettingCards" :key="s.key">
+              <div class="setting-def-card"
+                   :class="{ 'is-selected': selectedLabSetting === s.key }"
+                   @click="selectLabSettingCard(s.key)">
+                <div class="setting-def-top" :style="`background: linear-gradient(90deg, ${s.tint} 0%, #ffffff 100%);`">
+                  <div class="setting-def-title">
+                    <span x-text="s.icon"></span>
+                    <span x-text="s.key"></span>
+                  </div>
+                  <span class="badge" :class="s.badgeClass" style="font-size: 11.5px;" x-text="`${s.count} rows`"></span>
+                </div>
+                <div class="setting-def-body">
+                  <div x-text="s.desc"></div>
+                  <div class="setting-def-foot">
+                    <span x-text="selectedLabSetting === s.key ? 'Filtered in table ✓' : 'Filter table ↓'"></span>
+                    <span class="mono-cell" style="color: var(--text-muted); font-weight: 600;" x-text="`med ${s.medianFat.toFixed(1)}g`"></span>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </div>
+
+          <!-- Same-Dish Variance + Engine Resolution -->
+          <div class="d1-findings-grid">
+            <!-- Left: Unconfounded Same-Dish Paired Comparisons -->
+            <div class="setting-spectrum-card" style="margin-bottom: 0;">
+              <div class="d1-card-head head-amber">
+                <div class="d1-card-title-row">
+                  <span class="d1-icon-badge">📏</span>
+                  <div>
+                    <div>Same-Dish Paired Comparisons</div>
+                    <div style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">Holding the dish constant isolates cooking environment &amp; extraction spread</div>
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 18px 20px;">
+                <template x-for="group in sameDishComparisons" :key="group.title">
+                  <div class="paired-dish-block">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; gap: 8px; flex-wrap: wrap;">
+                      <strong style="font-size: 15.5px; color: var(--text-main);" x-text="group.title"></strong>
+                      <span class="badge badge-amber" style="font-size: 12px;" x-text="`${group.ratio}× range (${group.min.toFixed(1)}g → ${group.max.toFixed(1)}g / 100g)`"></span>
+                    </div>
+                    <template x-for="row in group.rows" :key="row.label + row.fat">
+                      <div style="display: grid; grid-template-columns: 235px 1fr 72px; gap: 12px; align-items: center; margin-bottom: 7px;">
+                        <span style="font-size: 13px; color: var(--text-body); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" x-text="row.label" :title="row.label"></span>
+                        <div class="spectrum-track" style="height: 9px;">
+                          <div class="spectrum-fill" :style="`width: ${Math.min((row.fat / 35) * 100, 100)}%; background-color: ${row.color};`"></div>
+                        </div>
+                        <span class="mono-cell" style="font-size: 13px; font-weight: 700; text-align: right;" x-text="`${row.fat.toFixed(1)} g`"></span>
+                      </div>
+                    </template>
+                  </div>
+                </template>
+              </div>
             </div>
-            <div class="setting-def-card">
-              <div class="setting-def-title"><span>🏠</span> home</div>
-              <div class="setting-def-body">Small domestic kadai frying; oil temperature drops when cold batter enters, lengthening soak time.</div>
+
+            <!-- Right: How frying.py Resolves Dish + Setting + Fallback -->
+            <div class="d1-engine-rule-card">
+              <div class="d1-card-head head-blue">
+                <div class="d1-card-title-row">
+                  <span class="d1-icon-badge">⚙️</span>
+                  <div>
+                    <div>How <code>frying.py</code> Uses Settings</div>
+                    <div style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">Exact lookup &amp; transparent fallback</div>
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 18px 20px; font-size: 14px; line-height: 1.55; color: #2c2c2e;">
+                <p style="margin: 0 0 10px 0;">
+                  In D4, users can toggle cooking environments (e.g. <strong>Street</strong> vs. <strong>Restaurant</strong>) to see how oil uptake shifts:
+                </p>
+                <ol style="margin: 0 0 16px 18px; padding: 0; line-height: 1.65;">
+                  <li><strong>Match dish rows:</strong> Base name lookup gathers all matching entries (e.g. 5 <code>Samosa</code> rows).</li>
+                  <li><strong>Filter by setting:</strong> If entries match the chosen setting (e.g. Samosa + <code>street</code> &rarr; Gupta 2016: <strong>29.4 g/100g</strong>, <strong>54.7% SFA</strong>), the engine takes their median.</li>
+                  <li><strong>Transparent fallback:</strong> If no exact row exists for that setting (e.g. Samosa has no <code>home</code> row), it falls back to the median of all matched rows (<strong>12.4 g/100g</strong>) and flags <code>fallback_used=True</code>.</li>
+                </ol>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                  <button class="bench-chip" style="font-size: 13px; padding: 7px 12px; border-color: #0071e3; color: #0071e3; font-weight: 600;" @click="labOnlySamosaMatch = true; document.getElementById('d1-table-anchor')?.scrollIntoView({ behavior: 'smooth' });">
+                    Inspect Samosa's 5 rows ↓
+                  </button>
+                  <button class="bench-chip" style="font-size: 13px; padding: 7px 12px; background: #0071e3; color: #ffffff; border-color: #0071e3; font-weight: 600;" @click="launchWithDemo('samosa_test')">
+                    Test Settings Live in D4 &rarr;
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="setting-def-card">
-              <div class="setting-def-title"><span>🍽️</span> restaurant-takeaway</div>
-              <div class="setting-def-body">Commercial 175–185&deg;C thermostatic fryers; outer crust seals quickly, limiting deep oil absorption.</div>
+          </div>
+
+          <!-- Extraction Methods Context -->
+          <div>
+            <div style="font-size: 17px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">
+              Why Lab Studies Differ: Three Analytical Extraction Protocols
             </div>
-            <div class="setting-def-card">
-              <div class="setting-def-title"><span>📦</span> retail-packaged</div>
-              <div class="setting-def-body">Industrial continuous fryers and centrifugal de-oiling for shelf-stable packaged snacks.</div>
-            </div>
-            <div class="setting-def-card">
-              <div class="setting-def-title"><span>🔬</span> lab-controlled</div>
-              <div class="setting-def-body">Fresh oil, fixed temperature, and timed draining in published food-science experiments.</div>
+            <p style="font-size: 14px; color: var(--text-muted); margin: 0 0 14px 0;">
+              These protocols come directly from the 10 source papers, explaining why Soxhlet and gas-chromatography (FAME-sum) measurements separate:
+            </p>
+            <div class="methods-grid" style="margin-bottom: 0;">
+              <div class="method-card">
+                <div class="d1-card-head head-amber">
+                  <div class="method-name"><span>🧪</span> Soxhlet Extraction</div>
+                  <span class="badge badge-amber" style="font-size: 11.5px;">21 rows</span>
+                </div>
+                <div style="padding: 14px 16px;">
+                  <div class="method-tag">Gupta 2016 · Street vendors</div>
+                  <div class="method-body">
+                    Continuous solvent extraction (ether / hexane). Captures all extractable neutral lipids, yielding higher fat readings (e.g. 29.6 g street samosa) plus SFA%.
+                  </div>
+                </div>
+              </div>
+
+              <div class="method-card">
+                <div class="d1-card-head head-blue">
+                  <div class="method-name"><span>🔬</span> Proximate Analysis</div>
+                  <span class="badge badge-blue" style="font-size: 11.5px;">33 rows</span>
+                </div>
+                <div style="padding: 14px 16px;">
+                  <div class="method-tag">UK CoFID · safefood · Controlled Trials</div>
+                  <div class="method-body">
+                    AOAC acid hydrolysis + ether extraction used by national food agencies. Reliable total fat, though agency tables and trials often omit fatty-acid SFA%.
+                  </div>
+                </div>
+              </div>
+
+              <div class="method-card">
+                <div class="d1-card-head head-purple">
+                  <div class="method-name"><span>🧬</span> FAME-Sum GC-FID</div>
+                  <span class="badge badge-purple" style="font-size: 11.5px;">15 rows</span>
+                </div>
+                <div style="padding: 14px 16px;">
+                  <div class="method-tag">Joshee 2019 · Fatty-acid profile</div>
+                  <div class="method-body">
+                    Sums identified fatty-acid methyl ester peaks. Gives exact SFA%, but runs systematically lower on total fat (e.g. 7.7 g samosa) because non-FA lipids aren't summed.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- STEP 3: EXPLORE THE DATASET (CLEAN 1-ROW TOOLBAR + 69-ROW TABLE) -->
-        <div id="d1-table-anchor" style="margin-bottom: 44px;">
-          <div class="d1-step-label">Step 3 · Inspect the Raw Measurements</div>
-          <h3 class="d1-step-heading">
-            All <span x-text="labRows.length"></span> Lab Records (<span x-text="filteredLabRows.length"></span> shown)
-          </h3>
+        <!-- STEP 4: AUDITABLE 69-ROW LAB APPENDIX TABLE -->
+        <div id="d1-table-anchor" style="margin-bottom: 24px;">
+          <div class="d1-step-label">Step 4 · Auditable Source Appendix</div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 10px;">
+            <h3 class="d1-step-heading">
+              All <span x-text="labRows.length"></span> Lab Records (<span x-text="filteredLabRows.length"></span> shown)
+            </h3>
+            <button x-show="selectedLabCategory !== 'All' || selectedLabSetting !== 'All' || labSearchQuery || labOnlySamosaMatch"
+                    class="bench-chip"
+                    style="font-size: 12.5px; padding: 5px 12px;"
+                    @click="selectedLabCategory = 'All'; selectedLabSetting = 'All'; labSearchQuery = ''; labOnlySamosaMatch = false;">
+              Reset all filters &times;
+            </button>
+          </div>
           <p class="d1-step-desc">
-            Filter by food category or cooking setting, sort by fat or SFA%, or isolate the 5 Samosa rows our engine matches.
+            Filter by food category or cooking setting, sort by retained fat or SFA%, or isolate the 5 Samosa rows matched by our engine.
           </p>
 
           <!-- Clean Single-Row Filter Toolbar -->
@@ -3571,7 +4013,7 @@
                               'badge-green': row.setting === 'home',
                               'badge-gray': row.setting === 'lab-controlled',
                               'badge-purple': row.setting === 'retail-packaged'
-                            }" 
+                            }"
                             x-text="row.setting">
                       </span>
                     </td>
@@ -3590,107 +4032,6 @@
                 </template>
               </tbody>
             </table>
-          </div>
-        </div>
-
-        <!-- STEP 4: KEY FINDINGS, METHODOLOGY & HOW THE ENGINE RESOLVES SETTINGS -->
-        <div style="margin-bottom: 24px;">
-          <div class="d1-step-label">Step 4 · What the Data Reveals &amp; Methodology</div>
-          <h3 class="d1-step-heading">Within-dish variation (holding the recipe constant) — and how <code>frying.py</code> handles settings</h3>
-          <p class="d1-step-desc">
-            Comparing different dishes across settings would confuse food type with cooking environment. Instead, looking at the <strong>exact same dish</strong> measured across studies shows the true impact of setting and lab protocol.
-          </p>
-
-          <div class="d1-findings-grid">
-            <!-- Left: Unconfounded Same-Dish Paired Comparisons -->
-            <div class="setting-spectrum-card" style="margin-bottom: 0;">
-              <div style="margin-bottom: 16px;">
-                <div style="font-size: 18px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">
-                  1. Same-Dish Paired Comparisons (Fat Retained per 100g)
-                </div>
-                <div style="font-size: 14px; color: var(--text-muted); line-height: 1.45;">
-                  Holding the dish constant isolates the true spread across cooking environments and extraction protocols:
-                </div>
-              </div>
-
-              <template x-for="group in sameDishComparisons" :key="group.title">
-                <div class="paired-dish-block">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; gap: 8px; flex-wrap: wrap;">
-                    <strong style="font-size: 16px; color: var(--text-main);" x-text="group.title"></strong>
-                    <span class="badge badge-amber" style="font-size: 12px;" x-text="`${group.ratio}× range (${group.min.toFixed(1)}g → ${group.max.toFixed(1)}g / 100g)`"></span>
-                  </div>
-                  <template x-for="row in group.rows" :key="row.label + row.fat">
-                    <div style="display: grid; grid-template-columns: 245px 1fr 78px; gap: 12px; align-items: center; margin-bottom: 7px;">
-                      <span style="font-size: 13.5px; color: var(--text-body); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" x-text="row.label" :title="row.label"></span>
-                      <div class="spectrum-track" style="height: 9px;">
-                        <div class="spectrum-fill" :style="`width: ${Math.min((row.fat / 35) * 100, 100)}%; background-color: ${row.color};`"></div>
-                      </div>
-                      <span class="mono-cell" style="font-size: 13.5px; font-weight: 700; text-align: right;" x-text="`${row.fat.toFixed(1)} g`"></span>
-                    </div>
-                  </template>
-                </div>
-              </template>
-            </div>
-
-            <!-- Right: How frying.py Resolves Dish + Setting + Fallback -->
-            <div class="d1-engine-rule-card">
-              <div style="font-size: 18px; font-weight: 700; color: var(--text-main); margin-bottom: 10px;">
-                2. How <code>frying.py</code> Uses Settings &amp; Fallback
-              </div>
-              <div style="font-size: 14.5px; line-height: 1.55; color: #2c2c2e;">
-                <p style="margin: 0 0 10px 0;">
-                  In D4, users can now test a dish under a specific cooking setting (e.g. <strong>Street</strong> vs. <strong>Restaurant</strong>):
-                </p>
-                <ol style="margin: 0 0 14px 18px; padding: 0; line-height: 1.6;">
-                  <li><strong>Match dish rows:</strong> Base name lookup finds all matching entries (e.g. 5 <code>Samosa</code> rows).</li>
-                  <li><strong>Filter by setting:</strong> If rows exist for the requested setting (e.g. Samosa + <code>street</code> &rarr; Gupta 2016: <strong>29.4 g/100g</strong>, <strong>54.7% SFA</strong>), the engine uses their median.</li>
-                  <li><strong>Transparent fallback:</strong> If no row exists for that dish + setting (e.g. exact base Samosa has no <code>home</code> row), it falls back to the median across all matched rows (<strong>12.4 g/100g</strong>) and flags <code>fallback_used=True</code>.</li>
-                </ol>
-                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                  <button class="bench-chip" style="font-size: 13px; padding: 7px 12px; border-color: #0071e3; color: #0071e3; font-weight: 600;" @click="labOnlySamosaMatch = true; document.getElementById('d1-table-anchor')?.scrollIntoView({ behavior: 'smooth' });">
-                    Inspect Samosa's 5 rows above &uarr;
-                  </button>
-                  <button class="bench-chip" style="font-size: 13px; padding: 7px 12px; background: #0071e3; color: #ffffff; border-color: #0071e3; font-weight: 600;" @click="launchWithDemo('samosa_test')">
-                    Test Settings Live in D4 &rarr;
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Extraction Methods (Moved After Dataset as Methodological Context) -->
-          <div style="margin-top: 28px;">
-            <div style="font-size: 18px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">
-              3. Why Lab Studies Differ: Three Analytical Extraction Protocols
-            </div>
-            <p style="font-size: 14.5px; color: var(--text-muted); margin: 0 0 16px 0;">
-              These are the measurement methods used by the published studies in our dataset (not our own lab runs), explaining why Soxhlet and GC values diverge:
-            </p>
-            <div class="methods-grid" style="margin-bottom: 0;">
-              <div class="method-card">
-                <div class="method-name"><span>🧪</span> Soxhlet Extraction</div>
-                <div class="method-tag">Gupta 2016 · 21 street rows</div>
-                <div class="method-body">
-                  Continuous solvent extraction (ether / hexane). Captures all extractable neutral lipids, yielding higher fat readings (e.g. 29.6g street samosa) plus SFA%.
-                </div>
-              </div>
-
-              <div class="method-card">
-                <div class="method-name"><span>🔬</span> Proximate Analysis</div>
-                <div class="method-tag">UK CoFID · safefood · Trials (33 rows)</div>
-                <div class="method-body">
-                  AOAC acid hydrolysis + ether extraction used by national food agencies. Reliable total fat, though UK CoFID and controlled trials often omit SFA%.
-                </div>
-              </div>
-
-              <div class="method-card">
-                <div class="method-name"><span>🧬</span> FAME-Sum Chromatography</div>
-                <div class="method-tag">Joshee 2019 · 15 GC-FID rows</div>
-                <div class="method-body">
-                  Sums identified fatty-acid methyl ester peaks. Gives exact SFA%, but runs systematically lower on total fat (e.g. 7.7g samosa) because non-fatty-acid lipids aren't counted.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -5247,6 +5588,143 @@ Sodium: 16mg (0.8%*)   | Energy: 224 kcal (10.0% day)</div>
           return this.labRows.reduce((sum, r) => sum + (parseInt(r.n_samples, 10) || 1), 0);
         },
 
+        get labComposition() {
+          const total = this.labRows.length || 1;
+          const settingColors = {
+            'street': '#f59e0b',
+            'home': '#22c55e',
+            'lab-controlled': '#64748b',
+            'restaurant-takeaway': '#0071e3',
+            'retail-packaged': '#9333ea'
+          };
+          const categoryColors = {
+            'crisp namkeen': '#f59e0b',
+            'battered fritter': '#0071e3',
+            'stuffed pastry': '#ef4444',
+            'flat dough': '#22c55e',
+            'syrup-soaked sweet': '#9333ea',
+            'other': '#8e8e93'
+          };
+          const methodColors = {
+            'proximate': '#0071e3',
+            'Soxhlet': '#f59e0b',
+            'FAME-sum': '#9333ea'
+          };
+
+          const build = (key, palette) => {
+            const counts = {};
+            this.labRows.forEach(r => {
+              const val = r[key] || 'other';
+              counts[val] = (counts[val] || 0) + 1;
+            });
+            return Object.entries(counts)
+              .sort((a, b) => b[1] - a[1])
+              .map(([label, count]) => ({
+                label,
+                count,
+                pct: (count / total) * 100,
+                color: palette[label] || '#8e8e93'
+              }));
+          };
+
+          return {
+            bySetting: build('setting', settingColors),
+            byCategory: build('category', categoryColors),
+            byMethod: build('method', methodColors)
+          };
+        },
+
+        get labSources() {
+          const map = {};
+          this.labRows.forEach(r => {
+            const src = r.source || 'Unknown';
+            if (!map[src]) {
+              map[src] = { source: src, rows: 0, samples: 0, settings: new Set(), methods: new Set() };
+            }
+            map[src].rows += 1;
+            map[src].samples += (parseInt(r.n_samples, 10) || 1);
+            if (r.setting) map[src].settings.add(r.setting);
+            if (r.method) map[src].methods.add(r.method);
+          });
+          const shortSetting = s => ({
+            'restaurant-takeaway': 'restaurant',
+            'retail-packaged': 'retail',
+            'lab-controlled': 'lab'
+          }[s] || s);
+
+          return Object.values(map)
+            .sort((a, b) => b.rows - a.rows || b.samples - a.samples)
+            .map(entry => ({
+              source: entry.source,
+              rows: entry.rows,
+              samples: entry.samples,
+              settingsText: Array.from(entry.settings).map(shortSetting).join(', '),
+              methodsText: Array.from(entry.methods).join(', ')
+            }));
+        },
+
+        get labSettingCards() {
+          const defs = [
+            {
+              key: 'street',
+              icon: '🏪',
+              tint: '#fff7ed',
+              badgeClass: 'badge-amber',
+              desc: 'Roadside & halwai stalls reusing palm oil or Vanaspati across batches; heavier surface cling.'
+            },
+            {
+              key: 'home',
+              icon: '🏠',
+              tint: '#ecfdf3',
+              badgeClass: 'badge-green',
+              desc: 'Small domestic kadai frying; oil cools when cold batter drops in, extending soak time.'
+            },
+            {
+              key: 'restaurant-takeaway',
+              icon: '🍽️',
+              tint: '#eff6ff',
+              badgeClass: 'badge-blue',
+              desc: 'Commercial 175–185°C thermostatic fryers seal the outer crust rapidly, curbing absorption.'
+            },
+            {
+              key: 'retail-packaged',
+              icon: '📦',
+              tint: '#f5f3ff',
+              badgeClass: 'badge-purple',
+              desc: 'Continuous industrial lines with centrifugal de-oiling for shelf-stable packaged snacks.'
+            },
+            {
+              key: 'lab-controlled',
+              icon: '🔬',
+              tint: '#f3f4f6',
+              badgeClass: 'badge-gray',
+              desc: 'Fresh oil, fixed frying temperatures, and timed paper draining in food-science trials.'
+            }
+          ];
+
+          return defs.map(d => {
+            const fats = this.labRows
+              .filter(r => r.setting === d.key)
+              .map(r => parseFloat(r.fat_g_100g))
+              .filter(v => !Number.isNaN(v))
+              .sort((a, b) => a - b);
+            const mid = Math.floor(fats.length / 2);
+            const medianFat = fats.length
+              ? (fats.length % 2 ? fats[mid] : (fats[mid - 1] + fats[mid]) / 2)
+              : 0;
+            return { ...d, count: fats.length, medianFat };
+          });
+        },
+
+        selectLabSettingCard(settingKey) {
+          if (this.selectedLabSetting === settingKey) {
+            this.selectedLabSetting = 'All';
+          } else {
+            this.selectedLabSetting = settingKey;
+            document.getElementById('d1-table-anchor')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        },
+
         isSamosaEngineMatch(row) {
           if (!row || !row.item) return false;
           return row.item.split('(')[0].trim().toLowerCase() === 'samosa';
@@ -5263,11 +5741,11 @@ Sodium: 16mg (0.8%*)   | Energy: 224 kcal (10.0% day)</div>
 
         get sameDishComparisons() {
           const colors = {
-            'street': '#ff3b30',
-            'home': '#ff9500',
+            'street': '#f59e0b',
+            'home': '#22c55e',
             'restaurant-takeaway': '#0071e3',
-            'retail-packaged': '#af52de',
-            'lab-controlled': '#28cd41'
+            'retail-packaged': '#9333ea',
+            'lab-controlled': '#64748b'
           };
           const specs = [
             {
