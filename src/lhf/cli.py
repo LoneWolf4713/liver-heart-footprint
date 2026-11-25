@@ -7,6 +7,7 @@ from lhf.pipeline import analyse_recipe
 
 
 def main(argv=None):
+    """Parse CLI arguments, execute the recipe analysis pipeline, and print JSON output."""
     parser = argparse.ArgumentParser(description="Analyse a recipe for liver and heart footprint.")
     parser.add_argument("recipe", help="Path to recipe JSON file")
     parser.add_argument("--setting", default="urban", choices=["urban", "rural"], help="Setting (urban or rural)")

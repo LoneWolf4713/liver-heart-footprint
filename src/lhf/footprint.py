@@ -13,6 +13,7 @@ ALLOWED_RISKS = {"general", "cardiometabolic"}
 
 
 def _load_baselines():
+    """Load and cache clinical thresholds and survey baselines from baselines.csv."""
     global _BASELINES
     if _BASELINES is None:
         path = os.path.join(DATA_CURATED, "baselines.csv")

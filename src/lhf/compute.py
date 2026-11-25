@@ -48,6 +48,8 @@ def sum_nutrients(items: list) -> dict:
 
             for k in NUTRIENTS:
                 v = nuts[k]
+                # Propagate NaN honestly when any ingredient lacks trans-fat or moisture data
+                # rather than treating missing analytical cells as zero.
                 if k == "tfa_g":
                     if math.isnan(v):
                         unknown_tfa_items.append(idx)

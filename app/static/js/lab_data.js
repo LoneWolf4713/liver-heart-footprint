@@ -602,26 +602,26 @@ window.LAB_DATA = [
     "category": "stuffed pastry",
     "setting": "lab-controlled",
     "oil": "Groundnut oil",
-    "fat_g_100g": "12.4",
+    "fat_g_100g": "18.34",
     "SFA_pct_of_fat": "",
     "method": "proximate",
     "n_samples": "3",
     "source": "Sakhale 2011",
     "table_page": "Table 2",
-    "notes": "Standard wheat casing control samosa"
+    "notes": "PMC3551041 control wheat-casing samosa (derived consistently across 4 hydrocolloid reductions)"
   },
   {
     "item": "Samosa (Modified casing)",
     "category": "stuffed pastry",
     "setting": "lab-controlled",
     "oil": "Groundnut oil",
-    "fat_g_100g": "8.97",
+    "fat_g_100g": "8.56",
     "SFA_pct_of_fat": "",
     "method": "proximate",
     "n_samples": "3",
     "source": "Sakhale 2011",
     "table_page": "Table 2",
-    "notes": "Hydrocolloid casing modified samosa (mean 8.56-9.38)"
+    "notes": "PMC3551041 1.5% xanthan gum casing (53.32% uptake reduction vs control)"
   },
   {
     "item": "Poori (Control)",
@@ -634,33 +634,33 @@ window.LAB_DATA = [
     "n_samples": "5",
     "source": "Yadav 2012",
     "table_page": "Table 3",
-    "notes": "Control deep fat fried poori"
+    "notes": "PMC3550836 control deep-fat fried poori (21.4 +/- 0.10 g/100g)"
   },
   {
     "item": "Poori (Fibre added)",
     "category": "flat dough",
     "setting": "lab-controlled",
     "oil": "Refined sunflower oil",
-    "fat_g_100g": "17.12",
+    "fat_g_100g": "16.5",
     "SFA_pct_of_fat": "",
     "method": "proximate",
     "n_samples": "5",
     "source": "Yadav 2012",
     "table_page": "Table 3",
-    "notes": "Poori with 11g oat bran + 3g wheat bran"
+    "notes": "PMC3550836 optimized poori with 3g wheat bran + 11g oat bran (16.5 +/- 0.12 g/100g)"
   },
   {
     "item": "Fried Papad (Control sun-dried)",
     "category": "crisp namkeen",
     "setting": "lab-controlled",
     "oil": "Refined oil",
-    "fat_g_100g": "11.4",
+    "fat_g_100g": "30.02",
     "SFA_pct_of_fat": "",
     "method": "proximate",
     "n_samples": "3",
     "source": "Gaikwad 2022",
     "table_page": "Table 2",
-    "notes": "Traditional sun-dried deep fried black gram papad"
+    "notes": "PMC8814218 sun-dried deep-fried black gram papad (30.02 +/- 0.25%)"
   },
   {
     "item": "Fried Papad (MAHD dried)",
@@ -673,33 +673,7 @@ window.LAB_DATA = [
     "n_samples": "3",
     "source": "Gaikwad 2022",
     "table_page": "Table 4",
-    "notes": "Microwave-assisted hot air dried fried papad"
-  },
-  {
-    "item": "Pantoa / Gulab Jamun (Ghee)",
-    "category": "syrup-soaked sweet",
-    "setting": "lab-controlled",
-    "oil": "Desi Ghee",
-    "fat_g_100g": "14.8",
-    "SFA_pct_of_fat": "65.0",
-    "method": "proximate",
-    "n_samples": "3",
-    "source": "Neethu 2025",
-    "table_page": "Table 1",
-    "notes": "Immersion fried dairy sweet in clarified butter"
-  },
-  {
-    "item": "Pantoa / Gulab Jamun (Sunflower oil)",
-    "category": "syrup-soaked sweet",
-    "setting": "lab-controlled",
-    "oil": "Sunflower oil",
-    "fat_g_100g": "23.6",
-    "SFA_pct_of_fat": "11.5",
-    "method": "proximate",
-    "n_samples": "3",
-    "source": "Neethu 2025",
-    "table_page": "Table 1",
-    "notes": "Immersion fried dairy sweet in sunflower oil"
+    "notes": "PMC8814218 microwave-assisted hot air dried papad (7.90 +/- 0.02%)"
   },
   {
     "item": "Samosa",

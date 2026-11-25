@@ -63,6 +63,7 @@ if STATIC_DIR.is_dir():
 
 
 def _normalize_lines(raw_lines: list[str] | str) -> list[str]:
+    """Normalize either newline-delimited recipe text or a string list into non-empty ingredient lines."""
     if isinstance(raw_lines, str):
         return [ln.strip() for ln in raw_lines.splitlines() if ln.strip()]
     return [str(ln).strip() for ln in raw_lines if str(ln).strip()]
@@ -143,6 +144,7 @@ def _run_safe_analysis(
 
 @app.get("/")
 def serve_home():
+    """Serve the single-page web application frontend."""
     index_path = APP_DIR / "index.html"
     if not index_path.is_file():
         raise HTTPException(status_code=404, detail="Frontend app/index.html not found.")
@@ -151,6 +153,7 @@ def serve_home():
 
 @app.get("/api/health")
 def api_health():
+    """Return service health status and current row count of fried_foods_lab.csv."""
     lab_path = os.path.join(DATA_CURATED, "fried_foods_lab.csv")
     lab_count = 0
     if os.path.exists(lab_path):
@@ -165,6 +168,7 @@ def api_health():
 
 @app.get("/api/lab-data")
 def api_lab_data():
+    """Serve the curated empirical fried-food fat dataset for the Deliverable 1 explorer."""
     lab_path = os.path.join(DATA_CURATED, "fried_foods_lab.csv")
     if not os.path.exists(lab_path):
         raise HTTPException(status_code=404, detail="Lab dataset fried_foods_lab.csv not found.")
@@ -175,6 +179,7 @@ def api_lab_data():
 
 @app.post("/api/scrape")
 def api_scrape(req: ScrapeRequest):
+    """Scrape structured recipe ingredients, servings, and frying instructions from a public URL."""
     try:
         return scrape_recipe_url(req.url)
     except RecipeScrapeError as exc:
@@ -186,6 +191,7 @@ def api_scrape(req: ScrapeRequest):
 
 @app.post("/api/analyze")
 def api_analyze(req: AnalyzeRequest):
+    """Analyze pasted or custom recipe ingredients through the Python engine."""
     return _run_safe_analysis(
         req.model_dump(),
         setting=req.setting,
@@ -196,6 +202,7 @@ def api_analyze(req: AnalyzeRequest):
 
 @app.post("/api/scrape-and-analyze")
 def api_scrape_and_analyze(req: ScrapeAndAnalyzeRequest):
+    """Scrape a live recipe URL and immediately run deterministic Liver & Heart analysis."""
     try:
         scraped = scrape_recipe_url(req.url)
     except RecipeScrapeError as exc:

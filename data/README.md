@@ -20,8 +20,8 @@ Trust: [V] verified/real | [P] partially verified | never use anything in `archi
 | constants.csv | Conversion factors and sanity bounds with sources (FAO FNP 77, IUPAC, INDB) | [V] |
 | classes.csv | Food code -> class (ADDED_SUGAR, REFINED_GRAIN, COOKING_OIL, DAIRY_FAT, HYDROGENATED_FAT, SALT, SPICE, WATER) | project decisions; [U] items marked |
 | aliases.csv | Ingredient name -> code (created by build task T4) | checked by acceptance tests + hidden set |
-| fried_foods_lab.csv | 69 lab-measured fat values for fried South Asian foods (item, category, setting, method, source) | [P]: 61 rows from verified sources (Gupta, CoFID, Joshee, Jain, safefood, Chen); 8 rows (Sakhale 2011, Yadav 2012, Gaikwad 2022, Neethu 2025) not yet checked against the papers. Joshee values are FAME sums (lower than Soxhlet); keep them separate |
-| baselines.csv | NSO 2025 intake, ICMR-INDIAB-21 regional SFA/fat/sugar, ICMR-NIN 2024 limits, MASLD prevalence | [V] values; page/table references [U] |
+| fried_foods_lab.csv | 67 lab-measured fat values for fried South Asian foods (227 samples across 9 verified studies: Gupta 2016, UK CoFID 2021, Joshee 2019, Jain 2024, safefood 2015, Chen 2009, Sakhale 2011 PMC3551041, Yadav 2012 PMC3550836, Gaikwad 2022 PMC8814218) | [V]: all 9 studies primary-verified (Neethu 2025 2 rows excluded because only dry-basis total fat & crust-only uptake were reported rather than whole-food wet g/100g). Joshee values are FAME sums (kept separate from Soxhlet/proximate rows) |
+| baselines.csv | NSO HCES 2022–24 intake, ICMR-INDIAB-21 regional SFA/fat/carbs/states, ICMR-NIN 2024 limits, MASLD 38.9%, ICMR NNMS 8.0 g salt, WHO/IHME GBD 2021 26.6% CVD mortality | [V] primary citations verified |
 | validation_ground_truth.csv | Lab-analysed cooked dishes (CoFID with evidence strings; safefood) used in validation v2 | [V] |
 
 ## samples/

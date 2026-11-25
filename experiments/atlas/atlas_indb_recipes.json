@@ -21370,10 +21370,10 @@
     "total_mass_g": 144.5,
     "raw_pre_frying_mass_g": 624.5,
     "totals": {
-      "energy_kj": 1833.992390399998,
-      "energy_kcal": 513.9797491395796,
-      "fat_g": 29.866399999999988,
-      "sfa_g": 7.968786399999996,
+      "energy_kj": 1820.933289599998,
+      "energy_kcal": 510.8585491395795,
+      "fat_g": 29.519599999999986,
+      "sfa_g": 7.892143599999996,
       "mufa_g": 99.5472,
       "pufa_g": 304.61599999999993,
       "tfa_g": NaN,
@@ -21388,10 +21388,10 @@
       "salt_g": 0.5
     },
     "per_serving": {
-      "energy_kj": 1833.992390399998,
-      "energy_kcal": 513.9797491395796,
-      "fat_g": 29.866399999999988,
-      "sfa_g": 7.968786399999996,
+      "energy_kj": 1820.933289599998,
+      "energy_kcal": 510.8585491395795,
+      "fat_g": 29.519599999999986,
+      "sfa_g": 7.892143599999996,
       "mufa_g": 99.5472,
       "pufa_g": 304.61599999999993,
       "tfa_g": NaN,
@@ -21408,21 +21408,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 513.9797491395796,
+          "amount": 510.8585491395795,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 22.9455245151598,
+          "pct_of_limit": 22.806185229445514,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 29.866399999999988,
+          "amount": 29.519599999999986,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 39.99964285714284,
-          "pct_energy": 11.999892857142852,
+          "pct_of_limit": 39.53517857142855,
+          "pct_energy": 11.860553571428568,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -21430,11 +21430,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 7.968786399999996,
+          "amount": 7.892143599999996,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 32.01744535714284,
-          "pct_energy": 3.201744535714284,
+          "pct_of_limit": 31.70950553571427,
+          "pct_energy": 3.170950553571427,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -21565,13 +21565,13 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "non_oil_mass_g": 144.5,
-      "absorbed_fat_g": 24.738400000000002,
-      "absorbed_sfa_g": 5.4671864,
-      "absorbed_fat_per_serving_g": 24.738400000000002,
-      "absorbed_sfa_per_serving_g": 5.4671864,
-      "fat_g_per_100g_lab": 17.12,
+      "absorbed_fat_g": 24.3916,
+      "absorbed_sfa_g": 5.3905436,
+      "absorbed_fat_per_serving_g": 24.3916,
+      "absorbed_sfa_per_serving_g": 5.3905436,
+      "fat_g_per_100g_lab": 16.88,
       "sfa_pct_of_fat_lab": 22.1,
-      "calculation_formula": "absorbed_fat_g = (144.5g non-oil mass / 100) * 17.12g/100g = 24.74g",
+      "calculation_formula": "absorbed_fat_g = (144.5g non-oil mass / 100) * 16.88g/100g = 24.39g",
       "lab_match": "lab_match:Poori",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -21607,7 +21607,7 @@
           "setting": "lab-controlled",
           "category": "flat dough",
           "oil": "Refined sunflower oil",
-          "fat_g_100g": 17.12,
+          "fat_g_100g": 16.5,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "5"
@@ -21615,21 +21615,21 @@
       ]
     },
     "drivers": {
-      "total_sfa_g": 7.968786399999996,
+      "total_sfa_g": 7.892143599999996,
       "dairy_sfa_g": 2.3368,
-      "oil_sfa_g": 5.4671864,
+      "oil_sfa_g": 5.3905436,
       "other_sfa_g": 0.16479999999999606,
-      "dairy_sfa_pct": 29.324415070279723,
-      "oil_sfa_pct": 68.6075159449625,
-      "total_fat_g": 29.866399999999988,
+      "dairy_sfa_pct": 29.60919261529911,
+      "oil_sfa_pct": 68.30265480724404,
+      "total_fat_g": 29.519599999999986,
       "dairy_fat_g": 3.904,
-      "oil_fat_g": 24.738400000000002,
+      "oil_fat_g": 24.3916,
       "other_fat_g": 1.223999999999986,
-      "dairy_fat_pct": 13.071545281654306,
-      "oil_fat_pct": 82.83020384110577
+      "dairy_fat_pct": 13.225111451374685,
+      "oil_fat_pct": 82.62849090096076
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 24.7g using lab data (17.12g/100g, match=lab_match:Poori). Original stated-oil fat: 479.5g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 24.4g using lab data (16.88g/100g, match=lab_match:Poori). Original stated-oil fat: 479.5g."
     ],
     "skipped_codes": []
   },
@@ -21644,10 +21644,10 @@
     "total_mass_g": 195.0,
     "raw_pre_frying_mass_g": 675.0,
     "totals": {
-      "energy_kj": 2210.5511039999983,
-      "energy_kcal": 603.9794416826006,
-      "fat_g": 38.903499999999994,
-      "sfa_g": 9.983264000000002,
+      "energy_kj": 2192.928095999998,
+      "energy_kcal": 599.7674416826005,
+      "fat_g": 38.43549999999999,
+      "sfa_g": 9.879836000000003,
       "mufa_g": 99.584665,
       "pufa_g": 304.80355,
       "tfa_g": NaN,
@@ -21662,10 +21662,10 @@
       "salt_g": 0.5
     },
     "per_serving": {
-      "energy_kj": 2210.5511039999983,
-      "energy_kcal": 603.9794416826006,
-      "fat_g": 38.903499999999994,
-      "sfa_g": 9.983264000000002,
+      "energy_kj": 2192.928095999998,
+      "energy_kcal": 599.7674416826005,
+      "fat_g": 38.43549999999999,
+      "sfa_g": 9.879836000000003,
       "mufa_g": 99.584665,
       "pufa_g": 304.80355,
       "tfa_g": NaN,
@@ -21682,21 +21682,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 603.9794416826006,
+          "amount": 599.7674416826005,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 26.963367932258958,
+          "pct_of_limit": 26.775332217973236,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 38.903499999999994,
+          "amount": 38.43549999999999,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 52.10290178571427,
-          "pct_energy": 15.630870535714283,
+          "pct_of_limit": 51.47611607142856,
+          "pct_energy": 15.442834821428567,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -21704,11 +21704,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 9.983264000000002,
+          "amount": 9.879836000000003,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 40.11132857142858,
-          "pct_energy": 4.011132857142858,
+          "pct_of_limit": 39.69576964285715,
+          "pct_energy": 3.969576964285715,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -21839,13 +21839,13 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "non_oil_mass_g": 195.0,
-      "absorbed_fat_g": 33.384,
-      "absorbed_sfa_g": 7.377864,
-      "absorbed_fat_per_serving_g": 33.384,
-      "absorbed_sfa_per_serving_g": 7.377864,
-      "fat_g_per_100g_lab": 17.12,
+      "absorbed_fat_g": 32.916,
+      "absorbed_sfa_g": 7.274436,
+      "absorbed_fat_per_serving_g": 32.916,
+      "absorbed_sfa_per_serving_g": 7.274436,
+      "fat_g_per_100g_lab": 16.88,
       "sfa_pct_of_fat_lab": 22.1,
-      "calculation_formula": "absorbed_fat_g = (195.0g non-oil mass / 100) * 17.12g/100g = 33.38g",
+      "calculation_formula": "absorbed_fat_g = (195.0g non-oil mass / 100) * 16.88g/100g = 32.92g",
       "lab_match": "lab_match:Poori",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -21881,7 +21881,7 @@
           "setting": "lab-controlled",
           "category": "flat dough",
           "oil": "Refined sunflower oil",
-          "fat_g_100g": 17.12,
+          "fat_g_100g": 16.5,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "5"
@@ -21889,21 +21889,21 @@
       ]
     },
     "drivers": {
-      "total_sfa_g": 9.983264000000002,
+      "total_sfa_g": 9.879836000000003,
       "dairy_sfa_g": 2.3368,
-      "oil_sfa_g": 7.377864,
-      "other_sfa_g": 0.26860000000000195,
-      "dairy_sfa_pct": 23.407174246819476,
-      "oil_sfa_pct": 73.9023229276517,
-      "total_fat_g": 38.903499999999994,
+      "oil_sfa_g": 7.274436,
+      "other_sfa_g": 0.26860000000000284,
+      "dairy_sfa_pct": 23.652214469956785,
+      "oil_sfa_pct": 73.62911692056424,
+      "total_fat_g": 38.43549999999999,
       "dairy_fat_g": 3.904,
-      "oil_fat_g": 33.384,
+      "oil_fat_g": 32.916,
       "other_fat_g": 1.6154999999999937,
-      "dairy_fat_pct": 10.03508681738147,
-      "oil_fat_pct": 85.81233051010835
+      "dairy_fat_pct": 10.157276476174372,
+      "oil_fat_pct": 85.63957799430216
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 33.4g using lab data (17.12g/100g, match=lab_match:Poori). Original stated-oil fat: 479.5g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 32.9g using lab data (16.88g/100g, match=lab_match:Poori). Original stated-oil fat: 479.5g."
     ],
     "skipped_codes": []
   },
@@ -21918,10 +21918,10 @@
     "total_mass_g": 170.0,
     "raw_pre_frying_mass_g": 650.0,
     "totals": {
-      "energy_kj": 2034.3834239999978,
-      "energy_kcal": 561.8743556405354,
-      "fat_g": 34.51099999999998,
-      "sfa_g": 8.995633999999995,
+      "energy_kj": 2019.019775999998,
+      "energy_kcal": 558.2023556405355,
+      "fat_g": 34.10299999999998,
+      "sfa_g": 8.905465999999995,
       "mufa_g": 99.5682875,
       "pufa_g": 304.7672999999999,
       "tfa_g": NaN,
@@ -21936,10 +21936,10 @@
       "salt_g": 0.5
     },
     "per_serving": {
-      "energy_kj": 2034.3834239999978,
-      "energy_kcal": 561.8743556405354,
-      "fat_g": 34.51099999999998,
-      "sfa_g": 8.995633999999995,
+      "energy_kj": 2019.019775999998,
+      "energy_kcal": 558.2023556405355,
+      "fat_g": 34.10299999999998,
+      "sfa_g": 8.905465999999995,
       "mufa_g": 99.5682875,
       "pufa_g": 304.7672999999999,
       "tfa_g": NaN,
@@ -21956,21 +21956,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 561.8743556405354,
+          "amount": 558.2023556405355,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 25.083676591095333,
+          "pct_of_limit": 24.919748019666766,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 34.51099999999998,
+          "amount": 34.10299999999998,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 46.22008928571425,
-          "pct_energy": 13.866026785714277,
+          "pct_of_limit": 45.67366071428569,
+          "pct_energy": 13.702098214285705,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -21978,11 +21978,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 8.995633999999995,
+          "amount": 8.905465999999995,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 36.14317232142855,
-          "pct_energy": 3.614317232142855,
+          "pct_of_limit": 35.780890178571404,
+          "pct_energy": 3.578089017857141,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -22113,13 +22113,13 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "non_oil_mass_g": 170.0,
-      "absorbed_fat_g": 29.104,
-      "absorbed_sfa_g": 6.431984,
-      "absorbed_fat_per_serving_g": 29.104,
-      "absorbed_sfa_per_serving_g": 6.431984,
-      "fat_g_per_100g_lab": 17.12,
+      "absorbed_fat_g": 28.695999999999998,
+      "absorbed_sfa_g": 6.341816,
+      "absorbed_fat_per_serving_g": 28.695999999999998,
+      "absorbed_sfa_per_serving_g": 6.341816,
+      "fat_g_per_100g_lab": 16.88,
       "sfa_pct_of_fat_lab": 22.1,
-      "calculation_formula": "absorbed_fat_g = (170.0g non-oil mass / 100) * 17.12g/100g = 29.10g",
+      "calculation_formula": "absorbed_fat_g = (170.0g non-oil mass / 100) * 16.88g/100g = 28.70g",
       "lab_match": "lab_match:Poori",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -22155,7 +22155,7 @@
           "setting": "lab-controlled",
           "category": "flat dough",
           "oil": "Refined sunflower oil",
-          "fat_g_100g": 17.12,
+          "fat_g_100g": 16.5,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "5"
@@ -22163,21 +22163,21 @@
       ]
     },
     "drivers": {
-      "total_sfa_g": 8.995633999999995,
+      "total_sfa_g": 8.905465999999995,
       "dairy_sfa_g": 2.3368,
-      "oil_sfa_g": 6.431984,
+      "oil_sfa_g": 6.341816,
       "other_sfa_g": 0.22684999999999533,
-      "dairy_sfa_pct": 25.977046198189047,
-      "oil_sfa_pct": 71.50117490329201,
-      "total_fat_g": 34.51099999999998,
+      "dairy_sfa_pct": 26.240064248181977,
+      "oil_sfa_pct": 71.21262379756436,
+      "total_fat_g": 34.10299999999998,
       "dairy_fat_g": 3.904,
-      "oil_fat_g": 29.104,
+      "oil_fat_g": 28.695999999999998,
       "other_fat_g": 1.5029999999999824,
-      "dairy_fat_pct": 11.312335197473274,
-      "oil_fat_pct": 84.33253165657331
+      "dairy_fat_pct": 11.447673225229458,
+      "oil_fat_pct": 84.14508987479111
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 29.1g using lab data (17.12g/100g, match=lab_match:Poori). Original stated-oil fat: 479.5g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 28.7g using lab data (16.88g/100g, match=lab_match:Poori). Original stated-oil fat: 479.5g."
     ],
     "skipped_codes": []
   },
@@ -22192,10 +22192,10 @@
     "total_mass_g": 113.91999999999996,
     "raw_pre_frying_mass_g": 593.92,
     "totals": {
-      "energy_kj": 1874.1679842239994,
-      "energy_kcal": 523.574460856596,
-      "fat_g": 25.128627999999985,
-      "sfa_g": 6.890740284000003,
+      "energy_kj": 1863.8725325759992,
+      "energy_kcal": 521.1137888565961,
+      "fat_g": 24.85521999999998,
+      "sfa_g": 6.8303171160000025,
       "mufa_g": 99.59848474,
       "pufa_g": 304.81234709999995,
       "tfa_g": NaN,
@@ -22210,10 +22210,10 @@
       "salt_g": 1.0
     },
     "per_serving": {
-      "energy_kj": 1874.1679842239994,
-      "energy_kcal": 523.574460856596,
-      "fat_g": 25.128627999999985,
-      "sfa_g": 6.890740284000003,
+      "energy_kj": 1863.8725325759992,
+      "energy_kcal": 521.1137888565961,
+      "fat_g": 24.85521999999998,
+      "sfa_g": 6.8303171160000025,
       "mufa_g": 99.59848474,
       "pufa_g": 304.81234709999995,
       "tfa_g": NaN,
@@ -22230,21 +22230,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 523.574460856596,
+          "amount": 521.1137888565961,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 23.373859859669466,
+          "pct_of_limit": 23.26400843109804,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 25.128627999999985,
+          "amount": 24.85521999999998,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 33.65441249999998,
-          "pct_energy": 10.096323749999994,
+          "pct_of_limit": 33.288241071428544,
+          "pct_energy": 9.986472321428563,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -22252,11 +22252,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 6.890740284000003,
+          "amount": 6.8303171160000025,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 27.68601006964287,
-          "pct_energy": 2.768601006964287,
+          "pct_of_limit": 27.44323841250001,
+          "pct_energy": 2.7443238412500013,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -22387,13 +22387,13 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "non_oil_mass_g": 113.92,
-      "absorbed_fat_g": 19.503104,
-      "absorbed_sfa_g": 4.310185984,
-      "absorbed_fat_per_serving_g": 19.503104,
-      "absorbed_sfa_per_serving_g": 4.310185984,
-      "fat_g_per_100g_lab": 17.12,
+      "absorbed_fat_g": 19.229695999999997,
+      "absorbed_sfa_g": 4.249762816,
+      "absorbed_fat_per_serving_g": 19.229695999999997,
+      "absorbed_sfa_per_serving_g": 4.249762816,
+      "fat_g_per_100g_lab": 16.88,
       "sfa_pct_of_fat_lab": 22.1,
-      "calculation_formula": "absorbed_fat_g = (113.9g non-oil mass / 100) * 17.12g/100g = 19.50g",
+      "calculation_formula": "absorbed_fat_g = (113.9g non-oil mass / 100) * 16.88g/100g = 19.23g",
       "lab_match": "lab_match:Poori",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -22429,7 +22429,7 @@
           "setting": "lab-controlled",
           "category": "flat dough",
           "oil": "Refined sunflower oil",
-          "fat_g_100g": 17.12,
+          "fat_g_100g": 16.5,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "5"
@@ -22437,21 +22437,21 @@
       ]
     },
     "drivers": {
-      "total_sfa_g": 6.890740284000003,
+      "total_sfa_g": 6.8303171160000025,
       "dairy_sfa_g": 2.3368,
-      "oil_sfa_g": 4.310185984,
+      "oil_sfa_g": 4.249762816,
       "other_sfa_g": 0.24375430000000264,
-      "dairy_sfa_pct": 33.91217639454425,
-      "oil_sfa_pct": 62.55040541882072,
-      "total_fat_g": 25.128627999999985,
+      "dairy_sfa_pct": 34.212174344380756,
+      "oil_sfa_pct": 62.21911433723831,
+      "total_fat_g": 24.85521999999998,
       "dairy_fat_g": 3.904,
-      "oil_fat_g": 19.503104,
+      "oil_fat_g": 19.229695999999997,
       "other_fat_g": 1.7215239999999845,
-      "dairy_fat_pct": 15.536065080831321,
-      "oil_fat_pct": 77.6130873520035
+      "dairy_fat_pct": 15.7069621592567,
+      "oil_fat_pct": 77.36683079047384
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 19.5g using lab data (17.12g/100g, match=lab_match:Poori). Original stated-oil fat: 479.5g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 19.2g using lab data (16.88g/100g, match=lab_match:Poori). Original stated-oil fat: 479.5g."
     ],
     "skipped_codes": []
   },
@@ -22466,10 +22466,10 @@
     "total_mass_g": 116.0,
     "raw_pre_frying_mass_g": 596.0,
     "totals": {
-      "energy_kj": 1745.8212351999991,
-      "energy_kcal": 492.89885162523865,
-      "fat_g": 25.203199999999995,
-      "sfa_g": 6.915851199999997,
+      "energy_kj": 1735.337804799999,
+      "energy_kcal": 490.39325162523863,
+      "fat_g": 24.92479999999999,
+      "sfa_g": 6.854324799999996,
       "mufa_g": 99.567396,
       "pufa_g": 304.69474999999994,
       "tfa_g": NaN,
@@ -22484,10 +22484,10 @@
       "salt_g": 1.0
     },
     "per_serving": {
-      "energy_kj": 1745.8212351999991,
-      "energy_kcal": 492.89885162523865,
-      "fat_g": 25.203199999999995,
-      "sfa_g": 6.915851199999997,
+      "energy_kj": 1735.337804799999,
+      "energy_kcal": 490.39325162523863,
+      "fat_g": 24.92479999999999,
+      "sfa_g": 6.854324799999996,
       "mufa_g": 99.567396,
       "pufa_g": 304.69474999999994,
       "tfa_g": NaN,
@@ -22504,21 +22504,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 492.89885162523865,
+          "amount": 490.39325162523863,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 22.00441301898387,
+          "pct_of_limit": 21.892555876126725,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 25.203199999999995,
+          "amount": 24.92479999999999,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 33.7542857142857,
-          "pct_energy": 10.12628571428571,
+          "pct_of_limit": 33.38142857142856,
+          "pct_energy": 10.014428571428569,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -22526,11 +22526,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 6.915851199999997,
+          "amount": 6.854324799999996,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 27.78690214285713,
-          "pct_energy": 2.7786902142857133,
+          "pct_of_limit": 27.53969785714284,
+          "pct_energy": 2.753969785714284,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -22661,13 +22661,13 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "non_oil_mass_g": 116.0,
-      "absorbed_fat_g": 19.8592,
-      "absorbed_sfa_g": 4.3888832,
-      "absorbed_fat_per_serving_g": 19.8592,
-      "absorbed_sfa_per_serving_g": 4.3888832,
-      "fat_g_per_100g_lab": 17.12,
+      "absorbed_fat_g": 19.580799999999996,
+      "absorbed_sfa_g": 4.3273568,
+      "absorbed_fat_per_serving_g": 19.580799999999996,
+      "absorbed_sfa_per_serving_g": 4.3273568,
+      "fat_g_per_100g_lab": 16.88,
       "sfa_pct_of_fat_lab": 22.1,
-      "calculation_formula": "absorbed_fat_g = (116.0g non-oil mass / 100) * 17.12g/100g = 19.86g",
+      "calculation_formula": "absorbed_fat_g = (116.0g non-oil mass / 100) * 16.88g/100g = 19.58g",
       "lab_match": "lab_match:Poori",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -22703,7 +22703,7 @@
           "setting": "lab-controlled",
           "category": "flat dough",
           "oil": "Refined sunflower oil",
-          "fat_g_100g": 17.12,
+          "fat_g_100g": 16.5,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "5"
@@ -22711,21 +22711,21 @@
       ]
     },
     "drivers": {
-      "total_sfa_g": 6.915851199999997,
+      "total_sfa_g": 6.854324799999996,
       "dairy_sfa_g": 2.3368,
-      "oil_sfa_g": 4.3888832,
+      "oil_sfa_g": 4.3273568,
       "other_sfa_g": 0.19016799999999634,
-      "dairy_sfa_pct": 33.78904392853336,
-      "oil_sfa_pct": 63.46121501283895,
-      "total_fat_g": 25.203199999999995,
+      "dairy_sfa_pct": 34.09234415036769,
+      "oil_sfa_pct": 63.13323232070943,
+      "total_fat_g": 24.92479999999999,
       "dairy_fat_g": 3.904,
-      "oil_fat_g": 19.8592,
+      "oil_fat_g": 19.580799999999996,
       "other_fat_g": 1.4399999999999942,
-      "dairy_fat_pct": 15.490096495683089,
-      "oil_fat_pct": 78.79634332148301
+      "dairy_fat_pct": 15.663114648863788,
+      "oil_fat_pct": 78.55950699704714
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 19.9g using lab data (17.12g/100g, match=lab_match:Poori). Original stated-oil fat: 479.5g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 19.6g using lab data (16.88g/100g, match=lab_match:Poori). Original stated-oil fat: 479.5g."
     ],
     "skipped_codes": []
   },
@@ -71945,10 +71945,10 @@
     "total_mass_g": 460.29999999999995,
     "raw_pre_frying_mass_g": 940.3,
     "totals": {
-      "energy_kj": 8079.2001056,
-      "energy_kcal": 1990.9629315487573,
-      "fat_g": 109.4116,
-      "sfa_g": 46.90041950000001,
+      "energy_kj": 7351.211719999999,
+      "energy_kcal": 1816.9695315487572,
+      "fat_g": 90.079,
+      "sfa_g": 51.070737500000014,
       "mufa_g": 104.13735999999999,
       "pufa_g": 304.72265,
       "tfa_g": NaN,
@@ -71963,10 +71963,10 @@
       "salt_g": 0.0
     },
     "per_serving": {
-      "energy_kj": 2693.066701866667,
-      "energy_kcal": 663.6543105162524,
-      "fat_g": 36.470533333333336,
-      "sfa_g": 15.63347316666667,
+      "energy_kj": 2450.4039066666664,
+      "energy_kcal": 605.6565105162524,
+      "fat_g": 30.02633333333333,
+      "sfa_g": 17.02357916666667,
       "mufa_g": 34.71245333333333,
       "pufa_g": 101.57421666666666,
       "tfa_g": NaN,
@@ -71983,21 +71983,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 663.6543105162524,
+          "amount": 605.6565105162524,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 29.62742457661841,
+          "pct_of_limit": 27.038237076618408,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 36.470533333333336,
+          "amount": 30.02633333333333,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 48.84446428571428,
-          "pct_energy": 14.653339285714287,
+          "pct_of_limit": 40.21383928571428,
+          "pct_energy": 12.064151785714285,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -72005,11 +72005,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 15.63347316666667,
+          "amount": 17.02357916666667,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 62.81306183035716,
-          "pct_energy": 6.281306183035714,
+          "pct_of_limit": 68.39830915178572,
+          "pct_energy": 6.839830915178574,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -72140,60 +72140,37 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "non_oil_mass_g": 460.3,
-      "absorbed_fat_g": 88.37760000000002,
-      "absorbed_sfa_g": 33.804432000000006,
-      "absorbed_fat_per_serving_g": 29.459200000000006,
-      "absorbed_sfa_per_serving_g": 11.268144000000001,
-      "fat_g_per_100g_lab": 19.200000000000003,
-      "sfa_pct_of_fat_lab": 38.25,
-      "calculation_formula": "absorbed_fat_g = (460.3g non-oil mass / 100) * 19.20g/100g = 88.38g",
-      "lab_match": "lab_match:Pantoa / Gulab Jamun",
+      "absorbed_fat_g": 69.045,
+      "absorbed_sfa_g": 37.97475000000001,
+      "absorbed_fat_per_serving_g": 23.015,
+      "absorbed_sfa_per_serving_g": 12.658250000000002,
+      "fat_g_per_100g_lab": 15.0,
+      "sfa_pct_of_fat_lab": 55.0,
+      "calculation_formula": "absorbed_fat_g = (460.3g non-oil mass / 100) * 15.00g/100g = 69.05g",
+      "lab_match": "category_default:syrup-soaked sweet",
       "setting_requested": "auto",
-      "setting_used": "all_matched",
+      "setting_used": "category_default",
       "fallback_used": false,
-      "fallback_reason": null,
-      "matched_rows_count": 2,
-      "matched_sources": [
-        {
-          "source": "Neethu 2025",
-          "item": "Pantoa / Gulab Jamun (Ghee)",
-          "setting": "lab-controlled",
-          "category": "syrup-soaked sweet",
-          "oil": "Desi Ghee",
-          "fat_g_100g": 14.8,
-          "sfa_pct_of_fat": 65.0,
-          "method": "proximate",
-          "n_samples": "3"
-        },
-        {
-          "source": "Neethu 2025",
-          "item": "Pantoa / Gulab Jamun (Sunflower oil)",
-          "setting": "lab-controlled",
-          "category": "syrup-soaked sweet",
-          "oil": "Sunflower oil",
-          "fat_g_100g": 23.6,
-          "sfa_pct_of_fat": 11.5,
-          "method": "proximate",
-          "n_samples": "3"
-        }
-      ]
+      "fallback_reason": "No dish-specific lab rows for 'Gulab Jamun with khoya'; used 'syrup-soaked sweet' category default.",
+      "matched_rows_count": 0,
+      "matched_sources": []
     },
     "drivers": {
-      "total_sfa_g": 46.90041950000001,
+      "total_sfa_g": 51.070737500000014,
       "dairy_sfa_g": 12.936,
-      "oil_sfa_g": 33.804432000000006,
+      "oil_sfa_g": 37.97475000000001,
       "other_sfa_g": 0.15998750000000683,
-      "dairy_sfa_pct": 27.58184284471058,
-      "oil_sfa_pct": 72.07703547299826,
-      "total_fat_g": 109.4116,
+      "dairy_sfa_pct": 25.3295735155577,
+      "oil_sfa_pct": 74.35716000772457,
+      "total_fat_g": 90.079,
       "dairy_fat_g": 20.62,
-      "oil_fat_g": 88.37760000000002,
+      "oil_fat_g": 69.045,
       "other_fat_g": 0.4139999999999908,
-      "dairy_fat_pct": 18.846264929861185,
-      "oil_fat_pct": 80.77534740374878
+      "dairy_fat_pct": 22.891017884301558,
+      "oil_fat_pct": 76.6493855393599
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 88.4g using lab data (19.200000000000003g/100g, match=lab_match:Pantoa / Gulab Jamun). Original stated-oil fat: 479.5g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 69.0g using lab data (15.0g/100g, match=category_default:syrup-soaked sweet). Original stated-oil fat: 479.5g."
     ],
     "skipped_codes": []
   },
@@ -75439,10 +75416,10 @@
     "total_mass_g": 365.63,
     "raw_pre_frying_mass_g": 845.63,
     "totals": {
-      "energy_kj": 3754.247846719998,
-      "energy_kcal": 975.3985197705547,
-      "fat_g": 66.35438499999998,
-      "sfa_g": 28.579381591999994,
+      "energy_kj": 4572.076745551998,
+      "energy_kcal": 1170.8643177705549,
+      "fat_g": 88.07280699999997,
+      "sfa_g": 39.256157847199994,
       "mufa_g": 103.05216780099998,
       "pufa_g": 312.3480413,
       "tfa_g": NaN,
@@ -75457,10 +75434,10 @@
       "salt_g": 1.5
     },
     "per_serving": {
-      "energy_kj": 1251.415948906666,
-      "energy_kcal": 325.13283992351825,
-      "fat_g": 22.118128333333328,
-      "sfa_g": 9.526460530666665,
+      "energy_kj": 1524.025581850666,
+      "energy_kcal": 390.2881059235183,
+      "fat_g": 29.357602333333322,
+      "sfa_g": 13.085385949066664,
       "mufa_g": 34.35072260033333,
       "pufa_g": 104.11601376666665,
       "tfa_g": NaN,
@@ -75477,21 +75454,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 325.13283992351825,
+          "amount": 390.2881059235183,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 14.514858925157064,
+          "pct_of_limit": 17.423576157299927,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 22.118128333333328,
+          "amount": 29.357602333333322,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 29.622493303571417,
-          "pct_energy": 8.886747991071426,
+          "pct_of_limit": 39.31821741071427,
+          "pct_energy": 11.795465223214283,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -75499,11 +75476,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 9.526460530666665,
+          "amount": 13.085385949066664,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 38.27595748928571,
-          "pct_energy": 3.827595748928571,
+          "pct_of_limit": 52.57521140249999,
+          "pct_energy": 5.257521140249999,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -75634,13 +75611,13 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "non_oil_mass_g": 365.63,
-      "absorbed_fat_g": 45.338119999999996,
-      "absorbed_sfa_g": 22.288219791999996,
-      "absorbed_fat_per_serving_g": 15.112706666666666,
-      "absorbed_sfa_per_serving_g": 7.429406597333332,
-      "fat_g_per_100g_lab": 12.4,
+      "absorbed_fat_g": 67.056542,
+      "absorbed_sfa_g": 32.964996047199996,
+      "absorbed_fat_per_serving_g": 22.352180666666666,
+      "absorbed_sfa_per_serving_g": 10.988332015733333,
+      "fat_g_per_100g_lab": 18.34,
       "sfa_pct_of_fat_lab": 49.16,
-      "calculation_formula": "absorbed_fat_g = (365.6g non-oil mass / 100) * 12.40g/100g = 45.34g",
+      "calculation_formula": "absorbed_fat_g = (365.6g non-oil mass / 100) * 18.34g/100g = 67.06g",
       "lab_match": "lab_match:Samosa",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -75676,7 +75653,7 @@
           "setting": "lab-controlled",
           "category": "stuffed pastry",
           "oil": "Groundnut oil",
-          "fat_g_100g": 12.4,
+          "fat_g_100g": 18.34,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "3"
@@ -75687,7 +75664,7 @@
           "setting": "lab-controlled",
           "category": "stuffed pastry",
           "oil": "Groundnut oil",
-          "fat_g_100g": 8.97,
+          "fat_g_100g": 8.56,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "3"
@@ -75706,21 +75683,21 @@
       ]
     },
     "drivers": {
-      "total_sfa_g": 28.579381591999994,
+      "total_sfa_g": 39.256157847199994,
       "dairy_sfa_g": 4.6736,
-      "oil_sfa_g": 23.728219791999997,
-      "other_sfa_g": 0.17756179999999588,
-      "dairy_sfa_pct": 16.353048035539878,
-      "oil_sfa_pct": 83.02565860502054,
-      "total_fat_g": 66.35438499999998,
+      "oil_sfa_g": 34.404996047199994,
+      "other_sfa_g": 0.17756179999999944,
+      "dairy_sfa_pct": 11.905393335209833,
+      "oil_sfa_pct": 87.64229087603891,
+      "total_fat_g": 88.07280699999997,
       "dairy_fat_g": 7.808,
-      "oil_fat_g": 57.326119999999996,
-      "other_fat_g": 1.2202649999999835,
-      "dairy_fat_pct": 11.767119836918091,
-      "oil_fat_pct": 86.39386831782106
+      "oil_fat_g": 79.04454199999999,
+      "other_fat_g": 1.2202649999999764,
+      "dairy_fat_pct": 8.865392470118504,
+      "oil_fat_pct": 89.74908906900177
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 45.3g using lab data (12.4g/100g, match=lab_match:Samosa). Original stated-oil fat: 479.5g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 67.1g using lab data (18.34g/100g, match=lab_match:Samosa). Original stated-oil fat: 479.5g."
     ],
     "skipped_codes": []
   },
@@ -75735,10 +75712,10 @@
     "total_mass_g": 329.20000000000005,
     "raw_pre_frying_mass_g": 809.2,
     "totals": {
-      "energy_kj": 4175.720244800003,
-      "energy_kcal": 1077.2313108986618,
-      "fat_g": 81.30203999999995,
-      "sfa_g": 35.58513328,
+      "energy_kj": 4912.0637436800025,
+      "energy_kcal": 1253.2216308986617,
+      "fat_g": 100.85651999999996,
+      "sfa_g": 45.198115648,
       "mufa_g": 110.93266139999999,
       "pufa_g": 313.00717099999997,
       "tfa_g": NaN,
@@ -75753,10 +75730,10 @@
       "salt_g": 1.5
     },
     "per_serving": {
-      "energy_kj": 1391.9067482666676,
-      "energy_kcal": 359.07710363288726,
-      "fat_g": 27.100679999999983,
-      "sfa_g": 11.861711093333334,
+      "energy_kj": 1637.3545812266675,
+      "energy_kcal": 417.74054363288724,
+      "fat_g": 33.618839999999985,
+      "sfa_g": 15.066038549333333,
       "mufa_g": 36.977553799999995,
       "pufa_g": 104.33572366666665,
       "tfa_g": NaN,
@@ -75773,21 +75750,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 359.07710363288726,
+          "amount": 417.74054363288724,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 16.030227840753895,
+          "pct_of_limit": 18.649131412182467,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 27.100679999999983,
+          "amount": 33.618839999999985,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 36.29555357142855,
-          "pct_energy": 10.888666071428563,
+          "pct_of_limit": 45.02523214285712,
+          "pct_energy": 13.507569642857137,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -75795,11 +75772,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 11.861711093333334,
+          "amount": 15.066038549333333,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 47.65866064285714,
-          "pct_energy": 4.7658660642857145,
+          "pct_of_limit": 60.5331906,
+          "pct_energy": 6.05331906,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -75930,13 +75907,13 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "non_oil_mass_g": 329.2,
-      "absorbed_fat_g": 40.8208,
-      "absorbed_sfa_g": 20.06750528,
-      "absorbed_fat_per_serving_g": 13.606933333333332,
-      "absorbed_sfa_per_serving_g": 6.689168426666666,
-      "fat_g_per_100g_lab": 12.4,
+      "absorbed_fat_g": 60.37528,
+      "absorbed_sfa_g": 29.680487647999996,
+      "absorbed_fat_per_serving_g": 20.125093333333332,
+      "absorbed_sfa_per_serving_g": 9.893495882666665,
+      "fat_g_per_100g_lab": 18.34,
       "sfa_pct_of_fat_lab": 49.16,
-      "calculation_formula": "absorbed_fat_g = (329.2g non-oil mass / 100) * 12.40g/100g = 40.82g",
+      "calculation_formula": "absorbed_fat_g = (329.2g non-oil mass / 100) * 18.34g/100g = 60.38g",
       "lab_match": "lab_match:Samosa",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -75972,7 +75949,7 @@
           "setting": "lab-controlled",
           "category": "stuffed pastry",
           "oil": "Groundnut oil",
-          "fat_g_100g": 12.4,
+          "fat_g_100g": 18.34,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "3"
@@ -75983,7 +75960,7 @@
           "setting": "lab-controlled",
           "category": "stuffed pastry",
           "oil": "Groundnut oil",
-          "fat_g_100g": 8.97,
+          "fat_g_100g": 8.56,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "3"
@@ -76002,21 +75979,21 @@
       ]
     },
     "drivers": {
-      "total_sfa_g": 35.58513328,
+      "total_sfa_g": 45.198115648,
       "dairy_sfa_g": 4.6736,
-      "oil_sfa_g": 21.50750528,
+      "oil_sfa_g": 31.120487647999997,
       "other_sfa_g": 9.404028,
-      "dairy_sfa_pct": 13.13357452739039,
-      "oil_sfa_pct": 60.439580514618775,
-      "total_fat_g": 81.30203999999995,
+      "dairy_sfa_pct": 10.340254085806794,
+      "oil_sfa_pct": 68.8535068372415,
+      "total_fat_g": 100.85651999999996,
       "dairy_fat_g": 7.808,
-      "oil_fat_g": 52.8088,
-      "other_fat_g": 20.68523999999995,
-      "dairy_fat_pct": 9.603695061034145,
-      "oil_fat_pct": 64.95384371659067
+      "oil_fat_g": 72.36328,
+      "other_fat_g": 20.685239999999958,
+      "dairy_fat_pct": 7.741690869365711,
+      "oil_fat_pct": 71.74873771175135
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 40.8g using lab data (12.4g/100g, match=lab_match:Samosa). Original stated-oil fat: 479.5g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 60.4g using lab data (18.34g/100g, match=lab_match:Samosa). Original stated-oil fat: 479.5g."
     ],
     "skipped_codes": []
   },
@@ -76031,10 +76008,10 @@
     "total_mass_g": 329.20000000000005,
     "raw_pre_frying_mass_g": 809.2,
     "totals": {
-      "energy_kj": 4275.520244799998,
-      "energy_kcal": 1100.0403739961757,
-      "fat_g": 76.32603999999995,
-      "sfa_g": 31.411138279999996,
+      "energy_kj": 5011.863743679998,
+      "energy_kcal": 1276.0306939961756,
+      "fat_g": 95.88051999999996,
+      "sfa_g": 41.02412064799999,
       "mufa_g": 106.87573139999999,
       "pufa_g": 317.248111,
       "tfa_g": NaN,
@@ -76049,10 +76026,10 @@
       "salt_g": 1.5
     },
     "per_serving": {
-      "energy_kj": 1425.1734149333327,
-      "energy_kcal": 366.68012466539193,
-      "fat_g": 25.442013333333318,
-      "sfa_g": 10.470379426666666,
+      "energy_kj": 1670.6212478933328,
+      "energy_kcal": 425.34356466539185,
+      "fat_g": 31.96017333333332,
+      "sfa_g": 13.674706882666664,
       "mufa_g": 35.6252438,
       "pufa_g": 105.74937033333333,
       "tfa_g": NaN,
@@ -76069,21 +76046,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 366.68012466539193,
+          "amount": 425.34356466539185,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 16.36964842256214,
+          "pct_of_limit": 18.988551993990708,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 25.442013333333318,
+          "amount": 31.96017333333332,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 34.07412499999998,
-          "pct_energy": 10.222237499999993,
+          "pct_of_limit": 42.80380357142855,
+          "pct_energy": 12.841141071428567,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -76091,11 +76068,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 10.470379426666666,
+          "amount": 13.674706882666664,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 42.06848876785714,
-          "pct_energy": 4.206848876785714,
+          "pct_of_limit": 54.943018724999995,
+          "pct_energy": 5.4943018724999995,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -76226,13 +76203,13 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "non_oil_mass_g": 329.2,
-      "absorbed_fat_g": 40.8208,
-      "absorbed_sfa_g": 20.06750528,
-      "absorbed_fat_per_serving_g": 13.606933333333332,
-      "absorbed_sfa_per_serving_g": 6.689168426666666,
-      "fat_g_per_100g_lab": 12.4,
+      "absorbed_fat_g": 60.37528,
+      "absorbed_sfa_g": 29.680487647999996,
+      "absorbed_fat_per_serving_g": 20.125093333333332,
+      "absorbed_sfa_per_serving_g": 9.893495882666665,
+      "fat_g_per_100g_lab": 18.34,
       "sfa_pct_of_fat_lab": 49.16,
-      "calculation_formula": "absorbed_fat_g = (329.2g non-oil mass / 100) * 12.40g/100g = 40.82g",
+      "calculation_formula": "absorbed_fat_g = (329.2g non-oil mass / 100) * 18.34g/100g = 60.38g",
       "lab_match": "lab_match:Samosa",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -76268,7 +76245,7 @@
           "setting": "lab-controlled",
           "category": "stuffed pastry",
           "oil": "Groundnut oil",
-          "fat_g_100g": 12.4,
+          "fat_g_100g": 18.34,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "3"
@@ -76279,7 +76256,7 @@
           "setting": "lab-controlled",
           "category": "stuffed pastry",
           "oil": "Groundnut oil",
-          "fat_g_100g": 8.97,
+          "fat_g_100g": 8.56,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "3"
@@ -76298,21 +76275,21 @@
       ]
     },
     "drivers": {
-      "total_sfa_g": 31.411138279999996,
+      "total_sfa_g": 41.02412064799999,
       "dairy_sfa_g": 8.851,
-      "oil_sfa_g": 22.467505279999997,
+      "oil_sfa_g": 32.080487647999995,
       "other_sfa_g": 0.0926329999999993,
-      "dairy_sfa_pct": 28.177902758893598,
-      "oil_sfa_pct": 71.52719229632451,
-      "total_fat_g": 76.32603999999995,
+      "dairy_sfa_pct": 21.575112056500608,
+      "oil_sfa_pct": 78.19908663798253,
+      "total_fat_g": 95.88051999999996,
       "dairy_fat_g": 14.78,
-      "oil_fat_g": 60.800799999999995,
-      "other_fat_g": 0.7452399999999546,
-      "dairy_fat_pct": 19.36429559295885,
-      "oil_fat_pct": 79.65931417377351
+      "oil_fat_g": 80.35528,
+      "other_fat_g": 0.7452399999999688,
+      "dairy_fat_pct": 15.415018608576597,
+      "oil_fat_pct": 83.80772236112198
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 40.8g using lab data (12.4g/100g, match=lab_match:Samosa). Original stated-oil fat: 479.5g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 60.4g using lab data (18.34g/100g, match=lab_match:Samosa). Original stated-oil fat: 479.5g."
     ],
     "skipped_codes": []
   },
@@ -95599,10 +95576,10 @@
     "total_mass_g": 130.0,
     "raw_pre_frying_mass_g": 610.0,
     "totals": {
-      "energy_kj": 2451.0751359999995,
-      "energy_kcal": 659.8619349904402,
-      "fat_g": 28.486000000000022,
-      "sfa_g": 5.821190999999998,
+      "energy_kj": 2439.3264639999993,
+      "energy_kcal": 657.0539349904401,
+      "fat_g": 28.174000000000017,
+      "sfa_g": 5.752238999999997,
       "mufa_g": 100.299735,
       "pufa_g": 306.64725,
       "tfa_g": NaN,
@@ -95617,10 +95594,10 @@
       "salt_g": 0.0
     },
     "per_serving": {
-      "energy_kj": 2451.0751359999995,
-      "energy_kcal": 659.8619349904402,
-      "fat_g": 28.486000000000022,
-      "sfa_g": 5.821190999999998,
+      "energy_kj": 2439.3264639999993,
+      "energy_kcal": 657.0539349904401,
+      "fat_g": 28.174000000000017,
+      "sfa_g": 5.752238999999997,
       "mufa_g": 100.299735,
       "pufa_g": 306.64725,
       "tfa_g": NaN,
@@ -95637,21 +95614,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 659.8619349904402,
+          "amount": 657.0539349904401,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 29.45812209778751,
+          "pct_of_limit": 29.33276495493036,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 28.486000000000022,
+          "amount": 28.174000000000017,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 38.15089285714288,
-          "pct_energy": 11.445267857142866,
+          "pct_of_limit": 37.733035714285734,
+          "pct_energy": 11.31991071428572,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -95659,11 +95636,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 5.821190999999998,
+          "amount": 5.752238999999997,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 23.388713839285703,
-          "pct_energy": 2.3388713839285704,
+          "pct_of_limit": 23.111674553571415,
+          "pct_energy": 2.3111674553571415,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -95794,13 +95771,13 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 480.0,
       "non_oil_mass_g": 130.0,
-      "absorbed_fat_g": 22.256000000000004,
-      "absorbed_sfa_g": 4.918576000000001,
-      "absorbed_fat_per_serving_g": 22.256000000000004,
-      "absorbed_sfa_per_serving_g": 4.918576000000001,
-      "fat_g_per_100g_lab": 17.12,
+      "absorbed_fat_g": 21.944,
+      "absorbed_sfa_g": 4.8496239999999995,
+      "absorbed_fat_per_serving_g": 21.944,
+      "absorbed_sfa_per_serving_g": 4.8496239999999995,
+      "fat_g_per_100g_lab": 16.88,
       "sfa_pct_of_fat_lab": 22.1,
-      "calculation_formula": "absorbed_fat_g = (130.0g non-oil mass / 100) * 17.12g/100g = 22.26g",
+      "calculation_formula": "absorbed_fat_g = (130.0g non-oil mass / 100) * 16.88g/100g = 21.94g",
       "lab_match": "lab_match:Poori",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -95836,7 +95813,7 @@
           "setting": "lab-controlled",
           "category": "flat dough",
           "oil": "Refined sunflower oil",
-          "fat_g_100g": 17.12,
+          "fat_g_100g": 16.5,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "5"
@@ -95844,21 +95821,21 @@
       ]
     },
     "drivers": {
-      "total_sfa_g": 5.821190999999998,
+      "total_sfa_g": 5.752238999999997,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 4.918576000000001,
+      "oil_sfa_g": 4.8496239999999995,
       "other_sfa_g": 0.9026149999999973,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 84.4943242714421,
-      "total_fat_g": 28.486000000000022,
+      "oil_sfa_pct": 84.30845797610291,
+      "total_fat_g": 28.174000000000017,
       "dairy_fat_g": 0.0,
-      "oil_fat_g": 22.256000000000004,
+      "oil_fat_g": 21.944,
       "other_fat_g": 6.230000000000018,
       "dairy_fat_pct": 0.0,
-      "oil_fat_pct": 78.1296075265042
+      "oil_fat_pct": 77.88741392773474
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 22.3g using lab data (17.12g/100g, match=lab_match:Poori). Original stated-oil fat: 479.5g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (480g oil excluded). Absorbed fat estimated at 21.9g using lab data (16.88g/100g, match=lab_match:Poori). Original stated-oil fat: 479.5g."
     ],
     "skipped_codes": []
   },
@@ -110829,10 +110806,10 @@
     "total_mass_g": 169.0,
     "raw_pre_frying_mass_g": 409.0,
     "totals": {
-      "energy_kj": 2151.4051168000015,
-      "energy_kcal": 551.8711847036329,
-      "fat_g": 31.044799999999995,
-      "sfa_g": 7.1601687999999974,
+      "energy_kj": 2136.1318432000016,
+      "energy_kcal": 548.220784703633,
+      "fat_g": 30.63919999999999,
+      "sfa_g": 7.070531199999997,
       "mufa_g": 49.541160999999995,
       "pufa_g": 152.5091,
       "tfa_g": NaN,
@@ -110847,10 +110824,10 @@
       "salt_g": 0.5
     },
     "per_serving": {
-      "energy_kj": 2151.4051168000015,
-      "energy_kcal": 551.8711847036329,
-      "fat_g": 31.044799999999995,
-      "sfa_g": 7.1601687999999974,
+      "energy_kj": 2136.1318432000016,
+      "energy_kcal": 548.220784703633,
+      "fat_g": 30.63919999999999,
+      "sfa_g": 7.070531199999997,
       "mufa_g": 49.541160999999995,
       "pufa_g": 152.5091,
       "tfa_g": NaN,
@@ -110867,21 +110844,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 551.8711847036329,
+          "amount": 548.220784703633,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 24.637106459983613,
+          "pct_of_limit": 24.47414217426933,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 31.044799999999995,
+          "amount": 30.63919999999999,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 41.577857142857134,
-          "pct_energy": 12.473357142857141,
+          "pct_of_limit": 41.03464285714284,
+          "pct_energy": 12.310392857142853,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -110889,11 +110866,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 7.1601687999999974,
+          "amount": 7.070531199999997,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 28.768535357142845,
-          "pct_energy": 2.8768535357142846,
+          "pct_of_limit": 28.408384285714273,
+          "pct_energy": 2.8408384285714274,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -111024,13 +111001,13 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "non_oil_mass_g": 169.0,
-      "absorbed_fat_g": 28.9328,
-      "absorbed_sfa_g": 6.3941488,
-      "absorbed_fat_per_serving_g": 28.9328,
-      "absorbed_sfa_per_serving_g": 6.3941488,
-      "fat_g_per_100g_lab": 17.12,
+      "absorbed_fat_g": 28.527199999999997,
+      "absorbed_sfa_g": 6.304511199999999,
+      "absorbed_fat_per_serving_g": 28.527199999999997,
+      "absorbed_sfa_per_serving_g": 6.304511199999999,
+      "fat_g_per_100g_lab": 16.88,
       "sfa_pct_of_fat_lab": 22.1,
-      "calculation_formula": "absorbed_fat_g = (169.0g non-oil mass / 100) * 17.12g/100g = 28.93g",
+      "calculation_formula": "absorbed_fat_g = (169.0g non-oil mass / 100) * 16.88g/100g = 28.53g",
       "lab_match": "lab_match:Poori",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -111066,7 +111043,7 @@
           "setting": "lab-controlled",
           "category": "flat dough",
           "oil": "Refined sunflower oil",
-          "fat_g_100g": 17.12,
+          "fat_g_100g": 16.5,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "5"
@@ -111074,21 +111051,21 @@
       ]
     },
     "drivers": {
-      "total_sfa_g": 7.1601687999999974,
+      "total_sfa_g": 7.070531199999997,
       "dairy_sfa_g": 0.5842,
-      "oil_sfa_g": 6.3941488,
+      "oil_sfa_g": 6.304511199999999,
       "other_sfa_g": 0.18181999999999743,
-      "dairy_sfa_pct": 8.159025524649646,
-      "oil_sfa_pct": 89.30164886615526,
-      "total_fat_g": 31.044799999999995,
+      "dairy_sfa_pct": 8.262462656271149,
+      "oil_sfa_pct": 89.16601909627387,
+      "total_fat_g": 30.63919999999999,
       "dairy_fat_g": 0.976,
-      "oil_fat_g": 28.9328,
+      "oil_fat_g": 28.527199999999997,
       "other_fat_g": 1.1359999999999948,
-      "dairy_fat_pct": 3.143843735504819,
-      "oil_fat_pct": 93.19692831005516
+      "dairy_fat_pct": 3.1854617614036926,
+      "oil_fat_pct": 93.10686963106087
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (240g oil excluded). Absorbed fat estimated at 28.9g using lab data (17.12g/100g, match=lab_match:Poori). Original stated-oil fat: 239.8g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (240g oil excluded). Absorbed fat estimated at 28.5g using lab data (16.88g/100g, match=lab_match:Poori). Original stated-oil fat: 239.8g."
     ],
     "skipped_codes": []
   },
@@ -111103,10 +111080,10 @@
     "total_mass_g": 99.0,
     "raw_pre_frying_mass_g": 339.0,
     "totals": {
-      "energy_kj": 1352.9356128000006,
-      "energy_kcal": 360.02627456978996,
-      "fat_g": 19.61680000000001,
-      "sfa_g": 4.5342848,
+      "energy_kj": 1343.9885472000005,
+      "energy_kcal": 357.8878745697899,
+      "fat_g": 19.379200000000004,
+      "sfa_g": 4.481775199999999,
       "mufa_g": 49.718599999999995,
       "pufa_g": 152.8224,
       "tfa_g": NaN,
@@ -111121,10 +111098,10 @@
       "salt_g": 0.5
     },
     "per_serving": {
-      "energy_kj": 1352.9356128000006,
-      "energy_kcal": 360.02627456978996,
-      "fat_g": 19.61680000000001,
-      "sfa_g": 4.5342848,
+      "energy_kj": 1343.9885472000005,
+      "energy_kcal": 357.8878745697899,
+      "fat_g": 19.379200000000004,
+      "sfa_g": 4.481775199999999,
       "mufa_g": 49.718599999999995,
       "pufa_g": 152.8224,
       "tfa_g": NaN,
@@ -111141,21 +111118,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 360.02627456978996,
+          "amount": 357.8878745697899,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 16.072601543294198,
+          "pct_of_limit": 15.977137257579907,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 19.61680000000001,
+          "amount": 19.379200000000004,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 26.272500000000008,
-          "pct_energy": 7.881750000000004,
+          "pct_of_limit": 25.954285714285717,
+          "pct_energy": 7.786285714285716,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -111163,11 +111140,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 4.5342848,
+          "amount": 4.481775199999999,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 18.21810857142857,
-          "pct_energy": 1.821810857142857,
+          "pct_of_limit": 18.007132499999994,
+          "pct_energy": 1.8007132499999994,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -111298,13 +111275,13 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "non_oil_mass_g": 99.0,
-      "absorbed_fat_g": 16.948800000000002,
-      "absorbed_sfa_g": 3.7456848000000007,
-      "absorbed_fat_per_serving_g": 16.948800000000002,
-      "absorbed_sfa_per_serving_g": 3.7456848000000007,
-      "fat_g_per_100g_lab": 17.12,
+      "absorbed_fat_g": 16.711199999999998,
+      "absorbed_sfa_g": 3.6931751999999998,
+      "absorbed_fat_per_serving_g": 16.711199999999998,
+      "absorbed_sfa_per_serving_g": 3.6931751999999998,
+      "fat_g_per_100g_lab": 16.88,
       "sfa_pct_of_fat_lab": 22.1,
-      "calculation_formula": "absorbed_fat_g = (99.0g non-oil mass / 100) * 17.12g/100g = 16.95g",
+      "calculation_formula": "absorbed_fat_g = (99.0g non-oil mass / 100) * 16.88g/100g = 16.71g",
       "lab_match": "lab_match:Poori",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -111340,7 +111317,7 @@
           "setting": "lab-controlled",
           "category": "flat dough",
           "oil": "Refined sunflower oil",
-          "fat_g_100g": 17.12,
+          "fat_g_100g": 16.5,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "5"
@@ -111348,21 +111325,21 @@
       ]
     },
     "drivers": {
-      "total_sfa_g": 4.5342848,
+      "total_sfa_g": 4.481775199999999,
       "dairy_sfa_g": 0.5842,
-      "oil_sfa_g": 3.7456848000000007,
-      "other_sfa_g": 0.20439999999999925,
-      "dairy_sfa_pct": 12.88406056893471,
-      "oil_sfa_pct": 82.60806202557018,
-      "total_fat_g": 19.61680000000001,
+      "oil_sfa_g": 3.6931751999999998,
+      "other_sfa_g": 0.2043999999999988,
+      "dairy_sfa_pct": 13.035013447350064,
+      "oil_sfa_pct": 82.40429372718205,
+      "total_fat_g": 19.379200000000004,
       "dairy_fat_g": 0.976,
-      "oil_fat_g": 16.948800000000002,
+      "oil_fat_g": 16.711199999999998,
       "other_fat_g": 1.6920000000000064,
-      "dairy_fat_pct": 4.975327270502832,
-      "oil_fat_pct": 86.39941274825657
+      "dairy_fat_pct": 5.036327608982825,
+      "oil_fat_pct": 86.23266182298543
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (240g oil excluded). Absorbed fat estimated at 16.9g using lab data (17.12g/100g, match=lab_match:Poori). Original stated-oil fat: 239.8g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (240g oil excluded). Absorbed fat estimated at 16.7g using lab data (16.88g/100g, match=lab_match:Poori). Original stated-oil fat: 239.8g."
     ],
     "skipped_codes": []
   },
@@ -111377,10 +111354,10 @@
     "total_mass_g": 223.2,
     "raw_pre_frying_mass_g": 463.2,
     "totals": {
-      "energy_kj": 2480.066647040001,
-      "energy_kcal": 630.4231756787763,
-      "fat_g": 40.13883999999999,
-      "sfa_g": 9.158629139999999,
+      "energy_kj": 2459.895080960001,
+      "energy_kcal": 625.6020556787763,
+      "fat_g": 39.60315999999999,
+      "sfa_g": 9.040243859999999,
       "mufa_g": 49.542345999999995,
       "pufa_g": 152.4156525,
       "tfa_g": NaN,
@@ -111395,10 +111372,10 @@
       "salt_g": 0.5
     },
     "per_serving": {
-      "energy_kj": 2480.066647040001,
-      "energy_kcal": 630.4231756787763,
-      "fat_g": 40.13883999999999,
-      "sfa_g": 9.158629139999999,
+      "energy_kj": 2459.895080960001,
+      "energy_kcal": 625.6020556787763,
+      "fat_g": 39.60315999999999,
+      "sfa_g": 9.040243859999999,
       "mufa_g": 49.542345999999995,
       "pufa_g": 152.4156525,
       "tfa_g": NaN,
@@ -111415,21 +111392,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 630.4231756787763,
+          "amount": 625.6020556787763,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 28.14389177137394,
+          "pct_of_limit": 27.92866319994537,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 40.13883999999999,
+          "amount": 39.60315999999999,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 53.75737499999998,
-          "pct_energy": 16.12721249999999,
+          "pct_of_limit": 53.039946428571405,
+          "pct_energy": 15.911983928571424,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -111437,11 +111414,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 9.158629139999999,
+          "amount": 9.040243859999999,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 36.798063508928564,
-          "pct_energy": 3.6798063508928567,
+          "pct_of_limit": 36.32240836607142,
+          "pct_energy": 3.632240836607142,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -111572,13 +111549,13 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "non_oil_mass_g": 223.2,
-      "absorbed_fat_g": 38.211839999999995,
-      "absorbed_sfa_g": 8.444816639999999,
-      "absorbed_fat_per_serving_g": 38.211839999999995,
-      "absorbed_sfa_per_serving_g": 8.444816639999999,
-      "fat_g_per_100g_lab": 17.12,
+      "absorbed_fat_g": 37.676159999999996,
+      "absorbed_sfa_g": 8.326431359999999,
+      "absorbed_fat_per_serving_g": 37.676159999999996,
+      "absorbed_sfa_per_serving_g": 8.326431359999999,
+      "fat_g_per_100g_lab": 16.88,
       "sfa_pct_of_fat_lab": 22.1,
-      "calculation_formula": "absorbed_fat_g = (223.2g non-oil mass / 100) * 17.12g/100g = 38.21g",
+      "calculation_formula": "absorbed_fat_g = (223.2g non-oil mass / 100) * 16.88g/100g = 37.68g",
       "lab_match": "lab_match:Poori",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -111614,7 +111591,7 @@
           "setting": "lab-controlled",
           "category": "flat dough",
           "oil": "Refined sunflower oil",
-          "fat_g_100g": 17.12,
+          "fat_g_100g": 16.5,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "5"
@@ -111622,21 +111599,21 @@
       ]
     },
     "drivers": {
-      "total_sfa_g": 9.158629139999999,
+      "total_sfa_g": 9.040243859999999,
       "dairy_sfa_g": 0.5842,
-      "oil_sfa_g": 8.444816639999999,
-      "other_sfa_g": 0.12961250000000035,
-      "dairy_sfa_pct": 6.378683873643563,
-      "oil_sfa_pct": 92.20612070771107,
-      "total_fat_g": 40.13883999999999,
+      "oil_sfa_g": 8.326431359999999,
+      "other_sfa_g": 0.12961249999999858,
+      "dairy_sfa_pct": 6.462215057990706,
+      "oil_sfa_pct": 92.1040570248511,
+      "total_fat_g": 39.60315999999999,
       "dairy_fat_g": 0.976,
-      "oil_fat_g": 38.211839999999995,
+      "oil_fat_g": 37.676159999999996,
       "other_fat_g": 0.9509999999999925,
-      "dairy_fat_pct": 2.4315600550489256,
-      "oil_fat_pct": 95.19916370278764
+      "dairy_fat_pct": 2.464449806530591,
+      "oil_fat_pct": 95.13422666272086
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (240g oil excluded). Absorbed fat estimated at 38.2g using lab data (17.12g/100g, match=lab_match:Poori). Original stated-oil fat: 239.8g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (240g oil excluded). Absorbed fat estimated at 37.7g using lab data (16.88g/100g, match=lab_match:Poori). Original stated-oil fat: 239.8g."
     ],
     "skipped_codes": []
   },
@@ -111651,10 +111628,10 @@
     "total_mass_g": 179.0,
     "raw_pre_frying_mass_g": 419.0,
     "totals": {
-      "energy_kj": 2361.872188800002,
-      "energy_kcal": 602.1740221797324,
-      "fat_g": 32.6148,
-      "sfa_g": 7.4899268,
+      "energy_kj": 2345.6951712000014,
+      "energy_kcal": 598.3076221797323,
+      "fat_g": 32.185199999999995,
+      "sfa_g": 7.3949852,
       "mufa_g": 49.55410599999999,
       "pufa_g": 152.433344,
       "tfa_g": NaN,
@@ -111669,10 +111646,10 @@
       "salt_g": 0.5
     },
     "per_serving": {
-      "energy_kj": 2361.872188800002,
-      "energy_kcal": 602.1740221797324,
-      "fat_g": 32.6148,
-      "sfa_g": 7.4899268,
+      "energy_kj": 2345.6951712000014,
+      "energy_kcal": 598.3076221797323,
+      "fat_g": 32.185199999999995,
+      "sfa_g": 7.3949852,
       "mufa_g": 49.55410599999999,
       "pufa_g": 152.433344,
       "tfa_g": NaN,
@@ -111689,21 +111666,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 602.1740221797324,
+          "amount": 598.3076221797323,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 26.882768847309485,
+          "pct_of_limit": 26.710161704452336,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 32.6148,
+          "amount": 32.185199999999995,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 43.68053571428572,
-          "pct_energy": 13.104160714285715,
+          "pct_of_limit": 43.10517857142856,
+          "pct_energy": 12.93155357142857,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -111711,11 +111688,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 7.4899268,
+          "amount": 7.3949852,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 30.09345589285714,
-          "pct_energy": 3.0093455892857146,
+          "pct_of_limit": 29.711994107142857,
+          "pct_energy": 2.9711994107142856,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -111846,13 +111823,13 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "non_oil_mass_g": 179.0,
-      "absorbed_fat_g": 30.644800000000004,
-      "absorbed_sfa_g": 6.7725008,
-      "absorbed_fat_per_serving_g": 30.644800000000004,
-      "absorbed_sfa_per_serving_g": 6.7725008,
-      "fat_g_per_100g_lab": 17.12,
+      "absorbed_fat_g": 30.2152,
+      "absorbed_sfa_g": 6.6775592,
+      "absorbed_fat_per_serving_g": 30.2152,
+      "absorbed_sfa_per_serving_g": 6.6775592,
+      "fat_g_per_100g_lab": 16.88,
       "sfa_pct_of_fat_lab": 22.1,
-      "calculation_formula": "absorbed_fat_g = (179.0g non-oil mass / 100) * 17.12g/100g = 30.64g",
+      "calculation_formula": "absorbed_fat_g = (179.0g non-oil mass / 100) * 16.88g/100g = 30.22g",
       "lab_match": "lab_match:Poori",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -111888,7 +111865,7 @@
           "setting": "lab-controlled",
           "category": "flat dough",
           "oil": "Refined sunflower oil",
-          "fat_g_100g": 17.12,
+          "fat_g_100g": 16.5,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "5"
@@ -111896,21 +111873,21 @@
       ]
     },
     "drivers": {
-      "total_sfa_g": 7.4899268,
+      "total_sfa_g": 7.3949852,
       "dairy_sfa_g": 0.5842,
-      "oil_sfa_g": 6.7725008,
+      "oil_sfa_g": 6.6775592,
       "other_sfa_g": 0.13322599999999962,
-      "dairy_sfa_pct": 7.7998092050779455,
-      "oil_sfa_pct": 90.42145512022896,
-      "total_fat_g": 32.6148,
+      "dairy_sfa_pct": 7.8999481973270225,
+      "oil_sfa_pct": 90.29847956964133,
+      "total_fat_g": 32.185199999999995,
       "dairy_fat_g": 0.976,
-      "oil_fat_g": 30.644800000000004,
-      "other_fat_g": 0.9939999999999989,
-      "dairy_fat_pct": 2.9925064694555843,
-      "oil_fat_pct": 93.95979739259478
+      "oil_fat_g": 30.2152,
+      "other_fat_g": 0.9939999999999953,
+      "dairy_fat_pct": 3.032449697376434,
+      "oil_fat_pct": 93.87917427886111
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (240g oil excluded). Absorbed fat estimated at 30.6g using lab data (17.12g/100g, match=lab_match:Poori). Original stated-oil fat: 239.8g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (240g oil excluded). Absorbed fat estimated at 30.2g using lab data (16.88g/100g, match=lab_match:Poori). Original stated-oil fat: 239.8g."
     ],
     "skipped_codes": []
   },
@@ -147671,10 +147648,10 @@
     "total_mass_g": 363.75,
     "raw_pre_frying_mass_g": 603.75,
     "totals": {
-      "energy_kj": 5395.471640000002,
-      "energy_kcal": 1315.5511567877631,
-      "fat_g": 72.49300000000001,
-      "sfa_g": 28.309455000000007,
+      "energy_kj": 4820.1821,
+      "energy_kcal": 1178.053656787763,
+      "fat_g": 57.21549999999999,
+      "sfa_g": 31.605030000000003,
       "mufa_g": 49.89191399999999,
       "pufa_g": 152.0425,
       "tfa_g": NaN,
@@ -147689,10 +147666,10 @@
       "salt_g": 0.0
     },
     "per_serving": {
-      "energy_kj": 5395.471640000002,
-      "energy_kcal": 1315.5511567877631,
-      "fat_g": 72.49300000000001,
-      "sfa_g": 28.309455000000007,
+      "energy_kj": 4820.1821,
+      "energy_kcal": 1178.053656787763,
+      "fat_g": 57.21549999999999,
+      "sfa_g": 31.605030000000003,
       "mufa_g": 49.89191399999999,
       "pufa_g": 152.0425,
       "tfa_g": NaN,
@@ -147709,21 +147686,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 1315.5511567877631,
+          "amount": 1178.053656787763,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 58.729962356596566,
+          "pct_of_limit": 52.59168110659657,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 72.49300000000001,
+          "amount": 57.21549999999999,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 97.08883928571429,
-          "pct_energy": 29.12665178571429,
+          "pct_of_limit": 76.62790178571427,
+          "pct_energy": 22.988370535714285,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -147731,11 +147708,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 28.309455000000007,
+          "amount": 31.605030000000003,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 113.74334598214288,
-          "pct_energy": 11.37433459821429,
+          "pct_of_limit": 126.98449553571429,
+          "pct_energy": 12.69844955357143,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -147866,60 +147843,37 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "non_oil_mass_g": 363.75,
-      "absorbed_fat_g": 69.84000000000002,
-      "absorbed_sfa_g": 26.713800000000006,
-      "absorbed_fat_per_serving_g": 69.84000000000002,
-      "absorbed_sfa_per_serving_g": 26.713800000000006,
-      "fat_g_per_100g_lab": 19.200000000000003,
-      "sfa_pct_of_fat_lab": 38.25,
-      "calculation_formula": "absorbed_fat_g = (363.8g non-oil mass / 100) * 19.20g/100g = 69.84g",
-      "lab_match": "lab_match:Pantoa / Gulab Jamun",
+      "absorbed_fat_g": 54.5625,
+      "absorbed_sfa_g": 30.009375000000002,
+      "absorbed_fat_per_serving_g": 54.5625,
+      "absorbed_sfa_per_serving_g": 30.009375000000002,
+      "fat_g_per_100g_lab": 15.0,
+      "sfa_pct_of_fat_lab": 55.0,
+      "calculation_formula": "absorbed_fat_g = (363.8g non-oil mass / 100) * 15.00g/100g = 54.56g",
+      "lab_match": "category_default:syrup-soaked sweet",
       "setting_requested": "auto",
-      "setting_used": "all_matched",
+      "setting_used": "category_default",
       "fallback_used": false,
-      "fallback_reason": null,
-      "matched_rows_count": 2,
-      "matched_sources": [
-        {
-          "source": "Neethu 2025",
-          "item": "Pantoa / Gulab Jamun (Ghee)",
-          "setting": "lab-controlled",
-          "category": "syrup-soaked sweet",
-          "oil": "Desi Ghee",
-          "fat_g_100g": 14.8,
-          "sfa_pct_of_fat": 65.0,
-          "method": "proximate",
-          "n_samples": "3"
-        },
-        {
-          "source": "Neethu 2025",
-          "item": "Pantoa / Gulab Jamun (Sunflower oil)",
-          "setting": "lab-controlled",
-          "category": "syrup-soaked sweet",
-          "oil": "Sunflower oil",
-          "fat_g_100g": 23.6,
-          "sfa_pct_of_fat": 11.5,
-          "method": "proximate",
-          "n_samples": "3"
-        }
-      ]
+      "fallback_reason": "No dish-specific lab rows for 'Gulab jamun with milk powder'; used 'syrup-soaked sweet' category default.",
+      "matched_rows_count": 0,
+      "matched_sources": []
     },
     "drivers": {
-      "total_sfa_g": 28.309455000000007,
+      "total_sfa_g": 31.605030000000003,
       "dairy_sfa_g": 0,
-      "oil_sfa_g": 26.713800000000006,
+      "oil_sfa_g": 30.009375000000002,
       "other_sfa_g": 1.5956550000000007,
       "dairy_sfa_pct": 0.0,
-      "oil_sfa_pct": 94.36352624944564,
-      "total_fat_g": 72.49300000000001,
+      "oil_sfa_pct": 94.95126250473422,
+      "total_fat_g": 57.21549999999999,
       "dairy_fat_g": 0.0,
-      "oil_fat_g": 69.84000000000002,
+      "oil_fat_g": 54.5625,
       "other_fat_g": 2.6529999999999916,
       "dairy_fat_pct": 0.0,
-      "oil_fat_pct": 96.34033630833324
+      "oil_fat_pct": 95.36314460242417
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (240g oil excluded). Absorbed fat estimated at 69.8g using lab data (19.200000000000003g/100g, match=lab_match:Pantoa / Gulab Jamun). Original stated-oil fat: 239.8g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (240g oil excluded). Absorbed fat estimated at 54.6g using lab data (15.0g/100g, match=category_default:syrup-soaked sweet). Original stated-oil fat: 239.8g."
     ],
     "skipped_codes": []
   },
@@ -153556,10 +153510,10 @@
     "total_mass_g": 365.5799999999999,
     "raw_pre_frying_mass_g": 605.5799999999999,
     "totals": {
-      "energy_kj": 3740.3868795200015,
-      "energy_kcal": 933.7667207265773,
-      "fat_g": 61.26659599999999,
-      "sfa_g": 28.912360321999994,
+      "energy_kj": 4558.103940032001,
+      "energy_kcal": 1129.2057887265773,
+      "fat_g": 82.98204799999999,
+      "sfa_g": 39.587676525199996,
       "mufa_g": 52.89711746,
       "pufa_g": 156.08537789999997,
       "tfa_g": NaN,
@@ -153574,10 +153528,10 @@
       "salt_g": 1.5
     },
     "per_serving": {
-      "energy_kj": 1246.795626506667,
-      "energy_kcal": 311.2555735755258,
-      "fat_g": 20.422198666666663,
-      "sfa_g": 9.637453440666665,
+      "energy_kj": 1519.3679800106672,
+      "energy_kcal": 376.4019295755258,
+      "fat_g": 27.660682666666663,
+      "sfa_g": 13.195892175066666,
       "mufa_g": 17.632372486666664,
       "pufa_g": 52.02845929999999,
       "tfa_g": NaN,
@@ -153594,21 +153548,21 @@
     "footprint_general": {
       "axes": {
         "energy_kcal": {
-          "amount": 311.2555735755258,
+          "amount": 376.4019295755258,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 13.895338106050259,
+          "pct_of_limit": 16.80365757033597,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 20.422198666666663,
+          "amount": 27.660682666666663,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 27.351158928571422,
-          "pct_energy": 8.205347678571426,
+          "pct_of_limit": 37.045557142857135,
+          "pct_energy": 11.113667142857143,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -153616,11 +153570,11 @@
           ]
         },
         "sfa_g": {
-          "amount": 9.637453440666665,
+          "amount": 13.195892175066666,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 38.72191114553571,
-          "pct_energy": 3.8721911145535706,
+          "pct_of_limit": 53.01920963196428,
+          "pct_energy": 5.3019209631964275,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -153751,13 +153705,13 @@
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 240.0,
       "non_oil_mass_g": 365.58,
-      "absorbed_fat_g": 45.33192,
-      "absorbed_sfa_g": 22.285171871999996,
-      "absorbed_fat_per_serving_g": 15.110639999999998,
-      "absorbed_sfa_per_serving_g": 7.428390623999999,
-      "fat_g_per_100g_lab": 12.4,
+      "absorbed_fat_g": 67.047372,
+      "absorbed_sfa_g": 32.9604880752,
+      "absorbed_fat_per_serving_g": 22.349124,
+      "absorbed_sfa_per_serving_g": 10.9868293584,
+      "fat_g_per_100g_lab": 18.34,
       "sfa_pct_of_fat_lab": 49.16,
-      "calculation_formula": "absorbed_fat_g = (365.6g non-oil mass / 100) * 12.40g/100g = 45.33g",
+      "calculation_formula": "absorbed_fat_g = (365.6g non-oil mass / 100) * 18.34g/100g = 67.05g",
       "lab_match": "lab_match:Samosa",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -153793,7 +153747,7 @@
           "setting": "lab-controlled",
           "category": "stuffed pastry",
           "oil": "Groundnut oil",
-          "fat_g_100g": 12.4,
+          "fat_g_100g": 18.34,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "3"
@@ -153804,7 +153758,7 @@
           "setting": "lab-controlled",
           "category": "stuffed pastry",
           "oil": "Groundnut oil",
-          "fat_g_100g": 8.97,
+          "fat_g_100g": 8.56,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "3"
@@ -153823,21 +153777,21 @@
       ]
     },
     "drivers": {
-      "total_sfa_g": 28.912360321999994,
+      "total_sfa_g": 39.587676525199996,
       "dairy_sfa_g": 5.8420000000000005,
-      "oil_sfa_g": 22.885171871999997,
-      "other_sfa_g": 0.18518844999999473,
-      "dairy_sfa_pct": 20.20589095783614,
-      "oil_sfa_pct": 79.15359250204907,
-      "total_fat_g": 61.26659599999999,
+      "oil_sfa_g": 33.5604880752,
+      "other_sfa_g": 0.18518844999999828,
+      "dairy_sfa_pct": 14.757117650694168,
+      "oil_sfa_pct": 84.77508917159278,
+      "total_fat_g": 82.98204799999999,
       "dairy_fat_g": 9.76,
-      "oil_fat_g": 50.32692,
+      "oil_fat_g": 72.042372,
       "other_fat_g": 1.1796759999999917,
-      "dairy_fat_pct": 15.930377460500663,
-      "oil_fat_pct": 82.14414262545287
+      "dairy_fat_pct": 11.761580046807234,
+      "oil_fat_pct": 86.81681609015001
     },
     "warnings": [
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (240g oil excluded). Absorbed fat estimated at 45.3g using lab data (12.4g/100g, match=lab_match:Samosa). Original stated-oil fat: 239.8g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (240g oil excluded). Absorbed fat estimated at 67.0g using lab data (18.34g/100g, match=lab_match:Samosa). Original stated-oil fat: 239.8g."
     ],
     "skipped_codes": []
   },

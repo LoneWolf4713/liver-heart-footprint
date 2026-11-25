@@ -48,14 +48,17 @@ NUTRIENT_COLUMNS = (
 
 
 def _to_num(series):
+    """Coerce numeric strings cleanly to float, filling missing cells with 0."""
     return pd.to_numeric(series, errors="coerce").fillna(0)
 
 
 def _to_nan_or(series):
+    """Coerce numeric strings cleanly to float while preserving NaN for genuinely missing analytes."""
     return pd.to_numeric(series, errors="coerce")
 
 
 def _build_table() -> pd.DataFrame:
+    """Build the normalized unified per-100g composition table from IFCT, INDB UK/US, and IN_LABEL."""
     kj_per_kcal = constants.get("KJ_PER_KCAL")
     fat_kj_per_g = constants.get("FAT_KJ_PER_G")
     fat_kcal_per_g = constants.get("FAT_KCAL_PER_G")
@@ -150,6 +153,7 @@ def _build_table() -> pd.DataFrame:
 
 
 def _get_table() -> pd.DataFrame:
+    """Return the cached unified composition table, building it on first access."""
     global _TABLE
     if _TABLE is None:
         _TABLE = _build_table()
@@ -157,10 +161,12 @@ def _get_table() -> pd.DataFrame:
 
 
 def load_table() -> pd.DataFrame:
+    """Return an isolated copy of the unified composition table."""
     return _get_table().copy()
 
 
 def get(code: str) -> dict:
+    """Look up raw per-100g nutrient metadata for a single food code."""
     table = _get_table()
     code_str = str(code)
     if code_str not in table.index:
@@ -171,6 +177,7 @@ def get(code: str) -> dict:
 
 
 def nutrients_for(code: str, grams: float) -> dict:
+    """Scale per-100g nutrient columns for a validated non-negative gram weight."""
     table = _get_table()
     code_str = str(code)
     if code_str not in table.index:

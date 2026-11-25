@@ -18,8 +18,8 @@
       "lines_total": 21,
       "lines_included": 18,
       "frying_applied": true,
-      "energy_kcal": 297.0,
-      "sfa_g": 6.5,
+      "energy_kcal": 346.6,
+      "sfa_g": 9.3,
       "sodium_mg": 306.4,
       "engine_parity": true
     },
@@ -102,8 +102,8 @@
       "lines_total": 12,
       "lines_included": 8,
       "frying_applied": true,
-      "energy_kcal": 243.8,
-      "sfa_g": 4.5,
+      "energy_kcal": 227.7,
+      "sfa_g": 4.9,
       "sodium_mg": 60.2,
       "engine_parity": true
     },

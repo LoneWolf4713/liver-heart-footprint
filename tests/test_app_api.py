@@ -64,11 +64,11 @@ class TestAppBackendAndScraper(unittest.TestCase):
         r_health = self.client.get("/api/health")
         self.assertEqual(r_health.status_code, 200)
         self.assertEqual(r_health.json()["status"], "ok")
-        self.assertEqual(r_health.json()["lab_rows"], 69)
+        self.assertEqual(r_health.json()["lab_rows"], 67)
 
         r_lab = self.client.get("/api/lab-data")
         self.assertEqual(r_lab.status_code, 200)
-        self.assertEqual(r_lab.json()["count"], 69)
+        self.assertEqual(r_lab.json()["count"], 67)
 
         r_home = self.client.get("/")
         self.assertEqual(r_home.status_code, 200)

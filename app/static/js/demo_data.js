@@ -4,7 +4,9 @@ window.DEMO_RECIPES = {
       "id": "DEMO-01",
       "url": null,
       "dish": "paneer butter masala",
-      "servings": 4
+      "servings": 4,
+      "deep_fried_hint": false,
+      "deep_fry_evidence": null
     },
     "lines": [
       {
@@ -569,7 +571,9 @@ window.DEMO_RECIPES = {
       "id": "SAMOSA-TEST-01",
       "url": null,
       "dish": "samosa",
-      "servings": 8
+      "servings": 8,
+      "deep_fried_hint": false,
+      "deep_fry_evidence": null
     },
     "lines": [
       {
@@ -1014,10 +1018,10 @@ window.DEMO_RECIPES = {
       "unquantified_fat_lines": []
     },
     "totals": {
-      "energy_kj": 7174.931504,
-      "energy_kcal": 1791.0075564053539,
-      "fat_g": 90.64434,
-      "sfa_g": 33.30795740000001,
+      "energy_kj": 8261.9999744,
+      "energy_kcal": 2050.823156405354,
+      "fat_g": 119.51274,
+      "sfa_g": 47.49966284,
       "mufa_g": 100.2893682,
       "pufa_g": 309.804943,
       "tfa_g": null,
@@ -1032,10 +1036,10 @@ window.DEMO_RECIPES = {
       "salt_g": 0.0
     },
     "per_serving": {
-      "energy_kj": 896.866438,
-      "energy_kcal": 223.87594455066923,
-      "fat_g": 11.3305425,
-      "sfa_g": 4.163494675000001,
+      "energy_kj": 1032.7499968,
+      "energy_kcal": 256.35289455066925,
+      "fat_g": 14.9390925,
+      "sfa_g": 5.937457855,
       "mufa_g": 12.536171025,
       "pufa_g": 38.725617875,
       "tfa_g": null,
@@ -1052,21 +1056,21 @@ window.DEMO_RECIPES = {
     "footprint": {
       "axes": {
         "energy_kcal": {
-          "amount": 223.87594455066923,
+          "amount": 256.35289455066925,
           "unit": "kcal",
           "limit": 2240.0,
-          "pct_of_limit": 9.994461810297734,
+          "pct_of_limit": 11.44432564958345,
           "pct_energy": null,
           "limit_sources": [
             "NSO_CALORIES_URBAN"
           ]
         },
         "fat_g": {
-          "amount": 11.3305425,
+          "amount": 14.9390925,
           "unit": "g",
           "limit": 74.66666666666667,
-          "pct_of_limit": 15.174833705357141,
-          "pct_energy": 4.552450111607143,
+          "pct_of_limit": 20.007713169642855,
+          "pct_energy": 6.002313950892857,
           "limit_sources": [
             "LIMIT_TOTAL_FAT_PCT",
             "NSO_CALORIES_URBAN",
@@ -1074,11 +1078,11 @@ window.DEMO_RECIPES = {
           ]
         },
         "sfa_g": {
-          "amount": 4.163494675000001,
+          "amount": 5.937457855,
           "unit": "g",
           "limit": 24.88888888888889,
-          "pct_of_limit": 16.728326819196432,
-          "pct_energy": 1.672832681919643,
+          "pct_of_limit": 23.855857453124997,
+          "pct_energy": 2.3855857453125,
           "limit_sources": [
             "LIMIT_SFA_GENERAL",
             "NSO_CALORIES_URBAN",
@@ -1128,20 +1132,21 @@ window.DEMO_RECIPES = {
     },
     "warnings": [
       "SALT_UNQUANTIFIED: recipe contains unquantified salt line (sodium is a lower bound)",
-      "FRYING_CORRECTED: detected 1 frying bath line(s) (460g oil excluded). Absorbed fat estimated at 60.3g using lab data (12.4g/100g, match=lab_match:Samosa). Original stated-oil fat: 459.5g."
+      "FRYING_CORRECTED: detected 1 frying bath line(s) (460g oil excluded). Absorbed fat estimated at 89.1g using lab data (18.34g/100g, match=lab_match:Samosa). Original stated-oil fat: 459.5g."
     ],
     "frying_correction": {
       "applied": true,
+      "detection_mode": "bath_replacement",
       "frying_bath_lines_count": 1,
       "oil_mass_removed_g": 460.0,
       "non_oil_mass_g": 486.0,
-      "absorbed_fat_g": 60.264,
-      "absorbed_sfa_g": 29.625782400000002,
-      "absorbed_fat_per_serving_g": 7.533,
-      "absorbed_sfa_per_serving_g": 3.7032228000000003,
-      "fat_g_per_100g_lab": 12.4,
+      "absorbed_fat_g": 89.1324,
+      "absorbed_sfa_g": 43.81748784,
+      "absorbed_fat_per_serving_g": 11.14155,
+      "absorbed_sfa_per_serving_g": 5.47718598,
+      "fat_g_per_100g_lab": 18.34,
       "sfa_pct_of_fat_lab": 49.16,
-      "calculation_formula": "absorbed_fat_g = (486.0g non-oil mass / 100) * 12.40g/100g = 60.26g",
+      "calculation_formula": "absorbed_fat_g = (486.0g non-oil mass / 100) * 18.34g/100g = 89.13g",
       "lab_match": "lab_match:Samosa",
       "setting_requested": "auto",
       "setting_used": "all_matched",
@@ -1177,7 +1182,7 @@ window.DEMO_RECIPES = {
           "setting": "lab-controlled",
           "category": "stuffed pastry",
           "oil": "Groundnut oil",
-          "fat_g_100g": 12.4,
+          "fat_g_100g": 18.34,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "3"
@@ -1188,7 +1193,7 @@ window.DEMO_RECIPES = {
           "setting": "lab-controlled",
           "category": "stuffed pastry",
           "oil": "Groundnut oil",
-          "fat_g_100g": 8.97,
+          "fat_g_100g": 8.56,
           "sfa_pct_of_fat": null,
           "method": "proximate",
           "n_samples": "3"
@@ -1212,7 +1217,9 @@ window.DEMO_RECIPES = {
       "id": "DEMO-03",
       "url": null,
       "dish": "chicken biryani",
-      "servings": 4
+      "servings": 4,
+      "deep_fried_hint": false,
+      "deep_fry_evidence": null
     },
     "lines": [
       {

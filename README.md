@@ -27,7 +27,7 @@ PYTHONPATH=src uvicorn app.main:app --host 127.0.0.1 --port 8000
 Open **`http://127.0.0.1:8000`** in your browser:
 - **Paste a Recipe URL:** Scrapes `schema.org/Recipe` JSON-LD (or falls back via `recipe-scrapers` / editable ingredient paste) and computes the live footprint via `POST /api/scrape` → `POST /api/analyze`.
 - **Paste Ingredients:** Analyzes arbitrary typed ingredient lines, servings count, frying cooking setting, `1× / 2× / Per-100g` scaling, and General (`24.9g SFA`) vs. High-Risk (`17.4g SFA`) ceilings.
-- **Inspect All 4 Deliverables (`D1`–`D4`):** Interactive tabs covering the 69-row Fried-Food Lab Dataset (`D1`), 5-Stage Deterministic Engine (`D2`), 1,014-Recipe Cuisine Atlas (`D3`), and Live Analyzer (`D4`).
+- **Inspect All 4 Deliverables (`D1`–`D4`):** Interactive tabs covering the 67-row Fried-Food Lab Dataset (`D1`), 5-Stage Deterministic Engine (`D2`), 1,014-Recipe Cuisine Atlas (`D3`), and Live Analyzer (`D4`).
 
 ---
 
@@ -35,8 +35,8 @@ Open **`http://127.0.0.1:8000`** in your browser:
 
 | Deliverable | Description | Key Artifacts |
 | :--- | :--- | :--- |
-| **D1 · Fried-Food Lab Dataset** | `69` curated empirical rows (`233` samples across `10` studies: Gupta 2016, UK CoFID 2021, Safefood 2015, Joshee 2019, Neethu 2025, Sakhale 2011, etc.) capturing oil-retention spread by setting. | `data/curated/fried_foods_lab.csv`, `src/lhf/frying.py` |
-| **D2 · Core Computational Engine** | Deterministic grammar parser (`parse.py`), `4,198`-alias IFCT/INDB matcher (`match.py`), `243` Indian measure conversions (`grams.py`), nutrient classifier (`classify.py`), frying correction, and daily budget scorer. | `src/lhf/` (`pipeline.py`, `cli.py`) |
+| **D1 · Fried-Food Lab Dataset** | `67` curated empirical rows (`227` samples across `9` verified studies: Gupta 2016, UK CoFID 2021, Safefood 2015, Joshee 2019, Jain 2024, Chen 2009, Sakhale 2011, Yadav 2012, Gaikwad 2022) capturing oil-retention spread by setting. | `data/curated/fried_foods_lab.csv`, `src/lhf/frying.py` |
+| **D2 · Core Computational Engine** | Deterministic grammar parser (`parse.py`), `4,204`-alias IFCT/INDB matcher (`match.py`), `243` Indian measure conversions (`grams.py`), nutrient classifier (`classify.py`), frying correction, and daily budget scorer. | `src/lhf/` (`pipeline.py`, `cli.py`) |
 | **D3 · Cuisine Footprint Atlas** | Macro audit of `1,014` INDB recipes (`932` with servings) + `71` web recipes across `11` categories (`fig1`–`fig4`) comparing textbook vs. modern recipes (`1.10×` fat / `1.18×` SFA median inflation across `12` comparable pairs). | `experiments/atlas/run_atlas.py`, `atlas_metrics.json`, `fig1`–`fig4.png` |
 | **D4 · Interactive Web Application** | FastAPI backend (`app/main.py`, `app/scraper.py`) + Puppertino/Alpine.js SPA (`app/index.html`) with live URL scraping, custom recipe analysis, frying setting & provenance drawers, portion scaling, and organ breakdowns. | `app/main.py`, `app/scraper.py`, `app/index.html` |
 

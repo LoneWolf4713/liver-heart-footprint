@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Liver & Heart Footprint of Indian Recipes — BIO544 Demo</title>
   
   <!-- Puppertino CSS (Local with CDN fallback) -->
@@ -2430,6 +2430,1079 @@
         grid-template-columns: 120px 1fr 74px;
       }
     }
+
+    /* ======================================================== */
+    /* MOBILE-FIRST ERGONOMICS & NATIVE RESPONSIVE OVERHAUL     */
+    /* ======================================================== */
+    html, body {
+      overflow-x: clip;
+      max-width: 100%;
+    }
+
+    img, svg {
+      max-width: 100%;
+    }
+
+    .app-main,
+    .d1-card,
+    .d1-card-body,
+    .verdict-panel,
+    .organ-panel-card,
+    .calorie-breakdown-card,
+    .driver-analytics-layout,
+    .frying-callout-strip > div,
+    .data-table-container,
+    .d1-study-table-wrap {
+      min-width: 0;
+    }
+
+    .paired-dish-row {
+      display: grid;
+      grid-template-columns: 235px 1fr 72px;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 7px;
+    }
+
+    .paired-dish-label {
+      font-size: 13px;
+      color: var(--text-body);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .paired-dish-val {
+      font-size: 13px;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    .table-scroll-hint {
+      display: none;
+    }
+
+    .mobile-bottom-dock {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      /* Compact Hero so Live Analyzer sits cleanly above the fold */
+      .hero-container {
+        padding: 14px 16px 28px 16px;
+        min-height: 100dvh;
+        justify-content: flex-start;
+        gap: 12px;
+      }
+
+      .hero-top-wrapper {
+        gap: 8px !important;
+        margin-bottom: 8px !important;
+      }
+
+      .hero-top-badge {
+        font-size: 11px;
+        padding: 4px 10px;
+        line-height: 1.3;
+        text-align: center;
+      }
+
+      .hero-organ-crest {
+        padding: 4px 8px;
+        gap: 6px;
+        margin-bottom: 4px;
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .crest-pill {
+        font-size: 11.5px;
+        padding: 3px 8px;
+      }
+
+      .hero-content {
+        padding: 2px 0 8px 0;
+      }
+
+      .hero-headline {
+        font-size: 29px;
+        line-height: 1.12;
+        margin-bottom: 8px;
+        letter-spacing: -0.025em;
+      }
+
+      .hero-subhead {
+        font-size: 14px;
+        line-height: 1.42;
+        margin-bottom: 10px;
+      }
+
+      .hero-authors-block {
+        margin-bottom: 14px !important;
+      }
+
+      .author-team {
+        flex-wrap: wrap;
+        gap: 4px 8px;
+        font-size: 13.5px;
+        margin-bottom: 3px;
+      }
+
+      .author-roll {
+        font-size: 11.5px;
+      }
+
+      .author-supervisor {
+        font-size: 12px;
+      }
+
+      .hero-input-section {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .mode-toggle-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto 10px auto;
+      }
+
+      .mode-btn {
+        min-height: 44px;
+        padding: 6px 10px;
+        font-size: 13.5px;
+      }
+
+      .search-bar-unified {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+      }
+
+      .search-input,
+      .sub-input,
+      .paste-textarea,
+      .lab-search-input,
+      .lab-select,
+      #d4-frying-setting-select {
+        font-size: 16px !important; /* Prevents iOS Safari focus zoom */
+      }
+
+      .search-input {
+        width: 100%;
+        height: 48px;
+        min-height: 48px;
+        padding: 0 14px;
+        flex: none;
+      }
+
+      .search-btn {
+        width: 100%;
+        height: 48px;
+        min-height: 48px;
+        justify-content: center;
+        font-size: 15px;
+      }
+
+      .paste-meta-row {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .sub-input {
+        width: 100%;
+        max-width: 100% !important;
+        min-height: 44px;
+        height: 44px;
+      }
+
+      .paste-textarea {
+        min-height: 108px;
+      }
+
+      .paste-actions-row {
+        flex-direction: column;
+        align-items: stretch !important;
+      }
+
+      .paste-actions-row .bench-chip,
+      .paste-actions-row .search-btn {
+        width: 100%;
+        min-height: 44px;
+        height: 44px;
+        justify-content: center;
+      }
+
+      .benchmarks-strip {
+        margin-top: 14px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      .bench-label {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin: 0;
+        font-size: 12px;
+      }
+
+      .benchmarks-strip .bench-chip {
+        min-height: 44px;
+        padding: 8px 10px;
+        font-size: 12.5px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .benchmarks-strip .bench-chip:last-child {
+        grid-column: 1 / -1;
+      }
+
+      .hero-deliverable-dock {
+        margin-top: 18px;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .dock-card-btn {
+        padding: 12px;
+        min-height: 44px;
+      }
+
+      .dock-card-tag {
+        font-size: 10px;
+      }
+
+      .dock-card-title {
+        font-size: 13px;
+      }
+
+      .dock-card-desc {
+        font-size: 11.5px;
+      }
+
+      /* Mobile Sticky Brand Bar + Fixed One-Thumb Bottom Tab Dock */
+      .app-header {
+        padding: 8px 14px;
+        min-height: 52px;
+      }
+
+      .header-center {
+        display: none;
+      }
+
+      .header-left {
+        gap: 10px;
+      }
+
+      .back-home-btn {
+        min-height: 40px;
+        padding: 6px 12px;
+        font-size: 13px;
+        border-radius: 8px;
+      }
+
+      .header-title-text {
+        font-size: 14px;
+      }
+
+      .badge-course {
+        font-size: 11px;
+        padding: 4px 8px;
+      }
+
+      .mobile-bottom-dock {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 250;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+        padding: 6px 8px calc(6px + env(safe-area-inset-bottom, 0px)) 8px;
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-top: 1px solid #d2d2d7;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.07);
+      }
+
+      .mobile-dock-btn {
+        border: none;
+        background: transparent;
+        border-radius: 10px;
+        min-height: 50px;
+        padding: 5px 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        color: #636366;
+        cursor: pointer;
+        transition: background 0.15s ease, color 0.15s ease;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .mobile-dock-btn.active {
+        background: #eaf3ff;
+        color: #0071e3;
+      }
+
+      .mobile-dock-icon {
+        font-size: 16px;
+        line-height: 1;
+      }
+
+      .mobile-dock-label {
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 1.15;
+        letter-spacing: -0.01em;
+      }
+
+      .mobile-dock-btn.active .mobile-dock-label {
+        font-weight: 700;
+      }
+
+      /* Main App Viewport & Sub-Toolbar */
+      .app-main {
+        padding: 16px 16px 96px 16px;
+      }
+
+      .recipe-control-toolbar {
+        padding: 10px 16px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+      }
+
+      .toolbar-left {
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .toolbar-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      .toolbar-right .chip-label {
+        grid-column: 1 / -1;
+        margin: 0;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      .demo-chip,
+      .change-recipe-btn {
+        min-height: 44px;
+        padding: 8px 10px;
+        font-size: 13px;
+        margin-left: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .toolbar-full-span {
+        grid-column: 1 / -1;
+      }
+
+      /* D4 Report Header & Portion Switcher */
+      .report-header-block {
+        margin-bottom: 18px;
+      }
+
+      .d4-title-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+
+      .report-main-title {
+        font-size: 25px;
+        margin-bottom: 8px;
+      }
+
+      .portion-basis-pill {
+        font-size: 12.5px;
+        padding: 5px 11px;
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .portion-segmented {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .portion-seg-btn {
+        min-height: 44px;
+        padding: 6px 4px;
+        font-size: 12px;
+        white-space: normal;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      /* Frying Callout */
+      .frying-callout-strip {
+        padding: 14px;
+        gap: 10px;
+        font-size: 13.5px;
+        margin-bottom: 18px;
+        border-radius: 12px;
+      }
+
+      .frying-callout-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+      }
+
+      .d4-frying-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+      }
+
+      #d4-frying-setting-select {
+        width: 100%;
+        min-height: 44px;
+        height: 44px;
+      }
+
+      .d4-frying-controls .view-pill-btn {
+        margin-left: 0 !important;
+        width: 100%;
+        min-height: 44px;
+        text-align: center;
+      }
+
+      .d4-frying-controls .badge {
+        align-self: flex-start;
+        white-space: normal;
+        text-align: left;
+      }
+
+      .frying-calc-drawer {
+        padding: 12px;
+        font-size: 13px;
+      }
+
+      .frying-formula-box {
+        font-size: 11.5px;
+        white-space: normal;
+        word-break: break-word;
+      }
+
+      /* Dual-Organ Verdict Panels */
+      .verdict-dual-grid {
+        gap: 14px;
+        margin-bottom: 26px;
+      }
+
+      .verdict-panel-header {
+        padding: 12px 14px;
+        gap: 8px;
+      }
+
+      .exec-organ-badge {
+        font-size: 16px;
+      }
+
+      .verdict-rings-row {
+        padding: 14px 6px;
+        gap: 4px;
+      }
+
+      .ring-stat-item {
+        padding: 2px 4px;
+      }
+
+      .ring-svg-wrap {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 6px;
+      }
+
+      .ring-svg-wrap svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .ring-center-val {
+        font-size: 13.5px !important;
+      }
+
+      .ring-stat-label {
+        font-size: 11.5px;
+        line-height: 1.2;
+      }
+
+      .ring-stat-sub {
+        font-size: 10.5px;
+        line-height: 1.25;
+        word-break: break-word;
+      }
+
+      .verdict-footer-line {
+        padding: 10px 14px;
+        font-size: 13px;
+      }
+
+      /* Section Headers & Spacing */
+      .dashboard-section-header {
+        margin-bottom: 14px;
+      }
+
+      .section-title {
+        font-size: 20px;
+        line-height: 1.25;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .section-desc {
+        font-size: 14px;
+      }
+
+      .organ-architecture-section,
+      .culprits-wrapper,
+      .calorie-breakdown-section,
+      .ingredient-audit-section {
+        margin-bottom: 32px !important;
+      }
+
+      /* Section 1 Macro & Organ Cards */
+      .macro-ribbon-card {
+        padding: 14px 16px;
+        margin-bottom: 16px;
+      }
+
+      .macro-legend-pills {
+        gap: 6px;
+      }
+
+      .macro-dot-pill {
+        font-size: 12px;
+        padding: 4px 9px;
+      }
+
+      .organ-panel-header {
+        padding: 12px 16px;
+      }
+
+      .organ-panel-title {
+        font-size: 17px;
+      }
+
+      .organ-gauges-stack {
+        padding: 4px 16px 12px 16px;
+      }
+
+      .gauge-header-row {
+        flex-wrap: wrap;
+        gap: 4px 8px;
+      }
+
+      .gauge-title,
+      .gauge-amount {
+        font-size: 15px;
+      }
+
+      .gauge-limit-legend {
+        font-size: 12.5px;
+        flex-wrap: wrap;
+      }
+
+      /* Section 2 Culprits */
+      .culprit-takeaway-banner {
+        padding: 13px 16px;
+        font-size: 14.5px;
+        margin-bottom: 16px;
+      }
+
+      .axis-selector-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+
+      .axis-selector-label {
+        grid-column: 1 / -1;
+        margin: 0;
+        font-size: 12.5px;
+      }
+
+      .axis-chip {
+        min-height: 44px;
+        padding: 8px 10px;
+        font-size: 12.5px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .driver-analytics-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 16px;
+      }
+
+      .chart-container-donut svg {
+        width: 184px;
+        height: 184px;
+      }
+
+      .donut-center-pct {
+        font-size: 26px;
+      }
+
+      .driver-list-row {
+        grid-template-columns: 12px 1fr auto;
+        grid-template-areas:
+          "dot name pct"
+          "bar bar badge";
+        gap: 6px 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #f2f2f7;
+      }
+
+      .driver-list-row:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .driver-list-row .color-swatch-dot {
+        grid-area: dot;
+      }
+
+      .driver-list-row .driver-name-text {
+        grid-area: name;
+        white-space: normal;
+        font-size: 14px;
+        line-height: 1.3;
+      }
+
+      .driver-list-row .driver-pct-val {
+        grid-area: pct;
+        font-size: 14px;
+      }
+
+      .driver-list-row .driver-bar-track {
+        grid-area: bar;
+      }
+
+      .driver-list-row .driver-class-badge {
+        grid-area: badge;
+        font-size: 11px;
+        padding: 2px 7px;
+      }
+
+      /* Section 3 Calorie Card */
+      .calorie-breakdown-card {
+        padding: 14px 16px;
+      }
+
+      .calorie-math-bar {
+        padding: 10px 12px;
+        font-size: 13.5px;
+        gap: 6px 8px;
+      }
+
+      .calorie-legend-strip {
+        font-size: 12.5px;
+        gap: 6px 12px;
+      }
+
+      /* Responsive Table-to-Card Mode for Audit, Calorie, Limits & Benchmarks */
+      .mobile-cards-wrap {
+        border: none !important;
+        background: transparent !important;
+        overflow: visible !important;
+        border-radius: 0 !important;
+      }
+
+      table.mobile-cards-table,
+      table.mobile-cards-table thead,
+      table.mobile-cards-table tbody,
+      table.mobile-cards-table tfoot,
+      table.mobile-cards-table tr,
+      table.mobile-cards-table th,
+      table.mobile-cards-table td {
+        display: block;
+        width: 100%;
+      }
+
+      table.mobile-cards-table thead {
+        display: none;
+      }
+
+      table.mobile-cards-table tbody,
+      table.mobile-cards-table tfoot {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      table.mobile-cards-table tfoot {
+        margin-top: 10px;
+      }
+
+      table.mobile-cards-table tbody tr,
+      table.mobile-cards-table tfoot tr {
+        border: 1px solid var(--border-subtle);
+        border-radius: 12px;
+        padding: 12px 14px;
+        background: #ffffff;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px 12px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02);
+      }
+
+      table.mobile-cards-table tbody tr.row-excluded {
+        background: #fafafa;
+        opacity: 0.78;
+      }
+
+      table.mobile-cards-table tbody tr.row-frying-injected {
+        background: #fff9f0;
+        border-color: #f5d89a;
+      }
+
+      table.mobile-cards-table tfoot tr.table-totals-row {
+        background: #f5f5f7;
+        border-color: #d2d2d7;
+      }
+
+      table.mobile-cards-table tfoot tr.table-perserving-row {
+        background: #f0f7ff;
+        border-color: #c6defe;
+      }
+
+      table.mobile-cards-table td {
+        padding: 2px 0;
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+        font-size: 13.5px;
+        overflow-wrap: anywhere;
+      }
+
+      table.mobile-cards-table td.card-primary-cell {
+        grid-column: 1 / -1;
+        padding: 0 0 8px 0;
+        border-bottom: 1px solid #f2f2f7;
+        font-size: 14.5px;
+        font-weight: 700;
+      }
+
+      table.mobile-cards-table td.card-span-cell {
+        grid-column: 1 / -1;
+        padding: 4px 0 0 0;
+        border-top: 1px dashed #ececf1;
+      }
+
+      table.mobile-cards-table td[data-label]:not(.card-primary-cell)::before {
+        content: attr(data-label);
+        font-size: 10.5px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--text-muted);
+      }
+
+      table.d3-benchmarks-cards tbody tr {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      /* Scroll Hint & Contained Scroll for Multi-Col Sortable Tables */
+      .table-scroll-hint {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 11.5px;
+        font-weight: 600;
+        color: var(--text-muted);
+        background: #f5f5f7;
+        border: 1px solid var(--border-subtle);
+        border-radius: 999px;
+        padding: 3px 10px;
+        margin-bottom: 8px;
+      }
+
+      .data-table-container:not(.mobile-cards-wrap) table.data-table th,
+      .data-table-container:not(.mobile-cards-wrap) table.data-table td {
+        padding: 9px 10px;
+        font-size: 12.5px;
+      }
+
+      /* D1, D2, D3 Tab Headers, Cards & Grids */
+      .tab-hero-block {
+        margin-bottom: 20px !important;
+      }
+
+      .tab-hero-title {
+        font-size: 23px !important;
+        line-height: 1.2 !important;
+      }
+
+      .tab-hero-desc {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+      }
+
+      .d1-meta-pill {
+        display: inline-block;
+        font-size: 12px;
+        padding: 5px 11px;
+        white-space: normal;
+        text-align: left;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+      }
+
+      .d1-step-heading {
+        font-size: 18.5px;
+        line-height: 1.25;
+      }
+
+      .d1-step-desc {
+        font-size: 14px;
+        margin-bottom: 14px;
+      }
+
+      .d1-card-head {
+        padding: 12px 14px;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .d1-card-body {
+        padding: 14px;
+      }
+
+      .setting-defs-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .paired-dish-row {
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+          "label val"
+          "track track";
+        gap: 4px 10px;
+        margin-bottom: 10px;
+      }
+
+      .paired-dish-label {
+        grid-area: label;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+        line-height: 1.3;
+      }
+
+      .paired-dish-row .spectrum-track {
+        grid-area: track;
+      }
+
+      .paired-dish-val {
+        grid-area: val;
+      }
+
+      .lab-toolbar-row {
+        padding: 12px;
+        gap: 10px;
+      }
+
+      .lab-select-group {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .lab-select {
+        flex: 1;
+        min-height: 44px;
+        height: 44px;
+      }
+
+      .lab-search-input {
+        width: 100%;
+        min-width: 0;
+        min-height: 44px;
+        height: 44px;
+        flex: none;
+      }
+
+      .lab-toolbar-row .bench-chip {
+        width: 100%;
+        min-height: 44px;
+        height: 44px !important;
+      }
+
+      /* D2 Horizontal Swipeable 5-Stage Strip */
+      .d2-stepper-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        padding-bottom: 6px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+      }
+
+      .d2-step-btn {
+        flex: 0 0 138px;
+        scroll-snap-align: start;
+        min-height: 76px;
+      }
+
+      .d2-indiab-strip {
+        padding: 14px;
+        gap: 12px;
+      }
+
+      .d2-indiab-metrics {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        width: 100%;
+      }
+
+      .d2-indiab-stat strong {
+        font-size: 15px !important;
+      }
+
+      .d2-indiab-stat span {
+        font-size: 11px !important;
+        line-height: 1.25;
+      }
+
+      /* D3 Figures & Filters */
+      .d3-slide-controls-bar {
+        padding: 10px 12px;
+        gap: 10px;
+      }
+
+      .figure-selector-chips {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+        width: 100%;
+      }
+
+      .figure-selector-chip {
+        min-height: 40px;
+        font-size: 12px;
+        padding: 6px 8px;
+        text-align: center;
+      }
+
+      .figure-nav-controls {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .figure-nav-btn {
+        min-height: 44px;
+        padding: 8px 16px;
+      }
+
+      .figure-stage-viewport {
+        min-height: 210px;
+        padding: 10px 12px;
+      }
+
+      .figure-stage-img {
+        max-height: 360px;
+        width: 100%;
+        height: auto;
+      }
+
+      .figure-insight-strip {
+        padding: 12px 14px;
+        font-size: 13.5px;
+      }
+
+      .d3-filter-tabs {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+      }
+
+      .d3-filter-tabs .figure-selector-chip {
+        min-height: 44px;
+        font-size: 12px;
+        padding: 6px 4px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-headline {
+        font-size: 25px;
+      }
+
+      .hero-subhead {
+        font-size: 13.5px;
+      }
+
+      .d3-mini-bar-row {
+        grid-template-columns: 98px 1fr 62px;
+        gap: 8px;
+        font-size: 12px;
+      }
+
+      .d2-indiab-metrics {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      table.d3-benchmarks-cards tbody tr {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .d2-footer-nav {
+        flex-direction: column;
+        align-items: stretch !important;
+      }
+
+      .d2-footer-nav > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      .d2-footer-nav .bench-chip {
+        min-height: 44px;
+        width: 100%;
+        text-align: center;
+      }
+    }
   </style>
 
   <!-- Pre-loaded Offline Datasets -->
@@ -2533,7 +3606,7 @@
               <input type="number" class="sub-input" style="max-width: 150px;" placeholder="Servings (4)" min="1" step="0.5" x-model.number="pasteServings">
             </div>
             <textarea class="paste-textarea" placeholder="Paste ingredient lines (one per line), e.g.:&#10;2 cups maida&#10;2 tbsp oil&#10;500 ml oil for deep frying" x-model="pasteLines"></textarea>
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 6px;">
+            <div class="paste-actions-row" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 6px;">
               <button type="button" class="bench-chip" @click="loadSamplePaste()">Fill Sample Samosa Recipe</button>
               <button class="search-btn" style="height: 42px;" :disabled="isLoading" @click="launchWithCurrent()">
                 <span x-text="isLoading ? 'Analyzing...' : 'Analyze Custom Recipe &rarr;'"></span>
@@ -2569,14 +3642,14 @@
 
           <button type="button" class="dock-card-btn dock-d1" @click="openTabDirect('d1')">
             <span class="dock-card-tag">D1 · Lab Calibration</span>
-            <span class="dock-card-title">69-Row Lab Dataset &rarr;</span>
+            <span class="dock-card-title">67-Row Lab Dataset &rarr;</span>
             <span class="dock-card-desc">Soxhlet &amp; FAME frying assays across 5 Indian settings.</span>
           </button>
 
           <button type="button" class="dock-card-btn dock-d2" @click="openTabDirect('d2')">
             <span class="dock-card-tag">D2 · Pipeline</span>
             <span class="dock-card-title">5-Stage Engine &rarr;</span>
-            <span class="dock-card-desc">Grammar parser, 4,205 IFCT aliases &amp; ICMR-NIN limits.</span>
+            <span class="dock-card-desc">Grammar parser, 4,204 IFCT aliases &amp; ICMR-NIN limits.</span>
           </button>
 
           <button type="button" class="dock-card-btn dock-d3" @click="openTabDirect('d3')">
@@ -2655,7 +3728,7 @@
           <button type="button" class="change-recipe-btn" @click="openPasteEditor()">
             Edit Lines
           </button>
-          <button type="button" class="change-recipe-btn" @click="view = 'hero'">
+          <button type="button" class="change-recipe-btn toolbar-full-span" @click="view = 'hero'">
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
             New URL / Recipe
           </button>
@@ -2763,12 +3836,13 @@
                   <div class="frying-formula-box" x-text="activeResult.frying_correction ? (activeResult.frying_correction.calculation_formula || `absorbed_fat_g = (${Math.round(activeResult.coverage.included_mass_g)}g non-oil mass / 100) * ${activeResult.frying_correction.fat_g_per_100g_lab}g/100g = ${activeResult.frying_correction.absorbed_fat_g.toFixed(2)}g`) : ''"></div>
                   <div style="font-size: 13px; color: #48484a; margin-bottom: 10px;">
                     Per serving uptake (&divide;<span x-text="servingCount"></span>):
-                    <strong x-text="`${(activeResult.frying_correction.absorbed_fat_g / servingCount).toFixed(2)}g absorbed fat`"></strong> and
-                    <strong x-text="`${(activeResult.frying_correction.absorbed_sfa_g / servingCount).toFixed(2)}g absorbed SFA`"></strong>.
-                    <span x-show="activeResult.frying_correction.fallback_reason" style="display: block; margin-top: 4px; color: #944000; font-weight: 600;" x-text="activeResult.frying_correction.fallback_reason"></span>
+                    <strong x-text="activeResult.frying_correction ? `${(activeResult.frying_correction.absorbed_fat_g / servingCount).toFixed(2)}g absorbed fat` : ''"></strong> and
+                    <strong x-text="activeResult.frying_correction ? `${(activeResult.frying_correction.absorbed_sfa_g / servingCount).toFixed(2)}g absorbed SFA` : ''"></strong>.
+                    <span x-show="activeResult.frying_correction && activeResult.frying_correction.fallback_reason" style="display: block; margin-top: 4px; color: #944000; font-weight: 600;" x-text="activeResult.frying_correction ? activeResult.frying_correction.fallback_reason : ''"></span>
                   </div>
 
-                  <template x-if="activeResult.frying_correction.matched_sources && activeResult.frying_correction.matched_sources.length">
+                  <div class="table-scroll-hint" x-show="activeResult.frying_correction && activeResult.frying_correction.matched_sources && activeResult.frying_correction.matched_sources.length">↔ Swipe table horizontally</div>
+                  <template x-if="activeResult.frying_correction && activeResult.frying_correction.matched_sources && activeResult.frying_correction.matched_sources.length">
                     <div class="data-table-container" style="margin-top: 6px;">
                       <table class="data-table" style="font-size: 12.5px;">
                         <thead>
@@ -3256,8 +4330,8 @@
                 </div>
 
                 <!-- Concise Calorie Breakdown Table -->
-                <div class="data-table-container" style="margin-top: 8px;">
-                  <table class="data-table">
+                <div class="data-table-container mobile-cards-wrap" style="margin-top: 8px;">
+                  <table class="data-table mobile-cards-table">
                     <thead>
                       <tr>
                         <th>Ingredient (1 Serving Share)</th>
@@ -3270,14 +4344,14 @@
                     <tbody>
                       <template x-for="item in calorieBreakdown.items" :key="'calrow-' + item.name">
                         <tr>
-                          <td style="font-weight: 600;">
+                          <td class="card-primary-cell" style="font-weight: 600;">
                             <span x-text="item.name"></span>
                             <span style="font-size: 12.5px; font-weight: 400; color: var(--text-muted);" x-text="item.servingMassText ? `(${item.servingMassText})` : ''"></span>
                           </td>
-                          <td class="mono-cell" x-text="Math.round(item.potKcal).toLocaleString()"></td>
-                          <td class="mono-cell" style="font-weight: 700;" x-text="`${Math.round(item.perServingKcal)} kcal`"></td>
-                          <td class="mono-cell" x-text="`${item.pctOfRecipe.toFixed(1)}%`"></td>
-                          <td class="mono-cell">
+                          <td data-label="Whole Recipe" class="mono-cell" x-text="`${Math.round(item.potKcal).toLocaleString()} kcal`"></td>
+                          <td data-label="Portion Share" class="mono-cell" style="font-weight: 700;" x-text="`${Math.round(item.perServingKcal)} kcal`"></td>
+                          <td data-label="% of Recipe" class="mono-cell" x-text="`${item.pctOfRecipe.toFixed(1)}%`"></td>
+                          <td data-label="% of 2,240 Day" class="mono-cell">
                             <span class="badge" :class="item.pctOfDay >= 15 ? 'badge-amber' : 'badge-gray'" style="font-size: 12.5px;" x-text="`${item.pctOfDay.toFixed(1)}%`"></span>
                           </td>
                         </tr>
@@ -3285,11 +4359,11 @@
                     </tbody>
                     <tfoot>
                       <tr class="table-totals-row">
-                        <td x-text="viewMode === 'per100g' ? 'Total (Recipe → per 100g)' : (viewMode === '2x' ? `Total (${servingCount} servings → 2× portion)` : `Total (${servingCount} serving${servingCount === 1 ? '' : 's'} → 1 serving)`)"></td>
-                        <td class="mono-cell" x-text="Math.round(activeResult.totals.energy_kcal).toLocaleString()"></td>
-                        <td class="mono-cell" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal`"></td>
-                        <td class="mono-cell">100.0%</td>
-                        <td class="mono-cell" x-text="`${activeResult.footprint.axes.energy_kcal.pct_of_limit.toFixed(1)}%`"></td>
+                        <td class="card-primary-cell" x-text="viewMode === 'per100g' ? 'Total (Recipe → per 100g)' : (viewMode === '2x' ? `Total (${servingCount} servings → 2× portion)` : `Total (${servingCount} serving${servingCount === 1 ? '' : 's'} → 1 serving)`)"></td>
+                        <td data-label="Whole Recipe" class="mono-cell" x-text="Math.round(activeResult.totals.energy_kcal).toLocaleString()"></td>
+                        <td data-label="Portion Share" class="mono-cell" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal`"></td>
+                        <td data-label="% of Recipe" class="mono-cell">100.0%</td>
+                        <td data-label="% of 2,240 Day" class="mono-cell" x-text="`${activeResult.footprint.axes.energy_kcal.pct_of_limit.toFixed(1)}%`"></td>
                       </tr>
                     </tfoot>
                   </table>
@@ -3311,8 +4385,8 @@
                 </div>
               </div>
 
-              <div class="data-table-container">
-                <table class="data-table">
+              <div class="data-table-container mobile-cards-wrap">
+                <table class="data-table mobile-cards-table audit-cards-table">
                   <thead>
                     <tr>
                       <th>Raw Line</th>
@@ -3332,72 +4406,72 @@
                   <tbody>
                     <template x-for="line in activeResult.lines" :key="line.index">
                       <tr :class="{ 'row-excluded': !line.included }">
-                        <td style="font-weight: 600;" x-text="line.raw"></td>
-                        <td class="mono-cell" x-text="line.grams ? `${line.grams.toFixed(0)}g` : '—'"></td>
-                        <td class="mono-cell" x-text="line.nutrients && line.nutrients.fat_g !== null ? line.nutrients.fat_g.toFixed(1) : '—'"></td>
-                        <td class="mono-cell" style="font-weight: 700;" x-text="line.nutrients && line.nutrients.sfa_g !== null ? line.nutrients.sfa_g.toFixed(1) : '—'"></td>
-                        <td class="mono-cell" x-text="line.nutrients && line.nutrients.carb_g !== null ? line.nutrients.carb_g.toFixed(1) : '—'"></td>
-                        <td class="mono-cell" x-text="line.nutrients && line.nutrients.protein_g !== null ? line.nutrients.protein_g.toFixed(1) : '—'"></td>
-                        <td class="mono-cell" x-text="line.nutrients && line.nutrients.sodium_mg !== null ? Math.round(line.nutrients.sodium_mg) : '—'"></td>
-                        <td class="mono-cell" x-text="line.included && line.nutrients && line.nutrients.energy_kcal !== null ? `${Math.round(line.nutrients.energy_kcal)} kcal` : (line.nutrients && line.nutrients.energy_kcal ? `${Math.round(line.nutrients.energy_kcal)} (excl.)` : '—')"></td>
-                        <td class="mono-cell" style="font-weight: 700;" x-text="line.included && line.nutrients && line.nutrients.energy_kcal !== null ? `${Math.round(line.nutrients.energy_kcal / effectiveDivisor)} kcal` : '—'"></td>
-                        <td class="mono-cell" x-text="line.included && line.nutrients && line.nutrients.energy_kcal !== null ? `${((line.nutrients.energy_kcal / effectiveDivisor) / dailyEnergyLimit * 100).toFixed(1)}%` : '—'"></td>
-                        <td class="mono-cell" style="font-size: 12.5px;">
+                        <td class="card-primary-cell" style="font-weight: 600;" x-text="line.raw"></td>
+                        <td data-label="Mass" class="mono-cell" x-text="line.grams ? `${line.grams.toFixed(0)}g` : '—'"></td>
+                        <td data-label="Fat (g)" class="mono-cell" x-text="line.nutrients && line.nutrients.fat_g !== null ? line.nutrients.fat_g.toFixed(1) : '—'"></td>
+                        <td data-label="SFA (g)" class="mono-cell" style="font-weight: 700;" x-text="line.nutrients && line.nutrients.sfa_g !== null ? line.nutrients.sfa_g.toFixed(1) : '—'"></td>
+                        <td data-label="Carbs (g)" class="mono-cell" x-text="line.nutrients && line.nutrients.carb_g !== null ? line.nutrients.carb_g.toFixed(1) : '—'"></td>
+                        <td data-label="Protein (g)" class="mono-cell" x-text="line.nutrients && line.nutrients.protein_g !== null ? line.nutrients.protein_g.toFixed(1) : '—'"></td>
+                        <td data-label="Sodium (mg)" class="mono-cell" x-text="line.nutrients && line.nutrients.sodium_mg !== null ? Math.round(line.nutrients.sodium_mg) : '—'"></td>
+                        <td data-label="Pot Energy" class="mono-cell" x-text="line.included && line.nutrients && line.nutrients.energy_kcal !== null ? `${Math.round(line.nutrients.energy_kcal)} kcal` : (line.nutrients && line.nutrients.energy_kcal ? `${Math.round(line.nutrients.energy_kcal)} (excl.)` : '—')"></td>
+                        <td data-label="Serving Energy" class="mono-cell" style="font-weight: 700;" x-text="line.included && line.nutrients && line.nutrients.energy_kcal !== null ? `${Math.round(line.nutrients.energy_kcal / effectiveDivisor)} kcal` : '—'"></td>
+                        <td data-label="% Day kcal" class="mono-cell" x-text="line.included && line.nutrients && line.nutrients.energy_kcal !== null ? `${((line.nutrients.energy_kcal / effectiveDivisor) / dailyEnergyLimit * 100).toFixed(1)}%` : '—'"></td>
+                        <td data-label="IFCT Match & Basis" class="mono-cell card-span-cell" style="font-size: 12.5px;">
                           <span x-text="line.match ? `${line.match.code} (${line.match.method} ${line.match.score.toFixed(2)})` : '—'"></span>
                           <div style="font-size: 11px; color: var(--text-muted);" x-text="line.grams_basis || ''"></div>
                         </td>
-                        <td>
+                        <td data-label="Status" class="card-span-cell">
                           <span class="badge" :class="line.included ? 'badge-blue' : 'badge-amber'" x-text="line.included ? (line.classes && line.classes.length ? line.classes[0] : 'INCLUDED') : line.exclusion_reason"></span>
                         </td>
                       </tr>
                     </template>
                     <!-- Synthetic Absorbed Frying Fat Row when Frying Bath Correction ran -->
                     <tr x-show="activeResult.frying_correction && activeResult.frying_correction.applied" class="row-frying-injected">
-                      <td>⚡ Absorbed Frying Oil (<span x-text="activeResult.frying_correction ? activeResult.frying_correction.lab_match : ''"></span>)</td>
-                      <td class="mono-cell" x-text="activeResult.frying_correction ? `${activeResult.frying_correction.absorbed_fat_g.toFixed(1)}g oil` : ''"></td>
-                      <td class="mono-cell" x-text="activeResult.frying_correction ? activeResult.frying_correction.absorbed_fat_g.toFixed(1) : ''"></td>
-                      <td class="mono-cell" x-text="activeResult.frying_correction ? activeResult.frying_correction.absorbed_sfa_g.toFixed(1) : ''"></td>
-                      <td class="mono-cell">0.0</td>
-                      <td class="mono-cell">0.0</td>
-                      <td class="mono-cell">0</td>
-                      <td class="mono-cell" x-text="`${Math.round(calorieBreakdown.fryingInjectedKcal)} kcal`"></td>
-                      <td class="mono-cell" x-text="`${Math.round(calorieBreakdown.fryingInjectedKcal / effectiveDivisor)} kcal`"></td>
-                      <td class="mono-cell" x-text="`${((calorieBreakdown.fryingInjectedKcal / effectiveDivisor) / dailyEnergyLimit * 100).toFixed(1)}%`"></td>
-                      <td class="mono-cell" style="font-size: 12.5px;">
+                      <td class="card-primary-cell">⚡ Absorbed Frying Oil (<span x-text="activeResult.frying_correction ? activeResult.frying_correction.lab_match : ''"></span>)</td>
+                      <td data-label="Mass" class="mono-cell" x-text="activeResult.frying_correction ? `${activeResult.frying_correction.absorbed_fat_g.toFixed(1)}g oil` : ''"></td>
+                      <td data-label="Fat (g)" class="mono-cell" x-text="activeResult.frying_correction ? activeResult.frying_correction.absorbed_fat_g.toFixed(1) : ''"></td>
+                      <td data-label="SFA (g)" class="mono-cell" x-text="activeResult.frying_correction ? activeResult.frying_correction.absorbed_sfa_g.toFixed(1) : ''"></td>
+                      <td data-label="Carbs (g)" class="mono-cell">0.0</td>
+                      <td data-label="Protein (g)" class="mono-cell">0.0</td>
+                      <td data-label="Sodium (mg)" class="mono-cell">0</td>
+                      <td data-label="Pot Energy" class="mono-cell" x-text="`${Math.round(calorieBreakdown.fryingInjectedKcal)} kcal`"></td>
+                      <td data-label="Serving Energy" class="mono-cell" x-text="`${Math.round(calorieBreakdown.fryingInjectedKcal / effectiveDivisor)} kcal`"></td>
+                      <td data-label="% Day kcal" class="mono-cell" x-text="`${((calorieBreakdown.fryingInjectedKcal / effectiveDivisor) / dailyEnergyLimit * 100).toFixed(1)}%`"></td>
+                      <td data-label="Lab Basis" class="mono-cell card-span-cell" style="font-size: 12.5px;">
                         <span x-text="activeResult.frying_correction ? `${activeResult.frying_correction.fat_g_per_100g_lab}g/100g` : ''"></span>
                         <div style="font-size: 11px; color: #944000;">LAB_SOXHLET_INJECTED</div>
                       </td>
-                      <td>
+                      <td data-label="Status" class="card-span-cell">
                         <span class="badge badge-amber">ABSORBED_FAT</span>
                       </td>
                     </tr>
                   </tbody>
                   <tfoot>
                     <tr class="table-totals-row">
-                      <td>Whole Recipe Total</td>
-                      <td class="mono-cell" x-text="`${Math.round(activeResult.coverage.included_mass_g)}g`"></td>
-                      <td class="mono-cell" x-text="activeResult.totals.fat_g.toFixed(1)"></td>
-                      <td class="mono-cell" x-text="activeResult.totals.sfa_g.toFixed(1)"></td>
-                      <td class="mono-cell" x-text="activeResult.totals.carb_g.toFixed(1)"></td>
-                      <td class="mono-cell" x-text="activeResult.totals.protein_g.toFixed(1)"></td>
-                      <td class="mono-cell" x-text="Math.round(activeResult.totals.sodium_mg)"></td>
-                      <td class="mono-cell" x-text="`${Math.round(activeResult.totals.energy_kcal)} kcal`"></td>
-                      <td class="mono-cell">—</td>
-                      <td class="mono-cell">—</td>
-                      <td colspan="2" style="font-size: 12.5px; color: var(--text-muted);" x-text="`Sum across ${activeResult.coverage.lines_included} included lines`"></td>
+                      <td class="card-primary-cell">Whole Recipe Total</td>
+                      <td data-label="Mass" class="mono-cell" x-text="`${Math.round(activeResult.coverage.included_mass_g)}g`"></td>
+                      <td data-label="Fat (g)" class="mono-cell" x-text="activeResult.totals.fat_g.toFixed(1)"></td>
+                      <td data-label="SFA (g)" class="mono-cell" x-text="activeResult.totals.sfa_g.toFixed(1)"></td>
+                      <td data-label="Carbs (g)" class="mono-cell" x-text="activeResult.totals.carb_g.toFixed(1)"></td>
+                      <td data-label="Protein (g)" class="mono-cell" x-text="activeResult.totals.protein_g.toFixed(1)"></td>
+                      <td data-label="Sodium (mg)" class="mono-cell" x-text="Math.round(activeResult.totals.sodium_mg)"></td>
+                      <td data-label="Pot Energy" class="mono-cell" x-text="`${Math.round(activeResult.totals.energy_kcal)} kcal`"></td>
+                      <td data-label="Serving Energy" class="mono-cell">—</td>
+                      <td data-label="% Day kcal" class="mono-cell">—</td>
+                      <td colspan="2" class="card-span-cell" style="font-size: 12.5px; color: var(--text-muted);" x-text="`Sum across ${activeResult.coverage.lines_included} included lines`"></td>
                     </tr>
                     <tr class="table-perserving-row">
-                      <td x-text="viewMode === 'per100g' ? 'Per 100g Dish' : (viewMode === '2x' ? `Double Portion (÷ ${(servingCount / 2).toFixed(1)})` : `Per Serving (÷ ${servingCount})`)"></td>
-                      <td class="mono-cell" x-text="`${displayedMassG}g`"></td>
-                      <td class="mono-cell" x-text="activeResult.per_serving.fat_g.toFixed(1)"></td>
-                      <td class="mono-cell" x-text="activeResult.per_serving.sfa_g.toFixed(1)"></td>
-                      <td class="mono-cell" x-text="activeResult.per_serving.carb_g.toFixed(1)"></td>
-                      <td class="mono-cell" x-text="activeResult.per_serving.protein_g.toFixed(1)"></td>
-                      <td class="mono-cell" x-text="Math.round(activeResult.per_serving.sodium_mg)"></td>
-                      <td class="mono-cell">—</td>
-                      <td class="mono-cell" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal`"></td>
-                      <td class="mono-cell" x-text="`${activeResult.footprint.axes.energy_kcal.pct_of_limit.toFixed(1)}%`"></td>
-                      <td colspan="2" style="font-size: 12.5px;">Compared against 24h limits in Section 1</td>
+                      <td class="card-primary-cell" x-text="viewMode === 'per100g' ? 'Per 100g Dish' : (viewMode === '2x' ? `Double Portion (÷ ${(servingCount / 2).toFixed(1)})` : `Per Serving (÷ ${servingCount})`)"></td>
+                      <td data-label="Mass" class="mono-cell" x-text="`${displayedMassG}g`"></td>
+                      <td data-label="Fat (g)" class="mono-cell" x-text="activeResult.per_serving.fat_g.toFixed(1)"></td>
+                      <td data-label="SFA (g)" class="mono-cell" x-text="activeResult.per_serving.sfa_g.toFixed(1)"></td>
+                      <td data-label="Carbs (g)" class="mono-cell" x-text="activeResult.per_serving.carb_g.toFixed(1)"></td>
+                      <td data-label="Protein (g)" class="mono-cell" x-text="activeResult.per_serving.protein_g.toFixed(1)"></td>
+                      <td data-label="Sodium (mg)" class="mono-cell" x-text="Math.round(activeResult.per_serving.sodium_mg)"></td>
+                      <td data-label="Pot Energy" class="mono-cell">—</td>
+                      <td data-label="Serving Energy" class="mono-cell" x-text="`${Math.round(activeResult.per_serving.energy_kcal)} kcal`"></td>
+                      <td data-label="% Day kcal" class="mono-cell" x-text="`${activeResult.footprint.axes.energy_kcal.pct_of_limit.toFixed(1)}%`"></td>
+                      <td colspan="2" class="card-span-cell" style="font-size: 12.5px;">Compared against 24h limits in Section 1</td>
                     </tr>
                   </tfoot>
                 </table>
@@ -3414,9 +4488,9 @@
       <div x-show="currentTab === 'd1'" x-transition.opacity.duration.150ms>
 
         <!-- Header -->
-        <div style="margin-bottom: 28px;">
-          <h2 style="font-size: 30px; font-weight: 700; margin: 0 0 8px 0; letter-spacing: -0.02em;">Curated Fried Foods Laboratory Dataset (D1)</h2>
-          <p style="font-size: 16px; color: var(--text-body); margin: 0; line-height: 1.55; max-width: 960px;">
+        <div class="tab-hero-block" style="margin-bottom: 28px;">
+          <h2 class="tab-hero-title" style="font-size: 30px; font-weight: 700; margin: 0 0 8px 0; letter-spacing: -0.02em;">Curated Fried Foods Laboratory Dataset (D1)</h2>
+          <p class="tab-hero-desc" style="font-size: 16px; color: var(--text-body); margin: 0; line-height: 1.55; max-width: 960px;">
             Published laboratory measurements of fat actually retained inside <strong>100 g of cooked fried Indian food</strong> — built so deep-fried recipes are scored by real oil uptake rather than the whole pan of frying oil.
           </p>
           <div class="d1-hero-meta">
@@ -3479,7 +4553,7 @@
                     <div style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">e.g., Samosa, Onion Pakora, Gulab Jamun</div>
                   </div>
                 </div>
-                <span class="badge badge-amber" style="font-size: 12px;">7.6&times; Overcount Avoided</span>
+                <span class="badge badge-amber" style="font-size: 12px;">5.2&times; Overcount Avoided</span>
               </div>
               <div class="d1-card-body">
                 <div style="font-size: 14.5px; color: #3a3a3c; line-height: 1.55;">
@@ -3497,11 +4571,11 @@
                   </div>
                   <div>
                     <div class="d1-bar-line-head">
-                      <span style="font-weight: 600; color: #92400e;">Lab Soxhlet uptake (486 g &times; 12.4 g/100g)</span>
-                      <span class="mono-cell" style="font-weight: 700; color: #d97706;">60.3 g</span>
+                      <span style="font-weight: 600; color: #92400e;">Lab fresh-oil uptake (486 g &times; 18.34 g/100g)</span>
+                      <span class="mono-cell" style="font-weight: 700; color: #d97706;">89.1 g</span>
                     </div>
                     <div class="d1-bar-track">
-                      <div class="d1-bar-fill" style="width: 13.1%; background: #f59e0b;"></div>
+                      <div class="d1-bar-fill" style="width: 19.4%; background: #f59e0b;"></div>
                     </div>
                   </div>
                 </div>
@@ -3510,10 +4584,10 @@
           </div>
         </div>
 
-        <!-- STEP 2: CORPUS BREAKDOWN & ALL 10 PUBLISHED STUDIES -->
+        <!-- STEP 2: CORPUS BREAKDOWN & ALL 9 PUBLISHED STUDIES -->
         <div style="margin-bottom: 36px;">
           <div class="d1-step-label">Step 2 · Corpus Breakdown &amp; Primary Sources</div>
-          <h3 class="d1-step-heading">Where the 69 measurements come from across food categories, methods, and studies</h3>
+          <h3 class="d1-step-heading">Where the 67 measurements come from across food categories, methods, and studies</h3>
           <p class="d1-step-desc">
             Every record in D1 comes verbatim from peer-reviewed Indian frying studies or national UK/Irish food-composition tables — grouped into proportional ribbons on the left and named study-by-study on the right.
           </p>
@@ -3613,6 +4687,7 @@
                 <span class="badge badge-purple" style="font-size: 12px;">Click setting in Step 3</span>
               </div>
               <div class="d1-card-body" style="padding: 10px 14px;">
+                <div class="table-scroll-hint">↔ Swipe table horizontally</div>
                 <div class="d1-study-table-wrap">
                   <table class="d1-study-table">
                     <thead>
@@ -3707,12 +4782,12 @@
                       <span class="badge badge-amber" style="font-size: 12px;" x-text="`${group.ratio}× range (${group.min.toFixed(1)}g → ${group.max.toFixed(1)}g / 100g)`"></span>
                     </div>
                     <template x-for="row in group.rows" :key="row.label + row.fat">
-                      <div style="display: grid; grid-template-columns: 235px 1fr 72px; gap: 12px; align-items: center; margin-bottom: 7px;">
-                        <span style="font-size: 13px; color: var(--text-body); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" x-text="row.label" :title="row.label"></span>
+                      <div class="paired-dish-row">
+                        <span class="paired-dish-label" x-text="row.label" :title="row.label"></span>
                         <div class="spectrum-track" style="height: 9px;">
                           <div class="spectrum-fill" :style="`width: ${Math.min((row.fat / 35) * 100, 100)}%; background-color: ${row.color};`"></div>
                         </div>
-                        <span class="mono-cell" style="font-size: 13px; font-weight: 700; text-align: right;" x-text="`${row.fat.toFixed(1)} g`"></span>
+                        <span class="mono-cell paired-dish-val" x-text="`${row.fat.toFixed(1)} g`"></span>
                       </div>
                     </template>
                   </div>
@@ -3738,7 +4813,7 @@
                 <ol style="margin: 0 0 16px 18px; padding: 0; line-height: 1.65;">
                   <li><strong>Match dish rows:</strong> Base name lookup gathers all matching entries (e.g. 5 <code>Samosa</code> rows).</li>
                   <li><strong>Filter by setting:</strong> If entries match the chosen setting (e.g. Samosa + <code>street</code> &rarr; Gupta 2016: <strong>29.4 g/100g</strong>, <strong>54.7% SFA</strong>), the engine takes their median.</li>
-                  <li><strong>Transparent fallback:</strong> If no exact row exists for that setting (e.g. Samosa has no <code>home</code> row), it falls back to the median of all matched rows (<strong>12.4 g/100g</strong>) and flags <code>fallback_used=True</code>.</li>
+                  <li><strong>Transparent fallback:</strong> If no exact row exists for that setting (e.g. Samosa has no <code>home</code> row), it falls back to the median of all matched rows (<strong>18.34 g/100g</strong>) and flags <code>fallback_used=True</code>.</li>
                 </ol>
                 <div style="display: flex; gap: 8px; flex-wrap: wrap;">
                   <button class="bench-chip" style="font-size: 13px; padding: 7px 12px; border-color: #0071e3; color: #0071e3; font-weight: 600;" @click="labOnlySamosaMatch = true; document.getElementById('d1-table-anchor')?.scrollIntoView({ behavior: 'smooth' });">
@@ -3758,7 +4833,7 @@
               Why Lab Studies Differ: Three Analytical Extraction Protocols
             </div>
             <p style="font-size: 14px; color: var(--text-muted); margin: 0 0 14px 0;">
-              These protocols come directly from the 10 source papers, explaining why Soxhlet and gas-chromatography (FAME-sum) measurements separate:
+              These protocols come directly from the 9 source papers, explaining why Soxhlet and gas-chromatography (FAME-sum) measurements separate:
             </p>
             <div class="methods-grid" style="margin-bottom: 0;">
               <div class="method-card">
@@ -3777,7 +4852,7 @@
               <div class="method-card">
                 <div class="d1-card-head head-blue">
                   <div class="method-name"><span>🔬</span> Proximate Analysis</div>
-                  <span class="badge badge-blue" style="font-size: 11.5px;">33 rows</span>
+                  <span class="badge badge-blue" style="font-size: 11.5px;">31 rows</span>
                 </div>
                 <div style="padding: 14px 16px;">
                   <div class="method-tag">UK CoFID · safefood · Controlled Trials</div>
@@ -3803,7 +4878,7 @@
           </div>
         </div>
 
-        <!-- STEP 4: AUDITABLE 69-ROW LAB APPENDIX TABLE -->
+        <!-- STEP 4: AUDITABLE 67-ROW LAB APPENDIX TABLE -->
         <div id="d1-table-anchor" style="margin-bottom: 24px;">
           <div class="d1-step-label">Step 4 · Auditable Source Appendix</div>
           <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 10px;">
@@ -3851,7 +4926,8 @@
             </button>
           </div>
 
-          <!-- 69-Row Sortable Table -->
+          <!-- 67-Row Sortable Table -->
+          <div class="table-scroll-hint">↔ Swipe table horizontally · Tap Fat / SFA / n to sort</div>
           <div class="data-table-container">
             <table class="data-table">
               <thead>
@@ -3921,14 +4997,14 @@
       <div x-show="currentTab === 'd2'" x-transition.opacity.duration.150ms>
 
         <!-- Header -->
-        <div style="margin-bottom: 28px;">
-          <h2 style="font-size: 30px; font-weight: 700; margin: 0 0 8px 0; letter-spacing: -0.02em;">How the 5-Stage Engine Works (D2)</h2>
-          <p style="font-size: 16px; color: var(--text-body); margin: 0; line-height: 1.55; max-width: 960px;">
+        <div class="tab-hero-block" style="margin-bottom: 28px;">
+          <h2 class="tab-hero-title" style="font-size: 30px; font-weight: 700; margin: 0 0 8px 0; letter-spacing: -0.02em;">How the 5-Stage Engine Works (D2)</h2>
+          <p class="tab-hero-desc" style="font-size: 16px; color: var(--text-body); margin: 0; line-height: 1.55; max-width: 960px;">
             Zero black-box guessing. Every recipe follows five transparent deterministic steps — click any stage below to see its rules and live input-to-output trace on <strong>Samosa</strong>.
           </p>
           <div class="d1-hero-meta">
             <span class="d1-meta-pill">⚙️ 5 Python stages (<code>parse → match → grams → frying → footprint</code>)</span>
-            <span class="d1-meta-pill">🗄️ 746 nutrition rows · 4,179 aliases · 243 measure rules</span>
+            <span class="d1-meta-pill">🗄️ 746 nutrition rows · 4,204 aliases · 243 measure rules</span>
             <span class="d1-meta-pill">🥟 Verified walkthrough: <code>demo/samosa_test.json</code></span>
           </div>
         </div>
@@ -4016,7 +5092,7 @@
               </div>
 
               <!-- Footer Navigation inside Inspector -->
-              <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border-divider); flex-wrap: wrap; gap: 10px;">
+              <div class="d2-footer-nav" style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border-divider); flex-wrap: wrap; gap: 10px;">
                 <div style="display: flex; gap: 8px;">
                   <button type="button" class="bench-chip" style="font-size: 13px; padding: 6px 12px;"
                           :disabled="d2ActiveStage === 0"
@@ -4099,10 +5175,10 @@
                   </span>
                   <div>
                     <div>Heart Footprint (CVD Load)</div>
-                    <div style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">GBD / Sci Rep (2023)</div>
+                    <div style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">World Heart Obs. / IHME GBD 2021</div>
                   </div>
                 </div>
-                <span class="badge badge-red" style="font-size: 12px;">28% of Indian Deaths</span>
+                <span class="badge badge-red" style="font-size: 12px;">26.6% of Indian Deaths</span>
               </div>
               <div class="d1-card-body">
                 <div style="font-size: 14px; color: #3a3a3c; line-height: 1.5;">
@@ -4169,8 +5245,8 @@
               </div>
               <span class="badge badge-blue" style="font-size: 12px;">baselines.csv</span>
             </div>
-            <div class="data-table-container" style="border: none; border-radius: 0; box-shadow: none;">
-              <table class="data-table">
+            <div class="data-table-container mobile-cards-wrap" style="border: none; border-radius: 0; box-shadow: none;">
+              <table class="data-table mobile-cards-table d2-limits-cards">
                 <thead>
                   <tr>
                     <th>Nutrient Axis</th>
@@ -4181,46 +5257,46 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td style="font-weight: 700;">Saturated Fatty Acids (General)</td>
-                    <td class="mono-cell">24.9 g / day</td>
-                    <td>&lt;10.0% of 2,240 kcal &divide; 9 kcal/g (ICMR-NIN RDA / WHO 2023)</td>
-                    <td><span class="badge badge-blue">Liver + Heart</span></td>
+                    <td class="card-primary-cell" style="font-weight: 700;">Saturated Fatty Acids (General)</td>
+                    <td data-label="Daily Limit" class="mono-cell">24.9 g / day</td>
+                    <td data-label="Derivation" class="card-span-cell">&lt;10.0% of 2,240 kcal &divide; 9 kcal/g (ICMR-NIN RDA / WHO 2023)</td>
+                    <td data-label="Target Organ"><span class="badge badge-blue">Liver + Heart</span></td>
                   </tr>
                   <tr>
-                    <td style="font-weight: 700;">Saturated Fatty Acids (High-Risk)</td>
-                    <td class="mono-cell">17.4 g / day</td>
-                    <td>&lt;7.0% of 2,240 kcal &divide; 9 kcal/g (AHA/ACC 2023 / ICMR-NIN DGI 2024)</td>
-                    <td><span class="badge badge-blue">Liver + Heart</span></td>
+                    <td class="card-primary-cell" style="font-weight: 700;">Saturated Fatty Acids (High-Risk)</td>
+                    <td data-label="Daily Limit" class="mono-cell">17.4 g / day</td>
+                    <td data-label="Derivation" class="card-span-cell">&lt;7.0% of 2,240 kcal &divide; 9 kcal/g (AHA/ACC 2023 / ICMR-NIN DGI 2024)</td>
+                    <td data-label="Target Organ"><span class="badge badge-blue">Liver + Heart</span></td>
                   </tr>
                   <tr>
-                    <td style="font-weight: 700;">Total Dietary Fat</td>
-                    <td class="mono-cell">74.7 g / day</td>
-                    <td>30.0% of 2,240 kcal &divide; 9 kcal/g (ICMR-NIN DGI 2024 Guideline 6)</td>
-                    <td><span class="badge badge-red">Heart</span></td>
+                    <td class="card-primary-cell" style="font-weight: 700;">Total Dietary Fat</td>
+                    <td data-label="Daily Limit" class="mono-cell">74.7 g / day</td>
+                    <td data-label="Derivation" class="card-span-cell">30.0% of 2,240 kcal &divide; 9 kcal/g (ICMR-NIN DGI 2024 Guideline 6)</td>
+                    <td data-label="Target Organ"><span class="badge badge-red">Heart</span></td>
                   </tr>
                   <tr>
-                    <td style="font-weight: 700;">Added Free Sugars</td>
-                    <td class="mono-cell">25.0 g / day</td>
-                    <td>&lt;5% energy conditional cap (ICMR-NIN DGI 2024 Guideline 7 / WHO)</td>
-                    <td><span class="badge badge-amber">Liver</span></td>
+                    <td class="card-primary-cell" style="font-weight: 700;">Added Free Sugars</td>
+                    <td data-label="Daily Limit" class="mono-cell">25.0 g / day</td>
+                    <td data-label="Derivation" class="card-span-cell">&lt;5% energy conditional cap (ICMR-NIN DGI 2024 Guideline 7 / WHO)</td>
+                    <td data-label="Target Organ"><span class="badge badge-amber">Liver</span></td>
                   </tr>
                   <tr>
-                    <td style="font-weight: 700;">Sodium (Na)</td>
-                    <td class="mono-cell">1,967 mg / day</td>
-                    <td>5.0 g salt/day &times; 393.4 mg Na/g NaCl (ICMR-NIN Guideline 8 / WHO)</td>
-                    <td><span class="badge badge-red">Heart</span></td>
+                    <td class="card-primary-cell" style="font-weight: 700;">Sodium (Na)</td>
+                    <td data-label="Daily Limit" class="mono-cell">1,967 mg / day</td>
+                    <td data-label="Derivation" class="card-span-cell">5.0 g salt/day &times; 393.4 mg Na/g NaCl (ICMR-NIN Guideline 8 / WHO)</td>
+                    <td data-label="Target Organ"><span class="badge badge-red">Heart</span></td>
                   </tr>
                   <tr>
-                    <td style="font-weight: 700;">Total Energy (Urban / Rural)</td>
-                    <td class="mono-cell">2,240 / 2,212 kcal</td>
-                    <td>NSO HCES 2022–24 per-capita daily intake (published July 2025)</td>
-                    <td><span class="badge badge-blue">Liver + Heart</span></td>
+                    <td class="card-primary-cell" style="font-weight: 700;">Total Energy (Urban / Rural)</td>
+                    <td data-label="Daily Limit" class="mono-cell">2,240 / 2,212 kcal</td>
+                    <td data-label="Derivation" class="card-span-cell">NSO HCES 2022–24 per-capita daily intake (published July 2025)</td>
+                    <td data-label="Target Organ"><span class="badge badge-blue">Liver + Heart</span></td>
                   </tr>
                   <tr>
-                    <td style="font-weight: 700;">Refined Starches (Maida / White Rice)</td>
-                    <td class="mono-cell">No standalone cap</td>
-                    <td>Tracked in raw grams + % of dish calories (<code>REFINED_GRAIN</code> class)</td>
-                    <td><span class="badge badge-amber">Liver</span></td>
+                    <td class="card-primary-cell" style="font-weight: 700;">Refined Starches (Maida / White Rice)</td>
+                    <td data-label="Daily Limit" class="mono-cell">No standalone cap</td>
+                    <td data-label="Derivation" class="card-span-cell">Tracked in raw grams + % of dish calories (<code>REFINED_GRAIN</code> class)</td>
+                    <td data-label="Target Organ"><span class="badge badge-amber">Liver</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -4253,7 +5329,7 @@
                   <div class="d2-source-item"><strong>3. ICMR-NIN DGI 2024 &amp; NSO HCES 2022–24:</strong> Adult energy (2,240 kcal urban) and daily risk thresholds.</div>
                   <div class="d2-source-item"><strong>4. Gupta et al. (2016):</strong> Soxhlet lipid extraction across 21 Delhi street foods.</div>
                   <div class="d2-source-item"><strong>5. UK CoFID (2021) &amp; safefood (2015):</strong> Proximate lab analyses for home, restaurant, and retail dishes.</div>
-                  <div class="d2-source-item"><strong>6. Joshee (2019), Neethu (2025) &amp; 5 Trials:</strong> GC-FID fatty-acid profiles and controlled frying measurements.</div>
+                  <div class="d2-source-item"><strong>6. Joshee (2019), Jain (2024) &amp; 4 Trials:</strong> GC-FID fatty-acid profiles and controlled Indian frying trials (Chen, Sakhale, Yadav, Gaikwad).</div>
                   <div class="d2-source-item"><strong>7. ICMR-INDIAB-21 &amp; Phenome India (2026):</strong> National fat/carb baseline and 38.9% adult MASLD prevalence.</div>
                 </div>
               </div>
@@ -4302,9 +5378,9 @@
       <div x-show="currentTab === 'd3'" x-transition.opacity.duration.150ms>
 
         <!-- Header -->
-        <div style="margin-bottom: 28px;">
-          <h2 style="font-size: 30px; font-weight: 700; margin: 0 0 8px 0; letter-spacing: -0.02em;">Indian Dish Footprint Atlas (D3)</h2>
-          <p style="font-size: 16px; color: var(--text-body); margin: 0; line-height: 1.55; max-width: 960px;">
+        <div class="tab-hero-block" style="margin-bottom: 28px;">
+          <h2 class="tab-hero-title" style="font-size: 30px; font-weight: 700; margin: 0 0 8px 0; letter-spacing: -0.02em;">Indian Dish Footprint Atlas (D3)</h2>
+          <p class="tab-hero-desc" style="font-size: 16px; color: var(--text-body); margin: 0; line-height: 1.55; max-width: 960px;">
             Macro-scale audit across <strong>1,014 INDB textbook recipes</strong> and <strong>71 popular web recipes</strong> showing which food categories breach limits fastest, what fats drive saturated fat, and how online portals inflate fat &amp; SFA.
           </p>
           <div class="d1-hero-meta">
@@ -4542,6 +5618,7 @@
               </div>
               <span class="badge badge-green" style="font-size: 12px;">103 Deep-Frying Corrected</span>
             </div>
+            <div class="table-scroll-hint" style="margin: 10px 14px 4px;">↔ Swipe table horizontally</div>
             <div class="data-table-container" style="border: none; border-radius: 0; box-shadow: none;">
               <table class="data-table atlas-table">
                 <thead>
@@ -4619,8 +5696,8 @@
               </div>
             </div>
 
-            <div class="data-table-container" style="border: none; border-radius: 0; box-shadow: none;">
-              <table class="data-table atlas-table">
+            <div class="data-table-container mobile-cards-wrap" style="border: none; border-radius: 0; box-shadow: none;">
+              <table class="data-table atlas-table mobile-cards-table d3-benchmarks-cards">
                 <thead>
                   <tr>
                     <th>Dish Name (INDB / Web)</th>
@@ -4636,28 +5713,28 @@
                 <tbody>
                   <template x-for="dish in filteredWebBenchmarks" :key="dish.dish">
                     <tr :style="dish.web_frying_unquantified === 'True' ? 'background: #fffcf5;' : ''">
-                      <td>
+                      <td class="card-primary-cell">
                         <div style="font-weight: 700;" x-text="formatDishName(dish.dish)"></div>
                         <div style="font-size: 12px; color: #6e6e73;" x-text="`INDB n=${dish.indb_recipes_count} vs Web n=${dish.web_recipes_count}`"></div>
                         <template x-if="dish.web_frying_unquantified === 'True'">
                           <span class="badge badge-amber" style="margin-top: 4px; font-size: 11px;">Unquantified Web Fry Oil</span>
                         </template>
                       </td>
-                      <td class="mono-cell" x-text="`${parseFloat(dish.indb_fat_g).toFixed(1)}g`"></td>
-                      <td class="mono-cell" x-text="`${parseFloat(dish.web_fat_g).toFixed(1)}g`"></td>
-                      <td class="mono-cell">
+                      <td data-label="INDB Fat" class="mono-cell" x-text="`${parseFloat(dish.indb_fat_g).toFixed(1)}g`"></td>
+                      <td data-label="Web Fat" class="mono-cell" x-text="`${parseFloat(dish.web_fat_g).toFixed(1)}g`"></td>
+                      <td data-label="Fat Ratio" class="mono-cell">
                         <span :class="dish.web_frying_unquantified === 'True' ? 'badge badge-amber' : (parseFloat(dish.fat_inflation_ratio) > 1.2 ? 'badge badge-red' : (parseFloat(dish.fat_inflation_ratio) < 0.85 ? 'badge badge-green' : 'badge badge-gray'))"
                               style="font-weight: 700;"
                               x-text="`${parseFloat(dish.fat_inflation_ratio).toFixed(2)}×`"></span>
                       </td>
-                      <td class="mono-cell" x-text="`${parseFloat(dish.indb_sfa_g).toFixed(1)}g`"></td>
-                      <td class="mono-cell" x-text="`${parseFloat(dish.web_sfa_g).toFixed(1)}g`"></td>
-                      <td class="mono-cell">
+                      <td data-label="INDB SFA" class="mono-cell" x-text="`${parseFloat(dish.indb_sfa_g).toFixed(1)}g`"></td>
+                      <td data-label="Web SFA" class="mono-cell" x-text="`${parseFloat(dish.web_sfa_g).toFixed(1)}g`"></td>
+                      <td data-label="SFA Ratio" class="mono-cell">
                         <span :class="dish.web_frying_unquantified === 'True' ? 'badge badge-amber' : (parseFloat(dish.sfa_inflation_ratio) > 1.25 ? 'badge badge-red' : (parseFloat(dish.sfa_inflation_ratio) < 0.85 ? 'badge badge-green' : 'badge badge-gray'))"
                               style="font-weight: 700;"
                               x-text="`${parseFloat(dish.sfa_inflation_ratio).toFixed(2)}×`"></span>
                       </td>
-                      <td style="font-size: 13px; color: #3a3a3c; line-height: 1.5;" x-text="getInflationNote(dish.dish)"></td>
+                      <td data-label="Audit Finding" class="card-span-cell" style="font-size: 13px; color: #3a3a3c; line-height: 1.5;" x-text="getInflationNote(dish.dish)"></td>
                     </tr>
                   </template>
                 </tbody>
@@ -4671,6 +5748,26 @@
 
 
     </main>
+
+    <!-- One-Thumb Mobile Bottom Tab Dock (<= 768px Only) -->
+    <nav class="mobile-bottom-dock" aria-label="Deliverables Navigation">
+      <button type="button" class="mobile-dock-btn" :class="{ 'active': currentTab === 'd4' }" @click="switchTabMobile('d4')">
+        <span class="mobile-dock-icon">🫀</span>
+        <span class="mobile-dock-label">D4 · Live</span>
+      </button>
+      <button type="button" class="mobile-dock-btn" :class="{ 'active': currentTab === 'd1' }" @click="switchTabMobile('d1')">
+        <span class="mobile-dock-icon">🧪</span>
+        <span class="mobile-dock-label">D1 · Lab</span>
+      </button>
+      <button type="button" class="mobile-dock-btn" :class="{ 'active': currentTab === 'd2' }" @click="switchTabMobile('d2')">
+        <span class="mobile-dock-icon">⚙️</span>
+        <span class="mobile-dock-label">D2 · Engine</span>
+      </button>
+      <button type="button" class="mobile-dock-btn" :class="{ 'active': currentTab === 'd3' }" @click="switchTabMobile('d3')">
+        <span class="mobile-dock-icon">📊</span>
+        <span class="mobile-dock-label">D3 · Atlas</span>
+      </button>
+    </nav>
   </div>
 
   <!-- Application Logic (Alpine.js) -->
@@ -4730,7 +5827,7 @@
             accent: '#7c3aed',
             rules: [
               { title: '746 Unified Entries', text: '542 IFCT 2017 Indian foods + 144 INDB UK + 54 INDB US + 6 Amul retail dairy labels (L901–L906).' },
-              { title: '4,179 Culinary Aliases', text: 'Maps Indian terms deterministically (paneer → L903, ghee → T013, cooking oil → T508).' },
+              { title: '4,204 Culinary Aliases', text: 'Maps Indian terms deterministically (paneer → L903, ghee → T013, cooking oil → T508).' },
               { title: 'Strict 0.85 Fuzzy Gate', text: 'Only matches ≥ 0.85 sequence similarity count; ambiguous strings stay UNMAPPED cleanly.' }
             ],
             traces: [
@@ -4777,7 +5874,7 @@
             ],
             traces: [
               { input: 'Pan Bath Excluded', tag: '−460.0 g REMOVED', badgeClass: 'badge-red', output: 'Removes 459.5 g fat / 4,135 unconsumed kcal' },
-              { input: 'Auto (5-row dish median)', tag: '+60.3 g FAT', badgeClass: 'badge-amber', output: '486.0 g food × 12.4 g/100g → 29.6 g SFA' },
+              { input: 'Auto (5-row dish median)', tag: '+89.1 g FAT', badgeClass: 'badge-amber', output: '486.0 g food × 18.34 g/100g → 43.8 g SFA' },
               { input: 'Street Setting (Gupta 2016)', tag: '+142.9 g FAT', badgeClass: 'badge-amber', output: '486.0 g food × 29.4 g/100g → 78.1 g SFA' }
             ]
           },
@@ -4797,8 +5894,8 @@
               { title: 'Honest Guardrails', text: 'Surfaces warnings for unquantified salt, implausible gram totals, or missing serving counts.' }
             ],
             traces: [
-              { input: 'Saturated Fat (1 samosa, Auto)', tag: '16.7% DAY', badgeClass: 'badge-amber', output: '4.2 g of 24.9 g daily ceiling (11.3 g total fat = 15.2%)' },
-              { input: 'Energy & Refined Starch', tag: '10.0% DAY', badgeClass: 'badge-blue', output: '223.9 kcal · 22.3 g refined maida starch' },
+              { input: 'Saturated Fat (1 samosa, Auto)', tag: '23.9% DAY', badgeClass: 'badge-amber', output: '5.9 g of 24.9 g daily ceiling (14.9 g total fat = 20.0%)' },
+              { input: 'Energy & Refined Starch', tag: '11.4% DAY', badgeClass: 'badge-blue', output: '256.4 kcal · 22.3 g refined maida starch' },
               { input: 'Added Sugar & Sodium', tag: 'LOW / LOWER BOUND', badgeClass: 'badge-green', output: '0.0 g sugar · 15.6 mg* Na (salt unquantified)' }
             ]
           }
@@ -4820,7 +5917,7 @@
             src: '/static/figures/fig2_culprit_decomposition.png',
             chipLabel: '2 · Lipid Culprits',
             badge: 'SFA Decomposition',
-            insight: 'Dairy fat (ghee, butter, khoya, paneer) drives 63.6% of all saturated fat in Sweets & Desserts and 45.3% in Soups & Stews. Added cooking oil (plus Soxhlet frying absorption) dominates Breads & Flatbreads (58.2%), Vegetables & Sabzis (51.7%), Dals & Legumes tadka (50.4%), and Snacks & Street Food (46.0%). In Curries & Gravies, saturated fat splits across inherent food lipids (45.4%, meats/paneer base), cooking oil (38.1%), and dairy fat (16.5%).'
+            insight: 'Dairy fat (ghee, butter, khoya, paneer) drives 63.6% of all saturated fat in Sweets & Desserts and 45.3% in Soups & Stews. Added cooking oil (plus Soxhlet frying absorption) dominates Breads & Flatbreads (58.2%), Vegetables & Sabzis (51.7%), Dals & Legumes tadka (50.4%), and Snacks & Street Food (46.3%). In Curries & Gravies, saturated fat splits across inherent food lipids (45.4%, meats/paneer base), cooking oil (38.1%), and dairy fat (16.5%).'
           },
           {
             id: 4,
@@ -4838,7 +5935,7 @@
             src: '/static/figures/fig3_textbook_vs_web_inflation.png',
             chipLabel: '4 · Textbook vs. Web',
             badge: 'Cross-Setting Shift',
-            insight: 'Across the 12 comparable benchmarks (excluding the 3 shaded deep-fried rows), web recipes show 1.10× median fat inflation and 1.18× SFA inflation — driven by heavy ghee/cream finishing in Vegetable Pulao (4.01× SFA: 1.84g → 7.36g), Chicken Biryani vs. INDB mutton/veg biryani (3.54× SFA: 2.66g → 9.44g), Chole (2.97× SFA), and Sarson ka Saag (1.77× fat). Meanwhile, Samosa (0.25×), Onion Pakora (0.10×), and Gulab Jamun (0.06×) drop artificially online because web blogs write "oil for deep frying" without quantities, preventing Soxhlet oil injection on 0/71 web recipes.'
+            insight: 'Across the 12 comparable benchmarks (excluding the 3 shaded deep-fried rows), web recipes show 1.10× median fat inflation and 1.18× SFA inflation — driven by heavy ghee/cream finishing in Vegetable Pulao (4.01× SFA: 1.84g → 7.36g), Chicken Biryani vs. INDB mutton/veg biryani (3.54× SFA: 2.66g → 9.44g), Chole (2.97× SFA), and Sarson ka Saag (1.77× fat). Meanwhile, Samosa (0.19×), Onion Pakora (0.10×), and Gulab Jamun (0.08×) drop artificially online because web blogs write "oil for deep frying" without quantities, preventing Soxhlet oil injection on 0/71 web recipes.'
           }
         ],
         nextFigure() {
@@ -5032,6 +6129,11 @@
           this.currentTab = tabName;
           this.view = 'app';
           window.scrollTo({ top: 0, behavior: 'smooth' });
+        },
+
+        switchTabMobile(tabName) {
+          this.currentTab = tabName;
+          window.scrollTo(0, 0);
         },
 
         loadDemo(key) {

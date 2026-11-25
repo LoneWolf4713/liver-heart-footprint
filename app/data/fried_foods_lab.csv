@@ -45,14 +45,12 @@ Puri (Wholemeal flour),flat dough,lab-controlled,Vegetable oil,15.6,,proximate,6
 Bread Pakora,battered fritter,street,Refined oil (cycle 1),18.1,27.46,proximate,3,Jain 2024,Table 1,Delhi street snack fresh cycle analysis
 Mathri,crisp namkeen,street,Refined oil (cycle 1),21.8,23.81,proximate,3,Jain 2024,Table 1,Traditional flaky pastry fresh cycle analysis
 Poori,flat dough,lab-controlled,Refined oil (cycle 1),16.88,22.1,proximate,3,Jain 2024,Table 1,Poori fresh cycle analysis (converted from dry basis 22.5% at 25% moisture)
-Samosa (Control),stuffed pastry,lab-controlled,Groundnut oil,12.4,,proximate,3,Sakhale 2011,Table 2,Standard wheat casing control samosa
-Samosa (Modified casing),stuffed pastry,lab-controlled,Groundnut oil,8.97,,proximate,3,Sakhale 2011,Table 2,Hydrocolloid casing modified samosa (mean 8.56-9.38)
-Poori (Control),flat dough,lab-controlled,Refined sunflower oil,21.4,,proximate,5,Yadav 2012,Table 3,Control deep fat fried poori
-Poori (Fibre added),flat dough,lab-controlled,Refined sunflower oil,17.12,,proximate,5,Yadav 2012,Table 3,Poori with 11g oat bran + 3g wheat bran
-Fried Papad (Control sun-dried),crisp namkeen,lab-controlled,Refined oil,11.4,,proximate,3,Gaikwad 2022,Table 2,Traditional sun-dried deep fried black gram papad
-Fried Papad (MAHD dried),crisp namkeen,lab-controlled,Refined oil,7.9,,proximate,3,Gaikwad 2022,Table 4,Microwave-assisted hot air dried fried papad
-Pantoa / Gulab Jamun (Ghee),syrup-soaked sweet,lab-controlled,Desi Ghee,14.8,65.0,proximate,3,Neethu 2025,Table 1,Immersion fried dairy sweet in clarified butter
-Pantoa / Gulab Jamun (Sunflower oil),syrup-soaked sweet,lab-controlled,Sunflower oil,23.6,11.5,proximate,3,Neethu 2025,Table 1,Immersion fried dairy sweet in sunflower oil
+Samosa (Control),stuffed pastry,lab-controlled,Groundnut oil,18.34,,proximate,3,Sakhale 2011,Table 2,PMC3551041 control wheat-casing samosa (derived consistently across 4 hydrocolloid reductions)
+Samosa (Modified casing),stuffed pastry,lab-controlled,Groundnut oil,8.56,,proximate,3,Sakhale 2011,Table 2,PMC3551041 1.5% xanthan gum casing (53.32% uptake reduction vs control)
+Poori (Control),flat dough,lab-controlled,Refined sunflower oil,21.4,,proximate,5,Yadav 2012,Table 3,PMC3550836 control deep-fat fried poori (21.4 +/- 0.10 g/100g)
+Poori (Fibre added),flat dough,lab-controlled,Refined sunflower oil,16.5,,proximate,5,Yadav 2012,Table 3,PMC3550836 optimized poori with 3g wheat bran + 11g oat bran (16.5 +/- 0.12 g/100g)
+Fried Papad (Control sun-dried),crisp namkeen,lab-controlled,Refined oil,30.02,,proximate,3,Gaikwad 2022,Table 2,PMC8814218 sun-dried deep-fried black gram papad (30.02 +/- 0.25%)
+Fried Papad (MAHD dried),crisp namkeen,lab-controlled,Refined oil,7.9,,proximate,3,Gaikwad 2022,Table 4,PMC8814218 microwave-assisted hot air dried papad (7.90 +/- 0.02%)
 Samosa,stuffed pastry,restaurant-takeaway,Mixed/Unknown,7.71,42.1,FAME-sum,3,Joshee 2019,Table 2,GC fatty acid sum (midpoint of 6.75-8.67)
 Bhaji,battered fritter,street,Mixed/Unknown,7.15,38.5,FAME-sum,3,Joshee 2019,Table 2,GC fatty acid sum (midpoint of 3.64-10.67)
 Batata Vada,battered fritter,street,Mixed/Unknown,6.28,45.2,FAME-sum,3,Joshee 2019,Table 2,GC fatty acid sum (midpoint of 3.14-9.42)

@@ -7,6 +7,7 @@ _CONSTANTS = None
 
 
 def _load_constants():
+    """Load and cache scalar conversion constants from data/curated/constants.csv."""
     global _CONSTANTS
     if _CONSTANTS is None:
         path = os.path.join(DATA_CURATED, "constants.csv")
@@ -16,6 +17,7 @@ def _load_constants():
 
 
 def get(id_):
+    """Return the float constant value for the given constant ID."""
     table = _load_constants()
     if id_ not in table:
         raise KeyError(id_)

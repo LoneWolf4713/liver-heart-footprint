@@ -38,7 +38,7 @@ Nutrient loads are evaluated per serving against ICMR-NIN Dietary Guidelines for
 | Culinary Category | Recipes (w/ Servings / Total) | SFA Median (`24.9g`) | High-Risk SFA (`17.4g`) | Added Sugar (`25g`) | Sodium (`1,967mg`) | Energy (`kcal`) |
 |---|---:|---:|---:|---:|---:|---:|
 | **Sweets & Desserts** | 262 / 282 | 7.85 g (**31.6%**) | **31.6%** | 15.46 g (**61.9%**) | 3.8% | 315.8 kcal |
-| **Snacks & Street Food** | 116 / 130 | 7.72 g (**31.0%**) | **40.8%** | 0.0% | 22.3% | 343.3 kcal |
+| **Snacks & Street Food** | 116 / 130 | 7.72 g (**31.0%**) | **40.8%** | 0.0% | 22.3% | 346.4 kcal |
 | **Curries & Gravies** | 70 / 73 | 6.80 g (**27.3%**) | **28.0%** | 0.0% | 18.5% | 323.7 kcal |
 | **Rice & Grains** | 30 / 34 | 6.21 g (**25.0%**) | **25.0%** | 0.0% | 19.2% | 442.8 kcal |
 | **Vegetables & Sabzis** | 94 / 98 | 4.62 g (**18.6%**) | 18.8% | 0.0% | 20.6% | 227.3 kcal |
@@ -62,7 +62,7 @@ Mean percentage of each recipe's total saturated fat originating from **Dairy Fa
 | **Sweets & Desserts** | **63.6%** | 4.2% | 32.2% |
 | **Soups & Stews** | **45.3%** | 15.3% | 39.4% |
 | **Rice & Grains** | **34.4%** | 31.3% | 34.3% |
-| **Snacks & Street Food** | 32.8% | **46.0%** | 21.2% |
+| **Snacks & Street Food** | 32.6% | **46.3%** | 21.1% |
 | **Breakfast & Tiffin** | 23.6% | 27.1% | **49.2%** |
 | **Vegetables & Sabzis** | 23.5% | **51.7%** | 24.8% |
 | **Breads & Flatbreads** | 20.9% | **58.2%** | 20.9% |
@@ -91,9 +91,9 @@ Across the **12 directly comparable dishes** (excluding the 3 deep-fried dishes 
 | Sarson Ka Saag | 1 / 2 | 8.3 g | 14.7 g | 1.77× | 4.7 g | 4.1 g | 0.89× | Extra white butter/oil |
 | Methi Aloo | 1 / 3 | 20.5 g | 9.5 g | 0.46× | 2.6 g | 1.2 g | 0.45× | INDB 1-serving oil vs 3-serving blog |
 | Sambar | 1 / 4 | 11.3 g | 5.2 g | 0.46× | 4.9 g | 1.9 g | 0.39× | INDB 2-serving oil vs home blog |
-| Samosa *(fry artifact)* | 2 / 4 | 24.6 g | 6.1 g | 0.25×* | 10.7 g | 1.7 g | 0.15×* | Web omits deep-fry oil quantity |
-| Onion Pakora *(fry artifact)* | 1 / 2 | 33.6 g | 3.4 g | 0.10×* | 12.1 g | 0.4 g | 0.07×* | Web omits deep-fry oil quantity |
-| Gulab Jamun *(fry artifact)* | 2 / 5 | 54.5 g | 3.4 g | 0.06×* | 22.0 g | 2.1 g | 0.09×* | Web omits deep-fry oil quantity |
+| Samosa *(fry artifact)* | 2 / 4 | 31.49 g | 6.12 g | 0.19×* | 14.08 g | 1.66 g | 0.12×* | Web omits deep-fry oil quantity |
+| Onion Pakora *(fry artifact)* | 1 / 2 | 33.63 g | 3.36 g | 0.10×* | 5.73 g | 0.42 g | 0.07×* | Web omits deep-fry oil quantity |
+| Gulab Jamun *(fry artifact)* | 2 / 5 | 43.62 g | 3.38 g | 0.08×* | 24.31 g | 2.08 g | 0.09×* | Web omits deep-fry oil quantity |
 
 ---
 
