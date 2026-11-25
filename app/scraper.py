@@ -157,6 +157,8 @@ def _extract_instructions_text(inst_obj) -> str:
         for item in inst_obj:
             chunks.append(_extract_instructions_text(item))
     elif isinstance(inst_obj, dict):
+        if "name" in inst_obj:
+            chunks.append(_clean_text(inst_obj.get("name") or ""))
         if "text" in inst_obj:
             chunks.append(_clean_text(inst_obj.get("text") or ""))
         if "itemListElement" in inst_obj:

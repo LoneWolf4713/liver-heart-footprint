@@ -130,7 +130,9 @@ class TestAppBackendAndScraper(unittest.TestCase):
           "name": "Punjabi Samosa",
           "recipeYield": "10 samosas",
           "recipeIngredient": ["2 cups maida", "4 medium potatoes", "1 tbsp oil", "1 tsp salt"],
-          "recipeInstructions": [{"@type": "HowToStep", "text": "Heat oil in a kadai and deep fry until golden."}]
+          "recipeInstructions": [
+            {"@type": "HowToSection", "name": "Deep Fry", "itemListElement": [{"@type": "HowToStep", "text": "Heat oil until medium hot and fry until crisp and golden."}]}
+          ]
         }</script></head><body></body></html>"""
         scraped = extract_recipe_from_html(html, url="https://example.com/samosa")
         self.assertTrue(scraped["deep_fried_hint"])
