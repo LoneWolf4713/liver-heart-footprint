@@ -124,6 +124,29 @@ class TestAppBackendAndScraper(unittest.TestCase):
         self.assertAlmostEqual(data["footprint"]["axes"]["sfa_g"]["limit"], 17.4222, places=2)
         self.assertEqual(data["scrape_meta"]["source"], "json-ld")
 
+    def test_instruction_deep_fry_detection_without_oil_bath(self):
+        html = """<!doctype html><html><head><script type="application/ld+json">{
+          "@type": "Recipe",
+          "name": "Punjabi Samosa",
+          "recipeYield": "10 samosas",
+          "recipeIngredient": ["2 cups maida", "4 medium potatoes", "1 tbsp oil", "1 tsp salt"],
+          "recipeInstructions": [{"@type": "HowToStep", "text": "Heat oil in a kadai and deep fry until golden."}]
+        }</script></head><body></body></html>"""
+        scraped = extract_recipe_from_html(html, url="https://example.com/samosa")
+        self.assertTrue(scraped["deep_fried_hint"])
+        resp = self.client.post("/api/analyze", json=scraped)
+        self.assertEqual(resp.status_code, 200)
+        fc = resp.json()["frying_correction"]
+        self.assertTrue(fc["applied"])
+        self.assertEqual(fc["detection_mode"], "instruction_detected")
+        self.assertEqual(fc["oil_mass_removed_g"], 0.0)
+        self.assertGreater(fc["absorbed_fat_g"], 50.0)
+
+        # Air-fried / baked samosa must not trigger deep-frying uptake
+        baked = dict(scraped, dish="Baked Samosa", deep_fried_hint=False)
+        resp_baked = self.client.post("/api/analyze", json=baked)
+        self.assertIsNone(resp_baked.json().get("frying_correction"))
+
 
 if __name__ == "__main__":
     unittest.main()

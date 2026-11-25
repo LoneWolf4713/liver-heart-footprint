@@ -37,6 +37,8 @@ class AnalyzeRequest(BaseModel):
     dish: str = Field(..., min_length=1, description="Dish name used for display and fried-food matching")
     servings: float | None = Field(default=None, description="Number of servings; null defaults to 1 with warning")
     lines: list[str] | str = Field(..., description="Ingredient lines as list or newline-delimited string")
+    deep_fried_hint: bool = False
+    deep_fry_evidence: str | None = None
     setting: str = "urban"
     risk: str = "general"
     frying_setting: str = "auto"
@@ -84,12 +86,26 @@ def _run_safe_analysis(
     if not lines:
         raise HTTPException(status_code=422, detail="At least one non-empty ingredient line is required.")
 
+    deep_fried_hint = bool(recipe_dict.get("deep_fried_hint", False))
+    deep_fry_evidence = recipe_dict.get("deep_fry_evidence")
+    if not deep_fried_hint:
+        for ln in lines:
+            low = ln.lower()
+            if any(p in low for p in ("for deep frying", "to deep fry", "for frying", "to fry", "deep frying")) and any(
+                f in low for f in ("oil", "ghee", "fat", "vanaspati", "shortening")
+            ):
+                deep_fried_hint = True
+                deep_fry_evidence = deep_fry_evidence or "ingredient_frying_phrase"
+                break
+
     normalized = {
         "id": recipe_dict.get("id") or "live-recipe",
         "url": recipe_dict.get("url"),
         "dish": (recipe_dict.get("dish") or "Custom Recipe").strip(),
         "servings": recipe_dict.get("servings"),
         "lines": lines,
+        "deep_fried_hint": deep_fried_hint,
+        "deep_fry_evidence": deep_fry_evidence,
     }
 
     res = pipeline.analyse_recipe(

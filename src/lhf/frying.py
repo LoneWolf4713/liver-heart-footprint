@@ -116,7 +116,7 @@ def _load_lab_data() -> list[dict]:
 
 
 def _detect_frying_bath_lines(lines: list) -> list[dict]:
-    """Detects frying bath lines from the pipeline lines list."""
+    """Detects quantified frying bath oil lines from the pipeline lines list."""
     bath_lines = []
     for line in lines:
         if not line.get("included", False):
@@ -132,6 +132,12 @@ def _detect_frying_bath_lines(lines: list) -> list[dict]:
             continue
         bath_lines.append(line)
     return bath_lines
+
+
+def _has_baked_or_airfry_override(dish_name: str) -> bool:
+    """Returns True if dish title explicitly indicates baking/air-frying rather than deep-frying."""
+    norm = _normalize_name(dish_name)
+    return any(kw in norm for kw in ("baked", "air fry", "air fried", "airfryer", "air fryer", "steamed", "roasted"))
 
 
 def _normalize_name(name: str) -> str:
@@ -338,19 +344,29 @@ def correct_frying(
     frying_setting: str = "auto",
 ) -> dict:
     """
-    Main entry point. Corrects deep-frying bath oil lines in a pipeline result dict.
+    Main entry point. Corrects deep-frying bath oil lines (or injects lab-measured absorbed fat
+    when recipe instructions or unquantified frying lines confirm deep frying).
     """
     lines = result.get("lines") or []
-    frying_bath_lines = _detect_frying_bath_lines(lines)
-    if not frying_bath_lines:
-        return result
-
     recipe_info = result.get("recipe") or {}
     dish_name = recipe_info.get("dish") or recipe_info.get("title") or ""
 
-    # If the recipe is a non-fried dish (e.g. biryani, curry), do not apply frying correction
-    if _is_non_fried_dish(dish_name):
+    # If the recipe is a non-fried dish (e.g. biryani, curry) or baked/air-fried variant, skip correction
+    if _is_non_fried_dish(dish_name) or _has_baked_or_airfry_override(dish_name):
         return result
+
+    frying_bath_lines = _detect_frying_bath_lines(lines)
+    deep_fried_hint = bool(recipe_info.get("deep_fried_hint", False)) and not frying_bath_lines
+
+    if not frying_bath_lines and not deep_fried_hint:
+        return result
+
+    if frying_bath_lines:
+        detection_mode = "bath_replacement"
+    elif recipe_info.get("deep_fry_evidence") == "ingredient_frying_phrase":
+        detection_mode = "unquantified_bath"
+    else:
+        detection_mode = "instruction_detected"
 
     oil_mass_g = sum(l["grams"] for l in frying_bath_lines if l.get("grams") is not None)
 
@@ -359,7 +375,7 @@ def correct_frying(
     sfa_pct_of_fat = lab_info["sfa_pct_of_fat"]
     match_desc = lab_info["lab_match"]
 
-    # Step 6: Non-oil included mass
+    # Step 6: Non-oil included mass (all included mass excluding explicit bath lines)
     non_oil_mass_g = sum(
         l["grams"]
         for l in lines
@@ -372,7 +388,7 @@ def correct_frying(
     absorbed_fat_g = (non_oil_mass_g / float("100.0")) * fat_g_100g
     absorbed_sfa_g = absorbed_fat_g * (sfa_pct_of_fat / float("100.0"))
 
-    # Step 9: Nutrient contribution of bath oil lines to remove
+    # Step 9: Nutrient contribution of explicit bath oil lines to remove (0 when bath omitted/unquantified)
     fat_to_remove_g = 0.0
     sfa_to_remove_g = 0.0
     energy_to_remove_kcal = 0.0
@@ -404,17 +420,18 @@ def correct_frying(
         energy_to_remove_kj = energy_to_remove_kcal * kj_factor
         corrected_totals["energy_kj"] = max(0.0, corrected_totals["energy_kj"] - energy_to_remove_kj + (fat_readd_kcal * kj_factor))
 
-    # Step 11: Mark frying bath lines in lines list
+    # Step 11: Mark explicit frying bath lines (if any) in lines list
     for line in frying_bath_lines:
         line["included"] = False
         line["exclusion_reason"] = "FRYING_BATH"
 
     # Step 12: Recompute coverage
     corrected_coverage = copy.deepcopy(result.get("coverage") or {})
-    if "excluded_by_reason" in corrected_coverage:
-        corrected_coverage["excluded_by_reason"]["FRYING_BATH"] = len(frying_bath_lines)
-    corrected_coverage["included_mass_g"] = max(0.0, corrected_coverage.get("included_mass_g", 0.0) - oil_mass_g)
-    corrected_coverage["lines_included"] = max(0, corrected_coverage.get("lines_included", 0) - len(frying_bath_lines))
+    if frying_bath_lines:
+        if "excluded_by_reason" in corrected_coverage:
+            corrected_coverage["excluded_by_reason"]["FRYING_BATH"] = len(frying_bath_lines)
+        corrected_coverage["included_mass_g"] = max(0.0, corrected_coverage.get("included_mass_g", 0.0) - oil_mass_g)
+        corrected_coverage["lines_included"] = max(0, corrected_coverage.get("lines_included", 0) - len(frying_bath_lines))
 
     # Step 13: Recompute per_serving
     servings_raw = recipe_info.get("servings")
@@ -438,13 +455,20 @@ def correct_frying(
         corrected_footprint = None
 
     # Step 15: Build warning string
-    warn = (
-        f"FRYING_CORRECTED: detected {len(frying_bath_lines)} frying bath line(s) "
-        f"({oil_mass_g:.0f}g oil excluded). "
-        f"Absorbed fat estimated at {absorbed_fat_g:.1f}g using lab data "
-        f"({fat_g_100g}g/100g, match={match_desc}). "
-        f"Original stated-oil fat: {fat_to_remove_g:.1f}g."
-    )
+    if frying_bath_lines:
+        warn = (
+            f"FRYING_CORRECTED: detected {len(frying_bath_lines)} frying bath line(s) "
+            f"({oil_mass_g:.0f}g oil excluded). "
+            f"Absorbed fat estimated at {absorbed_fat_g:.1f}g using lab data "
+            f"({fat_g_100g}g/100g, match={match_desc}). "
+            f"Original stated-oil fat: {fat_to_remove_g:.1f}g."
+        )
+    else:
+        warn = (
+            f"FRYING_CORRECTED ({detection_mode}): deep-frying detected without quantified bath oil. "
+            f"Injected {absorbed_fat_g:.1f}g absorbed fat using lab data "
+            f"({fat_g_100g}g/100g, match={match_desc})."
+        )
 
     # Step 16: Return corrected result dict
     corrected_result = copy.copy(result)
@@ -456,6 +480,7 @@ def correct_frying(
     corrected_result["warnings"] = list(result.get("warnings") or []) + [warn]
     corrected_result["frying_correction"] = {
         "applied": True,
+        "detection_mode": detection_mode,
         "frying_bath_lines_count": len(frying_bath_lines),
         "oil_mass_removed_g": oil_mass_g,
         "non_oil_mass_g": non_oil_mass_g,

@@ -4196,3 +4196,10 @@ processed cheese,L505,Processed cheese
 sprouted moong,B011,Sprouted moong → green gram whole
 sprouted green gram,B011,Sprouted green gram
 turnip,F501,Turnip flesh raw
+sona masuri rice,A015,Sona masuri rice -> raw milled rice (IFCT A015)
+sona masoori rice,A015,Sona masoori rice -> raw milled rice (IFCT A015)
+ponni rice,A015,Ponni rice -> raw milled rice (IFCT A015)
+idli rice,A014,Idli rice -> parboiled milled rice (IFCT A014)
+dosa rice,A015,Dosa rice -> raw milled rice (IFCT A015)
+kolam rice,A015,Kolam rice -> raw milled rice (IFCT A015)
+raw rice,A015,Raw rice -> raw milled rice (IFCT A015)

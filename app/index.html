@@ -2284,7 +2284,7 @@
 
         <!-- URL Input -->
         <div x-show="inputMode === 'url'" class="search-bar-unified">
-          <input type="text" class="search-input" placeholder="Paste an Indian recipe URL (e.g. Hebbars Kitchen, Swasthi's, VegRecipesOfIndia)..." x-model="recipeUrl" @keydown.enter="launchWithCurrent()">
+          <input type="text" class="search-input" placeholder="Paste an Indian recipe URL (IndianHealthyRecipes, CookWithManali, PipingPotCurry, Archana's Kitchen)..." x-model="recipeUrl" @keydown.enter="launchWithCurrent()">
           <button class="search-btn" :disabled="isLoading" @click="launchWithCurrent()">
             <span x-text="isLoading ? 'Scraping &amp; Analyzing...' : 'Analyze Recipe &rarr;'"></span>
           </button>
@@ -2569,15 +2569,22 @@
               <span style="font-size: 22px;">🍳</span>
               <div style="flex: 1;">
                 <div>
-                  <strong>Frying Bath Correction Applied:</strong> 
-                  The recipe listed <span x-text="activeResult.frying_correction ? Math.round(activeResult.frying_correction.oil_mass_removed_g) : 0"></span>g of deep-frying oil. 
-                  Our engine excluded the oil bath and injected <strong x-text="activeResult.frying_correction ? activeResult.frying_correction.absorbed_fat_g.toFixed(1) : '0.0'"></strong>g of absorbed fat
+                  <strong x-text="activeResult.frying_correction && activeResult.frying_correction.oil_mass_removed_g > 0 ? 'Frying Bath Correction Applied:' : 'Deep-Frying Uptake Injected:'"></strong>
+                  <span x-show="activeResult.frying_correction && activeResult.frying_correction.oil_mass_removed_g > 0">
+                    The recipe listed <span x-text="activeResult.frying_correction ? Math.round(activeResult.frying_correction.oil_mass_removed_g) : 0"></span>g of deep-frying oil. Our engine excluded the oil bath and injected
+                  </span>
+                  <span x-show="activeResult.frying_correction && !(activeResult.frying_correction.oil_mass_removed_g > 0)">
+                    Deep-frying was detected (<span x-text="activeResult.frying_correction && activeResult.frying_correction.detection_mode === 'unquantified_bath' ? 'unquantified frying oil line' : 'recipe cooking instructions'"></span>) without a stated oil-bath weight. Our engine injected
+                  </span>
+                  <strong x-text="activeResult.frying_correction ? activeResult.frying_correction.absorbed_fat_g.toFixed(1) : '0.0'"></strong>g of absorbed fat
                   (<strong x-text="activeResult.frying_correction ? activeResult.frying_correction.absorbed_sfa_g.toFixed(1) : '0.0'"></strong>g SFA) using lab measurements
                   (<span x-text="activeResult.frying_correction ? activeResult.frying_correction.lab_match : ''"></span>,
                   <strong x-text="activeResult.frying_correction ? Number(activeResult.frying_correction.fat_g_per_100g_lab).toFixed(1) : ''"></strong>g/100g,
                   <span x-text="activeResult.frying_correction ? Number(activeResult.frying_correction.sfa_pct_of_fat_lab).toFixed(1) : ''"></span>% SFA).
-                  Counting the whole oil bath would have exaggerated fat by 
-                  <strong x-text="activeResult.frying_correction && activeResult.frying_correction.absorbed_fat_g ? (activeResult.frying_correction.oil_mass_removed_g / activeResult.frying_correction.absorbed_fat_g).toFixed(1) : '0.0'"></strong>&times;.
+                  <span x-show="activeResult.frying_correction && activeResult.frying_correction.oil_mass_removed_g > 0">
+                    Counting the whole oil bath would have exaggerated fat by
+                    <strong x-text="activeResult.frying_correction && activeResult.frying_correction.absorbed_fat_g ? (activeResult.frying_correction.oil_mass_removed_g / activeResult.frying_correction.absorbed_fat_g).toFixed(1) : '0.0'"></strong>&times;.
+                  </span>
                   <a href="#" @click.prevent="currentTab = 'd1'" style="color: #0071e3; text-decoration: none; font-weight: 600; margin-left: 6px;">Inspect lab dataset &rarr;</a>
                 </div>
 
@@ -4320,6 +4327,8 @@ Sodium: 16mg (0.8%*)   | Energy: 224 kcal (10.0% day)</div>
                 dish: scrapeData.dish || 'Scraped Recipe',
                 servings: scrapeData.servings,
                 lines: scrapeData.lines,
+                deep_fried_hint: Boolean(scrapeData.deep_fried_hint),
+                deep_fry_evidence: scrapeData.deep_fry_evidence || null,
                 setting: 'urban',
                 risk: this.selectedRisk,
                 frying_setting: this.selectedFryingSetting

@@ -146,6 +146,45 @@ def _extract_jsonld_recipes(soup: BeautifulSoup) -> list[dict]:
     return found
 
 
+def _extract_instructions_text(inst_obj) -> str:
+    """Flatten schema.org recipeInstructions (str, list of strings, HowToStep, or HowToSection)."""
+    if not inst_obj:
+        return ""
+    if isinstance(inst_obj, str):
+        return _clean_text(inst_obj)
+    chunks: list[str] = []
+    if isinstance(inst_obj, list):
+        for item in inst_obj:
+            chunks.append(_extract_instructions_text(item))
+    elif isinstance(inst_obj, dict):
+        if "text" in inst_obj:
+            chunks.append(_clean_text(inst_obj.get("text") or ""))
+        if "itemListElement" in inst_obj:
+            chunks.append(_extract_instructions_text(inst_obj.get("itemListElement")))
+    return " ".join(c for c in chunks if c)
+
+
+def _detect_deep_frying_hint(instructions_text: str, lines: list[str], dish_name: str) -> tuple[bool, str | None]:
+    """Infer whether recipe involves deep-frying from instructions text or unquantified lines."""
+    title_l = (dish_name or "").lower()
+    if any(b in title_l for b in ("baked", "air fry", "air-fry", "air fryer", "steamed", "roasted")):
+        return False, None
+
+    inst_l = (instructions_text or "").lower()
+    for pat in ("deep fry", "deep-fry", "deep frying", "hot oil and fry", "fry until golden"):
+        if pat in inst_l:
+            return True, f"instructions ({pat})"
+
+    for line in lines:
+        low = line.lower()
+        if any(p in low for p in ("for deep frying", "to deep fry", "for frying", "to fry")) and any(
+            f in low for f in ("oil", "ghee", "fat", "vanaspati")
+        ):
+            return True, "ingredient_frying_phrase"
+
+    return False, None
+
+
 def extract_recipe_from_html(html_text: str, url: str = "") -> dict:
     """Parse HTML into an LHF-ready recipe dict from JSON-LD or recipe-scrapers."""
     if not html_text or not html_text.strip():
@@ -164,6 +203,8 @@ def extract_recipe_from_html(html_text: str, url: str = "") -> dict:
         if lines:
             title = _clean_text(node.get("name") or page_title or "Scraped Recipe")
             servings, servings_raw = parse_servings(node.get("recipeYield"))
+            inst_text = _extract_instructions_text(node.get("recipeInstructions"))
+            deep_fried_hint, deep_fry_evidence = _detect_deep_frying_hint(inst_text, lines, title)
             return {
                 "id": "web-live",
                 "url": url or None,
@@ -171,10 +212,14 @@ def extract_recipe_from_html(html_text: str, url: str = "") -> dict:
                 "servings": servings,
                 "servings_raw": servings_raw,
                 "lines": lines,
+                "deep_fried_hint": deep_fried_hint,
+                "deep_fry_evidence": deep_fry_evidence,
                 "scrape_meta": {
                     "source": "json-ld",
                     "site": netloc,
                     "lines_extracted": len(lines),
+                    "deep_fried_hint": deep_fried_hint,
+                    "deep_fry_evidence": deep_fry_evidence,
                 },
             }
 
@@ -188,6 +233,8 @@ def extract_recipe_from_html(html_text: str, url: str = "") -> dict:
             title = _clean_text(scraper.title() or page_title or "Scraped Recipe")
             yield_raw = scraper.yields() if hasattr(scraper, "yields") else ""
             servings, servings_raw = parse_servings(yield_raw)
+            inst_text = _clean_text(scraper.instructions() or "") if hasattr(scraper, "instructions") else ""
+            deep_fried_hint, deep_fry_evidence = _detect_deep_frying_hint(inst_text, lines, title)
             return {
                 "id": "web-live",
                 "url": url or None,
@@ -195,10 +242,14 @@ def extract_recipe_from_html(html_text: str, url: str = "") -> dict:
                 "servings": servings,
                 "servings_raw": servings_raw,
                 "lines": lines,
+                "deep_fried_hint": deep_fried_hint,
+                "deep_fry_evidence": deep_fry_evidence,
                 "scrape_meta": {
                     "source": "recipe-scrapers",
                     "site": netloc,
                     "lines_extracted": len(lines),
+                    "deep_fried_hint": deep_fried_hint,
+                    "deep_fry_evidence": deep_fry_evidence,
                 },
             }
     except Exception:

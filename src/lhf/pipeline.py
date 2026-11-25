@@ -271,6 +271,8 @@ def analyse_recipe(
         "url": recipe.get("url"),
         "dish": recipe.get("dish"),
         "servings": recipe.get("servings"),
+        "deep_fried_hint": bool(recipe.get("deep_fried_hint", False)),
+        "deep_fry_evidence": recipe.get("deep_fry_evidence"),
     }
 
     result = {
