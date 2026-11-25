@@ -20,12 +20,18 @@ def _clean_nan(obj):
     return obj
 
 
-def analyse_recipe(recipe: dict, setting: str = "urban", risk: str = "general") -> dict:
+def analyse_recipe(
+    recipe: dict,
+    setting: str = "urban",
+    risk: str = "general",
+    frying_setting: str = "auto",
+) -> dict:
     """Analyse a recipe and return per-serving nutrient totals and daily-budget footprint.
 
     recipe: dict with id, url, dish, servings, lines.
     setting: 'urban' or 'rural'.
     risk: 'general' or 'cardiometabolic'.
+    frying_setting: 'auto', 'all', 'street', 'home', 'restaurant-takeaway', 'retail-packaged', or 'lab-controlled'.
     """
     table = composition.load_table()
     table_index = table.index
@@ -279,6 +285,6 @@ def analyse_recipe(recipe: dict, setting: str = "urban", risk: str = "general") 
 
     # Frying correction (SPEC addendum: replace stated bath oil with lab-measured absorbed fat)
     from lhf.frying import correct_frying
-    result = correct_frying(result, setting=setting, risk=risk)
+    result = correct_frying(result, setting=setting, risk=risk, frying_setting=frying_setting)
 
     return _clean_nan(result)

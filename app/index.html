@@ -1613,6 +1613,58 @@
       background: #f0f7ff;
     }
 
+    .setting-defs-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .setting-def-card {
+      background: #fbfbfd;
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 16px 16px;
+    }
+
+    .setting-def-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .setting-def-body {
+      font-size: 13.5px;
+      color: #3a3a3c;
+      line-height: 1.45;
+    }
+
+    .paired-dish-block {
+      padding: 16px 18px;
+      background: #fbfbfd;
+      border: 1px solid var(--border-divider);
+      border-radius: 10px;
+      margin-bottom: 14px;
+    }
+
+    .paired-dish-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .d4-frying-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #ffe2b8;
+    }
+
     /* ======================================================== */
     /* D2 HOW IT WORKS: 5-STAGE CONNECTED PIPELINE & MERGED DOCS*/
     /* ======================================================== */
@@ -2263,15 +2315,37 @@
             <!-- Frying Bath Correction Alert Strip (when applicable) -->
             <div x-show="activeResult.frying_correction && activeResult.frying_correction.applied" class="frying-callout-strip">
               <span style="font-size: 22px;">🍳</span>
-              <div>
-                <strong>Frying Bath Correction Applied:</strong> 
-                The recipe listed <span x-text="activeResult.frying_correction ? Math.round(activeResult.frying_correction.oil_mass_removed_g) : 0"></span>g of deep-frying oil. 
-                Our engine excluded the oil bath and injected only <span x-text="activeResult.frying_correction ? activeResult.frying_correction.absorbed_fat_g.toFixed(1) : '0.0'"></span>g of absorbed fat
-                (<span x-text="activeResult.frying_correction ? activeResult.frying_correction.absorbed_sfa_g.toFixed(1) : '0.0'"></span>g SFA) using lab measurements
-                (<span x-text="activeResult.frying_correction ? activeResult.frying_correction.lab_match : ''"></span>, <span x-text="activeResult.frying_correction ? activeResult.frying_correction.fat_g_per_100g_lab : ''"></span>g/100g).
-                Counting the whole oil bath would have exaggerated fat by 
-                <strong x-text="activeResult.frying_correction && activeResult.frying_correction.absorbed_fat_g ? (activeResult.frying_correction.oil_mass_removed_g / activeResult.frying_correction.absorbed_fat_g).toFixed(1) : '0.0'"></strong>&times;.
-                <a href="#" @click.prevent="currentTab = 'd1'" style="color: #0071e3; text-decoration: none; font-weight: 600; margin-left: 6px;">Inspect lab dataset &rarr;</a>
+              <div style="flex: 1;">
+                <div>
+                  <strong>Frying Bath Correction Applied:</strong> 
+                  The recipe listed <span x-text="activeResult.frying_correction ? Math.round(activeResult.frying_correction.oil_mass_removed_g) : 0"></span>g of deep-frying oil. 
+                  Our engine excluded the oil bath and injected <strong x-text="activeResult.frying_correction ? activeResult.frying_correction.absorbed_fat_g.toFixed(1) : '0.0'"></strong>g of absorbed fat
+                  (<strong x-text="activeResult.frying_correction ? activeResult.frying_correction.absorbed_sfa_g.toFixed(1) : '0.0'"></strong>g SFA) using lab measurements
+                  (<span x-text="activeResult.frying_correction ? activeResult.frying_correction.lab_match : ''"></span>,
+                  <strong x-text="activeResult.frying_correction ? Number(activeResult.frying_correction.fat_g_per_100g_lab).toFixed(1) : ''"></strong>g/100g,
+                  <span x-text="activeResult.frying_correction ? Number(activeResult.frying_correction.sfa_pct_of_fat_lab).toFixed(1) : ''"></span>% SFA).
+                  Counting the whole oil bath would have exaggerated fat by 
+                  <strong x-text="activeResult.frying_correction && activeResult.frying_correction.absorbed_fat_g ? (activeResult.frying_correction.oil_mass_removed_g / activeResult.frying_correction.absorbed_fat_g).toFixed(1) : '0.0'"></strong>&times;.
+                  <a href="#" @click.prevent="currentTab = 'd1'" style="color: #0071e3; text-decoration: none; font-weight: 600; margin-left: 6px;">Inspect lab dataset &rarr;</a>
+                </div>
+
+                <!-- Cooking Setting Selector (calls frying.py setting matching & fallback logic) -->
+                <div class="d4-frying-controls">
+                  <label for="d4-frying-setting-select" style="font-size: 13.5px; font-weight: 700; color: #5c3b00;">Cooking Setting:</label>
+                  <select id="d4-frying-setting-select" class="lab-select" style="height: 34px; font-size: 13.5px;" x-model="selectedFryingSetting" @change="applyFryingSetting(selectedFryingSetting)">
+                    <option value="auto">Auto (Engine Default — all matched rows)</option>
+                    <option value="street">Street / Halwai (reused kadai oil)</option>
+                    <option value="home">Home Cooking</option>
+                    <option value="restaurant-takeaway">Restaurant Takeaway</option>
+                    <option value="retail-packaged">Retail Packaged</option>
+                    <option value="lab-controlled">Lab-Controlled</option>
+                  </select>
+                  <span class="badge"
+                        :class="activeResult.frying_correction && activeResult.frying_correction.fallback_used ? 'badge-amber' : 'badge-blue'"
+                        style="font-size: 12px;"
+                        x-text="fryingSettingStatusText">
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -2819,15 +2893,15 @@
           </div>
         </div>
 
-        <!-- STEP 2: WHAT WE COMPILED & LAB METHODS -->
+        <!-- STEP 2: WHAT WE COMPILED & WHAT THE 5 COOKING SETTINGS MEAN -->
         <div style="margin-bottom: 40px;">
-          <div class="d1-step-label">Step 2 · What We Compiled</div>
-          <h3 class="d1-step-heading">69 empirical measurements across 10 peer-reviewed studies</h3>
+          <div class="d1-step-label">Step 2 · What We Compiled &amp; Cooking Settings</div>
+          <h3 class="d1-step-heading">69 empirical measurements across 10 studies &amp; 5 cooking settings</h3>
           <p class="d1-step-desc">
-            Every number in the table below traces to a published chemical extraction study using one of three laboratory protocols.
+            Every row records how much fat remains inside 100g of cooked food, tagged by the real-world environment where it was fried.
           </p>
 
-          <div class="lab-metrics-grid" style="margin-bottom: 24px;">
+          <div class="lab-metrics-grid" style="margin-bottom: 0;">
             <div class="lab-metric-card">
               <div>
                 <div class="lab-card-header">
@@ -2837,7 +2911,7 @@
                 <div class="lab-kpi-big" x-text="`${labRows.length} rows · ${labTotalSamples} samples`"></div>
               </div>
               <div class="lab-kpi-sub">
-                Each row records dish, oil medium, fat retained per 100g food, SFA%, sample count (n), and source page.
+                Records dish, oil medium, retained fat per 100g food, SFA%, sample count (n), and source citation.
               </div>
             </div>
 
@@ -2863,34 +2937,32 @@
                 <div class="lab-kpi-big">6 Categories · 5 Settings</div>
               </div>
               <div class="lab-kpi-sub">
-                From street vendors and retail packets to home cooking, restaurant takeaways, and lab trials.
+                Stuffed pastries, fritters, flat doughs, crisp namkeens, sweets, and potato patties across 5 environments.
               </div>
             </div>
           </div>
 
-          <div class="methods-grid" style="margin-bottom: 0;">
-            <div class="method-card">
-              <div class="method-name"><span>🧪</span> Soxhlet Extraction</div>
-              <div class="method-tag">Gupta 2016 · 21 street rows</div>
-              <div class="method-body">
-                Continuous solvent extraction (ether / hexane). Captures all extractable neutral lipids, yielding higher fat readings (e.g. 29.6g street samosa) plus SFA%.
-              </div>
+          <!-- 5 Cooking Settings Explained Before the Table -->
+          <div class="setting-defs-grid">
+            <div class="setting-def-card">
+              <div class="setting-def-title"><span>🏪</span> street</div>
+              <div class="setting-def-body">Roadside &amp; halwai stalls reusing Vanaspati or palm oil across many batches; viscous oil clings heavily.</div>
             </div>
-
-            <div class="method-card">
-              <div class="method-name"><span>🔬</span> Proximate Analysis</div>
-              <div class="method-tag">UK CoFID · safefood · Trials (33 rows)</div>
-              <div class="method-body">
-                AOAC acid hydrolysis + ether extraction used by national food agencies. Reliable total fat, though UK CoFID and some controlled trials omit SFA%.
-              </div>
+            <div class="setting-def-card">
+              <div class="setting-def-title"><span>🏠</span> home</div>
+              <div class="setting-def-body">Small domestic kadai frying; oil temperature drops when cold batter enters, lengthening soak time.</div>
             </div>
-
-            <div class="method-card">
-              <div class="method-name"><span>🧬</span> FAME-Sum Chromatography</div>
-              <div class="method-tag">Joshee 2019 · 15 GC-FID rows</div>
-              <div class="method-body">
-                Sums identified fatty-acid methyl ester peaks. Gives exact SFA%, but runs systematically lower on total fat (e.g. 7.7g samosa) because non-fatty-acid lipids aren't counted.
-              </div>
+            <div class="setting-def-card">
+              <div class="setting-def-title"><span>🍽️</span> restaurant-takeaway</div>
+              <div class="setting-def-body">Commercial 175–185&deg;C thermostatic fryers; outer crust seals quickly, limiting deep oil absorption.</div>
+            </div>
+            <div class="setting-def-card">
+              <div class="setting-def-title"><span>📦</span> retail-packaged</div>
+              <div class="setting-def-body">Industrial continuous fryers and centrifugal de-oiling for shelf-stable packaged snacks.</div>
+            </div>
+            <div class="setting-def-card">
+              <div class="setting-def-title"><span>🔬</span> lab-controlled</div>
+              <div class="setting-def-body">Fresh oil, fixed temperature, and timed draining in published food-science experiments.</div>
             </div>
           </div>
         </div>
@@ -2997,62 +3069,101 @@
           </div>
         </div>
 
-        <!-- STEP 4: KEY FINDINGS & HOW THE ENGINE RESOLVES IT -->
+        <!-- STEP 4: KEY FINDINGS, METHODOLOGY & HOW THE ENGINE RESOLVES SETTINGS -->
         <div style="margin-bottom: 24px;">
-          <div class="d1-step-label">Step 4 · What We Found &amp; How the Engine Uses It</div>
-          <h3 class="d1-step-heading">Why the same dish varies 4&times; across studies — and how <code>frying.py</code> picks one number</h3>
+          <div class="d1-step-label">Step 4 · What the Data Reveals &amp; Methodology</div>
+          <h3 class="d1-step-heading">Within-dish variation (holding the recipe constant) — and how <code>frying.py</code> handles settings</h3>
           <p class="d1-step-desc">
-            Looking across the 69 records above reveals two clear takeaways that justify using a lab-anchored median instead of raw oil volume.
+            Comparing different dishes across settings would confuse food type with cooking environment. Instead, looking at the <strong>exact same dish</strong> measured across studies shows the true impact of setting and lab protocol.
           </p>
 
           <div class="d1-findings-grid">
-            <!-- Left: Setting Disparity Spectrum -->
+            <!-- Left: Unconfounded Same-Dish Paired Comparisons -->
             <div class="setting-spectrum-card" style="margin-bottom: 0;">
-              <div style="margin-bottom: 18px;">
+              <div style="margin-bottom: 16px;">
                 <div style="font-size: 18px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">
-                  1. Median Fat Retained per 100g by Cooking Setting
+                  1. Same-Dish Paired Comparisons (Fat Retained per 100g)
                 </div>
                 <div style="font-size: 14px; color: var(--text-muted); line-height: 1.45;">
-                  Even for the exact same dish (Samosa), retained fat ranges <strong>3.84&times;</strong> — from <strong>7.7g</strong> (restaurant GC) to <strong>29.6g</strong> (street Soxhlet). Across all 69 entries, street food carries over double the median fat of restaurant takeaway:
+                  Holding the dish constant isolates the true spread across cooking environments and extraction protocols:
                 </div>
               </div>
 
-              <template x-for="st in labSettingStats" :key="st.setting">
-                <div class="spectrum-row">
-                  <div class="spectrum-label">
-                    <span x-text="st.icon"></span>
-                    <span x-text="st.label"></span>
+              <template x-for="group in sameDishComparisons" :key="group.title">
+                <div class="paired-dish-block">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; gap: 8px; flex-wrap: wrap;">
+                    <strong style="font-size: 16px; color: var(--text-main);" x-text="group.title"></strong>
+                    <span class="badge badge-amber" style="font-size: 12px;" x-text="`${group.ratio}× range (${group.min.toFixed(1)}g → ${group.max.toFixed(1)}g / 100g)`"></span>
                   </div>
-                  <div class="spectrum-track">
-                    <div class="spectrum-fill" :style="`width: ${Math.min((st.median / 30) * 100, 100)}%; background-color: ${st.color};`"></div>
-                  </div>
-                  <div class="spectrum-val" :style="`color: ${st.textColor};`" x-text="`${st.median.toFixed(1)} g (n=${st.count})`"></div>
-                  <div class="spectrum-note" x-text="`Range: ${st.min.toFixed(1)}–${st.max.toFixed(1)} g/100g · ${st.note}`"></div>
+                  <template x-for="row in group.rows" :key="row.label + row.fat">
+                    <div style="display: grid; grid-template-columns: 245px 1fr 78px; gap: 12px; align-items: center; margin-bottom: 7px;">
+                      <span style="font-size: 13.5px; color: var(--text-body); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" x-text="row.label" :title="row.label"></span>
+                      <div class="spectrum-track" style="height: 9px;">
+                        <div class="spectrum-fill" :style="`width: ${Math.min((row.fat / 35) * 100, 100)}%; background-color: ${row.color};`"></div>
+                      </div>
+                      <span class="mono-cell" style="font-size: 13.5px; font-weight: 700; text-align: right;" x-text="`${row.fat.toFixed(1)} g`"></span>
+                    </div>
+                  </template>
                 </div>
               </template>
             </div>
 
-            <!-- Right: How frying.py Resolves Samosa -->
+            <!-- Right: How frying.py Resolves Dish + Setting + Fallback -->
             <div class="d1-engine-rule-card">
               <div style="font-size: 18px; font-weight: 700; color: var(--text-main); margin-bottom: 10px;">
-                2. How <code>frying.py</code> Picks One Value
+                2. How <code>frying.py</code> Uses Settings &amp; Fallback
               </div>
               <div style="font-size: 14.5px; line-height: 1.55; color: #2c2c2e;">
-                <p style="margin: 0 0 12px 0;">
-                  When D4 analyzes <strong>Samosa</strong>, the engine cannot guess whether the user means street or restaurant, so it follows a deterministic rule:
+                <p style="margin: 0 0 10px 0;">
+                  In D4, users can now test a dish under a specific cooking setting (e.g. <strong>Street</strong> vs. <strong>Restaurant</strong>):
                 </p>
                 <ol style="margin: 0 0 14px 18px; padding: 0; line-height: 1.6;">
-                  <li>Matches base dish name → finds <strong>5 <code>Samosa</code> rows</strong> in the table (<code>7.71, 8.97, 12.4, 29.19, 29.62 g/100g</code>).</li>
-                  <li>Prefers <code>home</code> rows if present; otherwise takes the <strong>median</strong> across matched rows.</li>
-                  <li>Result used in D4: <strong>12.4 g fat / 100g food</strong> (and median <strong>49.2% SFA</strong> from the 3 rows with SFA assays).</li>
+                  <li><strong>Match dish rows:</strong> Base name lookup finds all matching entries (e.g. 5 <code>Samosa</code> rows).</li>
+                  <li><strong>Filter by setting:</strong> If rows exist for the requested setting (e.g. Samosa + <code>street</code> &rarr; Gupta 2016: <strong>29.4 g/100g</strong>, <strong>54.7% SFA</strong>), the engine uses their median.</li>
+                  <li><strong>Transparent fallback:</strong> If no row exists for that dish + setting (e.g. exact base Samosa has no <code>home</code> row), it falls back to the median across all matched rows (<strong>12.4 g/100g</strong>) and flags <code>fallback_used=True</code>.</li>
                 </ol>
                 <div style="display: flex; gap: 8px; flex-wrap: wrap;">
                   <button class="bench-chip" style="font-size: 13px; padding: 7px 12px; border-color: #0071e3; color: #0071e3; font-weight: 600;" @click="labOnlySamosaMatch = true; document.getElementById('d1-table-anchor')?.scrollIntoView({ behavior: 'smooth' });">
                     Inspect Samosa's 5 rows above &uarr;
                   </button>
                   <button class="bench-chip" style="font-size: 13px; padding: 7px 12px; background: #0071e3; color: #ffffff; border-color: #0071e3; font-weight: 600;" @click="launchWithDemo('samosa_test')">
-                    See this in D4 Live &rarr;
+                    Test Settings Live in D4 &rarr;
                   </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Extraction Methods (Moved After Dataset as Methodological Context) -->
+          <div style="margin-top: 28px;">
+            <div style="font-size: 18px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;">
+              3. Why Lab Studies Differ: Three Analytical Extraction Protocols
+            </div>
+            <p style="font-size: 14.5px; color: var(--text-muted); margin: 0 0 16px 0;">
+              These are the measurement methods used by the published studies in our dataset (not our own lab runs), explaining why Soxhlet and GC values diverge:
+            </p>
+            <div class="methods-grid" style="margin-bottom: 0;">
+              <div class="method-card">
+                <div class="method-name"><span>🧪</span> Soxhlet Extraction</div>
+                <div class="method-tag">Gupta 2016 · 21 street rows</div>
+                <div class="method-body">
+                  Continuous solvent extraction (ether / hexane). Captures all extractable neutral lipids, yielding higher fat readings (e.g. 29.6g street samosa) plus SFA%.
+                </div>
+              </div>
+
+              <div class="method-card">
+                <div class="method-name"><span>🔬</span> Proximate Analysis</div>
+                <div class="method-tag">UK CoFID · safefood · Trials (33 rows)</div>
+                <div class="method-body">
+                  AOAC acid hydrolysis + ether extraction used by national food agencies. Reliable total fat, though UK CoFID and controlled trials often omit SFA%.
+                </div>
+              </div>
+
+              <div class="method-card">
+                <div class="method-name"><span>🧬</span> FAME-Sum Chromatography</div>
+                <div class="method-tag">Joshee 2019 · 15 GC-FID rows</div>
+                <div class="method-body">
+                  Sums identified fatty-acid methyl ester peaks. Gives exact SFA%, but runs systematically lower on total fat (e.g. 7.7g samosa) because non-fatty-acid lipids aren't counted.
                 </div>
               </div>
             </div>
@@ -3775,7 +3886,9 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
 
         // Active Recipe State
         activeResult: null,
+        baseActiveResult: null,
         selectedAxis: null,
+        selectedFryingSetting: 'auto',
 
         formatDishName(dish) {
           if (!dish) return '';
@@ -3838,9 +3951,123 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
         loadDemo(key) {
           this.selectedDemo = key;
           this.selectedAxis = null;
+          this.selectedFryingSetting = 'auto';
           if (this.demos[key]) {
-            this.activeResult = this.demos[key];
+            this.baseActiveResult = JSON.parse(JSON.stringify(this.demos[key]));
+            this.activeResult = JSON.parse(JSON.stringify(this.demos[key]));
+            if (this.activeResult.frying_correction?.applied) {
+              this.applyFryingSetting('auto');
+            }
           }
+        },
+
+        _median(nums) {
+          if (!nums.length) return null;
+          const sorted = nums.slice().sort((a, b) => a - b);
+          const mid = Math.floor(sorted.length / 2);
+          return sorted.length % 2 === 1 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+        },
+
+        applyFryingSetting(settingChoice) {
+          if (!this.baseActiveResult || !this.baseActiveResult.frying_correction?.applied) return;
+          const base = JSON.parse(JSON.stringify(this.baseActiveResult));
+          const fcBase = base.frying_correction;
+          const dishNorm = (base.recipe?.dish || '').toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
+
+          // Mirror src/lhf/frying.py _lookup_lab_fat_details()
+          const norm = s => (s || '').toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
+          let allMatched = this.labRows.filter(r => norm((r.item || '').split('(')[0]) === dishNorm);
+          if (!allMatched.length) {
+            allMatched = this.labRows.filter(r => {
+              const b = norm((r.item || '').split('(')[0]);
+              const f = norm(r.item || '');
+              return (b && (b.includes(dishNorm) || dishNorm.includes(b))) ||
+                     (f && (f.includes(dishNorm) || dishNorm.includes(f)));
+            });
+          }
+
+          let chosenRows = allMatched;
+          let settingUsed = 'all_matched';
+          let fallbackUsed = false;
+
+          if (settingChoice === 'auto') {
+            const homeRows = allMatched.filter(r => r.setting === 'home');
+            if (homeRows.length) {
+              chosenRows = homeRows;
+              settingUsed = 'home';
+            }
+          } else if (settingChoice !== 'all') {
+            const settingRows = allMatched.filter(r => r.setting === settingChoice);
+            if (settingRows.length) {
+              chosenRows = settingRows;
+              settingUsed = settingChoice;
+            } else {
+              chosenRows = allMatched;
+              settingUsed = 'all_matched_fallback';
+              fallbackUsed = true;
+            }
+          }
+
+          const fatVals = chosenRows.map(r => parseFloat(r.fat_g_100g)).filter(v => !Number.isNaN(v));
+          const fatPer100g = fatVals.length ? this._median(fatVals) : fcBase.fat_g_per_100g_lab;
+
+          let sfaVals = chosenRows.map(r => parseFloat(r.SFA_pct_of_fat)).filter(v => !Number.isNaN(v));
+          if (!sfaVals.length) {
+            sfaVals = allMatched.map(r => parseFloat(r.SFA_pct_of_fat)).filter(v => !Number.isNaN(v));
+          }
+          const sfaPct = sfaVals.length ? this._median(sfaVals) : fcBase.sfa_pct_of_fat_lab;
+
+          const nonOilMass = base.coverage?.included_mass_g || 0;
+          const newAbsFat = (nonOilMass / 100) * fatPer100g;
+          const newAbsSfa = newAbsFat * (sfaPct / 100);
+          const oldAbsFat = fcBase.absorbed_fat_g || 0;
+          const oldAbsSfa = fcBase.absorbed_sfa_g || 0;
+
+          base.totals.fat_g = Math.max(0, (base.totals.fat_g || 0) - oldAbsFat + newAbsFat);
+          base.totals.sfa_g = Math.max(0, (base.totals.sfa_g || 0) - oldAbsSfa + newAbsSfa);
+          base.totals.energy_kcal = Math.max(0, (base.totals.energy_kcal || 0) - (oldAbsFat * 9) + (newAbsFat * 9));
+
+          const srv = base.recipe?.servings || 1;
+          for (const k of Object.keys(base.per_serving)) {
+            if (base.totals[k] !== null && base.totals[k] !== undefined) {
+              base.per_serving[k] = base.totals[k] / srv;
+            }
+          }
+          for (const axKey of Object.keys(base.footprint.axes)) {
+            const ax = base.footprint.axes[axKey];
+            if (base.per_serving[axKey] !== null && base.per_serving[axKey] !== undefined) {
+              ax.amount = base.per_serving[axKey];
+              if (ax.limit) {
+                ax.pct_of_limit = (ax.amount / ax.limit) * 100;
+              }
+            }
+          }
+
+          base.frying_correction = {
+            ...fcBase,
+            absorbed_fat_g: newAbsFat,
+            absorbed_sfa_g: newAbsSfa,
+            fat_g_per_100g_lab: fatPer100g,
+            sfa_pct_of_fat_lab: sfaPct,
+            setting_requested: settingChoice,
+            setting_used: settingUsed,
+            fallback_used: fallbackUsed,
+            matched_rows_count: chosenRows.length
+          };
+
+          this.activeResult = base;
+        },
+
+        get fryingSettingStatusText() {
+          const fc = this.activeResult?.frying_correction;
+          if (!fc) return '';
+          if (fc.fallback_used) {
+            return `No lab data for "${fc.setting_requested}" — fell back to all ${fc.matched_rows_count} matched rows`;
+          }
+          if (fc.setting_used === 'all_matched') {
+            return `Using median across all ${fc.matched_rows_count} matched rows`;
+          }
+          return `Matched ${fc.matched_rows_count} "${fc.setting_used}" lab row${fc.matched_rows_count === 1 ? '' : 's'}`;
         },
 
         get dominantAxis() {
@@ -4281,55 +4508,51 @@ Primary Culprit: Dairy Butter &amp; Cream (E018 + E006)
           }
         },
 
-        get labSettingStats() {
-          const meta = {
-            'street': {
-              icon: '🏪', label: 'Street / Halwai', color: '#ff3b30', textColor: '#c62828',
-              note: 'Oil is reused across batches (Vanaspati/Palm); degraded oil increases viscosity and crust uptake.'
-            },
-            'home': {
-              icon: '🏠', label: 'Home Cooking', color: '#ff9500', textColor: '#b25e00',
-              note: 'Small kadai frying drops temperature when cold batter enters, extending soak time.'
-            },
-            'lab-controlled': {
-              icon: '🔬', label: 'Lab-Controlled', color: '#28cd41', textColor: '#2e7d32',
-              note: 'Fresh oil, fixed frying temperature, and standardized draining trials.'
-            },
-            'retail-packaged': {
-              icon: '📦', label: 'Retail Packaged', color: '#af52de', textColor: '#7b1fa2',
-              note: 'Continuous industrial lines and standardized centrifugal de-oiling.'
-            },
-            'restaurant-takeaway': {
-              icon: '🍽️', label: 'Restaurant Takeaway', color: '#0071e3', textColor: '#0051ba',
-              note: 'High-heat thermostatic fryers (175–185°C) seal outer crust quickly (also includes lower GC FAME-sum rows).'
-            }
+        get sameDishComparisons() {
+          const colors = {
+            'street': '#ff3b30',
+            'home': '#ff9500',
+            'restaurant-takeaway': '#0071e3',
+            'retail-packaged': '#af52de',
+            'lab-controlled': '#28cd41'
           };
+          const specs = [
+            {
+              title: 'Samosa (Vegetable / Standard)',
+              match: r => r.item.split('(')[0].trim().toLowerCase() === 'samosa' || r.item === 'Samosa Vegetable Retail'
+            },
+            {
+              title: 'Onion Pakora / Bhaji',
+              match: r => ['Onion Pakora / Bhaji', 'Bhaji', 'Pakoras', 'Pakoras Homemade', 'Vegetable Pakora Takeaway', 'Vegetable Pakora Retail'].includes(r.item)
+            },
+            {
+              title: 'Puri / Poori',
+              match: r => ['Puri', 'Puri (White flour)', 'Puri (Wholemeal flour)', 'Poori', 'Poori (Control)'].includes(r.item)
+            }
+          ];
 
-          const groups = {};
-          for (const r of this.labRows) {
-            const val = parseFloat(r.fat_g_100g);
-            if (!r.setting || Number.isNaN(val)) continue;
-            if (!groups[r.setting]) groups[r.setting] = [];
-            groups[r.setting].push(val);
-          }
+          return specs.map(spec => {
+            const rows = this.labRows
+              .filter(spec.match)
+              .map(r => ({
+                label: `${r.setting} · ${r.source} (${r.method})`,
+                fat: parseFloat(r.fat_g_100g),
+                color: colors[r.setting] || '#8e8e93'
+              }))
+              .filter(r => !Number.isNaN(r.fat))
+              .sort((a, b) => a.fat - b.fat);
 
-          const out = Object.keys(groups).map(setting => {
-            const vals = groups[setting].slice().sort((a, b) => a - b);
-            const mid = Math.floor(vals.length / 2);
-            const median = vals.length % 2 === 1 ? vals[mid] : (vals[mid - 1] + vals[mid]) / 2;
-            const info = meta[setting] || { icon: '🍽️', label: setting, color: '#8e8e93', textColor: '#48484a', note: '' };
+            if (!rows.length) return { title: spec.title, ratio: '1.0', min: 0, max: 0, rows: [] };
+            const min = rows[0].fat;
+            const max = rows[rows.length - 1].fat;
             return {
-              setting,
-              ...info,
-              count: vals.length,
-              median,
-              min: vals[0],
-              max: vals[vals.length - 1]
+              title: spec.title,
+              ratio: (max / Math.max(min, 0.1)).toFixed(2),
+              min,
+              max,
+              rows
             };
           });
-
-          out.sort((a, b) => b.median - a.median);
-          return out;
         },
 
         get filteredLabRows() {

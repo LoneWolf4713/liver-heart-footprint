@@ -148,11 +148,34 @@ def _is_non_fried_dish(dish_name: str) -> bool:
     return has_non_fried and not has_fried
 
 
-def _lookup_lab_fat(dish_name: str) -> tuple[float, float, str]:
+ALLOWED_FRYING_SETTINGS = {
+    "auto",
+    "all",
+    "street",
+    "home",
+    "restaurant-takeaway",
+    "retail-packaged",
+    "lab-controlled",
+}
+
+
+def _lookup_lab_fat_details(dish_name: str, frying_setting: str = "auto") -> dict:
     """
-    Looks up lab fat values for a dish name.
-    Returns (fat_g_100g, sfa_pct_of_fat, match_description).
+    Looks up lab fat values for a dish name, optionally filtered by cooking setting.
+
+    frying_setting:
+      - 'auto': preserve default behaviour (prefer 'home' if present, else all matched rows)
+      - 'all': median across all matched rows regardless of setting
+      - specific setting ('street', 'home', 'restaurant-takeaway', 'retail-packaged', 'lab-controlled'):
+        filter matched rows to that setting; if none exist, fall back to all matched rows
+        (or category default) and record fallback_used=True.
     """
+    norm_setting = (frying_setting or "auto").strip().lower()
+    if norm_setting not in ALLOWED_FRYING_SETTINGS:
+        raise ValueError(
+            f"Invalid frying_setting {frying_setting!r}. Must be one of {sorted(ALLOWED_FRYING_SETTINGS)}"
+        )
+
     norm_dish = _normalize_name(dish_name)
     lab_data = _load_lab_data()
 
@@ -178,12 +201,6 @@ def _lookup_lab_fat(dish_name: str) -> tuple[float, float, str]:
         if sub_matches:
             matched_rows = sub_matches
 
-    # Step 4: Setting preference
-    if matched_rows:
-        home_matches = [r for r in matched_rows if r.get("setting") == "home"]
-        if home_matches:
-            matched_rows = home_matches
-
     # Step 5: Word overlap if still no match
     if not matched_rows:
         dish_words = {w for w in norm_dish.split() if w not in STOPWORDS}
@@ -196,9 +213,7 @@ def _lookup_lab_fat(dish_name: str) -> tuple[float, float, str]:
                     scored.append((overlap, r))
             if scored:
                 max_score = max(s[0] for s in scored)
-                cand_rows = [r for score, r in scored if score == max_score]
-                home_cands = [r for r in cand_rows if r.get("setting") == "home"]
-                matched_rows = home_cands if home_cands else cand_rows
+                matched_rows = [r for score, r in scored if score == max_score]
 
     # Step 6: Category fallback if still no match
     if not matched_rows:
@@ -216,26 +231,88 @@ def _lookup_lab_fat(dish_name: str) -> tuple[float, float, str]:
 
         fat_default = CATEGORY_DEFAULTS.get(category, CATEGORY_DEFAULTS["default"])
         sfa_default = CATEGORY_SFA_PCT.get(category, CATEGORY_SFA_PCT["default"])
-        return (fat_default, sfa_default, f"category_default:{category}")
+        return {
+            "fat_g_100g": fat_default,
+            "sfa_pct_of_fat": sfa_default,
+            "lab_match": f"category_default:{category}",
+            "setting_requested": norm_setting,
+            "setting_used": "category_default",
+            "fallback_used": norm_setting != "auto",
+            "matched_rows_count": 0,
+            "category": category,
+        }
+
+    # Step 4: Cooking setting filter / fallback
+    all_matched = matched_rows
+    setting_used = "all_matched"
+    fallback_used = False
+
+    if norm_setting == "auto":
+        home_matches = [r for r in all_matched if r.get("setting") == "home"]
+        if home_matches:
+            matched_rows = home_matches
+            setting_used = "home"
+        else:
+            matched_rows = all_matched
+            setting_used = "all_matched"
+    elif norm_setting == "all":
+        matched_rows = all_matched
+        setting_used = "all_matched"
+    else:
+        setting_matches = [r for r in all_matched if r.get("setting") == norm_setting]
+        if setting_matches:
+            matched_rows = setting_matches
+            setting_used = norm_setting
+        else:
+            matched_rows = all_matched
+            setting_used = "all_matched_fallback"
+            fallback_used = True
 
     # Step 7: Derive median fat and SFA from matched rows
     fat_vals = [r["fat_g_100g"] for r in matched_rows if r.get("fat_g_100g") is not None]
     fat_g_100g = statistics.median(fat_vals) if fat_vals else CATEGORY_DEFAULTS["default"]
 
     sfa_vals = [r["SFA_pct_of_fat"] for r in matched_rows if r.get("SFA_pct_of_fat") is not None]
+    if not sfa_vals and matched_rows != all_matched:
+        # If setting-specific rows lack SFA% (e.g. UK CoFID), fall back to dish's SFA% rows before category default
+        sfa_vals = [r["SFA_pct_of_fat"] for r in all_matched if r.get("SFA_pct_of_fat") is not None]
+
     if sfa_vals:
         sfa_pct_of_fat = statistics.median(sfa_vals)
     else:
-        sfa_pct_of_fat = CATEGORY_SFA_PCT["default"]
+        row_cat = matched_rows[0].get("category") if matched_rows else "default"
+        sfa_pct_of_fat = CATEGORY_SFA_PCT.get(row_cat, CATEGORY_SFA_PCT["default"])
 
     item_names = sorted(set(r["item"].split("(")[0].strip() for r in matched_rows))
     matched_items_joined = ", ".join(item_names)
     match_desc = f"lab_match:{matched_items_joined}"
 
-    return (fat_g_100g, sfa_pct_of_fat, match_desc)
+    return {
+        "fat_g_100g": fat_g_100g,
+        "sfa_pct_of_fat": sfa_pct_of_fat,
+        "lab_match": match_desc,
+        "setting_requested": norm_setting,
+        "setting_used": setting_used,
+        "fallback_used": fallback_used,
+        "matched_rows_count": len(matched_rows),
+    }
 
 
-def correct_frying(result: dict, setting: str = "urban", risk: str = "general") -> dict:
+def _lookup_lab_fat(dish_name: str, frying_setting: str = "auto") -> tuple[float, float, str]:
+    """
+    Looks up lab fat values for a dish name.
+    Returns (fat_g_100g, sfa_pct_of_fat, match_description).
+    """
+    info = _lookup_lab_fat_details(dish_name, frying_setting=frying_setting)
+    return (info["fat_g_100g"], info["sfa_pct_of_fat"], info["lab_match"])
+
+
+def correct_frying(
+    result: dict,
+    setting: str = "urban",
+    risk: str = "general",
+    frying_setting: str = "auto",
+) -> dict:
     """
     Main entry point. Corrects deep-frying bath oil lines in a pipeline result dict.
     """
@@ -253,7 +330,10 @@ def correct_frying(result: dict, setting: str = "urban", risk: str = "general") 
 
     oil_mass_g = sum(l["grams"] for l in frying_bath_lines if l.get("grams") is not None)
 
-    fat_g_100g, sfa_pct_of_fat, match_desc = _lookup_lab_fat(dish_name)
+    lab_info = _lookup_lab_fat_details(dish_name, frying_setting=frying_setting)
+    fat_g_100g = lab_info["fat_g_100g"]
+    sfa_pct_of_fat = lab_info["sfa_pct_of_fat"]
+    match_desc = lab_info["lab_match"]
 
     # Step 6: Non-oil included mass
     non_oil_mass_g = sum(
@@ -359,6 +439,10 @@ def correct_frying(result: dict, setting: str = "urban", risk: str = "general") 
         "fat_g_per_100g_lab": fat_g_100g,
         "sfa_pct_of_fat_lab": sfa_pct_of_fat,
         "lab_match": match_desc,
+        "setting_requested": lab_info["setting_requested"],
+        "setting_used": lab_info["setting_used"],
+        "fallback_used": lab_info["fallback_used"],
+        "matched_rows_count": lab_info["matched_rows_count"],
     }
 
     return corrected_result
