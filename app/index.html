@@ -2284,247 +2284,151 @@
     }
 
     /* ======================================================== */
-    /* D3 ATLAS: PRESENTATION VIEWER & DATASET EXTENSIONS       */
+    /* D3 ATLAS: UNIFORM TOP-DOWN CARDS, SLIDES & BENCHMARKS    */
     /* ======================================================== */
-    .d3-step-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 16px;
-      flex-wrap: wrap;
-    }
-
-    .d3-step-pill {
-      display: inline-flex;
-      align-items: center;
-      padding: 4px 11px;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      background: #eaf3ff;
-      color: #0058b8;
-      border: 1px solid #c6defe;
-    }
-
-    .d3-step-title {
-      font-size: 20px;
-      font-weight: 750;
-      color: var(--text-main);
-      margin: 0;
-      letter-spacing: -0.015em;
-    }
-
-    .d3-step-sub {
-      font-size: 14.5px;
-      color: var(--text-muted);
-      line-height: 1.55;
-      margin: 0 0 18px 0;
-      max-width: 900px;
-    }
-
-    .atlas-metrics-grid {
+    .d3-verdict-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      margin-bottom: 40px;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 36px;
     }
 
-    .atlas-metric-card {
-      background: #ffffff;
-      border: 1px solid var(--border-subtle);
-      border-radius: 14px;
-      padding: 22px 24px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
-      transition: all 0.2s ease;
+    .d3-mini-bar-row {
+      display: grid;
+      grid-template-columns: 155px 1fr 82px;
+      gap: 10px;
+      align-items: center;
+      font-size: 13px;
     }
 
-    .atlas-metric-card:hover {
-      border-color: #d2d2d7;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+    .d3-mini-track {
+      height: 10px;
+      background: #ececef;
+      border-radius: 999px;
+      overflow: hidden;
     }
 
-    .atlas-metric-val {
-      font-size: 32px;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-      margin-bottom: 8px;
+    .d3-mini-fill {
+      height: 100%;
+      border-radius: 999px;
     }
 
-    .atlas-metric-label {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 6px;
-    }
-
-    .atlas-metric-sub {
-      font-size: 13.5px;
-      color: #48484a;
-      line-height: 1.5;
-    }
-
-    /* Presentation-Ready Single Figure Viewer */
-    .figure-viewer-container {
-      background: #ffffff;
-      border: 1px solid var(--border-subtle);
-      border-radius: 14px;
-      padding: 28px 32px;
-      margin-bottom: 44px;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
-    }
-
-    .figure-viewer-header {
+    .d3-slide-controls-bar {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 20px;
+      align-items: center;
+      gap: 12px;
       flex-wrap: wrap;
-      gap: 16px;
+      padding: 12px 20px;
+      background: #fbfbfd;
+      border-bottom: 1px solid var(--border-divider);
     }
 
     .figure-selector-chips {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .figure-selector-chip {
-      background: #f5f5f7;
-      border: 1px solid #e5e5ea;
-      border-radius: 8px;
-      padding: 8px 14px;
-      font-size: 13.5px;
-      font-weight: 600;
-      color: #48484a;
-      cursor: pointer;
-      transition: all 0.15s ease;
-      display: flex;
-      align-items: center;
       gap: 6px;
     }
 
+    .figure-selector-chip {
+      background: #ffffff;
+      border: 1px solid #d2d2d7;
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #48484a;
+      cursor: pointer;
+      transition: all 0.14s ease;
+    }
+
     .figure-selector-chip:hover {
-      background: #e8e8ed;
-      color: #1d1d1f;
+      background: #f2f2f7;
+      color: var(--text-main);
     }
 
     .figure-selector-chip.active {
       background: #0071e3;
       color: #ffffff;
       border-color: #0071e3;
-      box-shadow: 0 2px 6px rgba(0, 113, 227, 0.25);
     }
 
     .figure-nav-controls {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
     }
 
     .figure-nav-btn {
       background: #ffffff;
       border: 1px solid var(--border-subtle);
       border-radius: 8px;
-      padding: 8px 14px;
-      font-size: 13.5px;
+      padding: 6px 12px;
+      font-size: 13px;
       font-weight: 600;
       color: var(--text-main);
       cursor: pointer;
-      transition: all 0.15s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
+      transition: all 0.14s ease;
     }
 
     .figure-nav-btn:hover {
-      background: #f5f5f7;
-      border-color: #d2d2d7;
+      background: #f2f2f7;
     }
 
     .figure-nav-counter {
       font-family: var(--font-mono);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 600;
-      color: #6e6e73;
-      margin: 0 4px;
+      color: var(--text-muted);
+      margin: 0 2px;
     }
 
     .figure-stage-viewport {
-      background: #fbfbfd;
-      border: 1px solid #e5e5ea;
-      border-radius: 10px;
-      padding: 20px;
+      background: #ffffff;
+      padding: 18px 20px;
       text-align: center;
-      margin-bottom: 20px;
-      min-height: 500px;
       display: flex;
       align-items: center;
       justify-content: center;
+      min-height: 460px;
     }
 
     .figure-stage-img {
-      max-height: 580px;
+      max-height: 560px;
       max-width: 100%;
       height: auto;
       object-fit: contain;
-      border-radius: 6px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+      border-radius: 8px;
+      border: 1px solid var(--border-divider);
     }
 
-    .figure-insight-card {
-      background: #f8fafd;
-      border: 1px solid #d0e2ff;
-      border-radius: 12px;
-      padding: 18px 22px;
-      font-size: 15px;
-      line-height: 1.65;
+    .figure-insight-strip {
+      background: #f7faff;
+      border-top: 1px solid #dbeafe;
+      padding: 14px 20px;
+      font-size: 14.5px;
+      line-height: 1.6;
       color: #1d1d1f;
-    }
-
-    .figure-insight-label {
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #0071e3;
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
     }
 
     .atlas-table td,
     .atlas-table th {
-      font-size: 14px;
+      font-size: 13.5px;
     }
 
-    .atlas-callout-banner {
-      background: #fffaf0;
-      border: 1px solid #f5d89a;
-      border-radius: 12px;
-      padding: 16px 20px;
-      font-size: 14px;
-      line-height: 1.6;
-      color: #3b2a06;
-      margin-top: 14px;
-    }
-
-    .atlas-summary-strip {
-      display: flex;
+    .d3-filter-tabs {
+      display: inline-flex;
+      gap: 6px;
       flex-wrap: wrap;
-      gap: 14px;
-      align-items: center;
-      justify-content: space-between;
-      background: #f8f9fb;
-      border: 1px solid #e5e5ea;
-      border-radius: 10px;
-      padding: 14px 18px;
-      margin-bottom: 16px;
-      font-size: 14px;
-      color: #2c2c2e;
+    }
+
+    @media (max-width: 1020px) {
+      .d3-verdict-grid {
+        grid-template-columns: 1fr;
+      }
+      .d3-mini-bar-row {
+        grid-template-columns: 120px 1fr 74px;
+      }
     }
   </style>
 
@@ -4393,242 +4297,372 @@
       </div>
 
       <!-- ========================================== -->
-      <!-- TAB 3: D3 · ATLAS                          -->
+      <!-- TAB 3: D3 · ATLAS (4-STEP VISUAL STORY)    -->
       <!-- ========================================== -->
       <div x-show="currentTab === 'd3'" x-transition.opacity.duration.150ms>
-        <div style="margin-bottom: 34px;">
-          <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0071e3; margin-bottom: 6px;">
-            Deliverable 3 (D3) &middot; Macro-Scale Computational Atlas
-          </div>
-          <h2 style="font-size: 29px; font-weight: 800; letter-spacing: -0.025em; margin: 0 0 10px 0; color: var(--text-main);">
-            Indian Dish Footprint Atlas: Categories, Lipid Culprits &amp; Web Inflation
-          </h2>
-          <p style="font-size: 15.5px; color: var(--text-muted); max-width: 920px; line-height: 1.6; margin: 0;">
-            Stepping back from single-dish analysis, we ran our engine across <strong>1,014 standardized INDB textbook formulations</strong> and <strong>71 popular web recipes</strong> to answer three questions: which Indian dish categories hit daily limits fastest, what lipid sources drive saturated fat, and how much commercial web recipes inflate fat over textbooks.
+
+        <!-- Header -->
+        <div style="margin-bottom: 28px;">
+          <h2 style="font-size: 30px; font-weight: 700; margin: 0 0 8px 0; letter-spacing: -0.02em;">Indian Dish Footprint Atlas (D3)</h2>
+          <p style="font-size: 16px; color: var(--text-body); margin: 0; line-height: 1.55; max-width: 960px;">
+            Macro-scale audit across <strong>1,014 INDB textbook recipes</strong> and <strong>71 popular web recipes</strong> showing which food categories breach limits fastest, what fats drive saturated fat, and how online portals inflate fat &amp; SFA.
           </p>
-        </div>
-
-        <!-- STEP 1: EXECUTIVE VERDICT (4 READABLE CARDS) -->
-        <div class="d3-step-header">
-          <span class="d3-step-pill">Step 1 · Corpus Verdict</span>
-          <h3 class="d3-step-title">Four Takeaways Across 1,085 Analyzed Recipes</h3>
-        </div>
-        <div class="atlas-metrics-grid">
-          <div class="atlas-metric-card">
-            <div class="atlas-metric-val" style="color: #0071e3;">1,014 + 71</div>
-            <div class="atlas-metric-label">Textbook &amp; Web Recipes Audited</div>
-            <div class="atlas-metric-sub"><strong>932</strong> INDB dishes carry verified serving counts across <strong>11</strong> culinary categories (<strong>103</strong> deep-frying corrected), paired with <strong>71</strong> scraped portal recipes across 10 websites.</div>
-          </div>
-
-          <div class="atlas-metric-card">
-            <div class="atlas-metric-val" style="color: #d9534f;">31.6% / 61.9%</div>
-            <div class="atlas-metric-label">Highest Dual Burden (Mithai &amp; Snacks)</div>
-            <div class="atlas-metric-sub"><strong>Sweets &amp; Desserts</strong> hit <strong>31.6%</strong> of the 24.9g SFA limit and <strong>61.9%</strong> WHO free sugar per serving; <strong>Snacks</strong> hit <strong>31.0%</strong> general SFA (<strong>40.8%</strong> under the 17.4g high-risk ceiling).</div>
-          </div>
-
-          <div class="atlas-metric-card">
-            <div class="atlas-metric-val" style="color: #e67e22;">63.6% / 46.0%</div>
-            <div class="atlas-metric-label">Two Distinct Lipid Culprits</div>
-            <div class="atlas-metric-sub"><strong>Dairy fat</strong> (ghee, butter, khoya) drives <strong>63.6%</strong> of SFA in Sweets, while <strong>cooking oil &amp; frying absorption</strong> drive <strong>58.2%</strong> in Breads and <strong>46.0%</strong> in Street Snacks.</div>
-          </div>
-
-          <div class="atlas-metric-card">
-            <div class="atlas-metric-val" style="color: #c62828;" x-text="`${Number(atlas.metrics.overall_median_sfa_inflation || 1.18).toFixed(2)}×`"></div>
-            <div class="atlas-metric-label">Clean Web SFA Inflation (n=12 Pairs)</div>
-            <div class="atlas-metric-sub">Excluding 3 deep-fried dishes where blogs omit oil quantity, web recipes pack <strong>1.10× fat</strong> and <strong>1.18× SFA</strong> — peaking at <strong>4.01×</strong> SFA in Vegetable Pulao and <strong>3.54×</strong> in Biryani.</div>
+          <div class="d1-hero-meta">
+            <span class="d1-meta-pill">📚 1,014 INDB textbook dishes (932 with servings)</span>
+            <span class="d1-meta-pill">🌐 71 scraped web recipes across 10 Indian portals</span>
+            <span class="d1-meta-pill">🍳 103 INDB deep-fried recipes Lab-Corrected</span>
           </div>
         </div>
 
-        <!-- STEP 2: NARRATIVE 4-FIGURE DECK -->
-        <div class="d3-step-header">
-          <span class="d3-step-pill">Step 2 · Visual Walkthrough</span>
-          <h3 class="d3-step-title">Interactive Presentation Slides (INDB Baseline &rarr; Culprits &rarr; Organ Matrix &rarr; Web Shift)</h3>
-        </div>
-        <p class="d3-step-sub">
-          Step cleanly through the four atlas figures in lecture order: first establishing category daily-budget loads and lipid drivers within the 932 INDB dishes, then comparing clean textbook vs. online recipe pairs.
-        </p>
+        <!-- STEP 1: VISUAL CORPUS VERDICT (4 VISUAL FINDING CARDS) -->
+        <div style="margin-bottom: 36px;">
+          <div class="d1-step-label">Step 1 · Corpus Verdict</div>
+          <h3 class="d1-step-heading">Four key findings across 1,085 analyzed recipes</h3>
+          <p class="d1-step-desc">
+            Instead of averages across mixed dishes, we grouped the corpus into 11 culinary categories and 15 matched textbook-vs-web benchmark dishes.
+          </p>
 
-        <div class="figure-viewer-container">
-          <div class="figure-viewer-header">
-            <div>
-              <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0071e3; margin-bottom: 4px;" x-text="`Slide ${activeFigureIndex + 1} of ${figures.length} · ${figures[activeFigureIndex].badge}`"></div>
-              <h3 style="font-size: 21px; font-weight: 750; color: var(--text-main); margin: 0 0 4px 0;" x-text="figures[activeFigureIndex].title"></h3>
-              <div style="font-size: 14.5px; color: var(--text-muted);" x-text="figures[activeFigureIndex].subtitle"></div>
+          <div class="d3-verdict-grid">
+            <!-- Card 1: Corpus Scope -->
+            <div class="d1-card">
+              <div class="d1-card-head head-blue">
+                <div class="d1-card-title-row">
+                  <span class="d1-icon-badge">📦</span>
+                  <div>
+                    <div>Audited Corpus Split</div>
+                    <div style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">1,014 Textbook + 71 Web Recipes</div>
+                  </div>
+                </div>
+                <span class="badge badge-blue" style="font-size: 12px;">1,085 Total</span>
+              </div>
+              <div class="d1-card-body">
+                <div style="font-size: 14px; color: #3a3a3c; line-height: 1.5;">
+                  <strong>932</strong> INDB dishes carry serving counts across <strong>11 categories</strong> (<strong>103</strong> frying-corrected); <strong>71</strong> scraped portal recipes power the 15-dish inflation comparison.
+                </div>
+                <div>
+                  <div class="d1-stacked-bar">
+                    <div class="d1-stacked-seg" style="width: 85.9%; background: #0071e3;" title="932 INDB with servings"></div>
+                    <div class="d1-stacked-seg" style="width: 7.6%; background: #94a3b8;" title="82 INDB without servings"></div>
+                    <div class="d1-stacked-seg" style="width: 6.5%; background: #9333ea;" title="71 Web scraped"></div>
+                  </div>
+                  <div class="d1-legend-row">
+                    <span class="d1-legend-item"><span class="d1-legend-dot" style="background: #0071e3;"></span>INDB w/ servings <strong>932</strong></span>
+                    <span class="d1-legend-item"><span class="d1-legend-dot" style="background: #94a3b8;"></span>No servings <strong>82</strong></span>
+                    <span class="d1-legend-item"><span class="d1-legend-dot" style="background: #9333ea;"></span>Web portals <strong>71</strong></span>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+            <!-- Card 2: Highest Dual Organ Load -->
+            <div class="d1-card">
+              <div class="d1-card-head" style="background: linear-gradient(90deg, #fff1f2 0%, #ffffff 100%); border-bottom-color: #fecdd3;">
+                <div class="d1-card-title-row">
+                  <span class="d1-icon-badge">🍰</span>
+                  <div>
+                    <div>Peak Single-Serving Load</div>
+                    <div style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">Sweets &amp; Snacks vs. Dals</div>
+                  </div>
+                </div>
+                <span class="badge badge-red" style="font-size: 12px;">6.6&times; Category Gap</span>
+              </div>
+              <div class="d1-card-body">
+                <div style="display: flex; flex-direction: column; gap: 9px;">
+                  <div class="d3-mini-bar-row">
+                    <span style="font-weight: 600;">Sweets · Sugar</span>
+                    <div class="d3-mini-track"><div class="d3-mini-fill" style="width: 61.9%; background: #ef4444;"></div></div>
+                    <span class="mono-cell" style="text-align: right; font-weight: 700; color: #dc2626;">61.9%</span>
+                  </div>
+                  <div class="d3-mini-bar-row">
+                    <span style="font-weight: 600;">Sweets · SFA</span>
+                    <div class="d3-mini-track"><div class="d3-mini-fill" style="width: 31.6%; background: #f59e0b;"></div></div>
+                    <span class="mono-cell" style="text-align: right; font-weight: 700;">31.6%</span>
+                  </div>
+                  <div class="d3-mini-bar-row">
+                    <span style="font-weight: 600;">Snacks · High-Risk SFA</span>
+                    <div class="d3-mini-track"><div class="d3-mini-fill" style="width: 40.8%; background: #f59e0b;"></div></div>
+                    <span class="mono-cell" style="text-align: right; font-weight: 700;">40.8%</span>
+                  </div>
+                  <div class="d3-mini-bar-row">
+                    <span style="font-weight: 600;">Dals &amp; Legumes · SFA</span>
+                    <div class="d3-mini-track"><div class="d3-mini-fill" style="width: 4.8%; background: #22c55e;"></div></div>
+                    <span class="mono-cell" style="text-align: right; font-weight: 700; color: #16a34a;">4.8%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Two Distinct Lipid Culprits -->
+            <div class="d1-card">
+              <div class="d1-card-head head-amber">
+                <div class="d1-card-title-row">
+                  <span class="d1-icon-badge">🧈</span>
+                  <div>
+                    <div>Two Distinct Lipid Culprits</div>
+                    <div style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">Where category saturated fat actually originates</div>
+                  </div>
+                </div>
+                <span class="badge badge-amber" style="font-size: 12px;">Dairy vs. Oil</span>
+              </div>
+              <div class="d1-card-body">
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                  <div>
+                    <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px;">
+                      <strong>Sweets &amp; Desserts</strong>
+                      <span style="color: #b45309; font-weight: 700;">63.6% Dairy Fat (ghee/khoya)</span>
+                    </div>
+                    <div class="d1-stacked-bar">
+                      <div class="d1-stacked-seg" style="width: 63.6%; background: #f59e0b;"></div>
+                      <div class="d1-stacked-seg" style="width: 24.1%; background: #0071e3;"></div>
+                      <div class="d1-stacked-seg" style="width: 12.3%; background: #cbd5e1;"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px;">
+                      <strong>Breads &amp; Flatbreads</strong>
+                      <span style="color: #0058b8; font-weight: 700;">58.2% Cooking Oil</span>
+                    </div>
+                    <div class="d1-stacked-bar">
+                      <div class="d1-stacked-seg" style="width: 31.8%; background: #f59e0b;"></div>
+                      <div class="d1-stacked-seg" style="width: 58.2%; background: #0071e3;"></div>
+                      <div class="d1-stacked-seg" style="width: 10.0%; background: #cbd5e1;"></div>
+                    </div>
+                  </div>
+                  <div class="d1-legend-row">
+                    <span class="d1-legend-item"><span class="d1-legend-dot" style="background: #f59e0b;"></span>Dairy fat</span>
+                    <span class="d1-legend-item"><span class="d1-legend-dot" style="background: #0071e3;"></span>Cooking oil &amp; frying</span>
+                    <span class="d1-legend-item"><span class="d1-legend-dot" style="background: #cbd5e1;"></span>Inherent food</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Web Inflation vs INDB -->
+            <div class="d1-card">
+              <div class="d1-card-head head-purple">
+                <div class="d1-card-title-row">
+                  <span class="d1-icon-badge">📈</span>
+                  <div>
+                    <div>Web Recipe Inflation Shift</div>
+                    <div style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">12 comparable pairs (excludes 3 unquantified fry blogs)</div>
+                  </div>
+                </div>
+                <span class="badge badge-purple" style="font-size: 12px;" x-text="`${Number(atlas.metrics.overall_median_sfa_inflation || 1.18).toFixed(2)}× Median SFA`"></span>
+              </div>
+              <div class="d1-card-body">
+                <div style="font-size: 14px; color: #3a3a3c; line-height: 1.5;">
+                  Modern food portals add extra butter, ghee, and cream finishing — driving <strong>1.10&times;</strong> median fat and <strong>1.18&times;</strong> SFA across matched dishes.
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                  <div class="d3-mini-bar-row">
+                    <span style="font-weight: 600;">Vegetable Pulao</span>
+                    <div class="d3-mini-track"><div class="d3-mini-fill" style="width: 100%; background: #9333ea;"></div></div>
+                    <span class="mono-cell" style="text-align: right; font-weight: 700; color: #7e22ce;">4.01&times; SFA</span>
+                  </div>
+                  <div class="d3-mini-bar-row">
+                    <span style="font-weight: 600;">Chicken Biryani</span>
+                    <div class="d3-mini-track"><div class="d3-mini-fill" style="width: 88%; background: #9333ea;"></div></div>
+                    <span class="mono-cell" style="text-align: right; font-weight: 700; color: #7e22ce;">3.54&times; SFA</span>
+                  </div>
+                  <div class="d3-mini-bar-row">
+                    <span style="font-weight: 600;">Chole</span>
+                    <div class="d3-mini-track"><div class="d3-mini-fill" style="width: 74%; background: #0071e3;"></div></div>
+                    <span class="mono-cell" style="text-align: right; font-weight: 700; color: #0058b8;">2.97&times; SFA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2: INTERACTIVE 4-FIGURE PRESENTATION DECK -->
+        <div style="margin-bottom: 36px;">
+          <div class="d1-step-label">Step 2 · Visual Walkthrough</div>
+          <h3 class="d1-step-heading">Four publication figures in lecture order</h3>
+          <p class="d1-step-desc">
+            Step cleanly through Category Budgets, Lipid Culprit Decomposition, the Heart-vs-Liver Matrix, and the Textbook-vs-Web Inflation Chart.
+          </p>
+
+          <div class="d1-card">
+            <div class="d1-card-head head-blue">
+              <div class="d1-card-title-row">
+                <span class="d1-icon-badge">📊</span>
+                <div>
+                  <div x-text="figures[activeFigureIndex].title"></div>
+                  <div style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);" x-text="figures[activeFigureIndex].subtitle"></div>
+                </div>
+              </div>
+              <span class="badge badge-blue" style="font-size: 12px;" x-text="`Slide ${activeFigureIndex + 1} / ${figures.length} · ${figures[activeFigureIndex].badge}`"></span>
+            </div>
+
+            <div class="d3-slide-controls-bar">
               <div class="figure-selector-chips">
                 <template x-for="(fig, idx) in figures" :key="fig.id">
-                  <button
-                    type="button"
-                    class="figure-selector-chip"
-                    :class="{ 'active': activeFigureIndex === idx }"
-                    @click="activeFigureIndex = idx">
+                  <button type="button"
+                          class="figure-selector-chip"
+                          :class="{ 'active': activeFigureIndex === idx }"
+                          @click="activeFigureIndex = idx">
                     <span x-text="fig.chipLabel"></span>
                   </button>
                 </template>
               </div>
-
               <div class="figure-nav-controls">
-                <button type="button" class="figure-nav-btn" @click="prevFigure()" title="Previous Slide">&larr; Prev</button>
+                <button type="button" class="figure-nav-btn" @click="prevFigure()">&larr; Prev</button>
                 <span class="figure-nav-counter" x-text="`${activeFigureIndex + 1} / ${figures.length}`"></span>
-                <button type="button" class="figure-nav-btn" @click="nextFigure()" title="Next Slide">Next &rarr;</button>
+                <button type="button" class="figure-nav-btn" @click="nextFigure()">Next &rarr;</button>
               </div>
             </div>
-          </div>
 
-          <div class="figure-stage-viewport">
-            <img
-              :src="figures[activeFigureIndex].src"
-              :alt="figures[activeFigureIndex].title"
-              class="figure-stage-img">
-          </div>
-
-          <div class="figure-insight-card">
-            <div class="figure-insight-label">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="12" y1="16" x2="12" y2="12"></line>
-                <line x1="12" y1="8" x2="12.01" y2="8"></line>
-              </svg>
-              Key Takeaway for This Slide
+            <div class="figure-stage-viewport">
+              <img :src="figures[activeFigureIndex].src"
+                   :alt="figures[activeFigureIndex].title"
+                   class="figure-stage-img">
             </div>
-            <div style="font-size: 15px; line-height: 1.65; color: #1d1d1f;" x-text="figures[activeFigureIndex].insight"></div>
+
+            <div class="figure-insight-strip">
+              <strong style="color: #0058b8;">Key Takeaway:</strong>
+              <span x-text="figures[activeFigureIndex].insight"></span>
+            </div>
           </div>
         </div>
 
-        <!-- STEP 3: 11-CATEGORY SUMMARY TABLE -->
-        <div style="margin-bottom: 48px;">
-          <div class="d3-step-header">
-            <span class="d3-step-pill">Step 3 · INDB Baseline Table</span>
-            <h3 class="d3-step-title">Per-Serving Nutrient Medians Across 11 Culinary Categories (n=932 Recipes)</h3>
-          </div>
-          <p class="d3-step-sub">
-            General SFA percentages use the ICMR-NIN 2024 &lt;10%E limit (<strong>24.9g/day</strong>); Cardiometabolic SFA uses the high-risk &lt;7%E limit (<strong>17.4g/day</strong>). Primary SFA driver is computed from per-recipe class attribution across all analyzed dishes in that category.
+        <!-- STEP 3: 11-CATEGORY INDB BASELINE TABLE -->
+        <div id="d3-cat-table-anchor" style="margin-bottom: 36px;">
+          <div class="d1-step-label">Step 3 · INDB Baseline Breakdown</div>
+          <h3 class="d1-step-heading">Per-serving medians across 11 culinary categories (n = 932 recipes)</h3>
+          <p class="d1-step-desc">
+            General SFA uses the &lt;10%E limit (<strong>24.9 g/day</strong>); Cardiometabolic High-Risk uses the &lt;7%E limit (<strong>17.4 g/day</strong>). Primary SFA driver reflects ingredient-class attribution across each category.
           </p>
 
-          <div class="data-table-container">
-            <table class="data-table atlas-table">
-              <thead>
-                <tr>
-                  <th>Culinary Category</th>
-                  <th>Recipes (Servings)</th>
-                  <th>Primary SFA Driver</th>
-                  <th>SFA Median (24.9g)</th>
-                  <th>High-Risk SFA (17.4g)</th>
-                  <th>Added Sugar (25g)</th>
-                  <th>Sodium (1,967mg)</th>
-                  <th>Energy</th>
-                </tr>
-              </thead>
-              <tbody>
-                <template x-for="cat in atlas.categories" :key="cat.category">
+          <div class="d1-card">
+            <div class="d1-card-head head-green">
+              <div class="d1-card-title-row">
+                <span class="d1-icon-badge">🍽️</span>
+                <span>11 INDB Culinary Categories</span>
+              </div>
+              <span class="badge badge-green" style="font-size: 12px;">103 Deep-Frying Corrected</span>
+            </div>
+            <div class="data-table-container" style="border: none; border-radius: 0; box-shadow: none;">
+              <table class="data-table atlas-table">
+                <thead>
                   <tr>
-                    <td style="font-weight: 700;" x-text="cat.category"></td>
-                    <td class="mono-cell" x-text="`${cat.recipes_with_servings} / ${cat.recipes_total}`"></td>
-                    <td style="font-size: 13.5px; color: #3a3a3c;" x-text="getCategoryDriver(cat.category)"></td>
-                    <td class="mono-cell">
-                      <span x-text="`${parseFloat(cat.sfa_g_median).toFixed(1)}g `"></span>
-                      <span
-                        :class="parseFloat(cat.sfa_pct_gen_limit_median) >= 30 ? 'badge badge-red' : (parseFloat(cat.sfa_pct_gen_limit_median) >= 20 ? 'badge badge-amber' : 'badge badge-gray')"
-                        style="font-weight: 600;"
-                        x-text="`${parseFloat(cat.sfa_pct_gen_limit_median).toFixed(1)}%`">
-                      </span>
-                    </td>
-                    <td class="mono-cell">
-                      <span
-                        :class="parseFloat(cat.sfa_pct_car_limit_median) >= 33 ? 'badge badge-red' : (parseFloat(cat.sfa_pct_car_limit_median) >= 20 ? 'badge badge-amber' : 'badge badge-gray')"
-                        style="font-weight: 600;"
-                        x-text="`${parseFloat(cat.sfa_pct_car_limit_median).toFixed(1)}%`">
-                      </span>
-                    </td>
-                    <td class="mono-cell">
-                      <span
-                        :class="parseFloat(cat.sugar_pct_limit_median) >= 33 ? 'badge badge-red' : 'badge badge-gray'"
-                        style="font-weight: 600;"
-                        x-text="`${parseFloat(cat.sugar_pct_limit_median).toFixed(1)}%`">
-                      </span>
-                    </td>
-                    <td class="mono-cell">
-                      <span
-                        :class="parseFloat(cat.sodium_pct_limit_median) >= 100 ? 'badge badge-amber' : ''"
-                        :style="parseFloat(cat.sodium_pct_limit_median) >= 100 ? 'font-weight: 700;' : ''"
-                        x-text="parseFloat(cat.sodium_pct_limit_median) >= 100 ? `${parseFloat(cat.sodium_pct_limit_median).toLocaleString()}%*` : `${parseFloat(cat.sodium_pct_limit_median).toFixed(1)}%`">
-                      </span>
-                    </td>
-                    <td class="mono-cell" x-text="`${Math.round(parseFloat(cat.energy_kcal_median))} kcal`"></td>
+                    <th>Culinary Category</th>
+                    <th>Recipes (Servings)</th>
+                    <th>Primary SFA Driver</th>
+                    <th>SFA Median (24.9 g)</th>
+                    <th>High-Risk SFA (17.4 g)</th>
+                    <th>Added Sugar (25 g)</th>
+                    <th>Sodium (1,967 mg)</th>
+                    <th>Energy</th>
                   </tr>
-                </template>
-              </tbody>
-            </table>
-          </div>
-          <div class="atlas-callout-banner">
-            <strong>* Note on Soups &amp; Stews Sodium (1,028.3% · 20,226 mg median):</strong> Verified in raw INDB source data — <strong>26 of 47</strong> soup recipes with servings (such as <code>BFP066</code>, <code>BFP067</code>, and <code>ASC079</code>) map stock volumes (480 ml or 0.5 cup) directly onto dry stock cubes (<code>K506</code> chicken cubes / <code>K507</code> vegetable cubes) at 1 g/ml density rather than diluted liquid broth. That raw databank coding inflates Soups &amp; Stews ~45&times; above normal salt levels; Figure 1 breaks the bar at 108% so the remaining 10 categories remain legible.
+                </thead>
+                <tbody>
+                  <template x-for="cat in atlas.categories" :key="cat.category">
+                    <tr>
+                      <td style="font-weight: 700;" x-text="cat.category"></td>
+                      <td class="mono-cell" x-text="`${cat.recipes_with_servings} / ${cat.recipes_total}`"></td>
+                      <td style="font-size: 13px; color: #3a3a3c;" x-text="getCategoryDriver(cat.category)"></td>
+                      <td class="mono-cell">
+                        <span x-text="`${parseFloat(cat.sfa_g_median).toFixed(1)}g `"></span>
+                        <span :class="parseFloat(cat.sfa_pct_gen_limit_median) >= 30 ? 'badge badge-red' : (parseFloat(cat.sfa_pct_gen_limit_median) >= 20 ? 'badge badge-amber' : 'badge badge-gray')"
+                              style="font-weight: 600;"
+                              x-text="`${parseFloat(cat.sfa_pct_gen_limit_median).toFixed(1)}%`"></span>
+                      </td>
+                      <td class="mono-cell">
+                        <span :class="parseFloat(cat.sfa_pct_car_limit_median) >= 33 ? 'badge badge-red' : (parseFloat(cat.sfa_pct_car_limit_median) >= 20 ? 'badge badge-amber' : 'badge badge-gray')"
+                              style="font-weight: 600;"
+                              x-text="`${parseFloat(cat.sfa_pct_car_limit_median).toFixed(1)}%`"></span>
+                      </td>
+                      <td class="mono-cell">
+                        <span :class="parseFloat(cat.sugar_pct_limit_median) >= 33 ? 'badge badge-red' : 'badge badge-gray'"
+                              style="font-weight: 600;"
+                              x-text="`${parseFloat(cat.sugar_pct_limit_median).toFixed(1)}%`"></span>
+                      </td>
+                      <td class="mono-cell">
+                        <span :class="parseFloat(cat.sodium_pct_limit_median) >= 100 ? 'badge badge-amber' : ''"
+                              :style="parseFloat(cat.sodium_pct_limit_median) >= 100 ? 'font-weight: 700;' : ''"
+                              x-text="parseFloat(cat.sodium_pct_limit_median) >= 100 ? `${parseFloat(cat.sodium_pct_limit_median).toLocaleString()}%*` : `${parseFloat(cat.sodium_pct_limit_median).toFixed(1)}%`"></span>
+                      </td>
+                      <td class="mono-cell" x-text="`${Math.round(parseFloat(cat.energy_kcal_median))} kcal`"></td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </div>
+            <div style="background: #fffcf5; border-top: 1px solid #f5e2ba; padding: 13px 20px; font-size: 13.5px; line-height: 1.55; color: #3b2a06;">
+              <strong>* Note on Soups &amp; Stews Sodium (1,028.3% · 20,226 mg median):</strong> <strong>26 of 47</strong> INDB soup entries (including <code>BFP066</code>, <code>BFP067</code>, and <code>ASC079</code>) map 480 ml / 0.5 cup liquid stock directly to dry stock cubes (<code>K506</code>/<code>K507</code>) at 1 g/ml density; Figure 1 breaks the bar at 108% so the remaining 10 categories stay readable.
+            </div>
           </div>
         </div>
 
-        <!-- STEP 4: TEXTBOOK VS WEB BENCHMARK TABLE -->
-        <div style="margin-bottom: 48px;">
-          <div class="d3-step-header">
-            <span class="d3-step-pill">Step 4 · Textbook vs. Web Reality</span>
-            <h3 class="d3-step-title">Paired Fat &amp; Saturated Fat Comparison Across 15 Benchmark Dishes</h3>
-          </div>
-          <p class="d3-step-sub">
-            Comparing INDB textbook baselines against 71 consumer blog scrapes (deduplicated by portal URL). Rows flagged in amber contain unquantified <em>&ldquo;oil for deep frying&rdquo;</em> lines in web recipes, so Soxhlet frying-bath injection could not fire on the web side.
+        <!-- STEP 4: TEXTBOOK VS WEB BENCHMARK TABLE (FILTERABLE) -->
+        <div style="margin-bottom: 24px;">
+          <div class="d1-step-label">Step 4 · Textbook vs. Web Comparison</div>
+          <h3 class="d1-step-heading">Paired fat &amp; saturated fat audit across 15 benchmark dishes</h3>
+          <p class="d1-step-desc">
+            Compares INDB institutional recipes against 71 deduplicated web portal recipes. Toggle the filter below to separate the 12 direct comparisons from the 3 deep-fried web artifacts.
           </p>
 
-          <div class="atlas-summary-strip">
-            <div><strong>12 Directly Comparable Dishes (Median Shift):</strong> <span class="badge badge-amber" style="margin-left: 6px;">Fat 1.10&times;</span> <span class="badge badge-red" style="margin-left: 4px;">SFA 1.18&times;</span> <span class="badge badge-gray" style="margin-left: 4px;">Energy 1.11&times;</span></div>
-            <div style="font-size: 13px; color: #6e6e73;">All-15 naive median (with 3 uncorrected deep-fry web artifacts): Fat 1.01&times; &middot; SFA 1.09&times;</div>
-          </div>
+          <div class="d1-card">
+            <div class="d1-card-head head-purple" style="flex-wrap: wrap;">
+              <div class="d1-card-title-row">
+                <span class="d1-icon-badge">🔍</span>
+                <div>
+                  <div>15 Benchmark Pairs (<span x-text="filteredWebBenchmarks.length"></span> shown)</div>
+                  <div style="font-size: 12.5px; font-weight: 500; color: var(--text-muted);">Clean 12-dish medians: Fat 1.10&times; · SFA 1.18&times; · Energy 1.11&times;</div>
+                </div>
+              </div>
+              <div class="d3-filter-tabs">
+                <button type="button" class="figure-selector-chip" :class="{ 'active': d3WebFilter === 'all' }" @click="d3WebFilter = 'all'">All 15 Dishes</button>
+                <button type="button" class="figure-selector-chip" :class="{ 'active': d3WebFilter === 'comparable' }" @click="d3WebFilter = 'comparable'">Comparable (12)</button>
+                <button type="button" class="figure-selector-chip" :class="{ 'active': d3WebFilter === 'frying_artifact' }" @click="d3WebFilter = 'frying_artifact'">Fry Artifacts (3)</button>
+              </div>
+            </div>
 
-          <div class="data-table-container">
-            <table class="data-table atlas-table">
-              <thead>
-                <tr>
-                  <th>Dish Name (INDB / Web)</th>
-                  <th>INDB Fat</th>
-                  <th>Web Fat</th>
-                  <th>Fat Ratio</th>
-                  <th>INDB SFA</th>
-                  <th>Web SFA</th>
-                  <th>SFA Ratio</th>
-                  <th>Audit Finding &amp; Methodology Note</th>
-                </tr>
-              </thead>
-              <tbody>
-                <template x-for="dish in atlas.textbook_vs_web" :key="dish.dish">
-                  <tr :style="dish.web_frying_unquantified === 'True' ? 'background: #fffaf0;' : ''">
-                    <td>
-                      <div style="font-weight: 700;" x-text="formatDishName(dish.dish)"></div>
-                      <div style="font-size: 12px; color: #6e6e73;" x-text="`INDB n=${dish.indb_recipes_count} vs Web n=${dish.web_recipes_count}`"></div>
-                      <template x-if="dish.web_frying_unquantified === 'True'">
-                        <span class="badge badge-amber" style="margin-top: 4px; font-size: 11px;">Unquantified Web Fry Oil</span>
-                      </template>
-                    </td>
-                    <td class="mono-cell" x-text="`${parseFloat(dish.indb_fat_g).toFixed(1)}g`"></td>
-                    <td class="mono-cell" x-text="`${parseFloat(dish.web_fat_g).toFixed(1)}g`"></td>
-                    <td class="mono-cell">
-                      <span
-                        :class="dish.web_frying_unquantified === 'True' ? 'badge badge-amber' : (parseFloat(dish.fat_inflation_ratio) > 1.2 ? 'badge badge-red' : (parseFloat(dish.fat_inflation_ratio) < 0.85 ? 'badge badge-green' : 'badge badge-gray'))"
-                        style="font-weight: 700;"
-                        x-text="`${parseFloat(dish.fat_inflation_ratio).toFixed(2)}×`">
-                      </span>
-                    </td>
-                    <td class="mono-cell" x-text="`${parseFloat(dish.indb_sfa_g).toFixed(1)}g`"></td>
-                    <td class="mono-cell" x-text="`${parseFloat(dish.web_sfa_g).toFixed(1)}g`"></td>
-                    <td class="mono-cell">
-                      <span
-                        :class="dish.web_frying_unquantified === 'True' ? 'badge badge-amber' : (parseFloat(dish.sfa_inflation_ratio) > 1.25 ? 'badge badge-red' : (parseFloat(dish.sfa_inflation_ratio) < 0.85 ? 'badge badge-green' : 'badge badge-gray'))"
-                        style="font-weight: 700;"
-                        x-text="`${parseFloat(dish.sfa_inflation_ratio).toFixed(2)}×`">
-                      </span>
-                    </td>
-                    <td style="font-size: 13.5px; color: #3a3a3c; line-height: 1.5;" x-text="getInflationNote(dish.dish)"></td>
+            <div class="data-table-container" style="border: none; border-radius: 0; box-shadow: none;">
+              <table class="data-table atlas-table">
+                <thead>
+                  <tr>
+                    <th>Dish Name (INDB / Web)</th>
+                    <th>INDB Fat</th>
+                    <th>Web Fat</th>
+                    <th>Fat Ratio</th>
+                    <th>INDB SFA</th>
+                    <th>Web SFA</th>
+                    <th>SFA Ratio</th>
+                    <th>Audit Finding &amp; Methodology Note</th>
                   </tr>
-                </template>
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  <template x-for="dish in filteredWebBenchmarks" :key="dish.dish">
+                    <tr :style="dish.web_frying_unquantified === 'True' ? 'background: #fffcf5;' : ''">
+                      <td>
+                        <div style="font-weight: 700;" x-text="formatDishName(dish.dish)"></div>
+                        <div style="font-size: 12px; color: #6e6e73;" x-text="`INDB n=${dish.indb_recipes_count} vs Web n=${dish.web_recipes_count}`"></div>
+                        <template x-if="dish.web_frying_unquantified === 'True'">
+                          <span class="badge badge-amber" style="margin-top: 4px; font-size: 11px;">Unquantified Web Fry Oil</span>
+                        </template>
+                      </td>
+                      <td class="mono-cell" x-text="`${parseFloat(dish.indb_fat_g).toFixed(1)}g`"></td>
+                      <td class="mono-cell" x-text="`${parseFloat(dish.web_fat_g).toFixed(1)}g`"></td>
+                      <td class="mono-cell">
+                        <span :class="dish.web_frying_unquantified === 'True' ? 'badge badge-amber' : (parseFloat(dish.fat_inflation_ratio) > 1.2 ? 'badge badge-red' : (parseFloat(dish.fat_inflation_ratio) < 0.85 ? 'badge badge-green' : 'badge badge-gray'))"
+                              style="font-weight: 700;"
+                              x-text="`${parseFloat(dish.fat_inflation_ratio).toFixed(2)}×`"></span>
+                      </td>
+                      <td class="mono-cell" x-text="`${parseFloat(dish.indb_sfa_g).toFixed(1)}g`"></td>
+                      <td class="mono-cell" x-text="`${parseFloat(dish.web_sfa_g).toFixed(1)}g`"></td>
+                      <td class="mono-cell">
+                        <span :class="dish.web_frying_unquantified === 'True' ? 'badge badge-amber' : (parseFloat(dish.sfa_inflation_ratio) > 1.25 ? 'badge badge-red' : (parseFloat(dish.sfa_inflation_ratio) < 0.85 ? 'badge badge-green' : 'badge badge-gray'))"
+                              style="font-weight: 700;"
+                              x-text="`${parseFloat(dish.sfa_inflation_ratio).toFixed(2)}×`"></span>
+                      </td>
+                      <td style="font-size: 13px; color: #3a3a3c; line-height: 1.5;" x-text="getInflationNote(dish.dish)"></td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
@@ -4660,6 +4694,7 @@
 
         // Presentation Figure Slideshow State (ordered as a coherent lecture story)
         activeFigureIndex: 0,
+        d3WebFilter: 'all',
         d2ActiveStage: 0,
         d2Stages: [
           {
@@ -5633,6 +5668,17 @@
           if (pct >= 60) return 'fill-danger';
           if (pct >= 30) return 'fill-warning';
           return 'fill-safe';
+        },
+
+        get filteredWebBenchmarks() {
+          const rows = this.atlas.textbook_vs_web || [];
+          if (this.d3WebFilter === 'comparable') {
+            return rows.filter(d => d.web_frying_unquantified !== 'True');
+          }
+          if (this.d3WebFilter === 'frying_artifact') {
+            return rows.filter(d => d.web_frying_unquantified === 'True');
+          }
+          return rows;
         },
 
         get curD2Stage() {
